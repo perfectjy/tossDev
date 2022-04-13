@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        $(function() {
+            // 사고조사내용 open
+            Dialog.open('#accidentCont');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#accidentCont" class="btn line dialog_open">사고조사내용</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 사고조사내용 팝업 -->
+    <div id="accidentCont" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>사고조사내용</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="contract_list">
+                            <div class="contract">
+                                <div class="contract_header">
+                                    <div class="insu_name">차대차</div>
+                                </div>
+                                <div class="contract_detail">
+                                    <dl>
+                                        <div>
+                                            <dt>과실유무</dt>
+                                            <dd>무</dd>
+                                        </div>
+                                        <div>
+                                            <dt>현장출동</dt>
+                                            <dd>출동</dd>
+                                        </div>
+                                        <div>
+                                            <dt>경찰서신고 유무</dt>
+                                            <dd>미신고</dd>
+                                        </div>
+                                        <div>
+                                            <dt>적용과실도표</dt>
+                                            <dd>253</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn_conts">
+                            <a href="https://accident.knia.or.kr" class="btn line" target="_blank" title="과실비율정보포털(새창)"><span>손해보험협회 과실비율정보 포털</span></a>
+                        </div>
+
+                        <div class="toggle_wrap">
+                            <div class="toggle_tit">                    
+                                <a href="#toggleConts" class="toggle_btn">유의사항<span class="offscr">상세보기</span></a>
+                            </div>                
+                            <div id="toggleConts" class="toggle_conts">
+                                <ul class="list_dot">
+                                    <li>위 내용은 현재까지 조사된 내용으로 확정된 과실이 아니며, 과실도표와 실제 적용되는 과실은 사고현장, 사고형태, 차량파손상태, 경찰조사내용,  판례 등에 따라 변경될 수 있습니다.</li>
+                                    <li>과실 관련 내용은 보상담당자에게 문의해 주세요.</li>
+                                    <li>과실비율정보 포털의 챗봇 기능을 활용하여 사고 세부 유형별 과실비율을 검색할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

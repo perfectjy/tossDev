@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '자동차사고 발생시 책임', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 차종 안내 open
+            Dialog.open('#typeCar');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <a href="#typeCar" class="btn line dialog_open">차종 안내</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 차종 안내 팝업 -->
+    <div id="typeCar" class="dialog full">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>차종 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li><strong>승합자동차 등:</strong><br>승합자동차, 4톤 초과 화물자동차, 특수자동차, 건설기계 및 노면전차</li>
+                            <li><strong>승용자동차 등:</strong><br>승용자동차, 4톤 이하 화물차동차</li>
+                            <li><strong>이륜자동차 등:</strong><br>이륜자동차, 원동기장치자전거(개인형이동장치는 제외)</li>
+                            <li><strong>손수레 등:</strong><br>손수레, 경운기, 우마차</li>
+                            <li><strong>자전거 등:</strong><br>자전거 이용 활성화에 관한 법률에 따른 자전거, 전기자전거와 개인형이동장치</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

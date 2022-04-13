@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+$(function() {
+	Dialog.open('#PSPG02010027');
+
+
+	// 표/차트 보기
+	$(document).on('click', '.select_viewtype a', function(e) {
+		e.preventDefault();
+		var $this = $(this),
+			target = $(this).attr('href'),
+			cont = $('.rate_cont');
+
+		$('.select_viewtype a').removeClass('active');
+		cont.css({ display: 'none' });
+
+		$(target).css({ display: 'block' });
+		if (!!!$this.hasClass('active')) {
+			$(this).addClass('active');
+		} else {
+			$(this).removeClass('active');
+		}
+	});
+
+});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#insuRate" class="btn ass dialog_open">이율추이 팝업</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/quick.js"></script><!-- // Pub Include -->
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+
+	<!-- 실적배당형 펀드수익률 상품정보 팝업 S -->
+	<div id="PSPG02010027" class="dialog modal">
+		<div class="dialog_wrap b">
+			<div class="dialog_header">
+				<h1>실적배당형 상품명</h1>
+				<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+			</div>
+			<div class="dialog_content">
+				<div class="scrollbar">
+					<div class="section">
+
+						<div class="tab_section t1">
+							<div class="tab_list tab_nav">
+								<ul>
+									<li class="tab"><a href="#panel01"><span>상품정보</span></a></li>
+									<li class="tab"><a href="#panel02"><span>펀드수익률</span></a></li>
+									<li class="tab active"><a href="#panel03"><span>기준가</span></a></li>
+								</ul>
+							</div>
+							<div class="tab_contents">
+								<div id="panel01" class="tab_panel">
+									<h2 class="offscr">상품정보</h2>
+								</div>
+								<div id="panel02" class="tab_panel">
+									<h2 class="offscr">펀드수익률</h2>
+								</div>
+								<div id="panel03" class="tab_panel">
+									<h2 class="offscr">기준가</h2>
+									<div class="comp sub">
+										<h3 class="h4 hmark">일자별 기준가</h3>
+										<div class="form_srch_wrap">
+											<div class="search_item date">
+												<label for="searchDate1" class="form_label">조회기간</label>
+												<div class="date_box">
+													<div class="item">
+														<select id="searchDate1" name="" title="조회기간">
+															<option value="1m">1개월</option>
+															<option value="3m" selected>3개월</option>
+															<option value="6m">6개월</option>
+															<option value="12m">1년</option>
+														</select>
+													</div>
+													<div class="item col02">
+														<div class="start_date">
+															<input type="text" class="inp_date" title="시작일" id="startDate">
+														</div>
+														<div class="end_date">
+															<input type="text" class="inp_date" title="종료일" id="endDate">
+														</div>
+													</div>
+												</div>
+												<!--// date_box -->
+												<p class="error_text">시작일자~종료일자를 선택해 주세요.</p>
+											</div>
+											<div class="btn_search">
+												<button type="button" class="btn primary"><span class="search">조회</span></button>
+											</div>
+										</div>
+										<!-- // form_srch_wrap -->
+										
+										<!-- 표 or 차트 선택 -->
+										<div class="select_viewtype">
+                                            <a href="#chart" class="item1 active">차트</a>
+                                            <a href="#table" class="item2">표</a>
+                                        </div>
+
+										<div id="chart" class="rate_cont" style="display:block;">
+											<h4 class="offscr">차트로 보는 일자별 기준가</h4>
+											<div class="dummy"></div>
+										</div>
+										
+										<div id="table" class="rate_cont">
+											<h4 class="offscr">표로 보는 일자별 기준가</h4>
+											<div class="tbl_top_info">
+												<span class="unit">단위: 원</span>
+											</div>
+											<table class="tbl_data">
+												<caption>기준일,기준가,증감에 대한 정보</caption>
+												<colgroup>
+													<col style="width:33.3333%;" span="3">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">기준일</th>
+														<th scope="col">기준가</th>
+														<th scope="col">증감</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>YYYY.MM.DD</td>
+														<td>1000.10</td>
+														<td>-0.10</td>
+													</tr>
+													<tr>
+														<td>YYYY.MM.DD</td>
+														<td>1000.20</td>
+														<td>0.20</td>
+													</tr>
+													<tr>
+														<td>YYYY.MM.DD</td>
+														<td>1000.00</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<td>YYYY.MM.DD</td>
+														<td>1000.00</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<td>YYYY.MM.DD</td>
+														<td>1000.00</td>
+														<td>0</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dialog_footer">
+				<div class="dialog_footer_btn">
+					<button type="button" class="btn primary">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 실적배당형 스타일변화혼합형 상품정보 팝업 E -->
+
+</body>
+</html>

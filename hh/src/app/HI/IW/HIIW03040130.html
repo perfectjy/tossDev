@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: 'ECO마일리지특약 가입완료', tooltip: false, prev: false, menu: true };
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <!-- Case1) 사진정상 업로드 시 -->
+                        <h2 class="governing_title">
+                            ECO마일리지특약 가입이<br class="mo_br">
+                            완료되었습니다.
+                        </h2>
+                        <p class="info_text">
+                            보험종료일 YYYY.MM.DD을 기준으로 45일 전~이후 15일 이내에<br class="p_br">
+                            최종 주행거리 사진을 등록하시면 할인이 적용되어 환급이 가능합니다.
+                        </p>
+                        <!--// Case1) 사진정상 업로드 시 -->
+
+                        <!-- Case2) 사진업로드 오류 시 -->
+                        <h2 class="governing_title">
+                            현재(최초) 주행거리 사진을<br class="mo_br">
+                            다시 등록해 주세요.
+                        </h2>
+                        <div class="solid_box">
+                            ECO마일리지특약 가입이 완료되었으나 <strong class="highlight">사진이 정상적으로 등록되지 않았습니다.</strong><br>
+                            다음 버튼을 눌러 [특약사진 등록/조회 > 사진등록] 메뉴에서 등록을 진행해 주세요.<br>
+                            15일 이내에 사진을 등록하지 않으시면 특약 가입이 무효가 됩니다.
+                        </div>
+                        <div class="btn_conts">
+                            <button type="button" class="btn line"><span>현재(최초) 주행거리 사진 등록</span></button>
+                        </div>
+                        <!--// Case2) 사진업로드 오류 시 -->
+                    </div>
+
+                    <h3 class="h3">가입정보</h3>
+                    <table class="tbl_row">
+                        <caption>자동차번호,약정 주행거리,현재 주행거리, 환급보험료 지급계좌정보</caption>
+                        <colgroup>
+                            <col style="width:180px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">자동차번호</th>
+                                <td>경남33고48**</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">약정 주행거리</th>
+                                <td>5,000km</td>
+                            </tr>
+
+                            <!-- Case1) 사진정상 업로드 시 -->
+                            <tr>
+                                <th scope="row">현재 주행거리</th>
+                                <td>1,345km</td>
+                            </tr>
+                            <!--// Case1) 사진정상 업로드 시 -->
+
+                            <!-- Case2) 사진업로드 오류 시 -->
+                            <tr>
+                                <th scope="row">현재 주행거리</th>
+                                <td>사진등록오류</td>
+                            </tr>
+                            <!--// Case2) 사진업로드 오류 시 -->
+
+                            <tr>
+                                <th scope="row">환급보험료 지급계좌정보</th>
+                                <td>
+                                    우리은행 1234********* <span class="slash"></span> 
+                                    예금주: 하이현
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 'Case1) 사진정상 업로드 시'에만 노출 -->
+                    <div class="btn_conts">
+                        <button type="button" class="btn line"><span>마일리지(예상)환급금조회</span></button>
+                    </div>
+                    <!--// 'Case1) 사진정상 업로드 시'에만 노출 -->
+
+                    <div class="complete_btns">
+                        <!-- 'Case1) 사진정상 업로드 시'에만 노출 -->
+                        <button type="button" class="btn sline"><span>다른 자동차 ECO마일리지특약 가입</span></button>
+                        <!--// 'Case1) 사진정상 업로드 시'에만 노출 -->
+
+                        <button type="button" class="btn primary"><span>메인</span></button>
+                    </div>
+                </div>
+                
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+</body>
+</html>

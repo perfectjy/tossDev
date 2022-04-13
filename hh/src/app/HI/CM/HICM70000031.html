@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '로그아웃', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#LogOut');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#LogOut" class="btn line dialog_open">로그아웃</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+    <div id="LogOut" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>종료하시겠습니까?</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="banner_area">
+                    <span class="tag event">EVENT</span>
+                    <a href="#none"></a>
+                    
+                    <span class="tag goods">상품</span>
+                    <a href="#none"></a>
+                </div>
+                <p class="single_para"><strong>[확인]을</strong> 누르면 현대해상 앱이 종료됩니다.</p>
+                
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn col2">
+                    <button type="button" class="btn second"><span>취소</span></button>
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

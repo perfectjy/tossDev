@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '청약서 주요사항 확인', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 청약서 주요사항 확인  open
+            Dialog.open('#HIIW04030024');
+
+            // 청약서 확인 진행 단계 표시
+            displayStep(4, 5);
+
+            // placeholder
+            $.fn.placeholder();
+        });
+
+        /* 청약서 확인 진행 단계 표시
+            1) _now : 현재 단계
+            2) _total : 전체 단계
+        */
+        function displayStep(_now, _total) {
+            var $stepObj = $('.step_number'),
+                $step = '',
+                _state, _stepNum;
+            for (var i=1; i<=_total; i++) {
+                _state = _now === i ? 'class="now"'
+                    : _now > i ? 'class="complete"'
+                    : '';
+                _stepNum = _now === i ? '현재'
+                    : _now > i ? '완료'
+                    : i;
+                
+                $step += '<span '+ _state +' title="'+ _stepNum +'단계">'+ i +'</span>';
+            }
+
+            $stepObj.html($step);
+        }
+
+        // placeholder
+        $.fn.placeholder = function() {
+            var inpObj = $('input[type=text], textarea');
+
+            $.each(inpObj, function(i) {
+                var phTxt = inpObj.eq(i).attr('placeholder');
+                inpObj.eq(i).after('<span class="placeholder">'+ phTxt +'</span>');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04030024" class="btn line dialog_open">청약서 주요사항 확인 </a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 청약서 주요사항 확인  팝업 -->
+    <div id="HIIW04030024" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>청약서 주요사항 확인 </h1>
+
+                <!-- 진행 단계 -->
+                <div class="step_number"></div>
+
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>아래 대괄호 <strong class="highlight">[ ]</strong> 안의 글자는 반드시 계약자가 자필 확인을 해야 합니다.</li>
+                            <li>내용을 꼼꼼하게 읽고 각 입력창에 보이는 글자를 정확하게 입력해 주세요.</li>
+                        </ul>
+
+                        <div class="contract_check">
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    보험설계사는 계약 전 <span class="need">[<span class="correct">알릴</span><span class="error">의</span><span class="correct">무</span>]</span> 사항에 대한 수령 권한이 없으므로
+                                    과거의 진단 또는 치료 사실 등 중요한 내용을 <span class="need">[구두]</span>로만 알릴 경우
+                                    계약 전 알릴 의무를 이행한 것으로 인정되지 않아 향후 계약이 <span class="need">[해지]</span>되거나 보험금을 지급받지 못할 수 있습니다.
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="알릴의무 입력" placeholder="알릴의무">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="구두 입력" placeholder="구두">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="해지 입력" placeholder="해지">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary">확인 후 다음</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

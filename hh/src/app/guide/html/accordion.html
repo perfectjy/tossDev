@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>현대해상 | Publishing Guide</title>
+
+<script src="../../../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../js/ui_guide.js"></script>
+<script src="../../../assets/js/jquery-ui-1.12.1.min.js"></script>
+<script src="../../../assets/js/ui_plugins.js"></script>
+<script src="../../../assets/js/ui_common.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/ui_guide.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/contents.css">
+
+</head>
+<body>
+<div id="gWrap">
+    <div class="guide_content">
+        <h1>Accordion</h1>
+        <div class="g_section">
+            <h2>기본스타일</h2>
+            <div class="g_guide_info">
+                <div class="accordion">
+                    <div class="title">
+                        <span class="toggle">보험금의 청구와 지급</span>
+                    </div>
+                    <div class="panel">
+                        상세내용입니다.
+                    </div>
+                    <div class="title">
+                        <span class="toggle">기타 분쟁 해결</span>
+                    </div>
+                    <div class="panel">
+                        상세내용입니다.
+                        <p class="law_num">준법승인번호 20214007 <span>(승인일 : 2021.05.14)</span></p>
+                    </div>
+                    <div class="title">
+                        <span class="num">01</span><span class="toggle">계약별 상세정보(table)</span>
+                    </div>
+                    <div class="panel">
+                    <table class="tbl_row">
+                        <caption>실제 지급금액, 대출신청금액, 기대출정산이자, 예수금, 선취이자, 인지세, 총대출금액, 잔여대출가능금액, 총월예상이자</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="orange" scope="row" >실제 지급금액</th>
+                                <td class="orange">10,000,000원</td>
+                            </tr>
+                            <tr>
+                                <th class="blue" scope="row">대출신청금액</th>
+                                <td class="blue">5,200,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">기대출정산이자</th>
+                                <td>-87,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">예수금</th>
+                                <td>0원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">선취이자</th>
+                                <td>0원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">인지세</th>
+                                <td>0원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출후원금</th>
+                                <td>13,310,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">잔여대출가능금액</th>
+                                <td>2,500,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">월예상이자</th>
+                                <td>107,365원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출금지급계좌</th>
+                                <td>우리은행 1234*********</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이자납입계좌</th>
+                                <td>우리은행 1234*********</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">예금주</th>
+                                <td>하이연</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이자납입일</th>
+                                <td>매달 5일</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출신청일</th>
+                                <td>2021.06.01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g_section">
+            <h2>toggle</h2>
+            <div class="g_guide_info">
+                <div class="toggle_wrap">
+                    <div class="toggle_tit">                    
+                        <a href="#toggleConts" class="toggle_btn">계약별 상세정보<span class="offscr">상세보기</span></a>
+                    </div>                
+                    <div id="toggleConts" class="toggle_conts">
+                        콘텐츠
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="g_section">
+            <h2>FAQ</h2>
+            <div class="g_guide_info">
+                <div class="accordion faq">
+                    <div class="title"><span class="toggle">시동이 걸리지 않아요</span></div>
+                    <div class="panel">
+                        <p>대부분 배터리 방전에 의한 현상입니다.</p>
+                        <ul class="list_dot">
+                            <li>먼저 이렇게 점검하세요.
+                                <ul class="list_bar">
+                                    <li>변속레버를 P나 N에 넣고 주차브레이크를 당깁니다.</li>
+                                    <li>배터리 연결부위를 확인해 연결이 정상적으로 되었는지 확인합니다.</li>
+                                    <li>실내등을 켠 상태에서 시동을 걸 때 불빛이 희미해지거나 꺼지면 배터리가 방전된 경우입니다.</li>
+                                </ul>
+                            </li>
+                            <li>이렇게 대처하세요.
+                                <ul class="list_bar">
+                                    <li>점프 케이블을 연결할 수 있도록 전원공급차를 이동시키고 시동을 건 상태로 놓아 둡니다.</li>
+                                    <li>프케이블을 (+) / (-)에 유의하여 점프선을 연결합니다.</li>
+                                    <li>방전된 차량의 시동을 켭니다.</li>
+                                    <li>일정기간 충전될 때 까지 시동상태를 유지합니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title"><span class="toggle">차량에서 연기가 나요</span></div>
+                    <div class="panel">
+                        <p>대부분 엔진이 과열되어 발생하는 현상입니다.</p>
+                        <ul class="list_dot">
+                            <li>먼저 이렇게 점검하세요.
+                                <ul class="list_bar">
+                                    <li>냉각수 온도게이지가 장시간 적색 눈금을 가리키면 엔진이 과열된 상태입니다.</li>
+                                </ul>
+                            </li>
+                            <li>이렇게 대처하세요.
+                                <ul class="list_bar">
+                                    <li>가능한 빨리 도로 옆 안전한 곳에 주차합니다.</li>
+                                    <li>변속레버를 중립위치에 놓고 주차 브레이크를 당깁니다.</li>
+                                    <li>엔진시동을 켠 상태(약2~3분)로 후드를 열어 엔진실내에 통풍이 잘 되도록 하여 엔진을 냉각시킵니다.</li>
+                                    <li>냉각수 보조탱크에 냉각수를 공급합니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title"><span class="toggle">핸드브레이크가 작동되지 않아요</span></div>
+                    <div class="panel">
+                        
+                    </div>
+                    <div class="title"><span class="toggle">브레이크가 작동되지 않아요</span></div>
+                    <div class="panel">
+                        <p>브레이크 파열 등 여러가지 원인이 있습니다.</p>
+                        <ul class="list_dot">
+                            <li>이렇게 대처하세요.
+                                <ul class="list_bar">
+                                    <li>당황하지 말고 변속 기어를 저속 기어로 변경합니다.</li>
+                                    <li>주위의 차량에 경적과 전조등 비상등으로 위험 사실을 알립니다.</li>
+                                    <li>도로 측면이나 가드레일과 부딪쳐 속도를 감소시켜 속도를 줄입니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_section">
+            <h2>FAQ</h2>
+            <div class="g_guide_info">
+                <div class="accordion faq">
+                    <div class="title">
+                        <div class="toggle">
+                            <span class="mark">계약조회/변경</span>
+                            <p>보험상품정보에 대하여 자세히 알고 싶습니다.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <p class="txt">현대해상 홈페이지 > 보험상품의 상품종류별 상품설명을 참고하시거나, 회사소개 > 공시실 > 상품공시 > 보험상품공시의 약관을 참고하시기 바랍니다.<br/>궁금한 사항이 있으시면 대표콜센터 (1588-5656) 이용해주시기 바랍니다.</p>
+                        <div class="ac_in_btns">
+                            <a href="#none" class="btn base">보험상품 바로가기</a>
+                            <a href="#none" class="btn base">보험상품공시 바로가기</a>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div class="toggle">
+                            <span class="mark">계약조회/변경</span>
+                            <p>가입한 화재보험을 개인적인 이유로 해지하고 싶습니다. 납입한 보험료는 환급이 가능한지요?</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <ul class="list_dot">
+                            <li>보험기간 및 자기차량 손해담보의 가입 유무에 따라 보험료는 차등 적용됩니다.</li>
+                            <li>기타 문의사항은 인터넷콜센터 02-2116-1004(평일 9시~18시)로 연락주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <div class="toggle">
+                            <span class="mark">계약조회/변경</span>
+                            <p>보험계약대출 가상계좌와 대출이자를 안내받았는데 안내일 당일만 사용할 수 있나요?</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <ul class="list_dot">
+                            <li>보험기간 및 자기차량 손해담보의 가입 유무에 따라 보험료는 차등 적용됩니다.</li>
+                            <li>기타 문의사항은 인터넷콜센터 02-2116-1004(평일 9시~18시)로 연락주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g_section">
+            <h2>대출 내역 보기</h2>
+            <div class="g_guide_info">
+                <div class="accordion history">
+                    <div class="title">
+                        <div class="number">
+                            <p>101회차</p>
+                            <span>2020.03.02</span>
+                        </div>
+                        <div class="price">
+                            <strong>납입금액 370,000원</strong>
+                            <span>대출잔액 79,200,705원</span>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <dl class="ac_dl">
+                            <dt>원금상환액</dt>
+                            <dd>377,631원</dd>
+                            <dt>이자상환액</dt>
+                            <dd>359,973원</dd>
+                            <dt>적용금리</dt>
+                            <dd>2.70%</dd>
+                            <dt>납입기간</dt>
+                            <dd>2020.10.21~2020.12.20</dd>
+                        </dl>
+                    </div>
+                    <div class="title">
+                        <div class="number">
+                            <p>100회차</p>
+                            <span>2020.03.02</span>
+                        </div>
+                        <div class="price">
+                            <strong>납입금액 370,000원</strong>
+                            <span>대출잔액 79,200,705원</span>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <dl class="ac_dl">
+                            <dt>원금상환액</dt>
+                            <dd>377,631원</dd>
+                            <dt>이자상환액</dt>
+                            <dd>359,973원</dd>
+                            <dt>적용금리</dt>
+                            <dd>2.70%</dd>
+                            <dt>납입기간</dt>
+                            <dd>2020.10.21~2020.12.20</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

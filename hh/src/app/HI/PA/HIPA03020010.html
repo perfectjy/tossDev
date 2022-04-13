@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="search_box">
+                        <div class="form_in">
+                            <input type="text" class="inp_txt" placeholder="상품명 입력" title="검색어">
+                            <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                            <p class="error_text">검색어를 2글자 이상 입력해 주세요.</p>
+                        </div>                        
+                    </div>
+                    <div class="select_step">
+                        <ul>
+                            <li>
+                                <strong class="tit"><span>1</span> 판매형태</strong>
+                                <div class="btn_group scrollbar">
+                                    <button type="button" class="active"><span>판매 중 상품</span></button>
+                                    <button type="button"><span>판매 중지 상품</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <strong class="tit"><span>2</span> 보험종류</strong>
+                                <div class="btn_group scrollbar">
+                                    <button type="button"><span>자동차보험</span></button>
+                                    <button type="button" class="active"><span>장기보험</span></button>
+                                    <button type="button"><span>일반보험</span></button>
+                                    <button type="button"><span>퇴직보험</span></button>
+                                    <button type="button"><span>연금보험</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <strong class="tit"><span>3</span> 보험유형</strong>
+                                <div class="btn_group scrollbar">
+                                    <button type="button"><span>연금</span></button>
+                                    <button type="button"><span>상해성</span></button>
+                                    <button type="button"><span>어린이</span></button>
+                                    <button type="button"><span>의료</span></button>
+                                    <button type="button"><span>재물성</span></button>
+                                    <button type="button"><span>저축성</span></button>
+                                    <button type="button"><span>질병성</span></button>
+                                    <button type="button" class="active"><span>종합성</span></button>
+                                    <button type="button"><span>재물성</span></button>
+                                    <button type="button"><span>저축성</span></button>
+                                    <button type="button"><span>질병성</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <strong class="tit"><span>4</span> 상품명</strong>
+                                <div class="btn_group scrollbar">
+                                    <button type="button"><span>장애인전용보험전화제도 특별약관</span></button>
+                                    <button type="button" class="active"><span>보험료예비 특별약관 자동갱신 변경적용 제도 특별약관</span></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="table_box">
+                        <table class="tbl_data">
+                            <caption>선택한 상품에 대한 관련 정보 및 문서 다운로드</caption>
+                            <colgroup>
+                                <col style="width:auto">
+                                <col style="width:140px" span="2">
+                                <col style="width:120px" span="5">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">상품명</th>
+                                    <th scope="col">판매개시일</th>
+                                    <th scope="col">판매중지일</th>
+                                    <th scope="col">금리연동</th>
+                                    <th scope="col">약관</th>
+                                    <th scope="col">사업방법서</th>
+                                    <th scope="col">상품요약서</th>
+                                    <th scope="col">상품설명서</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt_l">보험료예비 특별약관 자동갱신 변경적용 제도 특별약관</td>
+                                    <td>2019.01.02</td>
+                                    <td>-</td>
+                                    <td>X</td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">약관보기</span></a></td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">사업방법서 보기</span></a></td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">상품요약서 보기</span></a></td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">상품설명서 보기</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_l">보험료예비 특별약관 자동갱신 변경적용 제도 특별약관</td>
+                                    <td>2017.05.08</td>
+                                    <td>2019.01.01</td>
+                                    <td>X</td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">약관보기</span></a></td>
+                                    <td>-</td>
+                                    <td><a href="#none" class="file pdf"><span class="offscr">상품요약서 보기</span></a></td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

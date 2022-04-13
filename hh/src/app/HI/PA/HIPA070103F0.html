@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        <div id="container">
+            <div id="content">
+                <div class="section_l">
+                    <div class="governing">
+                        <h2 class="governing_title"><strong>자동차취급업자종합보험</strong></h2>
+                    </div>
+
+                    <h3 class="h3">적용보험료</h3>
+                    <table class="tbl_data in_crud">
+                        <caption>적용보험료 입력</caption>
+                        <colgroup>
+                            <col style="width:210px">
+                            <col style="width:380px">
+                            <col style="width:210px">
+                            <col style="width:380px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">배상책임보험료</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="">
+                                        <span class="unit">원</span>
+                                    </div>
+                                </td>
+                                <th scope="row">차량손해보험료</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="">
+                                        <span class="unit">만원</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">차량손해보험률</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="" placeholder="">
+                                        <span class="unit">%</span>
+                                    </div>
+                                </td>
+                                <th scope="row">확정판결금액담보<br>추가특약 효율</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="" placeholder="">
+                                        <span class="unit">%</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>보험료 계산</span></button>
+                        </div>
+                    </div>
+
+                    <div class="pay_total">
+                        <div class="pay">
+                            <strong>납입보험료</strong>
+                            <span><strong>5,451,000</strong>원</span>
+                        </div>
+                    </div>
+
+                    <h3 class="h3">판매용 자동차 배상책임 대당 기본 보험료</h3>
+                    <table class="tbl_data">
+                        <caption>기본정보</caption>
+                        <colgroup>
+                            <col style="width:12%">
+                            <col style="width:8%">
+                            <col style="width:20%" span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="2" rowspan="3"><span>차종</span></th>
+                                <th scope="col" colspan="4"><span>보험기간</span></th>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan="2"><span>3일</span></th>
+                                <th scope="col" colspan="2"><span>7일</span></th>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span>대인/대물배상(원)</span></th>
+                                <th scope="col"><span>차량손해(%)</span></th>
+                                <th scope="col"><span>대인/대물배상(원)</span></th>
+                                <th scope="col"><span>차량손해(%)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">승합차(버스)</td>
+                                <td>대형</td>
+                                <td>8,100원</td>
+                                <td>0.014</td>
+                                <td>11,100원</td>
+                                <td>0.017</td>
+                            </tr>
+                            <tr>
+                                <td>중형</td>
+                                <td>4,100원</td>
+                                <td>0.04</td>
+                                <td>5,600원</td>
+                                <td>0.053</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">화물차</td>
+                                <td>대형</td>
+                                <td>11,900원</td>
+                                <td>0.026</td>
+                                <td>16,300원</td>
+                                <td>0.033</td>
+                            </tr>
+                            <tr>
+                                <td>중형</td>
+                                <td>7,300원</td>
+                                <td>0.053</td>
+                                <td>10,100원</td>
+                                <td>0.07</td>
+                            </tr>
+                            <tr>
+                                <td>소형</td>
+                                <td>3,600원</td>
+                                <td>0.046</td>
+                                <td>4,900원</td>
+                                <td>0.064</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">승용차</td>
+                                <td>일반승용</td>
+                                <td>3,500원</td>
+                                <td>0.046</td>
+                                <td>4,700원</td>
+                                <td>0.067</td>
+                            </tr>
+                            <tr>
+                                <td>다인승승용</td>
+                                <td>4,100원</td>
+                                <td>0.04</td>
+                                <td>5,600원</td>
+                                <td>0.053</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="list_dot">차량손해에 대한 자기부담금은 3만원입니다.</p>
+
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn sline"><span>목록</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+    <script type="text/javascript">
+
+        $(function() {
+            // 보장내용 요약/상세
+            $(document).off('click.assurecont').on('click.assurecont', '.select_viewtype a', function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    target = $(this).attr('href'),
+                    cont = $('.assure_cont');
+
+                $('.select_viewtype a').removeClass('active');
+                cont.css({ display: 'none' });
+
+                $(target).css({ display: 'block' });
+                if (!!!$this.hasClass('active')) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude"><!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="insu_item governing">
+                        <div class="insu_name"><span class="tag continue">유지</span> 무배당성공마스터재산종합보험(Hi1901)</div>
+                        <div class="insu_pay">월 <span class="pay">300,000원</span></div>     
+                    </div>
+
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#InsuTab1" id="tabAccType1" title="현재선택"><span>기본정보</span></a></li>
+                                <li class="tab"><a href="#InsuTab2" id="tabAccType2"><span>보장내용</span></a></li>
+                                <li class="tab"><a href="#InsuTab3" id="tabAccType3"><span>납입정보</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <!-- 기본정보 -->
+                            <div id="InsuTab1" class="tab_panel">
+                                <h2 class="h3">기본정보</h2>
+
+                                <table class="tbl_row">
+                                    <caption>계약번호,계약상태,보험기간,목적물 소재지</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약번호</th>
+                                            <td>L12345678901</td>
+                                            <th scope="row">보험기간</th>
+                                            <td>2015.11.23~2037.11.23</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">목적물 소재지</th>
+                                            <td colspan="3">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_conts">
+                                    <a href="#" class="btn line">환급금 상세조회</a>
+                                </div>
+                            
+                                <h2 class="h3">가입자 정보</h2>
+                                <table class="tbl_row">
+                                    <caption>계약자,피보험자,휴대전화번호,유선전화번호,우편물수령지,우편물수령지 주소</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약자</th>
+                                            <td>
+                                                하이현<br>
+                                                (991123-1******)
+                                            </td>
+                                            <th scope="row">피보험자</th>
+                                            <td>
+                                                하이현(991123-1******)<br>
+                                                하이현(991123-1******)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">우편물수령지</th>
+                                            <td>대표</td>
+                                            <th scope="row">우편물수령지<br>주소</th>
+                                            <td>서울시 종로구 세종대로 ***</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 class="h3">계약담당자</h2>
+                                <div class="manager">
+                                    <div class="contact_info">
+                                        <span class="ico personal"></span>
+                                        <div class="name">하이현</div>
+                                        <div class="phone">
+                                            <span class="tel_number">031-1234-5678</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact_info">
+                                        <span class="ico agency"></span>
+                                        <div class="name">구리사업부 호평지점</div>
+                                        <div class="phone">
+                                            <span class="tel_number">031-1234-5678</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m12"></span>
+                                                        보험계약대출<br>신청
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        보험료납입증명서<br> 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m15"></span>
+                                                        손비처리납입증명서<br>발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>피보험자가 없는 재물보험은 보장내역을 확인할 수 없습니다.</li>
+                                            <li>일반보험의 피보험자가 다수일 경우 대표 피보험자명으로 조회됩니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 보장내용 -->
+                            <div id="InsuTab2" class="tab_panel">
+                                <h2 class="h3">
+                                    보장내용
+                                    <div class="select_viewtype">
+                                        <a href="#Summary" class="item1 active">요약</a>
+                                        <a href="#Detail" class="item2">상세</a>
+                                    </div>
+                                </h2>
+
+                                <div class="form_wrap sel_insured">
+                                    <div class="form_row">
+                                        <label for="selInsured" class="form_label">피보험자</label>
+                                        <div class="form_item">
+                                            <select id="selInsured" name="" title="">
+                                                <option value="">하이현</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="addressInsured" class="form_label">피보험자/소재지</label>
+                                        <div class="form_item">
+                                            <select id="addressInsured" name="" title="">
+                                                <option value="">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="Summary" class="assure_cont" style="display:block;">
+                                    <!-- 담고, 가입금액, 보장보험료 구성 table -->
+                                    <table class="tbl_col">
+                                        <caption>담보사항, 가입금액, 보장보험료</caption>
+                                        <colgroup>
+                                            <col style="width:40%;">
+                                            <col style="width:30%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">담보사항</th>
+                                                <th scope="col">가입금액</th>
+                                                <th scope="col">보장보험료</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="col" class="txt_l">보장보험료 합계</th>
+                                                <td class="txt_r" colspan="2"><strong class="highlight">48,456원</strong></td>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    기본계약(상해사망, 고도후유장해)<br>
+                                                    <span class="sub">2015.11.23 ~ 2037.11.23</span>
+                                                </td>
+                                                <td class="txt_r highlight">1,000,000원</td>
+                                                <td class="txt_r">61원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    질병후유장해(80% 이상)담보<br>
+                                                    <span class="sub">2015.11.23 ~ 2037.11.23</span>
+                                                </td>
+                                                <td class="txt_r highlight">1,000,000원</td>
+                                                <td class="txt_r">42원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    질병사망담보<br>
+                                                    <span class="sub">2015.11.23 ~ 2037.11.23</span>
+                                                </td>
+                                                <td class="txt_r highlight">50,000,000원</td>
+                                                <td class="txt_r">62,880원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div id="Detail" class="assure_cont">
+                                    <div class="list_assure">
+                                        <!-- 예시1) 갱신형 담보 -->
+                                        <div class="assure_item">
+                                            <div class="assure_title">
+                                                <div class="title">기본계약(상해사망, 고도후유장해)</div>
+                                                <span class="tag">갱신</span>
+                                            </div>
+                                            <div class="assure_detail">
+                                                <dl>
+                                                    <dt>가입금액</dt>
+                                                    <dd><span class="highlight">10억원</span></dd>
+                                                    <dt>보장보험료</dt>
+                                                    <dd>6,150원</dd>
+                                                    <dt>갱신종료연령</dt>
+                                                    <dd>100세</dd>
+                                                    <dt>납기/만기</dt>
+                                                    <dd>15년납/15년만기</dd>
+                                                    <dt>보장기간</dt>
+                                                    <dd>2015.11.23~2037.11.23</dd>
+                                                    <dt>피보험자/목적물</dt>
+                                                    <dd>내부시설 일체</dd>
+                                                    <dt>목적물소재지</dt>
+                                                    <dd>12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="assure_info">
+                                                자동차사고로 발생한 상해로 「자동차손해배상보장법」 시행령 제3조에 정한 상해 1급 내지 7급을 받은 경우 가입금액 지급
+                                            </div>
+                                        </div>
+
+                                        <!-- 예시2) 재물 담보 -->
+                                        <div class="assure_item">
+                                            <div class="assure_title">
+                                                <div class="title">스프링쿨러누출손해</div>
+                                            </div>
+                                            <div class="assure_detail">
+                                                <dl>
+                                                    <dt>가입금액</dt>
+                                                    <dd><span class="highlight">10억원</span></dd>
+                                                    <dt>피보험자/목적물</dt>
+                                                    <dd>내부시설일체</dd>
+                                                    <dt>목적물소재지</dt>
+                                                    <dd>12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="assure_info">
+                                                보장개시일이후 암으로 진단확정시 가입금액 지급(가입후1년미만 해당액50%,최초1회한)<br>
+                                                단, 기타피부암, 갑상선암, 제자리암 및 경계성종양으로 진단확정시 가입금액10% 지급(가입후1년미만 해당액50%,최초1회한)
+                                            </div>
+                                        </div>
+
+                                        <!-- 예시3) 비갱신 담보 -->
+                                        <div class="assure_item">
+                                            <div class="assure_title">
+                                                <div class="title">일반상해사망후유증장애담보</div>
+                                            </div>
+                                            <div class="assure_detail">
+                                                <dl>
+                                                    <dt>가입금액</dt>
+                                                    <dd><span class="highlight">10억원</span></dd>
+                                                    <dt>보장보험료</dt>
+                                                    <dd>6,150원</dd>
+                                                    <dt>보장기간</dt>
+                                                    <dd>2015.11.23~2037.11.23</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="assure_info">
+                                                보장개시일이후 암으로 진단확정시 가입금액 지급(가입후1년미만 해당액50%,최초1회한)
+                                            </div>
+                                        </div>
+                                        <ul class="list_dot">
+                                            <li>예상만기환급금은 납입하신 적립순보험료*를 보장성 공시이율V 로 이자를 적용하여 적립한 금액을 말하며, 향후 공시이율 변동, 계약변경, 갱신담보 보험료의 대체납입, 보험료 납입일자 차이 등에 따라 달라질 수 있습니다.<p>* 적립순보험료: 적립보험료에서 예정사업비 및 예정손해조사비를 공제한 금액</p></li>
+                                            <li>계약을 중도 해지할 경우 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결∙관리비용, 해지공제금액 등을 차감하므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+                                            <li>1종 및 2종: 보장보험료 납입면제<br>계약일부터 90일 이후 암(기타피부암, 갑상선암 및 대장점막내암 제외) 진단 시 또는 보험기간 중에 뇌졸중, 급성심근경색증, 말기간경화, 말기폐질환, 말기신부전증 진단 시 해당 피보험자의 보장보험료 납입을 면제해 드리며, 보장보험료 납입면제가 된 경우 다음 회 이후 적립보험료 납입을 중지합니다. 납입면제 사유가 발생하여 갱신대상 계약의 보험기간 동안 보험료 납입이 면제되었더라도 해당 보험기간의 만기가 도래하여 새롭게 자동 갱신된 경우 갱신 전 보험사고로 인한 보험료 납입면제를 적용하지 않고 보험료를 계속 납입해야 합니다.<br>단, 3종: 해당사항 없음(자세한 사항은 약관 참조)</li>
+                                            <li>보상내역의 지급률은 약관의 후유장해 지급률표상의 지급률을 말합니다.</li>
+                                            <li>암 관련 보장특약을 가입하신 경우 보장개시일은 피보험자의 나이가 보험나이 15세 미만인 경우 보험계약일이며, 피보험자의 나이가 보험나이 15세 이상인 경우는 계약일로부터 그날을 포함하여 90일이 지난 날의 다음날입니다. 단, 기타피부암, 갑상선암, 대장점막내암, 제자리암, 경계성종양은 보험계약일부터 보장이 개시됩니다.</li>
+                                            <li>갱신형 보장특약을 가입하신 경우 해당 담보 갱신종료 나이까지 자동갱신되며, 갱신 시 보험료는 나이의 증가, 보험료 산출에 관한 기초율의 변동 등의 사유로 인상될 수 있으며 갱신종료 시점까지 보장보험료를 납입하셔야 합니다.</li>
+                                            <li>이 증권은 약관 내용을 요약한 것으로 세부내용은 반드시 약관을 참조하시기 바랍니다.</li>
+                                            <li>피보험자는 이륜자동차 운행 및 탑승을 안 합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m12"></span>
+                                                        보험계약대출<br>신청
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        보험료납입증명서<br> 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m15"></span>
+                                                        손비처리납입증명서<br>발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>피보험자가 없는 재물보험은 보장내역을 확인할 수 없습니다.</li>
+                                            <li>일반보험의 피보험자가 다수일 경우 대표 피보험자명으로 조회됩니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 납입정보 -->
+                            <div id="InsuTab3" class="tab_panel">
+                                <h2 class="h3">납입정보</h2>
+
+                                <table class="tbl_row">
+                                    <caption>납입정보</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">보험료(납입주기)</th>
+                                            <td>2,920원(1개월납)</td>
+                                            <th scope="row">납입방법(이체일)</th>
+                                            <td>자동이체(16일)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">보장보험료</th>
+                                            <td>5,180원</td>
+                                            <th scope="row">적립보험료</th>
+                                            <td>24,820원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">납입횟수</th>
+                                            <td>63회/180회</td>
+                                            <th scope="row">납기/만기</th>
+                                            <td>전기납/15년만기</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">최초납입일</th>
+                                            <td>2019.01.16</td>
+                                            <th scope="row">최종납입월도</th>
+                                            <td>2021.05월분</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">자동이체계좌정보</th>
+                                            <td colspan="3">
+                                                우리은행 1002******** <span class="slash"></span> 
+                                                예금주: 하이현
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="btn_conts">
+                                    <a href="#" class="btn line">납입내역 조회</a>
+                                </div>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m12"></span>
+                                                        보험계약대출<br>신청
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        보험료납입증명서<br> 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m15"></span>
+                                                        손비처리납입증명서<br>발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>피보험자가 없는 재물보험은 보장내역을 확인할 수 없습니다.</li>
+                                            <li>일반보험의 피보험자가 다수일 경우 대표 피보험자명으로 조회됩니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>목록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

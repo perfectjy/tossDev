@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html lang="ko" class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save"/>
+	<!--[if lte IE 8]><html class="no-js ie8" lang="ko"> <![endif]-->
+	<!--[if IE 9]><html class="no-js ie9" lang="ko"> <![endif]-->
+	<!--[if gte IE 9]><html class="no-js" lang="ko"> <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>TODO : 현대해상 | Publishing Guide</title>
+	<link rel="stylesheet" href="./resource/css/worklist.css" />
+	<script type="text/javascript" src="./resource/js/worklist.plugins.js"></script>
+	<script type="text/javascript" src="./resource/js/worklist.include.js"></script>
+	<script type="text/javascript" src="./resource/js/worklist.js"></script>
+	<style>
+		.tab_contents_wrap table tr.equal td a{color: #e40000;}
+		.filter_btn.inspect .btn span{min-width:41px;}
+		.filter_btn.inspect .btn.on span{background: #fff;color: #000;}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$('.todo_btn').addClass('active')
+
+			var $trs = $('.tab_contents_wrap tbody tr');
+
+			$('.btn.inspect').on('click', function(){
+				inspectSearch( $(this).find('span').html());
+			});
+			$('.inspect_corder').on('click', function(){
+				inspectSearch_corder( $(this).find('span').text());
+			});
+			$('.btn.test').on('click', function(){
+				testDate( $(this).find('span').text());
+			});
+
+
+			function inspectSearch(_text){
+				$trs.hide();
+				$trs.each(function(){
+					if($(this).find('td.info').text().search(_text) != -1) {
+						$(this).closest('tr').show();
+					}
+					if($(this).find('td.etc').text().search(_text) != -1) {
+						$(this).closest('tr').show();
+					}
+				});
+			}
+			function inspectSearch_corder(_text){
+				$trs.hide();
+				$trs.each(function(){
+					if($(this).find('td.corder').text().search(_text) != -1) {
+						$(this).closest('tr').show();
+					}
+				});
+			}
+			
+			function inspectSearch_reverse(_text){
+				$trs.show();
+				$trs.each(function(){
+					if($(this).find('td').text().search(_text) != -1) {
+						$(this).closest('tr').hide();
+					}
+				});
+			}
+			function testDate(_text){
+				$trs.hide();
+				$trs.each(function(){
+					if($(this).find('td.test').text().search(_text) != -1) {
+						$(this).closest('tr').show();
+					}
+				});
+			}
+		});
+	</script>
+</head>
+<body data-storage-init="option=[Y,,,,,Y]" data-storage-force="option=[N,N,N,N,N,N]|search=[N,N,N,N,N]|table=[N,N,N,N,N,N]|resizeMode|curSize|headerClose">
+	<div id="wrap">
+		<h1><a href="worklist.html">현대해상<small> : TODO</small></a></h1>
+
+		<!-- header -->
+		<div class="header">
+			<!-- 1Depth : Tab Navigation -->
+			<div class="tab_nav" >
+				<h2>IA.</h2>
+				<ul>
+					<li><a href="javascript:void(0);"><span>NOTI</span></a></li>
+					<li><a href="javascript:void(0);"><span>TODO</span></a></li>
+					<li><a href="javascript:void(0);"><span>개인</span></a></li>
+					<li><a href="javascript:void(0);"><span>기업</span></a></li>
+					<li><a href="javascript:void(0);"><span>View All</span></a></li>
+				</ul>
+			</div>
+			<!-- //1Depth : IA Tab Navigation -->
+			<!-- info_section -->
+			<div class="info_section">
+				<div class="box info_box ">
+					<h2>Publishing info.</h2>
+					<div class="box_wrap">
+						<table>
+							<caption>Encoding, Cross Browsing, History Infomation</caption>
+							<colgroup><col width="100px" /><col width="150px" /><col width="100px" /><col width="150px" /></colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">History</th>
+									<td colspan="3">
+										TODO LIST
+										<textarea class="history_area">
+1. ID 기입 필수
+1. 하나의 셀당 하나의 요건 
+1. 요건 중복시 tr.child
+										</textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="box link_box ">
+					<h2>Link info.</h2>
+					<div class="box_wrap">
+						<script>inc_linkInfo();</script>
+					</div>
+				</div>
+				<div class="box filter_box">
+					<h2>Filter.</h2>
+					<div class="box_wrap">
+						<div class="filter_rate">
+							<script>inc_filter();</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //info_section -->
+		</div>
+		<!-- //header -->
+
+		<!-- content -->
+		<div id="content">
+
+<!-- **************************************************
+* Start of Worklist
+************************************************** -->
+
+
+<!-- --------------------------------------------------
+// [NOTI]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap inspact_wrap todo_wrap">
+	<h3>NOTI</h3>
+	<table width="100%;">
+		<script> inc_IAHead_modify();</script>
+		<tbody>
+			<tr>
+				<td class="id">NO001</td>
+				<td class="depth2">개인정보 캡쳐</td>
+				<td class="depth3"> 1. 매주 금요일  2. 매월 19일(휴일시 18일) <br>
+					3. 저장위치 : - Z:\0000.공통\개인정보캡처, - Z:\4000.UIUX[임시]\4100.공통\4190.개인정보캡처</td>
+				<td class="path"></td>
+				<td class="plan">N/A</td>
+				<td class="corder">ALL</td>
+				<td class="ddate">N/A</td>
+				<td class="rdate">N/A</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [TODO]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap inspact_wrap todo_wrap">
+	<h3>TODO</h3>
+	<table width="100%;">
+		<script> inc_IAHead_modify();</script>
+		<tbody>
+			<tr>
+				<td class="id">TD005</td>
+				<td class="depth2">중간보고 시연</td>
+				<td class="depth3">1.  일시 : 9. 9 (목) 14시 , 2.  장소 : 프로젝트룸 1회의실 </td>
+				<td class="path"></td>
+				<td class="plan">오창교</td>
+				<td class="corder"></td>
+				<td class="ddate">8/9</td>
+				<td class="rdate"></td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">TD004</td>
+				<td class="depth2">퍼블리싱 검수</td>
+				<td class="depth3">
+					 1) 네티브 최종 검수완료(고객 및 기획, 디자인 검수완료 버전) 버전이 개발팀에게 전달(개발서버 SVN 형상관리)되기전 UI/UX파트에서 퍼블화면을 관리할 수 있는 시스템 마련 <br> 2) 네티브는 로컬 SVN으로 검수 진행하고 고객에게는 파일로 전달 등 고객 검수방법 마련 -->기획/디자인파트에 SVN 설치및 퍼블 작업리스트 사용법 교육 진행요망
+				</td>
+				<td class="path"></td>
+				<td class="plan">오창교</td>
+				<td class="corder">최미경</td>
+				<td class="ddate">8/9</td>
+				<td class="rdate"></td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">TD003</td>
+				<td class="depth2">worklist</td>
+				<td class="depth3">worklist 모달 치우침 현상 (모바일 모드)</td>
+				<td class="path"></td>
+				<td class="plan">오창교</td>
+				<td class="corder">고재광</td>
+				<td class="ddate">8/6</td>
+				<td class="rdate"></td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">TD002</td>
+				<td class="depth2">[대표] 대출 </td>
+				<td class="depth3">대출 화면 ID 전체 변경건</td>
+				<td class="path"></td>
+				<td class="plan">고재광</td>
+				<td class="corder">권오택</td>
+				<td class="ddate">8/4</td>
+				<td class="rdate">8/5</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+					<div class="desc">기획 : 노우선 책임 확인</div>
+					<div class="desc">8/4 : 기존 금리인하요구권 작업리스트에서 주석 처리함</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">TD001</td>
+				<td class="depth2">UXwriting</td>
+				<td class="depth3">1. 띄어쓰기   예  ~할 시, 2. 기호와 문자 띄어쓰기 (- 기 하이픈 뒤, 3. 조사 활용, 4. 영문 국문으로 표기, 5. 외래어 표기, 5. 문어체 -->구어체로 표기, 6. 일관성 있게 단어 통일 (전자우편 -->이메일), 7 .대명사(국민은행-->KB국민은행), 8. 오타</td>
+				<td class="path"></td>
+				<td class="plan">오창교</td>
+				<td class="corder">All</td>
+				<td class="ddate">8/3</td>
+				<td class="rdate"></td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">
+						8/3 : 4500.UXwritng/4510.UXwriting 산출물/[와이어링크] 현대해상 워싱 1차본
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [개인]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap inspact_wrap todo_wrap">
+	<h3>개인</h3>
+	<table width="100%;">
+		<script> inc_IAHead_modify();</script>
+		<tbody>
+			<tr>
+				<td class="id">HA001</td>
+				<td class="depth2"></td>
+				<td class="depth3"></td>
+				<td class="path"></td>
+				<td class="plan"></td>
+				<td class="corder"></td>
+				<td class="ddate"></td>
+				<td class="rdate"></td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- --------------------------------------------------
+// [기업]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap inspact_wrap todo_wrap">
+	<h3>기업</h3>
+	<table width="100%;">
+		<script> inc_IAHead_modify();</script>
+		<tbody>
+			
+			<tr>
+				<td class="id">HB016</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">1. 보유계약 현황 리스트 누락 2. 화면 child로 분리 필요</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01080040.html" target="_blank">PSPG01080040</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB015</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">문구 재확인 : 투자자 정보파악 절차 거부 확인 > 투자자 유형보다 위험도가 높은 상품 선택 확인</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060066.html" target="_blank">PSPG01060066</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB014</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">운용설명서 확인 버튼 active 상태는 운용설명서 확인 완료</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060063.html" target="_blank">PSPG01060063</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB013</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">1. 상품설명서 확인 버튼 active 상태는 상품설명서 확인 완료 2. alert 제거(공통)</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060061.html" target="_blank">PSPG01060061</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB012</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">1.체크박스 체크된상태 및 인풋 Disabled 제거  케이스 화면에 보여주세요, 2. 이전 버튼 클릭시 alert 제거(공통) </td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060060.html" target="_blank">PSPG01060060</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB011</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">스텝 재학인</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060060.html" target="_blank">PSPG01060060</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB010</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">Case 별로 PSPG01060040 , PSPG01060040_02 로 구분 필요(작업리스트에 tr.child 삽입)</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060040.html" target="_blank">PSPG01060040</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB009</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">스텝 누락</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060023.html" target="_blank">PSPG01060023</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">진행중</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">8/19 : (공통)약관팝업 추후반영 예정</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB008</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">스텝 누락, alert 제거</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060022.html" target="_blank">PSPG01060022</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">진행중</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">8/19 : (공통)약관팝업 추후반영 예정</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB007</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">스텝 누락, alert 제거</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060021.html" target="_blank">PSPG01060021</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">진행중</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">8/19 : (공통)약관팝업 추후반영 예정</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB006</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">약관버튼 영역 화살표 확인요청, 라이오버튼 클릭시 얼럿팝업 제거(공통)</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060020.html" target="_blank">PSPG01060020</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB005</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">공통 : 팝업, 얼럿 가이드 및 팝업에 팝업 대응</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060011.html" target="_blank">PSPG01060011</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB004</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">팝업 클릭 이벤트 제거및  팝업 버튼추가 요청  : <a href="CG/CM/CGCM02020011.html" target="_blank">참고하세요</a></td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01060011.html" target="_blank">PSPG01060011</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB003</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">타이틀 문구 재확인 : 가입자 교육내용 안내 > 교육내용 안내</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01040010.html" target="_blank">PSPG01040010</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB002</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">공통 : Table Caption 누락</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01030010.html" target="_blank">PSPG01030010</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="id">HB001</td>
+				<td class="depth2">퇴직연금</td>
+				<td class="depth3">연금설계 시뮬레이션 : 이전, 다음 버튼 삭제 확인</td>
+				<td class="path"><a href="../../app/PS/PG/PSPG01030010.html" target="_blank">PSPG01030010</a></td>
+				<td class="plan">고재광</td>
+				<td class="corder">이지연</td>
+				<td class="ddate">8/19</td>
+				<td class="rdate">8/19</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+</div><!-- //content -->
+</div><!-- //wrap -->
+</body>
+</html>
+
+
+
+

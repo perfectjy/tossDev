@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: true, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            하이현님이
+                            <div class="governing_select">
+                                <select id="stateContract" name="" title="계약 상태">
+                                    <option value="1" selected>계약자</option>
+                                    <option value="2">피보험자</option>
+                                    <option value="3">친권자</option>
+                                </select>
+                            </div>
+                            인 <br class="mo_br">보험계약입니다.
+                        </h2>
+                    </div>
+
+                    <!-- 다중 선택 fliter -->
+                    <div class="filter_wrap multi">
+                        <div class="insu_result">
+                            $유지$ 중인 계약이 <span class="result_cnt"><strong>$43건$</strong></span> 있어요.
+                        </div>
+
+                        <a href="#SortingBtns" class="m_toggle_btn"><span class="ico"></span>상태</a>
+
+                        <div id="SortingBtns" class="filter_inner">
+                            <div class="filter_label">계약상태 선택</div>
+                            
+                            <div class="filters">
+                                <span class="chk_item">
+                                    <input type="radio" id="filter1" name="chk_filter" checked>
+                                    <label for="filter1">유지</label>
+                                </span>
+                                <span class="chk_item">
+                                    <input type="radio" id="filter2" name="chk_filter">
+                                    <label for="filter2">실효</label>
+                                </span>
+                                <span class="chk_item">
+                                    <input type="radio" id="filter3" name="chk_filter">
+                                    <label for="filter3">만기</label>
+                                </span>
+                                <span class="chk_item">
+                                    <input type="radio" id="filter4" name="chk_filter">
+                                    <label for="filter4">해지</label>
+                                </span>
+                                <span class="chk_item">
+                                    <input type="radio" id="filter5" name="chk_filter">
+                                    <label for="filter5">전체</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 보험상품 리스트 -->
+                    <div class="insu_list">
+                        <!-- CASE1) 자동차보험 -->
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <span class="tag continue">유지</span>
+                                <div class="insu_name">Hicar개인용자동차보험</div>
+                                <div class="car_number">34가12**</div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="m_toggle_cont" id="ToggleCont1">
+                                    <div class="info_list">
+                                        <dl>
+                                            <dt>계약번호</dt>
+                                            <dd>M20211345678-000</dd>
+                                            <dt>계약자</dt>
+                                            <dd>하이현</dd>
+                                            <dt>피보험자</dt>
+                                            <dd>하이현 외 2명</dd>
+                                            <dt>보험기간</dt>
+                                            <dd>2020.11.23~2021.11.23</dd>
+                                            <dt>보험료</dt>
+                                            <dd>231,235,000원</dd>
+                                        </dl>
+                                    </div>
+                                </div>   
+                                <a href="#ToggleCont1" class="m_toggle_btn"><span class="arrow">상세보기</span></a>
+                                <div class="bar_chart">
+                                    <p>만기까지 <span>85일</span> 남았습니다.</p>
+                                    <div class="bar_graph">
+                                        <div class="bar" style="width:63%"></div>
+                                    </div>
+                                    <span class="start"><span>시작일</span>2020.11.23</span>
+                                    <span class="end"><span>종료일</span>2021.11.23</span>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="btn line">상세조회</a>
+                            </div>
+                        </div>
+
+                        <!-- CASE2) 장기/일반보험 -->
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <span class="tag continue">유지</span>
+                                <div class="insu_name">무배당행복을다모은보험(Hi0804)</div>
+                                <div class="insu_pay">
+                                    월 <span class="pay">120,000원</span>
+                                </div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="m_toggle_cont" id="ToggleCont2">
+                                    <div class="info_list">
+                                        <dl>
+                                            <dt>계약번호</dt>
+                                            <dd>L20062142296</dd>
+                                            <dt>계약자</dt>
+                                            <dd>하이현</dd>
+                                            <dt>피보험자</dt>
+                                            <dd>하이현 외 2명</dd>
+                                            <dt>보험기간</dt>
+                                            <dd>2015.04.23~2034.04.23</dd>
+                                        </dl>
+                                    </div>
+                                </div>   
+                                <a href="#ToggleCont2" class="m_toggle_btn"><span class="arrow">상세보기</span></a>
+                                <div class="bar_chart">
+                                    <p>2021.05까지 <span>26회</span> 납입하였습니다.</p>
+                                    <div class="bar_graph">
+                                        <div class="bar" style="width:63%"></div>
+                                    </div>
+                                    <span class="start"><span>시작일</span>2019.05</span>
+                                    <span class="end"><span>전체횟수</span>60회(2024.05)</span>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#none" class="btn line">상세조회</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- paging -->
+                    <div class="Paging" aria-label="pagination">
+                        <ul>
+                            <li><button type="button" class="prev"><span class="offscr">이전페이지</span></button></li>
+                            <!-- 현재 페이지일 때 class="current" 추가 -->
+                            <li><a href="#" class="current">1<span class="offscr">현재페이지</span></a></li>
+                            <li><a href="#">2<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">3<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">4<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">5<span class="offscr">페이지</span></a></li>
+                            <li><button type="button" class="next"><span class="offscr">다음페이지</span></button></li>
+                        </ul>
+                    </div>
+                    
+                    <hr>
+                
+                    <h3 class="h3">
+                        하이현<span>님,</span> 긴급자금<span>이 필요하신가요?</span>
+                    </h3>
+
+                    <div class="loan_board">
+                        <a href="#" title="보험계약대출 바로가기">
+                            <p class="loan_tit">지금 바로 대출 가능한 금액</p>
+                            <p class="loan_money">
+                                <span class="value">7,470,000</span> 원
+                            </p>
+                            <span class="date">2021.05.23 기준</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

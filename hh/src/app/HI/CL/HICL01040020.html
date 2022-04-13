@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 처리현황조회', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            <!--
+                                1. 보험금청구 접수된 상태 : 보험금청구가 접수되었습니다.
+                                2. 사고접수 확정된 상태 : 사고접수가 확정되었습니다.
+                                3. 서류심사 상태 : 서류심사 중입니다.
+                                4. 현장심사 상태 : 현장심사 중입니다.
+                                5. 심사결재 상태 : 심사결재 중입니다.
+                                6. 처리종결 상태 : 처리종결 되었습니다.
+                            -->
+                            보험금청구가 접수되었습니다.
+                        </h2>
+                    </div>
+                    
+                    <h3 class="h3">청구내역</h3>
+                    <!-- 접수유형이 일반상해, 교통상해일 때 -->
+                    <table class="tbl_row">
+                        <caption>접수번호,사고유형,사고일시,접수일시,접수내용,사고장소</caption>
+                        <colgroup>
+                            <col style="width:180px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">접수번호</th>
+                                <td>2004355018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사고유형</th>
+                                <td>일반상해</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사고일시</th>
+                                <td>2021.06.09 18:10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">접수일시</th>
+                                <td>2021.06.09 20:30</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">접수내용</th>
+                                <td>집 앞 계단에서 넘어져 타박상</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사고장소</th>
+                                <td>집 앞</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--// 접수유형이 일반상해, 교통상해일 때 -->
+
+                    <!-- 접수유형이 질병일 때 -->
+                    <table class="tbl_row">
+                        <caption>접수번호,사고유형,사고일시,접수일시,접수내용,치료받은 병원</caption>
+                        <colgroup>
+                            <col style="width:180px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">접수번호</th>
+                                <td>2004355018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사고유형</th>
+                                <td>일반상해</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사고일시</th>
+                                <td>2021.06.09 18:10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">접수일시</th>
+                                <td>2021.06.09 20:30</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">접수내용</th>
+                                <td>급성 부비동염</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">치료받은 병원</th>
+                                <td>김내과의원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--// 접수유형이 질병일 때 -->
+
+                    <h3 class="h3">지급내역</h3>
+                    <!-- 지급 내역 없을 때 -->
+                    <div class="no_list">
+                        <p>지급된 내역이 없습니다.</p>
+                    </div>
+                    <!--// 지급 내역 없을 때 -->
+
+                    <div class="each_select_list">
+                        <!-- 지급 전 -->
+                        <div class="rd_box contract">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">L20062142296</span>
+                                    <p class="name">무배당행복을다모은보험(Hi0804)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>
+                                        <dt>지급일자</dt>
+                                        <dd>지급 전입니다.</dd>
+                                        <dt>지급액</dt>
+                                        <dd>지급 전입니다.</dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="btn_list"><span class="offscr">상세 지급내역</span></a>
+                            </div>
+                        </div>
+                        <!--// 지급 전 -->
+
+                        <!-- 지급 후 -->
+                        <div class="rd_box contract">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">L20062142296</span>
+                                    <p class="name">무배당행복을다모은보험(Hi0804)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>
+                                        <dt>지급일자</dt>
+                                        <dd>2021.06.13</dd>
+                                        <dt>지급액</dt>
+                                        <dd>224,557원</dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="btn_list"><span class="offscr">상세 지급내역</span></a>
+                            </div>
+                        </div>
+                        <!--// 지급 후 -->
+
+                        <!-- 부지급종결 시 -->
+                        <div class="rd_box contract">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">L2009L237155</span>
+                                    <p class="name">무배당행복을다모은보험(Hi0804)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>
+                                        <dt>종결일자</dt>
+                                        <dd>2021.06.13</dd>
+                                        <dt>지급액</dt>
+                                        <dd>보험금이 지급되지 않았습니다.</dd>
+                                    </dl>
+                                </div>
+                                <a href="#" class="btn_list"><span class="offscr">상세 지급내역</span></a>
+                            </div>
+                        </div>
+                        <!--// 부지급종결 시 -->
+                    </div>
+
+                    <div class="btn_conts">
+                        <button type="button" class="btn line"><span>보험금지급 안내문 받기</span></button>
+                    </div>
+
+                    <h3 class="h3">접수된 서류</h3>
+                    <div class="list_addfile img">
+                        <div class="addfile_item"><a href="#"><img src="/src/assets/images/_dummy/doc_sample.png" alt="첨부파일"></a></div>
+                        <div class="addfile_item"><a href="#"><img src="/src/assets/images/_dummy/doc_sample.png" alt="첨부파일"></a></div>
+                        <div class="addfile_item"><a href="#"><img src="/src/assets/images/_dummy/doc_sample.png" alt="첨부파일"></a></div>
+                        <div class="addfile_item"><a href="#"><img src="/src/assets/images/_dummy/doc_sample.png" alt="첨부파일"></a></div>
+                        <div class="addfile_item"><a href="#"><img src="/src/assets/images/_dummy/doc_sample.png" alt="첨부파일"></a></div>
+                    </div>
+                    <div class="btn_conts">
+                        <a href="#" class="link">서류를 팩스로 보내셨나요?</a>
+                    </div>
+
+                    <h3 class="h3">담당자</h3>
+                    <div class="manager">
+                        <div class="contact_info">
+                            <span class="ico personal"></span>
+                            <div class="name">하이상</div>
+                            <div class="phone">
+                                <span>010-1234-5678</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 담당자 배정전 -->
+                    <!-- <div class="no_list">담당자 배정전</div> -->
+
+                    <div class="fixed_btm_btns">                        
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>목록</span></button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

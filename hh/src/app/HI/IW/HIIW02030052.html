@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '친권자불일치', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 친권자불일치 open
+            Dialog.open('#HIIW02030052');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW02030052" class="btn line dialog_open">친권자불일치</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 친권자불일치 팝업 -->
+    <div id="HIIW02030052" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>친권자불일치</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing txt_l">
+                            <div class="governing_title">
+                                스크래핑 결과,<br>
+                                가족관계증명서로 확인된 정보와<br>
+                                입력하신 내용이 다릅니다.
+                            </div>
+                            <p class="info_text">가족관계를 정확하게 입력하신 후 다시 진행해 주세요.</p>
+                        </div>
+
+                        <table class="tbl_row">
+                            <caption>스크래핑 결과</caption>
+                            <colgroup>
+                                <col style="width:150px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">서류</th>
+                                    <td>가족관계증명서</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">확인결과</th>
+                                    <td>불일치</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">관계/이름</th>
+                                    <td>부 / 하이현</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>다시 입력</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

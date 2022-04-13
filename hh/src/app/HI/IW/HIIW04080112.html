@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '가입일', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 가입일 open
+            Dialog.open('#HIIW04080112');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04080112" class="btn line dialog_open">가입일</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 가입일 팝업 -->
+    <div id="HIIW04080112" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>가입일</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <ul class="list_dot">
+                            <li>연금이전을 위한 계좌이체 시 연금저축 가입일은 이체 받는 계좌의 가입일이 새로 적용</li>
+                            <li>단, 신규 개설 계좌로 전액 이체하는 경우, 기존 또는 신규 계좌의 가입일 중 선택 가능</li>
+                            <li>
+                                과세는 선택한 가입일에 따라 일괄 적용<br>
+                                예: 2012.06.01 개설한 연금저축(A)을 보유한 가입자가 2013.05.01 신규 연금저축계좌(B)를 개설하여 전액 이체하는 경우 B계좌의 가입일은 ① 2012.06.01 또는 ② 2013.05.01 중 선택 가능
+                                <ul class="list_bar">
+                                    <li>① 선택 시: 긴 가입기간(10년) 적용, 짧은 연금수령기간(5년) 적용, 해지가산세 적용</li>
+                                    <li>② 선택 시: 짧은 가입기간(5년) 적용, 긴 연금수령기간(10년) 적용, 해지가산세 면제</li>
+                                </ul>
+                            </li>
+                            <li>2013.03.01 기준으로 연금수령조건 변경: (이전) 가입기간 10년 경과 후 수령기간 5년 → (이후) 가입기간 5년 경과 후 수령기간 10년</li>
+                            <li>연금계좌 가입일은 연금 납입액에 최초 입금된 날(기재부 소득세제과 유권해석, 2019.06.12)</li>
+                            <li>가입일은 연금개시요건(55세 이상 및 가입일로부터 5년 경과)과 연금수령연차를 결정하는 기준</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

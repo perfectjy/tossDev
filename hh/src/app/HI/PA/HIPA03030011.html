@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi">  
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#HIPA03030011" title="현재선택"><span>적용이율</span></a></li>
+                                <li class="tab"><a href="#HIPA03030012"><span>공시기준이율</span></a></li>
+                                <li class="tab"><a href="#HIPA03030014"><span>중도해지 및 최저보장이율</span></a></li>
+                                <li class="tab"><a href="#HIPA03030015"><span>보험계약대출 이율표</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HIPA03030011" class="tab_panel">
+                                <h3 class="offscr">적용이율</h3>
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.05.03 / 단위: %</span>
+                                    <span class="opt">
+                                        <select class="sm">
+                                            <option>2021년</option>
+                                            <option>2020년</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                
+                                <table class="tbl_data">
+                                    <caption>해당년도별 기간별 적용이율</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:75px" span="12">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">상품명</th>
+                                            <th scope="col">1월</th>
+                                            <th scope="col">2월</th>
+                                            <th scope="col">3월</th>
+                                            <th scope="col">4월</th>
+                                            <th scope="col">5월</th>
+                                            <th scope="col">6월</th>
+                                            <th scope="col">7월</th>
+                                            <th scope="col">8월</th>
+                                            <th scope="col">9월</th>
+                                            <th scope="col">10월</th>
+                                            <th scope="col">11월</th>
+                                            <th scope="col">12월</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">저축성 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>  
+                                
+                                <h2 class="h3">보장성 공시이율V</h2>
+                                <table class="tbl_data">
+                                    <caption>상품목록</caption>
+                                    <colgroup>
+                                        <col style="width:50%" span="2">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">상품명</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt_l">무배당사랑드림상해보험(Hi1701)</td>
+                                            <td class="txt_l">무배당암스트롱암보험(Hi1701)2종</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당레저의품격상해보험(갱신형)(Hi1701)</td>
+                                            <td class="txt_l">무배당보험의정석건강보험(Hi1701)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당매일안심생활보장상해보험(Hi1701)</td>
+                                            <td class="txt_l">무배당진심을담은운전자보험(Hi1701)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당굿앤굿어린이CI보험(Hi1701)</td>
+                                            <td class="txt_l"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+            
+                                <h2 class="h3">저축성 공시이율V</h2>
+                                <table class="tbl_data">
+                                    <caption>상품목록</caption>
+                                    <colgroup>
+                                        <col style="width:50%" span="2">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">상품명</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt_l">무배당사랑드림상해보험(Hi1701)</td>
+                                            <td class="txt_l">무배당암스트롱암보험(Hi1701)2종</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당레저의품격상해보험(갱신형)(Hi1701)</td>
+                                            <td class="txt_l">무배당보험의정석건강보험(Hi1701)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당매일안심생활보장상해보험(Hi1701)</td>
+                                            <td class="txt_l">무배당진심을담은운전자보험(Hi1701)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt_l">무배당굿앤굿어린이CI보험(Hi1701)</td>
+                                            <td class="txt_l"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>      
+                            <div id="HIPA03030012" class="tab_panel">
+                                <h3 class="offscr">공시기준이율</h3>
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.05.03 / 단위: %</span>
+                                    <span class="opt">
+                                        <a href="#none" class="btn ass">공시기준 산출방법</a>
+                                        <a href="#" class="btn ass"><span class="down">엑셀 다운로드</span></a>
+                                    </span>
+                                </div>
+                                
+                                <table class="tbl_data">
+                                    <caption>해당년도별 기간별 적용이율</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:20%" span="3">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">상품명</th>
+                                            <th scope="col">기준율</th>
+                                            <th scope="col">조정률</th>
+                                            <th scope="col">적용이율</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율V</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율Ⅳ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">저축성 공시이율Ⅳ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율Ⅳ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율Ⅳ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율Ⅲ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">저축성 공시이율Ⅲ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율Ⅲ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율Ⅲ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율Ⅱ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">저축성 공시이율Ⅱ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율Ⅱ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율Ⅱ</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">보장성 공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">저축성 공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">연금저축 공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">무배당 연금 공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">장기손해보험 공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">개인연금 신공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="txt_l">자산연계형 신공시이율</th>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                            <td>1.40</td>
+                                        </tr>
+                                    </tbody>
+                                </table>     
+                            </div>    
+                            <div id="HIPA03030014" class="tab_panel">
+                                <h3 class="offscr">중도해지 및 최저보장이율</h3>
+                                <div class="search_box">
+                                    <div class="form_in">
+                                        <input type="text" class="inp_txt" placeholder="상품명 입력" title="검색어">
+                                        <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                                    </div>
+                                </div>
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.05.03</span>
+                                </div>
+                                <table class="tbl_data">
+                                    <caption>상품별 중도해지 및 최저보장이율</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:110px">
+                                        <col style="width:200px">
+                                        <col style="width:270px">
+                                        <col style="width:150px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">상품명</th>
+                                            <th scope="col">경과기간</th>
+                                            <th scope="col">중도해지율</th>
+                                            <th scope="col">최저보장이율</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="4" class="txt_l">뉴마이라이프보험</th>
+                                            <td rowspan="4">-</td>
+                                            <td>1년 미만</td>
+                                            <td>우대금리 -2.00%</td>
+                                            <td rowspan="4">6.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1년 이상~2년 미만</td>
+                                            <td>우대금리 -1.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2년 이상~3년 미만</td>
+                                            <td>우대금리</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3년 이상</td>
+                                            <td>우대금리 +1.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="9" class="txt_l">신플러스보험</th>
+                                            <td rowspan="4">3년만기</td>
+                                            <td>1년 미만</td>
+                                            <td>6.50%</td>
+                                            <td rowspan="9">6.50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2년 미만</td>
+                                            <td>1년만기 정기예금이율x90.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3년 미만</td>
+                                            <td>1년만기 정기예금이율x105.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>만기</td>
+                                            <td>1년만기 정기예금이율x120.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5">4년만기</td>
+                                            <td>1년 미만</td>
+                                            <td>6.50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2년 미만</td>
+                                            <td>1년만기 정기예금이율x90.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3년 미만</td>
+                                            <td>1년만기 정기예금이율x100.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4년 미만</td>
+                                            <td>1년만기 정기예금이율x110.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>만기</td>
+                                            <td>1년만기 정기예금이율x120.00%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>    
+                            <div id="HIPA03030015" class="tab_panel">
+                                <h3 class="offscr">보험계약대출 이율표</h3>
+                                <div class="report_list">
+                                    <ul>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2021년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2020년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2019년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2018년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2017년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2016년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2015년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2014년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">2013년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                            <p class="tit">2000년2002년 이율표</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none">
+                                                <p class="tit">1998년~1999년 이율표</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

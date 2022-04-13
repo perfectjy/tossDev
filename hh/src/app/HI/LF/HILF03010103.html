@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '아파트담보대출', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HILF30010103');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HILF30010103" class="btn line dialog_open">대출가능금액조회완료</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <div id="HILF30010103" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>대출가능금액조회완료</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <h2 class="governing_title">
+                                고객님의 대출가능금액은<br>
+                                <strong class="highlight">5,112,374원</strong>입니다.<br>
+                            </h2>
+                            <p class="info_text">총부채상환비율 적용 등 대출심사기준에 따라 대출가능금액이 변동될 수 있으며, 대출가능금액 조회일과 대출금 지급일이 다를 경우에도 대출가능금액이 변동될 수 있습니다.</p>
+                        </div>
+                        <table class="tbl_row">
+                            <caption>일반거래가, 매매하한가, 대출기간, 상환방법</caption>
+                            <colgroup>
+                                <col style="width:23%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">일반거래가</th>
+                                    <td>165,000만원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">매매하한가</th>
+                                    <td>155,000만원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대출기간</th>
+                                    <td>30년</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="list_dot">
+                            
+                            <li>대출신청은 지점을 방문해 주시기 바랍니다.<br>평일 09:00 ~ 18:00(주말/공휴일 제외)
+                                <div class="nor_txt">
+                                    <a href="#none" class="btn base"><span class="map">지점찾기</span></a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 200107 기획자 요청으로 일시주석 -->
+                        <!-- <div class="banner_box">
+                            <strong class="banner_title"><span>하이현</span>님, <span>추가자금</span>이 필요하신가요?</strong>
+                            <a href="#" class="banner">
+                                <strong>신용대출 한도 알아보기</strong>
+                                <p>낮은 이율과 넉넉한 한도, 증빙서류없이 간편하게 추가자금을 신청하세요.</p>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>상담신청</span></button>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

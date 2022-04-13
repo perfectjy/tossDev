@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '인정자 본인인증 요청', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HIIW03080021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW03080021" class="btn line dialog_open">(팝업)보험료 변동 안내</a>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서류접수 팝업 -->
+    <div id="HIIW03080021" class="dialog bottom">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서류접수 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <h2 class="governing_title info_document">국토교통부 조회 결과 <span class="highlight">34가23**</span>자동차에 대한 양도내역이 
+                                존재하지 않습니다.<br class="mo_br"> <span class="highlight">서류심사접수 </span>를 진행하시겠습니까? </h2>
+                            <p class="info_text">양도/말소 실제 진행 시점과 국토교통부 신고시점이 다를 수 있습니다.
+                                관련 서류를 직접 등록하시면 서류심사 후 해지 처리를 진행해 드립니다. </p>
+                        </div>
+                        <h3 class="h3">제출서류 안내</h3>
+                        <h4 class="h4">양도/말소 공통서류</h4>
+                        <ul class="list_dot">
+                            <li>계약자 본인 명의의 통장사본</li>
+                        </ul>
+                        <h4 class="h4">말소 증명서류(하기 서류 중 택1)</h4>
+                        <ul class="list_dot">
+                            <li>말소사실증명서</li>
+                            <li>자동차등록원부</li>
+                        </ul>
+                        <h4 class="h4">양도 증명서류(하기 서류 중 택1)</h4>
+                        <ul class="list_dot">
+                            <li>매매계약서</li>
+                            <li>명의변경된 차량등록증</li>
+                            <li>자동차등록원부</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn second"><span>취소</span></button>
+                    <button type="button" class="btn primary"><span>서류심사 접수</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

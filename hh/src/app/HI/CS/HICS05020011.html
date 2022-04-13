@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '7 Heart Service 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#heartService');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#heartService" class="btn line dialog_open">7 Heart Service 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="heartService" class="dialog full">
+        <div class="dialog_wrap b heart_srv">
+            <div class="dialog_header">
+                <h1>7 Heart Service 소개</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section no_foot">
+                    <div class="seven_heart_srv">
+                        <div class="heart_is">
+                            <h2><span class="offscr">7 Heart Service</span></h2>
+                            <p>고객님께 최상의 서비스를 제공하기 위해 현대해상이 지키는 7가지 마음입니다.</p>
+                        </div>
+                        <div class="seven_heart">
+                            <div class="seven_slide">
+                                <div class="item s1">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">고장출동</strong>
+                                            <p>고객님의 긴급 상황을 신속하게 해결해 드리려는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>현장 도착 즉시 고객님께 명함을 전달하고 전문적인 업무 태도와 친절한 미소로 서비스를 제공하겠습니다.</li>
+                                            <li><span>02</span>도착 예정 시간 보다 지연되는 경우 고객님께 연락을 드려 양해를 구하고 안심시켜 드리겠습니다.</li>
+                                            <li><span>03</span>고객님의 안전한 출발을 확인한 후 서비스를 종료하며, 먼저 현장을 떠나는 경우에는 양해를 구하겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="item s2">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">하이플래너</strong>
+                                            <p>고객님의 미래를 어제보다 더 빛나게 설계하려는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>3대 기본지키기를 통해 완전판매를 실천하겠습니다.</li>
+                                            <li><span>02</span>갱신, 실효, 이관계약은 고객님이 질문하시기 전 먼저 연락드리겠습니다.</li>
+                                            <li><span>03</span>첫 보상청구 고객님의 서류접수는 직접 챙기겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="item s3">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">고객콜센터</strong>
+                                            <p>고객님의 요청을 통화 한 번에 해결하려는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>친절한 응대만큼이나 정확하게 답변하겠습니다.</li>
+                                            <li><span>02</span>고객님 말씀을 중간에 끊지 않고 끝까지 경청하겠습니다.</li>
+                                            <li><span>03</span>불만을 말씀하셔도 만족시켜 드릴 기회로 삼겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="item s4">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">현장출동</strong>
+                                            <p>사고로 당황하신 고객님을 안심시켜 드리려는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>사고현장 도착 즉시 고객님의 안위를 먼저 살피고 안전한 곳으로 모신 후 현장조치를 시행하겠습니다.</li>
+                                            <li><span>02</span>첫 사고 고객님과 여성고객님은 먼저 경찰서 동행을 제안하겠습니다.</li>
+                                            <li><span>03</span>고객님 입장에서 불리하지 않도록 전문적인 현장조사로 힘이 되겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="item s5">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">장기보상</strong>
+                                            <p>고객님의 보험금을 세심하게 챙겨 드리는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>고객님께서 보험가입에 만족감을 느끼실 수 있도록 신속하게 처리하겠습니다.</li>
+                                            <li><span>02</span>지급된 보험금과 관련하여 고객님께서 궁금해하시지 않도록 상세내역은 반드시 전화로 안내하겠습니다.</li>
+                                            <li><span>03</span>지연 처리 시 반드시 먼저 안내드리고 양해를 구하겠습니다.</li>
+                                        </ol>
+                                    </div>                                        
+                                </div>
+                                <div class="item s6">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">자동차보상</strong>
+                                            <p>고객님이 믿고 의지할 수 있도록 사고를 문제 없이 처리한다는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>첫 안내 시 고객님의 관심사항을 파악하여 사고가 종결할 때까지 집중관리 하겠습니다.</li>
+                                            <li><span>02</span>병원/정비업체 방문 시 신뢰감을 드리는 전문적인 자세로 꼼꼼히 살피겠습니다.</li>
+                                            <li><span>03</span>고객님과의 약속은 반드시 지키고, 담당자와 어려움 없이 통화할 수 있도록 하겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="item s7">
+                                    <div class="inner">
+                                        <div class="title-box">
+                                            <strong class="tit">고객창구</strong>
+                                            <p>고객님의 어려운 발걸음을 헤아리는 마음</p>
+                                        </div>
+                                        <ol>
+                                            <li><span>01</span>정확한 업무처리로 고객님께서 방문하신 목적을 달성할 수 있도록 하겠습니다.</li>
+                                            <li><span>02</span>본인의 업무가 아니더라도 고객님께서 요청하신 일이라면 적극적으로 돕겠습니다.</li>
+                                            <li><span>03</span>자녀를 동반하신 고객님께는 세심한 배려로 응대하겠습니다.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

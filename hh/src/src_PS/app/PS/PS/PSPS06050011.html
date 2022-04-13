@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+						<h2 class="governing_title"><strong class="highlight">확정급여형(DB)제도</strong>에 대한 교육현황을 확인하세요.</h2>
+					</div>
+
+					<div class="tab_section t1">
+						<div class="tab_list tab_nav">
+							<ul>
+								<li class="tab"><a href="#panel01"><span>전체 이수현황</span></a></li>
+								<li class="tab active"><a href="#panel02"><span>가입자별 이수현황</span></a></li>
+							</ul>
+						</div>
+						<div class="tab_contents">
+							<div id="panel01" class="tab_panel">
+								<h2 class="offscr">전체 이수현황</h2>
+							</div>
+							<div id="panel02" class="tab_panel">
+								<h2 class="offscr">가입자별 이수현황</h2>
+								
+								<div class="comp">
+									<ul class="list_dot">
+										<li>우리 회사 가입자들의 퇴직연금 교육 이수 현황을 한눈에 확인하실 수 있습니다.</li>
+										<li>정기교육(우편 또는 전자우편) 이수 현황은 교육실시 후 익월부터, 온라인교육 이수 현황은 상시 확인하실 수 있습니다.</li>
+										<li>성공적인 퇴직연금 자산운용과 노후준비를 위해 반드시 퇴직연금 교육자료를 배포해주시기 바랍니다.(필수사항)</li>
+									</ul>
+								</div>
+
+								<div class="comp">
+									<div class="form_srch_wrap">
+										<div class="search_item">
+											<label for="eduYear" class="form_label">교육연도</label>
+											<div class="item">
+												<select id="eduYear" name="" title="교육연도">
+													<option value="0" selected>2009년</option>
+												</select>
+											</div>
+										</div>
+										<div class="search_item">
+											<label for="eduMethod" class="form_label">교육방법</label>
+											<div class="item">
+												<select id="eduMethod" name="" title="교육방법">
+													<option value="0" selected>온라인</option>
+													<option value="1">우편</option>
+												</select>
+											</div>
+										</div>
+										<div class="search_item">
+											<label for="eduComplete" class="form_label">이수여부</label>
+											<div class="item">
+												<select id="eduComplete" name="" title="이수여부">
+													<option value="0" selected>전체</option>
+													<option value="1">완료</option>
+													<option value="2">미완료</option>
+												</select>
+											</div>
+										</div>
+										<div class="btn_search">
+											<button type="button" class="btn primary"><span class="search">조회</span></button>
+										</div>
+									</div><!-- // form_srch_wrap -->
+								</div>
+
+								<div class="comp">
+									<div class="tbl_top_info">
+										<div class="opt">
+											<a href="#;" class="btn ass"><span class="down">이수현황 엑셀 다운로드</span></a>
+										</div>
+									</div>
+									<table class="tbl_data">
+										<caption>이수현황에 대한 정보</caption>
+										<colgroup>
+											<col style="width:auto;">
+											<col style="width:160px;">
+											<col style="width:150px;" span="6">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="rowgroup" rowspan="2">이름</th>
+												<th scope="rowgroup" rowspan="2">주민등록번호</th>
+												<th scope="colgroup" colspan="3">정기교육</th>
+												<th scope="colgroup" colspan="3">온라인교육</th>
+											</tr>
+											<tr>
+												<th scope="col">수료여부</th>
+												<th scope="col">교육방법</th>
+												<th scope="col">수료일자</th>
+												<th scope="col">1강 수료여부</th>
+												<th scope="col">2강 수료여부</th>
+												<th scope="col">수료일자</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>홍*동</td>
+												<td>800101-1******</td>
+												<td>Y</td>
+												<td>우편/전자우편</td>
+												<td>YYYY.MM.DD</td>
+												<td>Y</td>
+												<td>N</td>
+												<td>없음</td>
+											</tr>
+											<tr>
+												<td>홍*동</td>
+												<td>800101-1******</td>
+												<td>N</td>
+												<td>우편/전자우편</td>
+												<td>YYYY.MM.DD</td>
+												<td>Y</td>
+												<td>Y</td>
+												<td>YYYY.MM.DD</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- 내역 없을 경우 -->
+									<div class="no_list"><p>이수현황 내역이 없습니다.</p></div>			
+								</div>
+								
+								<div class="Paging" aria-label="pagination">
+									<ul>
+										<li> <button type="button"  class="prev"><span class="offscr">이전페이지</span></button> </li>
+										<li> <a href="#" class="current">1<span class="offscr">현재페이지</span></a> </li>
+										<li> <a href="#">2<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">3<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">4<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">5<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">6<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">7<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">8<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">9<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">10<span class="offscr">페이지</span></a> </li>
+										<li> <button type="button" class="next"><span class="offscr">다음페이지</span></button> </li>
+									</ul>
+								</div>
+								<!--// pagination -->	
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <!-- 하이플래너 css -->
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/hi.css">    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '하이플래너 검색', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // open
+            Dialog.open('#HPSH00000011');
+        });
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HPSH00000011" class="btn line dialog_open">지도보기</a>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+    <div id="HPSH00000011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>지도보기</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section no_foot">
+                    <div class="hi_p_wrap">
+                        <div class="hi_p_item">
+                            <p class="office"><strong>김현대</strong>중구사업부 광화문 제2지점</p>
+                            <p>서울 강남구 테헤란로 123, 1층</p>
+                            <p class="tel_number">1588-5656</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map_wrap">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

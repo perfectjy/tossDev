@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 환급금 조회 open
+            Dialog.open('#HIIW01010025');
+
+            // case1) 만기환급금 선택
+            $(document).off('change.case1').on('change.case1', '#case1 input[name=return1]', function() {
+                var selVal = $(this).val(),
+                    reqActive = $('#reqActive'),
+                    reqDisabled = $('#reqDisabled');
+
+                // 만기환급금 선택 시
+                if (selVal === '2') {
+                    reqActive.css({ display: 'none' });
+                    reqDisabled.css({ display: '' });
+                } else {
+                    reqActive.css({ display: '' });
+                    reqDisabled.css({ display: 'none' });
+                }
+            });
+
+            // case3) 연금 선택
+            $(document).off('change.case3').on('change.case3', '#case3 input[name=return3]', function() {
+                var selVal = $(this).val(),
+                    selDate = $('#selectDate');
+
+                if (selVal === '2') {
+                    selDate.css({ display: 'none' });
+                } else {
+                    selDate.css({ display: '' });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW01010025" class="btn line b dialog_open">환급금 조회</a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 환급금 조회 팝업 -->
+    <div id="HIIW01010025" class="dialog full">
+        <div class="dialog_wrap big">
+            <div class="dialog_header">
+                <h1>환급금 조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="tab_section t1">
+                            <div class="tab_list tab_nav">
+                                <ul class="b">
+                                    <li class="tab active"><a href="#HIIW01010025_tab" title="현재선택"><span>환급금 계산</span></a></li>
+                                    <li class="tab"><a href="#HIIW01010026_tab"><span>환급금<br>지급내역 조회</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="tab_contents">
+                                <div id="HIIW01010025_tab" class="tab_panel">
+                                    <h2 class="offscr">환급금 계산</h2>
+                                    <!-- Case1) 해지환급금 O, 만기환급금 O -->
+                                    <div id="case1" class="form_wrap b">
+                                        <div class="form_list part">
+                                            <span class="form_label">환급금 구분</span>
+                                            <div class="form_item vertical_b">
+                                                <div class="radio_box">
+                                                    <input id="return1_1" type="radio" class="rdo_b" name="return1" value="1" checked>
+                                                    <label for="return1_1">해지환급금</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="return1_2" type="radio" class="rdo_b" name="return1" value="2">
+                                                    <label for="return1_2">만기환급금</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="reqActive" class="form_list">
+                                            <span class="form_label">청구일</span>
+                                            <div class="form_item date_box">
+                                                <input type="text" class="inp_date b" title="청구일" value="2021.06.16" readonly>
+                                            </div>
+                                        </div>
+                                        <div id="reqDisabled" class="form_list" style="display:none;">
+                                            <span class="form_label">청구일</span>
+                                            <div class="form_item">
+                                                <input type="text" title="청구일" class="inp_txt b" value="2021.06.16" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="form_list">
+                                            <span class="form_label">지급일</span>
+                                            <div class="form_item">
+                                                <input type="text" title="지급일" class="inp_txt b" value="2021.06.16" disabled>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn_conts b">
+                                            <button type="button" class="btn ofill b"><span>조회</span></button>
+                                        </div>
+                                    </div>
+                                    <!--// Case1) 해지환급금 O, 만기환급금 O -->
+
+                                    <!-- Case2) 해지환급금 O, 만기환급금 X -->
+                                    <div id="case2" class="form_wrap b">
+                                        <div class="form_list part">
+                                            <span class="form_label">환급금 구분</span>
+                                            <div class="form_item vertical_b">
+                                                <div class="radio_box">
+                                                    <input id="return2" type="radio" class="rdo_b" name="return2" checked>
+                                                    <label for="return2">해지환급금</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_list">
+                                            <span class="form_label">청구일</span>
+                                            <div class="form_item date_box">
+                                                <input type="text" class="inp_date b" title="청구일" value="2021.06.16" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form_list">
+                                            <span class="form_label">지급일</span>
+                                            <div class="form_item">
+                                                <input type="text" title="지급일" class="inp_txt b" value="2021.06.16" disabled>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn_conts b">
+                                            <button type="button" class="btn ofill b"><span>조회</span></button>
+                                        </div>
+                                    </div>
+                                    <!-- Case2) 해지환급금 O, 만기환급금 X -->
+
+                                    <!-- Case3) 연금(저축)보험 상품 -->
+                                    <div id="case3" class="form_wrap b">
+                                        <div class="form_list part">
+                                            <span class="form_label">환급금 구분</span>
+                                            <div class="form_item vertical_b">
+                                                <div class="radio_box">
+                                                    <input id="return3_1" type="radio" class="rdo_b" name="return3" value="1" checked>
+                                                    <label for="return3_1">해지환급금</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="return3_2" type="radio" class="rdo_b" name="return3" value="2">
+                                                    <label for="return3_2">연금</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- '연금'선택 시 비노출 -->
+                                        <div id="selectDate" class="form_list">
+                                            <div class="form_list">
+                                                <span class="form_label">청구일</span>
+                                                <div class="form_item date_box">
+                                                    <input type="text" class="inp_date b" title="청구일" value="2021.06.16" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="form_list">
+                                                <span class="form_label">지급일</span>
+                                                <div class="form_item">
+                                                    <input type="text" title="지급일" class="inp_txt b" value="2021.06.16" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// '연금'선택 시 비노출 -->
+
+                                        <div class="btn_conts b">
+                                            <button type="button" class="btn ofill b"><span>조회</span></button>
+                                        </div>
+                                    </div>
+                                    <!--// Case3) 연금(저축)보험 상품 -->
+
+                                    <!-- Case4) 적립만기환급금 상품 -->
+                                    <div id="case4" class="form_wrap b">
+                                        <div class="form_list part">
+                                            <span class="form_label">환급금 구분</span>
+                                            <div class="form_item vertical_b">
+                                                <div class="radio_box">
+                                                    <input id="return4_1" type="radio" class="rdo_b" name="return4" value="1" checked>
+                                                    <label for="return4_1">해지환급금</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="return4_2" type="radio" class="rdo_b" name="return4" value="2">
+                                                    <label for="return4_2">적립만기환급금</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_list">
+                                            <span class="form_label">청구일</span>
+                                            <div class="form_item date_box">
+                                                <input type="text" class="inp_date b" title="청구일" value="2021.06.16" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form_list">
+                                            <span class="form_label">지급일</span>
+                                            <div class="form_item">
+                                                <input type="text" title="지급일" class="inp_txt b" value="2021.06.16" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="btn_conts b">
+                                            <button type="button" class="btn ofill b"><span>조회</span></button>
+                                        </div>
+                                    </div>
+                                    <!--// Case4) 적립만기환급금 상품 -->
+
+                                    <hr>
+
+                                    <h3 class="h_b">
+                                        해지환급금
+                                        <span class="unit">청구기준일: 2021.06.16</span>
+                                    </h3>
+                                    <table class="tbl_row_b">
+                                        <caption>해지환급금</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">(월) 보험료</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">총 납입보험료</th>
+                                                <td>1,000,000원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">환급률</th>
+                                                <td>120.45%</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">실지급금액(환급금액 - 차감금액)</th>
+                                                <td>2,445,234,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <h3 class="h_b">환급 상세내역</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>환급 상세내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">해지환급금</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">선납보험료환급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">배당적립금</th>
+                                                <td>20,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">환수대상환급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">미지급환급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">미지급이자</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지연지급이자</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">환급금액</th>
+                                                <td>1,200,000,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                
+                                    <h3 class="h_b">차감 상세내역</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>차감 상세내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">기지급환급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">과세대상소득</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">이자소득세</th>
+                                                <td>50,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">추징(가산)세</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">보험계약대출 원금</th>
+                                                <td>50,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">보험계약대출 이자</th>
+                                                <td>500,000원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">차감금액</th>
+                                                <td>50,550,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <hr>
+
+                                    <h3 class="h_b">예상환급금 계산 기본 가정</h3>
+                                    <ul class="list_dot_b">
+                                        <li>당월 포함 미납보험료(부활 보험료)는 오늘 납입하며, 이후 보험료는 납입해당일에 납입합니다.(닥터코리아간병보험은 치매/활동불능 미발생 가정)</li>
+                                        <li>오늘 이후 일체의 계약변경이 없으며, 적립부분 적용이율 및 배당기준율의 변동이 없습니다.(최저보증이율은 오늘 이후로만 적용함)</li>
+                                        <li>보험계약대출 상환금액은 현재 시점으로 계산됩니다.(미래 시점으로 계산하지 않음)</li>
+                                        <li>기지급환급금은 예상환급금에서 공제하여 계산되고, 지급 예상일 기준 미지급된 중도환급금은 미지급한 상태를 가정하여 계산됩니다.</li>
+
+                                        <!-- 해지환급금일 때 문구 -->
+                                        <li>실효(미납해지) 상태일 경우 환급률 및 환급금은 미납보험료를 납부하지 않은 현재의 실효(미납해지) 상태를 기준으로 산출된 것이며, 조회 이후 표기되는 환급률 및 환급금은 미납보험료를 납부한 것으로 가정하여 산출합니다.</li>
+                                        <!--// 해지환급금일 때 문구 -->
+
+                                        <!-- 만기환급금일 때 문구 -->
+                                        <li>갱신만기 환급금은 홈페이지/모바일을 통해 조회할 수 없습니다. 대표콜센터(<span class="tel_number">1588-5656</span>) 또는 계약담당자에게 문의해 주세요.</li>
+                                        <!--// 만기환급금일 때 문구 -->
+                                    </ul>
+
+                                    <!-- '연금 조회' case -->
+                                    <h3 class="h_b">연금 정보</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>연금 정보</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">연금지급기간</th>
+                                                <td>2021.01.02~2080.01.02</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수령형태</th>
+                                                <td>10%혼합형</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수령기간</th>
+                                                <td>5년</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수령방법</th>
+                                                <td>매월</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">예상 총 납입보험료</th>
+                                                <td>11,685,930원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="list_bar_b">지급기간은 수령방법으로 수령기간 내 회차별 기준으로 지급됩니다.</p>
+
+                                    <h3 class="h_b">연도별 예상연금 조회</h3>
+                                    <div class="result_board b">
+                                        <div class="result_text">총 예상 연금합계</div>
+                                        <div class="result_number">1,000,000,000원</div>
+                                    </div>
+                                    <div class="list_data b">
+                                        <div class="data_item">
+                                            <div class="data_header">
+                                                <div class="title">1연차</div>
+                                                <span class="date">확정</span>
+                                            </div>
+                                            <div class="data_cont">
+                                                <dl>
+                                                    <div>
+                                                        <dt>연도/연령</dt>
+                                                        <dd>2029년/55세</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연간 연금합계 </dt>
+                                                        <dd>9,651,860원</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="data_item">
+                                            <div class="data_header">
+                                                <div class="title">2연차</div>
+                                                <span class="date">미확정</span>
+                                            </div>
+                                            <div class="data_cont">
+                                                <dl>
+                                                    <div>
+                                                        <dt>연도/연령</dt>
+                                                        <dd>2030년/56세</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연간 연금합계 </dt>
+                                                        <dd>9,651,860원</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="data_item">
+                                            <div class="data_header">
+                                                <div class="title">3연차</div>
+                                                <span class="date">미확정</span>
+                                            </div>
+                                            <div class="data_cont">
+                                                <dl>
+                                                    <div>
+                                                        <dt>연도/연령</dt>
+                                                        <dd>2031년/57세</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연간 연금합계 </dt>
+                                                        <dd>9,651,860원</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <h3 class="h_b">예상 연금 산출 기본 가정</h3>
+                                    <ul class="list_dot_b">
+                                        <li>기본연금은 수령방법에 의해 지급되며, 그외 연금은 상품별 정해진 방법에 따라 지급됩니다.</li>
+                                        <li>유배당연금 증액/가산연금은 배당기준 및 부리이율에 따라 변동될 수 있습니다.</li>
+                                        <li>당월 포함 미납(연체)보험료는 금일 납입(부활)하며, 이후 보험료는 납입 해당일에 납입함을 가정합니다.</li>
+                                    </ul>
+                                    <!--// '연금 조회' case -->
+
+                                    <!-- Case4) 적립만기환급금 상품 -->
+                                    <h3 class="h_b">적립만기환급금</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>적립만기환급금</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">보험료</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">총 납입보험료</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">총 납입적립보험료 </th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">기지급환급금</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">실지급금액(환급금액 - 차감금액)</span></th>
+                                                <td>2,445,234,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <h3 class="h_b">환급 상세내역</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>환급 상세내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">만기환급금</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">배당적립금</th>
+                                                <td>20,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">환수대상환급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">중도미지급금</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">미지급이자</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지연지급이자</th>
+                                                <td>0원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">환급금액</th>
+                                                <td>1,200,000,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                
+                                    <h3 class="h_b">차감 상세내역</h3>
+                                    <table class="tbl_row_b">
+                                        <caption>차감 상세내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">과세대상소득</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">이자소득세</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">보험계약대출 원금</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">보험계약대출 이자</th>
+                                                <td>100,000원</td>
+                                            </tr>
+                                            <tr class="sum">
+                                                <th scope="row">차감금액</th>
+                                                <td>2,445,234,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="list_bar_b">
+                                        <li>적립만기환급금을 발생일 익월 말일까지 미수령한 경우, 자동으로 추가적립보험료로 납입됩니다. </li>
+                                        <li>기지급환급금: 미수령하여 추가적립보험료로 납입된 직전 적립만기환급금이 있거나, 보험료 미납으로 인하여 보장보험료가 대체납입된 경우 발생합니다. </li>
+                                        <li>대체납입 : 기본보험료를 납입해당월 말일까지 미납한 경우, 납입해당월 말일에 자동으로 적립해지환급금범위 내에서 보장보험료를 대체합니다. 자세한 내용은 약관을 참고해 주세요.</li>
+                                        <li>환급률: {(만기환급금 + 기지급환급금)/총납입적립보험료} x 100(%)</li>
+                                    </ul>
+                                    <!--// Case4) 적립만기환급금 상품 -->
+
+                                    <hr>
+
+                                    <h3 class="h_b">예상환급금 계산 기본 가정</h3>
+                                    <ul class="list_dot_b">
+                                        <li>당월 포함 미납보험료(부활 보험료)는 오늘 납입하며, 이후 보험료는 납입해당일에 납입합니다.(닥터코리아간병보험은 치매/활동불능 미발생 가정)</li>
+                                        <li>오늘 이후 일체의 계약변경이 없으며, 적립부분 적용이율 및 배당기준율의 변동이 없습니다.(최저보증이율은 오늘 이후로만 적용함)</li>
+                                        <li>보험계약대출 상환금액은 현재 시점으로 계산됩니다.(미래 시점으로 계산하지 않음)</li>
+                                        <li>기지급환급금은 예상환급금에서 공제하여 계산되고, 지급 예상일 기준 미지급된 중도환급금은 미지급한 상태를 가정하여 계산됩니다. </li>
+                                        <li>갱신만기 환급금은 홈페이지/모바일을 통해 조회할 수 없습니다. 대표콜센터(<span class="tel_number">1588-5656</span>) 또는 계약담당자에게 문의해 주세요.</li>
+                                    </ul>
+                                </div>
+                                <div id="HIIW01010026_tab" class="tab_panel">
+                                    <h2 class="offscr">환급금 지급내역 조회</h2>
+
+                                    <div class="btns">
+                                        <button type="button" class="btn line b"><span>환급금지급내역서 확인</span></button>
+                                    </div>
+
+                                    <!-- 구분 : 중도환급금 -->
+                                    <table class="tbl_row_b mgt40">
+                                        <caption>환급금 지급내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <td>중도환급금</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급금액</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급일</th>
+                                                <td>2021.06.16</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급지점</th>
+                                                <td>광화문지점</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">청구자</th>
+                                                <td>하이현</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">관계</th>
+                                                <td>본인</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--// 구분 : 중도환급금 -->
+
+                                    <!-- 구분 : 예비특약추가납입 -->
+                                    <table class="tbl_row_b mgt40">
+                                        <caption>환급금 지급내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <td>
+                                                    예비특약추가납입
+                                                    <div class="ui_tooltip_wrap b">
+                                                        <button type="button" class="ui_btn hintInfo"><span class="offscr">설명 보기</span></button>
+                                                        <div class="tooltip b">
+                                                            <i></i>
+                                                            <p>
+                                                                예비특약추가납입은 행복을다모은보험의 보험료예비특약 만기환급금으로,
+                                                                특약 만기일의 다음달 말일까지 만기환급금을 수령하지 않으신 경우 약관에 따라
+                                                                갱신된 보험료예비특약의 추가적립보험료로 자동납입되어 적립됩니다.
+                                                            </p>
+                                                                
+                                                            <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급금액</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급일</th>
+                                                <td>2021.06.16</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급지점</th>
+                                                <td>광화문지점</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">청구자</th>
+                                                <td>하이현</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">관계</th>
+                                                <td>본인</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--// 구분 : 예비특약추가납입 -->
+
+                                    <!-- 구분 : 예비특약만기 -->
+                                    <table class="tbl_row_b mgt40">
+                                        <caption>환급금 지급내역</caption>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <td>
+                                                    예비특약만기
+                                                    <div class="ui_tooltip_wrap b">
+                                                        <button type="button" class="ui_btn hintInfo"><span class="offscr">설명 보기</span></button>
+                                                        <div class="tooltip b">
+                                                            <i></i>
+                                                            <p>
+                                                                적립만기(예비특약) 시 만기환급금을 인출하지 않은 경우에는
+                                                                「보험료예비특약 자동갱신 추가 특별약관 제2조 제3항」에 따라 만기환급금이 추가적립보험료로 전환되어 실제 지급되지 않습니다.
+                                                            </p>
+                                                                
+                                                            <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급금액</th>
+                                                <td>1,000,000,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급일</th>
+                                                <td>2021.06.16</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지급지점</th>
+                                                <td>광화문지점</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">청구자</th>
+                                                <td>하이현</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">관계</th>
+                                                <td>본인</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--// 구분 : 예비특약만기 -->
+
+                                    <!-- 환급금 지급내역 없을 때 -->
+                                    <div class="no_list b">
+                                        <p>환급금 지급내역이 없습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

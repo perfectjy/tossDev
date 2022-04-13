@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '개인정보 변경', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            회원정보를 변경하시면,<br class="p_br"> 현대해상 계약의 개인정보도 함께 수정됩니다.
+                        </h2>
+                        <p class="info_text">동일 계약의 다른 분(피보험자, 미성년자녀 등) 개인정보까지 자동으로 변경되지는 않습니다.</p>
+                    </div>
+                </div>
+                <div class="section_s">
+                    <div class="form_wrap">
+                        <div class="form_list">
+                            <label for="phone" class="form_label">휴대전화번호</label>
+                            <div class="contact_item">
+                                <div class="item">
+                                    <select id="phone" name="" title="이동통신사번호">
+                                        <option value="010" selected>010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="12341234">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label class="form_label" for="ipt03">이메일</label>
+                            <div class="email_item">
+                                <div class="item">
+                                    <input type="email" id="ipt03" title="이메일 계정" name="email_id" class="inp_txt" placeholder="이메일 입력" value="Hyundai">
+                                </div>
+                                <div class="item">
+                                    <input type="email" title="이메일 도메인" name="email_domain" class="inp_txt" placeholder="예: hi.co.kr" value="hi.co.kr">
+                                </div>
+                                <div class="item">
+                                    <select title="이메일 도메인 선택" name="sel_domain">
+                                        <option value="0">직접 입력</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="hotmail.com">hotmail.com</option>
+                                        <option value="yahoo.com">yahoo.com</option>
+                                        <option value="chol.com">chol.com</option>
+                                        <option value="korea.com">korea.com</option>
+                                        <option value="netian.com">netian.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="error_text" id="error-txt">이메일 계정을 입력해 주세요.</p>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_label post">자택주소</div>
+                            <div class="addr_item">
+                                <input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" value="12345" disabled>
+                                <button type="button" class="btn line">주소검색</button>
+                            </div>
+                            <div class="form_item">
+                                <input type="text" name="" title="참조주소" value="" placeholder="기본주소(참조주소)" disabled>
+                            </div>
+                            <div class="form_item">
+                                <input type="text" name="" title="상세주소" value="" placeholder="건물번호, 상세주소" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label for="tel_home" class="form_label">자택전화번호</label>
+                            <div class="contact_item">
+                                <div class="item">
+                                    <select id="tel_home" name="" title="지역번호">
+                                        <option value="">선택</option>
+                                        <option value="02" selected>02</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <input type="tel" name="" title="자택전화번호" placeholder="숫자만 입력" value="12341234">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_label post">직장주소</div>
+                            <div class="addr_item">
+                                <input type="text" class="inp_txt" name="" title="직장주소" placeholder="검색으로 입력" disabled>
+                                <button type="button" class="btn line">주소검색</button>
+                            </div>
+                            <div class="form_item">
+                                <input type="text" name="" title="참조주소" value="" placeholder="기본주소(참조주소)" disabled>
+                            </div>
+                            <div class="form_item">
+                                <input type="text" name="" title="상세주소" value="" placeholder="건물번호, 상세주소" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label for="tel_biz" class="form_label">직장전화번호</label>
+                            <div class="contact_item">
+                                <div class="item">
+                                    <select id="tel_biz" name="" title="지역번호">
+                                        <option value="">선택</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <input type="tel" name="" title="직장전화번호" placeholder="숫자만 입력" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <span class="form_label">우편물수령지</span>
+                            <div class="btns">
+                                <button type="button" class="btn line">우편물수령지 변경</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_conts txt_r">
+                        <a href="#" class="link2">전자금융거래회원 탈퇴</a>
+                    </div>
+                </div>
+
+                <div class="section_m">
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>화재보험 목적물소재지 변경은 계약담당자 또는 계약 계약담당지점으로 연락하시기 바랍니다.</li>
+                                <li>휴대전화번호를 변경하시면 변경 전후 휴대전화번호로 변경내역을 안내드리니, 정확한 번호를 입력해 주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary">본인인증 후 개인정보 변경</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

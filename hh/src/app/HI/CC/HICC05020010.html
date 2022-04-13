@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '접수결과조회', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="boxing_text">
+                        <ul class="list_dot">
+                            <li>접수하신 민원은 신속하게 처리해 드리겠습니다.</li>
+                            <li>토/일요일, 공휴일에 접수될 경우 답변이 2~3일 지연될 수 있습니다.</li>
+                        </ul>
+                    </div>
+                    <!-- 전자민원접수 이력이 없는 경우 -->
+                    <!-- <div class="no_list">
+                        <p>$메뉴명$ 정보가 없습니다.</p>
+                    </div> -->
+                    <div class="list_link">
+                        <ul>
+                            <li>
+                                <a href="#none">
+                                    <div class="lb_style">
+                                        <div class="box_label"><span class="tag ing">접수중</span></div>
+                                        <div class="list_tit">
+                                            전자민원 신청
+                                            <div class="date">
+                                                <span>2021.07.05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <div class="lb_style">
+                                        <div class="box_label"><span class="tag end">종결</span></div>
+                                        <div class="list_tit">
+                                            전자민원 신청중
+                                            <div class="date">
+                                                <span>2021.07.05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <div class="lb_style">
+                                        <div class="box_label"><span class="tag end">종결</span></div>
+                                        <div class="list_tit">
+                                            빠르게 처리해주세요.
+                                            <div class="date">
+                                                <span>2021.07.05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list_more">
+                        <button type="button" class="btn_more">
+                            <span class="offscr">더보기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

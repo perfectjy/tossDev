@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 저축보험공시 조회 open
+            Dialog.open('#HIIW01010029');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW01010029" class="btn line b dialog_open">저축보험공시 조회</a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 저축보험공시 조회 팝업 -->
+    <div id="HIIW01010029" class="dialog full">
+        <div class="dialog_wrap big">
+            <div class="dialog_header">
+                <h1>저축보험공시 조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <table class="tbl_row_b">
+                            <caption>기준일,납입보험료,사업비(율),위험보험료,적립금(율),수익률</caption>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">기준일</th>
+                                    <td>2021.06.14</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">납입보험료</th>
+                                    <td>100,000,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업비(율)</th>
+                                    <td>678,991원(10.1%)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">위험보험료</th>
+                                    <td>720원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적립금(률)</th>
+                                    <td>7,111,370원(105.83%)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수익률</th>
+                                    <td>5.83%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr>
+
+                        <div class="pension_calulation">
+                            <h2 class="h_b">산출기준</h2>
+                            <div class="inner_box">
+                                <ul class="list_dot_b">
+                                    <li>납입보험료:<br> [보장부분 + 적립부분] 총 납입보험료</li>
+                                    <li>사업비(율):<br> [보장부분 + 적립부분] 총 사업비</li>
+                                    <li>위험보험료:<br> 보장부분 위험보험료</li>
+                                    <li>적립금(금액):<br> 적립부분원리금으로 해지환급금(적립부분원리금-해지공제금액)과는 다르며, 기지급환급금은 포함되지 않음</li>
+                                    <li>적립금(률):<br> {(적립금 + 기지급환급금) / 적립부분 총납입보험료} × 100</li>
+                                    <li>수익률: [적립금률-1]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

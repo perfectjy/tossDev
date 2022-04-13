@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>Hyundai Insurance</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/contents.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: 'Hyundai Insurance', mainH:true, tooltip: false, prev: false, menu: true };
+
+        $(function() {
+            $('.ad_img .vd_btn').on("click", function(){
+                var vo = $(this).parent().find('video');
+                var video_get = vo.get(0);
+                var thumb = $(this).parent().find('.thumb');
+                var label = $(this).parent().find('.label');
+                $(this).hide();
+                thumb.hide();
+                label.hide();
+                vo.css('position', 'static').attr('controls', 'controls');
+                video_get.play();
+            });
+
+            var fal = !!isMobile ? false : true;
+            var tru = !!isMobile ? true : false;
+            $('.info_main_slide').slick({
+                swipe: false, 
+                dots: true,
+                arrows: fal,
+                focusOnSelect: tru,
+                swipe: tru,
+                centerMode: tru,
+                prevArrow : "<button type='button' class='btn_info_prev'><span class='txt'></span><span class='offscr'>Preview</span></button>",
+                nextArrow : "<button type='button' class='btn_info_next'><span class='txt'></span><span class='offscr'>Next</span></button>"
+            });
+
+            var this_slide = $('.info_main_slide').find('.slick-active'),
+                this_prev =  this_slide.prev().find('h3').text(),
+                this_next =  this_slide.next().find('h3').text(),
+                btn_prev = $('.btn_info_prev .txt'),
+                btn_next = $('.btn_info_next .txt');
+            
+                btn_prev.text(this_prev);
+                btn_next.text(this_next);
+            
+                var arr = ['Local Community', 'Social Innovation/Change', 'Children and Teens']
+
+            $('.info_main_slide .slick-arrow').on('click', function(){
+                var ac_txt = $(this).parent().find('.slick-active h3').text(),
+                    th_txt = $(this).find('.txt');
+                
+
+                if($(this).hasClass('btn_info_prev')){
+                    switch(ac_txt) {
+                        case arr[0] : 
+                            th_txt.text(arr[1]); 
+                            btn_next.text(arr[2]);
+                        break;
+                        case arr[1] : 
+                            th_txt.text(arr[2]); 
+                            btn_next.text(arr[0]);
+                        break;
+                        case arr[2] : 
+                            th_txt.text(arr[0]);
+                            btn_next.text(arr[1]);
+                        break;
+                    }
+                }else{
+                    switch(ac_txt) {
+                        case arr[0] :
+                            th_txt.text(arr[2]); 
+                            btn_prev.text(arr[1]);
+                        break;
+                        case arr[1] : 
+                            th_txt.text(arr[0]); 
+                            btn_prev.text(arr[2]);
+                        break;
+                        case arr[2] : 
+                            th_txt.text(arr[1]);
+                            btn_prev.text(arr[0]);
+                        break;
+                    }
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">skip to content</a> 
+	</div>
+    <div id="wrap" class="kc_main eng">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>
+        <div id="container">
+			<div id="content">
+                <div class="info_wrap">
+                    <div class="info_main_visual">
+                        <div class="inner">
+                            <strong class="m_txt1">Vision Hi 2025</strong>
+                            <strong class="m_txt2">A safe and reliable <br>beginning of my life <br><span class="highlight">"Hyundai Marine &amp; Fire Insurance"</span></strong>
+                            <p class="m_txt3">The unique identity of Hyundai Marine &amp; Fire Insurance, which is at a variance from other companies, is expanded towards the future, and the core values desired by all stakeholders and the future image of Hyundai Marine & Fire Insurance are portrayed.</p>
+                            <a href="#" class="link">Learn more</a>
+                            <div class="visual_img">
+                                <img src="/src/assets/images/company/img_company_visual.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="esg_section">
+                        <div class="nav_section">
+                            <div class="menu_box">
+                                <ul class="menus">
+                                    <li class="ceo">
+                                        <strong>About CEO</strong>
+                                        <p>"Through ESG management, Hyundai Marine &amp; Fire Insurance will continue to communicate with our stakeholders. and brace ourselves for a new future."</p>
+                                        <a href="#" class="link"><span>Learn more</span></a>
+                                        </li>
+                                    <li class="ir">
+                                        <strong>IR Overview</strong>
+                                        <div>
+                                            <a href="#">Performance data for disclosure</a>
+                                            <a href="#">Credit rating</a>
+                                            <a href="#">Annual Report</a>
+                                        </div>
+                                        <a href="#" class="link"><span>Learn more</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <h2 class="ih2">ESG<span>A company that contributes towards the sustainable development of humankind</span></h2>
+                            <div class="esg_link">
+                                <ul>
+                                    <li class="esg_n1">
+                                        <a href="#">
+                                            <strong>ESG Implementation System</strong>
+                                            <p>establishment of the missions and tasks for ESG management</p>
+                                        </a>
+                                    </li>
+                                    <li class="esg_n2">
+                                        <a href="#">
+                                            <strong>ESG Initiatives and Certifications</strong>
+                                            <p>increase the stakeholders' access to environmental information and promote interaction</p>
+                                        </a>
+                                    </li>
+                                    <li class="esg_n3">
+                                        <a href="#">
+                                            <strong>ESG Report (Sustainability Report)</strong>
+                                            <p>published a sustainability report for the first time in the insurance industry</p>
+                                        </a>
+                                    </li>
+                                    <li class="esg_n4">
+                                        <a href="#">
+                                            <strong>Research Center for Transportation, Climate, and Environment </strong>
+                                            <p>recognized environmental changes as both threats and opportunities, and established preemptive countermeasures to be used in ESG management</p>
+                                        </a>
+                                    </li>
+                                </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social_section">
+                        <h2 class="ih2">Major Social Contribution Activities</h2>
+                        <div class="info_main_slide">
+                            <div class="item">
+                                <p class="img">
+                                    <img src="/src/assets/images/company/info_slide01.png" />
+                                </p>
+                                <div class="list">
+                                    <h3 class="ih3">Children and Teens</h3>
+                                    <ul class="list_dot">
+                                        <li><span class="highlight">"Girls Run"</span> Keep the body and mind of girls healthy! </li>
+                                        <li><span class="highlight">"A Very Little Confession"</span> School violence prevention project. </li>
+                                        <li><span class="highlight">"Heart Rest"</span> For children with disabilities and their families.</li>
+                                    </ul>
+                                    <a class="more" href="#">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="img">
+                                    <img src="/src/assets/images/company/info_slide02.png" />
+                                </p>
+                                <div class="list">
+                                    <h3 class="ih3">Social Innovation/Change</h3>
+                                    <ul class="list_dot">
+                                        <li><span class="highlight">"Enactus"</span> Entrepreneurship for a better world.</li>
+                                        <li><span class="highlight">"Devote Like a Journalist"</span> Writing to change the world. </li>
+                                        <li><span class="highlight">"Hi Challenge School"</span> Right growth of youth through challenges and practices. </li>
+                                    </ul>
+                                    <a class="more" href="#">Learn more</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="img">
+                                    <img src="/src/assets/images/company/info_slide03.png" />
+                                </p>
+                                <div class="list">
+                                    <h3 class="ih3">Local Community</h3>
+                                    <ul class="list_dot">
+                                        <li><span class="highlight">"Heart Library"</span> Provide rest areas to local hospitals</li>
+                                        <li><span class="highlight">"Gwanghwamun Concert"</span> Free performance once every month. </li>
+                                        <li><span class="highlight">"Salvation Army"</span> Donation to help people in need every year. </li>
+                                    </ul>
+                                    <a class="more" href="#">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="display:block;"></div>
+    </div>
+</body>
+</html>

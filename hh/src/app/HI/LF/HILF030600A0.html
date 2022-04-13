@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '납입계좌 변경완료', tooltip: false, prev: false, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            납입계좌<br class="mo_br"> <span class="highlight">국민은행 3333*****8863</span><br>
+                            이체일 <span class="highlight">5일</span>로 변경 완료되었습니다.
+                        </h2>
+                    </div>
+
+                    <ul class="list_dot">
+                        <li>처리가 완료되면 고객님 휴대전화로 알려 드립니다.</li>
+                        <li>문의사항은 대출상담 콜센터(1588-5655)로 연락해 주세요.</li>
+                    </ul>
+                </div>
+
+                <div class="section_m">
+                    <div class="toggle_wrap">
+                        <div class="toggle_tit">                    
+                            <a href="#toggleConts" class="toggle_btn">변경 전 내역 보기<span class="offscr">상세보기</span></a>
+                        </div>                
+                        <div id="toggleConts" class="toggle_conts">
+                            <h4 class="h4">12001507-01115 아파트</h4>
+                            <table class="tbl_row">
+                                <colgroup>
+                                    <col style="width:28%;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <caption>변경 전 내역</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" >대출일</th>
+                                        <td>2021.01.09 </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">대출잔액</th>
+                                        <td>3,640,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="highlight">이체일</th>
+                                        <td class="highlight">5일</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="highlight">납입계좌</th>
+                                        <td class="highlight">우리은행 1234****4548</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="complete_btns">
+                        <button type="button" class="btn primary"><span>메인</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

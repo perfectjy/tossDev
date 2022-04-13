@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '(무)뉴간편플러스종합보험', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HIIP02000031');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIP02000031" class="btn line dialog_open">(팝업)상담채널 선택</a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 상담채널 선택 팝업 -->
+    <div id="HIIP02000031" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>상담 방법을 선택해 주세요.</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing pc_hide">
+                        <div class="governing_title">상담 방법을 선택해 주세요.</div>
+                    </div>
+
+                    <div class="counsel_wrap">
+                        <div class="counsel_item counseller">
+                            <input type="radio" id="counseller1" name="counseller">
+                            <label for="counseller1">
+                                <strong class="title">상담사 컨설팅</strong>
+                                <span class="cont">편하신 시간에 전화드리겠습니다.</span>
+                            </label>
+                        </div>
+                        <div class="counsel_item artisan">
+                            <input type="radio" id="counseller2" name="counseller">
+                            <label for="counseller2">
+                                <strong class="title">하이플래너 상담신청</strong>
+                                <span class="cont">보험 전문 컨설턴트를 만나 보세요.</span>
+                            </label>
+                        </div>
+                        <div class="counsel_item callcenter">
+                            <input type="radio" id="counseller3" name="counseller">
+                            <label for="counseller3">
+                                <strong class="title">대표콜센터 1588-5656</strong>
+                                <span class="cont">지금 바로 전화로 가입상담 받으세요.</span>
+                            </label>
+                        </div>
+
+                        <!-- <a href="#none" class="counseller">
+                            <div class="title">상담사 컨설팅</div>
+                            <div class="cont">편하신 시간에 전화드리겠습니다.</div>
+                        </a>
+                        <a href="#none" class="artisan">
+                            <div class="title">하이플래너 상담신청</div>
+                            <div class="cont">보험 전문 컨설턴트를 만나 보세요.</div>
+                        </a>
+                        <a href="#none" class="callcenter">
+                            <div class="title">대표콜센터 1588-5656</div>
+                            <div class="cont">지금 바로 전화로 가입상담 받으세요.</div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <a href="#" class="btn second">취소</a>
+                    <a href="#" class="btn primary">선택</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

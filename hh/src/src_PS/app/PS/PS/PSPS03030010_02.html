@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+                        <h2 class="governing_title">고객님의 정보를 변경하실 수 있습니다.</h2>
+					</div>
+					
+					<div class="comp">
+						<div class="form_wrap parallel">
+							<div class="form_list">
+								<label for="joinUserName" class="form_label">가입자 이름</label>
+								<div class="form_item">
+									<input type="text" id="joinUserName" name="" placeholder="홍*동" value="" disabled>
+								</div>
+							</div>
+							<div class="form_list">
+								<label for="userIDNumber" class="form_label">주민등록번호</label>
+								<div class="date_box">
+									<input type="text"id="userIDNumber" name="" placeholder="800101-1******" value="" disabled>
+								</div>
+							</div>
+						
+							<div class="form_list">
+								<label for="phone" class="form_label">휴대전화번호</label>
+								<div class="contact_item">
+									<div class="item">
+										<select id="phone" name="" title="이동통신사번호">
+											<option value="0">선택</option>
+											<option value="010">010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="017">017</option>
+											<option value="018">018</option>
+											<option value="019">019</option>
+										</select>
+									</div>
+									<div class="item">
+										<input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="">
+									</div>
+								</div>
+								<!-- 휴대전화번호 정상입력하지 않고 다음 단계 진행할 경우 -->
+								<p class="error_text">휴대전화번호를 올바르게 입력해 주세요.(예: 01012341234)</p>
+							</div>
+							<div class="form_list">
+								<div class="form_label">이메일</div>
+								<div class="email_item">
+									<div class="item">
+										<input type="email" title="이메일 계정" name="email_id" class="inp_txt" placeholder="이메일 입력" value="">
+									</div>
+									<div class="item">
+										<input type="email" title="이메일 도메인" name="email_domain" class="inp_txt" placeholder="예: hi.co.kr" value="">
+									</div>
+									<div class="item">
+										<select title="이메일 도메인 선택" name="sel_domain">
+											<option value="0">직접 입력</option>
+											<option value="hanmail.net">hanmail.net</option>
+											<option value="naver.com">naver.com</option>
+											<option value="nate.com">nate.com</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="hotmail.com">hotmail.com</option>
+											<option value="yahoo.com">yahoo.com</option>
+											<option value="chol.com">chol.com</option>
+											<option value="korea.com">korea.com</option>
+											<option value="netian.com">netian.com</option>
+										</select>
+									</div>
+								</div>
+								<!-- 이메일 계정을 정상입력 하지 않은 경우 -->
+								<p class="error_text">이메일 계정을 입력해 주세요.</p>
+								<!-- 이메일 도메인을 정상입력 하지 않은 경우 -->
+								<p class="error_text">이메일 도메인을 올바르게 입력해 주세요.(예: hi.co.kr)</p>
+							</div>
+	
+							<div class="form_list">
+								<span class="form_label">문자수신 동의</span>
+								<div class="form_item">
+									<span class="radio_box">
+										<input id="rd_smsN" type="radio" name="smsChoice">
+										<label for="rd_smsN">동의안함</label>
+									</span>
+									<span class="radio_box">
+										<input id="rd_smsY" type="radio" name="smsChoice">
+										<label for="rd_smsY">동의</label>
+									</span>
+								</div>
+								<!-- 문자 수신동의 라디오버튼 미선택한 경우 -->
+								<p class="error_text">문자수신 동의 여부를 선택해 주세요.</p>
+							</div>
+							<div class="form_list">
+								<span class="form_label">이메일수신 동의</span>
+								<div class="form_item">
+									<span class="radio_box">
+										<input id="rd_emailN" type="radio" name="emailChoice">
+										<label for="rd_emailN">동의안함</label>
+									</span>
+									<span class="radio_box">
+										<input id="rd_emailY" type="radio" name="emailChoice">
+										<label for="rd_emailY">동의</label>
+									</span>
+								</div>
+								<!-- 이메일 수신동의 라디오버튼 미선택한 경우 -->
+								<p class="error_text">이메일수신 동의 여부를 선택해 주세요.</p>
+							</div>
+						
+							<div class="form_list">
+								<label for="phone" class="form_label">(선택) 유선전화번호</label>
+								<div class="contact_item">
+									<div class="item">
+										<select id="phone" name="" title="유선전화번호">
+											<option value="0">선택</option>
+											<option value="010">010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="017">017</option>
+											<option value="018">018</option>
+											<option value="019">019</option>
+										</select>
+									</div>
+									<div class="item">
+										<input type="tel" name="" title="유선전화번호" placeholder="숫자만 입력" value="">
+									</div>
+								</div>
+								<!-- 유선전화번호 입력 오류일 경우 -->
+								<p class="error_text">유선전화번호를 올바르게 입력해 주세요.(예: 0212341234)</p>
+							</div>
+							<!-- 'DB/DC 가입자' 접근 시 S -->
+							<div class="form_list">
+								<div class="form_label post">우편물 수령주소</div>
+								<div class="addr_item">
+									<input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" disabled>
+									<button type="button" class="btn line">주소검색</button>
+								</div>
+								<div class="form_item">
+									<input type="text" name="" title="참조주소" value="" disabled>
+								</div>
+								<div class="form_item">
+									<input type="text" name="" title="상세주소" value="" disabled>
+								</div>
+								<p class="error_text">우편물 수령주소를 정확하게 입력해 주세요.<br>([주소 검색] 버튼을 눌러서 기본주소 검색 및 상세주소 입력 가능합니다.)</p>
+							</div>
+							<!--// 'DB/DC 가입자' 접근 시 E -->
+						</div>
+					</div>
+					<!--// comp -->
+				
+					<div class="fixed_btm_btns">
+						<div class="btns">
+							<button type="button" class="btn second">취소</button>
+							<button type="button" class="btn primary">수정</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

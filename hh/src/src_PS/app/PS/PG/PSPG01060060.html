@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+	$(function() {
+		if($('.move_box').length) {
+			var $moveBox = $('.move_box'),
+				$total = $moveBox.find('.total'),
+				moveBoxT = parseInt($moveBox.offset().top),
+				moveBoxH = $moveBox.innerHeight(),
+				totalH = $total.innerHeight(),
+				fixedT = 117,							// 117: 합계 object의 고정 top 값
+				gap = 30,								// 30: 합계 object와 $('.move_box') 사이의 간격
+				fixedStartT = moveBoxT - fixedT + gap,
+				maxT = moveBoxT + moveBoxH - (totalH + gap + fixedT),
+				lastScrollTop = 0;
+			
+			$(window).scroll(function(e) {
+				var st = $(this).scrollTop();
+				if (st > lastScrollTop) {
+					if (st > fixedStartT && st <= maxT) {
+						$moveBox.addClass('fixed');
+					} else if (st > maxT) {
+						$moveBox.removeClass('fixed').addClass('is_top');
+					}
+				} else {
+					if (st > fixedStartT && st <= maxT) {
+						$moveBox.removeClass('is_top').addClass('fixed');
+					} else if (st < fixedStartT) {
+						$moveBox.removeClass('fixed');
+					}
+				}
+
+				lastScrollTop = st;
+			});
+		}
+
+		// 체크시 input 활성화
+		$('.check_box input').on('change', function() {
+			var $this = $(this);
+			var $inputTel = $this.next().find($('.inp_price'));
+			$inputTel.attr('disabled',true);
+			if($this.is(':checked')){
+				$inputTel.removeAttr('disabled');
+				console.log('체크해제')
+			}
+		});
+
+	});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="step_list">
+						<div class="step_bar"><span style="width:83.3%"></span></div>
+						<div class="steps">
+							<span class="offscr">현재단계</span><strong class="num">5</strong>
+							<span class="offscr">전체단계</span><strong>6</strong>
+						</div>
+					</div>
+					<div class="governing">
+						<h2 class="governing_title">운용을 지시할 정보를 선택하고, 가청약을 등록해 주세요.</h2>
+					</div>
+					<div class="comp">
+						<h3 class="h3 hmark">적립금 운용상품 선정 및 부담금 최초 운용비율</h3>
+						<ul class="list_dot">
+							<li class="fw_m">선정하신 적립금 운용상품 내에서 계약자가 운용지시를 할 수 있습니다.</li>
+							<li>적립금 운용상품 선정 후에 가입자의 의견을 반영하여 다른 상품으로 변경 가능합니다. 단, 현대해상에서 취급하지 않는 상품으로 변경할 수는 없습니다.</li>
+							<li>현대해상에서 취급하는 상품 중 운용관리계약서에서 선택하지 않은 적립금 운용방법에 해당하는 상품으로 변경할 경우에는 먼저 운용관리 계약서를 변경해야 합니다.
+								<p class="imp_txt highlight">부담금 최초 운용비율의 총합은 100%가 되어야 합니다.</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="move_box">
+						<div class="insu_item n1">
+							<div class="insu_title">
+								<h4 class="insu_name">원리금 보장형 보험</h4>
+								<div class="insu_guide">해당 보험의 위험유형은 <strong class="highlight fw_m">안정형</strong>입니다.</div>
+							</div>
+							<div class="insu_cont">
+								<ul class="insu_chk_list col2">
+									<li>	
+										<div class="check_box notxt b">
+											<input id="check1" type="checkbox" checked name="check">
+											<label for="check1" title="금리연동형 선택">
+												<div class="unit_item">
+													<input class="inp_price" type="tel" value="0" title="금리연동형 비율">
+													<span class="unit">%</span> 
+												</div>
+											</label>
+										</div>
+										<a href="#" class="btn_txt arrow" target="_blank"><span>금리연동형</span></a>
+									</li>
+									<li>
+										<div class="check_box notxt b">
+											<input id="check2" type="checkbox" name="check">
+											<label for="check2" title="이율보증형 1년 선택">
+												<div class="unit_item">
+													<input class="inp_price" type="tel" value="0" disabled title="이율보증형 1년 비율">
+													<span class="unit">%</span> 
+												</div>
+											</label>
+										</div>
+										<a href="#" class="btn_txt arrow" target="_blank"><span>이율보증형 1년</span></a>
+									</li>
+									<li>
+										<div class="check_box notxt b">
+											<input id="check3" type="checkbox" name="check">
+											<label for="check3" title="이율보증형 2년 선택">
+												<div class="unit_item">
+													<input class="inp_price" type="tel" value="0" disabled title="이율보증형 2년 비율">
+													<span class="unit">%</span> 
+												</div>
+											</label>
+										</div>
+										<a href="#" class="btn_txt arrow" target="_blank"><span>이율보증형 2년</span></a>
+									</li>
+									<li>
+										<div class="check_box notxt b">
+											<input id="check4" type="checkbox" name="check">
+											<label for="check4" title="이율보증형 3년 선택">
+												<div class="unit_item">
+													<input class="inp_price" type="tel" value="0" disabled title="이율보증형 3년 비율">
+													<span class="unit">%</span> 
+												</div>
+											</label>
+										</div>
+										<a href="#" class="btn_txt arrow" target="_blank"><span>이율보증형 3년</span></a>
+									</li>
+									<li>
+										<div class="check_box notxt b">
+											<input id="check5" type="checkbox" name="check">
+											<label for="check5" title="이율보증형 3년 선택">
+												<div class="unit_item">
+													<input class="inp_price" type="tel" value="0" disabled title="Step-up 이율보증형3년 비율">
+													<span class="unit">%</span> 
+												</div>
+											</label>
+										</div>
+										<a href="#" class="btn_txt arrow" target="_blank"><span>Step-up 이율보증형3년</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="btns">
+								<button type="button" class="btn ass"><span class="down">약관 다운로드</span></button>
+							</div>
+						</div>
+						<div class="insu_item n2">
+							<div class="insu_title">
+								<h4 class="insu_name">실적배당형 보험</h4>
+								<div class="insu_guide">해당 보험의 위험유형은 <strong class="highlight fw_m">위험중립형</strong>과<br><strong class="highlight fw_m">공격투자형</strong>이 있습니다.</div>
+							</div>
+							<div class="insu_cont">
+								<div class="sub">
+									<h5 class="h4 fw_b">채권혼합형[위험중립형]</h5>
+									<ul class="insu_chk_list col2">
+										<li>	
+											<div class="check_box notxt b">
+												<input id="check6" type="checkbox" name="check">
+												<label for="check6" title="스타일변화형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="스타일변화형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">스타일변화형</span></a>
+										</li>
+										<li>
+											<div class="check_box notxt b">
+												<input id="check7" type="checkbox" name="check">
+												<label for="check7" title="인덱스형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="인덱스형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">인덱스형</span></a>
+										</li>
+										<li>
+											<div class="check_box notxt b">
+												<input id="check8" type="checkbox" name="check">
+												<label for="check8" title="가치투자형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="가치투자형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">가치투자형</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="sub">
+									<h5 class="h4 fw_b">주식형[공격투자형]</h5>
+									<ul class="insu_chk_list col2">
+										<li>	
+											<div class="check_box notxt b">
+												<input id="check9" type="checkbox" name="check">
+												<label for="check9" title="성장주식형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="성장주식형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">성장주식형</span></a>
+										</li>
+										<li>
+											<div class="check_box notxt b">
+												<input id="check10" type="checkbox" name="check">
+												<label for="check10" title="액티브주식형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="액티브주식형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">액티브주식형</span></a>
+										</li>
+										<li>
+											<div class="check_box notxt b">
+												<input id="check11" type="checkbox" name="check">
+												<label for="check11" title="글로벌주식형 선택">
+													<div class="unit_item">
+														<input class="inp_price" type="tel" value="0" disabled title="글로벌주식형 비율">
+														<span class="unit">%</span> 
+													</div>
+												</label>
+											</div>
+											<a href="#" class="btn_txt arrow" target="_blank"><span class="point_color">글로벌주식형</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="btns">
+								<button type="button" class="btn ass"><span class="down">약관 다운로드</span></button>
+							</div>
+						</div>
+						<dl class="total">
+							<dt>운용비율 합계<span>(종합 100%)</span></dt>
+							<dd>60<span class="per">%</span></dd>
+						</dl>
+					</div>
+				
+					<div class="comp box round s">
+						<div class="boxing_text s">
+							고객님은 투자성향 진단을 받으신 내역이 없거나 투자정보 유효기간(투자자정보를 파악한 날로부터 36개월)이 경과되었습니다.
+						</div>
+						<ul class="list_dot">
+							<li class="point_color">빨간색으로 표시된 상품은 손실이 발생할 수 있는 상품으로 「금융소비자보호에 관한 법률」제 17조 '적합성의 원칙'에 따라 고객투자성향 진단을 받으신 고객님에 한해 판매가 가능한 상품입니다.</li>
+							<li>고객님께서 빨간색으로 표시된 상품을 원하실 경우 저희 회사의 고객투자성향 진단을 받으시기 바랍니다.</li>
+						</ul>
+						<div class="comp_in_btns">
+							<button type="button" class="btn ass">고객투자성향 진단</button>
+						</div>
+					</div>
+
+					<div class="comp box round s">
+						<div class="boxing_text s">
+							고객님의 투자성향은 <strong class="grade_txt gdc5">5등급(안정형)</strong>입니다.
+						</div>
+						<div class="comp_in_btns">
+							<button type="button" class="btn ass">고객투자성향 확인/변경</button>
+						</div>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">가상계좌 부여</h3>
+						<div class="form_list bank">
+							<div class="form_item">
+								<div class="form_item col2">
+									<select name="" title="은행선택">
+										<option value="" selected>선택</option>
+									</select>
+									<!-- 계좌확인 후 버튼에 active 추가 -->
+									<button type="button" class="btn oline">가상계좌 확인</button>
+								</div>
+								<!-- <p class="error_text">가상계좌 은행을 선택해 주세요.</p> -->
+							</div>
+							<div class="form_item">
+								<input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" disabled value="">
+								<p class="error_text">가상계좌를 확인해 주세요.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">전자청약 개선 제안</h3>
+						<div class="form_wrap">
+							<div class="form_list">
+								<label for="consultCont" class="form_label offscr">내용</label>
+								<div class="form_item">
+									<textarea name="" cols="70" rows="8" id="consultCont" placeholder="개선 제안 내용 입력"></textarea>
+									<p class="cont"><span>0</span> / 1,000자</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 확인사항 checkbox list -->
+					<div class="comp">
+						<h3 class="h3 hmark">확인사항 동의</h3>
+						<div class="agreement_section retire">
+							<ul class="list_chk">
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk1" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk1"><strong class="emp fw_b">[필수]</strong> 상품설명서 안내 확인
+											<p>퇴직연금 원리금보장형 및 실적배당형보험 상품관련 정보제공을 확인하여 주시기 바랍니다.</p>
+										</label>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk2" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk2"><strong class="emp fw_b">[필수]</strong> 예금자보호법 적용여부 설명 확인
+											<p>본인이 가입하는 퇴직연금 상품의 예금자보호여부 및 보호한도에 관하여 세부내용을 확인하여 주시기 바랍니다.</p>
+										</label>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk3" class="agree_chk" name="agreeGroup" type="checkbox" disabled>
+										<label for="agreeChk3"><strong class="emp fw_b">[선택]</strong> 실적배당형 운용설명서 확인(실적배당형 고객님만 선택)
+											<p>무배당 현대 개인형퇴직연금 자산관리 실적배당형은 보험업법, 근로자퇴직급여보장법, 보험업감독규정 및 퇴직연금감독규정에 의하여 인가·판매되고 있으며, 특히 실적배당형에 대해서는 운용설명서의 내용을 충분히 확인해 주시기 바랍니다.</p>
+										</label>
+									</div>                            
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--// 확인사항 checkbox list -->
+
+					<div class="accordion">
+						<div class="title open">
+							<span class="toggle">알려드립니다</span>
+						</div>
+						<div class="panel">
+							<ul class="list_dot">
+								<li><strong class="fw_m">이율보증형</strong>
+									<p>중도해지이율: 단위보험의 이율보증기간이 경과하기 전에 해지되는 경우, 경과기간에 따라 중도해지이율을 적용하여 해지환급금을 지급합니다. 단, 특별중도해지(연금지급 등) 및 중도인출의 경우는 중도해지이율을 적용하지 않습니다.</p>
+								</li>
+								<li><strong class="fw_m">실적배당형</strong>
+									<p><strong class="highlight fw_m">운용결과에 따라 원금 손실이 발생할 수 있으며</strong> 근로자퇴직급여보장법 시행규칙 제9조(위험자산의 범위 및 운용기준)에 의해 <strong class="highlight fw_m">주식형</strong> 상품의 총 투자한도는 적립금의 70%를 초과할 수 없습니다.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="fixed_btm_btns">
+						<div class="btns">
+							<button type="button" class="btn second">이전</button>
+							<button type="button" class="btn primary">가청약 등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/quick.js"></script><!-- // Pub Include -->
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

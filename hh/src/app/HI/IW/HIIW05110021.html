@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '주의사항 확인', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 주의사항 확인 open
+            Dialog.open('#HIIW05110021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW05110021" class="btn line dialog_open">주의사항 확인</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 주의사항 확인 팝업 -->
+    <div id="HIIW05110021" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>주의사항 확인</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <h3 class="h3">휴면보험금 신청을 위한 주의사항</h3>
+                        <ul class="list_dot">
+                            <li>신청사항은 휴면보험금에 한하여 적용됩니다.</li>
+                            <li>휴면보험금지급계좌는 반드시 계약자 본인명의 예금계좌여야 하며, 휴면보험금지급계좌로 휴면보험금 입금 시각부터 휴면보험금을 수령한 것으로 봅니다.</li>
+                            <li>‘휴면보험금지급계좌 또는 주민(사업자)번호 상이’, 지급계좌의 지급제한 등에 따른 책임은 계약자 본인에게 있습니다.</li>
+                            <li>휴면보험금 지급계좌가 폐쇄계좌이거나, 잔액증명서 발급일 지급제한과 같이 해당 금융기관 이체 제한 기준에 해당하는 경우는 이체처리를 할 수 없음에 유의해 주세요.</li>
+                            <li>보험계약에 질권, 압류 등 지급제한이 설정된 경우에는 휴면보험금이 지급되지 않습니다.</li>
+                            <li>보험계약대출이 존재하는 계약인 경우, 대출원리금을 공제한 잔액을 이체합니다.</li>
+                            <li>만약 공제한 금액이 지급대상 휴면보험금을 초과하는 경우에는 이체되지 않습니다.</li>
+                            <li><span class="highlight">[필수 확인]</span> 본인은 휴면보험금 지급계좌 등록계약과 계좌정보, 보험계약대출이 있을 경우 상환방법을 정확하게 확인하였습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

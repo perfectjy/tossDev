@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '알려드립니다', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 알려드립니다 open
+            Dialog.open('#HIMY01000015');
+
+            // 알림 메시지 삭제
+            $(document).off('click.delalim').on('click.delalim', 'button.btn_alim_close', function() {
+                var alimObj = $(this).closest('.alim_item');
+                alimObj.remove();
+
+                // 알림 메시지 없을 때
+                if ($('.alim_item').length < 1) {
+                    $('.mypage_alim').append('<div class="no_list">알림 메시지가 없습니다.</div>');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIMY01000015" class="btn line dialog_open">서비스안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 알려드립니다 팝업 -->
+    <div id="HIMY01000015" class="dialog full">
+        <div class="dialog_wrap big">
+            <div class="dialog_header">
+                <h1>알려드립니다</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="mypage_alim type_list">
+                            <!-- 생일 축하
+                                1. 노출기준/기간: 생일 D-30 ~ D-day까지
+                                2. 링크: X
+                            -->
+                            <div class="alim_item b">
+                                <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                                <div class="subject birth">
+                                    <p class="title">
+                                        하*현님의 45번째 생일을<br>
+                                        진심으로 축하드립니다!
+                                    </p>
+                                </div>
+                                <div class="cont">
+                                    <div class="birthday"></div>
+                                </div>
+                            </div>
+    
+                            <!-- 보험나이 변경안내
+                                1. 노출기준/기간: 상령일 D-60 ~ D-1까지
+                                2. 링크: '보험상품 > 내 보험 보장분석'
+                                    - 상령일자 및 D-day를 화면과 같이 메시지 처리
+                            -->
+                            <div class="alim_item b">
+                                <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                                <div class="subject">
+                                    <p class="title">
+                                        <span class="highlight">53일</span> 후에 보험나이가<br>
+                                        1살 올라갑니다.
+                                    </p>
+                                </div>
+                                <div class="cont">
+                                    <p>
+                                        <span class="highlight">2022년 6월 28일</span>에 보험나이가 올라가면 보험가입 시 보험료가 더 올라갈 수 있어요.<br>
+                                        가입을 망설이는 보험이 있다면 보험나이가 오르기 전 가입해 보세요.
+                                    </p>
+                                    <div class="alim_btns">
+                                        <button type="button" class="btn line b"><span>내 보험 보장분석</span></button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- 휴대전화번호 변경안내
+                                1. 노출기간: 고객정보의 휴대전화번호 앞자리가 010이 아닐 경우 ~  010으로 변경 시까지
+                                2. 링크: '마이페이지 > 개인정보 변경'
+                            -->
+                            <div class="alim_item b">
+                                <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                                <div class="subject">
+                                    <p class="title">
+                                        하*현님의 휴대전화번호가<br>
+                                        <span class="highlight">010-****-5678</span> 가 맞나요?
+                                    </p>
+                                </div>
+                                <div class="cont">
+                                    <p>
+                                        <span class="highlight">계약 관련 중요안내사항 알림톡/문자메시지</span> 등을 빠짐없이 받으실 수 있도록,
+                                        고객님의 휴대전화번호가 바뀌면 즉시 개인정보에 반영해 주세요.
+                                    </p>
+                                    <div class="alim_btns">
+                                        <button type="button" class="btn line b"><span>개인정보 변경</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

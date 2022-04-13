@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HICS06050011_1');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICS06050011_1" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HICS06050011_1" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                내 얼굴로 쉽고 안전하게 로그인/본인인증할 수 있는 얼굴인증은 현대해상 앱에서 이용 가능합니다. <span class="highlight">얼굴인증 등록은 3단계로 진행</span>됩니다.
+                            </div>
+                        </div>
+                        <div class="cert_wrap">
+                            <span class="item c1">약관동의</span>
+                            <span class="item c4">본인인증</span>
+                            <span class="item c5">얼굴등록</span>
+                        </div>
+    
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>고객님의 스마트폰 전면 카메라로 얼굴을 촬영하여 인증정보로 등록하므로, 밝은 실내에서 마스크를 벗고 진행해 주세요.</li>
+                                    <li>고객님의 얼굴로 직접 본인인증을 하기 때문에 보이스피싱, 명의도용에서 더 안전합니다.</li>
+                                    <li>촬영한 얼굴 정보는 인증 알고리즘으로 추출한 특징점만 분리 저장되며, 현대해상의 보안 기준에 따라 안전하게 관리됩니다. 얼굴 정보는 본인인증 외 용도로는 절대 사용되지 않습니다.</li>
+                                    <li>앱을 재설치 하시거나, 최초 등록하신 스마트폰이 아닌 다른 기기에서 접속할 경우 재등록이 필요합니다.</li>
+                                    <li>이용 가능한 스마트폰: Android 6.0 이상, iOS 11.0 이상</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn second"><span>재촬영/해지</span></button>
+                    <button type="button" class="btn primary"><span>등록/재등록</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '신용대출 상환', tooltip: false, prev: true, menu: true };
+
+        $(function(){
+            function addClass() {
+                $(".box_rd_list input[type=radio]").each(function() {
+                    if($(this).is(':checked')) {
+                        $(this).closest('li').addClass('active');
+                    } 
+                });
+            }
+            $(".box_rd_list input[type=radio]").click(function(){  
+                $(".box_rd_list li").removeClass('active');              
+                addClass();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#panel1" title="현재선택"><span>정기 납입</span></a></li>
+                                <li class="tab"><a href="#panel2"><span>중도 상환</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <div class="governing">
+                                    <h2 class="governing_title">정기 납입하실 대출을<br class="mo_br"> 선택해 주세요.</h2>
+                                </div>
+                                <div class="tbl_top_info">
+                                    <div class="result_text">
+                                        대출이 <strong>10건</strong> 있어요.
+                                    </div>
+                                </div>
+                                <ul class="box_rd_list">
+                                    <li>
+                                        <div class="radio_box">
+                                            <input id="radio1" type="radio" name="radio1">
+                                            <label for="radio1"></label>
+                                        </div>
+                                        <div class="insu_loan">
+                                            <div class="obj_name">
+                                                <div class="insu_title">12001901-00584<br class="mo_br"> 신용대출 </div>
+                                                <div class="info"><strong>대출일</strong><span>2021.04.25</span></div>
+                                            </div>                            
+                                            <div class="info_price no_input">
+                                                <ul class="info_rate">
+                                                    <li>대출이율<span class="num"><strong>연 4.00</strong>%</span></li>
+                                                    <li>정기납입금액
+                                                        <!-- tooltip -->
+                                                        <div class="ui_tooltip_wrap">
+                                                            <button type="button" class="ui_btn hintInfo"><span class="offscr">정기납입금액 도움말</span></button>
+                                                            <div class="tooltip">
+                                                                <i></i>
+                                                                <p>매월 정기적으로 납입하실 대출 원리금 계산 내역입니다. <span class="highlight">최종납입일 기준 정기납입금액이 산출됩니다.</span><br>
+                                                                    정기적으로 납입할 대출 원리금 이외 대출잔액 일부 또는 전액을 상환하고 근저당권 말소 또는 감액 등을 원하시는 경우 평일 영업시간(09:00~18:00)에 관리지점 또는 대출상담 콜센터(<span class="tel_number">1588-5655</span>)로 문의해 주시기 바랍니다.
+                                                                </p>
+                                                                <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <!--// tooltip --> 
+                                                        <span class="num"><strong>1,280,000</strong>원</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="info_list">
+                                                <ul>
+                                                    <li><strong>대출금액</strong><span>90,000,000원</span></li>
+                                                    <li><strong>대출잔액(원리금)</strong><span>78,821,374원</span></li>
+                                                    <li><strong>최종납입일</strong><span>2021.04.25</span></li>
+                                                    <li><strong>최종이수일</strong><span>2021.06.25</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_box">
+                                            <input id="radio2" type="radio" name="radio1">
+                                            <label for="radio2"></label>
+                                        </div>
+                                        <div class="insu_loan">
+                                            <div class="obj_name">
+                                                <div class="insu_title">12001901-00584<br class="mo_br"> 신용대출 </div>
+                                                <div class="info"><strong>대출일</strong><span>2021.04.25</span></div>
+                                            </div>                            
+                                            <div class="info_price no_input">
+                                                <ul class="info_rate">
+                                                    <li>대출이율<span class="num"><strong>연 4.00</strong>%</span></li>
+                                                    <li>정기납입금액
+                                                        <!-- tooltip -->
+                                                        <div class="ui_tooltip_wrap">
+                                                            <button type="button" class="ui_btn hintInfo"><span class="offscr">정기납입금액 도움말</span></button>
+                                                            <div class="tooltip">
+                                                                <i></i>
+                                                                <p>매월 정기적으로 납입하실 대출 원리금 계산 내역 입니다. <span class="highlight">최종납입일자 기준 정기 납입 금액이 산출됩니다.</span><br>
+                                                                    정기적으로 납입하실 대출 원리금 이외 대출잔액 일부 또는 전액 상환하시고 근저당권 말소 또는 감액 등을 원하시는 경우 영업시간 (09:00~18:00)에 관리지점 또는 대출상담 콜센터 <span class="tel_number">1588-5656</span> 로 문의하여 주시기 바랍니다.
+                                                                </p>
+                                                                <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <!--// tooltip --> 
+                                                        <span class="num"><strong>1,280,000</strong>원</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="info_list">
+                                                <ul>
+                                                    <li><strong>대출금액</strong><span>90,000,000원</span></li>
+                                                    <li><strong>대출잔액(원리금)</strong><span>78,821,374원</span></li>
+                                                    <li><strong>최종납입일</strong><span>2021.04.25</span></li>
+                                                    <li><strong>최종이수일</strong><span>2021.06.25</span></li>
+                                                </ul>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                </ul>
+                                <!-- 데이터 없을 때 -->
+                                <div class="no_list"><p>정기 납입이 가능한 대출이 없습니다.</p></div>
+                                <!-- //데이터 없을 때 -->
+                                <div class="amount_total_bottom">
+                                    <div class="m_toggle_cont" id="detail1">
+                                        <dl class="info_amount_detail">
+                                            <dt>대출원금</dt>
+                                            <dd><strong>531,886</strong>원</dd>
+                                            <dt>대출이자</dt>
+                                            <dd><strong>722,974</strong>원</dd>
+                                            <dt>납입금액</dt>
+                                            <dd><strong>1,280,000</strong>원</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="total">
+                                        <span class="tit">출금예정금액</span>
+                                        <span><strong>1,280,000</strong>원</span>
+                                    </div>
+                                    <a href="#detail1" class="m_toggle_btn" aria-expanded="false" title="내용열기"><span class="offscr">상세보기</span></a>
+                                </div>
+                                <div class="fixed_btm_btns fixed2">
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel2" class="tab_panel">
+                                <div class="governing">
+                                    <h2 class="governing_title">상환하실 대출을 선택 후<br> 대출상환금액을 입력해 주세요.</h2>
+                                </div>
+                                <div class="result_text">
+                                    대출이 <strong>10건</strong> 있어요.
+                                </div>
+                                <ul class="box_rd_list rd_check">
+                                    <li>
+                                        <div class="radio_box">
+                                            <input id="radio3" type="radio" name="radio2">
+                                            <label for="radio3"></label>
+                                        </div>
+                                        <div class="insu_loan">
+                                            <div class="obj_name">
+                                                <div class="insu_title">12001901-00585<br class="mo_br"> 아파트 </div>
+                                                <div class="info"><strong>대출일</strong><span>2021.04.15</span></div>
+                                            </div>                            
+                                            <div class="info_price">
+                                                <ul class="info_rate">
+                                                    <li>대출이율<span class="num"><strong>연 4.25</strong>%</span></li>
+                                                    <li>대출잔액(원금)<span class="num"><strong>70,000,000</strong>원</span></li>
+                                                </ul>
+                                                <div class="price_ui_input">
+                                                    <div class="price_input">
+                                                        <div class="unit_item">
+                                                            <input class="inp_price" placeholder="상환신청금액 입력" type="tel">
+                                                            <span class="unit">원</span>
+                                                        </div>	
+                                                        <!-- 유효성 체크 후 disabled 삭제 class에 active 추가 -->
+                                                        <button type="button" class="btn oline" disabled><span>계산</span></button>
+                                                    </div>
+                                                    <div class="btn_price">
+                                                        <button type="button" class="btn sgrey"><span>+5만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>전액</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info_list">
+                                                <ul>
+                                                    <li><strong>대출금액</strong><span>90,000,000원</span></li>
+                                                    <li><strong>최종납입일</strong><span>2021.04.25</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>                                        
+                                    </li>
+                                    <li>
+                                        <div class="radio_box">
+                                            <input id="radio4" type="radio" name="radio2">
+                                            <label for="radio4"></label>
+                                        </div>                                        
+                                        <div class="insu_loan">
+                                            <div class="obj_name">
+                                                <div class="insu_title">12001901-00584<br class="mo_br"> 아파트 </div>
+                                                <div class="info"><strong>대출일</strong><span>2021.04.15</span></div>
+                                            </div>                            
+                                            <div class="info_price">
+                                                <ul class="info_rate">
+                                                    <li>대출이율<span class="num"><strong>연 4.25</strong>%</span></li>
+                                                    <li>대출잔액(원금)<span class="num"><strong>70,000,000</strong>원</span></li>
+                                                </ul>
+                                                <div class="price_ui_input">
+                                                    <div class="price_input">
+                                                        <div class="unit_item">
+                                                            <input class="inp_price" placeholder="상환신청금액 입력" type="tel">
+                                                            <span class="unit">원</span>
+                                                        </div>	
+                                                        <!-- 유효성 체크 후 disabled 삭제 class에 active 추가 -->
+                                                        <button type="button" class="btn oline" disabled><span>계산</span></button>
+                                                    </div>
+                                                    <div class="btn_price">
+                                                        <button type="button" class="btn sgrey"><span>+5만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                                        <button type="button" class="btn sgrey"><span>전액</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info_list">
+                                                <ul>
+                                                    <li><strong>대출금액</strong><span>90,000,000원</span></li>
+                                                    <li><strong>최종납입일</strong><span>2021.04.25</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="amount_total_bottom">
+                                    <div class="m_toggle_cont" id="detail2">
+                                        <dl class="info_amount_detail">
+                                            <dt>상환신청금액</dt>
+                                            <dd><strong>7,000,000</strong>원</dd>
+                                            <dt>정산이자</dt>
+                                            <dd><strong>+1,000,250</strong>원</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="total">
+                                        <span class="tit">출금예정금액</span>
+                                        <span><strong>8,000,250</strong>원</span>
+                                    </div>
+                                    <a href="#detail2" class="m_toggle_btn" aria-expanded="false" title="내용열기"><span class="offscr">상세보기</span></a>
+                                </div>
+                                <div class="fixed_btm_btns fixed2">
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+
+</body>
+</html>

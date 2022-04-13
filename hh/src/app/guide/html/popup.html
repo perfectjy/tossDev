@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>현대해상 | Publishing Guide</title>
+
+<script src="../../../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../js/ui_guide.js"></script>
+<script src="../../../assets/js/jquery-ui-1.12.1.min.js"></script>
+<script src="../../../assets/js/ui_plugins.js"></script>
+<script src="../../../assets/js/ui_common.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/ui_guide.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/contents.css">
+</head>
+<body>
+	<div id="gWrap">
+		<div class="guide_content">
+			<h1>Modal</h1>
+			<div class="g_section">
+				<h2>popup</h2>
+				<div class="g_guide_info">                
+					<div class="g_item">
+						<a href="#dialogSizeL" class="btn ass dialog_open">큰사이즈 팝업</a>
+						<a href="#dialogSizeM" class="btn ass dialog_open">중간사이즈 팝업</a>
+						<a href="#dialogSizeS" class="btn ass dialog_open">작은사이즈 팝업</a>
+						<a href="#bottomDialog" class="btn ass dialog_open">커튼팝업</a>
+						<a href="#dialogAlert" class="btn ass dialog_open">알럿팝업</a>
+						<a href="#" class="btn ass" onclick="Dialog.open('#confirmDialog')">컨펌창 팝업</a>
+					</div>
+					
+					<p class="txt_guide">tooltip</p>
+					<div class="g_item">
+						<!-- tooltip -->
+						<div class="ui_tooltip_wrap">
+							<button type="button" class="ui_btn hintInfo"><span class="offscr">설명 보기</span></button>
+							<div class="tooltip">
+								<i></i>
+								<p>「신용정보업 감독규정」 개정에 따라 2019년 7월 10일 이후 신규 가입한 보험계약에서 대출 신청 시, 신용정보 제공에 동의하셔야 대출 신청이 가능합니다. 또한 해당 정보는 신용정보원에 집중되어 다른 금융기관 등에 공유되며, 다른 금융기관 대출의 DSR 산정 시 해당 보험계약대출의 '이자상환액' 이 포함됩니다.</p>
+								<button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+							</div>
+						</div>
+						<!--// tooltip -->
+
+					</div>					
+				</div>
+			</div>
+
+			<div id="dialogSizeL" class="dialog full">
+				<div class="dialog_wrap">
+					<div class="dialog_header">
+						<h1>레이어팝업 큰사이즈</h1>
+						<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+					</div>
+					<div class="dialog_content">
+						<div class="simplebar">
+							<div class="section">
+								<div class="dummy cms"><span>팝업내용 영역</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="dialog_footer">
+						<div class="dialog_footer_btn">
+							<button type="button" class="btn second dialog_close">취소</button>
+							<button type="button" class="btn primary dialog_close">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="dialogSizeM" class="dialog full">
+				<div class="dialog_wrap m">
+					<div class="dialog_header">
+						<h1>레이어팝업 중간사이즈</h1>
+						<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+					</div>
+					<div class="dialog_content">
+						<div class="dialog_content_scroller">
+							<div class="dummy"><span>팝업내용 영역</span></div>										
+						</div>
+					</div>
+					<div class="dialog_footer">
+						<div class="dialog_footer_btn">
+							<button type="button" class="btn second dialog_close">취소</button>
+							<a href="#dialogAlert" class="btn primary dialog_open">확인</a>
+							<!-- <button type="button" class="btn primary dialog_close">확인</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="dialogSizeS" class="dialog modal">
+				<div class="dialog_wrap s">
+					<div class="dialog_header">
+						<h1>레이어팝업 작은사이즈</h1>
+						<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+					</div>
+					<div class="dialog_content">
+						<div class="dialog_content_scroller simplebar">
+							<div class="dummy cms"><span>팝업내용 영역</span></div>
+							<a href="#dialogSizeM" class="btn s2 line dialog_open">중간사이즈 팝업</a>
+						</div>
+					</div>
+					<div class="dialog_footer">
+						<div class="dialog_footer_btn">
+							<button type="button" class="btn second dialog_close">취소</button>
+							<button type="button" class="btn primary dialog_close">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 모바일 하단팝업 -->
+			<div id="bottomDialog" class="dialog bottom">
+				<div class="dialog_wrap m">
+					<div class="dialog_header">
+						<h1>타이틀</h1>
+						<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+					</div>
+					<div class="dialog_content">
+						<div class="section">
+							커튼 레이어 내용<br>
+							커튼 레이어 내용<br>
+							커튼 레이어 내용<br>
+							커튼 레이어 내용<br>
+						</div>
+					</div>
+					<div class="dialog_footer">
+						<div class="dialog_bottom_btn">
+							<a href="#" class="btn primary dialog_close">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 모바일 하단팝업 -->
+
+			<!-- 알럿창 -->
+			<div id="dialogAlert" class="dialog modal" aria-hidden="false">
+				<div class="dialog_alert">
+					<div class="message">
+						이용시간 : 평일 09:00 ~ 18:00 (주말/공휴일 제외) 이용가능 시간에 다시 방문해 주세요.
+					</div>
+					<div class="dialog_footer_btn">
+						<button type="button" class="btn primary dialog_close">확인</button>
+					</div>
+				</div>
+			</div>
+			<!--// 알럿창 -->
+
+			<!-- 컨펌창 -->
+			<div id="confirmDialog" class="dialog modal" aria-hidden="false">
+				<div class="dialog_alert">
+					<div class="message">
+						주의사항을 확인해 주세요.
+					</div>
+					<div class="dialog_footer_btn">
+						<button type="button" class="btn second dialog_close">취소</button>
+						<button type="button" class="btn primary">확인</button>
+					</div>
+				</div>
+			</div>
+			<!-- //컨펌창 -->
+
+			<div class="g_section">
+				<div class="g_guide_info">
+					<!-- 약관 동의 1 -->
+					<div class="agreement">
+					<!-- 약관 동의 콘텐츠 -->
+					<div class="agreement_title">
+						<h3 class="h3"><span class="tag surely">필수</span><span>개인(신용)정보 처리 동의</span></h3>
+						<div class="agreement_btn">
+							<a href="#none" class="btn_agree" title="약관팝업열기"><span>전체 동의</span></a><!-- 약관팝업에서 전체동의시 active 클래스 추가 -->
+						</div>
+					</div>
+					<div class="agreement_section">
+						<div class="agreemen_list">
+							<div class="agree_item">
+								<button type="button" class="btn_chk"><span> 수집·이용에 관한 사항</span></button>
+							</div>
+							<ul>
+								<li>
+									<span class="radio_title">고유식별정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub1N" class="agree_rdo" name="agreeSub1" type="radio" checked>
+											<label for="agreeSub1N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub1Y" class="agree_rdo" name="agreeSub1" type="radio">
+											<label for="agreeSub1Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>    
+									</div>
+								</li>
+								<li>
+									<span class="radio_title">민감정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub2N" class="agree_rdo" name="agreeSub2" type="radio" checked>
+											<label for="agreeSub2N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub2Y" class="agree_rdo" name="agreeSub2" type="radio">
+											<label for="agreeSub2Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+								<li>
+									<span class="radio_title">개인(신용)정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub3N" class="agree_rdo" name="agreeSub3" type="radio" checked>
+											<label for="agreeSub3N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub3Y" class="agree_rdo" name="agreeSub3" type="radio">
+											<label for="agreeSub3Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="agreemen_list">
+							<div class="agree_item">
+								<button type="button" class="btn_chk"><span>제공에 관한 사항</span></button>
+							</div>
+							<ul>
+								<li>
+									<span class="radio_title">[국내] 고유식별정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub4N" class="agree_rdo" name="agreeSub4" type="radio" checked>
+											<label for="agreeSub4N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub4Y" class="agree_rdo" name="agreeSub4" type="radio">
+											<label for="agreeSub4Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+								<li>
+									<span class="radio_title">[국내] 민감정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub5N" class="agree_rdo" name="agreeSub5" type="radio" checked>
+											<label for="agreeSub5N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub5Y" class="agree_rdo" name="agreeSub5" type="radio">
+											<label for="agreeSub5Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+								<li>
+									<span class="radio_title">[국내] 개인(신용)정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub6N" class="agree_rdo" name="agreeSub6" type="radio" checked>
+											<label for="agreeSub6N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub6Y" class="agree_rdo" name="agreeSub6" type="radio">
+											<label for="agreeSub6Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="radio_title">[국외] 개인(신용)정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+												<input id="agreeSub7N" class="agree_rdo" name="agreeSub7" type="radio" checked>
+											<label for="agreeSub7N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub7Y" class="agree_rdo" name="agreeSub7" type="radio">
+											<label for="agreeSub7Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="agreemen_list">
+							<div class="agree_item">
+								<button type="button" class="btn_chk"><span>조회에 관한 사항</span></button>
+							</div>
+							<ul>
+								<li>
+									<span class="radio_title">고유식별정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub8N" class="agree_rdo" name="agreeSub8" type="radio" checked>
+											<label for="agreeSub8N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub8Y" class="agree_rdo" name="agreeSub8" type="radio">
+											<label for="agreeSub8Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+								<li>
+									<span class="radio_title">민감정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub9N" class="agree_rdo" name="agreeSub9" type="radio" checked>
+											<label for="agreeSub9N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub9Y" class="agree_rdo" name="agreeSub9" type="radio">
+											<label for="agreeSub9Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+								<li>
+									<span class="radio_title">개인(신용)정보</span>
+									<div class="radio_set">
+										<div class="radio_box">
+											<input id="agreeSub10N" class="agree_rdo" name="agreeSub10" type="radio" checked>
+											<label for="agreeSub10N">동의안함</label>
+										</div>
+										<div class="radio_box">
+											<input id="agreeSub10Y" class="agree_rdo" name="agreeSub10" type="radio">
+											<label for="agreeSub10Y">동의함</label>
+											<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+										</div>
+									</div>    
+								</li>
+							</ul>
+						</div>
+						<div class="agreemen_list">
+							<div class="agree_item">
+									<p class="btn_chk">스크래핑(온라인 간편서류제출) 서비스를 이용하여 가족관계정보를 자동으로 확인해 오는 것에 동의합니다.</p>
+							</div>
+							<ul>
+									<li>
+											<div class="radio_set">
+													<div class="radio_box">
+															<input id="agreeSub11N" class="agree_rdo" name="agreeSub11" type="radio" checked>
+															<label for="agreeSub11N">동의안함</label>
+													</div>
+													<div class="radio_box">
+															<input id="agreeSub11Y" class="agree_rdo" name="agreeSub11" type="radio">
+															<label for="agreeSub11Y">동의함</label>
+															<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+													</div>    
+											</div>
+									</li>
+							</ul>
+					</div>
+					</div>
+				</div>
+					<!-- 약관 동의 2 -->	
+					<div class="agreement">
+						<!-- 약관 동의 콘텐츠 -->
+						<div class="agreement_title">
+							<h3 class="h3"><span class="tag surely">필수</span><span>보험계약대출에 관한 확인사항</span></h4>
+							<div class="agreement_btn">
+								<a href="#none" class="btn_agree" title="약관팝업열기"><span>모두 동의</span></a><!-- 약관팝업에서 전체동의시 active 클래스 추가 -->
+							</div>
+						</div>
+						<div class="agreement_section">
+							<ul class="list_chk">
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk1" class="agree_chk" name="agreeGroup" type="checkbox" checked>
+										<label for="agreeChk1">약정서 확인 전체선택</label>
+										<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+									</div>                            
+								</li>  
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk2" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk2">상품설명서 확인</label>
+										<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk3" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk3">연금보험 보험계약대출 이용 시 유의사항</label>
+										<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk3" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk3">보장부분 보험계약대출 이용 시 유의사항</label>
+										<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item">
+										<input id="agreeChk3" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk3">[필독] 주의사항</label>
+										<button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+									</div>                            
+								</li>
+							</ul>
+						</div>
+						<!-- //약관 동의 콘텐츠 -->
+						
+					</div>
+					<!-- //약관 동의 2 -->	
+				</div>
+		  	</div>
+
+
+
+		</div>
+	</div>
+
+
+	
+	</div>
+</body>
+</html>

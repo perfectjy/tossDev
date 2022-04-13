@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>현대해상 | Publishing Guide</title>
+
+<script src="../../../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../js/ui_guide.js"></script>
+<script src="../../../assets/js/jquery-ui-1.12.1.min.js"></script>
+<script src="../../../assets/js/ui_plugins.js"></script>
+<script src="../../../assets/js/ui_common.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/ui_guide.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/contents.css">
+
+</head>
+<body>
+<div id="gWrap">
+	
+	<div class="guide_content">
+		<h1>Table</h1>
+		<div class="g_section">
+			<div class="g_guide_info">
+				<p class="txt_guide">2단 Responsible (Mobile : 1단 table 로 변형) - .tbl_row</p>
+				<table class="tbl_row">
+					<colgroup>
+						<col style="width:20%;">
+						<col style="width:auto;">
+						<col style="width:20%">
+						<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">계약번호</th>
+							<td colspan="3">L2020094895****</td>
+						</tr>
+						<tr>
+							<th scope="row">보험기간</th>
+							<td>2020.08.23~2021.08.23</td>
+							<th scope="row">자동차번호</th>
+							<td>34가 1234</td>
+						</tr>
+						<tr>
+							<th scope="row">가입경력선정인</th>
+							<td>하이해<br>하이상</td>
+							<th scope="row">계약자</th>
+							<td>하이현 (90001-*******)</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p class="txt_guide">PC/Mobile UI변경이 없는 Table Type - .tbl_col</p>
+				<table class="tbl_col">
+					<caption>담보/보장기간,가입금액</caption>
+					<colgroup>
+						<col style="width:70%;">
+						<col style="width:auto;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">담보/보장기간</th>
+							<th scope="col">가입금액</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th scope="col" class="txt_l">보장보험료 합계</th>
+							<td class="txt_r">48,456원</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td class="txt_l">
+								일반상해사망후유증장애담보<br>
+								<span class="sub">2015.11.23 ~ 2037.11.23</span>
+							</td>
+							<td class="txt_r"><span class="highlight">10억원</span></td>
+						</tr>
+						<tr>
+							<td class="txt_l">
+								골절(치아파절제외)진단위로금담보<br>
+								<span class="sub">2015.11.23 ~ 2037.11.23</span>
+							</td>
+							<td class="txt_r"><span class="highlight">1천만원</span></td>
+						</tr>
+						<tr>
+							<td class="txt_l">
+								암진단(갱신형)담보<br>
+								<span class="sub">2015.11.23 ~ 2037.11.23</span>
+							</td>
+							<td class="txt_r"><span class="highlight">20억원</span></td>
+						</tr>
+						<tr>
+							<td class="txt_l">
+								암진단(갱신형)담보<br>
+								<span class="sub">2015.11.23 ~ 2037.11.23</span>
+							</td>
+							<td class="txt_r"><span class="highlight">10억원</span></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p class="txt_guide">페이징</p>
+				<div class="g_item">
+					<div class="Paging" aria-label="pagination">
+						<ul>
+							<li> <button type="button"  class="prev"><span class="offscr">이전페이지</span></button> </li>
+							<li> <a href="#" class="current">1<span class="offscr">현재페이지</span></a> </li>
+							<li> <a href="#">2<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">3<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">4<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">5<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">6<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">7<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">8<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">9<span class="offscr">페이지</span></a> </li>
+							<li> <a href="#">10<span class="offscr">페이지</span></a> </li>
+							<li> <button type="button" class="next"><span class="offscr">다음페이지</span></button> </li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="g_section mo_hide">
+			<div class="g_guide_info">
+				<p class="txt_guide">공시실 메뉴 table (폰트크기가 다름) - .tbl_data</p>
+				<table class="tbl_data">
+					<caption>선택한 상품에 대한 관련 정보 및 문서 다운로드</caption>
+					<colgroup>
+							<col style="width:180px" span="2">
+							<col style="width:auto">
+							<col style="width:180px" span="4">
+					</colgroup>
+					<thead>
+							<tr>
+									<th scope="col">판매개시일</th>
+									<th scope="col">판매중지일</th>
+									<th scope="col">금리연동</th>
+									<th scope="col">약관</th>
+									<th scope="col">사업방법서</th>
+									<th scope="col">상품요약서</th>
+									<th scope="col">상품설명서</th>
+							</tr>
+					</thead>
+					<tbody>
+							<tr>
+									<td>2019.01.02</td>
+									<td>-</td>
+									<td>X</td>
+									<td><a href="#none" class="file pdf"><span class="offscr">약관보기</span></a></td>
+									<td><a href="#none" class="file pdf"><span class="offscr">사업방법서 보기</span></a></td>
+									<td><a href="#none" class="file pdf"><span class="offscr">상품요약서 보기</span></a></td>
+									<td><a href="#none" class="file pdf"><span class="offscr">상품설명서 보기</span></a></td>
+							</tr>
+							<tr>
+									<td>2017.05.08</td>
+									<td>2019.01.01</td>
+									<td>X</td>
+									<td><a href="#none" class="file pdf"><span class="offscr">약관보기</span></a></td>
+									<td></td>
+									<td><a href="#none" class="file pdf"><span class="offscr">상품요약서 보기</span></a></td>
+									<td></td>
+							</tr>
+					</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

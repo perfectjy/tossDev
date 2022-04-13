@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html lang="ko" class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save"/>
+	<!--[if lte IE 8]><html class="no-js ie8" lang="ko"> <![endif]-->
+	<!--[if IE 9]><html class="no-js ie9" lang="ko"> <![endif]-->
+	<!--[if gte IE 9]><html class="no-js" lang="ko"> <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>현대해상 | Publishing Guide</title>
+	<link rel="stylesheet" href="./resource/css/worklist.css" />
+	<script type="text/javascript" src="./resource/js/worklist.plugins.js"></script>
+	<script type="text/javascript" src="./resource/js/worklist.include.js"></script>
+	<script type="text/javascript" src="./resource/js/worklist.js"></script>
+	<style>
+		.tab_contents_wrap table tr.equal td a{color: #e40000;}
+		.filter_btn.inspect .btn span{min-width:41px;}
+		.filter_btn.inspect .btn.on span{background: #fff;color: #000;}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$('.btn.aa04').addClass('active');
+
+			var isDev = (window.location.hostname.substr(0,3) === 'dev') ? true : false;
+			if(isDev){
+				$('.tab_contents_wrap td a').each(function(i){
+					var href = $(this).attr('href').replace('../', '../html/');
+					$(this).attr('href', href);
+				});
+			}
+		});
+	</script>
+</head>
+<body data-storage-init="option=[Y,,,,,Y]|search=[,,,,]|table=[,,,Y,,]"data-storage-force="option=[,,,,,]|search=[,,,,]|table=[N,N,N,,,]|resizeMode|curSize|headerClose">
+	<div id="wrap">
+		<h1><a href="worklist.html">현대해상 <small> : 하이플래너</small></a></h1>
+
+		<!-- header -->
+		<div class="header">
+			<!-- 1Depth : Tab Navigation -->
+			<div class="tab_nav" >
+				<h2>IA.</h2>
+				<ul>
+					<li><a href="javascript:void(0);"><span>메인</span></a></li>
+					<li><a href="javascript:void(0);"><span>하이플래너소개</span></a></li>
+					<li><a href="javascript:void(0);"><span>하이플래너지원</span></a></li>
+					<li><a href="javascript:void(0);"><span>지원 및 위탹계약</span></a></li>
+					<li><a href="javascript:void(0);"><span>하이플래너모집</span></a></li>
+					<li><a href="javascript:void(0);"><span>하이플래너검색</span></a></li>
+					<li><a href="javascript:void(0);"><span>공통</span></a></li>
+					<li><a href="javascript:void(0);"><span>View All</span></a></li>
+				</ul>
+			</div>
+			<!-- //1Depth : IA Tab Navigation -->
+			<!-- info_section -->
+			<div class="info_section">
+				<div class="box info_box">
+					<h2>Publishing info.</h2>
+					<div class="box_wrap">
+						<table>
+							<caption>Encoding, Cross Browsing, History Infomation</caption>
+							<colgroup><col width="100px" /><col width="150px" /><col width="100px" /><col width="150px" /></colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">Encoding</th>
+									<td>UTF-8</td>
+									<th scope="row">DTD</th>
+									<td>HTML5 </td>
+								</tr>
+								<tr>
+									<th scope="row">Cross Browsing</th>
+									<td colspan=3>Chrome</td>
+								</tr>
+								<tr>
+									<th scope="row">History</th>
+									<td colspan="3">
+										검수대상 : ● 1차 수정, ■ 2차 수정, ▲ 3차 수정, ★ 4차 수정 <br>
+										CICT-DE-UD-CL-화면목록(TO-BE 개인)-20220104-ver 1.10.xlsx
+										<br>
+										<textarea class="history_area" style="font-size:10px; height: 22px;">
+1/4 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20220104-ver 1.10.xlsx
+12/28 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20211227-ver 1.08.xlsx 고객검수 업데이트 
+09/24 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210930-ver 0.94.xlsx
+09/24 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210923-ver 0.94.xlsx
+09/10 : 하이플래너모집 삭제 : 
+09/03 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210902-ver 0.92.xlsx
+07/27 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210723-ver 0.89.xlsx
+08/02 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210727-ver 0.89.xlsx
+07/27 : CICT-DE-UD-CL-화면목록(TO-BE 개인)-20210723-ver 0.89.xlsx
+										</textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="box link_box ">
+					<h2>Link info.</h2>
+					<div class="box_wrap">
+						<script>inc_linkInfo();</script>
+					</div>
+				</div>
+				<div class="box filter_box" style="">
+					<h2>Filter.</h2>
+					<div class="box_wrap">
+						<div class="filter_rate">
+							<script>inc_filter();</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //info_section -->
+		</div>
+		<!-- //header -->
+
+		<!-- content -->
+		<div id="content">
+
+<!-- **************************************************
+* Start of Content
+************************************************** -->
+
+
+
+
+
+<!-- --------------------------------------------------
+// [01. 메인]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>메인</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr>
+				<td class="depth2">메인</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">메인</td>
+				<td class="path"><a href="../HP/MA/HPMA00000010.html" target="_blank">HPMA00000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/6</td>
+				<td class="pdate">○</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [01. 하이플래너소개]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>하이플래너소개</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr>
+				<td class="depth2">하이플래너란?</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너란?</td>
+				<td class="path"><a href="../HP/HP/HPHP01000010.html" target="_blank">HPHP01000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/6</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">배너이미지 추후 변경</div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">하이플래너란?</td>
+				<td class="depth3">(탭)손해보험 영업안내</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너란?(탭)손해보험 영업안내</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">하이플래너란?</td>
+				<td class="depth3">(탭)활동지원</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너란?(탭)활동지원</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">하이플래너란?</td>
+				<td class="depth3">(탭)설계사 자격시험</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너란?(탭)설계사 자격시험</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">자격시험</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">자격시험</td>
+				<td class="path"><a href="../HP/HP/HPHP02000010.html" target="_blank">HPHP02000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">교육과정</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">교육과정</td>
+				<td class="path"><a href="../HP/HP/HPHP06000010.html" target="_blank">HPHP06000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">활동 및 지원</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">활동 및 지원</td>
+				<td class="path"><a href="../HP/HP/HPHP03000010.html" target="_blank">HPHP03000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">GA대리점</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">GA대리점</td>
+				<td class="path"><a href="../HP/HP/HPHP04000010.html" target="_blank">HPHP04000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/6</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">교차설계사</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">교차설계사</td>
+				<td class="path"><a href="../HP/HP/HPHP05000010.html" target="_blank">HPHP05000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">10/28 : 아이콘 변경으로 클래스명 변경</div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">교육체계</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">교육체계</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">소득지원</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">소득지원</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">복리후생</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">복리후생</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">영업지원</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">영업지원</td>
+				<td class="path"><a href="javascript:void(0);" target="_blank"></a></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [01. 하이플래너지원]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>하이플래너지원</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr>
+				<td class="depth2">하이플래너 지원</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너 지원</td>
+				<td class="path"><a href="../HP/IN/HPIN01000010.html" target="_blank">HPIN01000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/9</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">(팝업)개인(신용)정보 처리 필수 동의서</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">(팝업)개인(신용)정보 처리 필수 동의서</td>
+				<td class="path"><a href="../HP/IN/HPIN01000011.html" target="_blank">HPIN01000011</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/6</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+<!-- --------------------------------------------------
+// [01. 지원 및 위탹계약]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>지원 및 위탹계약</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr class="del">
+				<td class="depth2">위탁계약서 작성</td>
+				<td class="depth3">1단계_계약대상 정보 입력</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">1단계_계약대상 정보 입력</td>
+				<td class="path"><a href="../HP/IN/HPIN02000011.html" target="_blank">HPIN02000011</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">위탁계약서 작성</td>
+				<td class="depth3">2단계_계약대상 정보 확인</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">2단계_계약대상 정보 확인</td>
+				<td class="path"><a href="../HP/IN/HPIN02000012.html" target="_blank">HPIN02000012</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/7</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">위탁계약서 작성</td>
+				<td class="depth3">3단계_위탁계약서 동의</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">3단계_위탁계약서 동의</td>
+				<td class="path"><a href="../HP/IN/HPIN02000013.html" target="_blank">HPIN02000013</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">위탁계약서 작성</td>
+				<td class="depth3">(공통)전자서명</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">(공통)전자서명</td>
+				<td class="path">-</td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">N/A</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">위탁계약서 작성</td>
+				<td class="depth3">4단계_작성완료</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">4단계_작성완료</td>
+				<td class="path"><a href="../HP/IN/HPIN02000014.html" target="_blank">HPIN02000014</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [01. 하이플래너모집]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>하이플래너모집</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr class="del">
+				<td class="depth2">명함제작및사용지침</td>
+				<td class="depth3">(탭)명함제작및사용지침</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너검색</td>
+				<td class="path"></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">명함제작및사용지침</td>
+				<td class="depth3">(탭)명함디자인샘플</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">교차설계사</td>
+				<td class="path"></td>
+				<td class="corder"></td>
+				<td class="ddate">9/10</td>
+				<td class="rdate"></td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- --------------------------------------------------
+// [01. 하이플래너검색]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>하이플래너검색</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr>
+				<td class="depth2">하이플래너검색</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너검색</td>
+				<td class="path"><a href="../HP/SH/HPSH00000010.html" target="_blank">HPSH00000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">(팝업)지도보기</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">하이플래너검색(팝업)지도보기</td>
+				<td class="path"><a href="../HP/SH/HPSH00000011.html" target="_blank">HPSH00000011</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/9</td>
+				<td class="pdate">○</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">12/13 : 디자인(기획) 협의 후 회색 폰 아이콘에서 주황색으로 변경</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="depth2">명장컨설팅 </td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">명장컨설팅 </td>
+				<td class="path"><a href="../HP/CM/HPCM01000010.html" target="_blank">HPCM01000010</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate">●</td>
+				<td class="mdate"> ●</td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">1/4: 공통에서 하이플래너검색 메뉴로 이동</div>
+					<div class="desc">12/13 : 디자인(기획) 협의 후 회색 폰 아이콘에서 주황색으로 변경</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- --------------------------------------------------
+// [01. 공통]
+-------------------------------------------------- -->
+<div class="tab_contents_wrap">
+	<h3>공통</h3>
+	<table width="100%;">
+		<script> inc_IAHead();</script>
+		<tbody>
+			<tr class="del">
+				<td class="depth2">명장컨설팅 </td>
+				<td class="depth3">(팝업) 컨설턴트 현황</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">(팝업) 컨설턴트 현황</td>
+				<td class="path"><a href="../HP/CM/HPCM01000011.html" target="_blank">HPCM01000011</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">9/24 : 삭제</div>
+				</td>
+			</tr>
+			<tr class="del">
+				<td class="depth2">명장컨설팅 </td>
+				<td class="depth3">(팝업)컨설팅 신청 완료</td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="depth6"></td>
+				<td class="page">(팝업)컨설팅 신청 완료</td>
+				<td class="path"><a href="../HP/CM/HPCM01000012.html" target="_blank">HPCM01000012</a></td>
+				<td class="corder">김정은</td>
+				<td class="ddate">9/10</td>
+				<td class="rdate">9/8</td>
+				<td class="pdate"></td>
+				<td class="mdate"> </td>
+				<td class="info"></td>
+				<td class="etc">
+					<div class="desc">9/24 : 삭제</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+<!-- **************************************************
+* End of Content
+************************************************** -->
+
+</div><!-- //content -->
+</div><!-- //wrap -->
+</body>
+</html>
+
+
+
+

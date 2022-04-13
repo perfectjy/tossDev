@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '아파트담보대출', tooltip: false, prev: true, menu: true };
+
+        $(function(){
+            Dialog.open('#HILF03010111');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+            <div id="content">
+                <div class="section_m">
+                    <a href="#HILF03010111" class="btn line dialog_open">대출가능금액조회</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    <div id="HILF03010111" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>대출가능금액조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="step_list">
+                            <div class="step_bar"><span style="width:33%"></span></div>
+                            <div class="steps">
+                              <span class="offscr">현재단계</span><strong class="num">1</strong>
+                              <span class="offscr">전체단계</span><strong>3</strong>
+                            </div>
+                        </div>
+                        <div class="governing">
+                            <h2 class="governing_title">아파트를 조회한 후 세부 유형을<br>선택해 주세요.</h2>
+                        </div>
+                        <div class="form_wrap">
+                            <div class="form_list">
+                                <label for="local" class="form_label">지역 선택</label>
+                                <div class="local_item">
+                                    <div class="item">
+                                        <select id="local" name="" title="시/도">
+                                            <option value="0">시/도 선택</option>
+                                        </select>
+                                    </div>    
+                                    <div class="item">
+                                        <select id="local" name="" title="시/도/구" disabled>
+                                            <option value="0">시/도/구 선택</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <select name="" title="동/읍/면" disabled>
+                                            <option value="0">동/읍/면 선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="apt" class="form_label">아파트 선택</label>
+                                <div class="form_item">
+                                    <select id="apt">
+                                        <option>아파트명 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="htup_txtr"><span>기준일: 2019.01.28</span></p>
+                        <h3 class="h3">래미안그레이튼(진달래2차)</h3>
+                        <div class="box_rd_list">
+                            <div class="dtbl_rdo">
+                                <input id="radio1" type="radio" name="radio">
+                                <label for="radio1">
+                                    <div class="sub_header">
+                                        <strong class="title">85.97m2<span>(공용면적)</span></strong>
+                                        <dl>
+                                            <dt>방 개수</dt>
+                                            <dd>3개</dd>
+                                            <dt>입주연도</dt>
+                                            <dd>2007.02</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="sub_body">
+                                        <div>
+                                            <span class="tag good">매매</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <span class="tag normal">전세</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </label>            
+                            </div>
+                            <div class="dtbl_rdo">
+                                <input id="radio2" type="radio" name="radio">
+                                <label for="radio2">
+                                    <div class="sub_header">
+                                        <strong class="title">85.97m2<span>(공용면적)</span></strong>
+                                        <dl>
+                                            <dt>방수</dt>
+                                            <dd>3개</dd>
+                                            <dt>입주연도</dt>
+                                            <dd>2007.02</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="sub_body">
+                                        <div>
+                                            <span class="tag good">매매</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <span class="tag normal">전세</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </label>            
+                            </div>
+                            <div class="dtbl_rdo">
+                                <input id="radio3" type="radio" name="radio">
+                                <label for="radio3">
+                                    <div class="sub_header">
+                                        <strong class="title">85.97m2<span>(공용면적)</span></strong>
+                                        <dl>
+                                            <dt>방수</dt>
+                                            <dd>3개</dd>
+                                            <dt>입주연도</dt>
+                                            <dd>2007.02</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="sub_body">
+                                        <div>
+                                            <span class="tag good">매매</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <span class="tag normal">전세</span>
+                                            <dl>
+                                                <dt>상한가</dt>
+                                                <dd>100,000만원</dd>
+                                                <dt>일반거래가</dt>
+                                                <dd>98,000만원</dd>
+                                                <dt>하한가</dt>
+                                                <dd>95,000만원</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </label>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>다음</span></button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

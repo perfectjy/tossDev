@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '교통상해 필요서류', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="doc_file_wrap">
+                        <h3 class="h3">청구 유형 선택</h3> 
+                        <div class="type_filter">
+                            <div class="filters">
+                                <span class="chk_item">
+                                    <input type="checkbox" id="multi1" name="chk_filter">
+                                    <label for="multi1">전체선택</label>
+                                </span>
+                            </div>
+                            <ul class="type_sel_box">
+                                <li>
+                                    <input id="check1" type="checkbox" name="check">
+                                    <label for="check1">사망</label>
+                                </li>
+                                <li>
+                                    <input id="check2" type="checkbox" name="check">
+                                    <label for="check2">의료비(입원/통원/골절/수술)</label>
+                                </li>
+                                <li>
+                                    <input id="check3" type="checkbox" name="check">
+                                    <label for="check3">장해</label>
+                                </li>
+                                <li>
+                                    <input id="check4" type="checkbox" name="check">
+                                    <label for="check4">운전자 비용</label>
+                                </li>
+                                <li>
+                                    <input id="check5" type="checkbox" name="check">
+                                    <label for="check5">기타</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="title">
+                                <span class="toggle">교통상해 안내</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>교통상해: 보험기간 중 교통사고로 신체에 상해를 입거나, 타인의 신체 또는 재물에 손해를 입힌 경우
+                                        <ul class="list_bar">
+                                            <li>교통사고로 신체에 상해를 입고 통원 또는 입원 치료 시</li>
+                                            <li>교통사고로 타인의 신체를 다치게 하여 행정적인 책임이 발생한 경우(벌금 등)</li>
+                                            <li>교통사고로 자동차보험의 대인, 대물, 자손담보 보험처리된 경우(할증지원금)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr>                        
+
+                        <div class="filter_item">
+                            <div class="filter_item_inner">
+                                <select title="해당서류 보기">
+                                    <option value="">필요서류 보기</option>
+                                    <option value="doc1">필수서류</option>
+                                    <option value="doc2">실손의료비</option>
+                                    <option value="doc3">골절</option>
+                                    <option value="doc4">수술</option>
+                                    <option value="doc5">깁스치료</option>
+                                    <option value="doc6">운전자 비용</option>
+                                    <option value="doc7">장해</option>
+                                    <option value="doc8">사망</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="place">발급처</span>                        
+
+                        <h3 id="doc1" class="h3">필수서류</h3>
+                        <h4 class="h4 bul">공통</h4>
+                        
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>보험금청구서<span class="place"><em class="offscr">발급처</em>현대해상</span>
+                                    <ul class="list_bar">
+                                        <li>개인(신용)정보동의서, 수익자 계좌번호 포함</li>
+                                    </ul>
+                                </li>
+                                <li>청구인 신분증 사본<span class="highlight">(앞면)</span></li>
+                                <li>사고사실확인서
+                                    <ul class="list_bar">
+                                        <li>공공기관 (경찰서, 소방서 등)<span class="place"><em class="offscr">발급처</em>공공기관</span></li>
+                                        <li>손해보험사<span class="place"><em class="offscr">발급처</em>보험회사</span></li>
+                                        <li>공제조합 (버스, 화물, 택시 등)<span class="place"><em class="offscr">발급처</em>공제조합</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="imp_txt highlight">홈페이지, 모바일웹, 모바일앱으로 보험금 청구 시 보험금청구서, 청구인 신분증 사본 제출 불필요</p>
+                            <div class="inner">
+                                <strong class="doc_title">[현대해상] <span>보험금청구서</span></strong>
+                                <ul class="doc_kind">
+                                    <li>
+                                        <p>
+                                            <span>기본</span>
+                                            <a href="#none" class="btn link">예시 확인</a>
+                                        </p>
+                                        <div class="btn_box">
+                                            <a href="#none" class="btn base"><span class="pdf">pdf</span></a>
+                                            <a href="#none" class="btn base"><span class="hwp">hwp</span></a>
+                                            <a href="#none" class="btn base"><span class="doc">doc</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>큰글씨</span>
+                                            <a href="#none" class="btn link">예시 확인</a>
+                                        </p>
+                                        <div class="btn_box">
+                                            <a href="#none" class="btn base"><span class="pdf">pdf</span></a>
+                                            <a href="#none" class="btn base"><span class="hwp">hwp</span></a>
+                                            <a href="#none" class="btn base"><span class="doc">doc</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                        
+                        </div>
+                        
+                        <h4 class="h4 bul">가족관계 확인 필요시</h4>
+                        <p class="h_sub">배우자/자녀 등의 보장상품, 수익자가 미성년자인 경우</p>
+                        
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>가족관계 확인 서류<span class="place"><em class="offscr">발급처</em>주민센터</span>
+                                    <ul class="list_bar">
+                                        <li>가족관계증명서, 혼인관계증명서 등</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="inner">
+                                <p class="tit">인터넷 발급 바로가기</p>
+                                <div class="btn_area">
+                                    <a href="http://minwon.go.kr/" class="btn base" title="새창 열림">가족관계증명서, 혼인관계증명서</a>
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <h4 class="h4 bul">대리인이 청구 시</h4>
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li><p>위임장 원본(인감 날인)<span class="place"><em class="offscr">발급처</em>보험회사</span></p></li>
+                                <li><p>보험금청구권자의 인감증명서 원본(또는 본인서명사실확인서)<span class="place"><em class="offscr">발급처</em>주민센터</span></p></li>
+                                <li><p>보험금청구권자의 개인(신용)정보동의서<span class="place"><em class="offscr">발급처</em>보험회사</span></p></li>
+                            </ul>
+                            <div class="inner">
+                                <ul class="doc_kind">
+                                    <li>
+                                        <p>
+                                            <strong>[현대해상] <span>위임장</span></strong>
+                                            <a href="#none" class="btn link">예시 확인</a>
+                                        </p>
+                                        <div class="btn_box">
+                                            <a href="#none" class="btn base"><span class="pdf">pdf</span></a>
+                                            <a href="#none" class="btn base"><span class="hwp">hwp</span></a>
+                                            <a href="#none" class="btn base"><span class="doc">doc</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                        
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc2" class="h3">실손의료비</h3>
+                        <h4 class="h4 bul">공통<span class="place"><em class="offscr">발급처</em>의료기관</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>입통원 진료비 영수증</li>
+                                <li>처방 시 약제비 영수증</li>
+                            </ul>
+                            <p class="imp_txt highlight">카드 전표 및 소득공제 확인용 ‘진료비납입확인서’는 제출 불가
+                                <a hfre="#none" class="btn_tooltip"><span class="offscr">필요서류 접수시 유의사항</span></a></p>
+                        </div>
+
+                        <h4 class="h4 bul">입원<span class="place"><em class="offscr">발급처</em>의료기관</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>진단서</li>
+                                <li>진료비 세부(산정)내역서</li>
+                                <li>입퇴원확인서</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">통원<span class="place"><em class="offscr">발급처</em>의료기관</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>처방전
+                                    <ul class="list_bar">
+                                        <li>처방전에 질병분류코드 미기재 시 필요에 따라 추가증빙서류(진단서, 소견서 등) 제출</li>
+                                    </ul>
+                                </li>
+                                <li>진료비 세부(산정)내역서
+                                    <ul class="list_bar">
+                                        <li>비급여 의료비 발생 시 필수 제출 <a hfre="#none" class="btn_tooltip"><span class="offscr">필요서류 접수시 유의사항</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc3" class="h3">골절<span class="place"><em class="offscr">발급처</em>의료기관</span></h3>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>진단명(질병분류코드), 진단일이 포함된 서류 중 택 1
+                                    <ul class="list_bar">
+                                        <li>예: 의사소견서, 통원확인서, 진단서 등</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc4" class="h3">수술<span class="place"><em class="offscr">발급처</em>의료기관</span></h3>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>진단명(질병분류코드), 수술명, 수술일이 포함된 서류 중 택 1
+                                    <ul class="list_bar">
+                                        <li>예: 수술확인서, 진단서 등</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc5" class="h3">깁스치료<span class="place"><em class="offscr">발급처</em>의료기관</span></h3>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>통깁스 시행여부 확인 가능한 진단서</li>
+                                <li>(통깁스 시행일) 진료차트 및 진료비세부산정내역서</li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc6" class="h3">운전자 비용</h3>
+                        <h4 class="h4 bul">자동차사고 부상<span class="place"><em class="offscr">발급처</em>의료기관</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>교통사고 처리확인서(상해급수 명기)</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">긴급비용</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li><p>교통사고 처리 확인서<span class="place"><em class="offscr">발급처</em>보험회사</span></p></li>
+                                <li><p>견인비 영수증 또는 긴급출동서비스 내역서<span class="place"><em class="offscr">발급처</em>견인처</span></p></li>
+                                <li><p>수리비 견적서<span class="place"><em class="offscr">발급처</em>정비공장</span></p></li>
+                            </ul>
+                            <div class="inner">
+                                <p class="tit">메뉴 바로가기</p>
+                                <div class="btn_area">
+                                    <a href="#none" class="btn base">교통사고피해확인서 발급</a>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <h4 class="h4 bul">안심지원금<span class="place"><em class="offscr">발급처</em>보험회사</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>대인/대물/자손 보험금 지급결의서 중 택 1</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">대인할증지원금<span class="place"><em class="offscr">발급처</em>보험회사</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>대인 보험금 지급결의서</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">교통사고처리비용<span class="place"><em class="offscr">발급처</em>보험회사</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>대인Ⅱ 또는 대물 보험금 지급결의서</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">자기차량부분/전부손해위로금</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>자차 보험금 지급결의서<span class="place"><em class="offscr">발급처</em>보험회사</span></li>
+                                <li>전손 시 추가 제출
+                                    <ul class="list_bar">
+                                        <li>자동차등록원부 또는 자동차말소증명원<span class="place"><em class="offscr">발급처</em>구청</span></li>
+                                        <li>수리비 견적서<span class="place"><em class="offscr">발급처</em>정비공장</span></li>
+                                    </ul>
+                                </li>
+                                <li>도난 시 주가 제출
+                                    <ul class="list_bar">
+                                        <li>도난사실확인원<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">형사합의지원금/교통사고처리지원금</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>교통사고사실확인원<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                <li>피해자 진단서 또는 사망진단서<span class="place"><em class="offscr">발급처</em>의료기관</span></li>
+                                <li>교통사고처리지원금 청구 시 추가 서류
+                                    <ul class="list_bar">
+                                        <li>형사합의서 원본(형사합의금 기재, 경찰 또는 검찰 원본대조필 날인 시 원본 인정)<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                        <li>형사합의금이 입금된 내역<span class="place"><em class="offscr">발급처</em>금융기관</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">벌금</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>교통사고사실확인원<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                <li>벌금납부 영수증<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                <li>약식명령문 또는 법원 판결문<span class="place"><em class="offscr">발급처</em>법원</span></li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">방어비용</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>공소 제기 시(약식기소 포함)
+                                    <ul class="list_bar">
+                                        <li>교통사고사실확인원<span class="place"><em class="offscr">발급처</em>경찰서</span></li>
+                                        <li>약식명령문 또는 법원 판결문<span class="place"><em class="offscr">발급처</em>법원</span></li>
+                                    </ul>
+                                </li>
+                                <li>구속 시
+                                    <ul class="list_bar">
+                                        <li>구속영장 또는 사건처분증명원<span class="place"><em class="offscr">발급처</em>법원</span></li>
+                                        <li>재소 또는 출소증명원<span class="place"><em class="offscr">발급처</em>구치소</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <h4 class="h4 bul">변호사선임 비용</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li><p>교통사고사실확인원<span class="place"><em class="offscr">발급처</em>경찰서</span></p></li>
+                                <li><p>판결문, 공소장, 변호사가 발행한 세금계산서<span class="place"><em class="offscr">발급처</em>변호사사무소</span></p></li>
+                                <li><p>구속영장 또는 사건처분증명원<span class="place"><em class="offscr">발급처</em>법원</span></p></li>
+                                <li><p>재소 또는 출소증명원<span class="place"><em class="offscr">발급처</em>구치소</span></p></li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">면허정지/취소위로금<span class="place"><em class="offscr">발급처</em>경찰서</span></h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>교통사고사실확인원</li>
+                                <li>운전경력증명서</li>
+                                <li>면허정지확인원(교육 이수 후)</li>
+                                <li>면허취소확인원</li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc7" class="h3">장해<span class="place"><em class="offscr">발급처</em>의료기관</span></h3>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>아래의 서류 중 택 1
+                                    <ul class="list_bar">
+                                        <li>후유장해진단서</li>
+                                        <li>일반진단서(일반진단서로 대체 가능한 장해인 경우)</li>
+                                    </ul>
+                                </li>
+                                <li>일반진단서 제출 시 필요 서류
+                                    <ul class="list_bar">
+                                        <li>만성신부전 혈액투석: 최초 혈액투석일, 환자상태 기재)</li>
+                                        <li>사지절단: 절단부위, 환자상태 기재, 엑스레이 필름 첨부</li>
+                                        <li>인공관절치환술: 수술명, 수술일 기재</li>
+                                        <li>비장, 신장적출: 비장, 신장적출 수술일 기재</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <h3 id="doc8" class="h3">사망</h3>
+                        <h4 class="h4 bul">공통</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li><p>사망진단서(사체검안서) 원본 또는 사본(원본대조필 포함) 제출<span class="place"><em class="offscr">발급처</em>의료기관</span></p></li>
+                                <li>사본(원본대조필 포함) 제출 시
+                                    <ul class="list_bar">
+                                        <li>피보험자 기본증명서(사망사실 기재) 추가 제출<span class="place"><em class="offscr">발급처</em>주민센터</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="h4 bul">수익자 미지정 시</h4>
+
+                        <div class="doc_info_box">
+                            <ul class="list_dot">
+                                <li>상속관계 확인서류<span class="place"><em class="offscr">발급처</em>주민센터</span>
+                                    <ul class="list_bar">
+                                        <li>예: 가족관계증명서, 혼인관계증명서 등</li>
+                                    </ul>
+                                </li>
+                                <li>상속인이 다수인 경우
+                                    <ul class="list_bar">
+                                        <li>상속인 각각의 위임장<span class="place"><em class="offscr">발급처</em>보험회사</span></li>
+                                        <li>인감증명서(또는 본인서명사실확인서)<span class="place"><em class="offscr">발급처</em>주민센터</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="inner">
+                                <ul class="doc_kind">
+                                    <li>
+                                        <p>
+                                            <strong>[현대해상] <span>위임장</span></strong>
+                                            <a href="#none" class="btn link">예시 확인</a>
+                                        </p>
+                                        <div class="btn_box">
+                                            <a href="#none" class="btn base"><span class="pdf">pdf</span></a>
+                                            <a href="#none" class="btn base"><span class="hwp">hwp</span></a>
+                                            <a href="#none" class="btn base"><span class="doc">doc</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="tit">인터넷 발급 바로가기</p>
+                                <div class="btn_area">
+                                    <a href="http://minwon.go.kr/" class="btn base" title="새창 열림">가족관계증명서, 혼인관계증명서</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                    
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <div class="useinfo">
+                                <ul class="list_dot">
+                                    <li>안내드린 필요서류 이외에도 보험금 지급을 위하여 보상담당자가 추가서류를 요청할 수 있습니다.</li>
+                                    <li>필요시 손해조사, 신속한 보험금 지급결정을 위해 보상담당자가 의료정보 열람 위임장(인감도장 날인)/인감증명서를 요청할 수 있습니다.</li>
+                                    <li>정밀심사건은 손해조사/보험금 심사가 필요하므로 일정기간이 걸릴 수 있습니다.</li>
+                                    <li>후유장해담보는 가입시기에 따라 표준약관 변경으로 지급기준/필요서류가 다를 수 있습니다.</li>
+                                    <li>척추체 등 운동장해 판정은 운동가능범위(AMA)방식을 적용하나 추간판탈출증(속칭 '디스크')의 경우 산정기준이 이와 다르며 운동장해의 경우에도 사고내용에 따라 산정 기준이 다를 수 있습니다.</li>
+                                    <li>기타 자세한 내용은 담당자에게 문의해 주시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

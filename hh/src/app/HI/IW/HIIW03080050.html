@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '양도/말소 해지 접수완료<', tooltip: true, prev: true, menu: true };
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <!-- 양도일때 -->
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">양도해지 접수를 위해<br> 다음 서류를 등록해 주세요.</h2>
+                    </div>
+                </div>
+                <div class="section_s">
+                    <h3 class="h3">서류 등록</h3>
+                    <div class="form_list">
+                        <div class="file_box">
+                            <div class="file">
+                                <input type="text" id="addFile1" name="add_file" title="계약자 통장 사본" value="">
+                                <label for="addFile1" class="add_file">계약자 통장 사본</label>
+                            </div>
+                            <div class="file_result">
+                                <span class="file_name">Screenshot_HDMF_20210618_001</span>
+                                <span class="file_volume">0.34MB</span>
+                                <button type="button" class="file_close">파일 취소</button>
+                            </div>
+                        </div>
+                        <div class="file_box">
+                            <div class="file">
+                                <input type="text" id="addFile1" name="add_file" title="양도 증명서류" value="">
+                                <label for="addFile1" class="add_file">양도 증명서류</label>
+                            </div>
+                            <div class="file_result">
+                                <span class="file_name">Screenshot_HDMF_20210618_002</span>
+                                <span class="file_volume">0.34MB</span>
+                                <button type="button" class="file_close">파일 취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //양도일때 -->
+
+                <!-- 말소일때 -->
+                <!-- <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">말소해지 접수를 위해 다음 서류를 등록해 주세요.</h2>
+                    </div>
+                </div>
+                <div class="section_s">
+                    <h3 class="h3">서류 등록</h3>
+                    <div class="form_list">
+                        <div class="file_box">
+                            <div class="file">
+                                <input type="text" id="addFile1" name="add_file" title="계약자 통장 사본" value="">
+                                <label for="addFile1" class="add_file">계약자 통장 사본</label>
+                            </div>
+                            <div class="file_result">
+                                <span class="file_name">Screenshot_HDMF_20210618_001</span>
+                                <span class="file_volume">0.34MB</span>
+                                <button type="button" class="file_close">파일 취소</button>
+                            </div>
+                        </div>
+                        <div class="file_box">
+                            <div class="file">
+                                <input type="text" id="addFile1" name="add_file" title="말소 증명서류" value="">
+                                <label for="addFile1" class="add_file">말소 증명서류</label>
+                            </div>
+                            <div class="file_result">
+                                <span class="file_name">Screenshot_HDMF_20210618_002</span>
+                                <span class="file_volume">0.34MB</span>
+                                <button type="button" class="file_close">파일 취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- //말소일때 -->
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn second"><span>이전</span></button>
+                        <button type="button" class="btn primary"><span>접수</span></button>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+</body>
+</html>

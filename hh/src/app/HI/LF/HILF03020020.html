@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '담보대출 거래내역조회', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">                    
+                    <h2 class="h3">대출정보</h2>
+                    <table class="tbl_row">
+                        <caption>상품명, 대출번호, 대출잔액, 최종납입일, 담당지점, 담당지점 연락처</caption>
+                        <colgroup>
+                            <col style="width:32%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">상품명</th>
+                                <td>HEART아파트론6개월연동_장기1507중도年10%면제V.03</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출번호</th>
+                                <td> 12001507-01115</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출잔액</th>
+                                <td>78,821,374원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">최종납입일</th>
+                                <td>2021.02.20</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">담당지점</th>
+                                <td>대구융자지점</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">담당지점 연락처</th>
+                                <td>053-650-1212</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">대출이자 납입계좌</h2>
+                    <table class="tbl_row">
+                        <caption>납입방법, 계좌번호, 자동이체일, 예금주, 가상계좌번호</caption>
+                        <colgroup>
+                            <col style="width:32%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">납입방법</th>
+                                <td>자동이체</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">계좌번호</th>
+                                <td>농협 4918*******</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">자동이체일</th>
+                                <td>매월 20일</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">예금주</th>
+                                <td>하이연</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">가상계좌번호</th>
+                                <td>농협 5583*******</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">납입예정금액
+                        <p class="unit">기준일 <span class="highlight">2021.07.20</span></p>
+                    </h2>
+                    <table class="tbl_row">
+                        <caption>원금상환액, 이자상환액 합계, 정상 이자금액, 연체 이자금액, 납입금액 합계</caption>
+                        <colgroup>
+                            <col style="width:32%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">원금상환액</th>
+                                <td>984,700원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이자상환액 합계</th>
+                                <td>-5,192원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">정상 이자금액</th>
+                                <td>809,238원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">연체 이자금액</th>
+                                <td>391,879원</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">납입금액 합계</th>
+                                <td>2,180,625원</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <ul class="list_dot">
+                        <li>연체 이자금액은 단순 연체 기간만 계산하여 표기되므로 실제 부과되는 연체 이자금액과 다를 수 있습니다.</li>
+                    </ul>
+                    <h2 class="h3">납입내역</h2>
+                    <div class="accordion history">
+                        <div class="title">
+                            <div class="number">
+                                <p>101회차</p>
+                                <span>2020.03.02</span>
+                            </div>
+                            <div class="price">
+                                <strong>납입금액 370,000원</strong>
+                                <span>대출잔액 79,200,705원</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <dl class="ac_dl">
+                                <dt>원금상환액</dt>
+                                <dd>377,631원</dd>
+                                <dt>이자상환액</dt>
+                                <dd>359,973원</dd>
+                                <dt>적용금리</dt>
+                                <dd>2.7%</dd>
+                                <dt>납입기간</dt>
+                                <dd>2020.10.21~2020.12.20</dd>
+                            </dl>
+                        </div>
+                        <div class="title">
+                            <div class="number">
+                                <p>100회차</p>
+                                <span>2020.03.02</span>
+                            </div>
+                            <div class="price">
+                                <strong>납입금액 370,000원</strong>
+                                <span>대출잔액 79,200,705원</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <dl class="ac_dl">
+                                <dt>원금상환액</dt>
+                                <dd>377,631원</dd>
+                                <dt>이자상환액</dt>
+                                <dd>359,973원</dd>
+                                <dt>적용금리</dt>
+                                <dd>2.70%</dd>
+                                <dt>납입기간</dt>
+                                <dd>2020.10.21~2020.12.20</dd>
+                            </dl>
+                        </div>
+                        <div class="title">
+                            <div class="number">
+                                <p>99회차</p>
+                                <span>2020.03.02</span>
+                            </div>
+                            <div class="price">
+                                <strong>납입금액 370,000원</strong>
+                                <span>대출잔액 79,200,705원</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <dl class="ac_dl">
+                                <dt>원금상환액</dt>
+                                <dd>377,631원</dd>
+                                <dt>이자상환액</dt>
+                                <dd>359,973원</dd>
+                                <dt>적용금리</dt>
+                                <dd>2.70%</dd>
+                                <dt>납입기간</dt>
+                                <dd>2020.10.21~2020.12.20</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="list_more">
+                        <button type="button" class="btn_more">
+                            <span class="offscr">더보기</span>
+                        </button>
+                    </div>
+                    
+                    <div class="add_service">
+                        <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+                        <div class="service_board">
+                            <div class="service_list">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m10"></span>
+                                            개인정보변경
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m13"></span>
+                                            담보대출 상환 <br>서비스 안내
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m15"></span>
+                                            보장분석
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m05"></span>
+                                            일반대출증명서 목록
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>목록</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

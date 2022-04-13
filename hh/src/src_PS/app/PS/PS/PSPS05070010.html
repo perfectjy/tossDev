@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+	$(function() {
+		// 납입방법선택
+		$(document).on('change', '.radio_box input', function(e) {
+			e.preventDefault();
+			var $this = $(this),
+				idx = $this.parent().index(),
+				$item = $('.rdo_tab_panel');
+			
+			$item.css({ display: 'none' });	
+			$('.rdo_tab_contents').find($item).eq(idx).css({ display: 'block' });
+		});
+	});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+                        <h2 class="governing_title">개인IRP계약<strong class="highlight">(Q20091******)</strong>에 대한 납입한도 및 정보를 설정하실 수 있습니다.</h2>
+					</div>
+
+					<div class="comp">
+						<div class="boxing_text">
+							<p class="list_dot mt0">현재 변경 중인 건입니다. 관리자 승인 전까지 재신청이 불가능합니다.</p>
+						</div>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">연금계좌납입한도 설정</h3>
+						<div class="form_srch_wrap inp">
+							<div class="search_item opt">
+								<label for="limitPay" class="form_label">연금계좌납입한도</label>
+								<div class="item">
+									<input type="tel" class="inp_price" id="limitPay" placeholder="숫자만 입력">
+								</div>
+							</div>
+							<div class="search_item">개인 연금계좌 총 납입한도는 전 금융기관 포함하여 연간 1,800만원입니다.
+								<br>다른 계좌 개설 시 한도가 초과되지 않도록 설정하시기 바랍니다.
+							</div>
+						</div>
+					</div>
+					
+					<div class="comp">
+						<h3 class="h3 hmark">납입정보 설정</h3>
+
+						<div class="form_wrap">
+							<div class="form_list">
+								<span class="form_label">납입방법 선택</span>
+								<div class="form_item">
+									<span class="check_box">
+										<input id="rd_payment01" type="checkbox" name="paymentType" checked="">
+										<label for="rd_payment01">직접납입</label>
+									</span>
+									<span class="check_box">
+										<input id="rd_payment02" type="checkbox" name="paymentType">
+										<label for="rd_payment02">자동이체</label>
+									</span>
+								</div>
+							</div>
+						</div>
+							
+						<hr>
+
+						<div class="rdo_tab_contents">
+							<div class="rdo_tab_panel" style="display:block;">
+								<div class="form_wrap parallel">
+									<div class="form_list">
+										<label for="givePriceWeek" class="form_label">납입주기</label>
+										<div class="form_item">
+											<select id="givePriceWeek" title="납입주기">
+												<option value="0" selected="">선택</option>
+												<option value="1m">월납</option>
+												<option value="3m">3월납</option>
+												<option value="6m">6월납</option>
+												<option value="12m">연납</option>
+											</select>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">납입주기를 선택해 주세요.</p>
+									</div>
+									<div class="form_list">
+										<label for="givePrice01" class="form_label">납입금액</label>
+										<div class="unit_item">
+											<input class="inp_price" type="tel" id="givePrice01" title="납입금액">
+											<span class="unit">원</span>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">납입금액을 입력해 주세요.</p>
+									</div>
+									<div class="form_list">
+										<label for="givePriceDay" class="form_label">납입일</label>
+										<div class="form_item">
+											<select id="givePriceDay" title="납입일">
+												<option value="0" selected="">선택</option>
+												<option value="01">01</option>
+												<option value="02">02</option>
+												<option value="03">03</option>
+												<option value="04">04</option>
+												<option value="05">05</option>
+												<option value="06">06</option>
+												<option value="31">31</option>
+											</select>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">납입일을 선택해 주세요.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rdo_tab_panel">
+								<ul class="imp_txt">
+									<li>자동이체는 월납(매월 자동이체)만 가능합니다.</li>
+									<li>자동이체 계좌는 본인명의 계좌만 가능합니다.</li>
+								</ul>
+								<div class="form_wrap parallel">
+									<div class="form_list">
+										<label for="givePrice02" class="form_label">이체금액</label>
+										<div class="unit_item">
+											<input class="inp_price" type="tel" id="givePrice02" title="이체금액">
+											<span class="unit">원</span>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">이체금액을 입력해 주세요.</p>
+									</div>
+									<div class="form_list">
+										<label for="givePriceYear" class="form_label">자동이체 청구연월</label>
+										<div class="cell2">
+											<div class="unit_item">
+												<input type="tel" class="inp_price" name="" id="givePriceYear" title="자동이체 년" value="">
+												<span class="unit">년</span>
+											</div>
+											<div class="unit_item">
+												<input type="tel" class="inp_price" id="givePriceMonth" title="자동이체 월">
+												<span class="unit">월</span>
+											</div>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">자동이체 청구연월을 입력해 주세요.</p>
+									</div>
+									<div class="form_list">
+										<label for="transperDay" class="form_label">이체일</label>
+										<div class="form_item">
+											<select id="transperDay" title="이체일">
+												<option value="0" selected="">선택</option>
+												<option value="01">01</option>
+												<option value="02">02</option>
+												<option value="03">03</option>
+												<option value="04">04</option>
+												<option value="05">05</option>
+												<option value="06">06</option>
+												<option value="31">31</option>
+											</select>
+										</div>
+										<!-- 오류 메시지 -->
+										<p class="error_text">이체일을 선택해 주세요.</p>
+									</div>
+									<div class="form_list">
+										<span class="form_label">은행/계좌번호(본인명의 계좌만 가능)</span>
+										<div class="bank">
+											<button type="button" class="btn line"><span>은행 선택</span></button>
+											<div class="form_item col2 security">
+												<input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" value="" disabled>
+												<!-- 계좌확인 후 버튼에 active 추가 -->
+												<button type="button" class="btn oline"><span>계좌확인</span></button>
+											</div>
+											<div class="form_item">
+												<input type="text" id="selDepositor" name="" placeholder="[계좌확인] 누르면 예금주 자동 입력" value="" disabled>
+											</div>
+											<!-- 계좌번호 잘못 입력했을 경우 -->
+											<p class="error_text">계좌번호를 정확하게 입력해 주세요. (‘-’없이 숫자만 입력)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// rdo_contents -->
+					</div>
+
+					<div class="comp">
+						<ul class="list_dot">
+							<li>연간 납입한도 계산
+								<ul class="list_bar">
+									<li>직접납입: 납입금액 × 연간납입횟수 (예) 4,000,000원(납입금액) × 1(연납) = 4,000,000원</li>
+									<li>자동이체: 이체금액 × 연간납입횟수 (예) 250,000원(이체금액) × 12(월납) = 3,000,000원</li>
+								</ul>											
+							</li>
+							<li>연간 세금우대 납입한도는 1,800만원으로, 연금계좌납입한도를 높게 설정하면 세금 우대 한도가 적용되는 다른 계좌 개설이 불가능할 수 있습니다.</li>
+						</ul>
+					</div>
+
+					<!-- checkbox list -->
+					<div class="comp">
+						<div class="agreement_section retire">
+							<ul class="list_chk">
+								<li>
+									<div class="agree_item nolink">
+										<input id="agreeChk1" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk1"><strong class="emp fw_b">[필수]</strong> 금융거래 정보조회 동의 여부
+											<p>퇴직연금 거래를 위하여 고객님의 금융기관 간의 거래내역에 대한 정보제공을 현대해상화재보험㈜에게 의뢰하는 것에 동의하십니까?</p>
+										</label>
+									</div>                            
+								</li>
+								<li>
+									<div class="agree_item nolink">
+										<input id="agreeChk2" class="agree_chk" name="agreeGroup" type="checkbox">
+										<label for="agreeChk2"><strong class="emp fw_b">[필수]</strong> 세금우대 납입한도 설정 동의 여부
+											<p>고객님은 현대해상화재보험㈜ 규정에 따라 퇴직연금계좌의 납입한도가 위와 같이 설정되는 것에 동의하며, 이로 인하여 발생되는 모든 사고, 손해 등의 책임은 고객님 본인 부담으로 하는 것에 동의하십니까?</p>
+										</label>
+									</div>                            
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--// checkbox list -->
+
+					<div class="fixed_btm_btns">
+						<div class="btns">
+							<button type="button" class="btn primary">신청</button>
+							<!-- 승인완료 후 비활성화 일 경우 아래 버튼 -->
+							<!-- <button type="button" class="btn primary" disabled>신청</button> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

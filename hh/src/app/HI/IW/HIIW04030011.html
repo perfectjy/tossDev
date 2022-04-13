@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HIIW04030011');
+
+            if (!!isMobile) {
+                $('.tab_section .tab_list').find('.tab').removeClass('active');
+                $('.tab_section .tab_list').find('.tab').eq(-1).addClass('active');
+                $('.tab_section .tab_contents').find('.tab_panel').eq(-1).css({ marginTop: 0 });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04030011" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HIIW04030011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                신규 계약 체결 시 청약서 내용 확인 후 전자서명으로 자필서명을 대체하는 서비스입니다.
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>계약자=피보험자 동일 계약의 계약자</li>
+                                    <li>법인, 단체계약, TM(텔레마케팅) 및 방카슈랑스 상품 제외</li>
+                                    <li>피보험자가 태아 또는 만 15세 미만일 경우 계약자=부양자=모성자인 어린이보험 제외</li>
+                                </ul>
+
+                                <!-- 이용가능 시간이 아닐 때 class에 diabled 추가 -->
+                                <div class="label info2 disabled">
+                                    이용시간
+                                    <!-- 이용가능 시간이 아닐 때 나타남 -->
+                                    <span class="close_info">이용시간에 다시 방문해 주세요.</span>
+                                </div>
+                                <ul class="list_dot">
+                                    <li>장기보험: 09:00~24:00</li>
+                                    <li>자동차보험: 365일 24시간</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>장기보험은 PC에서만 가능</li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <div class="tab_section t1">
+                                    <div class="tab_list tab_line mo_hide">
+                                        <ul>
+                                            <li class="tab active"><a href="#panel1" title="현재선택"><span>장기보험</span></a></li>
+                                            <li class="tab"><a href="#panel2"><span>자동차보험</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_contents">
+                                        <div id="panel1" class="tab_panel mo_hide">
+                                            <h2 class="offscr">장기보험</h2>
+                                            <ol class="use_step_proc">
+                                                <li><span class="num">1</span><strong>계약 선택</strong></li>
+                                                <li><span class="num">2</span><strong>계약내용 확인</strong></li>
+                                                <li><span class="num">3</span><strong>계약체결 동의</strong></li>
+                                                <li>
+                                                    <span class="auth">인증</span><strong>전자서명</strong>
+                                                    <a href="#none" class="btn_tooltip"><span class="offscr">설명 보기</span></a>
+                                                </li>
+                                                <li><span class="num">4</span><strong>완전판매 e모니터링</strong></li>
+                                                <li><span class="num">5</span><strong>완료</strong></li>
+                                            </ol>
+                                        </div>
+                                        <div id="panel2" class="tab_panel">
+                                            <h2 class="offscr">자동차보험</h2>
+                                            <ol class="use_step_proc">
+                                                <li><span class="num">1</span><strong>계약 선택</strong></li>
+                                                <li><span class="num">2</span><strong>계약내용 확인</strong></li>
+                                                <li><span class="num">3</span><strong>계약체결 동의</strong></li>
+                                                <li><span class="auth">인증</span><strong>전자서명<a href="#" class="btn_tooltip"><span class="offscr">설명</span></a></strong></li>
+                                                <li><span class="num">4</span><strong>보험료 납입</strong></li>
+                                                <li><span class="num">5</span><strong>완료</strong></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>
+                                        진행 중 오류 발생 시 [인터넷창구 오류해결안내]를 참고해 주세요.
+                                        <div class="ac_in_btns">
+                                            <button type="button" class="btn base">인터넷창구 오류해결안내</button>
+                                        </div>
+                                    </li>
+                                    <li>기타 문의사항은 인터넷 콜센터(<span class="tel_number">02-2116-1004</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary">계약체결을 위한 전자서명</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

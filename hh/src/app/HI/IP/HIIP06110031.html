@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '실손의료비보장보험', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="governing">
+                        <h2 class="governing_title">보장내용은 이렇습니다.</h2>
+                    </div>
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#tabCont1" title="현재선택"><span>가입안내</span></a></li>
+                                <li class="tab"><a href="#tabCont2"><span>상해/질병</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <!-- 가입안내 -->
+                            <div id="tabCont1" class="tab_panel">
+                                <h2 class="offscr">가입안내</h2>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>상품안내</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:250px;" span="2">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">1종</th>
+                                                <th scope="col">2종</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">가입요건</th>
+                                                <td>상해급여/질병급여<br>
+                                                    실손의료비(갱신형)보장
+                                                </td>
+                                                <td>상해비급여/질병비급여/3대비급여<br>
+                                                    실손의료비(갱신형)보장
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">보험기간</th>
+                                                <td colspan="2">1년만기(1년마다 보험료 변경, 최대 4회)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">납입기간/주기</th>
+                                                <td colspan="2">전기납/월납, 2개월납, 3개월납, 6개월납, 연납</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">가입나이</th>
+                                                <td colspan="2">태아~70세</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <ul class="list_dot">
+                                    <li>기본계약의 각 보장과 의무부가특약의 각 보장은 분리하여 가입할 수 없습니다. 다만, 중복가입, 병력 등의 사유로 일부 보장만 가입 가능한 경우에는 예외로 하며, 이 경우에도 상해급여실손의료비(갱신형) 보장과 상해비급여실손의료비(갱신형) 보장, 질병급여실손의료비(갱신형) 보장과 질병비급여실손의료비(갱신형) 보장은 함께 가입합니다.</li>
+                                    <li><strong>재가입에 관한 사항</strong>
+                                        <ul class="list_bar">
+                                            <li>재가입 종료나이: 재가입을 통해 보장받을 수 있는 최대 나이 100세</li>
+                                            <li>재가입 주기(보장내용 변경주기): 5년</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <!-- 상해/질병 -->
+                            <div id="tabCont2" class="tab_panel">
+                                <h2 class="offscr">상해/질병</h2>
+                                <h3 class="h3">기본계약</h3>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>상해/질병 기본계약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:180px;">
+                                            <col style="width:180px;">
+                                            <col style="width:300px;">
+                                            <col style="width:180px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col" colspan="3">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" rowspan="2">상해급여
+                                                    실손의료비
+                                                    <span class="sub">(갱신형)</span>
+                                                </th>
+                                                <td rowspan="2">상해로 인하여 의료기관에 입원 또는 통원(외래 및 처방조제)하여 치료를 받은 경우(자동차보험, 산재보험 처리분 제외)</td>
+                                                <td><strong class="highlight">입원</strong><br>(입원실료, 입원제비용 입원수술비)</td>
+                                                <td>「국민건강보험법」에서 정한 요양급여 또는 「의료급여법」에서 정한 의료급여 중 본인부담금(본인이 실제로 부담한 금액)의 80% 에 해당하는 금액</td>
+                                                <td rowspan="2">연간 보험가입금액 한도</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">통원</strong><br>(외래제비용, 외래수술비, 처방조제비)</td>
+                                                <td>통원 1회당(외래 및 처방조제 합산) 「국민건강보험법」에서 정한 요양급여 또는 「의료급여법」에서 정한 의료급여 중 본인부담금에서 약관에서 정한 공제금액(병·의원 1만원, 종합·상급병원 2만원과 보장대상의료비의 20% 중 큰 금액)을 뺀 금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="2">질병급여
+                                                    실손의료비
+                                                    <span class="sub">(갱신형)</span>
+                                                </th>
+                                                <td rowspan="2">질병으로 의료기관에 입원 또는 통원(외래 및 처방조제)하여 치료를 받은 경우(산재보험 처리분 제외)</td>
+                                                <td><strong class="highlight">입원</strong><br>(입원실료, 입원제비용 입원수술비)</td>
+                                                <td>「국민건강보험법」에서 정한 요양급여 또는 「의료급여법」에서 정한 의료급여 중 본인부담금(본인이 실제로 부담한 금액)의 80%에 해당하는 금액</td>
+                                                <td rowspan="2">연간 보험가입금액 한도</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">통원</strong><br>(외래제비용, 외래수술비, 처방조제비)</td>
+                                                <td>통원 1회당(외래 및 처방조제 합산)「국민건강보험법」에서 정한 요양급여 또는 「의료급여법」에서 정한의료급여 중 본인 부담금에서 약관에서 정한 공제금액(병·의원 1만원, 종합·상급병원 2만원과 보장대상의료비의 20% 중 큰 금액)을 뺀 금액</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h3 class="h3">[의무부가특약] 비급여실손의료비(갱신형) 특약</h3>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>[의무부가특약] 비급여실손의료비(갱신형) 특약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:180px;">
+                                            <col style="width:180px;">
+                                            <col style="width:300px;">
+                                            <col style="width:180px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col" colspan="3">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" rowspan="3">상해비급여
+                                                    실손의료비
+                                                    <span class="sub">(갱신형)</span>
+                                                </th>
+                                                <td rowspan="3">상해로 인하여 의료기관에 입원 또는 통원(외래 및 처방조제)하여 치료를 받은 경우(3대비급여 제외)(자동차보험, 산재보험 처리분 제외)</td>
+                                                <td><strong class="highlight">입원</strong><br>(입원실료, 입원제비용 입원수술비)</td>
+                                                <td>「국민건강보험법」 또는 「의료급여법」에서 정한 비급여의료비의 70%에 해당하는 금액
+                                                </td>
+                                                <td rowspan="3">연간 보험가입 금액 한도<br>
+                                                    (통원의 경우, 매년 계약해당일로부터 1년간 100회 한도)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">상급병실료액</strong></td>
+                                                <td>비급여 병실료의 50%(단, 1일 평균금액 10만원 한도)
+                                                    <p class="imp_txt"> 1일 평균금액: 상급병실료차액 전체를 총 입원일수로 나눈 금액</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">통원</strong><br>(외래제비용, 외래수술비, 처방조제비)</td>
+                                                <td>통원 1회당(외래 및 처방조제 합산) 「국민건강보험법」 또는 「의료급여법」에서 정한 비급여의료비에서 약관에서 정한 공제금액(3만원과 보장대상의료비의 30% 중 큰 금액)을 뺀 금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="3">질병비급여
+                                                    실손의료비
+                                                    <span class="sub">(갱신형)</span>
+                                                </th>
+                                                <td rowspan="3">질병으로 의료기관에 입원 또는 통원(외래 및 처방조제)하여 치료를 받은 경우(3대비급여 제외)(산재보험 처리분 제외)</td>
+                                                <td><strong class="highlight">입원</strong><br>(입원실료, 입원제비용 입원수술비)</td>
+                                                <td>「국민건강보험법」 또는 「의료급여법」에서 정한 비급여의료비의 70% 에 해당하는 금액
+                                                </td>
+                                                <td rowspan="3">연간 보험가입 금액 한도<br>
+                                                    (통원의 경우, 매년 계약해당일로부터 1년간 100회 한도)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">상급병실료액</strong></td>
+                                                <td>비급여 병실료의 50%(단, 1일 평균금액 10만원 한도)
+                                                    <p class="imp_txt">1일 평균금액: 상급병실료차액 전체를 총 입원일수로 나눈 금액</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">통원</strong><br>(외래제비용, 외래수술비, 처방조제비)</td>
+                                                <td>통원 1회당(외래 및 처방조제 합산) ‘「국민건강보험법」 또는 「의료급여법」에서 정한 비급여의료비에서 약관에서 정한 공제금액(3만원과 보장대상의료비의 30% 중 큰 금액)을 뺀 금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="3">3대비급여
+                                                    실손의료비
+                                                    <span class="sub">(갱신형)</span>
+                                                </th>
+                                                <td rowspan="3">상해 또는 질병의 치료목적으로 의료기관에 입원 또는 통원하여 비급여 의료행위로 치료를 받은 경우</td>
+                                                <td><strong class="highlight">도수치료,<br>
+                                                    체외충격파치료,<br>
+                                                    증식치료</strong>
+                                                </td>
+                                                <td>'도수치료·체외충격파치료·증식치료'로 인하여 본인이 실제로 부담한 비급여의료비(행위료, 약제비, 치료재료대 포함)에서 약관에서 정한 공제금액(1회당 3만원과 보장대상 의료비의 30% 중 큰 금액)을 차감한 금액
+                                                </td>
+                                                <td>계약일 또는 매년 계약해당일부터 1년 단위로 각 상해·질병 치료행위를 합산하여 350만원 이내에서 50회까지 보상
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">주사료</strong>
+                                                </td>
+                                                <td>주사치료를 받아 본인이 실제로 부담한 비급여의료비에서 약관에서 정한 공제금액(1회당 3만원과 보장대상 의료비의 30% 중 큰 금액)을 차감한 금액
+                                                </td>
+                                                <td>계약일 또는 매년 계약해당일부터 1년 단위로 각 상해·질병 치료행위를 합산하여 250만원 이내에서 50회까지 보상
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="highlight">장기공명<br>
+                                                    영상진단</strong>
+                                                </td>
+                                                <td>자기공명영상진단을 받아 본인이 실제로 부담한 비급여의료비(조영제, 판독료 포함)에서 약관에서 정한 공제금액(1회당 3만원과 보장대상 의료비의 30% 중 큰 금액)을 차감한 금액
+                                                </td>
+                                                <td>계약일 또는 매년 계약 해당일부터 1년 단위로 각 상해·질병 치료행위를 합산하여 300만원 이내에서 보상
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="list_dot">
+                                    <li>기본계약 보장은 비급여도수치료·체외충격파치료·증식치료, 비급여주사료, 비급여자기공명영상진단(MRI/MRA) 및 자동차보험, 산재보험 처리분은 제외합니다.(단, 항암제, 항생제(항진균제 포함), 희귀의약품은 보상</li>
+                                    <li>상해 관련 담보는 암벽등반, 스카이다이빙 등 직업, 직무 또는 동호회 활동 중 사고에 대해서는 보상하지 않습니다.</li>
+                                </ul>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">용어해설</span>
+                                    </div>
+                                    <div class="panel">
+                                        <h4 class="tt">상해급여실손의료비, 질병급여실손의료비, 상해비급여실손의료비, 질병비급여실손의료비</h4>
+                                        <ul class="list_dot">
+                                           <li>입원실료: 입원치료 중 발생한 기준병실 사용료, 환자관리료, 식대 등</li>
+                                           <li>입원제비용: 진찰료, 검사료, 방사선료, 투약 및 처방료(퇴원 시 의사로부터 치료목적으로 처방받은 약제비 포함), 주사료, 이학요법(물리치료, 재활치료)료, 정신요법료, 처치료, 치료재료, 석고붕대료(cast), 지정진료비 등
+                                            </li>
+                                           <li>입원수술비: 수술료, 마취료, 수술재료비 등
+                                            </li>
+                                           <li>상급병실료차액: 실제 사용병실과 기준병실과의 병실료차액
+                                            </li>
+                                           <li>외래제비용: 진찰료, 검사료, 방사선료, 투약 및 처방료, 주사료, 이학요법(물리치료, 재활치료)료, 정신요법료, 처치료, 치료재료, 석고붕대료(cast), 지정진료비 등
+                                            </li>
+                                           <li>외래수술비: 수술료, 마취료, 수술재료비 등
+                                            </li>
+                                           <li>처방조제비: 약국의 처방조제비, 약사의 직접조제비
+                                            </li>
+                                        </ul>
+
+                                        <h4 class="tt">3대비급여실손의료비</h4>
+                                        <ul class="list_dot">
+                                            <li>도수치료: 치료자가 손(정형용 교정장치 장비 등의 도움을 받는 경우를 포함)을 이용해서 환자의 근골격계통(관절, 근육, 연부조직, 림프절 등)의 기능 개선 및 통증
+                                            </li>
+                                            <li>감소를 위하여 실시하는 치료행위
+                                                <p class="imp_txt">의사 또는 의사의 지도하에 물리치료사가 도수치료를 하는 경우에 한함</p>
+                                             </li>
+                                            <li>체외충격파치료: 체외에서 충격파를 병변에 가해 혈관 재형성을 돕고 건(힘줄) 및 뼈의 치유 과정을 자극하거나 재활성화시켜 기능개선 및 통증감소를 위하여 실시하는 치료행위(체외충격파쇄석술은 제외)
+                                             </li>
+                                            <li>증식치료: 근골격계 통증이 있는 부위의 인대나 건(힘줄), 관절, 연골 등에 증식물질을 주사하여 통증이 소실되거나 완화되는 것을 유도하는 치료행위
+                                             </li>
+                                            <li>주사료: 주사치료 시 사용된 행위, 약제 및 치료재료대
+                                             </li>
+                                            <li>자기공명영상진단: 자기공명영상 장치를 이용하여 고주파 등을 통한 신호의 차이를 영상화하여 조직의 구조를 분석하는 검사(MRI/MRA)(보건복지부에서 고시하는 ‘건강보험 행위 급여·비급여 목록 및 급여 상대가치점수’상의 MRI 범주에 따름)
+                                                <p class="imp_txt">자기공명영상진단 결과를 다른 의료기관에서 판독하는 경우 포함</p>
+                                             </li>
+                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns prog">
+                        <button type="button" class="btn second"><span>확인</span></button>
+                        <button type="button" class="btn primary"><span class="next">가입예시</span></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

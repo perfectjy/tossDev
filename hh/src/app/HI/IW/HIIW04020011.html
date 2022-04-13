@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HIIW04020011');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04020011" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HIIW04020011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                개인정보보호를 위해 보험가입설계 신청 시 개인(신용)정보 처리에 대해 동의할 수 있습니다.
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>보험가입설계 신청 고객</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>본인의 전자서명</li>
+                                    <li>만 14세 미만인 경우 법정대리인(친권자)의 전자서명</li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <ol class="use_step_proc">
+                                    <li><span class="num">1</span><strong>개인(신용)정보 처리 동의</strong></li>
+                                    <li><span class="num">2</span><strong>동의자 실명확인</strong></li>
+                                    <li>
+                                        <span class="auth">인증</span><strong>전자서명</strong>
+                                        <a href="#none" class="btn_tooltip"><span class="offscr">설명 보기</span></a>
+                                    </li>
+                                    <li><span class="num">3</span><strong>완료</strong></li>
+                                </ol>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>개인(신용)정보 처리를 할 수 있는 계약담당자를 확인하기 위해 사원번호가 필요합니다. 사원번호를 먼저 확인해 주세요.</li>
+                                    <li>개인(신용)정보 처리에 동의하지 않을 경우 보험가입설계 등의 서비스가 제한됩니다.</li>
+                                    <li>개인(신용)정보 처리 동의를 위한 실명확인 진행 시 ‘SCI평가정보’의 실명등록 정보를 기반으로 진행됩니다. </li>
+                                    <li>실명인증이 제대로 진행되지 않으면 SCI평가정보가 운영하는 사이렌24(www.siren24.com) 홈페이지에서 [고객지원센터 > 1:1문의] 또는 [실명등록센터]를 이용해 주세요.</li>
+                                    <li>기타 문의사항은 인터넷 콜센터(<span class="tel_number">02-2116-1004</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>개인(신용)정보 처리 동의</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

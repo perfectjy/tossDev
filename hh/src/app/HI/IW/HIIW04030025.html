@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '상품설명서 주요사항 확인', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 상품설명서 주요사항 확인  open
+            Dialog.open('#HIIW04030025');
+
+            // 청약서 확인 진행 단계 표시
+            displayStep(5, 5);
+
+            // placeholder
+            $.fn.placeholder();
+        });
+
+        /* 청약서 확인 진행 단계 표시
+            1) _now : 현재 단계
+            2) _total : 전체 단계
+        */
+        function displayStep(_now, _total) {
+            var $stepObj = $('.step_number'),
+                $step = '',
+                _state, _stepNum;
+            for (var i=1; i<=_total; i++) {
+                _state = _now === i ? 'class="now"'
+                    : _now > i ? 'class="complete"'
+                    : '';
+                _stepNum = _now === i ? '현재'
+                    : _now > i ? '완료'
+                    : i;
+                
+                $step += '<span '+ _state +' title="'+ _stepNum +'단계">'+ i +'</span>';
+            }
+
+            $stepObj.html($step);
+        }
+
+        // placeholder
+        $.fn.placeholder = function() {
+            var inpObj = $('input[type=text], textarea');
+
+            $.each(inpObj, function(i) {
+                var phTxt = inpObj.eq(i).attr('placeholder');
+                inpObj.eq(i).after('<span class="placeholder">'+ phTxt +'</span>');
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04030025" class="btn line dialog_open">상품설명서 주요사항 확인 </a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 상품설명서 주요사항 확인  팝업 -->
+    <div id="HIIW04030025" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>상품설명서 주요사항 확인 </h1>
+
+                <!-- 진행 단계 -->
+                <div class="step_number"></div>
+
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>아래 대괄호 <strong class="highlight">[ ]</strong> 안의 글자는 반드시 계약자가 자필 확인을 해야 합니다.</li>
+                            <li>내용을 꼼꼼하게 읽고 각 입력창에 보이는 글자를 정확하게 입력해 주세요.</li>
+                        </ul>
+
+                        <div class="contract_check">
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    암관련보장의 <span class="need">[<span class="correct">90일</span> <span class="error">면</span><span class="correct">책기간</span>]</span> 적용
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="90일 면책기간 입력" placeholder="90일 면책기간">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    재진단암진단II의 보장범위는 <span class="need">[기타피부암]</span>, <span class="need">[갑상선암 및 전립선암]</span>을 제외한 암에 대하여 보장
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="기타피부암 입력" placeholder="기타피부암">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="갑상선암 및 전립선암 입력" placeholder="갑상선암 및 전립선암">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    재진단암진단II의 보장범위는 <span class="need">[기타피부암]</span>, <span class="need">[갑상선암 및 전립선암]</span>을 제외한 암에 대하여 보장
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="기타피부암 입력" placeholder="기타피부암">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="갑상선암 및 전립선암 입력" placeholder="갑상선암 및 전립선암">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    기본계약의 재진단암진단II보장은 최초로 발생한 암 또는 직전 발생한 재진단암 진단 확정일부터 <span class="need">[2년이 지나고]</span> 재진단암으로 진단 받은 경우에 보험금을 지급함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="2년이 지나고 입력" placeholder="2년이 지나고">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    암직접치료입원일당(1~180일, 요양병원 제외) (갱신형) 보장 특약은 <span class="need">[암의 직접적인 치료를 목적]</span>으로 입원하는 경우에 한하여 보장하며,
+                                    <span class="need">[요양병원에 입원하는 경우 보장하지 않음]</span>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="암의 직접적인 치료를 목적 입력" placeholder="암의 직접적인 치료를 목적">
+                                    </div>
+                                    <div class="form_item">
+                                        <textarea name="" title="요양병원에 입원하는 경우 보장하지 않음 입력" placeholder="요양병원에 입원하는 경우 보장하지 않음"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    암수술(갱신형)보장특약에서 <span class="need">[항암방사선치료 및 항암약물치료]</span>는 약관에서 정한 ‘수술보험금’의 지급이 불가능함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="항암방사선치료 및 항암약물치료 입력" placeholder="항암방사선치료 및 항암약물치료">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    암직접치료통원일당(상급종합병원)(갱신형)보장특약은 <span class="need">[암의 직접적인 치료를 목적]</span>으로 통원하는 경우에 한하여 <span class="need">[보장]</span>하며,
+                                    <span class="need">[상급종합병원 이외에 통원하는 경우 보장하지 않음]</span>
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="암의 직접적인 치료를 목적 입력" placeholder="암의 직접적인 치료를 목적">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="보장 입력" placeholder="보장">
+                                    </div>
+                                    <div class="form_item">
+                                        <textarea name="" title="상급종합병원 이외에 통원하는 경우 보장하지 않음 입력" placeholder="상급종합병원 이외에 통원하는 경우 보장하지 않음"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    표적항암약물허가치료는 해당 진료과목의 전문의 자격을 가진 자가 피보험자의 ‘암’의 치료를 직접적인 목적으로 약관에서 정한 ‘표적항암제’를
+                                    <span class="need">[안정성과 유효성]</span>인정 범위 내에서 투여하여 치료하는 것을 말함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="안정성과 유효성 입력" placeholder="안정성과 유효성">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    표적항암약물허가치료보장은 암세포의 특정 분자를 표적 공격하여 암의 성장과 확산을 억제하는
+                                    <span class="need">[표적항암제의 처방]</span>을 받은 경우 보험금을 지급함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="표적항암제의 처방 입력" placeholder="표적항암제의 처방">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    표적항암약물허가치료란 항암약물치료 방법 중 하나로 ‘표적항암제’의 투여 치료를 말하며,
+                                    다른 항암약물치료 대비 <span class="need">[발생빈도는 낮지만]</span> 고가의 치료비용 발생을 목적으로 함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="발생빈도는 낮지만 입력" placeholder="발생빈도는 낮지만">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    표적항암약물허가치료는 <span class="need">[식약처 허가 또는 건강보험심사평가원 승인]</span> 요법에 한해 <span class="need">[처방시점을 기준]</span>으로 보장하며,
+                                    보장대상에서 <span class="need">[호르몬 관련치료제는 제외]</span>함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <textarea name="" title="식약처 허가 또는 건강보험심사평가원 승인 입력" placeholder="식약처 허가 또는 건강보험심사평가원 승인"></textarea>
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="처방시점을 기준 입력" placeholder="처방시점을 기준">
+                                    </div>
+                                    <div class="form_item">
+                                        <input type="text" name="" title="호르몬 관련치료제는 제외 입력" placeholder="호르몬 관련치료제는 제외">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    표적항암약물허가치료가 ‘사후승인 또는 심사 중’에 보험금이 청구되는 경우,
+                                    암질환심의위원회의 사후승인 절차에 따라 <span class="need">[승인 및 통보가 완료된 후]</span>에 보험금접수심사가 가능함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="승인 및 통보가 완료된 후 입력" placeholder="승인 및 통보가 완료된 후">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check_item">
+                                <div class="item_cont">
+                                    혈전용해치료라 함은 의사가 ‘뇌경색증(63) 또는 ‘급성심근경색증(21)의 <span class="need">[직접적인 치료]</span>를 목적으로 '혈전용해제'를 주입하는 치료로
+                                    항응고제 및 경구용약제 투약 및 혈전용해제를 투여하지 않은 <span class="need">[기계적혈전제거술은 보상에서 제외]</span>함
+                                </div>
+                                <div class="form_list">
+                                    <div class="form_item">
+                                        <input type="text" name="" title="직접적인 치료 입력" placeholder="직접적인 치료">
+                                    </div>
+                                    <div class="form_item">
+                                        <textarea name="" title="기계적혈전제거술은 보상에서 제외 입력" placeholder="기계적혈전제거술은 보상에서 제외"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary">확인 후 완료</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

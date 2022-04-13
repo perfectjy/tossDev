@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '담보대출', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 담보대출 open
+            Dialog.open('#HILF03010001');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+            <div id="content">
+                <div class="section_m">
+                    <a href="#HILF03010001" class="btn line dialog_open">대출상담신청</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+
+    <div id="HILF03010001" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>대출상담신청</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="step_list">
+                            <div class="step_bar"><span style="width:33%"></span></div>
+                            <div class="steps">
+                                <span class="offscr">현재단계</span><strong class="num">1</strong>
+                                <span class="offscr">전체단계</span><strong>3</strong>
+                            </div>
+                        </div>
+                        <div class="governing">
+                            <h2 class="governing_title">대출 상담신청 정보를 <br>입력해 주세요.</h2>
+                        </div>
+                        <h3 class="h3">상담 정보 입력</h3>
+                        <div class="form_wrap">
+                            <div class="form_list">
+                                <label for="house" class="form_label">대출종목</label>
+                                <div class="form_item">
+                                    <select id="house">
+                                        <option>대출종류 선택</option>
+                                        <option>아파트담보</option>
+                                        <option>주택담보</option>
+                                        <option>오피스텔담보</option>
+                                        <option>전세자금 (임대아파트)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="area01" class="form_label">상담요청지역</label>
+                                <div class="col2">
+                                    <div class="form_item">
+                                        <select id="area01">
+                                            <option>서울</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form_item">
+                                            <select id="" title="지역선택">
+                                                <option>강북</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <div class="form_label">주소</div>
+                                <div class="form_addr">
+                                    <div class="addr_item init">
+                                        <input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" disabled>
+                                        <button type="button" class="btn line"><span>주소검색</span></button>
+                                        <button type="button" class="btn line initial"><span class="offscr">초기화</span></button>
+                                    </div>
+                                    <input type="text" name="" title="참조주소" value="" disabled>
+                                    <input type="text" name="" title="상세주소" value="" disabled>
+                                </div>        
+                            </div>
+                            <div class="form_list">
+                                <label for="memo" class="form_label">상세내용</label>
+                                <div class="form_item">
+                                    <textarea class="detail_txt" id="memo" placeholder="상담을 받고 싶은 내용을 기재해 주시기 바랍니다."></textarea>
+                                    <p class="cont">0 / 500자</p>
+                                </div>
+                            </div>
+                            <h3 class="h3">고객 정보 입력</h3>
+                            <div class="form_list">
+                                <label for="rName" class="form_label">이름</label>
+                                <div class="form_item">
+                                    <input type="text" id="rName" name="" placeholder="예: 하이현" value="">
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <div class="form_label">
+                                     연락처 우선순위
+                                </div>
+                                <div class="form_item">
+                                    <span class="radio_box">
+                                        <input type="radio" id="smart" name="sms">
+                                        <label for="smart">휴대전화번호</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input type="radio" id="homeTel" name="sms" checked="">
+                                        <label for="homeTel">유선전화번호</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="phone" class="form_label">(선택) 휴대전화번호</label>
+                                <div class="contact_item">
+                                    <div class="item">
+                                        <select id="phone" name="" title="이동통신사번호">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="" maxlength="8">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="tel" class="form_label">(선택) 유선전화번호</label>
+                                <div class="contact_item">
+                                    <div class="item">
+                                        <select id="tel" name="" title="지역번호">
+                                            <option value="0">선택</option>
+                                            <option value="010">02</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <input type="tel" name="" title="유선전화번호" placeholder="숫자만 입력" value="" maxlength="8">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="fTime" class="form_label">연락가능 시간</label>
+                                <div class="col2">
+                                    <div class="phone_ing">
+                                        <select id="fTime" title="시작시간">
+                                            <option>09:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form_item">
+                                            <select id="" title="종료시간">
+                                                <option>10:00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>다음</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

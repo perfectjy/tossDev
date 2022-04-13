@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<script type="text/javascript">
+	$(function() {
+		if($('.move_box').length) {
+			var lastScrollTop = 0,
+			hei = $('.move_box').innerHeight(),
+			nav = $('breadcrumbs_cont').innerHeight(),
+			taget = 290, // 고정될 요소의 높이
+			navActive = 87;
+			var maxH = $('.move_box').offset().top + hei - (taget + nav + navActive);
+
+			$(window).scroll(function(event){
+				var st = $(this).scrollTop();
+				if (st > lastScrollTop){
+					if (st > ($('.move_box').offset().top - navActive) && st < maxH) {
+						$('.move_box').addClass("fixed");
+					} else if (st > maxH - 122 ) {
+						$('.move_box').removeClass("fixed").addClass("is_top");
+					}
+				} else {
+					// upscroll
+					if (st > ($('.move_box').offset().top - navActive) && st < maxH) {
+						$('.move_box').removeClass("is_top").addClass("fixed");
+					} else if (st < ($('.move_box').offset().top - navActive) ) {
+						$('.move_box').removeClass("fixed");
+					}
+				}
+				lastScrollTop = st;
+
+			});
+		}
+	});
+</script>
+<style>
+	.move_box {position:relative; padding:0 190px; margin-top:70px;}
+	.move_box .item1, .move_box .item2 {border:2px solid #aaa; border-radius: 20px;}
+	.move_box .item1 {height:300px;}
+	.move_box .item2 {height:460px; margin-top:20px;}
+	.move_box .total {position:absolute; top:30px; left:50%; margin-left:350px; width:170px; height:170px; border-radius: 20px; background-color: #fe632d;}
+	.move_box.fixed .total {position:fixed; top:117px;}
+	.move_box.is_top .total {top:auto; bottom:30px;}
+</style>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section_l">
+					<div class="step_list">
+						<div class="step_bar"><span style="width:25%"></span></div>
+						<div class="steps">
+							<span class="offscr">현재단계</span><strong class="num">1</strong>
+							<span class="offscr">전체단계</span><strong>4</strong>
+						</div>
+					</div>
+					<div class="governing">
+						<h2 class="governing_title">운용을 지시할 정보를 선택하고, 가청약을 등록하세요.</h2>
+					</div>
+					<h3 class="h3">적립금 운용상품 선정 및 부담금 최초 운용 비율</h3>
+					<ul class="list_dot">
+						<li>선정하신 적립금 운용상품 내에서 계약자가 운용지시 할 수 있습니다.</li>
+						<li>적립금 운용상품 선정 후에 가입자의 의견을 반영하여 다른 상품으로 변경 가능합니다. 단, 현대해상에서 취급하지 않는 상품으로 변경 불가합니다.</li>
+						<li>현대해상에서 취급하는 상품 중 운용관리계약서에서 선택하지 않은 적립금 운용방법에 해당하는 상품으로 변경할 경우에는 먼저 운용관리 계약서를 변경해야 합니다.</li>
+					</ul>
+
+					<div class="move_box">
+						<div class="item1"></div>
+						<div class="item2"></div>
+						<div class="total"></div>
+					</div>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+					<div class="fixed_btm_btns">
+						<div class="btns">
+							<button type="button" class="btn primary">다음</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/quick.js"></script><!-- // Pub Include -->
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

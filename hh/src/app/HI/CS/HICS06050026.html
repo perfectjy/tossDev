@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // open
+            Dialog.open('#HICS06050026');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICS06050026" class="btn line dialog_open">간편인증 설정</a>
+
+                    
+                </div> 
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 팝업 -->
+    <div id="HICS06050026" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>간편인증 설정</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <!-- 지문 등록 -->
+                        <div class="governing txt_c">
+                            <div class="governing_title">스마트폰 지문인식 영역에 손가락을 올려서 생체정보를 추가로 등록해 주세요.</div>
+                        </div>
+                        <div class="certify_sel">
+                            <ul>
+                                <li>
+                                    <div class="certify_finger">
+                                        <strong>지문</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--// 지문 등록 -->
+
+                        <!-- 얼굴 등록 -->
+                        <div class="governing txt_c">
+                            <div class="governing_title">스마트폰 전면 카메라로 얼굴을 인식해서 생체정보를 추가로 등록해 주세요.</div>
+                            <p class="added_text">(FaceID 인증)</p>
+                        </div>
+                        <div class="certify_sel">
+                            <ul>
+                                <li>
+                                    <div class="certify_face">
+                                        <strong>얼굴인증</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+    
+                        <!-- 디바이스 미설정 case -->
+    
+                        <div class="governing txt_c">
+                            <h2 class="governing_title">
+                                <span class="greeting_text">접속하신 기기에 저장된</span>
+                                생체인증 정보가 없습니다.</h2>
+                            <p class="info_text">스마트폰 [설정]에서 생체정보를 등록한 후, <br>
+                                현대해상 [고객지원센터 > 인증센터]에서 간편인증을 <br>
+                                재등록하면 생체인증을 이용할 수 있습니다. 
+                            </p>
+                        </div>
+                        <div class="log_btm_btns">
+                            <div class="btn_box">
+                                <a href="#none" class="btn line">간편인증 등록 완료하기</a>
+                            </div>
+                        </div> 
+    
+                        <!--// 디바이스 미설정 case -->
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+              
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

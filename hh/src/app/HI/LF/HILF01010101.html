@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '보험계약대출신청', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="step_list">
+                        <div class="step_bar"><span style="width:25%"></span></div>
+                        <div class="steps">
+                            <span class="offscr">현재단계</span><strong class="num">1</strong>
+                            <span class="offscr">전체단계</span><strong>4</strong>
+                        </div>
+                    </div>
+                    <div class="governing">
+                        <h2 class="governing_title">대출신청금액을 입력해 주세요.</h2>
+                        <p class="info_text">기존대출이 있는 경우 정산이자 차감 후 지급됩니다.</p>
+                    </div>
+                    <div class="section_s">
+                        <div class="form_wrap into">
+                            <div class="form_row">
+                                <span class="form_label">대출가능금액</span>
+                                <div class="price_item">
+                                    <strong class="amount">1,120</strong><span class="unit">만원</span>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <label for="" class="form_label">일괄 입력</label>
+                                <div class="price_ui_input">
+                                    <div class="auto_input">
+                                        <span class="inp_txt auto" role="textbox" contenteditable="true" data-unit="만원" placeholder="5만원 이상 입력"></span>
+                                    </div>
+                                    <div class="btn_price">
+                                        <button type="button" class="btn sgrey"><span>+5만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                        <button type="button" class="btn sgrey"><span>전액</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="list_dot">대출이율이 낮은 보험계약순으로 자동 적용됩니다.</p>
+                        </div>
+                        <div class="toggle_select">
+                            <span>계약별 확인 및 입력</span>
+                            <div class="switcher">
+                                <input id="togbtn1" type="checkbox">
+                                <label for="togbtn1"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ins_charge_wrap">
+                        <div class="rd_box insu_amount active">  <!-- 금액이 있을경우 class 'active' 추가해주세요 -->
+                            <div class="insu_title">무배당하이라이프파워ECO 운전자보험Hi0910(자가용/일반상해)</div>
+                            <div class="insu_detail">
+                                <div class="insu_text">신용정보집중대상입니다.<a class="tooltip">설명</a></div>
+                            </div>
+                            <div class="info_price">
+                                <ul class="info_rate">
+                                    <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                    <li>기대출금액<span class="num"><strong>300</strong>만원</span></li>
+                                    <li>대출가능금액<span class="num"><strong>402</strong>만원</span></li>
+                                </ul>
+                                <div class="price_ui_input">
+                                    <div class="auto_input">
+                                        <span class="inp_txt auto" role="textbox" contenteditable="true" data-unit="만원" placeholder="대출신청금액 입력"></span>
+                                    </div>
+                                    <div class="btn_price">
+                                        <button type="button" class="btn sgrey"><span>+5만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                        <button type="button" class="btn sgrey"><span>전액</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd_box insu_amount">
+                            <div class="insu_title">무배당행복은다모은보험(HI0804)</div>
+                            <div class="insu_detail">
+                                <div class="insu_text">신용정보집중대상입니다.<a class="tooltip">설명</a></div>
+                            </div>
+                            <div class="info_price">
+                                <ul class="info_rate">
+                                    <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                    <li>기대출금액<span class="num"><strong>300</strong>만원</span></li>
+                                    <li>대출가능금액<span class="num"><strong>402</strong>만원</span></li>
+                                </ul>
+                                <div class="price_ui_input">
+                                    <div class="auto_input">
+                                        <span class="inp_txt auto" role="textbox" contenteditable="true" contenteditable-disabled="all" data-unit="만원" placeholder="대출신청금액 입력"></span>
+                                    </div>
+                                    <div class="btn_price">
+                                        <button type="button" class="btn sgrey"><span>+5만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                        <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                        <button type="button" class="btn sgrey"><span>전액</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amount_total_bottom">
+                        <div class="m_toggle_cont" id="detail">
+                            <dl class="info_amount_detail">
+                                <dt>기존대출금액</dt>
+                                <dd><strong>13,310,000</strong>만원</dd>
+                                <dt>예상총대출금액</dt>
+                                <dd><strong>23,310,000</strong>만원</dd>
+                                <dt>예상월이자</dt>
+                                <dd><strong>932,400</strong>원</dd>
+                            </dl>
+                        </div>
+                        <div class="total">
+                            <span class="tit">대출신청금액</span>
+                            <span><strong>10,000,000</strong>만원</span>
+                        </div>
+                        <a href="#detail" class="m_toggle_btn"><span class="offscr">상세보기</span></a>
+                    </div>
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>인터넷 보험계약대출 이용 시 채널별 (홈페이지, 앱, ARS) 1일 최대 5천만원 한도 신청 가능합니다. 단, 홈페이지, 앱, ARS를 통한 당일 대출합산금액이 총 1억원을 넘을 수 없습니다. (1억원 초과 시 창구 방문 신청 가능)</li>
+                                <li>고객님의 신용정보에 영향을 미칠 수 있는 신용정보집중 대상 대출을 제외하고 신청하시는 경우, 하단 계약별 확인 및 입력 항목에서 신용정보집중 대상 'N' 해당되는 계약을 우선 신청하시기 바랍니다.</li>
+                                <li>연금상품의 경우 연금개시 후 대출원리금이 해지환급금 일정비율을 초과하게 되면 연금지급에 제한이 있을 수 있습니다.</li>
+                                <li>중도인출과 보험계약대출을 비교해 보신 후 서비스를 이용하시기 바랍니다.
+                                    <div class="ac_in_btns">
+                                        <button type="button" class="btn base">중도인출 &middot; 보험계약대출 비교</button>
+                                    </div>
+                                </li>
+                                <li>문의사항은 인터넷 콜센터 <span class="tel_number">02-2116-1004</span> 또는 대출상담 콜센터 <span class="tel_number">1588-5655</span>로 연락해 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fixed_btm_btns fixed2">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

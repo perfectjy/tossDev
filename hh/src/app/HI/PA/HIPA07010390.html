@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        <div id="container">
+            <div id="content">
+                <div class="section_l">
+                    <div class="governing">
+                        <h2 class="governing_title"><strong>Hicar 타임쉐어 자동차보험</strong></h2>
+                    </div>
+
+                    <h3 class="h3">기본정보</h3>
+                    <table class="tbl_data in_crud">
+                        <caption>기본정보 입력</caption>
+                        <colgroup>
+                            <col style="width:210px">
+                            <col style="width:380px">
+                            <col style="width:210px">
+                            <col style="width:380px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">생년월일</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" placeholder="예: 199901016">
+                                    </div>
+                                </td>
+                                <th scope="row">피보험자구분</th>
+                                <td>개인</td>
+                            </tr>                            
+                            <tr>
+                                <th scope="row">보험기간</th>
+                                <td colspan="3">
+                                    <div class="tb_item list">
+                                        <div class="tb_txt">보험시작일시</div>
+                                        <div class="w20">
+                                            <div class="date_box">
+                                                <input type="text" class="inp_date" value="2021.06.16">
+                                            </div>                                        
+                                        </div>
+                                        <div class="unit_item w12">
+                                            <select class="tbsel">
+                                                <option>즉시</option>
+                                            </select>
+                                        </div>
+                                        <div class="tb_txt end">보험종료일시</div>
+                                        <div class="w20">
+                                            <div class="date_box">
+                                                <input type="text" class="inp_date" value="2022.06.16">
+                                            </div>                                        
+                                        </div>
+                                        <div class="unit_item w12">
+                                            <select class="tbsel">
+                                                <option>18시</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">차량번호</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_txt">
+                                    </div>
+                                </td>
+                                <th scope="row">차종</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>자가용</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="h3">담보 및 보험료</h3>
+                    <table class="tbl_data in_crud">
+                        <caption>담보 및 보험료 목록</caption>
+                        <colgroup>
+                            <col style="width:auto">
+                            <col style="width:158px">
+                            <col style="width:268px" span="3">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="2"><span>담보</span></th>
+                                <th scope="col"><span>가입여부/금액</span></th>
+                                <th scope="col"><span>담보보험료(원)</span></th>
+                                <th scope="col"><span>초회보험료(원)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">대인배상II</td>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>무한</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="담보보험료" value="" disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="초회보험료" value="" disabled>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">대물배상</td>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>3천만원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="담보보험료" value="" disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="초회보험료" value="" disabled>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <div class="tb_item">
+                                        <select class="tbsel bl">
+                                            <option>자기신체사고</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>사망사고</td>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>5천만원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td rowspan="2">
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="담보보험료" value="" disabled>
+                                    </div>
+                                </td>
+                                <td rowspan="2">
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="초회보험료" value="" disabled>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>부상사고</td>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>3천만원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">타인차량 수리비용</td>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>3천만원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="담보보험료" value="" disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tb_item">
+                                        <input type="text" class="inp_price" title="초회보험료" value="" disabled>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>   
+
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>보험료 계산</span></button>
+                        </div>
+                    </div>
+
+                    <div class="pay_total">
+                        <ul>
+                            <li>초회보험료<span><strong>5,451,000</strong>원</span></li>
+                        </ul>
+                        <div class="pay">
+                            <strong>납입보험료</strong>
+                            <span><strong>5,451,000</strong>원</span>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title open">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>계산된 보험료는 이해를 돕기 위한 예시이며, 실제 보험 가입 시 보장 내용 및 피보험자의 정보에 따라 보험금액이 달라질 수 있습니다.</li>
+                                <li>자세한 내용은 전화가입 상담센터(1577-1001)를 통해 상담받으실 수 있습니다. </li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn sline"><span>목록</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

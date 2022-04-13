@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '자동 로그아웃 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#LogOut');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#LogOut" class="btn line dialog_open">자동 로그아웃 안내</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 보험용어사전 팝업 -->
+    <div id="LogOut" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>자동 로그아웃 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="logout_info">
+                    <div class="time">남은시간: <span class="highlight">4분 30초</span></div>
+                    <p>고객님의 안전한 금융거래를 위하여<br><span class="highlight">일정 시간 동안 이용이 없을 경우<br>자동으로 로그아웃</span> 됩니다.</p>
+                    <strong>로그인 시간을 연장하시겠습니까?</strong>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn col2">
+                    <button type="button" class="btn second"><span>로그아웃</span></button>
+                    <button type="button" class="btn primary"><span>시간연장</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 보험금청구', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 개인정보(연락처) 변경 open
+            Dialog.open('#HICL01060055');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICL01060055" class="btn line b dialog_open">개인정보(연락처) 변경</a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 개인정보(연락처) 변경 팝업 -->
+    <div id="HICL01060055" class="dialog full">
+        <div class="dialog_wrap big">
+            <div class="dialog_header">
+                <h1>개인정보(연락처) 변경</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section b">
+                        <div class="form_wrap b">
+                            <div class="form_list">
+                                <label for="phone" class="form_label">휴대전화번호</label>
+                                <div class="contact_item">
+                                    <div class="item">
+                                        <select id="phone" class="b" name="" title="이동통신사번호">
+                                            <option value="010" selected>010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <input type="tel" name="" class="inp_txt b" title="휴대전화번호" placeholder="숫자만 입력" value="12341234" maxlength="8">
+                                    </div>
+                                </div>
+
+                                <div class="btn_conts">
+                                    <!-- 인증 완료 시 class에 active 추가 -->
+                                    <button type="button" class="btn oline b"><span>본인인증</span></button>
+                                </div>
+                            </div>
+
+                            <div class="form_list">
+                                <div class="form_label">이메일</div>
+                                <div class="email_item">
+                                    <div class="item">
+                                        <input type="email" title="이메일 계정" name="email_id" class="inp_txt b" placeholder="이메일 입력" value="">
+                                    </div>
+                                    <div class="item">
+                                        <input type="email" title="이메일 도메인" name="email_domain" class="inp_txt b" placeholder="예: hi.co.kr" value="">
+                                    </div>
+                                    <div class="item">
+                                        <select title="이메일 도메인 선택" name="" class="b">
+                                            <option value="0">직접 입력</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="yahoo.com">yahoo.com</option>
+                                            <option value="chol.com">chol.com</option>
+                                            <option value="korea.com">korea.com</option>
+                                            <option value="netian.com">netian.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <p class="list_bar_b">변경하신 연락처는 고객정보에 반영됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary b"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 개인정보(연락처)변경 팝업 -->
+    
+</body>
+</html>

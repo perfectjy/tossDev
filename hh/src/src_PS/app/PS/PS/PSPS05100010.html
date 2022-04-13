@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governing_title">변경/신청내역에 대해 결재처리를 하실 수 있습니다.</h2>
+					</div>
+
+					<div class="form_srch_wrap sign">
+						<div class="search_item">
+							<label for="breakdown" class="form_label">결재내역</label>
+							<div class="item">
+								<select id="breakdown" name="" title="결재내역">
+									<option value="0" selected="">전체</option>
+									<option value="1">기업정보변경</option>
+									<option value="2">추가가입신청</option>
+									<option value="3">추계액/기준급여변경</option>
+									<option value="4">라인업변경</option>
+									<option value="5">투자비율변경</option>
+									<option value="6">운용자산변경</option>
+								</select>
+							</div>
+						</div>
+						<div class="search_item">
+							<label for="state" class="form_label">결재상태</label>
+							<div class="item">
+								<select id="state" name="" title="결재상태">
+									<option value="0" selected="">전체</option>
+									<option value="1">신청</option>
+									<option value="2">결재</option>
+									<option value="3">반려</option>
+									<option value="4">접수반려</option>
+									<option value="5">삭제</option>
+									<option value="6">접수완료</option>
+								</select>
+							</div>
+						</div>
+						<div class="search_item date">
+							<label for="searchDate1" class="form_label">조회기간</label>
+							<div class="date_box">
+								<div class="item">
+									<select id="searchDate1" name="" title="조회기간">
+										<option value="today">당일</option>
+										<option value="7d">7일</option>
+										<option value="15d">15일</option>
+										<option value="1m">1개월</option>
+										<option value="3m" selected="">3개월</option>
+									</select>
+								</div>
+								<div class="item col02">
+									<div class="start_date">
+										<input type="text" class="inp_date" title="시작일" id="startDate">
+									</div>
+									<div class="end_date">
+										<input type="text" class="inp_date" title="종료일" id="endDate">
+									</div>
+								</div>
+							</div>
+							<!-- // date_box -->
+							<!-- 날짜가 입력되지 않은 상태에서 조회버튼 선택 시 오류 메시지 -->
+							<p class="error_text">시작일자~종료일자를 선택해 주세요.</p>
+						</div>
+						<div class="btn_search">
+							<button type="button" class="btn primary"><span class="search">조회</span></button>
+						</div>
+					</div>
+					<!-- // form_srch_wrap -->
+					
+					<div class="comp">
+						<table class="tbl_data">
+							<caption>신청번호, 신청일자, 결재내역, 결재상태, 결재/반려/상세에 대한 정보</caption>
+							<colgroup>
+								<col style="width:150px;">
+								<col style="width:150px;">
+								<col style="width:auto;">
+								<col style="width:150px;">
+								<col style="width:200px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">신청번호</th>
+									<th scope="col">신청일자</th>
+									<th scope="col">결재내역</th>
+									<th scope="col">결재상태</th>
+									<th scope="col">결재/반려/상세</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>00000</td>
+									<td>YYYY.MM.DD</td>
+									<td>기업정보변경(미래에셋생명보험(주))</td>
+									<td>신청</td>
+									<td>
+										<div class="tbl_in_btns">
+											<a href="#;" class="btn ass">결재/반려</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>00000</td>
+									<td>YYYY.MM.DD</td>
+									<td>운용자산변경(적립금운용지시)</td>
+									<td>신청</td>
+									<td>
+										<div class="tbl_in_btns">
+											<a href="#;" class="btn ass">결재/반려</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+						<!-- 내역 없을 경우 -->
+						<div class="no_list"><p>조회내역이 없습니다.</p></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '장애 모니터링', tooltip: false, prev: false, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb monitoring"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="form_list">
+                        <label for="selDate" class="form_label offscr">날짜선택</label>
+                        <div class="sel_date">
+                            <div class="date_box">
+                                <input type="text" class="inp_date" title="날짜선택" value="2021.07.21">
+                            </div>
+                            <button type="button" class="btn ofill"><span>조회</span></button>
+                        </div>
+                    </div>
+
+                    <div class="graph_monitor">
+                        <!-- 솔루션 영역 -->
+                        솔루션 영역
+                    </div>
+
+                    <div class="x_scrollbar">
+                        <table class="tbl_insudata monitor">
+                            <caption>업무별 장애건수</caption>
+                            <colgroup>
+                                <col style="width:110px;">
+                                <col style="width:70px;">
+                                <col style="width:80px;" span="25">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">업무명</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">00시</th>
+                                    <th scope="col">01시</th>
+                                    <th scope="col">02시</th>
+                                    <th scope="col">03시</th>
+                                    <th scope="col">04시</th>
+                                    <th scope="col">05시</th>
+                                    <th scope="col">06시</th>
+                                    <th scope="col">07시</th>
+                                    <th scope="col">08시</th>
+                                    <th scope="col">09시</th>
+                                    <th scope="col">10시</th>
+                                    <th scope="col">11시</th>
+                                    <th scope="col">12시</th>
+                                    <th scope="col">13시</th>
+                                    <th scope="col">14시</th>
+                                    <th scope="col">15시</th>
+                                    <th scope="col">16시</th>
+                                    <th scope="col">17시</th>
+                                    <th scope="col">18시</th>
+                                    <th scope="col">19시</th>
+                                    <th scope="col">20시</th>
+                                    <th scope="col">21시</th>
+                                    <th scope="col">22시</th>
+                                    <th scope="col">23시</th>
+                                    <th scope="col">24시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">[장기] 보험료<br>자동이체 신청</th>
+                                    <td class="txt_c">현재일</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">1주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">2주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">교통사고사항<br>/지급결의<br>확인서</th>
+                                    <td class="txt_c">현재일</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r"><strong class="highlight">00</strong></td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">1주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">2주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">장기주택저당<br>차입금 이자납입증명서</th>
+                                    <td class="txt_c">현재일</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">1주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">2주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">자동차과오납<br>보험료환급신청</th>
+                                    <td class="txt_c">현재일</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">1주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt_c">2주전</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                    <td class="txt_r">00,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

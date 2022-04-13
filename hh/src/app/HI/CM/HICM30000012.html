@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '이용시간 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#useTime');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#useTime" class="btn line dialog_open">이용시간 안내</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 이용시간 안내 팝업 -->
+    <div id="useTime" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_content">
+                <div class="service_info">
+                    <p class="use_time"><strong class="fs_bold">이용시간 <span class="highlight">평일 09:00~18:00</span></strong> (주말/공휴일 제외)<br>
+                    이용가능 시간에 다시 방문해 주세요.<br>
+                [확인]을 누르면 메인 화면으로 이동합니다.</p>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <a href="#none" class="btn primary">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

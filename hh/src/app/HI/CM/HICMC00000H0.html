@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko" class="fullpage">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+    <script type="text/javascript">
+        $(function() {
+            // slider
+            $('.landing_slide').find('.slide_inner').slick({
+                dots: true,
+                autoplay: false,
+                infinite: false,
+                arrows: true,
+                swipe: true,
+                prevArrow: "<button type='button' class='slick_prev'><span class='offscr'>이전</span></button>",
+                nextArrow: "<button type='button' class='slick_next'><span class='offscr'>다음</span></button>",
+				customPaging: function(slider, i) {
+					return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1 + '번째 배너');
+				},
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="landing_slide">
+            <div class="slide_inner">
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction001.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction002.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction003.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction004.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction005.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction006.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction007.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction008.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction009.jpg"></div>
+                <div class="slide_item"><img src="/src/assets/images/mobile/traction010.jpg"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="admin_tab">
+                        <ul>
+                            <li>
+                                <input type="radio" id="radio1" name="radio" checked>
+                                <label for="radio1"><span>운영계 주민번호로 찾기</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="radio2" name="radio">
+                                <label for="radio2"><span>검증계 주민번호로 찾기</span></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="radio3" name="radio">
+                                <label for="radio3"><span>당사자ID로 찾기</span></label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 class="h3">조회 대상</h2>
+                    <div class="form_wrap">
+                        <div class="form_row bank">
+                            <label for="smJumin" class="form_label">운영계 주민번호</label>
+                            <div class="form_item col2">
+                                <input type="tel" id="smJumin" class="inp_txt" name="" value="">
+                                <button type="button" class="btn oline"><span>조회하기</span></button>
+                            </div>
+                        </div>
+
+                        <div class="form_row bank">
+                            <label for="confJumin2" class="form_label">검증계 주민번호</label>
+                            <div class="form_item col2">
+                                <input type="tel" id="confJumin2" class="inp_txt" name="" value="">
+                                <button type="button" class="btn oline"><span>조회하기</span></button>
+                            </div>
+                        </div>
+
+                        <div class="form_row bank">
+                            <label for="uId3" class="form_label">당사자 ID</label>
+                            <div class="form_item col2">
+                                <input type="text" id="uId3" class="inp_txt" name="" value="">
+                                <button type="button" class="btn oline"><span>조회하기</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 조회 후 -->
+                    <h2 class="h3">조회 결과</h2>
+                    <div class="form_wrap">
+                        <div class="form_row">
+                            <label for="confJumin" class="form_label">검증계 주민번호</label>
+                            <div class="form_item">
+                                <input type="tel" id="confJumin" class="inp_txt" name="" value="">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="uId" class="form_label">당사자 ID</label>
+                            <div class="form_item">
+                                <input type="text" id="uId" class="inp_txt" name="" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solid_box">
+                        <h3 class="h4">유의사항</h3>
+                        <ul class="list_dot">
+                            <li>검증계 데이터를 변경한 경우 당사자 ID가 조회되지 않을 수 있습니다.</li>
+                            <li>조회된 데이터가 실제 검증계 데이터가 아닐 수 있습니다.</li>
+                        </ul>
+                    </div>
+                    <!--// 조회 후 -->
+                    
+                    <hr>
+
+                    <h2 class="h3">검증계 이름, 전화번호 업데이트</h2>
+                    <div class="form_wrap">
+                        <div class="form_row">
+                            <label for="updateJumin" class="form_label">검증계 주민번호</label>
+                            <div class="form_item">
+                                <input type="tel" id="updateJumin" class="inp_txt" name="" value="">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="chName" class="form_label"><span class="highlight">변경할</span>&nbsp;이름</label>
+                            <div class="form_item">
+                                <input type="text" id="chName" class="inp_txt" name="" value="">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="phone" class="form_label"><span class="highlight">변경할</span>&nbsp;휴대전화번호</label>
+                            <div class="col3">
+                                <div class="item">
+                                    <input type="tel" class="inp_txt" name="" value="010" disabled>
+                                </div>
+                                <div class="item">
+                                    <input type="tel" class="inp_txt" name="" value="" maxlength="4">
+                                </div>
+                                <div class="item">
+                                    <input type="tel" class="inp_txt" name="" value="" maxlength="4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>업데이트 하기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

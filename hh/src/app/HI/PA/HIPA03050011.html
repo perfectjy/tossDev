@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script> 
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#HIPA03050011" title="현재선택"><span>상품현황</span></a></li>
+                                <li class="tab"><a href="#HIPA03050012"><span>주가지수연동이율</span></a></li>
+                                <li class="tab"><a href="#HIPA03050013"><span>예정이율현황</span></a></li>
+                                <li class="tab"><a href="#HIPA03050014"><span>자산구성내역</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HIPA03050011" class="tab_panel">
+                                <h3 class="offscr">상품현황</h3>
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.06.01</span>
+                                </div>
+                                <table class="tbl_data">
+                                    <caption>자산연계형상품공시 상품현황</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:12%" span="6">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">상품명</th>
+                                            <th scope="col">판매개시일</th>
+                                            <th scope="col">상품종류</th>
+                                            <th scope="col">상품유형</th>
+                                            <th scope="col">당월말 책임준비금 및 계약자 적립금(원)</th>
+                                            <th scope="col">예정이율(%)</th>
+                                            <th scope="col">최저보증이율(%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0808)</th>
+                                            <td>2008.08.01</td>
+                                            <td>자산연계형</td>
+                                            <td>연동형</td>
+                                            <td>3,431,798,309</td>
+                                            <td>3.28</td>
+                                            <td>5년 이하 3.50<br>5년 초과 3.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0902)</th>
+                                            <td>2009.02.01</td>
+                                            <td>자산연계형</td>
+                                            <td>연동형</td>
+                                            <td>894,129,050	</td>
+                                            <td>3.28</td>
+                                            <td>5년 이하 3.50<br>5년 초과 3.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0904)</th>
+                                            <td>2009.04.01</td>
+                                            <td>자산연계형</td>
+                                            <td>연동형</td>
+                                            <td>895,516,583</td>
+                                            <td>3.28</td>
+                                            <td>5년 이하 3.50<br>5년 초과 2.75</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이라이프세이프인덱스보험(Hi0908)</th>
+                                            <td>2009.08.01</td>
+                                            <td>자산연계형</td>
+                                            <td>연동형</td>
+                                            <td>136,396,660	</td>
+                                            <td>3.28</td>
+                                            <td>5년 이하 3.50<br>5년 초과 2.75</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이라이프세이프인덱스보험(Hi0910)</th>
+                                            <td>2009.10.01</td>
+                                            <td>자산연계형</td>
+                                            <td>연동형</td>
+                                            <td>196,480,395</td>
+                                            <td>3.28</td>
+                                            <td>5년 이하 3.50<br>5년 초과 2.75</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    
+                            </div>      
+                            <div id="HIPA03050012" class="tab_panel">
+                                <h3 class="offscr">주가지수연동이율</h3>
+                                <div class="top_search_box">
+                                    <div class="form_wrap">
+                                        <div class="form_row full">
+                                            <label for="" class="form_label">상품명</label>
+                                            <div class="form_item">
+                                                <select id="">
+                                                    <option>(무)하이세이프인텍스보험(HI0910)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <label for="" class="form_label">계약연월</label>
+                                            <div class="form_item">
+                                                <select id="">
+                                                    <option>2009.12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <div class="form_label">납입주기</div>
+                                            <div class="form_item">
+                                                <div class="radio_box">
+                                                    <input id="radio1" type="radio" name="radio">
+                                                    <label for="radio1">일시납/연납</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="radio2" type="radio" name="radio">
+                                                    <label for="radio2">월납</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn primary"><span>조회</span></button>
+                                </div>
+
+                                    
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.05.03</span>
+                                    <span class="opt">
+                                        <span class="opt_label">평가기간</span>
+                                        <select class="sm">
+                                                <option>1차 연도</option>
+                                        </select>
+                                        <a href="#" class="btn ass"><span class="down">엑셀 다운로드</span></a>
+                                    </span>
+                                </div>
+                                <table class="tbl_data">
+                                    <caption>자산연계형상품공시 주가지수연동이율</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:13%" span="7">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">월별</th>
+                                            <th scope="col">KOSPI200</th>
+                                            <th scope="col">등락률(%)</th>
+                                            <th scope="col">최고수익률(%)</th>
+                                            <th scope="col">최저수익률(%)</th>
+                                            <th scope="col">주가지수<br>증감률(%)</th>
+                                            <th scope="col">주가지수증감률<br>누계(%)</th>
+                                            <th scope="col">참여율(%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2009.12</th>
+                                            <td>221.86</td>
+                                            <td>0.00000	</td>
+                                            <td>2.35</td>
+                                            <td>-7</td>
+                                            <td>0.00000</td>
+                                            <td>0.00000</td>
+                                            <td>100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2010.01</th>
+                                            <td>210.34</td>
+                                            <td>-5.1925</td>
+                                            <td>2.35</td>
+                                            <td>-7</td>
+                                            <td>-5.1925</td>
+                                            <td>-5.1925</td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+
+                                <div class="accordion">
+                                    <div class="title open">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>해당 상품의 적용이율(주가지수연동이율)은 실제 주가지수평가기간이 지난 후에 산출되므로 최소 1년 이상 지나야 적용이율이 결정됩니다.</li>
+                                            <li>주가지수평가기간은 보험계약일이 속한 달의 다음달 1일부터 매 1년으로 합니다.</li>
+                                            <li>적용이율(주가지수연동이율) = 월별 주가지수 증감분의 합(%) x 참여율(%)</li>
+                                            <li>월별 주가지수 증감분: 매월 직전 월말일의 연계주가지수(KOSPI200)의 종가(기준지수)와 매월 말일의 연계주가
+                                            <ul class="list_bar">
+                                            <li>지수의 종가(만기지수)를 기준으로 월별 주가지수 증감분을 계산하며 월별 주가지수 증감분은 최고 수익률(Cap)과 최저수익률(Floor)을 한도로 합니다.</li>
+                                            <li>(=Max [ Min{{(만기지수 - 기준지수)/ 기준지수} x 100, 최고수익률}, 최저수익률])</li>
+                                        </ul>
+                                        </li>
+                                            <li>최고수익률(Cap): 월별 주가지수 증감분 계산 시 반영하는 수익률의 최고한도</li>
+                                            <li>최저수익률(Floor): 월별 주가지수 증감분 계산 시 반영하는 수익률의 최저한도</li>
+                                            <li>참여율(%): 월별 주가지수 증감분의 합 중 실제 주가지수연동이율로 지급하는 비율</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div id="HIPA03050013" class="tab_panel">
+                                <h3 class="offscr">예정이율현황</h3>
+                                <div class="tbl_top_info">
+                                    <span class="unit">작성일: 2021.06.01 / 단위: %</span>
+                                    <span class="opt">
+                                        <select class="sm">
+                                            <option>2021년</option>
+                                            <option>2020년</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <table class="tbl_data">
+                                    <caption>자산연계형상품공시 예정이율현황</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:6%" span="12">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">상품명</th>
+                                            <th scope="col">1월</th>
+                                            <th scope="col">2월</th>
+                                            <th scope="col">3월</th>
+                                            <th scope="col">4월</th>
+                                            <th scope="col">5월</th>
+                                            <th scope="col">6월</th>
+                                            <th scope="col">7월</th>
+                                            <th scope="col">8월</th>
+                                            <th scope="col">9월</th>
+                                            <th scope="col">10월</th>
+                                            <th scope="col">11월</th>
+                                            <th scope="col">12월</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0808)</th>
+                                            <td>3.30</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td>3.28</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0902)</th>
+                                            <td>3.30</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td>3.28</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이세이프인덱스보험(Hi0904)</th>
+                                            <td>3.30</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td>3.28</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이라이프세이프인덱스보험(Hi0908)</th>
+                                            <td>3.30</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td>3.28</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="txt_l">(무)하이라이프세이프인덱스보험(Hi0910)</th>
+                                            <td>3.30</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td>3.28</td>
+                                            <td>3.29</td>
+                                            <td>3.28</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>    
+                                <h2 class="h3">월/연도별 예정이율 산출방법</h2> 
+                                <ul class="list_dot">
+                                    <li>공시 기준이율 = { ( ①국고채(3년) 3개월 가중평균이율 + ②회사채(3년,AA-) 3개월 가중평균이율 ) ÷ 2 + ③자산연계형 운용자산 6개월 평균 운용자산이익율 } ÷ 2</li>
+                                    <li>운용자산이익률은 최초 특별계정 설정 후 1년간은 지표금리 [ (국고채 + 회사채) ÷ 2 ]와 동일한 수치를 적용한다.</li>
+                                    <li>차감 조정율 = 공시기준이율 x 80%</li>
+                                </ul>
+                            </div>    
+                            <div id="HIPA03050014" class="tab_panel">
+                                <h3 class="offscr">자산구성내역</h3>
+                                <div class="tbl_top_info">
+                                    <span class="unit">기준일: 2021.04 말 / 작성일: 2021.06.01 / 단위: 천원</span>
+                                </div>
+                                <table class="tbl_data">
+                                    <caption>자산연계형상품공시 자산구성내역</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:20%" span="3">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"colspan="2">구분</th>
+                                            <th scope="col">금액</th>
+                                            <th scope="col">구성비</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="7">자산구성내역</td>
+                                            <td>현금/예금</td>
+                                            <td>4,409,063</td>
+                                            <td>86.70%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>유가증권</td>
+                                            <td>0</td>
+                                            <td>0.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>대출증권</td>
+                                            <td>642,860</td>
+                                            <td>12.64%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>고정자산</td>
+                                            <td>0</td>
+                                            <td>0.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기타자산</td>
+                                            <td>33,750</td>
+                                            <td>0.66%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>소계</td>
+                                            <td>5,085,673</td>
+                                            <td>100.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>계약자 적립금</td>
+                                            <td>5,554,321</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

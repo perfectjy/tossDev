@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HICL01050011');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICL01050011" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HICL01050011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                기업 및 단체에서 가입한 단체보험
+                                <!-- tooltip -->
+                                <div class="ui_tooltip_wrap">
+                                    <button type="button" class="ui_btn hintInfo"><span class="offscr">단체보험 도움말</span></button>
+                                    <div class="tooltip">
+                                        <i></i>
+                                        <p>
+                                            <strong>단체보험</strong>이란?<br>
+                                            기업 또는 단체가 복지를 위해 구성원을 피보험자로 하여 가입하는 보험입니다.
+                                        </p>
+                                        <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                    </div>
+                                </div>
+                                <!--// tooltip -->
+                                의<br class="mo_br"> 보험금을<br class="p_br"> 청구할 수 있습니다.
+                            </div>
+
+                            <div class="gov_btns even">
+                                <a href="#" class="btn line">보험금 지급절차 안내문</a>
+                                <a href="#" class="btn line">필요서류 확인</a>
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>사고피보험자</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>
+                                        단체보험 가입자 중 보험금 청구금액이 500만원 이하인 건
+                                        <p class="imp_txt">단, 보험금 심사 과정에서 원본서류 및 추가서류 제출을 요청 드릴 수 있습니다.</p>
+                                    </li>
+                                    <li>기타 문의사항은 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <ol class="use_step_proc">
+                                    <li><span class="num">1</span><strong>청구내역 입력</strong></li>
+                                    <li><span class="num">2</span><strong>필요서류 접수</strong></li>
+                                    <li><span class="num">3</span><strong>보험금청구 완료</strong></li>
+                                    <li><span class="num">4</span><strong>담당자 배정/처리</strong></li>
+                                    <li><span class="num">5</span><strong>보험금 지급</strong></li>
+                                </ol>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">기타 보험금 청구방법 안내</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>
+                                        500만원 초과 청구 건이나 사망, 후유장해 청구 건 등은 아래 방법으로 청구해 주세요.
+                                        <table class="tbl_row">
+                                            <caption>우편,방문</caption>
+                                            <colgroup>
+                                                <col style="width:180px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">우편</th>
+                                                    <td>
+                                                        아래 서류를 등기우편으로 보내 주세요.<br>
+                                                        <ul class="list_dot">
+                                                            <li>보험금 청구서</li>
+                                                            <li>개인정보처리동의서</li>
+                                                            <li>필요서류</li>
+                                                        </ul>
+                                                        <br>
+                                                        주소: (04214)서울 마포구 만리재로 15 제일빌딩 1407호 현대해상 단체보험 접수팀 
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">방문</th>
+                                                    <td>
+                                                        방문접수는 아래 전화번호로 문의바랍니다.<br>
+                                                        02-2097-2911~3
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>보험금 청구권 소멸시효는 발생일로부터 3년이며, 이 기간이 지나면 청구권이 소멸됩니다.</li>
+                                    <li>계약자가 법인인 일반보험 및 배상책임보험, 재물보험은 온라인으로 보험금을 청구할 수 없습니다. 지점에 방문하시거나 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00) 로 연락하시기 바랍니다.</li>
+                                    <li>6개월 이내에 동일한 사고 또는 질병으로 치료받으셨다면, 당시 보상담당자에게 문의해 주세요.</li>
+                                    <li>필요서류를 모두 제출해야 보험금이 신속하게 지급됩니다. 필요한 서류를 확인해 주시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>단체보험 보험금 청구</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

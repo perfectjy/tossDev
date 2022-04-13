@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '이중출금안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HILF04000041');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#DoubleCash" class="btn line dialog_open">(팝업)금리인하 신청(약정)</a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+    <div id="HILF04000041" class="dialog full">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1><span class="emp">[필수]</span> 금리인하 신청(약정)</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_num">
+                            <li>
+                                <span class="ico">1. </span> 금리인하요구권은 가계용 보험여신 「거래기본약관」 제2조(이자 등과 지연배상금) 제9항에 따라, 채무자는 약정 당시와 비교하여 신용상태에 현저한 변동이 있다고 인정되는 경우, 고객이 합리적인 근거를 제시하고 금리변경을 요구할 수 있는 제도입니다.
+                            </li>
+                            <li>
+                                <span class="ico">2. </span> 다만, 최초 대출집행시점에 신용점수/소득/직장 관련 할인·할증 항목이 없었던 대출상품에 대해서는 금리인하가 되지 않을수도 있습니다. (소득/직장 관련 항목은 추후 서류제출을 요구할 수 있습니다.)
+                            </li>
+                            <li>
+                                <span class="ico">3. </span> 금리인하 신청/약정은 최종 승인을 의미하지 않으며, 심사결과 승인되지 않을 수도 있습니다.
+                            </li>
+                            <li>
+                                <span class="ico">4. </span> 금리인하 승인/거절 여부는 영업일 기준 10일 이내에 관리지점에서 문자메시지 또는 전화로 안내 드리겠습니다.
+                            </li>
+                            <li>
+                                <span class="ico">5. </span> 금리인하 승인 시에는 금리변동일자/적용일자를 포함한 승인내역이 문자메시지로 통보되며, 승인일 이후 최초 다가오는 자동이체일 다음날부터 인하된 금리가 적용됩니다.<br>(적용일부터 1개월 후 청구분부터 이자금액 감소)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>동의함</span></button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

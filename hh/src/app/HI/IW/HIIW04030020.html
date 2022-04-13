@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약내용 확인', tooltip: true, prev: true, menu: true };
+
+        $(function() {
+            // 승환여부 계약 예/아니오
+            $(document).off('change.before').on('change.before', '.contract_check input[type=radio]', function() {
+                var $this = $(this),
+                    selVal = $this.val(),
+                    addedInfo = $this.closest('.check_item').find('.solid_box');
+
+                if (selVal === 'yes') {
+                    addedInfo.slideDown(200);
+                } else {
+                    addedInfo.slideUp(200);
+                }
+            });
+
+            // 신분증 구분
+            $(document).off('change.idcard').on('change.idcard', '#selIDCard', function() {
+                var selVal = Number($(this).val());
+
+                $(this).closest('.form_wrap').find('div[id*="case"]').css({ display: 'none' });
+                $('#case'+selVal).css({ display: 'block' });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="step_list">
+                        <div class="step_bar"><span style="width:40%"></span></div>
+                        <div class="steps">
+                          <span class="offscr">현재단계</span><strong class="num">2</strong>
+                          <span class="offscr">전체단계</span><strong>5</strong>
+                        </div>
+                    </div>
+
+                    <div class="governing">
+                        <div class="governing_title">
+                            청약서/상품설명서 및<br class="mo_br">
+                            주요사항을 확인해 주세요.
+                        </div>
+                    </div>
+
+                    <h3 class="h3">청약서 및 상품설명서 확인</h3>
+                    <div class="manualStep">
+                        <!-- 진행된 단계 -->
+                        <div class="step past">
+                            <div class="step_inner">
+                                <span class="order">01</span>
+                                <div class="subject">청약서<br class="p_br"> 확인/발행</div>
+                                <button type="button" class="btn oline active"><span>확인</span></button>
+                            </div>
+                        </div>
+                        <div class="step past">
+                            <div class="step_inner">
+                                <span class="order">02</span>
+                                <div class="subject">상품설명서<br class="p_br"> 확인/발행</div>
+                                <button type="button" class="btn oline active"><span>확인</span></button>
+                            </div>
+                        </div>
+                        <!-- 현재 단계 -->
+                        <div class="step now">
+                            <div class="step_inner">
+                                <span class="order">03</span>
+                                <div class="subject">주요 계약사항<br class="p_br"> 확인</div>
+                                <button type="button" class="btn oline"><span>확인</span></button>
+                            </div>
+                        </div>
+
+                        <!-- 미진행 단계 -->
+                        <div class="step">
+                            <div class="step_inner">
+                                <span class="order">04</span>
+                                <div class="subject">청약서<br class="p_br"> 주요사항 확인</div>
+                                <button type="button" class="btn oline" disabled><span>확인</span></button>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step_inner">
+                                <span class="order">05</span>
+                                <div class="subject">상품설명서<br class="p_br"> 주요사항 확인</div>
+                                <button type="button" class="btn oline" disabled><span>확인</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list_bar">
+                        <li>청약서는 보험회사와 계약자 간에 계약내용 확인을 위해 필수적으로 작성하는 것으로, 계약체결 전 계약내용에 문제가 없는지 확인해 주세요. </li>
+                        <li>상품설명서는 가입할 보험상품에 대해 반드시 알아야 하는 필수 사항을 기재한 것으로, 반드시 내용을 확인하신 후 가입해 주세요.</li>
+                        <li>
+                            진행 중 오류 발생 시 [인터넷창구 오류해결안내]를 참고해 주세요.
+                            <div class="ac_in_btns">
+                                <button type="button" class="btn base">인터넷창구 오류해결안내</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h3 class="h3"><span class="tag surely">필수</span> 계약체결 전 확인사항</h3>
+                    <div class="contract_check">
+                        <div class="check_item">
+                            <h4 class="h4">계약 전 알릴 의무</h4>
+                            <p>
+                                만약 청약서상 계약 전 알릴 의무 질문에 대하여 사실대로 알리지 않거나 사실과 다르게 알린 경우에는 보험가입이 거절될 수 있으며,
+                                특히 질문 1~11번에 대하여 알린 내용이 '중요한 사항'에 해당하는 경우 회사는 보험 약관에 따라 이 보험계약을 일방적으로 해지할 수 있고,
+                                이미 보험사고가 발생하였더라도 보험금 지급을 거절하는 등 보장이 제한될 수 있습니다.
+                            </p>
+                            <div class="btn_conts">
+                                <!-- 확인 후 : class에 active 추가 -->
+                                <button type="button" class="btn oline"><span>계약 전 알릴 의무 확인</span></button>
+                            </div>
+                        </div>
+
+                        <div class="check_item">
+                            <h4 class="h4">통신수단을 이용한 계약해지</h4>
+                            <p>
+                                보험계약자가 체결한 계약을 해지하고자 하는 경우, 통신수단(전화, 인터넷 등)을 이용할 수 있습니다.
+                                단, 금융사고 예방 등을 위해 회사가 정한 규정에 따라 일부 제한될 수 있음을 양지해 주세요.
+                            </p>
+                            <div class="btn_conts">
+                                <!-- 확인 후 : class에 active 추가 -->
+                                <button type="button" class="btn oline"><span>통신수단을 이용한 계약해지 확인</span></button>
+                            </div>
+                        </div>
+
+                        <div class="check_item">
+                            <h4 class="h4">승환계약 여부</h4>
+                            <p>
+                                지금으로부터 6개월 이내에 소멸된 보험계약(타사 계약 포함)이 있거나,
+                                향후 6개월 이내에 소멸 예정인 계약(타사 계약 포함)이 있습니까?
+                            </p>
+                            <div class="btn_conts">
+                                <div class="radio_box">
+                                    <input type="radio" id="No" name="before_contract" value="no">
+                                    <label for="No"><span>아니요</span></label>
+                                </div>
+                                <div class="radio_box">
+                                    <input type="radio" id="Yes" name="before_contract" value="yes">
+                                    <label for="Yes"><span>예</span></label>
+                                </div>
+                            </div>
+
+                            <div class="solid_box">
+                                계약담당자로부터 기존계약 및 신규계약의 주요내용에 대한 비교를 충분히 설명 받았으며,
+                                보험계약 이동에 따른 손해발생 가능성을 충분히 설명 들었습니다.
+
+                                <div class="btn_conts">
+                                    <!-- 확인 후 : class에 active 추가 -->
+                                    <button type="button" class="btn oline"><span>확인</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h3">고객신원 확인</h3>
+                    <div class="contract_check">
+                        <div class="check_item">
+                            <p>
+                                「특정금융거래정보의 보고 및 이용 등에 관한 법률」 제 5조의 2, 동법 시행령 제5조 및 제10조의 4에 따라 연간 합계보험료 300만원 또는 일시납 500만원을 초과하는 보험거래 시 신분증 종류와 발급일 등을 통한 신원확인이 필요합니다.<br>
+                                제공 받는 정보는 동법령에 따라 업무목적 이외의 용도로는 사용되지 않습니다.
+                            </p>
+                            <div class="form_wrap">
+                                <div class="form_row">
+                                    <label for="selIDCard" class="form_label">신분증 구분</label>
+                                    <div class="form_item">
+                                        <select id="selIDCard" name="">
+                                            <option value="1">주민등록증</option>
+                                            <option value="2">운전면허증</option>
+                                            <option value="3">외국인등록증</option>
+                                            <option value="4">여권</option>
+                                            <option value="5">기타</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Case1) 주민등록증 -->
+                                <div id="case1" class="case_idcard">
+                                    <div class="form_row">
+                                        <label for="dateIDCard" class="form_label">주민등록증 발급일자</label>
+                                        <div class="date_box">
+                                            <input type="text" id="dateIDCard" class="inp_date" title="날짜입력">
+                                        </div>
+                                        <div class="error_text">발급일자를 입력해 주세요.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Case2) 운전면허증 -->
+                                <div id="case2" class="case_idcard" style="display:none;">
+                                    <div class="form_row">
+                                        <label for="driverNo" class="form_label">운전면허번호</label>
+                                        <div class="form_item">
+                                            <input type="text" id="driverNo" placeholder="예: 서울(또는 13)-01-123456-78">
+                                        </div>
+                                        <div class="error_text">운전면허번호를 형식에 맞게 정확하게 입력해 주세요.</div>
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="dateDriver" class="form_label">운전면허증 발급일자</label>
+                                        <div class="date_box">
+                                            <input type="text" class="inp_date" title="날짜입력">
+                                        </div>
+                                        <div class="error_text">발급일자를 입력해 주세요.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Case3) 외국인등록증 -->
+                                <div id="case3" class="case_idcard" style="display:none;">
+                                    <div class="form_row">
+                                        <label for="dateForeigner" class="form_label">외국인등록증 발급일자</label>
+                                        <div class="date_box">
+                                            <input type="text" id="dateForeigner" class="inp_date" title="날짜입력">
+                                        </div>
+                                        <div class="error_text">발급일자를 입력해 주세요.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Case4) 여권 -->
+                                <div id="case4" class="case_idcard" style="display:none;">
+                                    <div class="form_row">
+                                        <label for="passportNo" class="form_label">여권번호</label>
+                                        <div class="form_item">
+                                            <input type="text" id="passportNo" placeholder="예: M12345678">
+                                        </div>
+                                        <div class="error_text">여권번호를 형식에 맞게 정확하게 입력해 주세요.</div>
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="datePassport" class="form_label">여권번호 발급일자</label>
+                                        <div class="date_box">
+                                            <input type="text" id="datePassport" class="inp_date" title="날짜입력">
+                                        </div>
+                                        <div class="error_text">발급일자를 입력해 주세요.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Case5) 기타 -->
+                                <div id="case5" class="case_idcard" style="display:none;">
+                                    <div class="form_row">
+                                        <label for="etcInp" class="form_label">직접 입력</label>
+                                        <div class="form_item">
+                                            <input type="text" id="etcInp" class="inp_txt" name="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h3">공동친권자 확인</h3>
+                    <div class="contract_check">
+                        <div class="check_item">
+                            <p>
+                                「민법」 제920조의 2에 따라 공동친권자의 동의를 받아 보험가입을 진행합니다.<br>
+                                추후 보험계약을 해지하는 경우, 미성년 자녀의 권리가 제한될 수 있어 친권자 모두의 동의가 필요합니다.
+                            </p>
+                            <div class="form_wrap">
+                                <div class="form_row">
+                                    <label for="pName" class="form_label">공동친권자(다른 부모) 이름</label>
+                                    <div class="pc_col">
+                                        <div class="form_item">
+                                            <input type="text" id="pName"class="inp_txt" name="" value="">
+                                        </div>
+                                        <div class="form_item horizon">
+                                            <span class="check_box">
+                                                <input type="checkbox" id="chkbox1" name="chkbox">
+                                                <label for="chkbox1"><span>없음</span></label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check_item">
+                            <h4 class="h4">공동친권자 동의</h4>
+                            <p>가입하는 자녀보험에 대하여 공동친권자의 합의를 받았음을 확인합니다.</p>
+                            <div class="btn_conts">
+                                <div class="radio_box">
+                                    <input type="radio" id="Radio1No" name="radio1" value="no">
+                                    <label for="Radio1No"><span>아니요</span></label>
+                                </div>
+                                <div class="radio_box">
+                                    <input type="radio" id="Radio1Yes" name="radio1" value="yes">
+                                    <label for="Radio1Yes"><span>예</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns prog">
+                        <button type="button" class="btn second">이전</button>
+                        <button type="button" class="btn primary">다음</button>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

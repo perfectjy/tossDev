@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <script type="text/javascript">
+        $(function() {
+            Dialog.open('#HIPA07010302');
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIPA07010302" class="btn line dialog_open">(팝업)차종선택</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <div id="HIPA07010302" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>차종선택</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <table class="tbl_data in_crud">
+                        <caption>차종선택</caption>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">세부차량종류</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>차종선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>입력완료</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

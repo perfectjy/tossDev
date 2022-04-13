@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '자동차번호 확정/변경 완료', tooltip: false, prev: true, menu: true };
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <div class="governing_title">
+                            <!-- '차대번호 계약 건 확정 시' 문구 -->
+                            자동차번호 확정이<br class="mo_br"> 완료되었습니다.<br>
+                            <!--// '차대번호 계약 건 확정 시' 문구 -->
+
+                            <!-- '자동차번호 변경 시' 문구 -->
+                            자동차번호 변경이<br class="mo_br"> 완료되었습니다.<br>
+                            <!--// '자동차번호 변경 시' 문구 -->
+
+                            <span class="highlight">2021.06.22</span>부터 자동차번호가<br class="p_br">
+                            <span class="highlight">334가2345</span>로 적용됩니다.
+                        </div>
+                    </div>
+
+                    <h2 class="h3">변경내역</h2>
+                    <!-- 차대번호 계약 건 확정 시 -->
+                    <table class="tbl_row">
+                        <caption>변경기준일,차대번호</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">변경기준일</th>
+                                <td>2021.06.22</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">차대번호</th>
+                                <td>324EWLJ324LKJ234J324</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="highlight">변경 후 자동차번호</span></th>
+                                <td><span class="highlight">334가2345</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--// 차대번호 계약 건 확정 시 -->
+
+                    <!-- 자동차번호 변경 시 -->
+                    <table class="tbl_row">
+                        <caption>변경기준일,변경 전 자동차번호</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">변경기준일</th>
+                                <td>2021.06.22</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">변경 전 자동차번호</th>
+                                <td>34가2345</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="highlight">변경 후 자동차번호</span></th>
+                                <td><span class="highlight">334가2345</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--// 자동차번호 변경 시 -->
+
+                    <div class="complete_btns">
+                        <button type="button" class="btn primary"><span>메인</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

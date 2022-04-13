@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>콜센터 ARS 고장출동 접수<br>만족도 조사</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <div class="governing">
+                    <h2 class="governing_title">고객님 안녕하십니까?</h2>
+                    <p class="info_text">
+                        본 설문은 콜센터 ARS를 통한 <span class="highlight">고장출동 접수 과정</span>에 대한 만족도 조사이며,
+                        <span class="highlight">출동직원 서비스에 대한 만족도 조사가 아닙니다.</span>
+                    </p>
+                </div>
+
+                <ul class="survey_list">
+                    <li>
+                        <p class="qs"><span class="num">1.</span>상담사의 안내나 설명은 충실하였습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e1" name="enf0">
+                                <label for="e1">전혀<br>그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e2" name="enf0">
+                                <label for="e2">그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e3" name="enf0">
+                                <label for="e3">보통이다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e4" name="enf0">
+                                <label for="e4">그렇다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e5" name="enf0">
+                                <label for="e5">매우<br>그렇다</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">2.</span>상담사의 응대태도는 친절하였습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e01" name="enf01">
+                                <label for="e01">전혀<br>그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e02" name="enf01">
+                                <label for="e02">그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e03" name="enf01">
+                                <label for="e03">보통이다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e04" name="enf01">
+                                <label for="e04">그렇다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e05" name="enf01">
+                                <label for="e05">매우<br>그렇다</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">3.</span>콜센터 상담과정에는 전반적으로 만족하셨습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e21" name="enf02">
+                                <label for="e21">전혀<br>그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e22" name="enf02">
+                                <label for="e22">그렇지<br>않다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e23" name="enf02">
+                                <label for="e23">보통이다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e24" name="enf02">
+                                <label for="e24">그렇다</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e25" name="enf02">
+                                <label for="e25">매우<br>그렇다</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">4.</span>위 1~3번 문항에 ‘(매우)그렇지않다’로 답변하신 경우 어떤 부분의 개선이 필요하다고 생각하십니까?</p>
+                        <textarea id="memo" placeholder="200자 이내로 입력" rows="5"></textarea>
+                        <p class="cont"><span>0</span> / 200자</p>
+                    </li>
+                </ul>
+
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>설문 완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

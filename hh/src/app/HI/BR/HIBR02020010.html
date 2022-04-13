@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude"><!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#panel1" title="현재선택"><span>원금+이자 납입</span></a></li>
+                                <li class="tab"><a href="#panel2"><span>이자만 납입</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <h2 class="offscr">원금+이자 납입</h2>
+                                <div class="governing">
+                                    <h2 class="governing_title">원금상환금액을 입력해 주세요.</h2>
+                                    <p class="info_text highlight">입력한 금액에 이자가 합산됩니다.</p>
+                                </div>
+                                <div class="section_s">
+                                    <div class="form_wrap into">
+                                        <div class="form_row">
+                                            <div class="form_label">대출원금</div>
+                                            <div class="price_item">
+                                                <strong class="amount">1,120</strong><span class="unit">만원</span>
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <label for="" class="form_label">원금상환금액 입력</label>
+                                            <div class="price_ui_input">
+                                                <div class="auto_input">
+                                                    <span class="inp_txt auto" role="textbox" contenteditable="true" data-unit="만원" placeholder="원금상환금액 입력"></span>
+                                                </div>
+                                                <div class="btn_price">
+                                                    <button type="button" class="btn sgrey"><span>+1만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>전액</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="list_dot">상환일 기준으로 대출이율이 높은 보험계약 순으로 선택되어 자동 계산됩니다.</p>
+                                    </div>
+                                    <div class="toggle_select">
+                                        <span>계약별 확인 및 입력</span>
+                                        <div class="switcher">
+                                            <input id="togbtn1" type="checkbox" checked>
+                                            <label for="togbtn1" data-title1="아니요" data-title2="예"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ins_charge_wrap">
+                                    <div class="rd_box insu_amount">
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당하이라이프파워ECO 운전자보험Hi0910(자가용/일반상해)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price corpo_price">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출이자<span class="num"><strong>300,000</strong>원</span></li>
+                                                <li>대출원금<span class="num"><strong>402</strong>만원</span></li>
+                                            </ul>
+                                            <div class="price_ui_input">
+                                                <div class="auto_input">
+                                                    <span class="inp_txt auto" role="textbox" contenteditable="true" data-unit="만원" placeholder="원금상환금액 입력"></span>
+                                                </div>
+                                                <div class="btn_price">
+                                                    <button type="button" class="btn sgrey"><span>+1만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>전액</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rd_box insu_amount">
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당행복은다모은보험(HI0804)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price corpo_price">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출이자<span class="num"><strong>300,000</strong>원</span></li>
+                                                <li>대출원금<span class="num"><strong>402</strong>만원</span></li>
+                                            </ul>
+                                            <div class="price_ui_input">
+                                                <div class="auto_input">
+                                                    <span class="inp_txt auto" role="textbox" contenteditable="true" contenteditable-disabled="all" data-unit="만원" placeholder="원금상환금액 입력"></span>
+                                                </div>
+                                                <div class="btn_price">
+                                                    <button type="button" class="btn sgrey"><span>+1만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+10만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+50만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>+100만</span></button>
+                                                    <button type="button" class="btn sgrey"><span>전액</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rd_box insu_amount disabled">   <!-- '상환 신청 불가' 계약 건일 경우 class에 'disabled' 값 추가 -->
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당행복은다모은보험(HI0804)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price corpo_price">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출이자<span class="num"><strong>300,000</strong>원</span></li>
+                                                <li>대출원금<span class="num"><strong>402</strong>만원</span></li>
+                                            </ul>
+                                            <div class="price_ui_input">
+                                                <div class="auto_input">
+                                                     <!-- '상환 신청 불가' 계약 건일 경우
+                                                        contenteditable 값은 'false',
+                                                        placeholder 값은 '상환 신청 불가'
+                                                    -->
+                                                    <span class="inp_txt auto" role="textbox" contenteditable="false" contenteditable-disabled="all" data-unit="만원" placeholder="상환 신청 불가"></span>
+                                                </div>
+                                                <div class="btn_price">
+                                                    <!-- '상환 신청 불가' 계약 건일 때 'disabled' 속성 추가 -->
+                                                    <button type="button" class="btn sgrey" disabled><span>+1만</span></button>
+                                                    <button type="button" class="btn sgrey" disabled><span>+10만</span></button>
+                                                    <button type="button" class="btn sgrey" disabled><span>+50만</span></button>
+                                                    <button type="button" class="btn sgrey" disabled><span>+100만</span></button>
+                                                    <button type="button" class="btn sgrey" disabled><span>전액</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="amount_total_bottom">
+                                    <div class="m_toggle_cont" id="detail">
+                                        <dl class="info_amount_detail">
+                                            <dt>원금상환금액</dt>
+                                            <dd><strong>13,310,000</strong>원</dd>
+                                            <dt>대출이자</dt>
+                                            <dd><strong>+10,000</strong>원</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="total">
+                                        <span class="tit">출금예상금액<em>(원금+<em class="highlight">이자</em></em>)</span>
+                                        <span><strong>10,000,000</strong>원</span>
+                                    </div>
+                                    <a href="#detail" class="m_toggle_btn"><span class="offscr">상세보기</span></a>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>대출이자가 자동이체 청구 중(영업일 기준 자동이체일 1~2일 전)일 경우 상환(대출) 시 이자가 이중출금되며, 이중출금 시에는 영업일 기준 2일 후 자동이체 계좌로 자동 환급됩니다.</li>
+                                            <li>업무처리중이거나 2010년 4월 1일 이후 가입한 계약이 미납해지(실효)가 된 경우 대출상환, 이자납입 처리가 불가능하며, 자동이체 청구도 제외됩니다. </li>
+                                            <li>미납해지된 기간 동안 대출이자는 보험계약대출 이자율보다 낮은 해지환급금 적용이율로 계산되며, 계약이 부활될 경우에는 보험계약대출 이자율이 다시 적용됩니다.</li>
+                                            <li>상품에 따라 다를 수 있으며 자세한 내용은 인터넷 콜센터(02-2116-1004) 또는 대출상담 콜센터(1588-5655)로 문의하시기 바랍니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="fixed_btm_btns fixed2">                        
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div id="panel2" class="tab_panel">
+                                <h2 class="offscr">이자만 납입</h2>
+                                <div class="governing">
+                                    <h3 class="governing_title">
+                                        이자를 납입하실 계약을 선택해 주세요.
+                                    </h3>
+                                </div>
+                                <div class="section_s">
+                                    <div class="form_wrap into">
+                                        <div class="form_row">
+                                            <span class="form_label">대출이자</span>
+                                            <div class="price_item">
+                                                <strong class="amount">0</strong><span class="unit">원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 계약이 없을 때 -->
+                                <div class="no_list">
+                                    <p>이자 납입 가능한 계약이 없습니다.</p>
+                                </div>
+                                <div class="boxing_text">
+                                    <dl class="boxing_data">
+                                        <dt>대출이자</dt>
+                                        <dd>112,000원</dd>
+                                    </dl>
+                                </div>
+                                <div class="txt_r boxing_mt">
+                                    <div class="filters all">
+                                        <span class="chk_item">
+                                            <input type="checkbox" id="all" name="chk_filter">
+                                            <label for="all">전체선택</label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ins_charge_wrap">
+                                    <div class="rd_box ins_check insu_amount">
+                                        <div class="check_box">
+                                            <input id="check1" type="checkbox" name="check">
+                                            <label for="check1"></label>
+                                        </div>
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당하이라이프파워ECO 운전자보험Hi0910(자가용/일반상해)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price full">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출원금<span class="num"><strong>3,000</strong>원</span></li>
+                                                <li>대출이자<span class="num"><strong>402</strong>만원</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="rd_box ins_check insu_amount">     
+                                        <div class="check_box">
+                                            <input id="check2" type="checkbox" name="check">
+                                            <label for="check2"></label>
+                                        </div>
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당행복은다모은보험(HI0804)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price full">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출원금<span class="num"><strong>757</strong>만원</span></li>
+                                                <li>대출이자<span class="num"><strong>61,244</strong>원</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="rd_box ins_check insu_amount disabled"> <!-- 상환 신청 불가 계약 건일 경우 class에 'disabled' 값 추가 -->
+                                        <div class="check_box">
+                                            <input id="check3" type="checkbox" name="check" disabled> <!-- 상환 신청 불가 계약 건일 경우 'disabled' 속성 추가 -->
+                                            <label for="check3"></label>
+                                        </div>
+                                        <div class="section_tb">
+                                            <div class="insu_title">무배당행복은다모은보험(HI0804)</div>
+                                            <div class="insu_detail">
+                                                <div class="info_list">
+                                                    <dl>
+                                                        <dt>최종대출일</dt>
+                                                        <dd>2021.06.01</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_price full">
+                                            <ul class="info_rate">
+                                                <li>대출이율<span class="num"><strong>4.25</strong>%</span></li>
+                                                <li>대출원금<span class="num"><strong>757</strong>만원</span></li>
+                                                <li>대출이자<span class="num"><strong>61,244</strong>원</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="amount_total_bottom">
+                                    <div class="total">
+                                        <span class="tit">출금예상금액</span>
+                                        <span><strong>10,080,250</strong>원</span>
+                                    </div>
+                                    <a href="#detail" class="m_toggle_btn"><span class="offscr">상세보기</span></a>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>대출이자 자동이체 청구중(영업일 기준 자동이체일 2일전~1일전)일 경우 상환(대출) 시 이자가 이중청구되며, 이중청구 시에는 영업일 기준 2일 후 자동이체 계좌로 자동환급됩니다.</li>
+                                            <li>2010.04.01 이후 개시한 미납해지(실효) 계약이 있는 경우 대출상환, 이자처리가 불가능하며, 자동이체 청구도 제외됩니다. </li>
+                                            <li>미납해지 기간에는 대출이율보다 낮은 해지환급금에 부리하는 이율로 대출이자가 계산되며, 계약이 부활될 경우에는 보험계약대출 이율로 원복 됩니다.</li>
+                                            <li>상품에 따라 상이할 수 있으며 자세한 내용은 인터넷 콜센터(02-2116-1004) 또는 대출상담 콜센터(1588-5655)로 문의 하시기 바랍니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="fixed_btm_btns fixed2">                        
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

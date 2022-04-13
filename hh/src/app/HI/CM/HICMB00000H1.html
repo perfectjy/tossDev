@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '주의사항 확인', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 주의사항 확인 open
+            Dialog.open('#HICMB00000H1');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICMB00000H1" class="btn line dialog_open">주의사항 확인</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 주의사항 확인 팝업 -->
+    <div id="HICMB00000H1" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>주의사항</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <ul class="list_dot">
+                    <li>반드시 당일 입금해 주시기 바랍니다.<br>
+                        <span class="highlight">(23:30분 이전까지 입금 시 처리 가능)</span></li>
+                    <li>납부하지 않거나 납부금액이 다른 경우 자동 처리되지 않습니다.</li>
+                    <li>납부일에 따라 대출원리금이 달라지므로, 납부를 원하시는 날에 다시 한번 조회해 주시기 바랍니다. </li>
+                </ul>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

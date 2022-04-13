@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '간편인증 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 간편인증 안내 open
+            Dialog.open('#HIMY01000018');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIMY01000018" class="btn line dialog_open">간편인증 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 간편인증 안내 팝업 -->
+    <div id="HIMY01000018" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header show_h">
+                <h1>간편인증 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close show"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="certify_title">
+                            한 번만 등록하면 귀찮지 않아요.<br>
+                            3초 만에 로그인/전자서명!
+                        </div>
+                        <div class="certify_info_area simple">
+                            <img src="/src/assets/images/img_certifyinfo_simple.gif" alt="간편인증번호 입력을 표현한 이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>간편인증으로 편하게 이용해볼래요!</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

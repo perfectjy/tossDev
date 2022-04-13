@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        $(function() {
+            // 보험금 지급현황 open
+            Dialog.open('#insuPayState');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <a href="#insuPayState" class="btn line dialog_open">보험금 지급현황</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 보험금 지급현황 팝업 -->
+    <div id="insuPayState" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>보험금 지급현황</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="contract_list">
+                            <div class="contract">
+                                <div class="contract_header">
+                                    <span class="tag cargood">대인</span>
+                                    <span class="insu_name">하이대</span>
+                                </div>
+                                <div class="contract_detail">
+                                    <dl>
+                                        <div>
+                                            <dt>치료형태</dt>
+                                            <dd>입원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>부상급수</dt>
+                                            <dd>9급</dd>
+                                        </div>
+                                        <div>
+                                            <dt>치료병원</dt>
+                                            <dd>강남성모병원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>진행상태</dt>
+                                            <dd>보상종결</dd>
+                                        </div>
+                                        <div>
+                                            <dt>지급보험금</dt>
+                                            <dd>261,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>담당자</dt>
+                                            <dd>하이상(010-1234-1234)</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="contract">
+                                <div class="contract_header">
+                                    <span class="tag normal">대물</span>
+                                    <span class="insu_name">56가33**</span>
+                                </div>
+                                <div class="contract_detail">
+                                    <dl>
+                                        <div>
+                                            <dt>피해구분</dt>
+                                            <dd>분손</dd>
+                                        </div>
+                                        <div>
+                                            <dt>정비공장</dt>
+                                            <dd>정원자동차정비</dd>
+                                        </div>
+                                        <div>
+                                            <dt>진행상태</dt>
+                                            <dd>진행중</dd>
+                                        </div>
+                                        <div>
+                                            <dt>지급보험금</dt>
+                                            <dd>-</dd>
+                                        </div>
+                                        <div>
+                                            <dt>담당자</dt>
+                                            <dd>하이상(010-1234-1234)</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="contract">
+                                <div class="contract_header">
+                                    <span class="tag new">자차</span>
+                                    <span class="insu_name">67나83**</span>
+                                </div>
+                                <div class="contract_detail">
+                                    <dl>
+                                        <div>
+                                            <dt>피해구분</dt>
+                                            <dd>분손</dd>
+                                        </div>
+                                        <div>
+                                            <dt>정비공장</dt>
+                                            <dd>현대렉카</dd>
+                                        </div>
+                                        <div>
+                                            <dt>진행상태</dt>
+                                            <dd>보상종결</dd>
+                                        </div>
+                                        <div>
+                                            <dt>지급보험금</dt>
+                                            <dd>1,381,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>담당자</dt>
+                                            <dd>하이상(010-1234-1234)</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 목록이 없을때 -->
+                        <div class="no_list">
+                            <p>보험금 지급내역이 없습니다.</p>
+                        </div>
+                        <!--// 목록이 없을때 -->
+
+                        <div class="toggle_wrap">
+                            <div class="toggle_tit">                    
+                                <a href="#toggleConts" class="toggle_btn">유의사항<span class="offscr">상세보기</span></a>
+                            </div>                
+                            <div id="toggleConts" class="toggle_conts">
+                                <ul class="list_dot">
+                                    <li>현재까지의 보험금 지급현황이며, 보상종결 후에도 추가 보험금청구, 판결 등의 사유로 지급보험금이 변경될 수 있습니다.</li>
+                                    <li>대인사고 할증은 가장 큰 피해를 입은 피해자의 부상급수에 따라 적용되며, 부상급수는 정밀촬영, 의사소견, 수술 등에 따라 변경될 수 있습니다.</li>
+                                    <li>물적사고(대물+자차) 할증은 지급보험금에 따라 적용되며, 피해구분은 정비공장의 수리내용에 따라 변경될 수 있습니다.</li>
+                                    <li>사고처리 관련 내용은 보상담당자에게 문의해 주세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

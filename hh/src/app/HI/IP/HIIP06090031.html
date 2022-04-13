@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '퍼펙트치아보험', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="governing">
+                        <h2 class="governing_title">보장내용은 이렇습니다.</h2>
+                    </div>
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#tabCont1" title="현재선택"><span>가입안내</span></a></li>
+                                <li class="tab"><a href="#tabCont2"><span>기본계약</span></a></li>
+                                <li class="tab"><a href="#tabCont3"><span>상해/질병</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <!-- 가입안내 -->
+                            <div id="tabCont1" class="tab_panel">
+                                <h2 class="offscr">가입안내</h2>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>상품안내</caption>
+                                        <colgroup>
+                                            <col style="width:120px;">
+                                            <col style="width:180px;" span="3">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">가입나이</th>
+                                                <th scope="col">보험기간</th>
+                                                <th scope="col">납입기간</th>
+                                                <th scope="col">납입주기</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">6세~최대 70세</th>
+                                                <td class="txt_c">5년/10년/15년 만기<br>갱신형(최대 80세 만기)</td>
+                                                <td class="txt_c">전기납</td>
+                                                <td class="txt_c">월납</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <ul class="list_dot">
+                                    <li>최초 가입 시 회사가 정하는 인수지침에 의해 피보험자의 가입나이, 건강상태, 과거병력 및 직무 등에 따라 보험가입금액이 제한되거나 가입이 불가능할 수 있습니다.</li>
+                                    <li>기본계약은 가입 시점부터 최대 80세까지이며, 보장 특약별 가입나이 및 보험기간별 보험료 납입기간이 다를 수 있습니다. 또한, 특약에 따라 갱신주기 및 최대 갱신나이가 다를 수 있으며, 갱신 시 보험료가 인상될 수 있으니 자세한 사항은 반드시 약관을 참고하시기 바랍니다.</li>
+                                </ul>
+
+                            </div>
+
+                            <!-- 기본계약 -->
+                            <div id="tabCont2" class="tab_panel">
+                                <h2 class="offscr">기본계약</h2>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>보장내용 기본계약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;" span="3">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">주요치주질환치료<span class="sub">(갱신형)</span></th>
+                                                <td>보장개시일 이후 주요치주질환(잇몸질환) 치료를 받은 경우</td>
+                                                <td>보험가입금액<br>
+                                                    (약관상 주요치주질환(잇몸질환) 치료분류표에 따라 지급) (단, 최초계약일부터 1년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 상해/질병 -->
+                            <div id="tabCont3" class="tab_panel">
+                                <h2 class="offscr">상해/질병</h2>
+                                <h3 class="h3">상해관련 보장특약</h3>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>상해관련 보장특약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:300px;" span="2">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">자동차사고치아 보철치료<span class="sub">(갱신형)</span></th>
+                                                <td>자동차사고로 발생한 상해로 치아보철치료를 받은 경우(크라운, 가철성의치, 고정성가공의치, 임플란트)</td>
+                                                <td>특약가입금액</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h3 class="h3">질병관련 보장특약</h3>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>질병관련 보장특약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:300px;" span="2">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">치석제거<span class="sub">(스케일링)(갱신형)</span></th>
+                                                <td>보장개시일 이후 치주질환(잇몸질환) 치료를 목적으로 치석제거(스케일링) 치료를 받은 경우</td>
+                                                <td>특약가입금액(연간 1회 한도)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h3 class="h3">상해 및 질병관련 보장특약</h3>
+                                <div class="horizon_scrollbar">
+                                    <table class="tbl_insudata">
+                                        <caption>상해 및 질병관련 보장특약</caption>
+                                        <colgroup>
+                                            <col style="width:180px;">
+                                            <col style="width:300px;" >
+                                            <col style="width:260px;" >
+                                            <col style="width:300px;" >
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">지급사유</th>
+                                                <th scope="col" colspan="2">지급금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" rowspan="2">치수치료<span class="sub">(갱신형)</span></th>
+                                                <td>보장개시일 이후 치아우식증(충치) 또는 치주질환(잇몸질환)으로 인하여 치수치료 진단확정을 받고 해당 영구치에 치수치료를 받은 경우</td>
+                                                <td colspan="2">치아당 특약가입금액<br>
+                                                    (단, 최초계약일부터 1년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>상해로 인하여 치수치료 진단확정을 받고 해당 영구치에 치수치료를 받은 경우</td>
+                                                <td colspan="2">치아당 특약가입금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">영구치발치치료<span class="sub">(갱신형)</span></th>
+                                                <td>영구치를 발치한 경우</td>
+                                                <td colspan="2">특약가입금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">치아촬영<span class="sub">(엑스레이, 파노라마)(갱신형)</span></th>
+                                                <td>보장개시일 이후 상해 또는 질병으로 치아촬영(엑스레이, 파노라마)을 한 경우</td>
+                                                <td colspan="2">촬영 1회당 특약가입금액</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="2">특정임플란트 치조골이식술<span class="sub">(갱신형)Ⅰ</span></th>
+                                                <td>보장개시일 이후 치아우식증(충치) 또는 치주질환(잇몸질환)으로 영구치를 발치하고 발치한 부위에 특정임플란트치조골이식술을 받은 경우</td>
+                                                <td colspan="2">영구치 발치 1개당 특약가입금액의 100%<br>
+                                                    (단, 최초계약일로부터 2년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>상해로 영구치를 발치하고 발치한 부위에 특정임플란트치조골이식술을 받은 경우</td>
+                                                <td colspan="2">영구치 발치 1개당 특약가입금액의 100%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="6">치아보존치료<span class="sub">(갱신형)</span></th>
+                                                <td rowspan="3">보장개시일 이후 치아우식증(충치) 또는 치주질환(잇몸질환)으로 영구치에 보존치료를 받은 경우</td>
+                                                <td>아말감, 글래스아이노머 수복</td>
+                                                <td>치아당 특약가입금액의 10%<br>(단, 최초계약일부터 1년 미만 위 금액의 50%)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>복합레진, 인레이 · 온레이</td>
+                                                <td>치아당 특약가입금액의 50%<br>
+                                                    (단, 최초계약일부터 1년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>크라운</td>
+                                                <td>치아당 특약가입금액의 100%<br>
+                                                    (연간 3개 한도)
+                                                    (단, 최초계약일부터 
+                                                    1년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3">상해로 영구치에 보존치료를 받은 경우</td>
+                                                <td>아말감, 글래스아이노머 수복</td>
+                                                <td>치아당 특약가입금액의 10%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>복합레진, 인레이 · 온레이</td>
+                                                <td>치아당 특약가입금액의 50%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>크라운</td>
+                                                <td>치아당 특약가입금액의 100%<br>
+                                                    (연간 3개 한도)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" rowspan="6">치아보철치료<span class="sub">(갱신형)</span>Ⅰ</th>
+                                                <td rowspan="3">보장개시일 이후 치아우식증(충치) 또는 치주질환(잇몸질환)으로 영구치를 발치하고 발치한 부위에 보철치료를 받는 경우</td>
+                                                <td>가철성의치(틀니, Denture)</td>
+                                                <td>보철물당 특약가입금액의 100%<br>
+                                                    (연간 1회 한도)
+                                                    (단, 최초계약일부터 2년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>임플란트(Implant)</td>
+                                                <td>영구치 발치 1개당 특약가입금액의 100%<br>
+                                                    (단, 최초계약일부터 2년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>고정성가공의치(브릿지, Bridge)</td>
+                                                <td>영구치 발치 1개당 특약가입금액의 50%<br>
+                                                    (단, 최초계약일부터 2년 미만 위 금액의 50%)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3">상해로 영구치를 발치하고 발치한 부위에 보철치료를 받는 경우</td>
+                                                <td>가철성의치(틀니, Denture)</td>
+                                                <td>보철물당 특약가입금액의 100%<br>
+                                                    (연간 1회 한도)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>임플란트(Implant)</td>
+                                                <td>영구치 발치 1개당 특약가입금액의 100%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>고정성가공의치(브릿지, Bridge)</td>
+                                                <td>영구치 발치 1개당 특약가입금액의 50%
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <ul class="list_bar">
+                                    <li>상해 관련 담보는 암벽등반, 스카이다이빙 등 직업, 직무 또는 동호회 활동 중 사고에 대해서는 보상하지 않습니다</li>
+                                </ul>
+                               
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">용어해설</span>
+                                    </div>
+                                    <div class="panel">
+                                        <h4 class="tt">보존치료 – 발치 없이 치료</h4>
+                                        <ul class="list_dot">
+                                            <li><strong>크라운(Crown)</strong>
+                                                <p>신경치료 후, 금이나 사기 등을 재료로 치아를 덮어 씌워주는 치료</p>
+                                            </li>
+                                            <li><strong>온레이(Onlay)</strong>
+                                                <p>치아 윗면과 옆면까지 넓게 때워주는 치료</p>
+                                            </li>
+                                            <li><strong>인레이(Inlay)</strong>
+                                                <p>충치치료 후 치아 윗면을 금 또는 레진 등의 수복물로 때우는 치료</p>
+                                            </li>
+                                            <li><strong>충전치료</strong>
+                                                <p>충치치료 후 레진(Resin), 아말감(Amalgam) 또는 글래스 아이오노머(Glass Ionomer)의 충전물로 때워주는 치료</p>
+                                            </li>
+                                        </ul>
+
+                                        <h4 class="tt">보철치료 – 인공치아 대체</h4>
+                                        <ul class="list_dot">
+                                            <li><strong>브릿지(Bridge)</strong>
+                                                <p>치아와 치아 사이를 다리처럼 연결하여 보철물을 제작하는 방법</p>
+                                            </li>
+                                            <li><strong>임플란트(Implant)</strong>
+                                                <p>골조직 등의 구강 조직에 인공뿌리를 고정시킨 후 인공보철물을 삽입하여 치아 본래의 기능과 감각을 복원시키는 시술</p>
+                                            </li>
+                                            <li><strong>가철성의치(틀니, Denture)</strong>
+                                                <p>치아가 결손이 되었을 때, 인공보철물을 장착하는 시술(국소의치, 총의치)</p>
+                                            </li>
+                                        </ul>
+
+                                        <h4 class="tt">기타치료</h4>
+                                        <ul class="list_dot">
+                                            <li><strong>영구치 발치</strong>
+                                                <p>유치(젖니)가 빠진 후 나는 자연치아</p>
+                                            </li>
+                                            <li><strong>치아우식증(충치)</strong>
+                                                <p>한국표준질병사인분류 중 분류코드 K02(치아우식증(충치)), K04(치수 및 치근단 주위조직의 질환)에 해당하는 것으로 치아의 석회 성분이 녹거나 파괴되었을 때 또는 이로 인한 치수염 등의 원인으로 치수 및 치근단 주위조직이 손상되어 치아를 잃게 되는 질환</p>
+                                            </li>
+                                            <li><strong>치주질환(잇몸질환)</strong>
+                                                <p>한국표준질병사인분류 중 분류코드 K05(치은염(잇몸염) 및 치주질환(잇몸질환))에 해당하는 것으로 치은(잇몸)염과 치주염으로 구분</p>
+                                            </li>
+                                            <li><strong>치아촬영(엑스레이, 파노라마)</strong>
+                                                <p>환자의 치열 상태, 상하악골, 상악동, 하치조신경 경로 등 개개의 치아보다는 전반적인 검진을 하기 위한 촬영술식(「국민건강보험법」에서 정한 보험급여 또는 「의료급여법」에서 정한 의료급여에 해당하는 경우에 한함)</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns prog">
+                        <button type="button" class="btn second"><span>확인</span></button>
+                        <button type="button" class="btn primary"><span class="next">가입예시</span></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

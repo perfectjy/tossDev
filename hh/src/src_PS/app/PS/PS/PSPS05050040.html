@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+                        <h2 class="governing_title">DC계약<strong class="highlight">(Q20091******)</strong>에 대한 운용자산을 변경하실 수 있습니다.</h2>
+					</div>
+
+					<div class="tab_section t1">
+						<div class="tab_list tab_nav">
+							<ul>
+								<li class="tab"><a href="#panel01"><span>운용자산 변경</span></a></li>
+								<li class="tab"><a href="#panel02"><span>운용자산 변경예약</span></a></li>
+								<li class="tab"><a href="#panel03"><span>만기 운용자산 변경</span></a></li>
+								<li class="tab active"><a href="#panel04"><span>운용상품 변경내역</span></a></li>
+							</ul>
+						</div>
+						<div class="tab_contents">
+							<div id="panel01" class="tab_panel">
+								<h2 class="offscr">운용자산 변경</h2>
+							</div>
+							<div id="panel02" class="tab_panel">
+								<h2 class="offscr">운용자산 변경예약</h2>
+							</div>
+							<div id="panel03" class="tab_panel">
+								<h2 class="offscr">만기 운용자산 변경</h2>
+							</div>
+							<div id="panel04" class="tab_panel">
+								<h2 class="offscr">운용상품 변경내역</h2>
+								
+								<div class="form_srch_wrap sign">
+									<div class="search_item">
+										<label for="breakdown" class="form_label">조회구분</label>
+										<div class="item">
+											<select id="breakdown" name="" title="조회구분">
+												<option value="0" selected="">전체</option>
+												<option value="1">접수일자</option>
+												<option value="2">예약일자</option>
+											</select>
+										</div>
+									</div>
+									<div class="search_item">
+										<label for="state" class="form_label">변경구분</label>
+										<div class="item">
+											<select id="state" name="" title="변경구분">
+												<option value="0" selected="">전체</option>
+												<option value="1">일반스위칭</option>
+												<option value="2">예약스위칭</option>
+												<option value="3">만기상품스위칭</option>
+												<option value="4">연금스위칭</option>
+											</select>
+										</div>
+									</div>
+									<div class="search_item date">
+										<label for="searchDate1" class="form_label">조회기간</label>
+										<div class="date_box">
+											<div class="item">
+												<select id="searchDate1" name="" title="조회기간">
+													<option value="today">당일</option>
+													<option value="7d">7일</option>
+													<option value="15d">15일</option>
+													<option value="1m">1개월</option>
+													<option value="3m" selected="">3개월</option>
+												</select>
+											</div>
+											<div class="item col02">
+												<div class="start_date">
+													<input type="text" class="inp_date" title="시작일" id="startDate">
+												</div>
+												<div class="end_date">
+													<input type="text" class="inp_date" title="종료일" id="endDate">
+												</div>
+											</div>
+										</div>
+										<!-- // date_box -->
+										<!-- 날짜가 입력되지 않은 상태에서 조회버튼 선택 시 오류 메시지 -->
+										<p class="error_text">시작일자~종료일자를 선택해 주세요.</p>
+									</div>
+									<div class="btn_search">
+										<button type="button" class="btn primary"><span class="search">조회</span></button>
+									</div>
+								</div>
+								<!-- // form_srch_wrap -->
+
+								<div class="comp">
+									<div class="tbl_top_info">
+										<h3 class="h3 hmark">변경내역 조회</h3>
+									</div>
+									<table class="tbl_data">
+										<caption>번호,접수일자,계약명,가입자 이름,변경사유,예약일자,매매상태,취소여부에 대한 정보</caption>
+										<colgroup>
+											<col style="width:80px;">
+											<col style="width:140px;">
+											<col style="width:auto;">
+											<col style="width:140px;" span="3">
+											<col style="width:100px;" span="2">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">번호</th>
+												<th scope="col">접수일자</th>
+												<th scope="col">계약명</th>
+												<th scope="col">가입자 이름</th>
+												<th scope="col">변경사유</th>
+												<th scope="col">예약일자</th>
+												<th scope="col">매매상태</th>
+												<th scope="col">취소여부</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>2</td>
+												<td>YYYY.MM.DD</td>
+												<td><a href="#;" class="btn link">미래에셋생명보험㈜</a></td>
+												<td>-</td>
+												<td>일반스위칭</td>
+												<td>YYYY.MM.DD</td>
+												<td>-</td>
+												<td>취소안함</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>YYYY.MM.DD</td>
+												<td><a href="#;" class="btn link">미래에셋생명보험㈜</a></td>
+												<td>-</td>
+												<td>일반스위칭</td>
+												<td>YYYY.MM.DD</td>
+												<td>-</td>
+												<td>취소안함</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- 내역이 없을 경우 -->
+									<div class="no_list"><p>변경내역이 없습니다.</p></div>
+									<ul class="list_dot">
+										<li>계약명을 선택하시면 상세내역을 확인하실 수 있습니다.</li>
+									</ul>
+								</div>
+
+								<div class="Paging" aria-label="pagination">
+									<ul>
+										<li> <button type="button"  class="prev"><span class="offscr">이전페이지</span></button> </li>
+										<li> <a href="#" class="current">1<span class="offscr">현재페이지</span></a> </li>
+										<li> <a href="#">2<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">3<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">4<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">5<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">6<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">7<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">8<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">9<span class="offscr">페이지</span></a> </li>
+										<li> <a href="#">10<span class="offscr">페이지</span></a> </li>
+										<li> <button type="button" class="next"><span class="offscr">다음페이지</span></button> </li>
+									</ul>
+								</div>
+
+								<div class="comp">
+									<h3 class="h3 hmark">매도상품</h3>
+									<div class="tbl_top_info n1">
+										<span class="unit">단위: 원, 좌, 주</span>
+									</div>
+									<table class="tbl_data">
+										<caption>자산기관,상품명,적립금구분,운용지시신청일,운용지시상태,신청좌수,신청금액에 대한 정보</caption>
+										<colgroup>
+											<col style="width:130px;">
+											<col style="width:auto;">
+											<col style="width:130px;" span="3">
+											<col style="width:100px;">
+											<col style="width:160px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">자산기관</th>
+												<th scope="col">상품명</th>
+												<th scope="col">적립금구분</th>
+												<th scope="col">운용지시신청일</th>
+												<th scope="col">운용지시상태</th>
+												<th scope="col">신청좌수</th>
+												<th scope="col">신청금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>현대해상</td>
+												<td>(무)현대 DB 퇴직연금보험 이율보증형 1년</td>
+												<td>사용자부담금</td>
+												<td>YYYY.MM.DD</td>
+												<td>진행</td>
+												<td>0</td>
+												<td class="txt_r">000,000,000</td>
+											</tr>
+											<tr>
+												<td>현대해상</td>
+												<td>(무)현대 DB 퇴직연금보험 이율보증형 1년</td>
+												<td>사용자부담금</td>
+												<td>YYYY.MM.DD</td>
+												<td>-</td>
+												<td>0</td>
+												<td class="txt_r">000,000,000</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th scope="row" colspan="5">합계</th>
+												<td class="txt_c">0</td>
+												<td>000,000,000</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								<!--// 매도상품 -->
+
+								<div class="comp">
+									<h3 class="h3 hmark">매수상품</h3>
+									<div class="tbl_top_info n1">
+										<span class="unit">단위: 원, 좌, 주, %</span>
+									</div>
+									<table class="tbl_data">
+										<caption>자산기관,상품명,적립금구분,운용지시일,운용지시상태,매수비율,매수예정금액에 대한 정보</caption>
+										<colgroup>
+											<col style="width:130px;">
+											<col style="width:auto;">
+											<col style="width:130px;" span="3">
+											<col style="width:100px;">
+											<col style="width:160px;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">자산기관</th>
+												<th scope="col">상품명</th>
+												<th scope="col">적립금구분</th>
+												<th scope="col">운용지시일</th>
+												<th scope="col">운용지시상태</th>
+												<th scope="col">매수비율</th>
+												<th scope="col">매수예정금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>현대해상</td>
+												<td>(무)현대 DB 퇴직연금보험 이율보증형 1년</td>
+												<td>사용자부담금</td>
+												<td>YYYY.MM.DD</td>
+												<td>진행</td>
+												<td>100</td>
+												<td class="txt_r">000,000,000</td>
+											</tr>
+											<tr>
+												<td>현대해상</td>
+												<td>(무)현대 DB 퇴직연금보험 이율보증형 1년</td>
+												<td>사용자부담금</td>
+												<td>YYYY.MM.DD</td>
+												<td>-</td>
+												<td>100</td>
+												<td class="txt_r">000,000,000</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th scope="row" colspan="5">합계</th>
+												<td class="txt_c">0</td>
+												<td>000,000,000</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								<!--// 매수상품 -->
+
+							</div>
+							<!--// panel04 -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

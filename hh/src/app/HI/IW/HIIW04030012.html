@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약체결을 위한 사전 동의', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 계약체결을 위한 사전 동의 open
+            Dialog.open('#HIIW04030012');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04030012" class="btn line dialog_open">계약체결을 위한 사전 동의</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 계약체결을 위한 사전 동의 팝업 -->
+    <div id="HIIW04030012" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>계약체결을 위한 사전 동의</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <h3 class="h3">소비자권리에 관한 안내</h3>
+                        <ul class="list_dot">
+                            <li>전자서명은 「전자서명법」 제2조, 제3조에 따라 일반서명과 동일한 효력을 발휘합니다.</li>
+                            <li>전자서명으로 진행한 계약관련 문서(청약서, 상품설명서 등)는 고객님께서 서면으로 교부받기를 요청하실 경우 청약일로부터 영업일 기준 5일 이내에 우편 발송 또는 직접 제공해 드립니다.</li>
+                            <li>전자서명으로 청약이 진행되는 과정 중에도 고객님께서 원하실 경우 종이문서로 대체하여 청약 진행이 가능합니다.</li>
+                            <li>전자서명으로 청약이 완료된 이후 현대해상 홈페이지(www.hi.co.kr)에서 전자문서, 계약처리단계 및 담당자 정보를 언제든지 조회·인쇄할 수 있습니다.</li>
+                        </ul>
+
+                        <h3 class="h3">다음과 같이 전자서명을 이용하여 보험계약을 체결하는 데 동의합니다.</h3>
+                        <ul class="list_dot">
+                            <li>계약자 또는 피보험자의 자필서명이 필요한 사항(청약서, 계약 전 알릴 의무, 상품설명서 등)에 대하여 「전자서명법」 제2조 제3호의 전자서명을 통하여 보험계약을 청약합니다. 보험계약체결의 모든 과정을 현대해상화재보험주식회사(이하 "회사"라 합니다)가 제공하는 전자서명 시스템을 이용하여 보험계약을 체결합니다.</li>
+                            <li>청약서, 약관, 상품설명서 등 보험계약자료는 전자기록매체, 전자우편 등 전자적 방법으로 수령함에 동의합니다. 다만, 계약자나 회사가 전자기록매체 또는 전자적 방법에 의해 보험계약자료를 교부하거나 수령할 수 없는 경우에는 서면자료로 대신할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn second">동의안함</button>
+                    <button type="button" class="btn primary">동의함</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

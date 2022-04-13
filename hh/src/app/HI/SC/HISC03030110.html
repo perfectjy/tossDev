@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '부동산 담보대출(아파트)', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <div class="doc_file_wrap">
+                        <h3 class="h3">전체 서류</h3>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>부동산 담보대출 서류 세트(아파트)</span></a>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="filter_item">
+                            <div class="filter_item_inner">
+                                <select title="해당서류 보기">
+                                    <option value="">필요서류 보기</option>
+                                    <option value="doc1">거래약정 서류</option>
+                                    <option value="doc2">담보설정 서류</option>
+                                    <option value="doc3">개인정보 동의 서류</option>
+                                    <option value="doc4">기타서류</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <h3 class="h3">개별서류</h3>
+                        <h4 class="h4 bul" id="doc1">거래약정 서류</h4>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>대출거래약정서 (여신거래기본약관)</span> <span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>대출거래신청서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (금리/아파트)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (금리/주택)</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (금리/오피스텔)</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅰ. 주택구입자금대출 고지의무)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅰ-1. 전입조건부(무주택자용))</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅰ-2. 처분 및 전입조건부(1주택자용))</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅰ-3. 기존주택보유인정부(1주택자용))</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅱ. 생활안정자금대출 주택구입금지의무)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (Ⅱ-1. 임차보증금반환대출 전입조건부)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (MCI)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>추가약정서 (MI)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>대출거래조건변경(연장) 추가약정서</span></a>
+                            <a href="#none" class="btn_file"><span>대출 계약철회신청서</span></a>
+                        </div>
+
+                        <h4 class="h4 bul" id="doc2">담보설정 서류</h4>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>근저당권설정계약서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>공동인증서비스신청서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>전자서명위임장 및 개인정보 제3자제공동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>위임장 (근저당설정용)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>위임장 (상환말소용)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>확인서면</span></a>
+                            <a href="#none" class="btn_file"><span>추가근저당권설정계약서</span></a>
+                            <a href="#none" class="btn_file"><span>추가담보제공확인서(대지권)</span></a>
+                            <a href="#none" class="btn_file"><span>근저당권변경계약서</span></a>
+                            <a href="#none" class="btn_file"><span>근저당권 습·유용신청서 (합의서)</span></a>
+                            <a href="#none" class="btn_file"><span>임대차확인서</span><span class="need">필요</span></a>
+                        </div>
+
+                        <h4 class="h4 bul" id="doc3">개인정보 동의 서류</h4>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>[필수]금융거래내역 조회를 위한 개인(신용)정보처리 상세 동의서</span></a>
+                            <a href="#none" class="btn_file"><span>[필수]대출계약 체결·이행을 위한 개인(신용)정보처리 상세 동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>[필수]개인(신용)정보 제3자 제공 상세 동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>[필수]주택보유확인을 위한 개인(신용)정보 처리 상세 동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>[필수]대출현황 확인을 위한 개인(신용)정보 처리 상세 동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>[필수]무상거주사실 확인을 위한 개인(신용)정보 처리 상세 동의서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>[필수](서울보증보험)계약 체결·이행을 위한 상세 동의서</span><span class="need">필요</span></a>
+                        </div>
+
+                        <h4 class="h4 bul">대출모집 관련 서류</h4>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>대출상담사 설명확인서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>고객(신용)정보 취득 및 관리 확인서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>대출모집경로확인서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>자필서명 확인 체크리스트 (모집인용)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>자필서명 확인 체크리스트 (담당자용)</span><span class="need">필요</span></a>
+                        </div>
+
+                        <h4 class="h4 bul" id="doc4">기타 서류</h4>
+                        <div class="doc_files">
+                            <a href="#none" class="btn_file"><span>자동(즉시)이체 신규/변경 신청서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>확인서 (부대비용)</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>주택담보대출관련 유의사항 설명확인서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>대출현황 확인 요청서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>주민등록 전입세대 열람신청서</span><span class="need">필요</span></a>
+                            <a href="#none" class="btn_file"><span>상가등록사항열람신청서 (임대차정보제공요청서)</span></a>
+                            <a href="#none" class="btn_file"><span>금융소비자보호법관련서류</span></a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

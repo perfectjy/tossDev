@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스차단 관리', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HAMO040000N1');
+        });
+
+        // 도움말 팝업
+        var helpText = [
+            { sort:'group1', title:'회원DB삭제차단', item:[ '로그인', '회원가입', '공동인증서등록' ] },
+            { sort:'group2', title:'비회원이용서비스', item:[ '개인정보처리동의','공동인증전자서명','완전판매e모니터링','질문/건의','고객센터 〉 고객의소리 〉 전자민원접수','고객센터 〉 금융소비자포털 〉 전자민원접수','(타사)연금이전신청','보험사기신고','모집질서신고','보장분석'] },
+            { sort:'group3', title:'은행중단관련차단', item:[ '태아확정','환급금지급계좌신청/계좌변경','자동이체신청/계좌변경','이자납입계좌변경','보험료납입','대출신청','대출상환','휴면보험금지급계좌신청','운전자(범위/연령)특약변경(자동이체,카드결제)'] },
+            { sort:'group4', title:'보험상품개정', item:[ '무)뉴하이카운전자상해보험','성공마스터재산종합보험','연금저축손해보험노후웰스보험','무)뉴간편플러스종합보험I','무)굿앤굿어린이종합보험Q','무)퍼펙트플러스종합보험','무)계속받는암보험','무)퍼펙트치아보험','무)행복가득생활보장보험','무)실손의료비보장보험(갱신형)'] },
+            { sort:'group5', title:'카드중단관련차단', item:[ '신용카드등록/변경','단기운전자확대'] },
+            { sort:'group6', title:'자동차보험상품개정', item:[ 'Hicar 개인용 자동보험','자동차보험만기알림신청'] }
+        ];
+        function popHelp(_srt) {
+            var popSubject = $('#HelpDialog').find('.subject'),
+                list = $('#HelpDialog').find('.list_dot'),
+                listObj = '',
+                helpIdx = helpText.map(x => x.sort).indexOf(_srt),
+                helpSbj = helpText[helpIdx].title,
+                helpArray = helpText[helpIdx].item;
+
+            // 초기화
+            list.empty();
+            
+            $.each(helpArray, function(i) {
+                listObj += '<li>'+ helpArray[i] +'</li>';
+            });
+
+            popSubject.html(helpSbj);
+            list.append(listObj);
+
+            var info = '';
+            if (_srt === 'group5') {
+                info += '<p class="imp_txt">개별등록필요<br>';
+                info += '운전자(범위/연령)특약변경(자동이체,카드 결재)<br>';
+                info += '보험료납입(자동차분납결재)<br>';
+                info += '공동인증전자서명(자동차보험결제)';
+                info += '</p>';
+
+                list.after(info);
+            } else {
+                list.siblings('.imp_txt').remove();
+            }
+
+            Dialog.open('#HelpDialog');
+        }
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb monitoring"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HAMO040000N1" class="btn line dialog_open"><span>게시위치 선택</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="HAMO040000N1" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>게시위치 선택</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content monitoring">
+                <div class="section">
+                    <!-- 그룹 -->
+                    <div class="monitor_group">
+                        <ul>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group1" name="group">
+                                    <label for="Group1">그룹1: 회원DB삭제차단</label>
+                                    <a href="javascript:popHelp('group1');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group2" name="group">
+                                    <label for="Group2">그룹2: 비회원이용서비스</label>
+                                    <a href="javascript:popHelp('group2');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group3" name="group">
+                                    <label for="Group3">그룹3: 은행중단관련차단</label>
+                                    <a href="javascript:popHelp('group3');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group4" name="group">
+                                    <label for="Group4">그룹4: 보험상품개정</label>
+                                    <a href="javascript:popHelp('group4');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group5" name="group">
+                                    <label for="Group5">그룹5: 카드중단관련차단</label>
+                                    <a href="javascript:popHelp('group5');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check_box">
+                                    <input type="checkbox" id="Group6" name="group">
+                                    <label for="Group6">그룹6: 자동차보험상품개정</label>
+                                    <a href="javascript:popHelp('group6');" class="btn_tooltip"><span class="offscr">도움말</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3 class="h3">메뉴 선택(총 <span class="cnt">3</span>개)</h3>
+                    <div class="monitor_menus"></div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn second"><span>초기화</span></button>
+                    <button type="button" class="btn primary"><span>입력</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="HelpDialog" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1 class="subject"></h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="dialog_content_scroller">
+                    <ul class="list_dot"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

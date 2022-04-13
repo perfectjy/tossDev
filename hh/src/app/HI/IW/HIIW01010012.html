@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약상세조회', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="insu_item governing b">
+                        <div class="insu_name">
+                            <span class="tag continue b">유지</span>
+                            <span class="name">무배당멀티플암보험(Hi1204)기본플랜</span>
+                        </div>
+                        <div class="insu_pay">월 <span class="pay">58,000원</span></div>
+                        <div class="etc_btns">
+                            <ul>
+                                <li><a href="#" class="btn icon b"><span class="download">약관</span></a></li>
+                                <li><a href="#" class="btn icon b"><span class="alimtalk">알림톡</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul class="b">
+                                <li class="tab active"><a href="#HIIW01010012" title="현재선택"><span>기본정보</span></a></li>
+                                <li class="tab"><a href="#HIIW01010013"><span>보장내용</span></a></li>
+                                <li class="tab"><a href="#HIIW01010014"><span>납입정보</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HIIW01010012" class="tab_panel">
+                                <h3 class="h_b">기본정보</h3>
+                                <table class="tbl_row_b">
+                                    <caption>보험 기본정보</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약번호</th>
+                                            <td>L12345678901</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">계약번호</th>
+                                            <td>
+                                                유지
+                                                <!-- 실효(2021.11.11) -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">보험기간</th>
+                                            <td>2015.11.23~2037.11.23</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">목적물 소재지</th>
+                                            <td>12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line b"><span>연금보험공시 조회</span></button>
+                                    <button type="button" class="btn line b"><span>저축보험공시 조회</span></button>
+                                    <button type="button" class="btn line b"><span>환급금/연금 조회</span></button>
+                                </div>
+
+                                <h3 class="h_b">가입자정보</h3>
+                                <table class="tbl_row_b">
+                                    <caption>가입자정보</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약자</th>
+                                            <td>하이현(991123-1******)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">피보험자</th>
+                                            <td>하이현(991123-1******)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">휴대전화번호</th>
+                                            <td>010-1234-5678</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">유선전화번호</th>
+                                            <td>02-1234-5678</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">우편물수령지</th>
+                                            <td>자택</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">우편물수령지주소</th>
+                                            <td>서울시 종로구 세종대로 ***</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line b"><span>개인정보 변경</span></button>
+                                    <button type="button" class="btn line b"><span>우편물수령지 변경</span></button>
+                                </div>
+
+                                <h3 class="h_b">수익자정보</h3>
+                                <div class="form_wrap sel_insured b">
+                                    <div class="form_list">
+                                        <label for="selInsured" class="form_label">피보험자</label>
+                                        <div class="form_item">
+                                            <select id="selInsured" class="b" name="" title="">
+                                                <option value="">하이현</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_list">
+                                        <label for="addressInsured" class="form_label">피보험자/소재지</label>
+                                        <div class="form_item">
+                                            <button type="button" class="btn_seltype b"><span>12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="tbl_row_b">
+                                    <caption>수익자정보</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">사망수익자</th>
+                                            <td>법정상속인</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기타수익자</th>
+                                            <td>하이현(991123-1******)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">만기수익자</th>
+                                            <td>하이현(991123-1******)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+
+                                <h3 class="h_b">계약담당자</h3>
+                                <div class="manager b">
+                                    <div class="contact_info">
+                                        <span class="ico personal"></span>
+                                        <div class="name">하이현</div>
+                                        <div class="phone">
+                                            <span class="tel_number">031-1234-5678</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact_info">
+                                        <span class="ico agency"></span>
+                                        <div class="name">구리사업부 호평지점</div>
+                                        <div class="phone">
+                                            <span class="tel_number">031-1234-5678</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HIIW01010013" class="tab_panel">
+                                <h2 class="h_b">보장내용</h2>
+                                <div class="form_wrap sel_insured b">
+                                    <div class="form_list">
+                                        <label for="selInsured2" class="form_label">피보험자</label>
+                                        <div class="form_item">
+                                            <select id="selInsured2" class="b" name="" title="">
+                                                <option value="">하이현</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_list">
+                                        <label for="addressInsured2" class="form_label">피보험자/소재지</label>
+                                        <div class="form_item">
+                                            <button type="button" class="btn_seltype b"><span>12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="tbl_list_b">
+                                    <!-- 갱신담보가 1개 이상 존재하는 장기계약일 경우 -->
+                                    <li>                                        
+                                        <strong class="tit">일반상해사망후유증장애담보</strong>
+                                        <dl>
+                                            <dt>보험기간</dt>
+                                            <dd>2015.11.23~2037.11.23</dd>
+                                            <dt>가입금액</dt>
+                                            <dd class="highlight">10억원</dd>
+                                        </dl>
+                                        <a href="#none" class="btn_go"><span class="offscr">담보 상세 팝업</span></a>
+                                    </li>
+                                    <li>                                        
+                                        <strong class="tit">골절(치아파절제외)진단위로금많이주는담보</strong>
+                                        <dl>
+                                            <dt>보험기간</dt>
+                                            <dd>2015.11.23~2037.11.23</dd>
+                                            <dt>가입금액</dt>
+                                            <dd class="highlight">10억원</dd>
+                                        </dl>
+                                        <a href="#none" class="btn_go"><span class="offscr">담보 상세 팝업</span></a>
+                                    </li>
+                                    <!--// 갱신담보가 1개 이상 존재하는 장기계약일 경우 -->
+
+                                    <!-- 갱신담보가 존재하지 않는 장기보험과 모든 일반보험 경우 -->
+                                    <li>                                        
+                                        <strong class="tit">골절(일반상해사망후유증장애담보)진단위로금많이주는담보</strong>
+                                        <dl>
+                                            <dt>가입금액</dt>
+                                            <dd class="highlight">10억원</dd>
+                                            <dt>보장보험료</dt>
+                                            <dd>3,000원</dd>
+                                        </dl>
+                                        <a href="#none" class="btn_go"><span class="offscr">담보 상세 팝업</span></a>
+                                    </li>
+                                    <!--// 갱신담보가 존재하지 않는 장기보험과 모든 일반보험 경우 -->
+                                </ul>
+                                <!-- 갱신담보가 존재하지 않는 장기보험과 모든 일반보험 경우 -->
+                                <div class="total_sum">
+                                    <strong>보장보험료 합계</strong>
+                                    <span class="highlight">932,320원</span>
+                                </div>
+                                <!--// 갱신담보가 존재하지 않는 장기보험과 모든 일반보험 경우 -->
+                                
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line b"><span>갱신담보가입 조회</span></button>
+                                </div>
+                            </div>
+                            <div id="HIIW01010014" class="tab_panel">
+                                <h2 class="h_b">납입정보</h2>
+                                <table class="tbl_row_b">
+                                    <caption>납입정보</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">보험료(납입주기)</th>
+                                            <td>2,920원(1개월납)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">납입방법(이체일)</th>
+                                            <td>자동이체(16일)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">보장보험료</th>
+                                            <td>5,180원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">적립보험료</th>
+                                            <td>24,820원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">납입횟수</th>
+                                            <td>63회/180회</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">납기/만기</th>
+                                            <td>전기납/15년만기</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">최초납입일</th>
+                                            <td>2019.01.16</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">최종납입월도</th>
+                                            <td>2021.05월분</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">자동이체계좌정보</th>
+                                            <td>
+                                                우리은행 1002********<br>
+                                                예금주: 하이현
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line b"><span>납입내역 조회</span></button>
+                                    <button type="button" class="btn line b"><span>자동이체계좌 신청/변경</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add_service">
+                        <h2 class="h_b">어떤 서비스가 필요하세요?</h2>
+
+                        <div class="service_board">
+                            <div class="service_list b">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m01"></span>
+                                            보험금 청구
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn_service">
+                                            <span class="ico m12"></span>
+                                            보험계약<br>대출신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h_b">유의사항</h3>
+                    <div class="svc_info_b">
+                        <div class="panel_box">
+                            <ul class="list_dot_b">
+                                <li>보험료는 적립보험료와 보장보험료를 합한 금액으로, 해당 계약에 할인이 적용되는 경우 할인율이 적용됩니다. 관련 문의는 계약담당자에게 연락해 주세요.</li>
+                                <li>
+                                    보장내용 중 갱신형 담보의 보장기간은 갱신주기별로 계산됩니다. 
+                                    <ul class="list_bar_b">
+                                        <li>예시: 보험기간 2021.01.01 시작 계약의 5년 갱신주기 담보의 경우</li>
+                                        <li>최초 보장기간 ‘2021.01.01~2026.01.01’로 보여지며, 5년 갱신주기 이후 보장기간 재계산되어 보임</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    어린이보험은 2019년 4월 이후 계약부터 총 납입횟수에 태아보험료(태아확정 이전) 납입횟수가 포함됩니다. 
+                                    <ul class="list_bar_b">
+                                        <li>예시: 3월에 태아보험 가입, 6월에 태아확정, 20년납으로 가입한 경우</li>
+                                        <li>3, 4, 5월 태아보험료 납입횟수 3회 + 20년납 납입횟수 240회 → 총 ‘234회’로 납입횟수가 합산되어 보임</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary b"><span>목록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

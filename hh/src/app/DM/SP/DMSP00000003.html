@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#DMSP00000003');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_dm"></div>
+        </div>
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#DMSP00000003" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+    <div id="DMSP00000003" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="complete">
+                    <div class="complete_title">
+                        <span class="ico_comp"></span>
+                        상담신청이 <strong>완료</strong>되었습니다.
+                    </div>
+                    <p class="complete_txt">
+                        입력하신 휴대전화번호로<br class="mo_br">  전문 상담원이 연락드리겠습니다.<br> 감사합니다. 
+                    </p>
+                    <p class="complete_sc">주말과 공휴일에 상담을 신청하신 경우,<br>
+                        영업일 시작 후 최대한 빨리 연락 드리겠습니다.</p>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HILF99000050');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HILF99000050" class="btn line dialog_open">펀드 서비스 안내</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HILF99000050" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>현대해상 펀드 서비스 이용안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="fund_srv_info">
+                            <p>보험 업무도 OK! 펀드 투자도 OK! 이제 펀드 투자도 현대해상에서 이용하세요! <br>
+                                현대해상 [펀드매매 시스템]에서 펀드 주문, 조회 등 간편하게 펀드 서비스를 이용할 수 있습니다. </p>
+                            <ul>
+                                <li>
+                                    <strong class="tit time">서비스 이용시간 안내</strong>
+                                    <ul class="list_dot">
+                                        <li>펀드주문거래: 평일 09:00~17:00</li>
+                                        <li>은행이체: 평일 09:00~16:00</li>
+                                        <li>조회: 365일 24시간</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong class="tit call">펀드상담 <span class="tel_number">1588-5656</span></strong>
+                                    <ul class="list_dot">
+                                        <li>운영시간: 09:00~18:00(토/일, 공휴일 제외)</li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                            <h2 class="h4">펀드 관련 서비스 바로가기</h2>
+                            <div class="btn_lists">
+                                <a href="http://hdinsurance.funddoctor.co.kr/board/aboard/n_board.jsp?name=fund_sihwang" class="btn line" target="_blank">펀드투자정보</a>
+                                <a href="http://hdinsurance.funddoctor.co.kr/app/util/n_mystyle.jsp" class="btn line" target="_blank">펀드성향진단</a>
+                            </div>
+                            <h2 class="h4">펀드 필수 공시정보 제공</h2>
+                            <div class="btn_lists">
+                                <a href="#none" class="btn line" target="_blank">펀드 공시 바로가기</a>
+                                <a href="#none" class="btn file ss">자본시장법 시행안내</a>
+                                <a href="#none" class="btn file ss">표준투자권유 준칙안내</a>
+                                <a href="#none" class="btn file ss">예탁금이용료 지급기준</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <a href="https://wts.koscom.co.kr:8089/927/index.html" class="btn primary" target="_blank">펀드매매 시스템 바로가기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#DMSP00000002');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_dm"></div>
+        </div>
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#DMSP00000002" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+    
+    <div id="DMSP00000002" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>고객님 정보로 계산된<br>예상 보험료를 확인해보세요.</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing">
+                        <h1 class="governing_title pc_hide">
+                            고객님 정보로 계산된<br>예상 보험료를 확인해보세요.
+                        </h1>
+                    </div>
+                    <div class="month_info">
+                        <div class="cost">
+                            <p>굿앤굿어린이종합보험Q</p>
+                            <strong>월 19,568</strong>원
+                        </div>
+                        <p class="info">
+                            <span>가입기준</span>
+                            상해1급, 10년만기 전기납
+                        </p>
+                    </div>
+                    <ul class="list_dot">
+                        <li>해당 보험료는 납기 및 만기연령, 선택특약에 따라 달라질 수 있습니다.  </li>
+                        <li>정확한 보험료는 전문상담원을 통해 확인해 주세요.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

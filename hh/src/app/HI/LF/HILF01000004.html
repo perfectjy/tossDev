@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '상환가능은행', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#Bank');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#DoubleCash" class="btn line dialog_open">상환가능은행</a>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div id="footer"></div>
+    </div>
+
+    <!-- 이중출금안내 -->
+    <div id="Bank" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1 class="mb_view">보험계약대출 상환가능은행<span class="h_sub_txt">(기업, 경남, 농협은 일요일/공휴일 이용불가)</span></h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="bank_list">
+                            <li><button type="button" class="bank01"><span>KB국민은행</span></button></li>
+                            <li><button type="button" class="bank02"><span>농협은행</span></button></li>
+                            <li><button type="button" class="bank03"><span>신한은행</span></button></li>
+                            <li><button type="button" class="bank04"><span>우리은행</span></button></li>
+                            <li><button type="button" class="bank05"><span>하나은행<br>(구.외환)</span></button></li>
+                            <li><button type="button" class="bank06"><span>기업은행</span></button></li>
+                            <li><button type="button" class="bank07"><span>SC은행</span></button></li>
+                            <li><button type="button" class="bank08"><span>씨티은행</span></button></li>
+                            <li><button type="button" class="bank09"><span>부산은행</span></button></li>
+                            <li><button type="button" class="bank10"><span>대구은행</span></button></li>
+                            <li><button type="button" class="bank11"><span>광주은행</span></button></li>
+                            <li><button type="button" class="bank12"><span>전북은행</span></button></li>
+                            <li><button type="button" class="bank13"><span>경남은행</span></button></li>
+                            <li><button type="button" class="bank14"><span>제주은행</span></button></li>
+                            <li><button type="button" class="bank15"><span>우체국</span></button></li>
+                            <li><button type="button" class="bank16"><span>새마을금고</span></button></li>
+                            <li><button type="button" class="bank17"><span>수협은행</span></button></li>
+                            <li><button type="button" class="bank18"><span>신협은행</span></button></li>
+                            <li><button type="button" class="bank19"><span>케이뱅크</span></button></li>
+                            <li><button type="button" class="bank20"><span>카카오뱅크</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

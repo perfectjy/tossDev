@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 피보험자/소재지 선택 open
+            Dialog.open('#HIIW0100001B');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW0100001B" class="btn line dialog_open">(팝업)피보험자/소재지 선택</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 피보험자/소재지 선택 팝업 -->
+    <div id="HIIW0100001B" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>피보험자/소재지 주소 선택</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_address">
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress1" name="sel_address">
+                                    <label for="selAddress1">하이현</label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress2" name="sel_address">
+                                    <label for="selAddress2">하이대</label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress3" name="sel_address">
+                                    <label for="selAddress3">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress4" name="sel_address">
+                                    <label for="selAddress4">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress5" name="sel_address">
+                                    <label for="selAddress5">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio_box">
+                                    <input type="radio" id="selAddress6" name="sel_address">
+                                    <label for="selAddress6">12345 서울시 종로구 세종대로 163, 현대해상빌딩(세종로)</label>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>선택</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

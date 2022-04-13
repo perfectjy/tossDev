@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>장기보험 손해사정 현장 조사자<br> 만족도 설문</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <ul class="survey_list">
+                    <li>
+                        <p class="qs"><span class="num">1.</span>현장 조사자의 업무 처리 <span class="fs_bold">신속도</span>는?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e1" name="enf0">
+                                <label for="e1">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e2" name="enf0">
+                                <label for="e2">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e3" name="enf0">
+                                <label for="e3">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e4" name="enf0">
+                                <label for="e4">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e5" name="enf0">
+                                <label for="e5">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">2.</span>현장 조사자의 업무 처리 <span class="fs_bold">친절도</span>는?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e01" name="enf01">
+                                <label for="e01">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e02" name="enf01">
+                                <label for="e02">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e03" name="enf01">
+                                <label for="e03">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e04" name="enf01">
+                                <label for="e04">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e05" name="enf01">
+                                <label for="e05">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">3.</span>손해사정 최종 결과에 대한 상세 안내 등 <span class="fs_bold">전문성 만족도</span>는?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e21" name="enf02">
+                                <label for="e21">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e22" name="enf02">
+                                <label for="e22">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e23" name="enf02">
+                                <label for="e23">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e24" name="enf02">
+                                <label for="e24">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e25" name="enf02">
+                                <label for="e25">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">4.</span>기타 현장 조사자 관련 고객님의 <span class="fs_bold">의견</span>이 있으시면 작성 바랍니다. 의견을 남겨주시면 꼼꼼히 살펴 서비스 개선에 반영하겠습니다.</p>
+                        <textarea id="memo" placeholder="200자 이내로 입력" rows="5"></textarea>
+                        <p class="cont"><span>0</span> / 200자</p>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">5.</span>고객님께서 직접 선임한 손해사정사(변호사 등 포함)의 선임 경위는?</p>
+                        <div class="radio_box">
+                            <input type="radio" id="e31" name="enf03">
+                            <label for="e31">인터넷, SNS 등 정보매체를 통해</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" id="e32" name="enf03">
+                            <label for="e32">가족 등 주변 지인의 소개</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" id="e33" name="enf03">
+                            <label for="e33">현장 조사자의 소개</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" id="e34" name="enf03">
+                            <label for="e34">보험설계사(플래너)의 소개</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" id="e35" name="enf03">
+                            <label for="e35">병원 관계자(사무장 등)의 소개</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" id="e36" name="enf03">
+                            <label for="e36">기타</label>
+                        </div>
+                        <textarea id="memo2" class="mgt20" placeholder="기타 선임 경위를 작성 부탁드립니다. (200자 이내로 입력)" rows="5"></textarea>
+                        <p class="cont"><span>0</span> / 200자</p>
+                    </li>
+                </ul>
+
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>설문 완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

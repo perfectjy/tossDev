@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        <div id="container">
+            <div id="content">
+                <div class="section_l">
+                    <div class="governing">
+                        <h2 class="governing_title"><strong>개인형 퇴직연금(개인형)</strong></h2>
+                    </div>
+
+                    <h3 class="h3">기본정보</h3>
+                    <div class="boxing_text">
+                        <strong>현대해상 DB/DC 가입 고객이십니까?</strong>
+                        <div class="radio_box">
+                            <input id="radio1" type="radio" name="radio">
+                            <label for="radio1">예</label>
+                        </div>
+                        <div class="radio_box">
+                            <input id="radio2" type="radio" name="radio">
+                            <label for="radio2">아니요</label>
+                        </div>
+                        
+                      
+                    </div>
+
+                    <h3 class="h3">가입조건</h3>
+                    <table class="tbl_data in_crud">
+                        <caption>기본정보 입력</caption>
+                        <colgroup>
+                            <col style="width:210px">
+                            <col style="width:380px">
+                            <col style="width:210px">
+                            <col style="width:380px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">일시부담금</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="" placeholder="">
+                                        <span class="unit">만원</span>
+                                    </div>
+                                </td>
+                                <td class="no_line_l" colspan="2">
+                                    <span class="sub_txt">* 일시부담금이란 퇴직급여 중 개인형 퇴직연금제도로 납입한 금액을 말합니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">개인부담금</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>납입</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <th scope="row">납입주기</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>일시납</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">납입기간</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>1년</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <th scope="row">납입금액</th>
+                                <td>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" id="" placeholder="">
+                                        <span class="unit">만원</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="list_num">
+                        <li>
+                            <span class="ico">1.</span> 개인부담금이란 다음 각호의 하나에 해당하는 사람이 개인형 퇴직연금제도를 설정하여 본인 부담으로 납입하는 금액을 말합니다.
+                            <ul>
+                                <li>1) 퇴직급여제도의 일시금 수령자</li>
+                                <li>2) 확정급여형 퇴직연금제도 또는 확정기여형 퇴직연금제도 가입자</li>
+                                <li>
+                                    3) 자영업자 등 안정적인 노후 소득 확보가 필요한 사람 중 대통령령으로 정하는 사람
+                                    <p class="list_bar">
+                                        자영업자, 계속근로기간 1년 미만 근로자, 초단기근로자(4주 평균으로 산출한 1주간 소정 근로시간이 15시간 미만인 자), 퇴직금제도 적용 근로자, 지역연금 가입자(공무원, 군인, 사립학교 교직원, 별정우체국 직원)
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="ico">2.</span> 「근로자퇴직급여 보장법 시행령」 제17조에 의해 개인부담금은, 퇴직급여제도의 일시부담금 등을 제외하고 연간 1,800만원(개인형 퇴직연금 계정이 여러 개인 경우 개인부담금의 합계액)을 초과하여 납입할 수 없습니다.
+                        </li>
+                    </ul>
+
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>적립금계산</span></button>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <h3 class="h3">적립금 및 해지환급금 예시표(이율보증형 1년 100%, 세전 기준)</h3>
+                    <h4 class="h4">개인부담금</h4>
+                    <div class="tbl_top_info">
+                        <span class="unit">2021년 8월 적용이율 기준, 단위: 만원</span>
+                    </div>
+                    <table class="tbl_data">
+                        <caption>기본정보</caption>
+                        <colgroup>
+                            <col style="width:10%" span="2">
+                            <col style="width:20%" span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2"><span>경과기간</span></th>
+                                <th scope="col" rowspan="2"><span>부담금 누계(A)</span></th>
+                                <th scope="col" colspan="2"><span>현재 적용이율(연 1.92%) 지속할 경우</span></th>
+                                <th scope="col" colspan="2"><span>중도해지할 경우(중도해지이율 미적용)</span></th>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span>적립금(B)</span></th>
+                                <th scope="col"><span>적립금(B/A)</span></th>
+                                <th scope="col"><span>해지환급금(C))</span></th>
+                                <th scope="col"><span>환급률(C/A)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3개월</td>
+                                <td>450</td>
+                                <td>451</td>
+                                <td>100%</td>
+                                <td>451</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>6개월</td>
+                                <td>900</td>
+                                <td>905</td>
+                                <td>101%</td>
+                                <td>904</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>9개월</td>
+                                <td>1,350</td>
+                                <td>1,361</td>
+                                <td>101%</td>
+                                <td>1,359</td>
+                                <td>101%</td>
+                            </tr>
+                            <tr>
+                                <td>1년</td>
+                                <td>1,800</td>
+                                <td>1,816</td>
+                                <td>102%</td>
+                                <td>1,816</td>
+                                <td>101%</td>
+                            </tr>
+                            <tr>
+                                <td>3년</td>
+                                <td>5,400</td>
+                                <td>5,538</td>
+                                <td>106%</td>
+                                <td>5,538</td>
+                                <td>103%</td>
+                            </tr>
+                            <tr>
+                                <td>5년</td>
+                                <td>9,000</td>
+                                <td>9,386</td>
+                                <td>110%</td>
+                                <td>9,386</td>
+                                <td>104%</td>
+                            </tr>
+                            <tr>
+                                <td>7년</td>
+                                <td>12,600</td>
+                                <td>13,364</td>
+                                <td>114%</td>
+                                <td>13,364</td>
+                                <td>106%</td>
+                            </tr>
+                            <tr>
+                                <td>9년</td>
+                                <td>16,200</td>
+                                <td>17,474</td>
+                                <td>118%</td>
+                                <td>17,474</td>
+                                <td>108%</td>
+                            </tr>
+                            <tr>
+                                <td>10년</td>
+                                <td>18,000</td>
+                                <td>19,581</td>
+                                <td>121%</td>
+                                <td>19,581</td>
+                                <td>109%</td>
+                            </tr>
+                            <tr>
+                                <td>20년</td>
+                                <td>36,000</td>
+                                <td>42,673</td>
+                                <td>146%</td>
+                                <td>42,673</td>
+                                <td>119%</td>
+                            </tr>
+                            <tr>
+                                <td>30년</td>
+                                <td>54,000</td>
+                                <td>69,906</td>
+                                <td>176%</td>
+                                <td>69,906</td>
+                                <td>129%</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+
+                    <h4 class="h4">일시부담금</h4>
+                    <div class="tbl_top_info">
+                        <span class="unit">2021년 8월 적용이율 기준, 단위: 만원</span>
+                    </div>
+                    <table class="tbl_data">
+                        <caption>기본정보</caption>
+                        <colgroup>
+                            <col style="width:10%" span="2">
+                            <col style="width:20%" span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2"><span>경과기간</span></th>
+                                <th scope="col" rowspan="2"><span>부담금 누계(A)</span></th>
+                                <th scope="col" colspan="2"><span>현재 적용이율(연 1.92%) 지속할 경우</span></th>
+                                <th scope="col" colspan="2"><span>중도해지할 경우(중도해지이율 미적용)</span></th>
+                            </tr>
+                            <tr>
+                                <th scope="col"><span>적립금(B)</span></th>
+                                <th scope="col"><span>적립금(B/A)</span></th>
+                                <th scope="col"><span>해지환급금(C))</span></th>
+                                <th scope="col"><span>환급률(C/A)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3개월</td>
+                                <td>1,500</td>
+                                <td>1,507</td>
+                                <td>100%</td>
+                                <td>1,513</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>6개월</td>
+                                <td>1,500</td>
+                                <td>1,514</td>
+                                <td>101%</td>
+                                <td>1,513</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>9개월</td>
+                                <td>1,500</td>
+                                <td>1,521</td>
+                                <td>101%</td>
+                                <td>1,521</td>
+                                <td>101%</td>
+                            </tr>
+                            <tr>
+                                <td>1년</td>
+                                <td>1,500</td>
+                                <td>1,529</td>
+                                <td>101%</td>
+                                <td>1,529</td>
+                                <td>101%</td>
+                            </tr>
+                            <tr>
+                                <td>3년</td>
+                                <td>1,500</td>
+                                <td>1,587</td>
+                                <td>103%</td>
+                                <td>1,587</td>
+                                <td>103%</td>
+                            </tr>
+                            <tr>
+                                <td>5년</td>
+                                <td>1,500</td>
+                                <td>1,648</td>
+                                <td>104%</td>
+                                <td>1,648</td>
+                                <td>104%</td>
+                            </tr>
+                            <tr>
+                                <td>7년</td>
+                                <td>1,500</td>
+                                <td>1,711</td>
+                                <td>106%</td>
+                                <td>1,711</td>
+                                <td>106%</td>
+                            </tr>
+                            <tr>
+                                <td>9년</td>
+                                <td>1,500</td>
+                                <td>1,776</td>
+                                <td>108%</td>
+                                <td>1,776</td>
+                                <td>108%</td>
+                            </tr>
+                            <tr>
+                                <td>10년</td>
+                                <td>1,500</td>
+                                <td>1,810</td>
+                                <td>109%</td>
+                                <td>1,810</td>
+                                <td>109%</td>
+                            </tr>
+                            <tr>
+                                <td>20년</td>
+                                <td>1,500</td>
+                                <td>2,183</td>
+                                <td>119%</td>
+                                <td>2,183</td>
+                                <td>119%</td>
+                            </tr>
+                            <tr>
+                                <td>30년</td>
+                                <td>1,500</td>
+                                <td>2,633</td>
+                                <td>129%</td>
+                                <td>2,633</td>
+                                <td>129%</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+
+                
+
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn sline"><span>목록</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

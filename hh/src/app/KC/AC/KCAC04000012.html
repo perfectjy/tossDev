@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/contents.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '연혁', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul class="both">
+                                <li class="tab"><a href="#panel1"><span>현재-2020</span></a></li>
+                                <li class="tab active"><a href="#panel2" title="현재선택"><span>2019-2010</span></a></li>
+                                <li class="tab"><a href="#panel3"><span>2009-2000</span></a></li>
+                                <li class="tab"><a href="#panel4"><span>1999-1980</span></a></li>
+                                <li class="tab"><a href="#panel5"><span>1979-1955</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <h2 class="offscr">현재-2020</h2>
+                            </div>
+                            <div id="panel2" class="tab_panel">
+                                <h2 class="offscr">2019-2010</h2>
+                                <div class="governing">
+                                    <div class="governing_title txt_l">
+                                        <strong>비전을 향한 성장</strong>의 2010년대
+                                    </div>
+                                </div>
+
+                                <div class="history_list">
+                                    <dl>
+                                        <dt>2019</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd><span class="item">제10회 전국 어린이 교통안전 동요제</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>5월</dt>
+                                                    <dd><span class="item">자율주행 산업 생태계 조성을 위한 업무 협약식</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">한강공원 미세먼지 신호등 설치</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2018</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>10월</dt>
+                                                    <dd>
+                                                        <span class="item">사회공헌 프로그램 ‘청년, 세상을 담다’ 송익 콘텐츠 공모전 시상</span>
+                                                        <span class="item">현대해상 최경주 인비테이셔널 골프대회 개최</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd><span class="item">경찰 법률보험 체결식</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd>
+                                                        <span class="item">현대해상-경기도교육청 어린이 교통안전 증진 협약식</span>
+                                                        <span class="item">장기보험 보유계약 1,000만 건 돌파</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1월</dt>
+                                                    <dd><span class="item">퇴직연금 신상품 배타적 사용권 획득</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2017</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd>
+                                                        <span class="item">현대해상 도서관 ‘마음心터’ 개관식(금천구 서울바른세상병원)</span>
+                                                        <span class="item">신규 다이렉트 모바일 앱 오픈</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>5월</dt>
+                                                    <dd>
+                                                        <span class="item">현대해상 '최경주 인비테이셔널’ 골프대회 후원 조인식</span>
+                                                        <span class="item">잠실 Tower730 준공식</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">굿앤굿어린이종합보험 배타적 사용권 획득</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">‘FIFA U-20 월드컵 코리아 2017’ 업무협약식</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2016</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>12월</dt>
+                                                    <dd><span class="item">업계 최초 전기자동차 전용 자동차보험 출시</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd>
+                                                        <span class="item">현대해상 도서관 마음心터 개관식(국립중앙의료원)</span>
+                                                        <span class="item">하이비전센터 개원(경기도 광주시 소재)</span>
+                                                        <span class="item">인액터스 국내대회 후원</span>
+                                                        <span class="item">제1회 현대해상 보험계리사 학술세미나 개최(7.8~7.9)</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd><span class="item">베트남 하노이사무소 개소</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">인액터스(Enactus) ‘씨앗 프로그램’ 실시</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">현대해상 앱(App) 재구축 오픈</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>2월</dt>
+                                                    <dd><span class="item">광주·부산지역 직장보육시설 '온마음 어린이집' 개원</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2015</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>11월</dt>
+                                                    <dd><span class="item">업계 최초 전기자동차 전용 자동차보험 출시</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>10월</dt>
+                                                    <dd><span class="item">창립 60주년 기념 음악회 개최(빈 필하모닉 오케스트라)</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>9월</dt>
+                                                    <dd>
+                                                        <span class="item">중소병원 내 현대해상 도서관 '마음心터' 개관식(은평병원 등 3곳)</span>
+                                                        <span class="item">어린이 교통안전 뮤지컬 "교통안전, 약속해 주세요!" 실시</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd>
+                                                        <span class="item">신규 사회공헌 프로그램 ‘현대해상 도서관, 마음心터’ 도서 기부 캠페인</span>
+                                                        <span class="item">하이카다이렉트 인수·합병</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd><span class="item">베트남 하노이사무소 개소</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>5월</dt>
+                                                    <dd><span class="item">독일 프랑크푸르트 사무소 설립</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd>
+                                                        <span class="item">기업문화 핸드북 '하트(HEART)' 발간</span>
+                                                        <span class="item">미국지점 캘리포니아 사무소 설립</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">기업문화 재정립을 위한 'HEART 주니어보드' 발대식</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2014</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>12월</dt>
+                                                    <dd>
+                                                        <span class="item">월 원수매출 1조 원 돌파</span>
+                                                        <span class="item">2014 한·아세안 특별정상회의 교통사고 보상팀 발대식</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">‘청년, 세상을 담다’ 1기 개강식</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>2월</dt>
+                                                    <dd><span class="item">직장보육시설, 온마음 어린이집 개원</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1월</dt>
+                                                    <dd><span class="item">신규 사회공헌 프로그램 '청년, 세상을 담다' MOU 실시</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2013</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>11월</dt>
+                                                    <dd>
+                                                        <span class="item">필리핀 태풍 피해지역 구호성금 10만 달러 기부</span>
+                                                        <span class="item">사회공헌 프로그램 '소녀, 달리다' 제1회 달리기 축제 개최</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>10월</dt>
+                                                    <dd><span class="item">'기후변화가 보험산업에 미치는 영향 및 대응방안' 세미나 개최</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>9월</dt>
+                                                    <dd>
+                                                        <span class="item">현대해상 전용서체 개발 및 배포</span>
+                                                        <span class="item">'착한운전 마일리지제' 업무협약 체결</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd><span class="item">환경인증 ISO 14001 획득</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd>
+                                                        <span class="item">S&P 신용등급 A- Stable 등급 획득</span>
+                                                        <span class="item">홈페이지 재구축 오픈</span>
+                                                        <span class="item">계속받는암보험 배타적 사용권 획득</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">자전거 안전체험교육 행사 실시</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">사회적 기업가 지원단체 '아쇼카' 한국지부 창립 후원</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1월</dt>
+                                                    <dd><span class="item">부평사옥 준공식</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2012</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>12월</dt>
+                                                    <dd><span class="item">사회공헌활동 '틔움교실' 업무협약식</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>11월</dt>
+                                                    <dd><span class="item">S&P 신용등급 BBB+ Positive 등급 획득</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>10월</dt>
+                                                    <dd><span class="item">A.M.Best 신용평가 A(Excellent) 등급 획득</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>5월</dt>
+                                                    <dd>
+                                                        <span class="item">제1기 현대해상 고객 컨설턴트 발대식</span>
+                                                        <span class="item">학교폭력 예방 프로젝트 업무 협약식</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">2012 서울 핵안보 정상회의 교통사고 보상서비스팀 발대식</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2011</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd><span class="item">녹색경영 실천 수칙(7 Green Habits) 공표</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">비전 Hi 2015 선포</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>3월</dt>
+                                                    <dd><span class="item">일본 동북부 대지진 재난복구 성금 1천만 엔 기부(일본지사)</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>2월</dt>
+                                                    <dd>
+                                                        <span class="item">장기보험 위험보험료 1조 원 돌파</span>
+                                                        <span class="item">싱가포르합작중개법인 Cosmos Risk Solutions Asia Pte. Ltd. 설립</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1월</dt>
+                                                    <dd><span class="item">현대해상 QR코드 도입</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+
+                                        <dt>2010</dt>
+                                        <dd>
+                                            <dl class="history_detail">
+                                                <div>
+                                                    <dt>12월</dt>
+                                                    <dd><span class="item">하이카에코자동차보험 배타적 사용권 획득</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>11월</dt>
+                                                    <dd>
+                                                        <span class="item">부평사옥 기공식</span>
+                                                        <span class="item">하이라이프 암보험 배타적 사용권 획득</span>
+                                                        <span class="item">서울 G20 정상회의 교통사고 비상처리반 발대식</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>10월</dt>
+                                                    <dd>
+                                                        <span class="item">무배당 하이라이프 암보험 출시</span>
+                                                        <span class="item">부산콜센터 오픈</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>7월</dt>
+                                                    <dd>
+                                                        <span class="item">교통기후환경연구소 설립</span>
+                                                        <span class="item">고객접점 서비스 브랜드 '7Heart Service' 선포식</span>
+                                                    </dd>
+                                                </div>
+                                                <div>
+                                                    <dt>6월</dt>
+                                                    <dd><span class="item">현대해상과 함께하는 어린이 교통안전 음악대회 후원</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>4월</dt>
+                                                    <dd><span class="item">사회복지공동모금회에 천안함 유가족 돕기 성금 1억 원 기탁</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>2월</dt>
+                                                    <dd><span class="item">2012 여수세계박람회 공식손해보험사 선정 협약</span></dd>
+                                                </div>
+                                                <div>
+                                                    <dt>1월</dt>
+                                                    <dd><span class="item">차세대 시스템 CIS 오픈</span></dd>
+                                                </div>
+                                            </dl>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div id="panel3" class="tab_panel">
+                                <h2 class="offscr">2009-2000</h2>
+                            </div>
+                            <div id="panel4" class="tab_panel">
+                                <h2 class="offscr">1999-1980</h2>
+                            </div>
+                            <div id="panel5" class="tab_panel">
+                                <h2 class="offscr">1979-1955</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

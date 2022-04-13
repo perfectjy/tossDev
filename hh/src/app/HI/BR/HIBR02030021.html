@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        $(function() {
+            // 납입가능이자 조회 open
+            Dialog.open('#HIBR02030021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIBR02030021" class="btn line dialog_open">납입가능이자 조회</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 납입가능이자 조회 팝업 -->
+    <div id="HIBR02030021" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>납입가능이자 조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="form_wrap">
+                            <div class="form_list">
+                                <div class="col2">
+                                    <div class="start_date">
+                                        <span class="form_label">정산시작일</span>
+                                        <div class="date_box">
+                                            <input type="text" title="정산시작일" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <span for="referenceDate" class="form_label">기준일</span>
+                                        <div class="date_box">
+                                            <input type="text" class="inp_date" title="기준일" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        <h3 class="h3">정상이자</h3>
+                        <table class="tbl_row">
+                            <caption>계산기간, 적용기간, 이자금액의 구성 테이블</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계산기간</th>
+                                    <td>2021.05.25~2021.06.18</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적용기간</th>
+                                    <td>24일</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이자금액</th>
+                                    <td>9,573원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="h3">미납이자(2010.10.01 이전)</h3>
+                        <table class="tbl_row">
+                            <caption>계산기간, 적용기간, 이자금액의 구성 테이블</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계산기간</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적용기간</th>
+                                    <td>0일</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이자금액</th>
+                                    <td>0원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="h3">미납이자(2010.10.01 이후)</h3>
+                        <table class="tbl_row">
+                            <caption>계산기간, 적용기간, 이자금액의 구성 테이블</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계산기간</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적용기간</th>
+                                    <td>0일</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이자금액</th>
+                                    <td>0원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="h3">예수금</h3>
+                        <table class="tbl_row">
+                            <caption>계산기간, 적용기간, 이자금액의 구성 테이블</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계산기간</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적용기간</th>
+                                    <td>0일</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이자금액</th>
+                                    <td>0원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="amount_total_bottom">
+                            <div class="m_toggle_cont">
+                                <dl class="info_amount_detail">
+                                    <dt>이자합계</dt>
+                                    <dd class="blue"><strong>9,573</strong>원</dd>
+                                    <dt>대출잔액</dt>
+                                    <dd><strong>3,640,000</strong>원</dd>
+                                </dl>
+                            </div>
+                            <div class="total">
+                                <span class="tit">난입할 금액</span>
+                                <span><strong>3,649,573</strong>원</span>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>미납이자가 있을 경우, 2010년 10월 1일부터 연체이자가 폐지됨에 따라 미납이자는 2010년 10월 1일 이전과 이후 내역으로 구분되어 조회됩니다.</li>
+                                    <li>미납이자(2010년 10월 1일 이후)는 매월 이자납입 후의 대출잔액과 합산된 금액을 기준으로 합산 시점으로부터 경과된 일수에 따라 이자금액이 산정됩니다.</li>
+                                    <li>2010년 10월 1일 이후 미납이자가 있을 경우 매월 발생되는 이자금액은 변경될 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

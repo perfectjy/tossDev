@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>현대해상 | Publishing Guide</title>
+
+<script src="../../../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../js/ui_guide.js"></script>
+<script src="../../../assets/js/jquery-ui-1.12.1.min.js"></script>
+<script src="../../../assets/js/ui_plugins.js"></script>
+<script src="../../../assets/js/ui_common.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/ui_guide.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/contents.css">
+
+</head>
+<body>
+<body>
+<div id="gWrap"> 
+	<div class="guide_content">
+		<h1>Form Type</h1>
+		<div class="g_section">
+			<h2>input[type="text"]</h2>
+			<div class="g_guide_info">
+				<!-- <p class="txt_guide">텍스트 입력박스 class .inp_txt 사용/텍스트 입력시 입력삭제버튼 자동노출</p> -->
+				<div class="form_item">
+					<input class="inp_txt" type="text" disabled>
+				</div>
+
+				<!-- <p class="txt_guide">입력삭제버튼 비노출시 class .no_del 추가</p>
+				<div class="form_item">
+					<input class="inp_txt no_del" type="text">
+				</div> -->
+
+				<p class="txt_guide">금액입력시 오른쪽정렬 class .inp_price 사용</p>
+				<div class="unit_item">
+					<input class="inp_price" type="tel">
+					<span class="unit">만원</span>
+				</div>	
+
+				<p class="txt_guide">calender(달력)</p>
+				<div class="date_box">
+					<input type="text" class="inp_date" title="날짜입력" readonly>
+				</div>
+
+				<p class="txt_guide">검색</p>
+				<div class="form_search">
+					<input type="tel" class="inp_txt" placeholder="휴대전화번호 중간 4자리 입력">
+					<button type="button" class="btn_search"><span class="offscr">검색</span></button>
+				</div>
+
+				<p class="txt_guide">대출메뉴 금액입력 공통 UI</p>
+				<div class="g_item">
+					<div class="price_ui_input">
+						<div class="auto_input">
+							<span class="inp_txt auto" role="textbox" contenteditable="true" data-unit="만원" placeholder="5만원 이상 입력"></span>
+						</div>
+						<div class="btn_price">
+							<button type="button" class="btn sgrey">+5만</button>
+							<button type="button" class="btn sgrey">+10만</button>
+							<button type="button" class="btn sgrey">+50만</button>
+							<button type="button" class="btn sgrey">+100만</button>
+							<button type="button" class="btn sgrey">전액</button>
+						</div>
+					</div>
+				</div>					
+			</div>
+	</div> 
+
+	<div class="g_section">
+		<h2>select</h2>
+		<div class="g_guide_info">
+			<select>
+				<option value="01" selected="">선택</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+
+			<p class="txt_guide">공시실 table 상단우측 사용</p>
+			<select class="sm">
+				<option value="01" selected="">전체</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="g_section">
+		<h2>input[type="checkbox"]</h2>
+		<div class="g_guide_info">
+			<div class="g_item">
+				<div class="check_box">
+					<input id="check1" type="checkbox" name="check" checked>
+					<label for="check1">체크박스(checked)</label>
+				</div>
+				<div class="check_box">
+					<input id="check2" type="checkbox" name="check">
+					<label for="check2">체크박스</label>
+				</div>
+				<div class="check_box">
+					<input id="check3" type="checkbox" name="check" disabled>
+					<label for="check3">체크박스(disabled)</label>
+				</div>
+				<div class="check_box">
+					<input id="check4" type="checkbox" name="check" checked disabled>
+					<label for="check4">체크박스(checked + disabled)</label>
+				</div>
+			</div>
+			<div class="g_item">
+				<div class="check_box">
+					<input id="checkD" type="checkbox" name="check" checked>
+					<label for="checkD">텍스트 레이블이 <br>두 줄 이상인 경우</label>
+				</div>
+			</div>
+			<div class="g_item">
+				<div class="check_box">
+					<input id="check2" type="checkbox" name="check" class="ss">
+					<label for="check2">상세주소 없음</label>
+				</div>
+			</div>
+			<p class="txt_guide">텍스트 없는 check</p>
+			<div class="g_item">
+				<div class="check_box notxt">
+					<input id="checknotxt" type="checkbox" name="check">
+					<label for="checknotxt" title="행선택"></label>
+				</div>
+			</div>
+			<p class="txt_guide">박스형 check</p>
+			<div class="g_item">
+				<div class="filters">
+					<span class="chk_item">
+						<input type="checkbox" id="multi1" name="chk_filter" checked>
+						<label for="multi1">유지</label>
+					</span>
+					<span class="chk_item">
+						<input type="checkbox" id="multi2" name="chk_filter">
+						<label for="multi2">실효</label>
+					</span>
+					<span class="chk_item">
+						<input type="checkbox" id="multi3" name="chk_filter">
+						<label for="multi3">만기</label>
+					</span>
+					<span class="chk_item">
+						<input type="checkbox" id="multi4" name="chk_filter">
+						<label for="multi4">해지</label>
+					</span>
+					<span class="chk_item">
+						<input type="checkbox" id="chkAll" name="chk_all" class="chkall">
+						<label for="chkAll">전체</label>
+					</span>
+				</div>
+			</div>
+
+			<p class="txt_guide">full check</p>
+			<div class="g_item">
+				<div class="check_full">
+					<input id="checkFull" type="checkbox" name="check_full" checked>
+					<label for="checkFull">대출신청금액 자동 적용</label>
+				</div>
+			</div>
+
+			<!-- <p class="txt_guide">example</p>
+			<div class="form_list">
+				<label for="formtext03" class="form_label">이자납입일</label>
+				<div class="form_item">
+					<select id="formtext03">
+						<option>5일</option>
+						<option>10일</option>
+						<option>20일</option>
+						<option>25일</option>
+					</select>
+				</div>
+				<div class="check_box">
+					<input id="check1" type="checkbox" name="check" checked="">
+					<label for="check1">이자 미납 안내문은 연락처로 발송됩니다.  우편으로도 수령하시겠습니까?</label>
+				</div>
+			</div> -->
+
+		</div>
+
+		<div class="g_section">
+			<h2>input[type="radio"]</h2>
+			<div class="g_guide_info">
+				<div class="g_item">
+					<div class="radio_box">
+						<input id="radio1" type="radio" name="radio">
+						<label for="radio1">라디오체크</label>
+					</div>
+					<div class="radio_box">
+						<input id="radio2" type="radio" name="radio" checked>
+						<label for="radio2">라디오체크</label>
+					</div>
+					<div class="radio_box">
+						<input id="radio3" type="radio" name="radio" disabled>
+						<label for="radio3">라디오체크(disabled)</label>
+					</div>
+					<div class="radio_box">
+						<input id="radio4" type="radio" name="radioD" checked disabled>
+						<label for="radio4">라디오체크(checked disabled)</label>
+					</div>
+				</div>
+				<div class="g_item">
+					<div class="radio_box">
+						<input id="radioD" type="radio" name="radio">
+						<label for="radioD">텍스트 레이블이 <br>두 줄 이상인 경우</label>
+					</div>
+				</div>
+
+				<p class="txt_guide">박스형 check</p>
+				<div class="g_item">
+					<div class="filters">
+						<span class="chk_item">
+							<input id="rd_rect1" type="radio" name="rad">
+							<label for="rd_rect1" class="">본인</label>
+						</span>
+						<span class="chk_item">
+							<input id="rd_rect2" type="radio" name="rad" checked>
+							<label for="rd_rect2">본인 외 청구</label>
+						</span>
+						<span class="chk_item">
+							<input id="rd_rect3" type="radio" name="rad">
+							<label for="rd_rect3">친권자</label>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="g_section">
+			<h2>toggle</h2>
+			<div class="g_guide_info">
+				<div class="g_item">
+					<div class="switcher">
+						<input id="togbtn1" type="checkbox">
+						<label for="togbtn1"></label>
+					</div>
+					<div class="switcher">
+						<input id="togbtn2" type="checkbox" checked>
+						<label for="togbtn2"></label>
+					</div>
+					<div class="switcher">
+						<input id="togbtn3" type="checkbox" disabled>
+						<label for="togbtn3"></label>
+					</div>
+					<div class="switcher">
+						<input id="togbtn4" type="checkbox" checked disabled>
+						<label for="togbtn4"></label>
+					</div>
+				</div>
+				<p class="txt_guide">toggle + text</p>
+				<div class="g_item">
+					<div class="switcher">
+						<input id="togbtn5" type="checkbox">
+						<label for="togbtn5" data-title1="OFF" data-title2="ON"></label>
+					</div>
+					<div class="switcher">
+						<input id="togbtn6" type="checkbox" checked>
+						<label for="togbtn6" data-title1="아니요" data-title2="예"></label>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div class="g_section">
+			<h2>textarea</h2>
+			<div class="g_guide_info">
+				<textarea name="" cols="70" rows="4"></textarea>
+				<p class="cont">0 / 5,000자</p>
+			</div>
+		</div>
+
+		<div class="g_section">
+			<h2>Range Slide</h2>
+			<div class="g_guide_info">
+				<div class="range_amount lf">
+					<div class="slider" data-min="0" data-max="3" data-step="1" data-unit="" aria-hidden="true"></div>
+					<div class="scope">
+						<span class="start">3천만 이하</span>
+						<span class="middle txt">5천만 이하</span>
+						<span class="middle">1억 이하</span>
+						<span class="end">초과</span>  
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<div class="g_section">
+			<h2>Filter - Multi check</h2>
+			<div class="g_guide_info">
+				<div class="g_item">
+
+					<div class="filter_wrap multi">
+						<div class="insu_result">
+							유지 중인 계약이 <span class="result_cnt"><strong>43</strong>건</span> 있습니다.
+						</div>
+	
+						<a href="#MultiFilter" class="m_toggle_btn"><span class="ico"></span>상태</a>
+	
+						<div id="MultiFilter" class="filter_inner">
+							<div class="filter_label">계약상태 선택</div>
+							
+							<div class="filters">
+								<span class="chk_item">
+									<input type="checkbox" id="multiChk1" name="chk_multi" checked>
+									<label for="multiChk1">유지</label>
+								</span>
+								<span class="chk_item">
+									<input type="checkbox" id="multiChk2" name="chk_multi">
+									<label for="multiChk2">실효</label>
+								</span>
+								<span class="chk_item">
+									<input type="checkbox" id="multiChk3" name="chk_multi">
+									<label for="multiChk3">만기</label>
+								</span>
+								<span class="chk_item">
+									<input type="checkbox" id="multiChk4" name="chk_multi">
+									<label for="multiChk4">해지</label>
+								</span>
+								<span class="chk_item">
+									<input type="checkbox" id="chkAll2" name="chk_all2" class="chkall">
+									<label for="chkAll2">전체</label>
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>				
+			</div>
+		</div>
+
+		<div class="g_section">
+			<h2>Filter - Single check</h2>
+			<div class="g_guide_info">
+				<div class="g_item">
+					
+					<div class="filter_wrap single">
+						<a href="#SingleFilter" class="m_toggle_btn">
+							<span class="ico"></span>
+							<span class="current_text">가나다순</span>
+						</a>
+	
+						<div id="SingleFilter" class="filter_inner">
+							<div class="filters">
+								<span class="chk_item">
+									<input type="radio" id="single1" name="chk_filter">
+									<label for="single1">가나다순</label>
+								</span>
+								<span class="chk_item">
+									<input type="radio" id="single2" name="chk_filter" checked>
+									<label for="single2">최신순</label>
+								</span>
+								<span class="chk_item">
+									<input type="radio" id="single3" name="chk_filter">
+									<label for="single3">많이본순</label>
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>				
+			</div>
+		</div>
+
+ 	</div> 
+</div>
+</body>
+</html>

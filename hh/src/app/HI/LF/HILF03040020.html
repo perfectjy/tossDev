@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '금리산정내역 상세내역', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <table class="tbl_col">
+                        <caption>출력일, 최초발행일, 금리적용일</caption>
+                        <colgroup>
+                            <col class="mo_hide" style="width:auto;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="mo_hide" scope="col">출력일</th>
+                                <th scope="col">최초발행일</th>
+                                <th scope="col">금리적용일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="mo_hide">2021.06.29</td>
+                                <td>2021.06.01</td>
+                                <td>2021.06.01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="tbl_row">
+                        <caption>이름, 생년월일</caption>
+                        <colgroup>
+                            <col style="width:27%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">이름</th>
+                                <td>하이연</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">생년월일</th>
+                                <td>1986.06.17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">대출정보</h2>
+                    <table class="tbl_row">
+                        <caption>대출명, 대출금액, 상환방법, 대출기간, 발행구분</caption>
+                        <colgroup>
+                            <col style="width:27%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">대출명</th>
+                                <td>현대해상_아파트론[5년고정](A01)_MI가입(매년10%면제[21.5월]_소액임차 변경)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출금액</th>
+                                <td>259,200,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상환방법</th>
+                                <td>원리금균등</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">대출기간</th>
+                                <td>35년 00개월 00일</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">발행구분</th>
+                                <td>신규</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">소득정보</h2>
+                    <table class="tbl_row">
+                        <caption>연소득</caption>
+                        <colgroup>
+                            <col style="width:27%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">연소득</th>
+                                <td>52,256,000원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">담보 및 신용점수</h2>
+                    <table class="tbl_row">
+                        <caption>담보물건, 담보가치, 신용점수</caption>
+                        <colgroup>
+                            <col style="width:27%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">담보물건</th>
+                                <td>부동산</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">담보가치</th>
+                                <td>324,000,000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">신용점수</th>
+                                <td>959점</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">금리 산출 결과</h2>
+                    <table class="tbl_col">
+                        <caption>기준금리 (A), 가산금리 (B), 할인할증 조정금리 (C), 본부 전결금리 (D), 최종 대출금리 (A+B+C+D)</caption>
+                        <colgroup>
+                            <col style="width:20%;">
+                            <col style="width:20%;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="txt_l" colspan="2" scope="row">기준금리 (A)</th>
+                                <td class="txt_l">0.84%</td>
+                            </tr>
+                            <tr>
+                                <th class="txt_l" colspan="2"scope="row">가산금리 (B)</th>
+                                <td class="txt_l">3.02%</td>
+                            </tr>
+                            
+                            <tr class="db_th">
+                                <th class="txt_l" rowspan="3" id="c">할인할증<br> 조정금리 (C)</th>
+                                <th id="th01" class="txt_l">DSR40%이하할인</td>
+                                <td class="txt_l" headers="c th01">-0.30%</td>
+                            </tr>
+                            <tr class="db_th">
+                                <th class="txt_l" id="th02" class="txt_l">신용점수</th>
+                                <td class="txt_l" headers="c th02">-0.40%</td>
+                            </tr>
+                            <tr class="db_th">
+                                <th class="txt_l" id="th03" class="txt_l">MI할증</th>
+                                <td class="txt_l" headers="c th03">0.40%</td>
+                            </tr>
+                            <tr>
+                                <th class="txt_l" colspan="2" scope="row">본부 전결금리 (D)</th>
+                                <td class="txt_l">0.00%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th class="txt_l" colspan="2" scope="row">최종 대출금리<br class="mo_br">(A+B+C+D)</th>
+                                <td class="txt_l"><span class="highlight">3.56%</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="btn_conts mo_hide">
+                        <button type="button" class="btn primary"><span>출력</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

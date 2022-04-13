@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '메신저 피싱 예방 가이드', tooltip: false, prev: true, menu: true };
+        $(function() {
+            var swipeProp = !!isMobile ? true : false;
+            var swipeArrows = !!isMobile ? false : true;
+
+            $('.popup_slide').slick({
+                infinite: false,
+                dots: true,
+                arrows: swipeArrows,
+                adaptiveHeight: true,
+                autoplay: false,
+                prevArrow : "<button type='button' class='slick_prev'><span class='offscr'>이전</span></button>",
+                nextArrow : "<button type='button' class='slick_next'><span class='offscr'>다음</span></button>",
+				swipe: swipeProp
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>     
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <div class="popup_slide">
+                        <div class="popup_item">
+                            <p class="popup_bg_img type03">
+                                <img class="mo_hide" src="/src/assets/images/web/popup_slide_bg0401.png" alt="">
+                                <img class="pc_hide" src="/src/assets/images/mobile/popup_slide_bg0401.png" alt="">
+                                <span class="offscr">
+                                    카톡, 문자를 통한 피싱이 급증하고 있어요!
+                                    내용과 수법이 갈수록 교묘해져 특히 주의가 필요한 요즘!
+                                    실제 발생 사례들을 통해 예방법을 알려드릴게요.
+                                    가족 또는 지인을 사칭한 메신저 피싱 사례입니다.
+                                    범인 엄마 나 교재 사야될 게 있어서 신분증이랑 신용카드 좀 찍어서 보내줘
+                                    피해자 응 보내줄게
+                                    범인 그리고 엄마 핸드폰에서 어플 있어야 되서 이거 눌러서 설치 좀 해줘 Mrfoin.me/45MRG
+                                    피해자 알겠어
+                                    가족 또는 지인을 사칭한 메신저 피싱은 
+                                    첫번째 메신저 계정 또는 인터넷 포털 주소록 해킹해 가족 또는 지인 사칭 
+                                    두번째 신분증 등의 개인정보와 원격제어 앱 설치 요구
+                                    세번째 빼낸 정보로 피해자 명의의 휴대폰, 계좌 개설
+                                    네번째 피해자 명의로 금융권 대출 받아 피해 발생
+                                    순으로 진행됩니다.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="popup_item">
+                            <p class="popup_bg_img type03">
+                                <img class="mo_hide" src="/src/assets/images/web/popup_slide_bg0402.png" alt="">
+                                <img class="pc_hide" src="/src/assets/images/mobile/popup_slide_bg0402.png" alt="">
+                                <span class="offscr">
+                                    일상적인 내용으로 문자를 보내는 경우가 많아 가급적 URL 클릭은 삼가고, 출처가 불분명한 건 바로 삭제하는 것이 좋아요!
+                                    택배 또는 공공기관을 사칭한 메신저 피싱 사례입니다.
+                                    범인 [배송안내] 고객 주소 오류로 택배가 반송되었습니다. 아래 URL에서 배송 주소를 수정해주세요 Mrfoin.me/45MRG
+                                    택배 또는 공공기관을 사칭한 메신저 피싱은 
+                                    첫번째 택배사/공공기관/인터넷 쇼핑몰 등을 사칭해 URL 클릭 유도
+                                    두번째 URL 클릭 시 원격제어앱 or 악성 프로그램 설치
+                                    세번째 휴대폰에 있는 개인정보 탈취 및 소액결제 피해
+                                    순으로 진행됩니다.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="popup_item">
+                            <p class="popup_bg_img type03">
+                                <img class="mo_hide" src="/src/assets/images/web/popup_slide_bg0403.png" alt="">
+                                <img class="pc_hide" src="/src/assets/images/mobile/popup_slide_bg0403.png" alt="">
+                                <span class="offscr">
+                                    피싱 예방을 위해 구축한 현대해상 이상금융거래 탐지시스템과 은행에서 제공하는 전자금융사기 예방서비스를 확인해 보세요.
+                                    현대해상 보험계약대출 이상금융거래 탐지 시스템은
+                                    현대해상 홈페이지/앱을 통한 보험계약 대출 신청 건 중 의심 가는 거래 형태를 찾아내 피싱을 사전에 차단하는 보안 시스템 입니다.
+                                    이상 거래 조건 부합 시 인터넷 대출을 중단한 후 안내문자를 발송하여 콜센터 상담사 통한 별도 본인 확인 및 대출 진행합니다.
+                                    주거래 은행에 전자금융사기 예방서비스 신청하세요.
+                                    입금계좌지정서비스는 지정계좌 외에는 소액 송금만 가능합니다.
+                                    지연이체서비스는 송금 후 최소 3시간 이후 이체 됩니다.
+                                    해외IP차단서비스는 국내 IP가 아니면 인터넷 뱅킹 제한합니다.
+                                    단말기지정서비스는 사전에 지정한 핸드폰, PC로만 송금 가능합니다.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="popup_item">
+                            <p class="popup_bg_img type03">
+                                <img class="mo_hide" src="/src/assets/images/web/popup_slide_bg0404.png" alt="">
+                                <img class="pc_hide" src="/src/assets/images/mobile/popup_slide_bg0404.png" alt="">
+                                <span class="offscr">
+                                    피싱 예방 수칙 및 요령입니다.
+                                    가족(지인)의 개인정보, 금전 요구는 반드시 유선으로 본인 여부를 확인하세요.
+                                    출처 불분명한 문자, 이메일은 즉시 삭제하세요!
+                                    금융/공공기관의 개인정보, 금전 요구는 피싱부터 의심하세요.
+                                    피싱 피해 발생 시는 금융회사(콜센터), 경찰(112, 182), 금융감독원(1332) 신고하세요.
+                                    공동인증서 긴급 폐기 요청은 한국인터넷진흥원(118) ARS(4번 → 1번) 으로 요청하시면 됩니다.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="terms_conf_no">준법감시인 심의필 제20213881호<span>(승인일 2021.05.10)</span></p>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>

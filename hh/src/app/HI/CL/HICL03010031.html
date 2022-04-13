@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '재물/배상책임 보험금청구', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 사고유형 안내 open
+            Dialog.open('#HICL03010031');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICL03010031" class="btn line dialog_open">사고유형 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 사고유형 안내 팝업 -->
+    <div id="HICL03010031" class="dialog full">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>사고유형 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>
+                                배상: 피보험자가 타인에게 피해를 입혀 법률상 손해배상 책임을 지게 된 경우
+                                <ul class="list_bar">
+                                    <li>예시) 사업장 안전 관리 부주의로 인하여 고객이 넘어져 사고를 당한 경우</li>
+                                </ul>
+                            </li>
+                            <li>
+                                재물: 화재ㆍ 풍수해 등으로 인해 보험에 가입한 물건의 손해를 보상받는 경우
+                                <ul class="list_bar">
+                                    <li>예시) 폭우 또는 산사태로 인하여 보험목적물인 주택 손해</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

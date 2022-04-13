@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약자 변경', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 지문인증 전자서명 open
+            Dialog.open('#HIIW02030021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW03060011" class="btn line dialog_open">지문인증 전자서명</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 지문인증 전자서명 팝업 -->
+    <div id="HIIW02030021" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>지문인증 전자서명</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title">
+                                보다 안전한 서비스 이용을 위해<br class="p_br"> 피보험자의 지문을 활용하여 인증합니다.
+                            </div>
+                            <ul class="list_dot">
+                                <li>계약자와 피보험자가 동일한 보험을 계약자와 피보험자가 다른 계약으로 변경할 경우 지문인증이 필요합니다.</li>
+                                <li>휴대전화 후면 카메라로 고해상도 지문을 촬영하여 인증합니다.</li>
+                                <li>지문촬영을 통한 바이오인증은 금융결제원 바이오정보 분산관리시스템과 연계한 안전하고 정확한 전자서명 방법입니다.</li>
+                                <li>지문인증은 계약변경을 위한 전자서명의 효력을 가집니다.</li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <div class="agreement">
+                            <div class="agreement_title">
+                                <h3 class="h3"><span class="tag surely">필수</span> <span>바이오(지문)정보 활용 계약체결·이행을 위한 개인(신용)정보 처리 <span class="emp">상세</span> 동의서</span></h3>
+                                <div class="terms_intro">
+                                    귀하는 바이오(지문)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있습니다. 다만, '바이오(지문)정보를 활용한 계약 체결·이행'을 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+                                </div>
+                                <div class="agreement_btn">
+                                    <a href="#none" class="btn_agree" title="약관팝업열기"><span>전체 동의</span></a><!-- 약관팝업에서 전체동의시 active 클래스 추가 -->
+                                </div>
+                            </div>
+                            <div class="agreement_section">
+                                <div class="agreemen_list">
+                                    <div class="agree_item">
+                                        <button type="button" class="btn_chk"><span> 1. 수집·이용에 관한 사항</span></button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="radio_title">고유식별정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub1N" class="agree_rdo" name="agreeSub1" type="radio">
+                                                    <label for="agreeSub1N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub1Y" class="agree_rdo" name="agreeSub1" type="radio">
+                                                    <label for="agreeSub1Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>    
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">민감정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub2N" class="agree_rdo" name="agreeSub2" type="radio">
+                                                    <label for="agreeSub2N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub2Y" class="agree_rdo" name="agreeSub2" type="radio">
+                                                    <label for="agreeSub2Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">개인(신용)정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub3N" class="agree_rdo" name="agreeSub3" type="radio">
+                                                    <label for="agreeSub3N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub3Y" class="agree_rdo" name="agreeSub3" type="radio">
+                                                    <label for="agreeSub3Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="agreemen_list">
+                                    <div class="agree_item">
+                                        <button type="button" class="btn_chk"><span>2. 제공에 관한 사항</span></button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="radio_title">고유식별정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub4N" class="agree_rdo" name="agreeSub4" type="radio">
+                                                    <label for="agreeSub4N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub4Y" class="agree_rdo" name="agreeSub4" type="radio">
+                                                    <label for="agreeSub4Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">민감정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub5N" class="agree_rdo" name="agreeSub5" type="radio">
+                                                    <label for="agreeSub5N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub5Y" class="agree_rdo" name="agreeSub5" type="radio">
+                                                    <label for="agreeSub5Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">개인(신용)정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub6N" class="agree_rdo" name="agreeSub6" type="radio">
+                                                    <label for="agreeSub6N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub6Y" class="agree_rdo" name="agreeSub6" type="radio">
+                                                    <label for="agreeSub6Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="agreemen_list">
+                                    <div class="agree_item">
+                                        <button type="button" class="btn_chk"><span>3. 조회에 관한 사항</span></button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="radio_title">고유식별정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub8N" class="agree_rdo" name="agreeSub8" type="radio">
+                                                    <label for="agreeSub8N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub8Y" class="agree_rdo" name="agreeSub8" type="radio">
+                                                    <label for="agreeSub8Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">민감정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub9N" class="agree_rdo" name="agreeSub9" type="radio">
+                                                    <label for="agreeSub9N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub9Y" class="agree_rdo" name="agreeSub9" type="radio">
+                                                    <label for="agreeSub9Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                        <li>
+                                            <span class="radio_title">개인(신용)정보</span>
+                                            <div class="radio_set">
+                                                <div class="radio_box">
+                                                    <input id="agreeSub10N" class="agree_rdo" name="agreeSub10" type="radio">
+                                                    <label for="agreeSub10N">동의안함</label>
+                                                </div>
+                                                <div class="radio_box">
+                                                    <input id="agreeSub10Y" class="agree_rdo" name="agreeSub10" type="radio">
+                                                    <label for="agreeSub10Y">동의함</label>
+                                                    <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                                </div>
+                                            </div>    
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="terms_conf_no">준법감시인 심의필 제 확인필요 호<span>(승인일 YYYY.MM.DD)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>본인인증 후 지문 촬영</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

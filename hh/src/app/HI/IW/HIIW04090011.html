@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HIIW04090011');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04090011" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HIIW04090011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                TM(텔레마케팅) 상품의 불완전판매 방지 및 소비자 보호를 위하여 전화통화로 이루어진 보험가입과 계약체결에 대한 음성녹음 내용을 신청하실 수 있습니다.
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>장기보험 TM상품을 유지 중인 계약자, 친권자(계약자가 만 14세 미만인 경우 친권자 등록 시)</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                    <li>녹취 신청 후 1주일 이내 녹취파일이 등록되며, 등록 후 1달간 녹취파일 다운로드 가능</li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>진행현황이 ‘준비중’으로 표시된 경우 신청일로부터 1주일 이내 파일이 등록됩니다. ‘기간만료’로 표시된 경우 제공기간 1달이 만료되어 다운로드가 불가능한 경우이니 다시 신청해 주세요.</li>
+                                    <li>기타 문의사항은 인터넷 콜센터(<span class="tel_number">02-2116-1004</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>TM상품녹취 신청/조회</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

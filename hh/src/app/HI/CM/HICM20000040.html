@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '로그인', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HICM20000040');
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <div id="HICM20000040" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>로그인</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing txt_c">
+                        <h2 class="governing_title">간편인증</h2>
+                        <p class="info_text">간편비밀번호 숫자 6자리를 입력해 주세요.</p>
+                    </div>
+                    <div class="certifiate_pin">
+                        <strong class="active"><span class="offscr">1번째 번호</span></strong>
+                        <strong><span class="offscr">2번째 번호</span></strong>
+                        <strong><span class="offscr">3번째 번호</span></strong>
+                        <strong><span class="offscr">4번째 번호</span></strong>
+                        <strong><span class="offscr">5번째 번호</span></strong>
+                        <strong><span class="offscr">6번째 번호</span></strong>
+                    </div>
+                    
+                    <div class="log_btm_btns">
+                        <div class="btn_box">
+                            <a href="#none" class="btn line pc_hide">지문인증</a>
+
+                            <!-- 생체/패턴정보가 있을 경우 -->
+                            <!-- <a href="#none" class="btn line pc_hide">Face ID 인증</a>
+                            <a href="#none" class="btn line pc_hide">패턴인증</a> -->
+
+                            <a href="#none" class="btn line">간편비밀번호 변경</a>                            
+                            <a href="#none" class="btn line">다른 방법 선택</a>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

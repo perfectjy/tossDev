@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+    <script type="text/javascript">
+
+        $(function() {
+            // 보장내용 요약/상세
+            $(document).off('click.assurecont').on('click.assurecont', '.select_viewtype a', function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    target = $(this).attr('href'),
+                    cont = $('.assure_cont');
+
+                $('.select_viewtype a').removeClass('active');
+                cont.css({ display: 'none' });
+
+                $(target).css({ display: 'block' });
+                if (!!!$this.hasClass('active')) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude"><!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="insu_item governing">
+                        <div class="insu_name"><span class="tag continue">유지</span> Hicar업무용</div>
+                        <div class="insu_pay"><span class="pay">34가12**</span></div>     
+                    </div>
+
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#InsuTab1" id="tabAccType1" title="현재선택"><span>기본정보</span></a></li>
+                                <li class="tab"><a href="#InsuTab2" id="tabAccType2"><span>보장내용</span></a></li>
+                                <li class="tab"><a href="#InsuTab3" id="tabAccType3"><span>특약사항</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <!-- 기본정보 -->
+                            <div id="InsuTab1" class="tab_panel">
+                                <h2 class="h3">기본정보</h2>
+
+                                <table class="tbl_row">
+                                    <caption>계약번호,보험기간</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약번호</th>
+                                            <td>L12345678901</td>
+                                            <th scope="row">보험기간</th>
+                                            <td>2015.11.23~2037.11.23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            
+                                <h2 class="h3">가입자 정보</h2>
+                                <table class="tbl_row">
+                                    <caption>계약자,(대표) 피보험자,우편물수령지,우편물수령지 주소</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">계약자</th>
+                                            <td>
+                                                ㈜하이현<br>(504-81-75695)
+                                            </td>
+                                            <th scope="row">(대표) 피보험자</th>
+                                            <td>
+                                                ㈜하이현<br>(504-81-75695)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">우편물수령지</th>
+                                            <td>대표</td>
+                                            <th scope="row">우편물수령지<br>주소</th>
+                                            <td>12345 서울시 종로구 세종대로 ***</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 class="h3">보험료 납입정보</h2>
+                                <table class="tbl_row">
+                                    <caption>총 납입보험료, 납입방법</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                        <col style="width:180px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">총 납입보험료</th>
+                                            <td>1,094,040원</td>
+                                            <th scope="row">납입방법</th>
+                                            <td>일시납</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        자동차보험가입<br>증명서 발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>하이카서비스는 보험가입기간 중 5회(비상급유서비스는 2회, 1일 1회) 사용 가능하며, 12개월 미만 3개월 이상의 경우 3회, 3개월 미만의 경우 1회 사용 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 보장내용 -->
+                            <div id="InsuTab2" class="tab_panel">
+                                <h2 class="h3">
+                                    보장내용
+                                </h2>
+                                <div id="Summary" class="assure_cont" style="display:block;">
+                                    <!-- 담고, 가입금액, 보장보험료 구성 table -->
+                                    <table class="tbl_col">
+                                        <caption>담보사항, 가입금액, 보장보험료</caption>
+                                        <colgroup>
+                                            <col style="width:35%;">
+                                            <col style="width:35%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">담보사항</th>
+                                                <th scope="col">가입금액</th>
+                                                <th scope="col">보장보험료</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="col" class="txt_l">보장보험료 합계</th>
+                                                <td class="txt_r" colspan="2"><strong class="highlight">1,094,040원</strong></td>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    대인배상Ⅰ<br>
+                                                </td>
+                                                <td class="txt_l highlight">가입</td>
+                                                <td class="txt_r">160,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    대물(의무)<br>
+                                                </td>
+                                                <td class="txt_l highlight">2천만원</td>
+                                                <td class="txt_r">433,560원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="txt_l">
+                                                    대인배상Ⅱ<br>
+                                                </td>
+                                                <td class="txt_l highlight">무한(의무담보 포함)</td>
+                                                <td class="txt_r">231,990원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        자동차보험가입<br>증명서 발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>하이카서비스는 보험가입기간 중 5회(비상급유서비스는 2회, 1일 1회) 사용 가능하며, 12개월 미만 3개월 이상의 경우 3회, 3개월 미만의 경우 1회 사용 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 납입정보 -->
+                            <div id="InsuTab3" class="tab_panel">
+                                <h2 class="h3">특약사항</h2>
+
+                                <table class="tbl_row">
+                                    <caption>특약사항, 특별요율(특별약관), 물적할증기준금액</caption>
+                                    <colgroup>
+                                        <col style="width:200px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">특약사항</th>
+                                            <td colspan="3">
+                                                <ul class="list_dot">
+                                                    <li>만 35세 이상</li>
+                                                    <li>운전자제한 없음</li>
+                                                    <li>Road차량진단추가특약</li>
+                                                    <li>자기차량손해보장확대특약</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">특별요율(특별약관)</th>
+                                            <td>일시납</td>
+                                            <th scope="row">물적할증기준금액</th>
+                                            <td>200만원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+        
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m14"></span>
+                                                        보험증권 발급
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico m05"></span>
+                                                        자동차보험가입<br>증명서 발급
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>하이카서비스는 보험가입기간 중 5회(비상급유서비스는 2회, 1일 1회) 사용 가능하며, 12개월 미만 3개월 이상의 경우 3회, 3개월 미만의 경우 1회 사용 가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>목록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

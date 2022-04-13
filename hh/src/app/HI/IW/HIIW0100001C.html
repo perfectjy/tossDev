@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '갱신담보가입 조회', tooltip: false, prev: true, menu: true };
+        
+        $(function() {            
+            // 갱신담보가입 조회 open
+            Dialog.open('#HIIW0100001C');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>     
+        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW0100001C" class="btn line dialog_open">갱신담보가입 조회</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 갱신담보가입 조회 팝업 -->
+    <div id="HIIW0100001C" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>갱신담보가입 조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <table class="tbl_row">
+                            <caption>갱신담보가입여부,자동갱신유형</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">갱신담보 가입여부</th>
+                                    <td>가입</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자동갱신 유형</th>
+                                    <td>직접납입형</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr>
+
+                        <h2 class="h3">자동갱신 안내</h2>
+                        <ul class="list_dot">
+                            <li>
+                                자동갱신이란 보험기간을 단기로 설정(갱신주기)한 후 설정기간이 지나면, 연령 및 위험률을 다시 적용하여 보험료를 산출하고,
+                                보험기간 만료일 전일까지 갱신하지 않겠다는 계약자의 별도 의사표시가 없는 한, 매 갱신주기마다 자동으로 갱신하는 것입니다.
+                                따라서 갱신보험료는 피보험자의 보험나이 증가, 적용기초율 변경, 의료수가 변동 등의 사유로 최초(갱신 전) 계약보다 보험료가 인상될 수 있습니다.(피보험자 연령 및 가입담보에 따라 갱신보험료가 감소하는 경우도 있음)
+                            </li>
+                            <li>
+                                자동갱신담보는 기본계약 납입기간과 관계없이 기본계약 납입기간이 완료된 이후에도 이 특약의 보험기간이 종료되지 않은 경우에는 갱신보험료를 갱신종료연령까지 계속 납입해야 합니다.
+                                <ul class="list_bar">
+                                    <li>기본계약 납입기간 중인 경우 갱신담보의 보험료는 합계보험료에 합산하여 납입하게 되며, 기본계약 납입기간이 종료된 경우 자동갱신담보 보험료만 납입하게 됩니다.</li>
+                                    <li>만약, 자동갱신담보 보험료를 납입하지 않은 경우에는 해당 자동갱신담보는 보험료 미납으로 해지되며, 해지일 이후 발생하는 보험사고는 보장받을 수 없습니다.</li>
+                                    <li>자동이체로 보험료를 납입한 경우에는 자동갱신보험료도 자동이체로 청구됩니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 class="h3">보험료예비특약의 자동갱신</h2>
+                        <ul class="list_dot">
+                            <li>보험료예비특약(적립보험료)은 별도의 의사표시가 없으면 종전의 보험료예비특약 만기일 다음날 자동갱신됩니다.(단, 갱신 시 아래의 예비특약 한도를 초과하는 경우에는 한도 이내로 감액되어 갱신되며, 보장보험료 납기가 종료되거나, 한도가 없는 경우에는 갱신되지 않음)</li>
+                            <li>만기일의 다음달 말일까지 갱신 전 예비특약 만기환급금을 고객이 인출하지 않으면, 갱신 전 예비특약 만기환급금은 갱신된 예비특약에 추가적립보험료로 납입되어 적립됩니다.(자세한 내용은 ‘보험료예비특약 자동갱신 추가 특별약관’ 참조)</li>
+                            <li>
+                                단, 약관에서 정한 대출금이 있을 경우에는 그 원리합계액을 공제합니다.
+                                <table class="tbl_row">
+                                    <caption>원리합계액 공제 안내</caption>
+                                    <colgroup>
+                                        <col style="width:200px;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">일반 기준</th>
+                                            <td>보험료예비특약의 적립기간 동안 납입할 보장보험료 총액의 <strong class="highlight">3배 이내</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">통원 의료비 가입 시</th>
+                                            <td>보험료예비특약의 적립기간 동안 납입할 보장보험료 총액의 <strong class="highlight">5배 이내</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <ul class="list_bar">
+                                    <li>단, 위 보장보험료에는 자동차 관련 보험료는 포함되지 않습니다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 class="h3">자동갱신을 원하지 않는 경우</h2>
+                        <ul class="list_dot">
+                            <li>자동갱신예정일 전일까지 현대해상에 자동갱신특약 해지신청서(현대해상 양식)를 제출하시면 됩니다. 이 경우 자동갱신특약 만료일 이후 발생하는 보험사고에 대해서는 보장받을 수 없으며, 추후 동일한 계약에 담보추가 시 제한될 수 있습니다.</li>
+                            <li>필요서류: 계약자 본인을 확인할 수 있는 신분증(대리인 방문 시에는 계약자 인감 도장이 찍힌 위임장, 인감증명서(발급일로부터 3개월 이내), 대리인 본인인증 필요)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

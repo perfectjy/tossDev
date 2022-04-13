@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+$(function() {
+    Dialog.open('#addrSearch');
+});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="comp">
+							<a href="#addrSearch" class="btn ass dialog_open">주소찾기</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="addrSearch" class="dialog full">
+                <div class="dialog_wrap">
+                    <div class="dialog_header">
+                        <h1>주소 찾기</h1>
+                        <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+                    </div>
+                    <div class="dialog_content">
+                        <div class="section">
+                            <div class="tab_section t1">
+                                <div class="tab_list tab_nav">
+                                    <ul>
+                                        <li class="tab active"><a href="#panel1" title="현재선택"><span>도로명</span></a></li>
+                                        <li class="tab"><a href="#panel2"><span>동/읍/면</span></a></li>
+                                    </ul>
+                                </div>  
+                                <div class="tab_contents">
+                                    <div id="panel1" class="tab_panel">
+                                        <div class="addr_search">
+                                            <div class="scrollbar">
+                                                <div class="form_search">
+                                                    <input type="text" class="inp_txt" placeholder="도로명 또는 건물명 검색" title="도로명">
+                                                    <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                                                </div>
+                                                <div class="exam_src">
+                                                    <h2 class="h3">이렇게 검색하세요!</h2>
+                                                    <ul class="list_dot">
+                                                        <li>도로명 입력(예: 세종대로)</li>
+                                                        <li>도로명 + 건물번호 입력(예: 세종대로163)</li>
+                                                        <li>건물명 선택 후 조회(예: 현대해상빌딩)</li>
+                                                    </ul>
+                                                </div>
+                                                <h2 class="h3">도로명/건물명</h2>
+                                                <div class="items_list">
+                                                    <button type="button" class="btn_prev"><span>서울 종로구</span></button>
+                                                    <div class="scrollbar">
+                                                        <ul>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 145-2(세종로)</span></button></li>
+                                                            <li><button type="button" class="selected"><span>서울 종로구 세종대로 147-2(세종로)</span></button></li> <!-- 선택시 class 추가해주세요 -->
+                                                            <li><button type="button"><span>서울 종로구 세종대로 149(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 159(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 161(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 163(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 지하172(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 175(세종로)</span></button></li>
+                                                            <li><button type="button"><span>서울 종로구 세종대로 지하175(세종로)</span></button></li>
+                                                        </ul>
+                                                    </div>                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <div id="panel2" class="tab_panel">
+                                        <div class="addr_search">
+                                            <div class="scrollbar">
+                                                <div class="form_search">
+                                                    <input type="text" class="inp_txt" placeholder="동/읍/면 검색" title="지역명(동/읍/면)">
+                                                    <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                                                </div>
+                                                <div class="exam_src">
+                                                    <h2 class="h3">이렇게 검색하세요!</h2>
+                                                    <ul class="list_dot">
+                                                        <li>지역명(동/면/읍) + 번지 입력(예: 청운효자동 191-1)</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="tbl_top_info">
+                                                    <p>검색 결과 <strong class="highlight">2,188건</strong></p>
+                                                </div>
+                                                <table class="tbl_col">
+                                                    <caption>주소검색결과</caption>
+                                                    <colgroup>
+                                                        <col style="width:auto">
+                                                        <col style="width:20%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">주소</th>
+                                                            <th scope="col">선택</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="post">12345</span>
+                                                                <p>서울 종로구 당주동</p>
+                                                            </td>
+                                                            <td>
+                                                                <input id="radio1" type="radio" name="radio">
+                                                                <label for="radio1"><span class="offscr">12345 서울 종로구 당주동 선택</span></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="post">12345</span>
+                                                                <p>서울 종로구 당주동</p>
+                                                            </td>
+                                                            <td>
+                                                                <input id="radio2" type="radio" name="radio">
+                                                                <label for="radio2"><span class="offscr">12345 서울 종로구 당주동 선택</span></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="post">12345</span>
+                                                                <p>서울 종로구 당주동</p>
+                                                            </td>
+                                                            <td>
+                                                                <input id="radio3" type="radio" name="radio">
+                                                                <label for="radio3"><span class="offscr">12345 서울 종로구 당주동 선택</span></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="post">12345</span>
+                                                                <p>서울 종로구 당주동</p>
+                                                            </td>
+                                                            <td>
+                                                                <input id="radio4" type="radio" name="radio">
+                                                                <label for="radio4"><span class="offscr">12345 서울 종로구 당주동 선택</span></label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="list_more">
+                                                    <button type="button" class="btn_more">
+                                                        <span class="offscr">더보기</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>                      
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dialog_footer">
+                        <div class="dialog_bottom_btn">
+                            <button type="button" class="btn primary">상세주소 입력</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '환경설정', tooltip: false, prev: true, menu: true };
+
+        // $(function() {
+        //     Dialog.open('#HICM70000020');
+        // });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <h2 class="h3">버전 정보</h2>
+                    <div class="ver_info">
+                        <span class="app_name"><span class="offscr">현대해상</span></span>
+                        <div class="version">
+                            <span>현재 버전: v1.25</span>
+                            <span>최신 버전: v1.26</span>
+                        </div>
+                    </div>
+                    <div class="btn_conts">
+                        <button type="button" class="btn oline"><span>업데이트</span></button>
+                    </div>
+
+                    <h2 class="h3">공지/안내 푸시알림 수신</h2>
+                    <div class="push_info">
+                        <div class="switcher">
+                            <input id="togbtn5" type="checkbox" checked>
+                            <label for="togbtn5" data-title1="OFF" data-title2="ON"></label>
+                        </div>
+                        <ul class="list_dot">
+                            <li>홈페이지 서비스 이용 관련한 푸시알림을 받을 것인지 설정할 수 있습니다.</li>
+                            <li>푸시알림을 켜도(ON으로 설정) 알림이 오지 않는다면, 휴대전화 [설정]에서 알림이 허용되어 있는지 확인해 주세요. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>확인</span></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+</body>
+</html>

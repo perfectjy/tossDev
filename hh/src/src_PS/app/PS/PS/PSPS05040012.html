@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+$(function() {
+    Dialog.open('#PSPS05040012');
+
+    // 수령방법
+    $(document).on('change', '.radio_box input', function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            idx = $this.parent().index(),
+            $item = $('.rdo_tab_panel');
+            console.log(idx);
+        
+        $item.css({ display: 'none' });	
+        $('.rdo_tab_contents').find($item).eq(idx).css({ display: 'block' });
+    });
+
+});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="comp">
+							<a href="#PSPS05040012" class="btn ass dialog_open">보고서수령방법</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="PSPS05040012" class="dialog full">
+                <div class="dialog_wrap">
+                    <div class="dialog_header">
+                        <h1>보고서 수령방법</h1>
+                        <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+                    </div>
+                    <div class="dialog_content">
+                        <div class="scrollbar">
+                            <div class="section">
+                                <h2 class="h4 hmark">보고서 수령방법</h2>
+                                <p class="txt">
+                                    현대해상은 「자본시장과 금융투자업에 관한 법률」 제88조에 따라 실적배당형 상품 가입자에게 ‘자산운용보고서’, 및 ‘자산보관·관리보고서’를 이메일로 발송하고 있습니다.
+                                    <br>이메일 수령을 원하시면 이메일 주소를, 우편 수령을 원하시면 우편물수령주소를 입력해 주세요.
+                                </p>
+                                <h2 class="h4 hmark">자산운용보고서 수령방법</h2>
+                                <p class="txt">본인은 ‘자산운용보고서’ 및 ‘자산보관·관리보고서’를 아래의 방법으로 받겠습니다.</p>
+                                <div class="form_wrap">
+                                    <div class="form_list">
+                                        <div class="form_label">수령방법</div>
+                                        <div class="form_item">
+                                            <div class="radio_box">
+                                                <input id="radio1" type="radio" name="radioReceipt" checked>
+                                                <label for="radio1">이메일</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="radio2" type="radio" name="radioReceipt">
+                                                <label for="radio2">자택주소</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="radio3" type="radio" name="radioReceipt">
+                                                <label for="radio3">직장주소</label>
+                                            </div>
+                                        </div>
+                                        <div class="rdo_tab_contents">
+                                            <!-- "이메일" 선택한 경우 아래 출력 -->
+                                            <div class="rdo_tab_panel" style="display:block;">
+                                                <div class="form_list">
+                                                    <div class="form_label">이메일</div>
+                                                    <div class="email_item">
+                                                        <div class="item">
+                                                            <input type="email" title="이메일 계정" name="email_id" class="inp_txt" placeholder="이메일 입력" value="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <input type="email" title="이메일 도메인" name="email_domain" class="inp_txt" placeholder="예: hi.co.kr" value="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <select title="이메일 도메인 선택" name="sel_domain">
+                                                                <option value="0">직접 입력</option>
+                                                                <option value="hanmail.net">hanmail.net</option>
+                                                                <option value="naver.com">naver.com</option>
+                                                                <option value="nate.com">nate.com</option>
+                                                                <option value="gmail.com">gmail.com</option>
+                                                                <option value="hotmail.com">hotmail.com</option>
+                                                                <option value="yahoo.com">yahoo.com</option>
+                                                                <option value="chol.com">chol.com</option>
+                                                                <option value="korea.com">korea.com</option>
+                                                                <option value="netian.com">netian.com</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이메일 계정을 정상입력 하지 않은 경우 -->
+                                                    <p class="error_text">이메일 계정을 입력해 주세요.</p>
+                                                    <!-- 이메일 도메인을 정상입력 하지 않은 경우 -->
+                                                    <p class="error_text">이메일 도메인을 올바르게 입력해 주세요.(예: hi.co.kr)</p>
+                                                </div>                                                
+                                            </div>
+        
+                                            <!-- "자택주소" 선택한 경우 아래 출력 -->
+                                            <div class="rdo_tab_panel">
+                                                <div class="form_label post">자택주소</div>
+                                                <div class="addr_item">
+                                                    <input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" disabled>
+                                                    <button type="button" class="btn line">주소검색</button>
+                                                </div>
+                                                <div class="form_item">
+                                                    <input type="text" name="" title="참조주소" value="" disabled>
+                                                </div>
+                                                <div class="form_item">
+                                                    <input type="text" name="" title="상세주소" value="" disabled>
+                                                </div>
+                                                <p class="error_text">자택주소를 정확하게 입력해 주세요.<br>[주소 검색]을 누르면 기본주소 검색 및 상세주소 입력이 가능합니다.</p>
+                                            </div>
+        
+                                            <!-- "직장주소" 선택한 경우 아래 출력 -->
+                                            <div class="rdo_tab_panel">
+                                                <div class="form_list">
+                                                    <div class="form_label post">직장주소</div>
+                                                    <div class="form_item">
+                                                        <input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" disabled>
+                                                    </div>
+                                                    <div class="form_item">
+                                                        <input type="text" name="" title="참조주소" value="서울시 강남구 논현동" disabled>
+                                                    </div>
+                                                    <div class="form_item">
+                                                        <input type="text" name="" title="상세주소" value="11-11" disabled>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                        <!--// rdo_tab_contents -->
+                                    </div>
+                                </div>
+                                <p class="imp_txt">이메일 및 우편물수령주소를 수정하시면 기존에 등록된 가입자 정보사항도 함께 변경됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog_footer">
+                        <div class="dialog_bottom_btn">
+                            <button type="button" class="btn second">취소</button>
+                            <button type="button" class="btn primary dialog_close">저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+    </div>
+</body>
+</html>

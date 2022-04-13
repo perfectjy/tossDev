@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>마이데이터</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <div class="step_list">
+                    <div class="step_bar"><span style="width:66.67%"></span></div>
+                    <div class="steps">
+                      <span class="offscr">현재단계</span><strong class="num">2</strong>
+                      <span class="offscr">전체단계</span><strong>3</strong>
+                    </div>
+                </div>
+
+                <div class="governing">
+                    <h2 class="governing_title">
+                        전송을 요구할 계좌 및 상품정보를 선택해 주세요.
+                    </h2>
+                </div>
+
+                <h3 class="h3">정보제공자(전송 요구를 받는 자)</h3>
+                <div class="value_box">(주)현대해상화재보험</div>
+
+                <h3 class="h3">전송을 요구할 개인(신용)정보 선택</h3>
+                <div class="list_top">
+					<input id="check1" type="checkbox" name="check">
+					<label for="check1">전체 선택(전체 전송에 동의)</label>
+				</div>
+                <div class="box_rd_list">
+                    <div class="big_rdo">
+                        <input id="checkbox01" type="checkbox" name="checkbox">
+                        <label for="checkbox01">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">L01916799284</span>
+                                    <p class="name">무배당굿앤굿어린이스타종합보험(Hi1907)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>
+                                        <dt>구분</dt>
+                                        <dd>IRP목록</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="big_rdo">
+                        <input id="checkbox02" type="checkbox" name="checkbox">
+                        <label for="checkbox02">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">L01916799284</span>
+                                    <p class="name">무배당굿앤굿어린이스타종합보험(Hi1907)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>
+                                        <dt>구분</dt>
+                                        <dd>IRP목록</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="h3">신용정보주체 <span class="highlight">하*현</span>은(는) 다음과 같이 전송을 요구합니다.</p>
+                <table class="tbl_terms">
+                    <caption>약관안내</caption>
+                    <colgroup>
+                        <col style="width:150px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><em>개인(신용)정보를 제공받는 자</em></th>
+                            <td><strong>KB손해보험 MD사업자</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>전송을 요구하는 목적</em></th>
+                            <td>본인신용정보 통합조회 서비스의 이용</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>전송을 요구하는 개인(신용)정보의 보유기간</em></th>
+                            <td>서비스 이용종료 시/수집, 이용 동의 철회 시</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>정기적 전송을 요구하는지 여부 및 요구 시 전송주기</em></th>
+                            <td>
+                                <div class="radio_box">
+                                    <input id="radio1" type="radio" name="radio">
+                                    <label for="radio1">아니요</label>
+                                </div>
+                                <div class="radio_box">
+                                    <input id="radio2" type="radio" name="radio">
+                                    <label for="radio2">예(주 1회)</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><em>전송요구의 종료시점(전송요구서의 유효기간)</em></th>
+                            <td>
+                                <div class="radio_box">
+                                    <input id="radio3" type="radio" name="radio">
+                                    <label for="radio3">직접 입력</label>
+                                </div>
+                                <div class="radio_box">
+                                    <input id="radio4" type="radio" name="radioD">
+                                    <label for="radio4">1년</label>
+                                </div>
+                                <div class="date_box">
+                                    <input type="text" class="inp_date" title="날짜입력">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>동의 완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

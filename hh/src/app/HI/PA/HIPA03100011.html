@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#HIPA03100011" title="현재선택"><span>직업/직무 분류표 검색</span></a></li>
+                                <li class="tab"><a href="#HIPA03100012"><span>직업/직무명 검색</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HIPA03100011" class="tab_panel">
+                                <h2 class="offscr">직업/직무 분류표 검색</h2>
+                                <div class="governing">
+                                    <div class="governing_title">직업/직무에 따른 위험등급을 확인할 수 있습니다.</div>
+                                </div>
+                                <div class="top_search_box">
+                                    <div class="form_wrap">
+                                        <div class="form_row">
+                                            <label for="date" class="form_label">보험가입일</label>
+                                            <div class="date_box">
+                                                <input type="text" id="date" class="inp_date" title="날짜입력">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="select_step grade">
+                                    <ul>
+                                        <li>
+                                            <strong class="tit"><span>1</span> 대분류</strong>
+                                            <div class="btn_group scrollbar">
+                                                <button type="button" class="active"><span>관리자(사무직)</span></button>
+                                                <button type="button"><span>전문가 및 관련 종사자</span></button>
+                                                <button type="button"><span>사무 종사자</span></button>
+                                                <button type="button"><span>서비스 종사자</span></button>
+                                                <button type="button"><span>판매 종사자</span></button>
+                                                <button type="button"><span>농림어업 숙련 종사자</span></button>
+                                                <button type="button"><span>기능원 및 관련 기능 종사자</span></button>
+                                                <button type="button"><span>장치&middot;기계조작 및 조립 종사자</span></button>
+                                                <button type="button"><span>단순노무 종사자</span></button>
+                                                <button type="button"><span>군인</span></button>
+                                                <button type="button"><span>주부학생 및 기타비경제활동인구</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong class="tit"><span>2</span> 중분류</strong>
+                                            <div class="btn_group scrollbar">
+                                                <button type="button"><span>행정 사무원</span></button>
+                                                <button type="button" class="active"><span>보험 사무원</span></button>
+                                                <button type="button"><span>안내&middot;접수 사무원 및 안내원</span></button>
+                                                <button type="button"><span>고객 상담 및 모니터 요원</span></button>
+                                                <button type="button"><span>기타 사무원</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong class="tit"><span>3</span> 소분류</strong>
+                                            <div class="btn_group scrollbar">
+                                                <button type="button"><span>출판 및 자료편집 사무원</span></button>
+                                                <button type="button"><span>속기사</span></button>
+                                                <button type="button"><span>의료사무원(종합대학병원)</span></button>
+                                                <button type="button"><span>의료사무원(기타병원)</span></button>
+                                                <button type="button"><span>의료코디네이터</span></button>
+                                                <button type="button" class="active"><span>행정사</span></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <strong class="tit"><span>4</span> 위험등급</strong>
+                                            <div class="num">
+                                                <strong>1</strong>
+                                                <span>비위험</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="accordion">
+                                    <div class="title open">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>보험료 산출 시 위험등급 3단계 기준에 따라  차등 적용됩니다.(1급: 비위험, 2급: 중위험, 3급: 고위험)</li>
+                                            <li>직업 및 위험등급 분류표는 상해보험의 통지의무 주1) 및 보험료 적용 기준이 됩니다.
+                                                <ul class="list_bar">
+                                                    <li>주1) 「질병 · 상해보험 표준약관 제15조(계약 후 알릴 의무)」</li>
+                                                </ul>
+                                            </li>
+                                            <li>직업 또는 직무변경에 따라 위험등급이 변경되는 경우 보험료가 변경될 수 있으며 잔여기간 보장을 위한 재원인 해지환급금 정산으로 계약자가 추가로 납입하거나 환급 받을 금액이 발생할 수 있습니다.</li>
+                                            <li>직업 및 직무 관련 위험등급 검색이 어려우신 경우, 대표콜센터(1588-5656)로 문의하시기 바랍니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div id="HIPA03100012" class="tab_panel">
+                                <h2 class="offscr">직업/직무명 검색</h2>
+                                <div class="governing">
+                                    <div class="governing_title">보험가입일 기준으로 직업/직무에 따른 위험등급을 확인할 수 있습니다.</div>
+                                </div>
+                                <div class="top_search_box">
+                                    <div class="form_wrap">
+                                        <div class="form_row">
+                                            <label for="date" class="form_label">보험가입일</label>
+                                            <div class="date_box">
+                                                <input type="text" id="date" class="inp_date" title="날짜입력" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <label for="name" class="form_label">직업/직무명</label>
+                                            <div class="form_item">
+                                                <input type="text" id="name" class="inp_txt" placeholder="직업 또는 직무명 입력">
+                                                <p class="error_text">검색어를 2글자 이상 입력해 주세요</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn primary"><span>검색</span></button>
+                                </div>
+                                
+                                <h2 class="h3">직업별 위험등급</h2>
+                                <div class="exp_grade">
+                                    <div class="info">
+                                        <dl>
+                                            <div>
+                                                <dt>직업명</dt>
+                                                <dd>보험설계사(당사)</dd>
+                                            </div>
+                                            <div>
+                                                <dt>위험등급</dt>
+                                                <dd><strong>3</strong><span>고위험</span></dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <div class="results">
+                                        <button type="button"><span><strong>보험</strong>대리점(현대해상)</span></button>
+                                        <button type="button" class="active"><span><strong>보험</strong>설계사(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(다른 보험회사)</span></button>
+                                        <button type="button"><span><strong>보험</strong> 및 금융상품 개발자</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>설계사(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(다른 보험회사)</span></button>
+                                        <button type="button"><span><strong>보험</strong> 및 금융상품 개발자</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>설계사(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(다른 보험회사)</span></button>
+                                        <button type="button"><span><strong>보험</strong> 및 금융상품 개발자</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>설계사(현대해상)</span></button>
+                                        <button type="button"><span><strong>보험</strong>대리점(다른 보험회사)</span></button>
+                                        <button type="button"><span><strong>보험</strong> 및 금융상품 개발자</span></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion">
+                                    <div class="title open">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>보험료 산출 시 위험등급 3단계 기준에 따라 차등 적용됩니다.(1급: 비위험, 2급: 중위험, 3급: 고위험)</li>
+                                            <li>직업 및 위험등급 분류표는 상해보험의 통지의무 주1) 및 보험료 적용 기준이 됩니다.
+                                                <ul class="list_bar">
+                                                    <li>주1) 「질병 · 상해보험 표준약관 제15조(계약 후 알릴 의무)」</li>
+                                                </ul>
+                                            </li>
+                                            <li>직업 또는 직무변경에 따라 위험등급이 변경되는 경우 보험료가 변경될 수 있으며 잔여기간 보장을 위한 재원인 해지환급금 정산으로 계약자가 추가로 납입하거나 환급 받을 금액이 발생할 수 있습니다.</li>
+                                            <li>직업 및 직무 관련 위험등급 검색이 어려우신 경우, 대표콜센터(1588-5656)로 문의하시기 바랍니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    
+</body>
+</html>

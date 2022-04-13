@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '대출신청정보 입력', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HILF02010021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HILF02010021" class="btn line dialog_open">(팝업)총 대출 1억원 초과 안내</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <div id="HILF02010021" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>총 대출 1억원 초과 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <p>
+                    고객님께서는 이번 대출을 포함하여 <span class="highlight">신용대출 총액이 1억원을 초과</span>하여
+                    금융당국의 가계부채 관리방안에 따라 <span class="highlight">규제지역에서 1년 내에 주택을 구입하는 경우 신용대출이 회수</span>됩니다.<br><br>
+                    규제에 저촉되지 않는 신용대출 최대 신청가능 금액은 <span class="highlight">00만원</span>입니다.    
+                </p>
+                
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn second dialog_close"><span>취소</span></button>
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

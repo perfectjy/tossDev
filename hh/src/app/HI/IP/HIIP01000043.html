@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '내 보험 보장분석', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#AlimTalk');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#AlimTalk" class="btn line dialog_open">(팝업)알림톡 발송</a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 알림톡 발송 팝업 -->
+    <div id="AlimTalk" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1 class="pc_hide">알림톡 발송</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing">
+                        <div class="governing_title">
+                            보장분석 결과를 <br>
+                            카카오톡으로 받아 보세요.
+                        </div>
+                    </div>
+
+                    <div class="form_list">
+                        <label for="phone" class="form_label">휴대전화번호</label>
+                        <div class="contact_item">
+                            <div class="item">
+                                <select id="phone" name="" title="이동통신사번호">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="" maxlength="8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn second"><span>취소</span></button>
+                    <button type="button" class="btn primary"><span>알림톡 발송</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

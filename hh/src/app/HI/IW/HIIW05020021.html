@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '납입금액/계좌정보 입력', tooltip: true, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HIIW05020021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW05020021" class="btn line dialog_open">추가납입한도 상세</a>
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+    <!-- 추가납입한도 상세 -->
+    <div id="HIIW05020021" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>추가납입한도 상세</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title">
+                                연금저축보험 추가납입가능금액 상세입니다. 
+                            </div>
+                            <p class="info_text">
+                                추가납입보험료의 납입한도는 보험연도를 기준으로 연간 총 기본보험료(적립보험료)의 2배 이내입니다.<br>
+                                ‘추가납입상품한도’와 '추가납연금저축한도' 중 낮은 금액이 실제 납입 가능한 한도금액입니다.
+                            </p>
+                        </div>
+
+                        <table class="tbl_row">
+                            <caption>추가납입상품한도,추가납입한도액,연금한도설정금액,연납입(예상)액</caption>
+                            <colgroup>
+                                <col style="width:180px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span class="highlight">추가납입상품한도</span></th>
+                                    <td><span class="highlight">1,200,000원</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="highlight">추가납연금저축한도</span></th>
+                                    <td><span class="highlight">1,200,000원</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연금한도설정금액</th>
+                                    <td>1,200,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연납입(예상)액</th>
+                                    <td>1,200,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

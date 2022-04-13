@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/contents.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '광고/캠페인', tooltip: false, prev: true, menu: true };
+
+        // 
+        $(document).ready(function(){
+
+            $('.ad_img .vd_btn').on("click", function(){
+                var vo = $(this).parent().find('video');
+                var video_get = vo.get(0);
+                var thumb = $(this).parent().find('.thumb');
+                $(this).hide();
+                thumb.hide();
+                vo.css('position', 'static').attr('controls', 'controls');
+                video_get.play();
+            });
+
+            $('.ad_box .ad_tit').click(function(){
+                $this = $(this);
+                if($this.hasClass('active')){
+                    $this.removeClass('active');
+                }else{
+                    $this.addClass('active');
+                }
+            })
+
+        })
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#KCPC04000011" title="현재선택"><span>TV광고</span></a></li>
+                                <li class="tab"><a href="#KCPC04000012"><span>라디오광고</span></a></li>
+                                <li class="tab"><a href="#KCPC04000013"><span>인쇄광고</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="KCPC04000011" class="tab_panel">
+
+                                <h2 class="offscr">TV광고</h2>
+                                <div ckass="form_wrap">
+                                    <div class="form_row">
+                                        <label for="year" class="form_label">연도 선택</label>
+                                        <div class="form_item">
+                                            <select id="year">
+                                                <option>전체</option>
+                                                <option>2021</option>
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ad_wrap">
+                                    <div class="ad_box">
+                                        <div class="ad_tit mo_hide">지킨다 편(2021)</div>
+                                        <div class="ad_img">
+                                            <span class="label">어린이보험</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/thumbnail/vd_thumbnail01.png">
+                                            </p>
+                                            <video src="/src/assets/video/jinsan.mp4" width="100%" height="100%" preload="none" type="video/mp4"></video>
+                                            <button class="vd_btn"><span class="offscr">재생</span></button>
+                                        </div>
+                                        <div class="ad_tit pc_hide">지킨다 편(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                1살, 내 밥그릇을 지켰다<br>
+                                                5살, 내 사랑을 지켰다<br>
+                                                7살엔 예의를<br>
+                                                10살엔 자존심을<br>
+                                                17살엔 본분을 지켰다.<br>
+                                                그리고 나를 지켜준 건<br>
+                                                2004년부터 함께한 굿앤굿어린이종합보험<br>
+                                                260만 굿앤굿 어린이와 함께 자랍니다, 함께 지킵니다<br>
+                                                마음이 합니다, 현대해상
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ad_box">
+                                        <div class="ad_tit mo_hide">함께 타고 있어요 편_A(2021)</div>
+                                        <div class="ad_img">
+                                            <span class="label">다이렉트</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/thumbnail/vd_thumbnail01.png">
+                                            </p>
+                                        </div>
+                                        <div class="ad_tit pc_hide">함께 타고 있어요 편_A(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                아이: 사랑스런 아이가<br>
+                                                썸녀: 설레는 썸남이<br>
+                                                부하직원: 천사같은 부장님이<br>
+                                                N/A: 타고있어요<br>
+                                                그래서, 현대해상 다이렉트가 함께 타고있어요<br>
+                                                서비스 종합만족도 1위 현대해상 다이렉트 자동차보험
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="list_more">
+                                        <button type="button" class="btn_more">
+                                            <span class="offscr">더보기</span>
+                                        </button>
+                                    </div>
+                                </div>                               
+                                
+
+                            </div>      
+                            <div id="KCPC04000012" class="tab_panel">
+                                <h2 class="offscr">라디오광고</h2>
+                                <div ckass="form_wrap">
+                                    <div class="form_row">
+                                        <label for="year" class="form_label">연도 선택</label>
+                                        <div class="form_item">
+                                            <select id="year">
+                                                <option>전체</option>
+                                                <option>2021</option>
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ad_wrap">
+                                    <div class="ad_box">
+                                        <div class="ad_tit mo_hide">굿앤굿어린이보험_SONG 편(2021)</div>
+                                        <div class="ad_img">
+                                            <span class="label">굿앤굿어린이보험</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/thumbnail/vd_thumbnail01.png">
+                                            </p>
+                                            <video src="/src/assets/video/jinsan.mp4" width="100%" height="100%" preload="none" type="video/mp4"></video>
+                                            <button class="vd_btn"><span class="offscr">재생</span></button>
+                                        </div>
+                                        <div class="ad_tit pc_hide">굿앤굿어린이보험_SONG 편(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                (Song)<br>
+                                                굿앤굿 굿앤굿 굿앤굿굿<br>
+                                                2명 중 1명은 굿앤~굿!<br>
+                                                <br>
+                                                (Na)<br>
+                                                대한민국 신생아<br>
+                                                2명 중 1명이 가입한<br>
+                                                현대해상 굿앤굿어린이종합보험<br>
+                                                <br>
+                                                (Song)<br>
+                                                어린이보험은<br>
+                                                굿앤~굿!<br>
+                                                <br>
+                                                2020년 한 해 신생아 중 현대해상 어린이보험 가입자 기준
+                                                가입 시 유의사항을 확인하세요.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ad_box">
+                                        <div class="ad_tit mo_hide">거리두기 캠페인_앞차와 거리두기(2020)</div>
+                                        <div class="ad_img">
+                                            <span class="label">하이카</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/thumbnail/vd_thumbnail01.png">
+                                            </p>
+                                            <video src="/src/assets/video/jinsan.mp4" width="100%" height="100%" preload="none" type="video/mp4"></video>
+                                            <button class="vd_btn"><span class="offscr">재생</span></button>
+                                        </div>
+                                        <div class="ad_tit pc_hide">거리두기 캠페인_앞차와 거리두기(2020)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                (Song)<br>
+                                                굿앤굿 굿앤굿 굿앤굿굿<br>
+                                                2명 중 1명은 굿앤~굿!<br>
+                                                <br>
+                                                (Na)<br>
+                                                대한민국 신생아<br>
+                                                2명 중 1명이 가입한<br>
+                                                현대해상 굿앤굿어린이종합보험<br>
+                                                <br>
+                                                (Song)<br>
+                                                어린이보험은<br>
+                                                굿앤~굿!<br>
+                                                <br>
+                                                2020년 한 해 신생아 중 현대해상 어린이보험 가입자 기준
+                                                가입 시 유의사항을 확인하세요.
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="list_more">
+                                        <button type="button" class="btn_more">
+                                            <span class="offscr">더보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+
+                            </div>    
+                            <div id="KCPC04000013" class="tab_panel">
+                                <h2 class="offscr">인쇄광고</h2>
+                                <div ckass="form_wrap">
+                                    <div class="form_row">
+                                        <label for="year" class="form_label">연도 선택</label>
+                                        <div class="form_item">
+                                            <select id="year">
+                                                <option>전체</option>
+                                                <option>2021</option>
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ad_wrap mz_wrap">
+                                    <div class="ad_box">
+                                        <div class="ad_img">
+                                            <span class="label">구분 표시</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/_dummy/mz_thumbnail01.png">
+                                            </p>
+                                        </div>
+                                        <div class="ad_tit">마음갤러리_포옹(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                "고마워"<br>
+                                                말하면 말할 수록<br>
+                                                가까워지는 말<br>
+                                                <br>
+                                                당신의 평범한 오늘을 지킵니다.<br>
+                                                마음이 합니다, 현대해상<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ad_box">
+                                        <div class="ad_img">
+                                            <span class="label">구분 표시</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/_dummy/mz_thumbnail01.png">
+                                            </p>
+                                        </div>
+                                        <div class="ad_tit">마음갤러리_포옹(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                "고마워"<br>
+                                                말하면 말할 수록<br>
+                                                가까워지는 말<br>
+                                                <br>
+                                                당신의 평범한 오늘을 지킵니다.<br>
+                                                마음이 합니다, 현대해상<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ad_box">
+                                        <div class="ad_img">
+                                            <span class="label">구분 표시</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/_dummy/mz_thumbnail01.png">
+                                            </p>
+                                        </div>
+                                        <div class="ad_tit">마음갤러리_포옹(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                "고마워"<br>
+                                                말하면 말할 수록<br>
+                                                가까워지는 말<br>
+                                                <br>
+                                                당신의 평범한 오늘을 지킵니다.<br>
+                                                마음이 합니다, 현대해상<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ad_box">
+                                        <div class="ad_img">
+                                            <span class="label">구분 표시</span>
+                                            <p class="thumb">
+                                                <img src="/src/assets/images/_dummy/mz_thumbnail01.png">
+                                            </p>
+                                        </div>
+                                        <div class="ad_tit">마음갤러리_포옹(2021)</div>
+                                        <div class="subtitles">                                            
+                                            <div class="scrollbar">
+                                                "고마워"<br>
+                                                말하면 말할 수록<br>
+                                                가까워지는 말<br>
+                                                <br>
+                                                당신의 평범한 오늘을 지킵니다.<br>
+                                                마음이 합니다, 현대해상<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list_more">
+                                        <button type="button" class="btn_more">
+                                            <span class="offscr">더보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

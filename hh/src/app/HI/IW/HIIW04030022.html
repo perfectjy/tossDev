@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '상품설명서 확인/발행', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 상품설명서 확인/발행 open
+            Dialog.open('#HIIW04030022');
+
+            // 청약서 확인 진행 단계 표시
+            displayStep(2, 5);
+        });
+
+        /* 청약서 확인 진행 단계 표시
+            1) _now : 현재 단계
+            2) _total : 전체 단계
+        */
+        function displayStep(_now, _total) {
+            var $stepObj = $('.step_number'),
+                $step = '',
+                _state, _stepNum;
+            for (var i=1; i<=_total; i++) {
+                _state = _now === i ? 'class="now"'
+                    : _now > i ? 'class="complete"'
+                    : '';
+                _stepNum = _now === i ? '현재'
+                    : _now > i ? '완료'
+                    : i;
+                
+                $step += '<span '+ _state +' title="'+ _stepNum +'단계">'+ i +'</span>';
+            }
+
+            $stepObj.html($step);
+        }
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04030022" class="btn line dialog_open">상품설명서 확인/발행</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 상품설명서 확인/발행 팝업 -->
+    <div id="HIIW04030022" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>상품설명서 확인/발행</h1>
+
+                <!-- 진행 단계 -->
+                <div class="step_number"></div>
+
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <p class="h4 txt_c mo_hide">상품설명서의 모든 페이지를 열람하신 후 PDF 파일 저장 또는 인쇄해 주세요.</p>
+
+                        <!-- 전자문서 솔루션 영역 -->
+                        <div class="elec_document">
+
+                        </div>
+                        <!--// 전자문서 솔루션 영역 -->
+
+                        <div class="btn_conts">
+                            <button type="button" class="btn line">PDF 파일 저장</button>
+                            <button type="button" class="btn line mo_hide">인쇄</button>
+                        </div>
+
+                        <ul class="list_dot">
+                            <li>화면 아래 [다음 페이지]를 눌러 상품설명서의 모든 페이지를 확인한 후 저장 또는 인쇄해 주세요.</li>
+                            <li>
+                                상품설명서 내용이 보이지 않거나 PDF 파일 저장이 안 되는 경우 [인터넷창구 오류해결안내]를 참고해 주세요.
+                                <div class="ac_in_btns">
+                                    <button type="button" class="btn base">인터넷창구 오류해결안내</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn prog">
+                    <!-- 첫 페이지일 때 하단 버튼 -->
+                    <button type="button" class="btn primary">다음 페이지(1/8)</button>
+                    <!--// 첫 페이지일 때 하단 버튼 -->
+
+                    <!-- 중간 페이지일 때 하단 버튼 -->
+                    <button type="button" class="btn second">이전</button>
+                    <button type="button" class="btn primary">다음 페이지(2/8)</button>
+                    <!--// 중간 페이지일 때 하단 버튼 -->
+
+                    <!-- 마지막 페이지일 때 하단 버튼 -->
+                    <button type="button" class="btn second">이전</button>
+                    <button type="button" class="btn primary boolean">
+                        확인 후 다음
+
+                        <!-- 마지막 페이지일 때 말풍선 -->
+                        <div class="laststep_boolean">
+                            <p>모든 페이지 확인 완료!</p>
+                            PDF 파일 저장 후 버튼을 눌러 주세요. 
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

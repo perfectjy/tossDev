@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '가입경력인정자증명서', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">가입경력인정자증명서를 발급할<br>
+                            가입경력사항을 확인해 주세요.</h2>
+                        <p class="info_text highlight">
+                            기명피보험자인 계약은 해당되지 않습니다.<br>
+                            유지 중인 계약의 경력인정기간 말일은 현재일 기준으로 기재됩니다.<br class="p_br">
+                            중복되는 가입경력 인정기간은 제외되어 합산됩니다.
+                        </p>
+                    </div>
+
+                    <table class="tbl_row">
+                        <caption>가입경력인정자</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">가입경력인정자</th>
+                                <td>하이현(123456-*******)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="form_wrap">
+                        <div class="form_row">
+                            <label for="date_term" class="form_label">기준일</label>
+                            <div class="date_box">
+                                <input type="text" class="inp_date" title="날짜입력" id="date_term" readonly>
+                            </div>                          
+                        </div>
+                        <p class="imp_txt highlight">제도시행일 2013.09.01 책임개시 이후 계약 조회 가능</p>
+                    </div>
+
+                    <hr>
+
+                    <h3 class="h3">가입경력사항</h3>
+                    <div class="each_select_list">
+                        <div class="rd_box contract">
+                            <div class="sub_conts">
+                                <div class="subject">
+                                    <span class="sub">M2020G600841</span>
+                                    <p class="name">Hicar개인용(21거91**)</p>
+                                </div>
+                                <div class="substance">
+                                    <dl>                                        
+                                        <dt>경력인정기간</dt>
+                                        <dd>2019.08.25~2020.08.25</dd>
+                                        <dt>경력일수</dt>
+                                        <dd>366일</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="no_list">
+                        <p>가입경력사항이 없습니다.</p>
+                    </div>
+
+
+                    
+
+                </div>
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>다음</span></button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

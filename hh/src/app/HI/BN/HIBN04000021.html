@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+    <script type="text/javascript">
+        mbHeader = { title: '당첨자 발표', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <!-- 이벤트 응모 -->
+                    <div class="event_cont">
+                        <div class="governing">
+                            <h2 class="governing_title">
+                                보험계약대출 상시 이벤트 응모
+                            </h2>
+                            <p class="info_text">하*현님, 이벤트 당첨 시 연락 받으실 휴대전화번호가 <span class="highlight">010-****-1234</span>가 맞는지 확인해 주세요.</p>
+                            <div class="btn_conts">
+                                <a href="#none" class="btn line">개인정보 변경</a>
+                            </div>
+                        </div>
+
+                        <div class="event_roulette">
+                            <div class="event_info">
+                                <span>경품 당첨의 기회!</span>
+                                <p>
+                                    <span class="highlight">보험계약대출</span> 이용하고,<br>
+                                    <span class="highlight">행운의 룰렛</span>을 돌려보세요!
+                                </p>
+                            </div>
+
+                            <div class="roulette">
+                                <div class="arrow"></div>
+                                <div class="center"></div>
+                                <div class="rotate_pan"></div>
+                            </div>
+
+                            <button type="button" class="btn ofill"><span>이벤트 응모</span></button>
+                        </div>
+                    </div>
+                    <!--// 이벤트 응모 -->
+                    
+                    <!-- 당첨 여부에 따른 결과 -->
+                    <div class="prize_list">
+                        <!-- 당첨인 경우 -->
+                        <div class="event_result success">
+                            <p>하이현님, 축하드립니다!</p>
+                            <span class="img"><img src="/src/assets/images/@event_starbucks.png" alt="스타벅스 커피쿠폰"></span>
+                            <div class="txt">
+                                <span class="highlight">스타벅스 카페아메리카노</span>
+                                경품에 당첨되셨습니다.
+                            </div>
+                        </div>
+                        <!--// 당첨인 경우 -->
+
+                        <!-- 꽝인경우 -->
+                        <div class="event_result fail">
+                            <span class="img"><img src="/src/assets/images/@event_fail.png" alt=""></span>
+                            <div class="txt">
+                                <p>다음 기회에는 꼭!</p>
+                                <span class="sorry">아쉽지만 다음 기회를 기대해 주세요.</span>
+                            </div>
+                        </div>
+                        <!--// 꽝인경우 -->
+                    </div>
+                    <!--// 당첨 여부에 따른 결과 -->
+                
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>당첨자 발표 후 7일 이내에 연락이 되지 않거나 고객님의 정보가 불분명하여 경품이 반송되는 경우, 경품 수령을 거부하는 경우 등은 당첨이 취소될 수 있습니다.</li>
+                                <li>해당 이벤트 및 경품은 사정에 의해 예고없이 변경될 수 있으며, 변경 시에는 동급의 경품을 지급합니다.</li>
+                            </ul>
+                        </div>
+                    </div>           
+                    <div class="complete_btns">
+                        <button type="button" class="btn second"><span>이전</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

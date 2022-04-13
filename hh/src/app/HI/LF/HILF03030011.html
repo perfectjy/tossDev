@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '메인으로 이동', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HILF03030011');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HILF03030011" class="btn line dialog_open">담보대출상환 서비스 안내</a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HILF03030011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <h2 class="governing_title info_service">
+                                대출 원리금 정기 납입은 물론<br class="mo_br"> 
+                                중도상환도 홈페이지, 모바일웹, 모바일앱에서 365일 자유롭게 할 수 있어요.
+                            </h2>
+                        </div>
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>대출계약을 체결하여 거래 유지 중인 고객</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간(즉시이체)</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>대출약정계약에 따라 매월 납입해야 할 대출원리금 정기납입 또는 대출원리금의 중도상환(중도 상환은 전액 상환이 불가하며 대출잔액이 10만원 초과 시 신청 가능함)</li>
+                                    <li>상환가능은행
+                                        <div class="ac_in_btns">
+                                            <button type="button" class="btn base"><span>상환가능은행 확인하기</span></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <div class="tab_section t1">
+                                    <div class="tab_list tab_nav">
+                                        <ul>
+                                            <li class="tab active"><a href="#panel1" title="현재선택"><span>정기 납입</span></a></li>
+                                            <li class="tab"><a href="#panel2"><span>중도 상환</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_contents">
+                                        <div id="panel1" class="tab_panel">
+                                            <ol class="use_step_proc">
+                                                <li><span class="num">1</span><strong>계약 선택</strong></li>
+                                                <li><span class="num">2</span><strong>출금계좌 입력</strong></li>
+                                                <li><span class="num">3</span><strong>신청정보 확인</strong></li>
+                                                <li>
+                                                    <span class="auth">인증</span><strong>전자서명</strong>
+                                                    <a href="#none" class="btn_tooltip"><span class="offscr">설명 보기</span></a>
+                                                </li>
+                                                <li><span class="num">4</span><strong>신청완료</strong></li>
+                                            </ol>
+                                        </div>      
+                                        <div id="panel2" class="tab_panel">
+                                            <ol class="use_step_proc">
+                                                <li><span class="num">1</span><strong>상환신청금액 입력</strong></li>
+                                                <li><span class="num">2</span><strong>출금계좌 입력</strong></li>
+                                                <li><span class="num">3</span><strong>신청정보 확인</strong></li>
+                                                <li><span class="auth">인증</span><strong>전자서명</strong>
+                                                    <div class="ui_tooltip_wrap">
+                                                        <a href="#none"  class="ui_btn hintInfo"><span class="offscr">설명 보기</span></a>
+                                                        <div class="tooltip">
+                                                            <i></i>
+                                                            <p class="arr_half">
+                                                                다음 인증방법 중 선택 가능합니다.<br>
+                                                                <span>① 간편인증</span>
+                                                                <span>② 카카오페이</span>
+                                                                <span>③ 네이버인증서</span>
+                                                                <span>④ 공동인증서</span>
+                                                                <span>⑤ 금융인증서</span>
+                                                            </p>                                
+                                                            <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li><span class="num">4</span><strong>신청완료</strong></li>
+                                            </ol>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>대출 상환일이 토/일요일, 공휴일인 경우, 일부 계약은 상환이 제한될 수 있습니다.</li>
+                                    <li>문의사항은 대출상담 콜센터(<span class="tel_number">1588-5655</span>)로 연락해 주세요.(아래 [상환방법] 업무시간 참고)</li>
+                                    <li>출금가능계좌가 아닌 경우 대출상담 콜센터(<span class="tel_number">1588-5655</span>)를 통해 가상계좌를 안내받은 후 입금하시면 상환할 수 있습니다.</li>
+                                </ul>
+
+                                <h3 class="h5">상환방법</h3>
+                                <ul class="list_dot">
+                                    <li>홈페이지, 모바일웹, 모바일앱<br>
+                                        365일 24시간
+                                    </li>
+                                    <li>
+                                        대출상담 콜센터(<span class="tel_number">1588-5655</span>)<br>
+                                        평일 09:00~18:00(토/일요일, 공휴일 제외)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>담보대출상환</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

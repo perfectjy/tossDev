@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+                        <h2 class="governing_title">연금개시신청을 위해 정보를 입력해 주세요.</h2>
+					</div>
+					
+					<div class="comp">
+						<div class="tbl_top_info">
+							<h3 class="h3 hmark">고객정보</h3>
+						</div>
+						<table class="tbl_row">
+							<caption>가입자이름,생년월일,계약일,제도구분,계약번호,전화번호,휴대전화번호,이메일,주소에 대한 정보</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:auto;">
+								<col style="width:20%;">
+								<col style="width:auto;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">가입자 이름</th>
+									<td>홍길동</td>
+									<th scope="row">생년월일</th>
+									<td>580101(만63세)</td>
+								</tr>
+								<tr>
+									<th scope="row">계약일</th>
+									<td>2021.06.30</td>
+									<th scope="row">제도구분</th>
+									<td>개인형IRP</td>
+								</tr>
+								<tr>
+									<th scope="row">계약번호</th>
+									<td>Q20136******</td>
+									<th scope="row">전화번호</th>
+									<td>-</td>
+								</tr>
+								<tr>
+									<th scope="row">휴대전화번호</th>
+									<td>010-1234-1234</td>
+									<th scope="row">이메일</th>
+									<td>akdfoe@hi.co.kr</td>
+								</tr>
+								<tr>
+									<th scope="row">주소</th>
+									<td colspan="3">10101 서울시 강남구 논현동 ***</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">연금 신청</h3>
+						<div class="form_wrap parallel">
+							<div class="form_list">
+								<span class="form_label">지급 유형</span>
+								<div class="form_item">
+									<input type="text" id="paymentType" name="" placeholder="정액형" disabled>
+								</div>
+							</div>
+							<div class="form_list">
+								<label for="payDay" class="form_label">지급일</label>
+								<div class="item">
+									<select id="payDay" name="" title="지급일">
+										<option value="0" selected="">선택</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="30">30</option>
+									</select>
+								</div>
+								<!-- 오류 메시지 -->
+								<p class="error_text">지급일을 선택해 주세요.</p>
+							</div>
+							<div class="form_list">
+								<label for="period" class="form_label">지급기간</label>
+								<div class="item">
+									<select id="period">
+										<option value="0" selected="">선택</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="30">30</option>
+									</select>
+								</div>
+								<!-- 오류 메시지 -->
+								<p class="error_text">지급기간을 선택해 주세요.</p>
+							</div>	
+							<div class="form_list">
+								<label for="payTerm" class="form_label">지급주기</label>
+								<div class="item">
+									<select id="payTerm">
+										<option value="0" selected="">선택</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="30">30</option>
+									</select>
+								</div>
+								<!-- 오류 메시지 -->
+								<p class="error_text">지급주기를 선택해 주세요.</p>
+							</div>										
+							
+							<div class="form_list">
+								<label for="payStartDay" class="form_label">지급시작일<span class="label_txt">(만 <strong class="highlight">0</strong>세)</span></label>
+								<div class="date_box">
+									<input type="text" id="payStartDay" class="inp_date" title="지급시작일">
+								</div>
+								<!-- 오류 메시지 -->
+								<p class="error_text">지급시작일을 입력해 주세요.</p>
+							</div>
+							<div class="form_list">
+								<label class="form_label">연금전환일</label>
+								<div class="form_item">
+									<input type="tel" class="inp_txt" title="연금전환일" placeholder="YYYY.MM.DD" disabled>
+								</div>
+							</div>
+
+							<div class="form_list">
+								<span class="form_label">총 지급횟수</span>
+								<div class="form_item">
+									<input type="text" id="paymentType" name="" placeholder="10회" disabled>
+								</div>
+							</div>
+							<div class="form_list">
+								<span class="form_label">최종지급일</span>
+								<div class="form_item">
+									<input type="tel" class="inp_txt" title="최종지급일" placeholder="YYYY.MM.DD" disabled>
+								</div>
+							</div>
+				
+							<div class="form_list">
+								<label for="payMethod" class="form_label">지급방법</label>
+								<div class="item">
+									<select id="payMethod" name="" title="지급방법">
+										<option value="0" selected="">계좌이체</option>
+										<option value="1">창구지급</option>
+									</select>
+								</div>
+							</div>
+							<div class="form_list">
+								<span class="form_label">은행/계좌번호(본인명의 계좌만 가능)</span>
+								<div class="bank">
+									<button type="button" class="btn line"><span>은행 선택</span></button>
+									<div class="form_item col2 security">
+										<input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" value="" disabled>
+										<!-- 계좌확인 후 버튼에 active 추가 -->
+										<button type="button" class="btn oline"><span>계좌확인</span></button>
+									</div>
+									<div class="form_item">
+										<input type="text" id="selDepositor" name="" placeholder="[계좌확인] 누르면 예금주 자동 입력" value="" disabled>
+									</div>
+									<!-- 계좌번호 잘못 입력했을 경우 -->
+									<p class="error_text">계좌번호를 정확하게 입력해 주세요.(‘-’없이 숫자만 입력)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">보유상품 정보</h3>
+						<div class="tbl_top_info n1">
+							<span class="unit">단위: 원</span>
+						</div>
+						<table class="tbl_data">
+							<caption>상품종류,상품명,투입일자,적립금액,매도예약수량/금액,결제일수에 대한 정보</caption>
+							<colgroup>
+								<col style="width:170px;">
+								<col style="width:auto;">
+								<col style="width:140px;">
+								<col style="width:180px;" span="2">
+								<col style="width:110px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">상품종류</th>
+									<th scope="col">상품명</th>
+									<th scope="col">투입일자</th>
+									<th scope="col">적립금액</th>
+									<th scope="col">매도예약수량/금액</th>
+									<th scope="col">결제일수</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>금리연동형</td>
+									<td>(무)현대 개인형IRP 퇴직연금보험 금리연동형</td>
+									<td>YYYY.MM.DD</td>
+									<td class="txt_r">000,000,000,000</td>
+									<td class="txt_r">000,000,000,000</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>금리연동형</td>
+									<td>(무)현대 개인형IRP 퇴직연금보험 금리연동형</td>
+									<td>YYYY.MM.DD</td>
+									<td class="txt_r">000,000,000,000</td>
+									<td class="txt_r">000,000,000,000</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			   
+					<div class="comp">
+						<h3 class="h3 hmark">연금상품 매수정보</h3>
+						<div class="tbl_top_info n1">
+							<span class="unit">단위: 원</span>
+						</div>
+						<table class="tbl_data">
+							<caption>상품종류,상품명,투입일자,적립금액에 대한 정보</caption>
+							<colgroup>
+								<col style="width:170px;">
+								<col style="width:auto;">
+								<col style="width:170px;">
+								<col style="width:300px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">상품종류</th>
+									<th scope="col">상품명</th>
+									<th scope="col">예상매수금액</th>
+									<th scope="col">최소가입금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>연금보험</td>
+									<td>(무)현대 개인형IRP 퇴직연금보험 금리연동형</td>
+									<td>YYYY.MM.DD</td>
+									<td class="txt_r">000,000,000,000</td>
+								</tr>
+								<tr>
+									<td>연금보험</td>
+									<td>(무)현대 개인형IRP 퇴직연금보험 금리연동형</td>
+									<td>YYYY.MM.DD</td>
+									<td class="txt_r">000,000,000,000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3 hmark">보유계약 현황</h3>
+						<div class="tbl_top_info n1">
+							<span class="unit">단위: 원</span>
+						</div>
+						<table class="tbl_data">
+							<caption>계약번호,가입자이름,가입자번호에 대한 정보</caption>
+							<colgroup>
+								<col style="width:425px;">
+								<col style="width:auto;">
+								<col style="width:350px;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">계약번호</th>
+									<th scope="col">가입자이름</th>
+									<th scope="col">가입자번호</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Q201360013******</td>
+									<td>홍*동</td>
+									<td>100000000******</td>
+								</tr>
+								<tr>
+									<td>Q201360013******</td>
+									<td>홍*동</td>
+									<td>100000000******</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="fixed_btm_btns">
+						<div class="btns">
+							<button type="button" class="btn second">취소</button>
+							<button type="button" class="btn primary">연금신청</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

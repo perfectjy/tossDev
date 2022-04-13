@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '사고접수 안내', tooltip: false, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            자동차 사고접수 방법을 안내해 드립니다.
+                        </h2>
+                    </div>
+                    <h3 class="h3">사고접수 방법
+                        <!-- tooltip -->
+                        <div class="ui_tooltip_wrap">
+                            <button type="button" class="ui_btn hintInfo"><span class="offscr">사고접수 방법</span></button>
+                            <div class="tooltip">
+                                <i></i>
+                                <p>신속한 접수를 위한 팁(TIP)</p>
+                                <ol>
+                                    <li>1) 차량번호 및 피보험자 주민등록번호</li>
+                                    <li>2) 사고발생시간 및 장소</li>
+                                    <li>3) 차량 운전자 연락처, 주민등록번호</li>
+                                    <li>4) 상대방 운전자 연락처, 차량번호</li>
+                                    <li>5) 정비업체 및 치료병원(확정 시)</li>    
+                                </ol>
+                                <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                            </div>
+                        </div>
+                        <!--// tooltip -->
+                    </h3>
+                    <div class="manager_list">
+                        <div class="manager">
+                            <ul class="list_dot">
+                                <li>대표콜센터 접수 (연결 후 <span class="highlight">ARS 단축번호 2번</span>을 눌러 접수)</li>
+                            </ul>
+                            <div class="contact_info">
+                                <span class="ico agency"></span>
+                                <div class="name">현대해상 대표콜센터</div>
+                                <div class="phone">
+                                    <span class="tel_number">1588-5656</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manager">
+                            <ul class="list_dot">
+                                <li>청각장애인/언어장애인 문자접수</li>
+                            </ul>
+                            <div class="contact_info">
+                                <span class="ico sms"></span>
+                                <div class="name">전용 접수번호</div>
+                                <div class="message">
+                                    <span class="sms_number">013-3366-5656</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h3">사고접수 처리 절차</h3>
+                    <ul class="list_dot">
+                        <li><span class="highlight">3년 이내</span> 발생한 사고에 대해 청구할 수 있습니다.</li>
+                        <li>보험금 확정일로부터 <span class="highlight">7일 이내에 지급</span>됩니다.</li>
+                    </ul>
+                    <div class="dline-box t1">
+                        <ol class="use_step_proc">
+                            <li><span class="num">1</span><strong>사고접수 및 보험금 청구</strong></li>
+                            <li><span class="num">2</span><strong>사고내용 조사 및 피해물/피해자 확인</strong></li>
+                            <li><span class="num">3</span><strong>청구서류 제출</strong></li>
+                            <li><span class="num">4</span><strong>보험금 신청(대인/대물배상의 경우 합의 포함)</strong></li>
+                            <li><span class="num">5</span><strong>보험금 지급</strong></li>
+                        </ol>
+                    </div>
+                    <div class="btn_conts">
+                        <a href="#none" class="btn line">필요서류 확인</a>
+                        <a href="#none" class="btn line">처리현황 및 보상담당자 조회</a>
+                    </div>
+
+                    <h3 class="h3">자주 하는 질문(FAQ)</h3>
+                    <div class="accordion faq">
+                        <div class="title"><span class="toggle">청구서류를 사본으로 제출할 수 있나요?</span></div>
+                        <div class="panel">
+                            보험금 청구 시 사본 제출이 허용되지만, 필요시(도난보험금 지급, 사망보험금 청구를 위한 유가족 인감증명서 등) 에는 원본을 제출해야 합니다.
+                        </div>
+                        <div class="title"><span class="toggle">진료비에 대해 지불보증을 받을 수 있나요?</span></div>
+                        <div class="panel">
+                            고객님께서 가입하신 장기(연금) 보험의 해지환급금을 담보로 대출받는 것을 의미합니다.<br>
+                            해당 계약 해지환급금의 30~95% 이내에서 보험계약대출이 가능하며 일부 불가한 상품도 있습니다.<br>
+                            홈페이지 및 현대해상 앱을 통해 보험계약대출 가능금액을 확인해 보시기 바랍니다.
+                        </div>
+                        <div class="title"><span class="toggle">피해자가 손해배상금을 보험회사에 직접 청구할 수 있나요?</span></div>
+                        <div class="panel">
+                            고객님께서 가입하신 장기(연금) 보험의 해지환급금을 담보로 대출받는 것을 의미합니다.<br>
+                            해당 계약 해지환급금의 30~95% 이내에서 보험계약대출이 가능하며 일부 불가한 상품도 있습니다.<br>
+                            홈페이지 및 현대해상 앱을 통해 보험계약대출 가능금액을 확인해 보시기 바랍니다.
+                        </div>
+                        <div class="title"><span class="toggle">개인(신용)정보 활용에 동의해야 하나요?</span></div>
+                        <div class="panel">
+                            고객님께서 가입하신 장기(연금) 보험의 해지환급금을 담보로 대출받는 것을 의미합니다.<br>
+                            해당 계약 해지환급금의 30~95% 이내에서 보험계약대출이 가능하며 일부 불가한 상품도 있습니다.<br>
+                            홈페이지 및 현대해상 앱을 통해 보험계약대출 가능금액을 확인해 보시기 바랍니다.
+                        </div>
+                        <div class="title"><span class="toggle">현재 보험회사에서 조사 중이라고 합니다. 보험금을 미리 받을 수 있을까요?</span></div>
+                        <div class="panel">
+                            고객님께서 가입하신 장기(연금) 보험의 해지환급금을 담보로 대출받는 것을 의미합니다.<br>
+                            해당 계약 해지환급금의 30~95% 이내에서 보험계약대출이 가능하며 일부 불가한 상품도 있습니다.<br>
+                            홈페이지 및 현대해상 앱을 통해 보험계약대출 가능금액을 확인해 보시기 바랍니다.
+                        </div>
+                    </div>
+                    <div class="list_more">
+                        <button type="button" class="btn_more">
+                            <span class="offscr">더보기</span>
+                        </button>
+                    </div>
+
+                    <div class="toggle_wrap">
+                        <div class="toggle_tit">                    
+                            <a href="#toggleConts" class="toggle_btn">유의사항<span class="offscr">상세보기</span></a>
+                        </div>                
+                        <div id="toggleConts" class="toggle_conts">
+                            <ul class="list_dot">
+                                <li>사고과실 판정은 과실기준도표를 기준으로 산정하며 실제 적용되는 과실은 사고현장, 사고형태, 차량파손/상태, 경찰서 조사내용 등에 따라 변경될 수 있습니다.
+                                   <div class="ac_in_btns">
+                                       <a href="https://accident.knia.or.kr" class="btn base" target="_blank" title="과실비율정보 포털 새창열기">과실기준도표 확인</a>
+                                   </div>
+                               </li>
+                               <li>사고조사 후 보험금을 지급해 드리며, 보험금 지급 후에도 추가 보험금 청구, 구상환입, 판결 등의 사유로 보험금 지급이 변경될 수 있습니다.</li>
+                               <li>보상처리 관련 내용은 담당자에게 문의해 주세요.</li>
+                               <li>보험계약자 등은 해당 사고 건에 대하여 보험회사에 소속된 손해사정사 또는 보험회사와 위탁계약이 체결된 손해사정업자 외에 별도로 손해사정사를 선임할 수 있으며 그 비용부담은 아래와 같습니다.(「보험업감독규정」 제9-16조)
+                                   <ul class="list_num">
+                                       <li><span class="ico fs_bold">1.</span><strong class="fs_bold">보험회사 부담</strong>
+                                           <ul class="list_bar">
+                                               <li>손해사정이 착수되기 이전에 보험계약자 등이 보험회사에게 손해사정사의 선임의사를 통보하여 동의를 얻은 때</li>
+                                               <li>정당한 사유없이 보험회사가 보험사고 통보를 받은 날부터 7일이 경과하여도 손해사정에 착수하지 아니한 때</li>
+                                           </ul>
+                                       </li>
+                                       <li><span class="ico fs_bold">2.</span><strong class="fs_bold">보험계약자 등 부담</strong>
+                                        <ul class="list_bar">
+                                               <li>보험회사가 고용 또는 선임한 손해사정사가 사정한 결과에 보험계약자 등이 승복하지 아니한 때</li>
+                                               <li>보험계약자 등이 보험회사와는 별도로 손해사정사를 선임하고자 할 때</li>
+                                           </ul>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li>보험계약자 등이 따로 손해사정사를 선임하지 않은 경우 보험회사에 소속된 손해사정사 또는 보험회사와 위탁계약이 체결된 손해사정업자가 손해사정을 하게 됩니다.</li>
+                           </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

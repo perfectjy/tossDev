@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: true, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#ServiceInfo');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#ServiceInfo" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="ServiceInfo" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                보험금청구서 작성 없이 인터넷을 통해 빠르고<br>간편하게 보험금 청구가 가능합니다.
+                            </div>
+                            <div class="etc_btns">
+                                <ul>
+                                    <li><a href="#" class="doc"><span class="ico"></span>보험금지급절차</a></li>
+                                    <li><a href="#" class="doc"><span class="ico"></span>보험금 청구 가이드</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>계약자, 피보험자, 친권자</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>청구금액이 100만원 이하인 '질병/상해' 건</li>
+                                </ul>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <ol class="use_step_proc">
+                                    <li><span class="num">1</span><strong>청구내역 입력</strong></li>
+                                    <li><span class="num">2</span><strong>필요서류 접수</strong></li>
+                                    <li><span class="num">3</span><strong>보험금청구 완료</strong></li>
+                                    <li><span class="num">4</span><strong>담당자 배정/처리</strong></li>
+                                    <li><span class="num">5</span><strong>보험금 지급</strong></li>
+                                </ol>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">기타보험금 청구 안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label">우편</div>
+                                <ul class="list_dot">
+                                    <li>보험금청구서 및 개인정보처리동의서 작성 후, 필요서류와 함께 등기우편으로 보내주세요.</li>
+                                    <li>(07258) 서울 영등포구 국회대로 612 코레일유통본사사옥 13층, 현대해상 장기보험 상고접수 담당</li>
+                                </ul>
+
+                                <div class="label">방문</div>   
+                                <ul class="list_dot">
+                                    <li>가까운 고객지원팀으로 방문하여 접수하실 수 있습니다.</li>
+                                </ul>
+                                <div class="ac_in_btns">
+                                    <a href="#" class="btn base"><span class="map">가까운 지점찾기</span></a>
+                                </div>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>보험금청구권 소멸시효는 발생일로부터 2년 이내이며, 해당 기간 경과 시 청구권이 소멸됩니다.</li>
+                                    <li>계약자가 법인인 일반보험 및 배상책임보험, 일부 재물보험은 홈페이지를 통한 보험금 청구가 불가합니다.</li>
+                                    <li>6개월 이내 동일한 사고 또는 질병으로 치료 시 과거 담당자에게 문의해주시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>계약조회</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

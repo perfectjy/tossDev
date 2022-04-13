@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#HICL03010011');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICL03010011" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="HICL03010011" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <h2 class="governing_title info_service">
+                                재물보험(주택화재, 풍수해) 및 배상책임 발생 시, 보험금을 청구할 수 있습니다.
+                            </h2>
+                            <div class="gov_btns">
+                                <button type="button" class="btn line"><span>보험금청구 가이드</span></button>
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>계약자, 피보험자(개인 가입 계약 한정)</li>
+                                </ul>
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                </ul>
+                                <div class="label info3">이용조건</div>
+                                <p class="highlight">이용조건에 해당하는 보험만 청구할 수 있습니다. 그 외 장기보험 등에 대한 청구는 대표콜센터(<span class="tel_number">1588-5656</span>)또는 계약담당자에게 문의해 주세요.</p>
+                                <ul class="list_dot">
+                                    <li>의사 및 병원배상책임보험</li>
+                                    <li>영업배상책임보험</li>
+                                    <li>풍수해보험Ⅰ, Ⅲ, Ⅴ, Ⅵ</li>
+                                    <li>주택화재보험</li>
+                                    <li>주택화재보험(방카슈랑스)</li>
+                                    <li>일반화재보험</li>
+                                    <li>하이홈종합보험</li>
+                                    <li>하이주택상해보험</li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <ol class="use_step_proc">
+                                    <li><span class="num">1</span><strong>청구내역 입력</strong></li>
+                                    <li><span class="num">2</span><strong>보험금청구 완료</strong></li>
+                                    <li><span class="num">3</span><strong>담당자 배정/처리</strong></li>
+                                    <li><span class="num">4</span><strong>보험금 지급</strong></li>
+                                </ol>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">기타 보험금 청구방법 안내</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>이용조건에 해당하는 상품에 한해 온라인 청구가 가능하며 사고접수 후 보상담당자 또는 손해사정인이 필요서류 요청 및 사고조사를 진행합니다.</li>
+                                    <li>기타 문의사항은 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">담당부서 안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label">재물보험</div>
+                                <ul class="list_dot">
+                                    <li><span class="highlight">장기 배상재물센터</span>: [장기보험] 재산종합, 동산종합, 화재, 기타 재물</li>
+                                    <li><span class="highlight">일반손해사정부(재물손사팀)</span>: 화재, 재산종합, 동산종합, 기타 재물, 기술</li>
+                                </ul>
+                                <div class="label">배상책임 담당부서</div>
+                                <ul class="list_dot">
+                                    <li><span class="highlight">장기 배상재물센터</span>: [장기보험] 배상책임보험(일상생활배상책임보험, 음식물배상책임보험 등)</li>
+                                    <li><span class="highlight">일반손해사정부(책임손사팀)</span>: 배상책임보험(영업배상책임보험, 재산종합Ⅳ, 생산물배상책임보험, CGL, 근재보험)</li>
+                                    <li><span class="highlight">일반손해사정부(특종손사팀)</span>: 특종보험(의사배상, 전문인배상, 이동전화기, 신종보험)</li>
+                                </ul>
+                                <div class="label">담당부서 전화연결</div>
+                                <p class="list_dot"><span class="tel_number">1588-5656</span></p>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>보험금청구권 소멸시효는 발생일로부터 3년 이내이며, 이 기간이 지나면 청구권이 소멸됩니다.</li>
+                                    <li>계약자가 법인인 일반보험 및 배상책임보험, 재물보험은 온라인으로 보험금을 청구할 수 없습니다. 지점에 방문하시거나 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00) 로 연락하시기 바랍니다. </li>
+                                    <li>필요서류를 모두 제출해야 보험금이 신속하게 지급됩니다. 필요한 서류를 확인해 주시기 바랍니다.</li>
+                                    <li>재물: 사고접수 후 손해가 확대되지 않도록 적절한 조치를 취해 주셔야 하며, 사고발생 및 피해내역을 입증할 수 있는 사진 등의 증빙자료를 구비하셔야 합니다.</li>
+                                    <li>배상책임: 손해배상청구 합의요청 시 안내해드린 합의금액을 초과하여 합의하신 경우 초과분에 대하여 보상하지 않습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>재물/배상책임 보험금청구</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

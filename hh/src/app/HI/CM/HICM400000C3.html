@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '추가인증 및 전자서명 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 추가인증 및 전자서명 안내 open
+            Dialog.open('#HICM400000C3');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICM400000C3" class="btn line dialog_open">추가인증 및 전자서명 안내(휴대전화본인인증 포함)</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 추가인증 및 전자서명 안내 팝업 -->
+    <div id="HICM400000C3" class="dialog modal">
+        <div class="dialog_wrap s">
+            <div class="dialog_header">
+                <h1>추가인증/전자서명</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <ul class="list_num">
+                    <li><span class="num">①</span>얼굴인증(모바일앱만 가능) </li>
+                    <li><span class="num">②</span>간편인증</li>
+                    <li><span class="num">③</span>카카오페이</li>
+                    <li><span class="num">④</span>네이버 인증서</li>
+                    <li><span class="num">⑤</span>공동인증서</li>
+                    <li><span class="num">⑥</span>금융인증서</li>
+                    <li><span class="num">⑦</span>휴대전화본인인증(추가인증 시만 가능)</li>
+                </ul>
+                <p class="list_bar">추가인증은 현재 로그인 하신 인증방법 외 다른 방법으로 진행하셔야 합니다.(단, 얼굴인증은 중복 가능)</p>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="dialog_close btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

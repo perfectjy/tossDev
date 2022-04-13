@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '고장출동서비스', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#hiService');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#hiService" class="btn line dialog_open">하이헬스 챌린지 서비스 대상 상품</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 하이헬스 챌린지 서비스 대상 상품 팝업 -->
+    <div id="hiService" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>하이헬스챌린지 서비스 대상 상품</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="search_box">
+                            <div class="form_in">
+                                <input type="text" class="inp_txt" placeholder="상품명 입력" title="검색어">
+                                <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                            </div>
+                            <p class="error_text">검색어를 2글자 이상 입력해 주세요.</p>
+                        </div>
+                        <div class="no_list">
+                            <p>'$검색어$'에 대한 검색결과가 없습니다.</p>
+                        </div>
+                        <div class="search_goods_list">
+                            <strong class="title">대상 상품</strong>
+                            <ul>
+                                <li>무배당 간단하고 편리한 종합보험</li>
+                                <li>무배당간단하고 편리한 치매보험</li>
+                                <li>무배당간편건강암보험</li>
+                                <li>무배당건강한심혈케어보험</li>
+                                <li>무배당계속받는암보험</li>
+                                <li>무배당내가지키는내건강보험</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

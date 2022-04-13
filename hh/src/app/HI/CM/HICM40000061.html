@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '보험용어사전', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#dictionary');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#dictionary" class="btn line dialog_open">보험용어사전</a>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 보험용어사전 팝업 -->
+    <div id="dictionary" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>보험용어사전</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="governing">
+                            <div class="governing_title">보험 용어가 어렵나요?<br>편리하게 사전에서 찾아보세요.</div>
+                        </div>
+                        <div class="search_box">
+                            <div class="form_in">
+                                <input type="text" class="inp_txt" placeholder="용어 검색">
+                                <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                            </div>
+                        </div>
+                        <div class="kr_initial">
+                            <ul>
+                                <li><button type="button" class="all"><span>전체</span></button></li>
+                                <li><button type="button"><span>ㄱ</span></button></li>
+                                <li><button type="button"><span>ㄴ</span></button></li>
+                                <li><button type="button" class="on"><span>ㄷ</span></button></li>
+                                <li><button type="button"><span>ㄹ</span></button></li>
+                                <li><button type="button"><span>ㅁ</span></button></li>
+                                <li><button type="button"><span>ㅂ</span></button></li>
+                                <li><button type="button"><span>ㅅ</span></button></li>
+                                <li><button type="button"><span>ㅇ</span></button></li>
+                                <li><button type="button"><span>ㅈ</span></button></li>
+                                <li><button type="button"><span>ㅊ</span></button></li>
+                                <li><button type="button"><span>ㅋ</span></button></li>
+                                <li><button type="button"><span>ㅌ</span></button></li>
+                                <li><button type="button"><span>ㅍ</span></button></li>
+                                <li><button type="button"><span>ㅎ</span></button></li>
+                                <li><button type="button" class="etc"><span>기타</span></button></li>
+                            </ul>
+                        </div>
+    
+                        <div class="accordion dic">
+                            <div class="title">
+                                <span class="toggle">(영업용) 집기비품)</span>
+                            </div>
+                            <div class="panel">
+                                상세내용입니다.
+                            </div>
+                            <div class="title">
+                                <span class="toggle">11개 중과실</span>
+                            </div>
+                            <div class="panel">
+                                상세내용입니다.
+                            </div>
+                            <div class="title">
+                                <span class="toggle">ABS</span>
+                            </div>
+                            <div class="panel">
+                                상세내용입니다.
+                            </div>
+                        </div>
+                        <div class="list_more">
+                            <button type="button" class="btn_more">
+                                <span class="offscr">더보기</span>
+                            </button>
+                        </div>
+    
+                        <div class="no_list">
+                            <p>'11'에 대한 검색 결과가 없습니다.</p>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

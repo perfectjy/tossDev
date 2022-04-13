@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '은행/증권사 선택', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#Bank');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#DoubleCash" class="btn line dialog_open">상환가능은행</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    
+    <div id="Bank" class="dialog bottom">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>선택해 주세요.</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing pc_hide">
+                        <div class="governing_title">선택해 주세요.</div>
+                    </div>
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#panel1" title="현재선택"><span>은행</span></a></li>
+                                <li class="tab"><a href="#panel2"><span>증권사</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <div class="scrollbar">
+                                    <ul class="bank_list">
+                                        <li><button type="button" class="bank04"><span>국민은행</span></button></li>
+                                        <li><button type="button" class="bank03"><span>기업은행</span></button></li>
+                                        <li><button type="button" class="bank07"><span>농협은행</span></button></li>
+                                        <li><button type="button" class="bank15"><span>신한은행</span></button></li>
+                                        <li><button type="button" class="bank02"><span>산업은행</span></button></li>
+                                        <li><button type="button" class="bank09"><span>우리은행</span></button></li>
+                                        <li><button type="button" class="bank11"><span>한국씨티은행</span></button></li>
+                                        <li><button type="button" class="bank05"><span>하나은행</span></button></li>
+                                        <li><button type="button" class="bank10"><span>SC제일은행</span></button></li>
+                                        <li><button type="button" class="bank13"><span>경남은행</span></button></li>
+                                        <li><button type="button" class="bank14"><span>광주은행</span></button></li>
+                                        <li><button type="button" class="bank12"><span>대구은행</span></button></li>
+                                        <li><button type="button" class="bank28"><span>도이치은행</span></button></li>
+                                        <li><button type="button" class="bank13"><span>부산은행</span></button></li>
+                                        <li><button type="button" class="bank22"><span>산림조합중앙회</span></button></li>
+                                        <li><button type="button" class="bank18"><span>새마을금고</span></button></li>
+                                        <li><button type="button" class="bank06"><span>수협은행</span></button></li>
+                                        <li><button type="button" class="bank19"><span>신협중앙회</span></button></li>
+                                        <li><button type="button" class="bank23"><span>우체국</span></button></li>
+                                        <li><button type="button" class="bank20"><span>저축은행</span></button></li>
+                                        <li><button type="button" class="bank14"><span>전북은행</span></button></li>
+                                        <li><button type="button" class="bank15"><span>제주은행</span></button></li>
+                                        <li><button type="button" class="bank27"><span>카카오뱅크</span></button></li>
+                                        <li><button type="button" class="bank26"><span>케이뱅크</span></button></li>
+                                        <li><button type="button" class="bank29"><span>토스뱅크</span></button></li>
+                                        <li><button type="button" class="bank21"><span>HSBC은행</span></button></li>
+                                        <li><button type="button" class="bank30"><span>JP모간체이스은행</span></button></li>
+                                    </ul>
+                                </div>
+                            </div>      
+                            <div id="panel2" class="tab_panel">
+                                <div class="scrollbar">
+                                    <ul class="bank_list">
+                                        <li><button type="button" class="stock20"><span>교보증권</span></button></li>
+                                        <li><button type="button" class="stock10"><span>대신증권</span></button></li>
+                                        <li><button type="button" class="stock21"><span>DB금융투자</span></button></li>
+                                        <li><button type="button" class="stock14"><span>메리츠증권</span></button></li>
+                                        <li><button type="button" class="stock03"><span>미래에셋증권</span></button></li>
+                                        <li><button type="button" class="stock22"><span>부국증권</span></button></li>
+                                        <li><button type="button" class="stock05"><span>삼성증권</span></button></li>
+                                        <li><button type="button" class="stock16"><span>신영증권</span></button></li>
+                                        <li><button type="button" class="stock13"><span>신한금융투자</span></button></li>
+                                        <li><button type="button" class="stock19"><span>SK증권</span></button></li>
+                                        <li><button type="button" class="stock09"><span>HMC투자증권</span></button></li>
+                                        <li><button type="button" class="stock01"><span>유안타증권</span></button></li>
+                                        <li><button type="button" class="stock23"><span>유진투자증권</span></button></li>
+                                        <li><button type="button" class="stock25"><span>이베스트투자증권</span></button></li>
+                                        <li><button type="button" class="stock30"><span>케이프투자증권</span></button></li>
+                                        <li><button type="button" class="stock24"><span>키움증권</span></button></li>
+                                        <li><button type="button" class="stock29"><span>한국포스증권</span></button></li>
+                                        <li><button type="button" class="stock12"><span>하나금융투자</span></button></li>
+                                        <li><button type="button" class="stock08"><span>하이투자증권</span></button></li>
+                                        <li><button type="button" class="stock06"><span>한국투자증권</span></button></li>
+                                        <li><button type="button" class="stock11"><span>한화투자증권</span></button></li>
+                                        <li><button type="button" class="stock02"><span>KB증권</span></button></li>
+                                        <li><button type="button" class="stock27"><span>KTB투자증권</span></button></li>
+                                        <li><button type="button" class="stock28"><span>BNK투자증권</span></button></li>
+                                        <li><button type="button" class="stock15"><span>NH투자증권</span></button></li>
+                                        <li><button type="button" class="stock26"><span>카카오페이증권</span></button></li>
+                                        <li><button type="button" class="stock17"><span>IBK투자증권</span></button></li>
+                                        <li><button type="button" class="stock18"><span>토스증권</span></button></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

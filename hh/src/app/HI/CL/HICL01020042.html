@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 보험금청구', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 보험금지급계좌 유의사항 open
+            Dialog.open('#AccountCaution');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#AccountCaution" class="btn line dialog_open">보험금지급계좌 유의사항</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 보험금지급계좌 유의사항 팝업 -->
+    <div id="AccountCaution" class="dialog full">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>보험금지급계좌 유의사항</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>
+                                보험금지급계좌는 <span class="highlight">수익자 본인명의 계좌</span>만 가능합니다.<br>
+                                계약자 접수 시에도 수익자 명의의 계좌를 입력해 주세요.
+                                <ol class="list_num">
+                                    <li>
+                                        <span class="ico">①</span> 수익자가 지정되지 않은 경우
+                                        <ul class="list_bar">
+                                            <li>보험금 지급사유가 사망보험금인 경우에는 피보험자의 상속인 계좌 입력</li>
+                                            <li>사망보험금 이외의 경우에는 피보험자 계좌 입력</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="ico">②</span> 수익자/피보험자, 상속인/피보험자가 미성년자인 경우
+                                        <ul class="list_bar">
+                                            <li>친권자 계좌 입력(가족관계증명서, 의료보험증 사본 등 증빙서류 필요)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>                            
+                        </ul>
+                        <ul class="list_bar">
+                            <li class="highlight">수익자: 계약 당시 향후 보험금을 받을 수 있도록 지정된 사람</li>
+                            <li class="highlight">피보험자: 사고 발생 당사자</li>
+                            <li class="highlight">친권자: 피보험자가 미성년자인 경우 법률상 권리를 가지고 있는 사람. 주로 부모가 해당</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

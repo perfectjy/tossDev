@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <script type="text/javascript">
+        $(function() {
+            Dialog.open('#HIPA07010101');
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIPA07010101" class="btn line dialog_open">(팝업)예상해지환급금</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+
+    <div id="HIPA07010101" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>예상해지환급금</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <h3 class="h3">유형별 만기 안내</h3>
+                        <table class="tbl_data in_crud">
+                            <caption>유형별 만기 안내</caption>
+                            <colgroup>
+                                <col style="width:155px">
+                                <col style="width:245px">
+                                <col style="width:155px">
+                                <col style="width:a245px">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">보험기간</th>
+                                    <td>
+                                        <div class="tb_item">
+                                            <input type="text" class="inp_txt" id="" disabled> 
+                                        </div>
+                                    </td>
+                                    <th scope="row">종목코드</th>
+                                    <td>
+                                        <div class="tb_item">
+                                            <input type="text" class="inp_txt" id="" disabled> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">현재일</th>
+                                    <td colspan="3">
+                                        <div class="tb_item" style="width:224px;">
+                                            <input type="text" class="inp_txt" id="" disabled> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">환급금 예상</th>
+                                    <td colspan="3">
+                                        <div class="tb_item list">
+                                            <div class="unit_item w12">
+                                                <select class="tbsel">
+                                                    <option>매 3년</option>
+                                                </select>
+                                            </div>
+                                            <div class="tb_txt">단위의</div>
+                                            <div class="unit_item w12">
+                                                <select class="tbsel">
+                                                    <option>1개</option>
+                                                </select>
+                                            </div>
+                                            <div class="tb_txt">의 환급금</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+            
+                        <div class="btn_conts">
+                            <button type="button" class="btn ofill"><span>환급금 산출</span></button>
+                        </div>
+            
+                        <div class="table_box">
+                            <table class="tbl_data">
+                                <caption>환급금 산출 내역</caption>
+                                <colgroup>
+                                    <col style="width:6%">
+                                    <col style="width:15%">
+                                    <col style="width:15%">
+                                    <col style="width:17%">
+                                    <col style="width:17%">
+                                    <col style="width:12%">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><span>순번</span></th>
+                                        <th scope="col"><span>산출기준일</span></th>
+                                        <th scope="col"><span>경과기간</span></th>
+                                        <th scope="col"><span>납입보험료(원)</span></th>
+                                        <th scope="col"><span>해지환급금(세전)(원)</span></th>
+                                        <th scope="col"><span>환급률(%)</span></th>
+                                        <th scope="col"><span>비고</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2024.07.07</td>
+                                        <td>00년00개월</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">000.00</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2024.07.07</td>
+                                        <td>00년00개월</td>
+                                        <td class="txt_r">100,290,520</td>
+                                        <td class="txt_r">100,290,520</td>
+                                        <td class="txt_r">000.00</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2024.07.07</td>
+                                        <td>00년00개월</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">000.00</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2024.07.07</td>
+                                        <td>00년00개월</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">290,520</td>
+                                        <td class="txt_r">000.00</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+            
+                        <div class="accordion">
+                            <div class="title open">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>미래 시점의 해지환급금 산출 기준은 다음과 같습니다.
+                                        <ul class="list_bar">
+                                            <li>보험료는 납입해당일에 납입함</li>
+                                            <li>일체의 계약 변경이 없으며, 적립부분 적용이율 및 배당기준율의 변동 없음</li>
+                                            <li>해당 상품의 중도환급금은 발생 즉시 지급함(산출된 해지환급금에 포함하지 않음)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

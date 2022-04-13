@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '이벤트', tooltip: false, prev: true, menu: true };
+        
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#eventResult');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#eventResult" class="btn line dialog_open">당첨 결과</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 당첨 결과 팝업 -->
+    <div id="eventResult" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>추첨 룰렛 당첨 결과</h1>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <!-- 경품당첨시 -->
+                    <div class="section">
+                        <div class="event_result">
+                            <p>하이현님, 축하드립니다!</p>
+                            <span class="img"><img src="/src/assets/images/@event_starbucks.png" alt="스타벅스 커피쿠폰"></span>
+                            <div class="txt">
+                                <span class="highlight">스타벅스 카페아메리카노</span>
+                                경품에 당첨되셨습니다.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>당첨자 발표 후 7일 이내에 연락이 되지 않거나 고객님의 정보가 불분명하여 경품이 반송되는 경우, 경품 수령을 거부하는 경우 등은 당첨이 취소될 수 있습니다.</li>
+                                    <li>해당 이벤트 및 경품은 사정에 의해 예고없이 변경될 수 있으며, 변경 시에는 동급의 경품을 지급합니다.</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!--// 경품당첨시 -->
+
+                    <!-- 꽝인경우 -->
+                    <!-- <div class="section">
+                        <div class="event_result">
+                            <span class="img"><img src="/src/assets/images/@event_fail.png" alt=""></span>
+                            <div class="txt">
+                                <p>다음 기회에는 꼭!</p>
+                                <strong>아쉽지만 다음 기회를 기대해 주세요.</strong>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--// 꽝인경우 -->
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

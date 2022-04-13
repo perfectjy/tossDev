@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: true, prev: true, menu: true };
+
+    </script>
+</head>
+<body>
+    <div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            하이현님이
+                            <div class="governing_select">
+                                <select id="stateContract" name="" title="계약 대상">
+                                    <option value="1" selected>계약자</option>
+                                    <option value="2">피보험자</option>
+                                    <option value="3">친권자</option>
+                                </select>
+                            </div>
+                            인<br>
+                            <div class="governing_select">
+                                <select name="" title="계약 상태">
+                                    <option value="1" selected>유지</option>
+                                    <option value="2">실효</option>
+                                    <option value="3">만기</option>
+                                    <option value="4">해지</option>
+                                    <option value="0">전체</option>
+                                </select>
+                            </div>
+                            계약 43건입니다.
+                        </h2>
+                    </div>
+
+                    <!-- 보험상품 리스트 -->
+                    <div class="insu_list b">
+                        <!-- CASE1) 자동차보험 -->
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <span class="tag continue b">유지</span>
+                                <div class="insu_name">Hicar개인용자동차보험</div>
+                                <div class="car_number">34가12**</div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="info_list">
+                                    <dl>
+                                        <dt>계약번호</dt>
+                                        <dd>M20211345678-000</dd>
+                                        <dt>계약자</dt>
+                                        <dd>하이현</dd>
+                                        <dt>피보험자</dt>
+                                        <dd>하이현외 2명</dd>
+                                        <dt>보험기간</dt>
+                                        <dd>2020.08.23~2021.08.23</dd>
+                                        <dt>보험료</dt>
+                                        <dd>231,235,000원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="btn line b">상세조회</a>
+                            </div>
+                        </div>
+
+                        <!-- CASE2) 장기/일반보험 -->
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <span class="tag continue b">유지</span>
+                                <div class="insu_name">무배당행복을다모은보험(Hi0804)</div>
+                                <div class="insu_pay">
+                                    월 <span class="pay">120,000원</span>
+                                </div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="info_list">
+                                    <dl>
+                                        <dt>계약번호</dt>
+                                        <dd>L20062142296</dd>
+                                        <dt>계약자</dt>
+                                        <dd>하이현</dd>
+                                        <dt>피보험자</dt>
+                                        <dd>하이현</dd>
+                                        <dt>보험기간</dt>
+                                        <dd>2020.08.23~2021.08.23</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#none" class="btn line b">상세조회</a>
+                            </div>
+                        </div>
+
+                        <!-- CASE3) 장기보험_연금 -->
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <span class="tag continue b">유지</span>
+                                <div class="insu_name">연금저축손해보험노후사랑보험(Hi0604)</div>
+                                <div class="insu_pay">
+                                    월 <span class="pay">500,000원</span>
+                                </div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="info_list">
+                                    <dl>
+                                        <dt>계약번호</dt>
+                                        <dd>L20062142296</dd>
+                                        <dt>계약자</dt>
+                                        <dd>하이현</dd>
+                                        <dt>피보험자</dt>
+                                        <dd>하이현</dd>
+                                        <dt>보험기간</dt>
+                                        <dd>2020.08.23~2021.08.23</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#none" class="btn line b">상세조회</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- paging -->
+                    <div class="Paging b" aria-label="pagination">
+                        <ul>
+                            <li><button type="button" class="prev"><span class="offscr">이전페이지</span></button></li>
+                            <!-- 현재 페이지일 때 class="current" 추가 -->
+                            <li><a href="#" class="current">1<span class="offscr">현재페이지</span></a></li>
+                            <li><a href="#">2<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">3<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">4<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">5<span class="offscr">페이지</span></a></li>
+                            <li><button type="button" class="next"><span class="offscr">다음페이지</span></button></li>
+                        </ul>
+                    </div>
+                    
+                    <hr>
+                
+                    <h3 class="h3 b">
+                        하이현<span>님,</span> 긴급자금<span>이 필요하신가요?</span>
+                    </h3>
+
+                    <div class="loan_board b">
+                        <a href="#" title="보험계약대출 바로가기">
+                            <p class="loan_tit">지금 바로 대출 가능한 금액</p>
+                            <p class="loan_money">
+                                <span class="value">7,470,000</span> 원
+                            </p>
+                            <span class="date">2021.05.23 기준</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

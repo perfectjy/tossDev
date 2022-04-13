@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '공동인증서 복사', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HICS06030032');
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICS06030032" class="btn line dialog_open"><span>인증번호 입력</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <div id="HICS06030032" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>복사할 공동인증서 선택</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section">
+                    <div class="governing">
+                        <div class="governing_title">PC에서 발급받으신 <span class="highlight">인증번호</span>를 입력해 주세요.</div>
+                    </div>
+                    <div class="code_num">
+                        <div class="form_list">
+                            <label for="code" class="form_label">인증번호</label>
+                            <div class="code_part">
+                                <span><input type="tel" class="inp_txt" title="인증번호 첫번째 자리" id="code" placeholder="1234" max-length="4"></span>
+                                <span><input type="tel" class="inp_txt" title="인증번호 두번째 자리" placeholder="1234" max-length="4"></span>
+                                <span><input type="tel" class="inp_txt" title="인증번호 세번째 자리" placeholder="1234" max-length="4"></span>
+                            </div>
+                            <p class="error_text">인증번호 첫번째 자리를 숫자 4자리로 입력해 주세요.</p>
+                            <p class="error_text">인증번호 두번째 자리를 숫자 4자리로 입력해 주세요.</p>
+                            <p class="error_text">인증번호 세번째 자리를 숫자 4자리로 입력해 주세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

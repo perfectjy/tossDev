@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+$(function() {
+  Dialog.open('#PSPS05020016');
+
+  var itemLength = $('.tab_panel.active .popup_slide .popup_item').length - 1,
+                swipeProp = !!isMobile ? true : false,
+                swipeArrows = !!isMobile ? false : true;
+            
+            $('.popup_slide').slick({
+                infinite: false,
+                dots: true,
+                arrows: false,
+                autoplay: false,
+                adaptiveHeight: true, 
+				swipe: false
+            });
+});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="comp">
+							<a href="#PSPS05020016" class="btn ass dialog_open">고객투자성향 진단</a>
+					</div>
+				</div>
+			</div>
+			<div id="PSPS05020016" class="dialog full">
+				<div class="dialog_wrap b">
+					<div class="dialog_header">
+						<h1>고객투자성향 진단</h1>
+						<button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+					</div>
+					<div class="dialog_content">
+						<!-- 임시 슬라이드 도트 view 처리 -->
+						<!-- <ul class="slick-dots txt_l mt0" role="tablist">
+							<li role="presentation"><button type="button" role="tab">1</button></li>
+							<li role="presentation"><button type="button" role="tab">2</button></li>
+							<li role="presentation" class="slick-active"><button type="button" role="tab">3</button></li>
+						</ul> -->
+                        <!--// End -->
+                        <div class="popup_slide">
+                            <div class="popup_item">
+                                <div class="scrollbar">
+                                    <div class="section retire">
+                                        <div class="governing">
+                                            <div class="governing_title info_service">고객님의 투자성향은 <strong class="gdc4 fw_b">4등급(안정추구형)</strong>입니다.</div>
+                                        </div>
+                                        <p class="txt">투자성향 진단 결과를 바탕으로 고객님께 적합한 투자상품을 권유하는 절차가 이행되므로 설문의 각 문항과 이에 대한 답변이 올바르게 이루어졌는지 반드시 확인하여 주시기 바랍니다.</p>
+        
+                                        <dl class="part_result">
+                                            <dt><span>Part 1.</span> 진단결과</dt>
+                                            <dd>2등급(적극투자형): 진단점수(68점)</dd>
+                                        </dl>
+        
+                                        <div class="comp">
+                                            <h3 class="h3 hmark">설문 질의에 대한 응답 내용</h3>
+                                            <table class="tbl_row">
+                                                <caption>1.연령대, 2.투자기간, 3.보유(선호)금융자산, 4.금융상품지식, 5.투자비중, 6.최근 순손실 수, 7.손실 감내도, 8.월소득, 9.투자경험기간, 10.투자목적 ,11.보호조치 목적에 대한 내용</caption>
+                                                <colgroup>
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1. 연령대</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>61세 이상</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2. 투자기간</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>2년 이상~3년 이내</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3. 과거 투자경험 또는 현재 보유(선호) 금융자산</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>신용도가 낮은 회사채, 주식, 원금이 보장되지 않는ELS, 시장수익률 수준의 수익을 추구하는 주식형 펀드 등</li>
+                                                                <li>ELW, 선물옵션, 시장수익율 이상의 수익을 추구하는 주식형펀드, 파생상품에 투자하는 펀드, 주식 신용거래 등</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4. 금융상품지식</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>낮은 수준: 주식과 채권의 차이를 구별할 수 있는 정도</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5. 투자비중</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>10% 이내</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6. 현재와 향후 수입원</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>현재 일정한 수입이 있으며, 향후 현재 수준을 유지하거나 증가할 것으로 예상</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7. 손실 감내도</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>10% 미만까지는 손실을 감수할 수 있을 것 같다.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8. 월소득</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>200만원 이하</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9. 투자경험기간</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>5년 미만</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10. 투자 목적</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>시장가격(예:주가지수) 변동 추이와 비슷한 수준의 이익 실현</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11. 보호조치 목적</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>적극적 매매를 통한 수익을 원하며 초과하는 손실위험도 감내 가능</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <dl class="part_result">
+                                            <dt><span>Part 2.</span> 진단결과</dt>
+                                            <dd>2등급(적극투자형): 진단점수(80점)</dd>
+                                        </dl>
+        
+                                        <div class="comp">
+                                            <h3 class="h3 hmark">설문 질의에 대한 응답 내용</h3>
+                                            <table class="tbl_row">
+                                                <colgroup>
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">12. 투자성향(목표)</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>적극투자형</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="accordion">
+                                            <div class="title open">
+                                                <span class="toggle">투자자 유형별 특징</span>
+                                            </div>
+                                            <div class="panel">
+                                                <dl class="invest_feature">
+                                                    <dt class="gd5">안정형<span class="offscr">파란색</span></dt>
+                                                    <dd>예금 또는 적금 수준의 수익률을 기대하며, 투자원금에 손실이 발생하는 것을 원하지 않음</dd>
+                                                    <dt class="gd4">안정추구형<span class="offscr">초록색</span></dt>
+                                                    <dd>투자원금의 손실위험은 최소화하고, 이자소득이나 배당소득 중심의 안정적인 투자를 목표로 함. 다만, 수익을 위해 단기적인 손실을 수용할 수 있으며, 예·적금보다 높은 수익을 위해 자산 중 일부를 변동성 높은 상품에 투자할 의향이 있음</dd>
+                                                    <dt class="gd3">위험중립형<span class="offscr">노란색</span></dt>
+                                                    <dd>투자에는 그에 상응하는 투자위험이 있음을 충분히 인식하고 있으며, 예·적금보다 상당히 높은 수익을 기대할 수 있다면 손실위험을 감수할 수 있음</dd>
+                                                    <dt class="gd2">적극투자형<span class="offscr">주황색</span></dt>
+                                                    <dd>투자원금을 보전하는 것보다 위험을 감내하더라도 높은 수준의 투자수익 실현을 추구하고, 투자자금의 상당 부분을 주식, 주식형펀드 또는 파생상품 등의 위험자산에 투자할 의향이 있음</dd>
+                                                    <dt class="gd1">공격투자형<span class="offscr">빨간색</span></dt>
+                                                    <dd>시장평균 수익률을 초과하는 높은 수준의 투자수익을 추구하며 이를 위해 자산가치 변동에 다른 손실 위험을 적극 수용할 수 있음. 투자자금 대부분을 주식 및 주식형 펀드 또는 파생상품 등의 위험자산에 투자할 의향이 있음</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup_item">
+                                <div class="scrollbar">
+                                    <div class="section retire">
+                                        <div class="governing">
+                                            <div class="governing_title info_service">고객님의 투자성향은 <strong class="gdc4 fw_b">4등급(안정추구형)</strong>입니다.</div>
+                                        </div>
+                                        <p class="txt">투자성향 진단 결과를 바탕으로 고객님께 적합한 투자상품을 권유하는 절차가 이행되므로 설문의 각 문항과 이에 대한 답변이 올바르게 이루어졌는지 반드시 확인하여 주시기 바랍니다.</p>
+        
+                                        <dl class="part_result">
+                                            <dt><span>Part 1.</span> 진단결과</dt>
+                                            <dd>2등급(적극투자형): 진단점수(68점)</dd>
+                                        </dl>
+        
+                                        <div class="comp">
+                                            <h3 class="h3 hmark">설문 질의에 대한 응답 내용</h3>
+                                            <table class="tbl_row">
+                                                <caption>1.연령대, 2.투자기간, 3.보유(선호)금융자산, 4.금융상품지식, 5.투자비중, 6.최근 순손실 수, 7.손실 감내도, 8.월소득, 9.투자경험기간, 10.투자목적 ,11.보호조치 목적에 대한 내용</caption>
+                                                <colgroup>
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1. 연령대</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>61세 이상</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2. 투자기간</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>2년 이상~3년 이내</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3. 과거 투자경험 또는 현재 보유(선호) 금융자산</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>신용도가 낮은 회사채, 주식, 원금이 보장되지 않는ELS, 시장수익률 수준의 수익을 추구하는 주식형 펀드 등</li>
+                                                                <li>ELW, 선물옵션, 시장수익율 이상의 수익을 추구하는 주식형펀드, 파생상품에 투자하는 펀드, 주식 신용거래 등</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4. 금융상품지식</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>낮은 수준: 주식과 채권의 차이를 구별할 수 있는 정도</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5. 투자비중</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>10% 이내</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6. 현재와 향후 수입원</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>현재 일정한 수입이 있으며, 향후 현재 수준을 유지하거나 증가할 것으로 예상</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7. 손실 감내도</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>10% 미만까지는 손실을 감수할 수 있을 것 같다.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8. 월소득</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>200만원 이하</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9. 투자경험기간</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>5년 미만</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10. 투자 목적</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>시장가격(예:주가지수) 변동 추이와 비슷한 수준의 이익 실현</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11. 보호조치 목적</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>적극적 매매를 통한 수익을 원하며 초과하는 손실위험도 감내 가능</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <dl class="part_result">
+                                            <dt><span>Part 2.</span> 진단결과</dt>
+                                            <dd>2등급(적극투자형): 진단점수(80점)</dd>
+                                        </dl>
+        
+                                        <div class="comp">
+                                            <h3 class="h3 hmark">설문 질의에 대한 응답 내용</h3>
+                                            <table class="tbl_row">
+                                                <colgroup>
+                                                    <col style="width:25%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">12. 투자성향(목표)</th>
+                                                        <td>
+                                                            <ul class="list_dot">
+                                                                <li>적극투자형</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="accordion">
+                                            <div class="title open">
+                                                <span class="toggle">투자자 유형별 특징</span>
+                                            </div>
+                                            <div class="panel">
+                                                <dl class="invest_feature">
+                                                    <dt class="gd5">안정형<span class="offscr">파란색</span></dt>
+                                                    <dd>예금 또는 적금 수준의 수익률을 기대하며, 투자원금에 손실이 발생하는 것을 원하지 않음</dd>
+                                                    <dt class="gd4">안정추구형<span class="offscr">초록색</span></dt>
+                                                    <dd>투자원금의 손실위험은 최소화하고, 이자소득이나 배당소득 중심의 안정적인 투자를 목표로 함. 다만, 수익을 위해 단기적인 손실을 수용할 수 있으며, 예·적금보다 높은 수익을 위해 자산 중 일부를 변동성 높은 상품에 투자할 의향이 있음</dd>
+                                                    <dt class="gd3">위험중립형<span class="offscr">노란색</span></dt>
+                                                    <dd>투자에는 그에 상응하는 투자위험이 있음을 충분히 인식하고 있으며, 예·적금보다 상당히 높은 수익을 기대할 수 있다면 손실위험을 감수할 수 있음</dd>
+                                                    <dt class="gd2">적극투자형<span class="offscr">주황색</span></dt>
+                                                    <dd>투자원금을 보전하는 것보다 위험을 감내하더라도 높은 수준의 투자수익 실현을 추구하고, 투자자금의 상당 부분을 주식, 주식형펀드 또는 파생상품 등의 위험자산에 투자할 의향이 있음</dd>
+                                                    <dt class="gd1">공격투자형<span class="offscr">빨간색</span></dt>
+                                                    <dd>시장평균 수익률을 초과하는 높은 수준의 투자수익을 추구하며 이를 위해 자산가치 변동에 다른 손실 위험을 적극 수용할 수 있음. 투자자금 대부분을 주식 및 주식형 펀드 또는 파생상품 등의 위험자산에 투자할 의향이 있음</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+					</div>
+					<div class="dialog_footer">
+						<div class="dialog_footer_btn">
+							<button type="button" class="btn second dialog_close">다시 진단</button>
+							<button type="button" class="btn primary dialog_close">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

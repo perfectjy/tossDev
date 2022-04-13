@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 보험금청구', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 질병/상해 보험금청구 open
+            Dialog.open('#typeAccident');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#typeAccident" class="btn line dialog_open">사고유형 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 사고유형 안내 팝업 -->
+    <div id="typeAccident" class="dialog full">
+        <div class="dialog_wrap m">
+            <div class="dialog_header">
+                <h1>사고유형 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>
+                                질병: 신체에 질환이 발병하여 치료, 검사, 수술, 진단을 받은 경우
+                                <ul class="list_bar">
+                                    <li>진단예시) 감기, 두통, 소화불량, 어지럼증, 여성질환, 고혈압, 암 등</li>
+                                    <li>코드예시) A09, J00, K30, N76 등</li>
+                                </ul>
+                            </li>
+                            <li>
+                                일반상해: 넘어지거나 부딪히는 등 외부 사고로 신체가 다쳐 치료한 경우
+                                <ul class="list_bar">
+                                    <li>진단예시) 신체부상, 상처, 염좌, 골절, 화상 등</li>
+                                    <li>코드예시) S33, S99, T00 등</li>
+                                </ul>
+                            </li>
+                            <li>
+                                교통상해: 자동차 운전 중 사고로 손해가 발생한 경우
+                                <ul class="list_bar">
+                                    <li>손해예시) 타인상해/사망, 다른 차량(물건) 전손/분손, 경찰신고, 기소 등</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

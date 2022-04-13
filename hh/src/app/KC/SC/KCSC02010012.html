@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/contents.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '취재 기사집(청년, 세상을 담다)', tooltip: false, prev: true, menu: true };
+
+        $(function(){
+            Dialog.open('#KCSC02020011');
+            
+            $('.vd_video .vd_btn').on("click", function(){
+                var vo = $(this).parent().find('video');
+                var video_get = vo.get(0);
+                var thumb = $(this).parent().find('.thumb');
+                $(this).hide();
+                thumb.hide();
+                vo.css('position', 'static').attr('controls', 'controls');
+                video_get.play();
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#KCSC02020011" class="btn line dialog_open">취재 기사집(청년, 세상을 담다)</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <div id="KCSC02020011" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>영상 보기(아주 사소한 고백)</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="section no_foot">
+                    <div class="vd_slide_box">
+                        <div class="vd_nav">
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/vd_thumbnail01.png" />
+                                </p>
+                                <p class="tit">TV광고(30초)</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail02.jpg" />
+                                </p>
+                                <p class="tit">TV광고 메이킹필름</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail03.jpg" />
+                                </p>
+                                <p class="tit">'아사고'</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail04.jpg" />
+                                </p>
+                                <p class="tit">'아주 사소한 고백'</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail04.jpg" />
+                                </p>
+                                <p class="tit">‘교실이야기’편</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail04.jpg" />
+                                </p>
+                                <p class="tit">‘주제가 제작'편</p>
+                            </div>
+                            <div class="vd_thumb">
+                                <p class="img">
+                                    <img src="/src/assets/images/thumbnail/nav_thumbnail04.jpg" />
+                                </p>
+                                <p class="tit">'아사고'</p>
+                            </div>
+                        </div>          
+                        <div class="vd_slide">
+                            <h2 class="tit">TV광고(30초)</h2>
+                            <div class="vd_cont">
+                                <div class="vd_video">
+                                    <p class="thumb">
+                                        <img src="/src/assets/images/thumbnail/vd_thumbnail01.png">
+                                    </p>
+                                    <video preload="none">
+                                        <source src="/src/assets/video/jinsan.mp4">
+                                    </video>
+                                    <button class="vd_btn">재생</button>
+                                </div>
+                                <div class="vd_item">
+                                    <div class="scrollbar">
+                                        신나게 그네를 구르던 소녀는 어디로 갔을까?<br>
+                                        마음이 소녀를 달리게 합니다.<br>
+                                        마음이 더 큰 생각을 실천하게 합니다.<br>
+                                        마음이 합니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

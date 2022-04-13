@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '담보대출 상환완료', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap"> 
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <div class="governing_title">
+                            <strong class="highlight">5,112,374원</strong>이<br>
+                            <span class="highlight">우리은행 1104*********</span>에서<br>
+                            즉시 출금될 예정입니다.
+                        </div>
+                        <div class="governing_sub">
+                            <ul>
+                                <li>은행 전산장애 발생 시 대출상환이 처리되지 않을 수 있습니다.</li>
+                                <li>처리가 완료되면 고객님 휴대전화로 알려 드립니다.</li>
+                                <li>문의사항은 대출상담 콜센터(<span class="tel_number">1588-5655</span>)로 연락해 주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggle_wrap">
+                        <div class="toggle_tit">                    
+                            <a href="#toggleConts" class="toggle_btn">대출상환 신청내역<span class="offscr">상세보기</span></a>
+                        </div>                
+                        <div id="toggleConts" class="toggle_conts">
+                            <!-- 정기 납입 -->
+                            <table class="tbl_row">
+                                <caption>대출명,최종이수일,출금금액,상환후잔액(원리금),출금계좌,예금주</caption>
+                                <colgroup>
+                                    <col style="width:30%;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">대출명</th>
+                                        <td>아파트(12001905-00050)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">최종이수일</th>
+                                        <td>2021.06.25</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="highlight" scope="row" >출금금액</th>
+                                        <td class="highlight">1,280,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">상환후잔액(원리금)</th>
+                                        <td>77,541,374원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">출금계좌</th>
+                                        <td>우리은행 1234*********</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">예금주</th>
+                                        <td>하이연</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //정기 납입 -->
+                            <!-- 중도 상환 -->
+                            <!-- <table class="tbl_row">
+                                <caption>대출명,최종이수일,출금금액,상환후잔액(원금),출금계좌,예금주</caption>
+                                <colgroup>
+                                    <col style="width:30%;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">대출명</th>
+                                        <td>아파트 (12001905-00050)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">최종이수일</th>
+                                        <td>2021.06.25</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="orange" scope="row" >출금금액</th>
+                                        <td class="orange">1,280,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">상환후잔액(원금)</th>
+                                        <td>77,541,374원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">출금계좌</th>
+                                        <td>우리은행 1234*********</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">예금주</th>
+                                        <td>하이연</td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <!-- //중도 상환 -->
+                        </div>
+                    </div>
+                    
+                    <!-- 200107 기획자 요청으로 일시주석 -->
+                    <!-- <div class="banner_box">
+                        <strong class="banner_title"><span>하이현</span>님, <span>추가자금</span>이 필요하신가요?</strong>
+                        <a href="#" class="banner">
+                            <strong>신용대출 한도 알아보기</strong>
+                            <p>낮은 이율과 넉넉한 한도, 증빙서류없이 간편하게 추가자금을 신청하세요.</p>
+                        </a>
+                    </div> -->
+                    
+                    <div class="complete_btns">
+                        <button type="button" class="btn sline"><span>메인</span></button>
+                        <button type="button" class="btn primary"><span>대출거래내역조회</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

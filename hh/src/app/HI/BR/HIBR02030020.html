@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude"><!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#panel1" title="현재선택"><span>대출 유지계약 조회</span></a></li>
+                                <li class="tab"><a href="#panel2"><span>날짜별 거래내역 조회</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <h2 class="offscr">대출 유지계약 조회 목록</h2>
+                                <h3 class="h3">대출정보</h3>
+                                <table class="tbl_row">
+                                    <caption>상품명, 대출이율, 대출누계금액, 대출잔액</caption>
+                                    <colgroup>
+                                        <col style="width:25%;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">상품명</th>
+                                            <td>무배당하이라이프파워ECO운전자보험Hi0910자가용/일반상해</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">대출이율</th>
+                                            <td>4.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">대출누계금액</th>
+                                            <td>50,000원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">대출잔액</th>
+                                            <td>50,000원</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3 class="h3">대출이자 납입계좌</h3>
+                                <table class="tbl_row">
+                                    <caption>예금주, 계좌번호, 자동이체일</caption>
+                                    <colgroup>
+                                        <col style="width:25%;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">예금주</th>
+                                            <td>㈜하이현</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">계좌번호</th>
+                                            <td>국민은행 2691*******</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">자동이체일</th>
+                                            <td>25일</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line"><span>납입가능이자 조회</span></button>
+                                </div>
+                                <h3 class="h3">거래내역</h3>
+                                <ul class="result_list">
+                                    <li>
+                                        <div class="result_info">
+                                            <span class="result_date">4회차</span>
+                                            <div class="code"><span class="offscr">납입일</span>2020.02.28</div>
+                                        </div>
+                                        <div class="result_content">
+                                            <strong><span class="return">상환</span>1,000,000원</strong>
+                                            <span class="price">대출잔액 1,000,000원</span>
+                                        </div>
+                                        <div class="term"><span class="offscr">수납기간</span>2021.01.09~2021.01.25</div>
+                                    </li>
+                                    <li>
+                                        <div class="result_info">
+                                            <span class="result_date">3회차</span>
+                                            <div class="code"><span class="offscr">납입일</span>2020.02.28</div>
+                                        </div>
+                                        <div class="result_content">
+                                            <strong><span>이자</span>1,000,000원</strong>
+                                            <span class="price">대출잔액 1,000,000원</span>
+                                        </div>
+                                        <div class="term"><span class="offscr">수납기간</span>2021.01.09~2021.01.25</div>
+                                    </li>
+                                    <li>
+                                        <div class="result_info">
+                                            <span class="result_date">2회차</span>
+                                            <div class="code"><span class="offscr">납입일</span>2020.02.28</div>
+                                        </div>
+                                        <div class="result_content">
+                                            <strong><span class="loan">대출</span>1,000,000원</strong>
+                                            <span class="price">대출잔액 1,000,000원</span>
+                                        </div>
+                                        <div class="term">
+                                            <span class="offscr">수납방법</span><span class="auto">자동이체</span>
+                                            <span class="offscr">수납기간</span>2019.12.24~2020.01.24(30일)
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="result_info">
+                                            <span class="result_date">1회차</span>
+                                            <div class="code"><span class="offscr">납입일</span>2020.02.28</div>
+                                        </div>
+                                        <div class="result_content">
+                                            <strong><span class="loan">대출</span>1,000,000원</strong>
+                                            <span class="price">대출잔액 1,000,000원</span>
+                                        </div>
+                                        <div class="term"><span class="offscr">수납기간</span>2021.01.09~2021.01.25</div>
+                                    </li>
+                                </ul>
+                                <div class="list_more">
+                                    <button type="button" class="btn_more">
+                                        <span class="offscr">더보기</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="add_service">
+                                    <h2 class="h3">어떤 서비스가 필요하세요?</h2>
+                                    <div class="service_board">
+                                        <div class="service_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico"></span>
+                                                        계약조회
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico"></span>
+                                                        보험계약대출신청
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico"></span>
+                                                        보험계약대출상환
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico"></span>
+                                                        보험계약대출거래<br>내역조회
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn_service">
+                                                        <span class="ico"></span>
+                                                        보험계약대출증명서
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fixed_btm_btns">
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>목록</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel2" class="tab_panel">
+                                HIBR02030020
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

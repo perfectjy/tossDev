@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="step_list">
+                        <div class="step_bar"><span style="width:50%"></span></div>
+                        <div class="steps">
+                          <span class="offscr">현재단계</span><strong class="num">3</strong>
+                          <span class="offscr">전체단계</span><strong>6</strong>
+                        </div>
+                    </div>
+                    <div class="governing">
+                        <h2 class="governing_title">행복한 미래를 위한 한 걸음, 두근두근 은퇴설계로 준비하세요.</h2>
+                        <p class="info_text">입력하신 정보를 바탕으로 미래에 대한 예상치를 도출하여 은퇴시점에 맞춘 설계를 도와드립니다.</p>
+                    </div>
+
+                    <div class="comp">
+                        <h3 class="h3 hmark">개인연금정보 입력(본인)</h3>
+                        <p>보유하고 계신 개인연금이 없다면 정보 입력 없이 다음 단계로 이동하세요.</p>
+
+                        <div class="form_wrap parallel">
+                            <div class="form_list">
+                                <span class="form_label">연금보험료</span>
+                                <div class="range_amount">    
+                                    <div class="slider" data-min="0" data-max="10000" data-step="1" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">0원</span>
+                                        <span class="middle">5천만원</span>
+                                        <span class="end">1억원</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">만원</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">0원~1억원까지 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="joinCompany" class="form_label">가입연도</label>
+                                <div class="form_item">
+                                    <select id="joinCompany" title="가입연도">
+                                        <option value="0" selected>선택</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">가입연도를 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="payperiod" class="form_label">납입기간</label>
+                                <div class="form_item">
+                                    <select id="payperiod" title="납입기간">
+                                        <option value="0" selected>선택</option>
+                                        <option value="1">10년</option>
+                                        <option value="2">15년</option>
+                                        <option value="3">20년</option>
+                                        <option value="4">25년</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">납입기간을 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">연금개시나이</span>
+                                <div class="range_amount">                   
+                                    <div class="slider" data-min="55" data-max="70" data-step="1" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">55세</span>
+                                        <span class="end">70세</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">세</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">55세~70세까지 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="payperiod1" class="form_label">지급기간</label>
+                                <div class="form_item">
+                                    <select id="payperiod1" title="지급기간">
+                                        <option value="0" selected>선택</option>
+                                        <option value="1">5년</option>
+                                        <option value="2">10년</option>
+                                        <option value="3">15년</option>
+                                        <option value="4">20년</option>
+                                        <option value="5">25년</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">지급기간을 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">적용이율</span>
+                                <div class="range_amount">
+                                    <div class="slider" data-min="20" data-max="100" data-step="1" data-dot="true" data-unit="%" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">2.0%</span>
+                                        <span class="middle">6.0%</span>
+                                        <span class="end">10%</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">%</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">2.0~10%까지 입력해 주세요.</p>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <hr>
+
+                    <div class="comp">
+                        <h3 class="h3 hmark">개인연금정보 입력(배우자)</h3>
+
+                        <div class="form_wrap parallel">
+                            <div class="form_list">
+                                <span class="form_label">연금보험료</span>
+                                <div class="range_amount">    
+                                    <div class="slider" data-min="0" data-max="10000" data-step="1" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">0원</span>
+                                        <span class="middle">5천만원</span>
+                                        <span class="end">1억원</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">만원</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">0원~1억원까지 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="joinCompany2" class="form_label">가입연도</label>
+                                <div class="form_item">
+                                    <select id="joinCompany2" title="가입연도">
+                                        <option value="0" selected>선택</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">가입연도를 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="payperiod2" class="form_label">납입기간</label>
+                                <div class="form_item">
+                                    <select id="payperiod2" title="납입기간">
+                                        <option value="0" selected>선택</option>
+                                        <option value="1">10년</option>
+                                        <option value="2">15년</option>
+                                        <option value="3">20년</option>
+                                        <option value="4">25년</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">납입기간을 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">연금개시나이</span>
+                                <div class="range_amount age03">                   
+                                    <div class="slider" data-min="55" data-max="70" data-step="1" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">55세</span>
+                                        <span class="end">70세</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">세</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">55세~70세까지 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <label for="payperiod3" class="form_label">지급기간</label>
+                                <div class="form_item">
+                                    <select id="payperiod3" title="지급기간">
+                                        <option value="0" selected>선택</option>
+                                        <option value="1">5년</option>
+                                        <option value="2">10년</option>
+                                        <option value="3">15년</option>
+                                        <option value="4">20년</option>
+                                        <option value="5">25년</option>
+                                    </select>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">지급기간을 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">적용이율</span>
+                                <div class="range_amount">
+                                    <div class="slider" data-min="20" data-max="100" data-step="1" data-dot="true" data-unit="%" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">2.0%</span>
+                                        <span class="middle">6.0%</span>
+                                        <span class="end">10%</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">%</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">2.0~10%까지 입력해 주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title open">
+                            <span class="toggle">유의사항<span class="offscr">상세보기</span></span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>적용이율은 개인연금의 연금지급시점까지 동일하다고 가정합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn second">이전</button>
+                            <button type="button" class="btn primary">다음</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+    </div>
+</body>
+</html>

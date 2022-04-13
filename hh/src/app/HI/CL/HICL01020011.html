@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스 안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#ServiceInfo');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#ServiceInfo" class="btn line dialog_open">서비스 안내</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="ServiceInfo" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>서비스 안내</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                보험금 청구서를 작성하지 않아도<br class="mo_br">
+                                온라인으로 간편하게<br>
+                                보험금을 청구할 수 있습니다.
+                            </div>
+                            
+                            <div class="gov_btns even">
+                                <a href="#none" class="btn line">보험금 지급절차 안내문</a>
+                                <a href="#none" class="btn line">보험금 청구 가이드</a>
+                                <a href="#none" class="btn line">필요서류 확인</a>
+                            </div>
+                        </div>
+
+                        <div class="accordion svc_info">
+                            <div class="title open">
+                                <span class="toggle">이용안내</span>
+                            </div>
+                            <div class="panel">
+                                <div class="label info1">이용대상</div>
+                                <ul class="list_dot">
+                                    <li>계약자, 피보험자, 친권자</li>
+                                </ul>
+
+                                <div class="label info2">이용시간</div>
+                                <ul class="list_dot">
+                                    <li>365일 24시간</li>
+                                </ul>
+
+                                <div class="label info3">이용조건</div>
+                                <ul class="list_dot">
+                                    <li>보험금 청구금액이 500만원 이하인 건
+                                        <p class="imp_txt">단, 보험금 심사 과정에서 원본서류 및 추가서류 제출을 요청 드릴 수 있습니다.</p>
+                                    </li>
+                                    <li>기타 문의사항은 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                                </ul>
+
+                                <div class="label info4 pc_hide">큰글씨 서비스</div>
+                                <ul class="list_dot pc_hide">
+                                    <li>
+                                        읽기 편하고 누르기 쉬운 큰글씨 서비스를 이용할 수 있습니다.
+                                        <div class="ac_in_btns">
+                                            <button type="button" class="btn base">큰글씨 서비스 이용하기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="title">
+                                <span class="toggle">이용절차</span>
+                            </div>
+                            <div class="panel">
+                                <ol class="use_step_proc">
+                                    <li><span class="num">1</span><strong>청구내역 입력</strong></li>
+                                    <li><span class="num">2</span><strong>필요서류 접수</strong></li>
+                                    <li><span class="num">3</span><strong>보험금청구 완료</strong></li>
+                                    <li><span class="num">4</span><strong>담당자 배정/처리</strong></li>
+                                    <li><span class="num">5</span><strong>보험금 지급</strong></li>
+                                </ol>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">기타 보험금 청구방법 안내</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>
+                                        500만원 초과 청구 건은 원본서류 제출이 필요하므로 우편 또는 방문하여 접수해 주세요.
+                                        <table class="tbl_row">
+                                            <caption>우편,방문</caption>
+                                            <colgroup>
+                                                <col style="width:100px;">
+                                                <col style="width:auto;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" style="width:60px;">우편</th>
+                                                    <td style="width:calc(100% - 60px);">
+                                                        아래 서류를 등기우편으로 보내 주세요.
+                                                        <br>
+                                                        <ul class="list_dot">
+                                                            <li>보험금 청구서</li>
+                                                            <li>개인정보처리동의서</li>
+                                                            <li>필요서류</li>
+                                                        </ul>
+                                                        <br>
+                                                        주소: (07258) 서울특별시 영등포구 국회대로612 코레일유통본사사옥 13층, 현대해상 장기보험 사고접수 담당
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" style="width:60px;">방문</th>
+                                                    <td style="width:calc(100% - 60px);">
+                                                        가까운 고객지원팀을 방문하여 접수할 수 있습니다.
+                                                        <div class="ac_in_btns">
+                                                            <a href="#" class="btn base"><span class="map">지점찾기</span></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="title">
+                                <span class="toggle">유의사항</span>
+                            </div>
+                            <div class="panel">
+                                <ul class="list_dot">
+                                    <li>보험금 청구권 소멸시효는 발생일로부터 3년이며, 이 기간이 지나면 청구권이 소멸됩니다.</li>
+                                    <li>계약자가 법인인 일반보험 및 배상책임보험, 재물보험은 온라인으로 보험금을 청구할 수 없습니다. 지점에 방문하시거나 대표콜센터(<span class="tel_number">1588-5656</span>, 평일 09:00~18:00) 로 연락하시기 바랍니다.</li>
+                                    <li>6개월 이내 동일한 사고 또는 질병으로 치료받으셨다면 당시 보상담당자에게 문의해 주세요.</li>
+                                    <li>필요서류를 모두 제출해야 보험금이 신속하게 지급됩니다. 필요한 서류를 확인해 주시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <a href="#none" class="btn primary">질병/상해 보험금 청구</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+
+.h_b {position:relative; font-size:20px; line-height: 28px; font-weight:700; color:#000; margin:46px 0 16px 0;}
+.h_b:first-child {margin-top:0;}
+.h_b > .unit { position:absolute; bottom:0; right:0; font-size:15px; font-weight:400; color:#777; }
+.mobile .h3.b { font-size:18px; }
+.mobile p.b { font-size:18px; line-height:28px; }
+.mobile hr.thin { height:1px; background:#ccc; margin:35px 0; }
+
+/* top button */
+.mobile .top_button.b { bottom:100px; }
+
+/* page title */
+.mobile .gnb_mb > h1 .b {font-size:19px;}
+.mobile .header_mb.big .gnb_mb .btn_tooltip { width:24px; height:24px; background:url(/src/assets/images/mobile/ico_gnbtip_b.png) center/100% no-repeat; margin-bottom:-5px; }
+
+.mobile .list_dot_b {line-height:28px;font-size:18px;color:#333;text-align:left;}
+.mobile .list_dot_b > li {position:relative; padding-left:10px;  word-break: keep-all;}
+.mobile .list_dot_b > li:before {position:absolute; content:''; top:12px; left:0;  width:3px; height:3px; border-radius: 50%; background:#333; }
+.mobile .list_dot_b > li:not(:first-child) {margin-top:8px;}
+.mobile .list_dot_b > li.highlight:before {background-color:#ea7404}
+.mobile .list_dot_b .list_dot_b {margin-top:8px;}
+.mobile .list_dot_b .data_list_b { margin-top:20px; }
+.mobile .list_dot_b .imp_txt { font-size:18px; line-height:normal; margin-top:5px; padding-left:22px; }
+.mobile .list_dot_b .fs_bold { color:#000; }
+
+.mobile p.list_dot_b {position:relative; padding-left:10px; margin-top:15px; line-height:28px; color: #333; word-break: keep-all; font-size:18px;}
+.mobile p.list_dot_b:before {position:absolute; content:''; top:10px; left:0;  width:3px; height:3px; border-radius: 50%; background:#333; }
+
+.mobile ul.list_bar_b {margin-top:13px;}
+.mobile ul.list_bar_b > li {position:relative; color:#333; font-size:18px; line-height:28px; padding-left:11px;margin-top:8px;}
+.mobile ul.list_bar_b > li:before {position:absolute; content:''; top:12px; left:0; width:5px; border-top:1px solid #333;}
+.mobile ul.list_bar_b > li.highlight:before { border-color:#ea7404; }
+.mobile p.list_bar_b {position:relative; color:#333; font-size:18px; line-height:28px; padding-left:11px;margin-top:8px;}
+.mobile p.list_bar_b:before {position:absolute; content:''; top:12px; left:0; width:5px; border-top:1px solid #333;}
+
+.mobile ul.imp_txt.b {margin-top:23px;}
+.mobile ul.imp_txt.b li {font-size:18px; line-height: 28px; padding-left:20px; margin-top:8px;}
+.mobile p.imp_txt.b { font-size:18px; line-height: 28px; padding-left:20px; margin-top:8px; }
+
+.mobile .list_num_b { font-size:18px; line-height:28px; color:#333; }
+.mobile .list_num_b > li { position:relative; margin-top:8px; }
+.mobile .list_num_b > li > .list_bar { margin-top:0; }
+
+/* button align */
+.mobile .list_dot_b .ac_in_btns,
+.mobile ul.imp_txt.b .ac_in_btns {margin-top:13px;}
+.mobile .gov_btns_b {margin-top:29px;}
+.mobile .gov_btns_b .btn {margin-top:15px;}
+
+/* button */
+.mobile .btn_conts.b { margin-top:35px; }
+.mobile .btn.primary.b, .mobile .btn.second.b {height:70px; font-size:21px; line-height: 70px;}
+.mobile .btn.sline.b {height:70px; font-size:21px; line-height: 68px;}
+.mobile .btn.line.b, .mobile .btn.oline.b {width:100%; height:55px; font-size:19px; line-height: 54px;}
+.mobile .btn.base.b {font-size:17px; padding:0 20px; height:45px; line-height: 42px;}
+.mobile .btn.ofill.b { width:100%; height:55px; font-size:19px; line-height:55px; }
+.mobile .list_more .btn_more.b {width:80px; height:40px; border-radius: 20px;}
+.mobile .list_more .btn_more.b::before {width:17px; height:3px;}
+.mobile .list_more .btn_more.b::after {width:3px; height:17px;}
+.mobile .dialog .dialog_footer_btn .btn.b {height:70px; font-size:21px; line-height: 70px;}
+.btn_call {position:relative; display:block; height:55px; border:1px solid #666; font-size:19px; font-weight:500; line-height:53px; color:#000; padding: 0 30px; border-radius: 10px;}
+.btn_call:after {position:absolute; content:''; width:23px; height:23px; top:14px; right:20px; background: url(/src/assets/images/mobile/ico_hitel.png) center/100% no-repeat; }
+
+/* input */
+.mobile input[type="radio"].rdo_b + label {padding-left:44px; font-size:18px; min-height:35px; line-height: 28px; padding-top:5px;}
+.mobile input[type="radio"].rdo_b + label::before {width:35px; height:35px;}
+.mobile input[type="radio"].rdo_b:checked + label::before {background-size:auto 35px;}
+
+.mobile input[type="checkbox"].chk_b + label {font-size:18px;padding-left:44px; min-height:35px; line-height: 28px; padding-top:5px;}
+.mobile input[type="checkbox"].chk_b + label::before {width:35px; height:35px;}
+.mobile input[type="checkbox"].chk_b:checked + label::before {background-size:16px 11px;}
+
+.mobile select.b {height:65px; font-size:23px;}
+.mobile textarea.b {font-size:23px; line-height: 28px;}
+.mobile .inp_txt.b, .mobile .inp_date.b, .mobile .inp_price.b {height:65px; font-size:23px;}
+.mobile .form_wrap .unit_item > .inp_price.b { padding-right:55px; }
+.mobile .inp_price.b + .unit { font-size:23px; }
+
+.mobile .form_wrap.b .form_list .form_label {font-size:18px; margin-bottom:20px;}
+.mobile .form_wrap.b .form_list .col2 .birth_num:after {top:33px;}
+.mobile .form_wrap.b .form_row .form_label { font-size:18px; }
+.mobile .btn_box_b {margin-top:35px; padding-bottom:16px;}
+.mobile textarea.b + .cont {font-size:16px;}
+.mobile .form_wrap.b .line_box {font-size:20px; line-height: 28px;;}
+.mobile .bank .form_item.col2 .btn.b {height:65px;}
+.mobile .line_box .btn.line.b { position:relative; top:auto; right:auto; width:100%; font-size:18px; height:45px; line-height: 43px; padding:0 20px; margin-top:20px; }
+.mobile .form_wrap.b .addr_item .btn.b { height:65px; line-height:63px; }
+.mobile .btn_conts a.link2.b { font-size:18px; }
+.mobile .form_wrap.b .form_row .price_item { font-size:28px; }
+.mobile .price_ui_input.b span.inp_txt,
+.mobile .price_ui_input.b span.inp_txt:empty:before { font-size:35px; }
+.mobile .price_ui_input.b .inp_del { width:26px; height:26px; margin-top:15px; background:url(/src/assets/images/mobile/ico_del_b.png) center/100% no-repeat; }
+.mobile .price_ui_input.b .btn_price .btn { height:45px; font-size:18px; border-radius:22.5px; }
+.mobile .form_wrap.b .email_item .item:first-of-type::after { top:18px; font-size:18px; }
+
+.mobile .form_list .form_item.vertical_b .radio_box,
+.mobile .form_list .form_item.vertical_b .check_box { display:block; margin-right:0; margin-top:10px; }
+.mobile .form_list .form_item.vertical_b .radio_box:first-child,
+.mobile .form_list .form_item.vertical_b .check_box:first-child { margin-top:0; }
+
+.mobile .filters.b > span {display:inline-block; margin:0 8px 15px 0;}
+.mobile .filters.b input + label {font-size:18px; height:45px; line-height: 43px; border-radius: 23px; padding-left:45px;}
+.mobile .filters.b input[type=checkbox] + label:before {top:calc(50% - 8px); left:19px; width:17px; height:17px; background:url(/src/assets/images/mobile/ico_filter_multi_b.png) no-repeat; background-size:80px 17px !important;}
+.mobile .filters.b input[type=radio] + label::before  {top:calc(50% - 8px); left:19px; width:17px; height:17px; background:url(/src/assets/images/mobile/ico_filter_multi_b.png) -40px 0 no-repeat; background-size:80px 17px !important;}
+.mobile .filters.b input[type=radio]:checked + label::before {background-position:-60px 0;}
+
+.mobile .switcher.b input[type='checkbox'] + label[data-title1] { width:90px; height:32px; }
+.mobile .switcher.b input[type='checkbox'] + label:before { width:24px; height:24px; }
+.mobile .switcher.b input[type='checkbox'] + label[data-title1]:after { left:34px; font-size:16px; line-height:30px; }
+.mobile .switcher.b input[type='checkbox']:checked + label[data-title1]:before { left:62px; }
+.mobile .switcher.b input[type='checkbox']:checked + label[data-title1]:after { right:35px; }
+
+/* 유효성 문구 */
+.mobile .error_text.b { font-size:15px; padding-left:24px; }
+.mobile .error_text.b::before { top:5px; width:18px; height:18px; background-size:18px; }
+
+
+/* tab */
+.mobile .tab_section.t1 > .tab_list > ul.b>li>a {font-size:18px; min-height:53px;}
+.mobile .tab_section.t2 > .tab_list > ul.b>li>a { font-size:18px; }
+.mobile .tab_section.t2 > .tab_list > ul.b>li.active>a { font-weight:700; }
+.mobile .tab_section.t2 > .tab_list > ul.b>li:before { width:3px; height:3px; margin-top:-3px; }
+
+/* step list */
+.mobile .step_list.b .steps {font-size:17px;}
+
+/* table */
+.tbl_big {border:1px solid #ccc; border-width:1px 0; font-size:18px; line-height: 28px; padding:14px 0;}
+.tbl_big tbody th, .tbl_big tbody td {padding:7px 0; vertical-align: top; width:50%;}
+.tbl_big tbody th {color:#777; padding-left:10px; text-align:left;}
+.tbl_big tbody td {padding-right:10px; text-align:right;}
+.tbl_big tr.line th, .tbl_big tr.line td {border-bottom:1px solid #eee; padding-bottom:15px;} 
+.tbl_big tr.line + tr th, .tbl_big tr.line + tr td {padding-top:15px;}
+
+.tbl_row_b { border-bottom:1px #ccc solid; }
+.tbl_row_b colgroup {display:none;}
+.tbl_row_b tbody {display:block; padding:20px 0; border-top:1px #ccc solid;}
+.tbl_row_b tr { display:block; }
+.tbl_row_b tr:not(:first-child) { margin-top:15px; }
+.tbl_row_b tr th, .tbl_row_b tr td { display:block; text-align:left; padding-left:15px; }
+.tbl_row_b tr th { position:relative; font-size:16px; color:#777; line-height:25px; }
+.tbl_row_b tbody tr th::before { content:''; position:absolute; top:12px; left:5px; width:3px; height:3px; border-radius:1.5px; background:#777; }
+.tbl_row_b tr td { font-size:18px; color:#000; line-height:28px; margin-top:5px; }
+.tbl_row_b tbody tr.sum th { color:#ea7404; }
+.tbl_row_b tbody tr.sum th::before { background:#ea7404; }
+.tbl_row_b tbody tr.sum td { color:#ea7404; font-weight:700; }
+.tbl_row_b tfoot th, .tbl_row tfoot td { color:#000; font-weight:500; background:#fff6ed; padding-top:20px; padding-bottom:20px; border-bottom:1px #bebebe solid; }
+.tbl_row_b tfoot td { color:#ea7404; }
+.tbl_row_b strong { font-weight:700 !important; }
+
+.info_list_b {line-height: 28px;border:1px solid #ccc; border-width:1px 0; padding:18px 10px;}
+.info_list_b dt {position:relative; font-size:16px; color:#777; padding-left:10px;}
+.info_list_b dt:not(:first-child) {margin-top:12px;}
+.info_list_b dt:before {position:absolute; content:''; top:12px; left:0; width:3px; height:3px; border-radius:50%; background:#777;}
+.info_list_b dd {font-size:18px; color:#000; padding-left:10px;}
+
+.tbl_big + .info_list_b {border-top-color:#ddd; margin-top:-1px;}
+
+.mobile .b .sub_conts .subject .name {font-size: 20px; font-weight:700; line-height: 31px;}
+.mobile .b .sub_conts dl {font-size:18px; line-height: 28px;}
+.mobile .b .sub_conts dl dt {font-size:18px; width:80px; line-height: 28px;}
+.mobile .b .sub_conts dl.wide_dt dt { width:140px; }
+.mobile .b .sub_conts dl.wide_dt dd { width:calc(100% - 140px); }
+.mobile .box_rd_list.b .big_rdo label::before {width:35px; height:35px; background-size:auto 100%;}
+
+.fsup {font-size:22px; font-weight: 700;;}
+
+/* flag */
+.tag.b { height:28px; font-size:16px; line-height:25px; border-radius:14px; }
+
+/* tooltip */
+.mobile .ui_tooltip_wrap.b > .ui_btn { width:24px; height:24px; background:url(/src/assets/images/mobile/ico_label_tooltip_b.png) 0 0/auto 24px no-repeat; margin-top:-5px; }
+.mobile .ui_tooltip_wrap.b.active > .ui_btn { background-position:-24px 0; }
+.mobile .ui_tooltip_wrap.b .tooltip { padding:15px 50px 15px 16px; }
+.mobile .ui_tooltip_wrap.b .tooltip .tooltip_close { top:16px; right:16px; background:url(/src/assets/images/mobile/tooltip_close_b.png) center/20px no-repeat; }
+.mobile .ui_tooltip_wrap.b .tooltip > p { font-size:18px; line-height:28px; }
+
+.ui_tooltip_wrap.b .tooltip .arr_half span {display:inline-block; width:48%;}
+.ui_tooltip_wrap.b .tooltip .arr_half span.full {width:100%;}
+
+/* 모달 layout */
+.mobile .big .dialog_header h1 {font-size:19px;}
+.mobile .big .dialog_header .dialog_close { background:url(/src/assets/images/mobile/ico_closedialog_b.png) center/23px no-repeat; }
+.mobile .dialog.full .dialog_wrap.big .dialog_content {padding:80px 0 85px 0;}
+.mobile .dialog.bottom .dialog_bottom_btn > .btn.b { height:55px; line-height:53px; }
+.mobile .dialog.bottom .big .dialog_header h1.mb_view { font-size:22px; }
+.mobile .dialog.bottom .big .dialog_header h1.mb_view span { font-size:18px; margin-top:10px; }
+
+/* governing */
+.mobile .dialog.bottom .governing_title.b {font-size:22px; line-height: 33px;}
+.governing .info_b {font-size:18px; line-height:28px; margin-top:13px;}
+.governing .list_dot_b {margin-top:10px;}
+.mobile .governing .info_text.b { font-size:18px; line-height:28px; }
+.mobile .governing .added_text.b { font-size:18px; font-weight:400; color:#777; }
+.mobile .governing .etc_btns ul a.b { font-size:18px; }
+
+.law_num_b {text-align:right; font-size:18px; line-height: 28px; padding-top:14px;}
+.law_num_b span {display:inline-block}
+
+.big_top {position:relative; padding-bottom:130px; font-size:18px; line-height: 28px; color:#777; background:url(/src/assets/images/mobile/bg_big_srv.png) 100% bottom no-repeat; background-size:125px auto;}
+.big_top h2 {font-size:25px; line-height: 35px; color:#000; padding-bottom:15px;}
+.big_top .emp { font-size:20px; margin-bottom:10px; }
+.big_top .emp + p { font-size:16px; line-height:24px; }
+.big_service .menus {padding-top:22px;}
+.big_service .menus a {margin-top:15px;}
+
+.mobile .Paging.b li { margin:0; }
+.mobile .Paging.b li a { min-width:33px; height:33px; font-size:18px; line-height:32px; }
+
+/* 서비스안내 */
+.svc_info_b .panel_box {border:1px solid #ccc; border-width:1px 0; padding:29px 5px 30px 5px;}
+.svc_info_b .label {display:block; position:relative; font-size:18px; font-weight:700; color:#000; margin:24px 0 8px 0;}
+.svc_info_b .label[class*='info'] {padding-left:25px; }
+.svc_info_b .label:first-child {margin-top:0;}
+.svc_info_b .label[class*='info']:before {position:absolute; content:''; width:18px; height:18px; top:3px; left:0; background:url(/src/assets/images/mobile/ico_svc_info_b.png) no-repeat; background-size: auto 20px;;}
+.svc_info_b .label.info2:before {background-position:-20px 0;}
+.svc_info_b .label.info3:before {background-position:-40px 0;}
+.svc_info_b .label.info4:before {background-position:-60px 0;}
+.svc_info_b .label.info5:before {background-position:-80px 0;}
+.svc_info_b .panel_box .para {font-size:18px; line-height: 28px;;}
+.mobile .svc_info_b .tab_contents > .tab_panel {margin-top:19px;}
+.mobile .form_wrap + .svc_info_b {margin-top:46px;}
+
+.use_step_proc_b {background:#f7f7f7; padding:15px 15px 25px 15px; border-radius: 6px; font-size:18px; line-height:28px;}
+.use_step_proc_b li {position:relative; text-align:center; min-height:50px; border:1px solid #ccc; background: #fff; margin-top:10px; padding:10px 0 0 20px; border-radius: 25px;}
+.use_step_proc_b li .num, .use_step_proc_b li .auth {display:block; position:absolute; left:15px; top:50%; width:30px; height:30px; line-height: 30px; background: #ea7404; border-radius: 50%; color:#fff; font-weight: 500;transform:translateY(-50%);}
+.use_step_proc_b li .auth {background:#666 url(/src/assets/images/mobile/ico_auth.png) center center no-repeat;background-size:12px 15px;; color:#666; font-size:1px; color:transparent; line-height: 1px; overflow:hidden;}
+.use_step_proc_b .bold { display:block; font-weight:700; }
+
+/* FAQ */
+.faq_list {border:1px solid #ccc; border-width:1px 0; font-size:18px; line-height:28px; padding:5px 0 29px 0;}
+.faq_list li {margin-top:26px;}
+.faq_list .title {position:relative; font-weight:700; padding-left:27px; margin-bottom:10px;}
+.faq_list .title:before {position:absolute; content:''; width:17px; height:20px; top:4px; left:0; background:url(/src/assets/images/mobile/txt_q.png) no-repeat; background-size:100%;}
+
+/* 약관 */
+.mobile .agreement.b .agreement_title .h3 {font-size:20px; line-height: 28px;}
+.mobile .agreement.b .terms_intro {font-size:18px; line-height: 26px;}
+.mobile .agreement.b .btn_agree {height:55px; font-size:19px; line-height: 53px;}
+.mobile .agreement.b .btn_agree.active > span {background-size:16px 11px;}
+.mobile .agreement.b .agree_item .btn_chk {font-size:18px; padding-left:10px;}
+.mobile .agreement.b .agreement_section .agreemen_list > ul > li {text-align:left;}
+.mobile .agreement.b .agreement_section .agreemen_list .radio_title {position:relative; top:auto; display:block; font-size:18px; text-align:left; margin-bottom:16px;}
+.mobile .agreement.b .agreemen_list > ul .radio_set {display:block; padding-left:10px;;}
+.mobile .agreement.b .agreement_section .agreemen_list > ul > li:not(:first-child) {margin-top:16px;}
+.mobile .agreement.b .agreement_title .h3 .tag {height:28px; font-size:16px; line-height: 24px;}
+.mobile .agreement.b .agree_item em { right:30px; width:80px; font-size:16px; height:30px; line-height: 28px; margin:0 0 0 11px;}
+.mobile .agreement.b .list_chk li label {font-size:18px; line-height: 28px;}
+.mobile .agreement.b .add_items {padding-bottom:25px;}
+.mobile .agreement.b .add_items ul li {margin-top:20px;}
+.mobile .agreement.b .add_items ul li:nth-child(2n) { width:110px; }
+.mobile .agreement.b .add_items ul li:nth-child(2n+1) { width:calc(100% - 113px); }
+.mobile .agreement.b .add_items input[type="checkbox"] + label {font-size:18px;}
+.mobile .terms_conf_no.b {font-size:18px; line-height: 28px;}
+.mobile .terms_conf_no.b p:not(:first-child) {margin-top:10px;}
+
+.mobile .big [class*="section"].terms p {font-size:18px; line-height: 28px;;}
+
+/* list */
+.mobile .no_list.b { font-size:18px; line-height:28px; }
+.loan_list_wrap .list {border:1px solid #ccc; border-width:1px 0; padding-top:19px;}
+.loan_list_wrap .list:not(:first-child) {margin-top:20px;}
+.loan_list_wrap .list .name {font-size:19px; line-height: 28px; font-weight: 700; margin-bottom:-3px;}
+.loan_list_wrap .list .tbl_big {border:0;}
+.loan_list_wrap .list .info_list_b {border-top:0; border-bottom-color:#eee}
+/* .loan_list_wrap .list > *:last-child {border-top:1px solid #eee;} */
+
+.each_select_list.b { margin-top:50px; }
+.each_select_list.b .sub_conts { padding:35px 25px; }
+.each_select_list.b .sub_conts .subject .name { font-size:20px; font-weight:700; line-height:31px; }
+.each_select_list.b .contract .sub_conts dl dt,
+.each_select_list.b .contract .sub_conts dl dd { line-height:28px; margin-top:5px; padding-top:3px; }
+.each_select_list.b .contract .sub_conts dl dt { font-size:16px; width:125px; }
+.each_select_list.b .contract .sub_conts dl dd { font-size:18px; width:calc(100% - 125px); }
+.each_select_list.b .contract .sub_conts dl.s_dt dt { width:85px; }
+.each_select_list.b .contract .sub_conts dl.s_dt dd { width:calc(100% - 85px); }
+.each_select_list.b .sub_conts .subject > .tag { margin-bottom:10px; }
+.each_select_list.b .sub_conts .subject > .sub,
+.each_select_list.b .sub_conts .subject > .code { font-size:18px; font-weight:400; color:#777; }
+
+.data_list_b { border:1px #ccc solid; border-width:1px 0 1px 0; padding:20px 10px; }
+.data_list_b .list_dot > li { font-size:18px; line-height:28px; }
+.mobile .data_list_b .list_dot > li::before { top:12px; background:#777; }
+.data_list_b .list_dot .item_sbj { font-size:16px; color:#777; }
+
+.mobile .list_data.b .data_item { padding:25px 10px; }
+.mobile .list_data.b .data_header .title { font-size:20px; }
+.mobile .list_data.b .data_header .date { font-size:18px; }
+.mobile .list_data.b .data_cont dl > div { display:block; margin-top:20px; }
+.mobile .list_data.b .data_cont dt, .mobile .list_data.b .data_cont dd { padding-left:20px; }
+.mobile .list_data.b .data_cont dt { position:relative; font-size:16px; }
+.mobile .list_data.b .data_cont dt::before { content:''; position:absolute; top:12px; left:8px; width:3px; height:3px; border-radius:1.5px; background:#777; }
+.mobile .list_data.b .data_cont dd { font-size:18px; text-align:left; margin-top:10px; }
+
+/* 담당자 */
+.mobile .manager.b > .contact_info { position:relative; display:block; }
+.mobile .manager.b > .contact_info > div { width:auto; font-size:18px; padding:0; }
+.mobile .manager.b > .contact_info > .phone .tel_number { position:unset; font-weight:700; color:#000; text-align:left; margin-top:5px; }
+.mobile .manager.b > .contact_info > .phone .tel_number::after { top:calc(50% - 12px); right:25px; width:24px; height:24px; background:url(/src/assets/images/mobile/ico_hitel_b.png) center/100% no-repeat; }
+
+/* 부가서비스 바로가기 */
+.mobile .add_service > .h_b { padding:0 20px; }
+.mobile .service_board .service_list.b > ul { display:flex; width:100%; padding:0 65px; margin:0; justify-content:space-between; }
+.mobile .service_board .service_list.b > ul > li { width:90px; }
+.mobile .service_board .service_list.b > ul > li > .btn_service { font-size:18px; line-height:28px; }
+.mobile .service_board .service_list.b > ul > li > .btn_service > .ico { width:70px; height:70px; margin-bottom:15px; }
+.mobile .service_board .service_list.b > ul > li > .btn_service > .ico:after {top:5px; left:5px;}
+
+/* 파일 첨부 */
+.mobile .file.b > .add_file { font-size:18px; }
+
+/* mypage */
+.mobile .mypage_top_info.b > p { font-size:18px; }
+.mobile .mypage_alim .alim_item.b > .subject .title {font-size:21px;}
+.mobile .mypage_alim .alim_item.b > .cont p {font-size:18px; line-height: 28px;;}
+.mobile .mypage_alim .alim_item.b > .btn_alim_close {background:url(/src/assets/images/mobile/btn_close_b.png) 0 0/100% no-repeat; }
+.mobile .mypage_alim .alim_item.b > .btn_alim_close::before,
+.mobile .mypage_alim .alim_item.b > .btn_alim_close::after {display:none;}
+.mobile .mypage_alim.b + .btn_conts { margin-top:20px; }
+.mobile .mypage_alim.b.multi + .btn_conts { margin-top:30px; }
+.tab_section.mypage { margin-top:50px; }
+
+.mobile .question_list.b .question_title {font-size:18px;}
+.mobile .question_list.b .form_wrap {padding:20px 0;}
+
+/* .tbl_top_info */
+.mobile .tbl_top_info .opt_label.b { font-size:18px; color:#000; vertical-align:middle; }
+.mobile .tbl_top_info select.sm.b { height:45px !important; font-size:18px; }
+
+/* (공통)대출 배너 */
+.loan_board.b .loan_tit,
+.loan_board.b .loan_money,
+.loan_board.b .date { font-size:18px; }
+.loan_board.b .loan_money .value { font-size:35px; }
+
+/* 인터넷창구 - 계약목록 */
+.insu_list.b .tag + .insu_name { font-size:18px; margin-top:10px; }
+.insu_list.b .car_number,
+.insu_list.b .insu_pay { font-size:18px; margin-top:10px; }
+.insu_list.b .insu_pay.warning { color:#ea7404; }
+.insu_list.b .car_number, .insu_list.b .insu_pay > .pay { font-size:28px; font-weight:700; }
+.insu_list.b .insu_detail dl > dt { width:85px; font-size:16px; color:#999; }
+.insu_list.b .insu_detail dl > dd { width:calc(100% - 85px); font-size:18px; }
+.insu_list.b .insu_expect { font-size:16px; }
+
+/* 인터넷창구 - 계약상세조회 */
+.tbl_list_b { display:block; font-size:18px; line-height: 28px; border-bottom:1px #ccc solid; }
+.tbl_list_b li {position:relative; padding:28px 10px;border-top:1px #ccc solid;}
+.tbl_list_b li .tit {display:block; color:#000; font-weight: 700; padding-bottom:6px;}
+.tbl_list_b li dl {display:flex; flex-wrap: wrap;}
+.tbl_list_b li dl dt {width:105px; color:#777; padding-top:13px;}
+.tbl_list_b li dl dd {width:calc(100% - 105px); padding-top:13px;}
+.tbl_list_b .btn_go { position:absolute; top:0; left:0; width:100%; height:100%; z-index:1; }
+.tbl_list_b .btn_go::before { content:''; position:absolute; top:calc(50% - 16px); right:0; width:24px; height:24px; background:url(/src/assets/images/mobile/ico_list_arrow.png) center/100% no-repeat; }
+.total_sum {background:#fff6ed; font-weight: 700; border-top:1px solid #ddd; border-bottom:1px solid #ccc; margin-top:-1px; font-size:18px; line-height: 65px; padding:0 20px; display:flex; justify-content: space-between;}
+
+/* 인터넷창구 - 총 납입보험료 */
+.mobile .result_board.b .result_text { font-size:18px; font-weight:400; }
+.mobile .result_board.b .result_number { font-size:30px; }
+.mobile .result_board.b > a { font-size:18px; line-height:56; }
+
+/* 인터넷창구 - 연금보험공시 조회 */
+.mobile .pension_graph.b .graph { font-size:18px; }
+
+/* 인터넷창구 - 계약상세조회 */
+.insu_item.governing.b .insu_name > .name,
+.insu_item.governing.b .insu_pay { font-size:18px; }
+.insu_item.governing.b .insu_pay, .insu_item.governing.b .car_number { margin-top:10px; }
+.insu_item.governing.b .insu_pay > .pay { font-size:28px; }
+.mobile .btn_seltype.b { height:65px; font-size:23px; line-height:63px; }
+.mobile .list_address.b > li:not(:first-child) { margin-top:15px; }
+.mobile .list_address.b > li > .radio_box { line-height:35px; }
+
+/* 대출 - 계약별 확인 및 변경 */
+.mobile .ins_charge_wrap.b .insu_amount { padding-bottom:30px; }
+.mobile .ins_charge_wrap.b .insu_amount .insu_title { font-size:24px; text-align:left; line-height:34px; padding:20px 25px 15px; }
+.mobile .ins_charge_wrap.b .info_price { padding:0 25px; }
+.mobile .ins_charge_wrap.b .info_price .info_rate { display:block; text-align:left; font-size:16px; margin:0; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li { display:flex; color:#777; justify-content:space-between; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li::after { display:none; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li:not(:first-child) { margin-top:10px; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li .num { font-size:23px; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li .num strong { font-size:inherit; }
+.mobile .ins_charge_wrap.b .info_price .info_rate li:nth-child(2) .num { color:#333; }
+.mobile .ins_charge_wrap.b .insu_amount .insu_text { position:relative; right:auto; bottom:auto; font-size:18px; text-align:right; padding-right:25px; margin-top:20px; }
+.mobile .ins_charge_wrap.b .insu_amount .check_box { right:52px; }
+.mobile .ins_charge_wrap.b .insu_amount .check_box label { padding-left:0; }
+.mobile .ins_charge_wrap.b .insu_amount .last_date { font-size:18px; color:#777; font-weight:400; margin-bottom:10px; }
+.mobile .amount_total_bottom.b { padding:0 20px 90px; }
+.mobile .amount_total_bottom.b .m_toggle_btn { height:77px; bottom:90px; }
+.mobile .amount_total_bottom.b .m_toggle_btn:after { top:calc(50% - 6px); }
+.mobile .amount_total_bottom.b .total { height:77px; padding-right:25px; }
+.mobile .amount_total_bottom.b .total .tit { font-size:18px; }
+.mobile .amount_total_bottom.b .total .tit > em { display:block; }
+.mobile .amount_total_bottom.b .total span:last-child { font-size:28px; }
+.mobile .amount_total_bottom.b .info_amount_detail dt,
+.mobile .amount_total_bottom.b .info_amount_detail dd { margin-top:10px; }
+.mobile .amount_total_bottom.b .info_amount_detail dt { font-size:18px; }
+.mobile .amount_total_bottom.b .info_amount_detail dd { font-size:20px; }
+
+/* 대출 - 이중출금안내 */
+.mobile .scrollbar .text_normal.b { font-size:18px; }
+
+/* 대출 -  보험계약대출 상환가능은행 (큰글씨전용) */
+.mobile .bank_list.b { margin-top:30px; }
+.mobile .bank_list.b li:nth-child(n+3) { margin-top:24px; }
+.mobile .bank_list.b button {min-height:45px; padding-left:56px; font-size:18px; }
+.mobile .bank_list.b button:before { width:47px; height:47px; margin-top:-24px; background:url(/src/assets/images/mobile/ico_bank_list_big.png) no-repeat; background-size:188px 329px;}
+.mobile .bank_list.b .bank04:before{background-position:0 -141px;}              /* KB국민은행 */
+.mobile .bank_list.b .bank03:before{background-position:-47px -47px;}           /* 기업은행 */
+.mobile .bank_list.b .bank07:before{background-position:-47px 0;}               /* 농협은행 */
+.mobile .bank_list.b .bank15:before{background-position:0 -47px;}               /* 신한은행,제주은행 */
+.mobile .bank_list.b .bank02:before{background-position:0 -282px;}              /* 산업은행 */
+.mobile .bank_list.b .bank09:before{background-position:-47px -94px;}           /* 우리은행 */
+.mobile .bank_list.b .bank11:before{background-position:-94px -47px;}           /* 한국씨티은행 */ 
+.mobile .bank_list.b .bank05:before{background-position:0 -94px;}               /* 하나은행 */
+.mobile .bank_list.b .bank10:before{background-position:-47px -141px;}          /* SC제일은행 */
+.mobile .bank_list.b .bank13:before{background-position:0 -235px;}              /* 부산은행,경남은행 */
+.mobile .bank_list.b .bank14:before{background-position:-47px -235px;}          /* 광주은행,전북은행 */   
+.mobile .bank_list.b .bank12:before{background-position:0 -188px;}              /* 대구은행 */
+.mobile .bank_list.b .bank28:before{background-position:-141px -94px;}          /* 도이치은행 */
+.mobile .bank_list.b .bank22:before{background-position:-141px -235px;}         /* 산림조합중앙회 */
+.mobile .bank_list.b .bank18:before{background-position:-47px -188px;}          /* 새마을금고 */
+.mobile .bank_list.b .bank06:before{background-position:-141px 0;}              /* 수협은행 */
+.mobile .bank_list.b .bank19:before{background-position:-94px 0;}               /* 신협은행 */
+.mobile .bank_list.b .bank23:before{background-position:-47px -282px;}          /* 우체국 */
+.mobile .bank_list.b .bank20:before{background-position:-94px -282px;}          /* 저축은행 */
+.mobile .bank_list.b .bank27:before{background-position:0 0;}                   /* 카카오뱅크 */
+.mobile .bank_list.b .bank26:before{background-position:-141px -47px;}          /* 케이뱅크 */
+.mobile .bank_list.b .bank29:before{background-position:-94px -94px;}           /* 토스뱅크 */
+.mobile .bank_list.b .bank21:before{background-position:-141px -188px;}         /* HSBC은행 */
+.mobile .bank_list.b .bank30:before{background-position:-94px -235px;}          /* JP모간체이스은행 */
+
+/* 대출 - 보험계약대출 상환 */
+.mobile .boxing_mt.b > p.txt { font-size:18px; }
+.mobile .boxing_mt.b .chk_item { margin:0; }
+
+/* 보상서비스 - 수익자 변경 */
+.mobile .box_rd_list.b .sub_conts .subject { padding-right:40px; }
+
+/* 보상서비스 - 구비서류 접수 시 유의사항 */
+.mobile .doc_box_label.b { font-size:18px; }
+
+/* 보상서비스 - 필요서류안내 */
+.mobile .doc_info ul.list_dot_b { color:#ea7404; }
+.mobile .doc_info ul.list_dot_b > li::before { background:#ea7404; }
+
+/* 보상서비스 - 보험금청구 가이드 */
+.mobile .guide_title.b { font-size:18px; }
+.mobile .guide_slide .guide_item > .guide_text.b { font-size:19px; padding-left:24px; padding-right:0; }
+.mobile .guide_slide .guide_item > .guide_text.b > .order { left:0; }

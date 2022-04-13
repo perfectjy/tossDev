@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '필요서류 접수', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="step_list b">
+                        <div class="step_bar"><span style="width:83.3%"></span></div>
+                        <div class="steps">
+                            <span class="offscr">현재단계</span><strong class="num">5</strong>
+                            <span class="offscr">전체단계</span><strong>6</strong>
+                        </div>
+                    </div>
+                    <div class="governing">
+                        <h2 class="governing_title">
+                            보험금 청구에 필요한 서류를<br class="mo_br">
+                            등록해 주세요.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="section_s">
+                    <div class="form_wrap b">
+                        <div class="form_list">
+                            <span class="form_label">진료유형(여러 개 선택 가능)</span>
+                            <div class="form_item">
+                                <div class="filters b">
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi1" name="chk_filter">
+                                        <label for="multi1">입원</label>
+                                    </span>
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi2" name="chk_filter">
+                                        <label for="multi2">통원</label>
+                                    </span>
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi3" name="chk_filter">
+                                        <label for="multi3">약제</label>
+                                    </span>
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi4" name="chk_filter">
+                                        <label for="multi4">수술</label>
+                                    </span>
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi5" name="chk_filter">
+                                        <label for="multi5">골절</label>
+                                    </span>
+                                    <span class="chk_item">
+                                        <input type="checkbox" id="multi6" name="chk_filter">
+                                        <label for="multi6">기타</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>                                   
+                    </div>
+                    <div class="btn_box_b">
+                        <button type="button" class="btn line b"><span>필요서류 확인하기</span></button>
+                    </div>
+
+                    <p class="list_bar_b">동일한 질병(상해)으로 여러 번 진료받으신 경우, 치료기간 동안 받으신 영수증을 모두 등록해 주세요.</p>
+
+                    <div class="form_wrap b">
+                        <div class="form_list">
+                            <div class="form_label">
+                                진료비영수증, 진단서 등(카드전표 불가)
+                                <div class="ui_tooltip_wrap b">
+                                    <button type="button" class="ui_btn"><span class="offscr">필요서류 접수 시 유의사항</span></button>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="file_box">
+                                    <div class="file b">
+                                        <input type="text" id="addFile1" name="add_file" title="파일첨부" value="">
+                                        <label for="addFile1" class="add_file">
+                                            파일첨부
+    
+                                            <!-- 파일 첨부 후 나타남 -->
+                                            <!-- <span class="file_name">screenshot_HDMF_20210618_001.pdf</span>
+                                             -->
+                                        </label>
+                                        <button type="button" class="file_close">파일 취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <div class="form_label">
+                                진료비 세부(산정)내역서
+                                <div class="ui_tooltip_wrap b">
+                                    <button type="button" class="ui_btn"><span class="offscr">필요서류 접수 시 유의사항</span></button>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="file_box">
+                                    <div class="file b">
+                                        <input type="text" id="addFile2" name="add_file" title="파일첨부" value="">
+                                        <label for="addFile2" class="add_file">
+                                            파일첨부
+        
+                                            <!-- 파일 첨부 후 나타남 -->
+                                            <!-- <span class="file_name">screenshot_HDMF_20210618_001.pdf</span>
+                                             -->
+                                        </label>
+                                        <button type="button" class="file_close">파일 취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h_b">유의사항</h3>
+                    <div class="svc_info_b">
+                        <div class="panel_box">
+                            <ul class="list_dot_b">
+                                <li>보험금 심사 과정에서 원본서류 및 추가서류 제출을 요청 드릴 수 있습니다.</li>
+                                <li>진단급여금을 청구하는 경우 금액에 상관없이 반드시 진단서 원본서류가 필요합니다.(사본은 진단서 발행 병원의 원본대조필 도장이 찍힌 것)</li>
+                                <li>등록 가능한 파일형식: JPG, JPEG, PNG, GIF, BMP, PDF, TIF</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns prog">
+                        <button type="button" class="btn second b"><span>이전</span></button>
+                        <button type="button" class="btn primary b"><span>다음</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

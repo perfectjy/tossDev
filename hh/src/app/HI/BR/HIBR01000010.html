@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude"><!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title">(주)하이현님께서 유지 중인 보험계약입니다.</h2>
+                    </div>
+                    <div class="form_wrap">
+                        <div class="form_row part">
+                            <span class="form_label">보험종목</span>
+                            <div class="form_item">
+                                <div class="radio_box">
+                                    <input id="radio1" type="radio" name="radio" checked="">
+                                    <label for="radio1">장기보험</label>
+                                </div>
+                                <div class="radio_box">
+                                    <input id="radio2" type="radio" name="radio">
+                                    <label for="radio2">자동차보험</label>
+                                </div>
+                                <div class="radio_box">
+                                    <input id="radio3" type="radio" name="radio">
+                                    <label for="radio3">일반보험</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <span for="yaer" class="form_label">보험개시월</span>
+                            <div class="form_list">
+                                <div class="cell2">
+                                    <div class="col">
+                                        <select id="year" title="년도 선택">
+                                            <option>2021년</option>
+                                            <option>2020년</option>
+                                            <option>2019년</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select title="월 선택">
+                                            <option>07월</option>
+                                            <option>08월</option>
+                                            <option>09월</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <div class="col2">
+                                    <div class="date_box">
+                                        <select id="year" title="년도 선택">
+                                            <option>2021년</option>
+                                            <option>2020년</option>
+                                            <option>2019년</option>
+                                        </select>
+                                    </div>
+                                    <div class="date_box">
+                                        <select title="월 선택">
+                                            <option>07월</option>
+                                            <option>08월</option>
+                                            <option>09월</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="btn_conts">
+                            <button type="button" class="btn ofill"><span>조회</span></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter_wrap">
+                        <div class="insu_result">
+                            일반보험 계약이 <span class="result_cnt"><strong>43건</strong></span> 있어요.
+                        </div>
+                    </div>
+                    <div class="insu_list">
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <div class="insu_name">하이기업종합플러스보험</div>
+                                <div class="insu_pay">
+                                    월 <span class="pay">980,500원</span>
+                                </div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="m_toggle_cont" id="ToggleCont3">
+                                    <div class="info_list">
+                                        <dl>
+                                            <dt>계약번호</dt>
+                                            <dd>F20210224022</dd>
+                                            <dt>계약자</dt>
+                                            <dd>(주)하이현</dd>
+                                            <dt>(대표) 피보험자</dt>
+                                            <dd>(주)하이연</dd>
+                                            <dt>보험기간</dt>
+                                            <dd>2021. 04. 09 ~ 2022. 04. 09</dd>
+                                        </dl>
+                                    </div>
+                                </div> 
+                                <div class="bar_chart">
+                                    <p>만기까지 <span>85일</span> 남았습니다.</p>
+                                    <div class="bar_graph">
+                                        <div class="bar" style="width:63%"></div>
+                                    </div>
+                                    <span class="start"><span>시작일</span>2020.11.23</span>
+                                    <span class="end"><span>종료일</span>2021.11.23</span>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#none" class="btn line">상세조회</a>
+                            </div>
+                        </div>
+                        <div class="rd_box insu_item">
+                            <div class="insu_title">
+                                <div class="insu_name">하이기업종합플러스보험</div>
+                                <div class="insu_pay">
+                                   월 <span class="pay">980,500원</span>
+                                </div>
+                            </div>
+                            <div class="insu_detail">
+                                <div class="m_toggle_cont" id="ToggleCont3">
+                                    <div class="info_list">
+                                        <dl>
+                                            <dt>계약번호</dt>
+                                            <dd>F20210224022</dd>
+                                            <dt>계약자</dt>
+                                            <dd>(주)하이현</dd>
+                                            <dt>(대표) 피보험자</dt>
+                                            <dd>(주)하이연</dd>
+                                            <dt>보험기간</dt>
+                                            <dd>2021. 04. 09 ~ 2022. 04. 09</dd>
+                                        </dl>
+                                    </div>
+                                </div> 
+                                <div class="bar_chart">
+                                    <p>만기까지 <span>85일</span> 남았습니다.</p>
+                                    <div class="bar_graph">
+                                        <div class="bar" style="width:63%"></div>
+                                    </div>
+                                    <span class="start"><span>시작일</span>2020.11.23</span>
+                                    <span class="end"><span>종료일</span>2021.11.23</span>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#none" class="btn line">상세조회</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no_list"><p>대상 계약이 없습니다.</p></div>
+                    <!-- paging -->
+                    <div class="Paging" aria-label="pagination">
+                        <ul>
+                            <li><button type="button" class="prev"><span class="offscr">이전페이지</span></button></li>
+                            <!-- 현재 페이지일 때 class="current" 추가 -->
+                            <li><a href="#" class="current">1<span class="offscr">현재페이지</span></a></li>
+                            <li><a href="#">2<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">3<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">4<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">5<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">6<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">7<span class="offscr">페이지</span></a></li>
+                            <li><a href="#">8<span class="offscr">페이지</span></a></li>
+                            <li><button type="button" class="next"><span class="offscr">다음페이지</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/contents.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '디지털파트너 소개', tooltip: false, prev: true, menu: true };
+
+        // 디지털파트너 array
+        var partnerArray = [
+            { no: '1', sort: 'mobility', name: '디어코퍼레이션', link: 'https://web.deering.co/' },
+            { no: '2', sort: 'mobility', name: '마이마부', link: 'http://maymabu.com/' },
+            { no: '3', sort: 'mobility', name: '마카롱팩토리', link: 'https://macarong.net/' },
+            { no: '4', sort: 'mobility', name: '모두컴퍼니', link: 'https://www.moduparking.com/' },
+            { no: '5', sort: 'mobility', name: '미스터픽', link: 'http://www.mrpic.co.kr/' },
+            { no: '6', sort: 'mobility', name: '제이카', link: 'http://www.jecar.co.kr/' },
+            { no: '7', sort: 'mobility', name: '차봇', link: 'https://company.chabot.kr/' },
+            { no: '8', sort: 'mobility', name: '카바조', link: 'https://www.carvazo.com/' },
+            { no: '9', sort: 'mobility', name: '코엑터스', link: 'https://www.goyohanmobility.com/' },
+            { no: '10', sort: 'mobility', name: '팀와이퍼', link: 'https://www.yper.co.kr/' },
+            { no: '11', sort: 'mobility', name: 'BNSoft', link: 'http://www.bns.co.kr/' },
+            { no: '12', sort: 'mobility', name: 'CODE42', link: 'https://www.code42.ai/' },
+            { no: '13', sort: 'health', name: '눔코리아', link: 'https://noom.co.kr/' },
+            { no: '14', sort: 'health', name: '메디블록', link: 'https://medibloc.org/ko' },
+            { no: '15', sort: 'health', name: '메디히어', link: 'https://www.medihere.com/' },
+            { no: '16', sort: 'health', name: '빌리지베이비', link: 'https://babybilly.app/' },
+            { no: '17', sort: 'health', name: '케어닥', link: 'https://www.carecoordi.kr/' },
+            { no: '18', sort: 'health', name: '휴레이포지티브', link: 'http://www.huray.net/' },
+            { no: '19', sort: 'health', name: '휴먼스케이프', link: 'https://www.humanscape.io/kr/index.html' },
+            { no: '20', sort: 'ai', name: '마인즈랩', link: 'https://maum.ai/' },
+            { no: '21', sort: 'ai', name: '보맵', link: 'http://bomapp.co.kr/' },
+            { no: '22', sort: 'ai', name: '애자일소다', link: 'http://agilesoda.ai/' },
+            { no: '23', sort: 'ai', name: '에이젠글로벌', link: 'http://www.aizenglobal.com/' },
+            { no: '24', sort: 'ai', name: '에임스', link: 'https://www.aimskr.com/' },
+            { no: '25', sort: 'ai', name: '인슈로보', link: 'http://www.insurobo.co.kr/' },
+            { no: '26', sort: 'ai', name: '위닝아이', link: 'http://winningi.com/' },
+            { no: '27', sort: 'esg', name: '제리백', link: 'https://jerrybag.com/' },
+            { no: '28', sort: 'esg', name: '크리에이터스랩', link: 'https://creatorslab.co.kr/' },
+            { no: '29', sort: 'esg', name: '터치포굿', link: 'https://touch4good.com/' },
+            { no: '30', sort: 'etc', name: '디디케어스', link: 'https://pevo.care/' },
+            { no: '31', sort: 'etc', name: '빌리', link: 'https://beellee.com/' },
+            { no: '32', sort: 'etc', name: '셰어라운드', link: 'https://www.shareround.co.kr/' },
+            { no: '33', sort: 'etc', name: '아이앤나', link: 'http://iandna.com/' },
+            { no: '34', sort: 'etc', name: '안랩', link: 'http://www.ahnlab.com/' },
+            { no: '35', sort: 'etc', name: '이해라이프스타일', link: 'https://2hae.net/main#section5' },
+            { no: '36', sort: 'etc', name: '쿠콘', link: 'https://www.coocon.net/' },
+            { no: '37', sort: 'etc', name: '쿠프파이맵스', link: 'http://www.coopfimaps.com/' },
+            { no: '38', sort: 'etc', name: '파워젠', link: 'https://power-gen.co.kr/' },
+        ];
+
+        // 디지털파트너설명 array
+        var infoArray = [
+            { no: '1', info: ["디어코퍼레이션은 전동킥보드 공유플랫폼 '디어'를 서비스하는 마이크로 모빌리티 스타트업입니다.", "디어코퍼레이션은 현대해상과 플랫폼 이용자 안전을 위한 상품 관련 협업 중입니다."] },
+            { no: '2', info: ["마이마부는 차량 구매동행 서비스 및 통합 차량관리 서비스를 제공하고 있습니다.", "마이마부는 현대해상과 서비스 이용고객 대상으로 상품 제휴를 진행하고 있습니다."] },
+            { no: '3', info: ["마카롱팩토리는 운전자에게 필요한 자동차 관리정보를 제공하는 앱 '마카롱'을 서비스하고 있습니다."] },
+            { no: '4', info: ["모두컴퍼니는 주차장 정보제공 및 주차공간 공유, 모바일 주차권 결제서비스를 제공하는 온라인 주차 플랫폼 '모두의주차장'을 운영하고 있습니다."] },
+            { no: '5', info: ["미스터픽은 중고차 거래정보 플랫폼 '첫차'를 서비스하는 기업입니다."] },
+            { no: '6', info: ["제이카는 전기차 및 수소차에 특화된 차량 공유 기업입니다.<br> 사용자는 앱을 통해 차량 예약, 결제, 드라이브 및 반납을 수행할 수 있습니다."] },
+            { no: '7', info: ["차봇은 자동차 관련 서비스를 하나로 묶는 자동차 컨시어지 플랫폼입니다.", "차봇은 현대해상과 플랫폼 이용 고객 대상의 보험상품 개발을 진행하고 있습니다."] },
+            { no: '8', info: ["카바조는 중고차 구매 시 정비사 동행 서비스를 제공하는 기업입니다.<br> 사용자는 점검결과를 온라인 리포트로 받아볼 수 있습니다."] },
+            { no: '9', info: ["코액터스는 모빌리티 호출플랫폼 '고요한M'을 운영하고 있습니다.", "코액터스는 현대해상이 후원하는 '인액터스' 국내 대회 우승팀으로 현대해상과 모빌리티 보험 관련 협업 중입니다."] },
+            { no: '10', info: ["팀와이퍼는 온디맨드 세차대행 앱 서비스 '와이퍼'를 운영하는 기업입니다."] },
+            { no: '11', info: ["BNSoft는 차량 내 운전자 행동분석 솔루션 개발 기업입니다."] },
+            { no: '12', info: ["CODE42는 자율주행 모빌리티 서비스 플랫폼을 개발하는 기업입니다.", "CODE42는 현대해상과 미래 모빌리티 시대의 리스크를 관리하는 방안과 서비스를 연구 중입니다."] },
+            { no: '13', info: ["눔코리아는 모바일 앱을 통해 건강관리(다이어트, 질병예방 등) 서비스를 제공하는 기업입니다.", "눔코리아는 현대해상 고객 대상의 1:1 건강 코칭 서비스를 제공하고 있습니다."] },
+            { no: '14', info: ["메디블록은 블록체인 기반 디지털헬스케어 플랫폼 구축 기업입니다."] },
+            { no: '15', info: ["메디히어는 IT기술을 활용하여 의료접근성을 높이는 원격진료 서비스를 제공하고 있습니다.", "메디히어와 현대해상은 원격진료서비스와 보험을 결합한 새로운 가치 창출을 함께 논의 중입니다."] },
+            { no: '16', info: ["빌리지베이비는 임산부를 위한 콘텐츠 플랫폼 '베이비빌리'와 임산부 월구독 서비스 '월간임신'을 운영하고 있습니다.", "빌리지베이비는 현대해상과 플랫폼 유저 대상 금융콘텐츠 제공 관련 협업 중입니다."] },
+            { no: '17', info: ["케어닥은 간병인 매칭, 시설 검색 서비스를 제공하는 시니어 헬스케어 플랫폼입니다.", "케어닥과 현대해상은 보험상품과 플랫폼 서비스의 결합, 양사 가입자 대상으로 새로운 가치 제공 등을 협업 중입니다."] },
+            { no: '18', info: ["휴레이포지티브는 만성질병관리 솔루션 개발 및 서비스 기업입니다.", "휴레이포지티브는 현대해상 모바일 건강관리 앱 '하이헬스 챌린지' 개발 및 고도화 서비스를 제공하고 있습니다."] },
+            { no: '19', info: ["휴먼스케이프는 블록체인 기반 환자 네트워크를 구축 및 서비스하는 헬스케어 스타트업입니다.", "휴먼스케이프는 현대해상과 디지털 헬스케어 관련 상품 연구 및 마케팅 관련 협업 중입니다."] },
+            { no: '20', info: ["마인즈랩은 음성, 시각, 사고지능 등 다양한 분야의 인공지능 엔진을 제공하는 기업입니다.", "마인즈랩은 지정대리인 제도를 통해 음성봇 기반 '보험계약대출' 및 '완전판매모니터링' 업무를 협업 중입니다."] },
+            { no: '21', info: ["보맵은 빅데이터와 IT기술을 기반으로 한 보험 통합관리 플랫폼 서비스를 제공하는 기업입니다.", "보맵은 현대해상과 스타트업 전용 단체상해보험을 함께 출시하였습니다."] },
+            { no: '22', info: ["애자일소다는 기업용 AI 소프트웨어 제공 및 분석 업무를 지원하는 기업입니다.", "애자일소다는 현대해상과 데이터 분석 관련 협업 중입니다."] },
+            { no: '23', info: ["에이젠글로벌은 금융에 특화된 AI 솔루션 제공 기업입니다.", "에이젠글로벌은 금융회사의 의사결정에 AI 활용을 지원합니다."] },
+            { no: '24', info: ["에임스는 보험금 지급심사 업무 자동화, 오지급 탐지 및 제어기술 보유 기업입니다."] },
+            { no: '25', info: ["인슈로보는 보험 간편가입 기술 보유 기업입니다.", "인슈로보는 현대해상과 보험간편가입을 위한 API 개발을 진행하였습니다."] },
+            { no: '26', info: ["위닝아이는 비접촉 생체인증 솔루션을 포함한 다양한 보안인증 기술을 개발 및 제공하고 있습니다.", "위닝아이는 현대해상과 지문인증 기반 전자서명 관련 협업 중입니다."] },
+            { no: '27', info: ["제리백은 버려지는 옥외광고물을 재활용하여 라이프스타일 굿즈를 제작하는 소셜벤처입니다.", "제리백은 2021 현대해상 「ESG 소셜벤처 공모전」에 선정되어 현대해상과 '폐기 옥외광고물을 재활용한 보행안전 굿즈'를 제작하였습니다."] },
+            { no: '28', info: ["크리에이터스랩은 과잉 생산되는 식물을 활용하여 먹어도 안전한 친환경 놀이키트를 제작하는 소셜벤처입니다.", "크리에이터스랩은 2021 현대해상 「ESG소셜벤처공모전」에 선정되어 'ㅎㄷㅎㅅ 감정놀이키트'를 개발하였습니다."] },
+            { no: '29', info: ["터치포굿은 폐 플라스틱 및 리사이클 원단을 활용하여 라이프 스타일 굿즈를 제작하는 소셜벤처입니다.", "터치포굿은 2021 현대해상 「ESG소셜벤처공모전」에 선정되어 폐플라스틱을 재활용한 건강관리 키트를 개발하였습니다."] },
+            { no: '30', info: ["디디케어스는 반려견 건강관리를 위한 스마트 웨어러블 '페보 PIT'을 개발 및 운영하고 있습니다.", "디디케어스는 현대해상과 '하이펫애견보험‘ 관련 협업 중입니다."] },
+            { no: '31', info: ["빌리(Beellee)는 개인간 테크장비대여 거래를 중개하고 간편거래솔루션을 제공하는 O2O 렌탈거래중개 서비스입니다.", "빌리는 현대해상과 플랫폼 유저 대상 상품제휴를 진행하고 있습니다."] },
+            { no: '32', info: ["셰어라운드는 B2C, C2C 물건 공유 플랫폼 '꾸다'를 운영하는 O2O 플랫폼 기업입니다.", "셰어라운드는 현대해상과 플랫폼 유저 대상으로 상품 제휴를 진행하고 있습니다."] },
+            { no: '33', info: ["아이앤나는 산후조리원 신생아 영상 공유서비스 기반의 임신, 출산, 육아 종합 플랫폼입니다."] },
+            { no: '34', info: ["안랩은 국내 1위 보안 소프트웨어 개발 기업으로 V3를 포함한 각종 솔루션을 제공하고 있습니다.", "안랩은 현대해상과 보안솔루션에 보험상품을 결합한 상품 협력을 진행하고 있습니다."] },
+            { no: '35', info: ["이해라이프스타일은 가구 구독 플랫폼 '미공'을 운영하는 홈테크 스타트업입니다.", "이해라이프스타일은 현대해상과 플랫폼 유저 대상으로 상품 제휴를 진행하고 있습니다."] },
+            { no: '36', info: ["쿠콘은 마이데이터, 간편결제, 업무자동화 등에 필요한 정보를 API로 제공하는 기업입니다.", "쿠콘은 현대해상과 신분증 진위여부 확인 등 단순조회 서비스와 업무자동화 관련 협업 중입니다."] },
+            { no: '37', info: ["쿠프파이맵스는 비대면 보험서비스 '모바일보험 선물하기', '스위치보험 서비스' 전문기업입니다.", "쿠프파이맵스는 현대해상과 모바일보험 선물하기 및 스위치보험 서비스 관련 협업 중입니다."] },
+            { no: '38', info: ["파워젠은 RPA 등 기업용 솔루션 제공 기업입니다.", "파워젠은 현대해상과 업무자동화 관련 협업 중입니다."] },
+        ];
+
+        $(function() {
+            makeParterList();
+
+            // 투자 영역 select box
+            $('#investarea').on('change', function() {
+                var val = $(this).val();
+                makeParterList(val);
+            });
+        });
+
+        // 디지털파트너 리스트 만들기
+        function makeParterList(_val) {
+            var $list = $('.partner_list'),
+                sortingArray = [];
+
+            // 리스트 초기화
+            $list.empty();
+            
+            if (!!_val) {
+                $.each(partnerArray, function(i) {
+                    if (_val === partnerArray[i].sort) {
+                        sortingArray.push(partnerArray[i]);
+                    }
+                });
+            } else {
+                sortingArray = partnerArray;
+            }
+
+            $.each(sortingArray, function(idx, item) {
+                var areaText = item.sort === 'mobility' ? '모빌리티'
+                        : item.sort === 'health' ? '헬스케어'
+                        : item.sort === 'ai' ? '핀테크/AI/Big data'
+                        : item.sort === 'esg' ? 'ESG 소셜벤처'
+                        : item.sort === 'etc' ? '기타 플랫폼'
+                        : '',
+                    imgNo = Number(item.no) < 10 ? '0' + Number(item.no) : item.no,
+                    infoIdx = infoArray.map(function(x){return x.no;}).indexOf(item.no),
+                    infoArr = infoArray[infoIdx].info;
+                    
+
+                var $listObj = '';
+                $listObj += '<div class="partner_item">';
+                $listObj += '   <div class="subject">';
+                $listObj += '       <span class="badge '+ item.sort +'">'+ areaText +'</span>';
+                $listObj += '       <h3 class="partner_name">'+ item.name +'</h3>';
+                $listObj += '       <img src="/src/assets/images/company/partner_logo_'+ imgNo +'.jpg" alt="' + item.name + ' 로고">';
+                $listObj += '   </div>';
+                $listObj += '   <ul class="list_dot">';
+                
+                $.each(infoArr, function(i) {
+                    $listObj += '<li>'+ infoArr[i] +'</li>';
+                });
+
+                $listObj += '   </ul>';
+                $listObj += '   <div class="partner_btns">';
+                $listObj += '       <a href="'+ item.link +'" class="btn base" target="_blank"><span>바로가기</span></a>';
+                $listObj += '   </div>';
+                $listObj += '</div>';
+
+                $list.append($listObj);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <p class="txt_para">현대해상과 협업을 진행하고 있거나 준비하고 있는 디지털파트너를 소개합니다.</p>
+
+                    <div class="form_wrap">
+                        <div class="form_row">
+                            <label for="investarea" class="form_label">투자 영역 선택</label>
+                            <div class="form_item">
+                                <select id="investarea" name="">
+                                    <option value="">전체</option>
+                                    <option value="mobility">모빌리티</option>
+                                    <option value="health">헬스케어</option>
+                                    <option value="ai">핀테크/AI/Big data</option>
+                                    <option value="esg">ESG 소셜벤처</option>
+                                    <option value="etc">기타 플랫폼</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="partner_list"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

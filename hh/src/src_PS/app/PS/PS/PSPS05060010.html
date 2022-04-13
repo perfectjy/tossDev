@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+<script type="text/javascript">
+	$(function() {
+		// 납입방법선택
+		$(document).on('change', '.radio_box input', function(e) {
+			e.preventDefault();
+			var $this = $(this),
+				idx = $this.parent().index(),
+				$item = $('.rdo_tab_panel');
+			
+			$item.css({ display: 'none' });	
+			$('.rdo_tab_contents').find($item).eq(idx).css({ display: 'block' });
+		});
+	});
+</script>
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <div class="governing">
+                        <h2 class="governing_title">IRP계약<strong class="highlight">(Q20091******)</strong>에 대한 해지를 신청하실 수 있습니다.</h2>
+					</div>
+
+					<div class="tab_section t1">
+						<div class="tab_list tab_nav">
+							<ul>
+								<li class="tab active"><a href="#panel01"><span>계약해지신청</span></a></li>
+								<li class="tab"><a href="#panel02"><span>해지신청내역</span></a></li>
+							</ul>
+						</div>
+						<div class="tab_contents">
+							<div id="panel01" class="tab_panel">
+								<h2 class="offscr">계약해지신청</h2>
+
+								<div class="comp">
+									<div class="boxing_text">
+										<ul class="list_dot">
+											<li>송금받으실 계좌를 입력 후 예금주 확인을 위해 [계좌확인]을 눌러 주세요.</li>
+											<li>[시뮬레이션]을 누르면 총 금액과 세금을 미리 확인하실 수 있습니다.</li>
+										</ul>
+									</div>		
+								</div>
+
+								<div class="comp">
+									<h3 class="h3 hmark">기본정보</h3>
+									<ul class="list_dot">
+										<li>계약해지 후 해지내역을 받으실 개인정보를 확인해 주세요. 정보가 변경되었다면 변경된 정보를 입력해 주세요.<br>(정보변경 시 현대해상 IRP계약의 모든 정보가 변경 됩니다.)</li>
+										<li>계약해지 후 발송되는 법정안내 서류는 이메일 수신동의 여부와 상관없이 이메일로 발송됩니다.</li>
+									</ul>
+									<table class="tbl_row">
+										<caption>가입자이름,주민등록번호,가입일자,지급사유에 대한 정보</caption>
+										<colgroup>
+											<col style="width:25%;">
+											<col style="width:auto;">
+											<col style="width:25%;">
+											<col style="width:auto;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">가입자 이름</th>
+												<td>홍*동</td>
+												<th scope="row">주민등록번호</th>
+												<td>800101-1******</td>
+											</tr>
+											<tr>
+												<th scope="row">가입일자</th>
+												<td>YYYY.MM.DD</td>
+												<th scope="row">지급사유</th>
+												<td>고객요청 중도해지</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="comp">
+									<div class="form_wrap parallel">
+										<div class="form_list">
+											<label for="phone" class="form_label">휴대전화번호</label>
+											<div class="contact_item">
+												<div class="item">
+													<select id="phone" name="" title="이동통신사번호">
+														<option value="0">선택</option>
+														<option value="010">010</option>
+														<option value="011">011</option>
+														<option value="016">016</option>
+														<option value="017">017</option>
+														<option value="018">018</option>
+														<option value="019">019</option>
+													</select>
+												</div>
+												<div class="item">
+													<input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="">
+												</div>
+											</div>
+											<!-- 휴대전화번호 정상입력하지 않고 다음 단계 진행할 경우 -->
+											<p class="error_text">휴대전화번호를 올바르게 입력해 주세요.(예: 01012341234)</p>
+										</div>
+										<div class="form_list">
+											<div class="form_label">이메일</div>
+											<div class="email_item">
+												<div class="item">
+													<input type="email" title="이메일 계정" name="email_id" class="inp_txt" placeholder="이메일 입력" value="">
+												</div>
+												<div class="item">
+													<input type="email" title="이메일 도메인" name="email_domain" class="inp_txt" placeholder="예: hi.co.kr" value="">
+												</div>
+												<div class="item">
+													<select title="이메일 도메인 선택" name="sel_domain">
+														<option value="0">직접 입력</option>
+														<option value="hanmail.net">hanmail.net</option>
+														<option value="naver.com">naver.com</option>
+														<option value="nate.com">nate.com</option>
+														<option value="gmail.com">gmail.com</option>
+														<option value="hotmail.com">hotmail.com</option>
+														<option value="yahoo.com">yahoo.com</option>
+														<option value="chol.com">chol.com</option>
+														<option value="korea.com">korea.com</option>
+														<option value="netian.com">netian.com</option>
+													</select>
+												</div>
+											</div>
+											<!-- 이메일 계정을 정상입력 하지 않은 경우 -->
+											<p class="error_text">이메일 계정을 입력해 주세요.</p>
+											<!-- 이메일 도메인을 정상입력 하지 않은 경우 -->
+											<p class="error_text">이메일 도메인을 올바르게 입력해 주세요.(예: hi.co.kr)</p>
+										</div>
+
+										<div class="form_list">
+											<div class="form_label post">우편물 수령주소</div>
+											<div class="addr_item">
+												<input type="text" class="inp_txt" name="" title="주소" placeholder="검색으로 입력" disabled>
+												<button type="button" class="btn line">주소검색</button>
+											</div>
+											<div class="form_item">
+												<input type="text" name="" title="참조주소" value="" disabled>
+											</div>
+											<div class="form_item">
+												<input type="text" name="" title="상세주소" value="" disabled>
+											</div>
+											<p class="error_text">우편물 수령주소를 정확하게 입력해 주세요.<br>([주소 검색] 버튼을 눌러서 기본주소 검색 및 상세주소 입력 가능합니다.)</p>
+										</div>
+
+										<div class="form_list">
+											<span class="form_label">신분증 구분</span>
+											<div class="form_item">
+												<span class="radio_box">
+													<input id="rd_idCard1" type="radio" name="idCardType" checked>
+													<label for="rd_idCard1">주민등록증</label>
+												</span>
+												<span class="radio_box">
+													<input id="rd_idCard2" type="radio" name="idCardType">
+													<label for="rd_idCard2">운전면허증</label>
+												</span>
+												<span class="radio_box">
+													<input id="rd_idCard3" type="radio" name="idCardType">
+													<label for="rd_idCard3">외국인등록증</label>
+												</span>
+											</div>
+		
+											<div class="rdo_tab_contents">
+												<!-- "주민등록증" 선택한 경우 아래 출력 -->
+												<div class="rdo_tab_panel" style="display:block;">
+													<label class="form_label">주민등록증 발급일자</label>
+													<div class="date_box">
+														<input type="text" class="inp_date" title="주민등록증 발급일자">
+													</div>
+													<!-- 발급일자 오류일 경우 -->
+													<p class="error_text">발급일자를 입력해 주세요.</p>
+												</div>
+			
+												<!-- "운전면허증" 선택한 경우 아래 출력 -->
+												<div class="rdo_tab_panel col2">
+													<div>
+														<label for="driversNumber" class="form_label">운전면허번호</label>
+														<div class="form_item">
+															<input type="text" id="driversNumber" name="" placeholder="서울(또는 13)-01-123456-78" value="">
+															<!-- 운전면허번호 입력 오류일 경우 -->
+															<p class="error_text">운전면허번호를 형식에 맞게 정확하게 입력해 주세요.</p>
+														</div>
+													</div>
+													<div>
+														<label class="form_label">운전면허증 발급일자</label>
+														<div class="date_box">
+															<input type="text" class="inp_date" title="운전면허증 발급일자">
+														</div>
+														<!-- 발급일자 오류일 경우 -->
+														<p class="error_text">발급일자를 입력해 주세요.</p>
+													</div>
+												</div>
+			
+												<!-- "외국인등록증" 선택한 경우 아래 출력 -->
+												<div class="rdo_tab_panel">
+													<label class="form_label">외국인등록증 발급일자</label>
+													<div class="date_box">
+														<input type="text" class="inp_date" title="외국인등록증 발급일자">
+													</div>
+													<!-- 발급일자 오류일 경우 -->
+													<p class="error_text">발급일자를 입력해 주세요.</p>
+												</div>
+											</div>
+											<!--// rdo_tab_contents -->
+										</div>
+
+										<div class="form_list">
+											<label class="form_label">직업</label>
+											<div class="addr_item">
+												<input type="text" class="inp_txt" name="" title="직업" placeholder="검색으로 입력" disabled>
+												<button type="button" class="btn line">직업검색</button>
+											</div>
+											<!-- 오류 시 메시지 -->
+											<p class="error_text">직업을 입력해 주세요.</p>
+										</div>
+										<div class="form_list">
+											<label class="form_label">직장명</label>
+											<div class="form_item">
+												<input type="text" class="inp_txt" name="" title="직장명" placeholder="직장명 입력">
+											</div>
+											<!-- 오류 시 메시지 -->
+											<p class="error_text">직장명을 입력해 주세요.</p>
+										</div>
+										<div class="form_list">
+											<label for="companyPhone" class="form_label">직장 연락처</label>
+											<div class="contact_item">
+												<div class="item">
+													<select id="companyPhone" name="" title="지역번호">
+														<option value="0">선택</option>
+														<option value="010">010</option>
+														<option value="011">011</option>
+														<option value="016">016</option>
+														<option value="017">017</option>
+														<option value="018">018</option>
+														<option value="019">019</option>
+													</select>
+												</div>
+												<div class="item">
+													<input type="tel" name="" title="직장 연락처" placeholder="숫자만 입력" value="">
+												</div>
+											</div>
+											<!-- 직장 연락처 앞자리 미선택 시 -->
+											<p class="error_text">연락처 종류/앞자리를 선택해 주세요.</p>
+											<!-- 직장 연락처 뒷자리 미입력 시 -->
+											<p class="error_text">앞자리(이동통신사번호, 지역번호)를 제외한 나머지 연락처를 올바르게 입력해 주세요. <br>(예: 010 제외한 12341234)</p>
+										</div>
+									</div>
+
+									<!-- '외국인'으로 접근 시 노출되는 항목 : 국적 & 영문이름 -->
+									<div class="form_wrap parallel">
+										<div class="form_list">
+											<label for="national" class="form_label">국적</label>
+											<div class="form_item">
+												<select id="national" title="국적">
+													<option value="0" selected>선택</option>
+												</select>
+											</div>
+											<!-- 국적 미선택 시  -->
+											<p class="error_text">국적을 선택해 주세요.</p>
+										</div>
+										<div class="form_list">
+											<label for="eUserName" class="form_label">영문이름</label>
+											<div class="form_item">
+												<input type="text" id="eUserName" name="" placeholder="예: GINLDO HONG" value="">
+											</div>
+											<!-- 2자 미만 입력한 경우 -->
+											<p class="error_text">이름을 2자 이상으로 올바르게 입력해 주세요.</p>
+										</div>
+									</div>
+									<!--// END -->
+								</div>
+								
+								<div class="comp">
+									<h3 class="h3 hmark">수령정보</h3>
+									<p class="list_dot">송금받으실 은행을 선택 후 입출금 계좌번호를 입력해 주세요.</p>
+
+									<div class="form_wrap parallel">
+										<div class="form_list">
+											<span class="form_label">은행/계좌번호(본인명의 계좌만 가능)</span>
+											<div class="bank">
+												<button type="button" class="btn line"><span>은행 선택</span></button>
+												<div class="form_item col2 security">
+													<input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" value="" disabled>
+													<!-- 계좌확인 후 버튼에 active 추가 -->
+													<button type="button" class="btn oline"><span>계좌확인</span></button>
+												</div>
+												<div class="form_item">
+													<input type="text" id="selDepositor" name="" placeholder="[계좌확인] 누르면 예금주 자동 입력" value="" disabled>
+												</div>
+												<!-- 계좌번호 잘못 입력했을 경우 -->
+												<p class="error_text">계좌번호를 정확하게 입력해 주세요.(‘-’없이 숫자만 입력)</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="comp">
+									<h3 class="h3 hmark">지급예상내역</h3>
+									<p class="list_dot">현재 시점의 예상금액이며, 지급지시 후에 금액이 확정됩니다.(이자 부리, 수수료 차감 등으로 금액 변동 가능)</p>
+
+									<table class="tbl_data">
+										<caption>총급여액(종합소득금액),세액공제대상액 한도,세액공제비율,최대 세액공제액에 대한 정보</caption>
+										<colgroup>
+											<col style="width:50%;" span="2">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">원천징수세액</th>
+												<th scope="col">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" class="bg">소득세</th>
+												<td class="txt_r">000,000,000원</td>
+											</tr>
+											<tr>
+												<th scope="row" class="bg">지방소득세</th>
+												<td class="txt_r">000,000,000원</td>
+											</tr>
+											<tr>
+											<tr>
+												<th scope="row" class="bg">실지급액</th>
+												<td class="txt_r">000,000,000원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="comp">
+									<div class="agreement_section retire">
+										<ul class="list_chk">
+											<li>
+												<div class="agree_item">
+													<input id="agreeChk1" class="agree_chk" name="agreeGroup" type="checkbox">
+													<label for="agreeChk1"><strong class="emp fw_b">[필수]</strong> 개인형IRP(개인부담금 납입계약) 해지관련 안내사항을 제공받고, 그 주요내용을 설명들었습니다.</label>
+												</div>                            
+											</li>
+											<li>
+												<div class="agree_item">
+													<input id="agreeChk2" class="agree_chk" name="agreeGroup" type="checkbox">
+													<label for="agreeChk2"><strong class="emp fw_b">[필수]</strong> 이 청구서에 기재된 내용은 사실과 다름이 없음을 확인합니다.</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+
+								<div class="fixed_btm_btns">
+									<div class="btns">
+										<button type="button" class="btn second">시뮬레이션</button>
+										<button type="button" class="btn primary">청구신청</button>
+									</div>
+								</div>
+
+							</div>
+							<div id="panel02" class="tab_panel">
+								<h2 class="offscr">해지신청내역</h2>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+	</div>
+</body>
+</html>

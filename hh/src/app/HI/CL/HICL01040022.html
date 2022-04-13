@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 처리현황조회', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            Dialog.open('#HICL01040022')
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HICL01040022" class="btn line dialog_open">보험금 상세지급내역</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <!-- 보험금 상세지급내역 팝업 -->
+    <div id="HICL01040022" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>보험금 상세지급내역</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <h2 class="governing_title">
+                                <!--
+                                    2. 처리종결 : 아래 HTML 참고
+                                    3. 부지급 종결 : '보험금 지급이 되지 않았습니다.'
+                                -->
+                                <span class="highlight">하이현님</span>께<br>
+                                <span class="highlight">신한은행 1104*********</span>으로<br>
+                                지급되었습니다.
+                            </h2>
+                        </div>
+
+                        <!-- 처리종결 -->
+                        <h3 class="h3">질병통원 실손의료비</h3>
+                        <table class="tbl_row">
+                            <caption>가입금액,지급보험금,보상제외사유,보상제외금액</caption>
+                            <colgroup>
+                                <col style="width:180px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">가입금액</th>
+                                    <td>150,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">지급보험금</th>
+                                    <td>136,806원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보상제외사유</th>
+                                    <td>중복비례보상</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보상제외금액</th>
+                                    <td>17,194원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="h3">질병약제 실손의료비</h3>
+                        <table class="tbl_row">
+                            <caption>가입금액,지급보험금,보상제외사유,보상제외금액</caption>
+                            <colgroup>
+                                <col style="width:180px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">가입금액</th>
+                                    <td>150,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">지급보험금</th>
+                                    <td>91,752원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보상제외사유</th>
+                                    <td>중복비례보상</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보상제외금액</th>
+                                    <td>58,248원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 처리종결 -->
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

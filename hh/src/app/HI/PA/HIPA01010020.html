@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, spanail=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#panel1" title="현재선택"><span>정기경영공시</span></a></li>
+                                <li class="tab"><a href="#panel2"><span>수시경영공시 및 공고</span></a></li>
+                                <li class="tab"><a href="#panel3"><span>사업보고서/감사보고서</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="panel1" class="tab_panel">
+                                <div class="board_detail">
+                                    <div class="board_head">
+                                        <h2 class="title">2021년 1분기 경영공시</h2>
+                                        <p class="regdate">2021.05.03</p>
+                                    </div>
+            
+                                    <div class="board_cont">
+                                        <ul class="added_file">
+                                            <li>
+                                                <a href="#" class="file pdf"><span class="file_name">0503공시(1개월)_소규모펀드 (4).pdf</span><span class="capacity">2.0MB</span></a>                                    
+                                            </li>
+                                            <li>
+                                                <a href="#" class="file pdf"><span class="file_name">0503공시(1개월)_소규모펀드 (4).pdf</span><span class="capacity">2.0MB</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+            
+                                <div class="fixed_btm_btns">
+                                    <div class="btns">
+                                        <button type="button" class="btn primary"><span>목록</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel2" class="tab_panel">
+                                <h2 class="offscr">수시경영공시 및 공고</h2>
+                            </div>    
+                            <div id="panel3" class="tab_panel">
+                                <h2 class="offscr">사업보고서/감사보고서</h2>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

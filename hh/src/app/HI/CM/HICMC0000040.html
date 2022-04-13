@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>Eco마일리지 (예상)환급금 안내</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <div class="governing">
+                    <h2 class="governing_title">
+                        최종 주행거리를 입력하시면 예상 환급 금액을 확인할 수 있습니다.
+                    </h2>
+                    <ul class="list_dot highlight">
+                        <li>반드시 송부기한 내에 주행거리 식별이 가능한 사진을 등록하셔야 검수를 통해 환급 처리가 진행됩니다.</li>
+                        <li>송부기한: 만기일 이전 45일부터 만기일 이후 15일까지</li>
+                    </ul>
+                </div>
+
+                <h3 class="h3">Eco마일리지 (예상)환급금 안내</h3>
+                <div class="form_wrap">
+                    <div class="form_list">
+                        <div class="col2">
+                            <div class="">
+                                <label for="length1" class="form_label">최초 주행거리</label>
+                                <div class="form_item unit_item">
+                                    <input type="tel" id="length1" class="inp_price" placeholder="" disabled>
+                                    <span class="unit">km</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="length2" class="form_label">최종 주행거리</label>
+                                <div class="form_item unit_item">
+                                    <input type="tel" id="length2" class="inp_price" placeholder="">
+                                    <span class="unit">km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_conts">
+                        <button type="button" class="btn ofill">주행거리 계산</button>
+                    </div>
+                </div>
+
+                <table class="tbl_row mt40">
+                    <caption>환산 주행거리 계산결과</caption>
+                    <colgroup>
+                        <col style="width:34%;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">환산 주행거리</th>
+                            <td>24,000km</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">예상환급금</th>
+                            <td>10,000원</td>
+                        </tr>
+                    </tbody>
+                </table>               
+
+                <ul class="list_bar">
+                    <li>환산 주행거리: (최종 주행거리 - 최초 주행거리) / 주행기간 x 365일로 계산합니다.</li>
+                    <li>예상환급금: <span class="highlight">구간별 할인율을 기준</span>으로 단순 계산한 연간 예상 금액으로, <span class="highlight">실제 환급금액과 차이가 발생할 수 있습니다.</span></li>
+                    <li>Eco마일리지 <span class="highlight">특약 중도가입 시 환급금은 특약가입일로부터 잔여기간에 대하여 적용</span>되며, 최초 자동차보험 가입일로부터 <span class="highlight">소급적용되지 않습니다.</span></li>
+                </ul>
+
+                <h3 class="h3">주행거리별 예상환급금 예시</h3>
+                <table class="tbl_col">
+                    <caption>주행거리별 예상 환급금 안내</caption>
+                    <colgroup>
+                        <col style="width:50%;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">약정 주행거리</th>
+                            <th scope="col">예상환급금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3,000km</td>
+                            <td>3,000원</td>
+                        </tr>
+                        <tr>
+                            <td>5,000km</td>
+                            <td>5,000원</td>
+                        </tr>
+                        <tr>
+                            <td>7,000km</td>
+                            <td>7,000원</td>
+                        </tr>
+                        <tr>
+                            <td>10,000km</td>
+                            <td>10,000원</td>
+                        </tr>
+                        <tr>
+                            <td>12,000km</td>
+                            <td>12,000원</td>
+                        </tr>
+                        <tr>
+                            <td>15,000km</td>
+                            <td>15,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="h3">Eco마일리지 특약 환급계좌 등록 현황</h3>
+                <ul class="list_dot">
+                    <li>환급계좌는 자동차보험 가입 시 등록된 계좌이며, <span class="highlight">계약자 본인명의 계좌로만 변경이 가능</span>합니다.</li>
+                    <li>등록된 계좌를 변경하시려는 경우, 은행/계좌번호를 수정 후 [계좌 수정]을 눌러주세요.</li>
+                </ul>
+                <div class="form_wrap">
+                    <div class="form_list">
+                        <span class="form_label">은행/계좌번호</span>
+                        <div class="bank">
+                            <button type="button" class="btn line"><span>우리은행</span></button>
+                            <div class="form_item col2 security">
+                                <input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" value="">
+                                <!-- 계좌확인 후 disabled 삭제 class에 active 추가 -->
+                                <button type="button" class="btn oline"><span>계좌수정</span></button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="direct_banner">
+                    <span>
+                        올해도 주행거리에 따라 보험료를 할인해 주는
+                        <strong>자동차 보험료를 지금 바로 계산해 보세요!</strong>
+                    </span>
+                    <p><strong>평균 15.4% 저렴한 자동차보험</strong>(자사 오프라인 대비)</p>
+                    <a href="#none">현대해상다이렉트 자동차보험료 계산하기</a>
+                </div>
+                
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>닫기</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

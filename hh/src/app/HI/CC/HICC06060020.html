@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '대출부당광고 신고', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <div class="form_wrap">
+                        <div class="form_list">
+                            <span class="form_label">신고인</span>
+                            <div class="form_item">
+                                <input type="text" class="inp_txt" disabled value="김현대">
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <span class="form_label">신고일</span>
+                            <div class="form_item">
+                                <input type="text" class="inp_txt" disabled value="2021.07.13">
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label class="form_label" for="ipt01">대출모집인 이름</label>
+                            <div class="form_item">
+                                <input type="text" id="ipt01" class="inp_txt" value="예: 하이현">
+                            </div>
+                            <p class="error_text">대출모집인 이름을 입력해 주세요</p>
+                        </div>
+                        <div class="boxing_text">
+                            대출모집인 포털사이트에서 대출모집인의 등록 여부를 조회하실 수 있습니다.
+                            <div class="btn_conts txt_l">
+                                <a href="#" class="btn line">대출모집인 등록 여부 조회</a>
+                            </div>
+                        </div>
+                        <div class="form_list part">
+                            <span class="form_label">대출모집인 등록 여부</span>
+                            <div class="form_item">
+                                <span class="radio_box">
+                                    <input type="radio" id="yes" name="yn" checked>
+                                    <label for="yes">예</label>
+                                </span>
+                                <span class="radio_box">
+                                    <input type="radio" id="no" name="yn">
+                                    <label for="no">아니요</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label class="form_label" for="ipt02">대출모집인 등록번호</label>
+                            <div class="form_item">
+                                <input type="text" id="ipt02" class="inp_txt" value="예: 24580">
+                            </div>
+                            <p class="error_text">! 대출모집인 등록번호를 입력해 주세요.</p>
+                        </div>
+                        <div class="form_list part">
+                            <span class="form_label">대출부당광고 종류</span>
+                            <div class="form_item vertical">
+                                <span class="radio_box">
+                                    <input type="radio" id="type01" name="type" checked>
+                                    <label for="type01">전단지</label>
+                                </span>
+                                <span class="radio_box">
+                                    <input type="radio" id="type02" name="type">
+                                    <label for="type02">전화/문자메시지(LMS)</label>
+                                </span>
+                                <span class="radio_box">
+                                    <input type="radio" id="type03" name="type">
+                                    <label for="type03">홈페이지/블로그</label>
+                                </span>
+                                <span class="radio_box">
+                                    <input type="radio" id="type04" name="type">
+                                    <label for="type04">기타</label>
+                                </span>
+                            </div>
+                            <p class="error_text">대출부당광고 종류를 선택해 주세요</p>
+                        </div>
+                        <div class="form_list">
+                            <label for="local1" class="form_label">발견 지역 선택</label>
+                            <div class="local_item">
+                                <div class="item">
+                                    <select id="local1" name="" title="시/도">
+                                        <option value="0">시/도 선택</option>
+                                    </select>
+                                </div>    
+                                <div class="item">
+                                    <select id="local2" name="" title="시/도/구" disabled>
+                                        <option value="0">시/도/구 선택</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <select name="" title="동/읍/면" disabled>
+                                        <option value="0">동/읍/면 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label class="form_label" for="ipt04">신고목적</label>
+                            <div class="form_item">
+                                <input type="text" class="inp_txt" id="ipt04" placeholder="신고목적 입력">
+                            </div>
+                            <p class="error_text">신고제목을 입력해 주세요.</p>
+                        </div>
+                        <div class="form_list">
+                            <label class="form_label" for="ipt05">신고내용</label>
+                            <div class="form_item">
+                                <textarea id="ipt05" cols="70" rows="10" placeholder="신고내용 입력"></textarea>
+                                <p class="cont"><span>0</span> / 1,000자</p>
+                                <p class="error_text">신고내용을 입력해 주세요.</p>
+                                
+                            </div>
+                            <ul class="list_dot">
+                                <li>광고물은 팩스로 제출해 주세요.</li>
+                                <li>팩스: 0507-770-3816</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>취소</span></button>
+                            <button type="button" class="btn primary"><span>등록</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

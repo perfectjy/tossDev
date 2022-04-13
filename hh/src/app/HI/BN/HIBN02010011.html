@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    <script type="text/javascript">
+        mbHeader = { title: '고장출동서비스', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 서비스 안내 open
+            Dialog.open('#OBDSystem');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#OBDSystem" class="btn line dialog_open">OBD1,2 시스템 장착 차량</a>
+
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 서비스 안내 팝업 -->
+    <div id="OBDSystem" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>OBD1, 2 시스템 장착 차량</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <div class="governing">
+                            <div class="governing_title info_service">
+                                Road 차량진단 서비스는 OBD2 장착 차량만 이용 가능합니다.
+                            </div>
+                        </div>
+                        <div class="tab_section t1">
+                            <div class="tab_list tab_nav">
+                                <ul>
+                                    <li class="tab active"><a href="#OBD2" title="현재선택"><span>OBD2 장착 차량</span></a></li>
+                                    <li class="tab"><a href="#OBD1"><span>OBD1 장착 차량</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="tab_contents">
+                                <div id="OBD2" class="tab_panel">
+                                    <div class="tab_section t2">
+                                        <div class="tab_list tab_nav">
+                                            <ul>
+                                                <li class="tab active"><a href="#OBD2_brand1" title="현재선택"><span>현대</span></a></li>
+                                                <li class="tab"><a href="#OBD2_brand2"><span>기아</span></a></li>
+                                                <li class="tab"><a href="#OBD2_brand3"><span>대우/GM</span></a></li>
+                                                <li class="tab"><a href="#OBD2_brand4"><span>르노삼성</span></a></li>
+                                                <li class="tab"><a href="#OBD2_brand5"><span>쌍용</span></a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="tab_contents">
+                                            <!-- 현대 -->
+                                            <div id="OBD2_brand1" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 현대 OBD2 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>그랜저(신형, TG)</td>
+                                                            <td>2005~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>그랜저HG</td>
+                                                            <td>2011~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>그랜저XG</td>
+                                                            <td>1988~2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴그랜저XG</td>
+                                                            <td>2002~2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴베르나</td>
+                                                            <td>2002~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴아반떼XD</td>
+                                                            <td>2003~2009</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴에쿠스</td>
+                                                            <td>2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴에쿠스(리무진)</td>
+                                                            <td>2003~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴클릭</td>
+                                                            <td>2005~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라비타</td>
+                                                            <td>2001~2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>베라크루즈</td>
+                                                            <td>2006~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>베르나</td>
+                                                            <td>1999 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>벨로스터</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>블루온</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스타렉스</td>
+                                                            <td>1997 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스타렉스(리무진)</td>
+                                                            <td>2003 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>신형베르나</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>싼타페</td>
+                                                            <td>2000 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>싼타페(신형)</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>싼타페(DM)</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아반떼(신형, HD)</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아반떼(MD)</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>아반떼XD</td>
+                                                            <td>2000 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>에쿠스</td>
+                                                            <td>1999 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>에쿠스(리무진)</td>
+                                                            <td>1999 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>에쿠스(신형)</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>에쿠스리무진(신형)</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>엑센트(RB)</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>제네시스</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>제네시스쿠페</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>클릭</td>
+                                                            <td>2002 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>테라칸</td>
+                                                            <td>2001 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>투스카니</td>
+                                                            <td>2001 ~ 2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>투싼</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>투싼ix</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>트라제XG</td>
+                                                            <td>1999 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>EF쏘나타</td>
+                                                            <td>1994 ~ 2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>i30</td>
+                                                            <td>2007 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>i30(신형)</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>i40</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>NEWEF쏘나타</td>
+                                                            <td>1999 ~ 2009</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>NF쏘나타</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>YF쏘나타</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 기아 -->
+                                            <div id="OBD2_brand2" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 기아 OBD2 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>그랜드카니발</td>
+                                                            <td>2005 ~ 2012</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴스포티지</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴카렌스</td>
+                                                            <td>2001 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴프라이드</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>로체</td>
+                                                            <td>2005 ~ 2010</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>로체(이노베이션)</td>
+                                                            <td>2005 ~ 2010</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>모닝</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>모하비</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>봉고Ⅲ</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스포티지R</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쎄라토(2006년 이후)</td>
+                                                            <td>2006 ~ 2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쏘렌토</td>
+                                                            <td>2002 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쏘렌토R</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쏘울</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>오피러스</td>
+                                                            <td>2003 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>오피러스(신형)</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>올뉴모닝</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>올뉴프라이드</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카니발(신형)</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카니발리무진</td>
+                                                            <td>2007 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카렌스(신형)</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>포르테</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>포르테쿱</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>K3</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>K5</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>K7</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>K9</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RAY</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 대우/GM -->
+                                            <div id="OBD2_brand3" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 대우/GM OBD2 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>뉴마티즈</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴칼로스</td>
+                                                            <td>2003 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라세티(2005년 이후)</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라세티(프리미어)</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>마티즈 크리에이티브</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>말리부</td>
+                                                            <td>2012 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>매그너스</td>
+                                                            <td>1999 ~ 2006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스테이츠맨</td>
+                                                            <td>2005 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스파크</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아베오</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>알페온</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>올란도</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>윈스톰</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>윈스톰 맥스</td>
+                                                            <td>2008 ~ 2010</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>젠트라</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>젠트라X</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>캡티바</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>크루즈</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>토스카</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 르노삼성 -->
+                                            <div id="OBD2_brand4" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 르노삼성 OBD2 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>뉴SM3</td>
+                                                            <td>2005 ~ 2009</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴SM3(신형)</td>
+                                                            <td>2009 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴SM5</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴SM5(신형)</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>올뉴SM7</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>QM5</td>
+                                                            <td>2007 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SM7</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 쌍용 -->
+                                            <div id="OBD2_brand5" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 쌍용 OBD2 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>뉴렉스턴</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴체어맨(07년 이후)</td>
+                                                            <td>2007 ~ 2010</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴카이런</td>
+                                                            <td>2007 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>렉스턴Ⅱ</td>
+                                                            <td>2006 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>로디우스</td>
+                                                            <td>2004 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>슈퍼렉스턴</td>
+                                                            <td>2010 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>액티언</td>
+                                                            <td>2005 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>체어맨W</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>체어맨W(리무진)</td>
+                                                            <td>2008 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카이런</td>
+                                                            <td>2005 ~ 2010</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>코란도C</td>
+                                                            <td>2011 ~</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="OBD1" class="tab_panel">
+                                    <div class="tab_section t2">
+                                        <div class="tab_list tab_nav">
+                                            <ul>
+                                                <li class="tab active"><a href="#OBD1_brand1" title="현재선택"><span>현대</span></a></li>
+                                                <li class="tab"><a href="#OBD1_brand2"><span>기아</span></a></li>
+                                                <li class="tab"><a href="#OBD1_brand3"><span>대우/GM</span></a></li>
+                                                <li class="tab"><a href="#OBD1_brand4"><span>르노삼성</span></a></li>
+                                                <li class="tab"><a href="#OBD1_brand5"><span>쌍용</span></a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="tab_contents">
+                                            <!-- 현대 -->
+                                            <div id="OBD1_brand1" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 현대 OBD1 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>갤로퍼</td>
+                                                            <td>1992 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>갤로퍼Ⅱ</td>
+                                                            <td>1997 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴그랜져</td>
+                                                            <td>1992 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴다이너스티</td>
+                                                            <td>1996 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴다이너스티(리무진)</td>
+                                                            <td>1996 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴쏘나타Ⅲ</td>
+                                                            <td>1991 ~ 1998</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴엑센트</td>
+                                                            <td>1994 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>다이너스티</td>
+                                                            <td>1996 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>마르샤</td>
+                                                            <td>1995 ~ 1998</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>싼타모</td>
+                                                            <td>1995 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쏘나타Ⅲ</td>
+                                                            <td>1994 ~ 1998</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아반떼</td>
+                                                            <td>1994 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아토스</td>
+                                                            <td>1997 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>엑센트</td>
+                                                            <td>1994 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>올뉴아반떼</td>
+                                                            <td>1995 ~ 2001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>티뷰론</td>
+                                                            <td>1996 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>티뷰론터뷸런스</td>
+                                                            <td>1999 ~ 2001</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 기아 -->
+                                            <div id="OBD1_brand2" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 기아 OBD1 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>뉴리오</td>
+                                                            <td>2001 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴옵티마</td>
+                                                            <td>2000 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴크레도스</td>
+                                                            <td>1995 ~ 1998</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴포텐샤</td>
+                                                            <td>1998 ~ 2001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>델타</td>
+                                                            <td>1997 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>레토나</td>
+                                                            <td>1998 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>리갈</td>
+                                                            <td>2002 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>리오</td>
+                                                            <td>1999 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>리오SF</td>
+                                                            <td>2002 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>비스토</td>
+                                                            <td>1999 ~ 2004</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>세피아</td>
+                                                            <td>1992 ~ 1998</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>세피아Ⅱ</td>
+                                                            <td>1993 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>슈마</td>
+                                                            <td>1997 ~ 2001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스펙트라</td>
+                                                            <td>2000 ~ 2004</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>스포티지</td>
+                                                            <td>1993 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>쎄라토</td>
+                                                            <td>2003 ~ 2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아벨라</td>
+                                                            <td>1994 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>엔터프라이즈</td>
+                                                            <td>1997 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>엘란</td>
+                                                            <td>1996 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>옵티마</td>
+                                                            <td>2000 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카니발</td>
+                                                            <td>1998 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카니발Ⅱ</td>
+                                                            <td>2001 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카렌스</td>
+                                                            <td>1999 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카렌스Ⅱ</td>
+                                                            <td>2002 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>카스타</td>
+                                                            <td>1999 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>콩코드</td>
+                                                            <td>1995 ~ 1997</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>크레도스</td>
+                                                            <td>1995 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>크레도스Ⅱ</td>
+                                                            <td>1995 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>파크타운</td>
+                                                            <td>1998 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>포텐샤</td>
+                                                            <td>1992 ~ 2001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>프라이드</td>
+                                                            <td>1990 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>X-TREK</td>
+                                                            <td>2003 ~ 2006</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 대우/GM -->
+                                            <div id="OBD1_brand3" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 대우/GM OBD1 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:20%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>누비라</td>
+                                                            <td>1997 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>누비라Ⅱ</td>
+                                                            <td>1999 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴브로엄</td>
+                                                            <td>1992 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴슈퍼살롱브로엄</td>
+                                                            <td>1993 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴에스페로</td>
+                                                            <td>1993 ~ 1997</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴프린스</td>
+                                                            <td>1993 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라노스</td>
+                                                            <td>1996 ~ 2001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라노스Ⅱ</td>
+                                                            <td>1996 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>라세티(05년 이전)</td>
+                                                            <td> ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>레간자</td>
+                                                            <td>1996 ~ 2002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>레죠</td>
+                                                            <td>2000 ~ 2007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>르망</td>
+                                                            <td>1987 ~ 1997</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>마티즈</td>
+                                                            <td>1998 ~ 2000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>마티즈Ⅱ</td>
+                                                            <td>2000 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>아카디아</td>
+                                                            <td>1994 ~ 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>에스페로</td>
+                                                            <td>1991 ~ 1997</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>칼로스</td>
+                                                            <td>2002 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>티코</td>
+                                                            <td>1991 ~ 2000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 르노삼성 -->
+                                            <div id="OBD1_brand4" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 르노삼성 OBD1 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                        <col style="width:auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>SM3</td>
+                                                            <td>2002~2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SM5</td>
+                                                            <td>1998~2005</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- 쌍용 -->
+                                            <div id="OBD1_brand5" class="tab_panel">
+                                                <table class="tbl_col">
+                                                    <caption>제조사 쌍용 OBD1 장착 차량 목록</caption>
+                                                    <colgroup>
+                                                        <col style="width:50%;" span="2">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">차명</th>
+                                                            <th scope="col">적용연식</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>뉴무쏘</td>
+                                                            <td>1998 ~ 2004</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴체어맨</td>
+                                                            <td>2003 ~ 2006</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>뉴코란도</td>
+                                                            <td>1996 ~ 2004</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>렉스턴</td>
+                                                            <td>2001 ~</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>무쏘</td>
+                                                            <td>1993 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>체어맨</td>
+                                                            <td>1997 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>체어맨(리무진)</td>
+                                                            <td>1997 ~ 2003</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>코란도</td>
+                                                            <td>1991 ~ 2005</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>록스타R2</td>
+                                                            <td>1990 ~ 1997</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

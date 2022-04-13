@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '해지환급금 상세', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 해지환급금 상세 open
+            Dialog.open('#HIIW04060021');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW04060021" class="btn line dialog_open">해지환급금 상세</a>
+
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 해지환급금 상세 팝업 -->
+    <div id="HIIW04060021" class="dialog bottom">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>해지환급금 상세</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <div class="governing">
+                            <div class="governing_title">
+                                해지환급금 실지급금액 <span class="highlight">1,000,000,000원</span>은
+                                환급내역에서 차감내역을 제한 금액입니다.
+                            </div>
+                        </div>
+
+                        <div class="tab_section t1">
+                            <div class="tab_list tab_line pc_hide">
+                                <ul>
+                                    <li class="tab active"><a href="#panel1" title="현재선택"><span>환급내역</span></a></li>
+                                    <li class="tab"><a href="#panel2"><span>차감내역</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="tab_contents return_detail">
+                                <div id="panel1" class="tab_panel">
+                                    <h2 class="offscr">환급내역</h2>
+                                    <dl class="return_list">
+                                        <div class="return_head">
+                                            <dt>환급내역</dt>
+                                        </div>
+                                        <div>
+                                            <dt>해지환급금</dt>
+                                            <dd>1,000,000,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>선납보험료환급금</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>배당적립금</dt>
+                                            <dd>20,000,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>환수대상환급금</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>미지급환급금</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>미지급이자</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>지연지급이자</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div class="sum">
+                                            <dt>환급금액</dt>
+                                            <dd>1,200,000,000원</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <div id="panel2" class="tab_panel">
+                                    <h2 class="offscr">차감내역</h2>
+                                    <dl class="return_list">
+                                        <div class="return_head">
+                                            <dt>차감내역</dt>
+                                        </div>
+                                        <div>
+                                            <dt>기지급환급금</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>과세대상소득</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>이자소득세</dt>
+                                            <dd>50,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>추징(가산)세</dt>
+                                            <dd>0원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>보험계약대출 원금</dt>
+                                            <dd>50,000,000원</dd>
+                                        </div>
+                                        <div>
+                                            <dt>보험계약대출 이자</dt>
+                                            <dd>500,000원</dd>
+                                        </div>
+                                        <div class="sum">
+                                            <dt>차감금액</dt>
+                                            <dd>50,550,000원</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_bottom_btn">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

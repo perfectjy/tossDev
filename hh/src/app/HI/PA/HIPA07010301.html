@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+    <link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    <script type="text/javascript">
+        $(function() {
+            Dialog.open('#HIPA07010301');
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIPA07010301" class="btn line dialog_open">(팝업)모델선택</a>
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <div id="HIPA07010301" class="dialog full">
+        <div class="dialog_wrap b">
+            <div class="dialog_header">
+                <h1>모델선택</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <table class="tbl_data in_crud">
+                            <caption>기본정보 입력</caption>
+                            <colgroup>
+                                <col style="width:155px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">차량분류</th>
+                                <td>
+                                    <div class="tb_item">
+                                        <select class="tbsel">
+                                            <option>자가승용</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">모델명</th>
+                                <td>
+                                    <div class="form_addr">
+                                        <div class="addr_item not_init">
+                                            <input type="text" placeholder="모델명 입력">
+                                            <button type="button" class="btn line"><span>검색</span></button>                                            
+                                        </div>
+                                        <div class="form_item">
+                                            <select class="tbsel">
+                                                <option>쏘나타 2.0 하이브리드(DN8)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+            
+                        <h3 class="h3">차명선택</h3>
+                        <p class="list_dot">쏘나타 2.0(신형) 및 쏘나타 2.4(신형)는 NF 쏘나타와 동일한 차명임</p>
+                        <table class="tbl_data in_crud">
+                            <caption>차명선택</caption>
+                            <colgroup>
+                                <col style="width:70px">
+                                <col style="width:auto">
+                                <col style="width:160px">
+                                <col style="width:160px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><span>선택</span></th>
+                                    <th scope="col"><span>차명</span></th>
+                                    <th scope="col"><span>차량코드</span></th>
+                                    <th scope="col"><span>차량가액(만원)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="selected"> <!-- radio 버튼 클릭시 class 추가해주세요. -->
+                                    <td>
+                                        <div class="radio_box single">
+                                            <input id="tb_radio1" type="radio" name="tb_radio" checked>
+                                            <label for="tb_radio1">선택</label>
+                                        </div>
+                                    </td>
+                                    <td>쏘나타 2.0 하이브리드(DN8) - 스마트,오토,에어컨,P/S,ABS,AIR-D,IM</td>
+                                    <td class="txt_c">61T89</td>
+                                    <td class="txt_c">2,526</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio_box single">
+                                            <input id="tb_radio2" type="radio" name="tb_radio">
+                                            <label for="tb_radio2">선택</label>
+                                        </div>
+                                    </td>
+                                    <td>쏘나타 2.0 하이브리드(DN8) - 스마트,오토,에어컨,P/S,ABS,AIR-D,IM</td>
+                                    <td class="txt_c">61T89</td>
+                                    <td class="txt_c">2,526</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio_box single">
+                                            <input id="tb_radio3" type="radio" name="tb_radio">
+                                            <label for="tb_radio3">선택</label>
+                                        </div>
+                                    </td>
+                                    <td>쏘나타 2.0 하이브리드(DN8) - 스마트,오토,에어컨,P/S,ABS,AIR-D,IM</td>
+                                    <td class="txt_c">61T89</td>
+                                    <td class="txt_c">2,526</td>
+                                </tr>
+                              
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>입력완료</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>고객관리 만족도 조사</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <ul class="survey_list">
+                    <li>
+                        <p class="qs"><span class="num">1.</span>고객님의 장기보험 계약담당자로부터 최근 3개월 이내에 방문이나 전화(통화, 문자, 카카오톡 등)를 받아보신 적이 있습니까?</p>
+                        <div class="ans">
+                            <span class="radio_box">
+                                <input type="radio" id="no" name="ys">
+                                <label for="no">아니요</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="yes" name="ys">
+                                <label for="yes">예</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">2.</span>계약담당자의 상품설명에 대한 만족도를 평가해주신다면 어느 정도 되겠습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e01" name="enf01">
+                                <label for="e01">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e02" name="enf01">
+                                <label for="e02">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e03" name="enf01">
+                                <label for="e03">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e04" name="enf01">
+                                <label for="e04">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e05" name="enf01">
+                                <label for="e05">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">3.</span>계약 체결 이후 계약담당자의 만족도를 평가해주신다면 어느 정도 되겠습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e21" name="enf02">
+                                <label for="e21">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e22" name="enf02">
+                                <label for="e22">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e23" name="enf02">
+                                <label for="e23">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e24" name="enf02">
+                                <label for="e24">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e25" name="enf02">
+                                <label for="e25">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">4.</span>고객님께서 계약담당자를 주변 지인분께 추천하신다면 어느 정도 되겠습니까?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e31" name="enf03">
+                                <label for="e31">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e32" name="enf03">
+                                <label for="e32">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e33" name="enf03">
+                                <label for="e33">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e34" name="enf03">
+                                <label for="e34">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e35" name="enf03">
+                                <label for="e35">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">5.</span><span class="highlight">(선택)</span> 고객님께서 위와 같이 추천/비추천하신 이유는 무엇입니까?</p>
+                        <textarea id="memo" placeholder="100자 이내로 입력" rows="5"></textarea>
+                        <p class="cont"><span>0</span> / 5000자</p>
+                    </li>
+                </ul>
+
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>설문 완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

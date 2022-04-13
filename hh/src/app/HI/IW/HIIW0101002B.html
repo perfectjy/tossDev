@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '계약조회', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 마일리지(예상)환급금 조회 open
+            Dialog.open('#HIIW0101002B');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW0101002B" class="btn line b dialog_open">마일리지(예상)환급금 조회</a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 마일리지(예상)환급금 조회 팝업 -->
+    <div id="HIIW0101002B" class="dialog full">
+        <div class="dialog_wrap big">
+            <div class="dialog_header">
+                <h1>마일리지(예상)환급금 조회</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">메인으로 이동</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section no_foot">
+                        <h2 class="h_b">주행거리 정보 입력</h2>
+                        <div class="form_wrap b">
+                            <div class="form_list">
+                                <label for="distanceStart" class="form_label">최초 주행거리</label>
+                                <div class="unit_item">
+                                    <input type="tel" id="distanceStart" class="inp_price b" placeholder="" value="9,500">
+                                    <span class="unit">km</span>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="sDate" class="form_label">최초 주행거리 기준일</label>
+                                <div class="form_item">
+                                    <input type="tel" id="sDate" class="inp_txt b" name="" value="2021.06.13" disabled>
+                                </div>
+                            </div>
+                            <hr class="thin">
+                            <div class="form_list">
+                                <label for="distanceEnd" class="form_label">최종 주행거리</label>
+                                <div class="unit_item">
+                                    <input type="tel" id="distanceEnd" class="inp_price b" placeholder="" value="9,500">
+                                    <span class="unit">km</span>
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <label for="eDate" class="form_label">최종 주행거리 기준일</label>
+                                <div class="date_box">
+                                    <input type="text" id="eDate" class="inp_date b" value="2021.06.13">
+                                </div>
+                            </div>
+                            <div class="btn_conts b">
+                                <button type="button" class="btn ofill b"><span>주행거리 계산</span></button>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h2 class="h_b">마일리지(예상)환급금</h2>
+                        <table class="tbl_row_b">
+                            <caption>연간환산주행거리,예상환급금</caption>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">연간 환산 주행거리</th>
+                                    <td>23,000km</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">예상 환급금</th>
+                                    <td><span class="highlight">5,000원</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="list_bar_b">
+                            <li>환산 주행거리 계산: (최종 주행거리 – 최초 주행거리)/주행기간 x 365일 </li>
+                            <li>예상환급금은 할인율 기준 단순 계산한 보험료로 실제 계산 시 차이가 발생할 수 있습니다.</li>
+                        </ul>
+
+                        <h2 class="h_b">주행거리별 예상 환급금 안내</h2>
+                        <div class="svc_info_b">
+                            <div class="panel_box">
+                                <ul class="list_dot_b">
+                                    <li>3,000km: 3,000원</li>
+                                    <li>5,000km: 5,000원</li>
+                                    <li>7,000km: 7,000원</li>
+                                    <li>10,000km: 10,000원</li>
+                                    <li>12,000km: 12,000원</li>
+                                    <li>15,000km: 15,000원</li>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="btn_conts">
+                            <button type="button" class="btn line b"><span>마일리지 사진등록</span></button>
+                        </div>
+
+                        <hr>
+
+                        <h2 class="h_b">유의사항</h2>
+
+                        <div class="svc_info_b">
+                            <div class="panel_box">
+                                <ul class="list_dot_b">
+                                    <li>환급을 위해서는 기한 내에 반드시 주행거리 계기판 사진을 등록해 주세요. </li>
+                                    <li>해당 계산금액은 현재 시점에서 고객님이 입력하신 주행거리를 기준으로 산출한 금액으로, 실제 정산 시 제출한 사진상의 주행거리에 따라 환급금은 변동될 수 있습니다.</li>
+                                    <li>해당 계산결과는 중도에 마일리지 변경이 없는 경우로 산정하여 시작일 기준으로 단순 환산된 금액으로 실제 정산 시 금액이 다를 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

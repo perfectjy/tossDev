@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '마일리지환급계좌 확인/변경', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // 마일리지환급계좌 확인/변경 open
+            Dialog.open('#HIIW0100001K');
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <a href="#HIIW0100001K" class="btn line dialog_open">마일리지환급계좌 확인/변경</a>
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 마일리지환급계좌 확인/변경 팝업 -->
+    <div id="HIIW0100001K" class="dialog full">
+        <div class="dialog_wrap">
+            <div class="dialog_header">
+                <h1>마일리지환급계좌 확인/변경</h1>
+                <button type="button" class="dialog_close ui_dialog_close"><span class="offscr">팝업창 닫기</span></button>
+            </div>
+            <div class="dialog_content">
+                <div class="scrollbar">
+                    <div class="section">
+                        <h2 class="h3">Eco마일리지특약 환급계좌 확인</h2>
+                        <table class="tbl_row">
+                            <caption>계좌정보</caption>
+                            <colgroup>
+                                <col style="width:150px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">계좌정보</th>
+                                    <td>우리은행 1002*********</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="list_bar">환급계좌는 자동차보험 가입 시 등록된 계좌이며, 변경이 필요할 경우 계약자 본인명의 계좌로만 변경할 수 있습니다.</p>
+
+                        <hr>
+
+                        <h2 class="h3">Eco마일리지특약 환급계좌 변경</h2>
+                        <div class="form_wrap">
+                            <div class="form_list">
+                                <label for="selAccount" class="form_label">
+                                    계좌선택
+                                    <!-- tooltip -->
+                                    <!-- <div class="ui_tooltip_wrap">
+                                        <button type="button" class="ui_btn hintInfo"><span class="offscr">계좌선택 도움말</span></button>
+                                        <div class="tooltip">
+                                            <i></i>
+                                            <ul class="list_dot">
+                                                <li>계약자 본인명의 계좌로 1년 이내 3회 이상 자동이체 또는 즉시이체된 계좌 및 입력계좌</li>
+                                                <li>은행의 연결계좌(증권사 연결 CMA계좌, 신용카드 포인트(신한S-MORE포인트 등) 계좌 등) 및 기업은행 평생계좌는 사용불가</li>
+                                            </ul>
+                                            <button type="button" class="ui_btn tooltip_close"><span class="offscr">닫기</span></button>
+                                        </div>
+                                    </div> -->
+                                    <!--// tooltip --> 
+                                </label>
+                                <div class="form_item">
+                                    <select id="selAccount" name="">
+                                        <option value="">우리은행 1002*********</option>
+                                        <option value="">직접 입력</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- '직접 입력' 선택 시 나타남 -->
+                            <div class="form_list">
+                                <span class="form_label">은행/계좌번호(본인명의 계좌만 가능)</span>
+                                <div class="bank">
+                                    <button type="button" class="btn line"><span>은행 선택</span></button>
+                                    <div class="form_item col2 security">
+                                        <input type="tel" name="" title="계좌번호" placeholder="숫자만 입력" value="">
+                                        <!-- 계좌확인 후 disabled 삭제 class에 active 추가 -->
+                                        <button type="button" class="btn oline"><span>계좌확인</span></button>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="form_list">
+                                <label for="selDepositor" class="form_label">예금주</label>
+                                <div class="form_item">
+                                    <input type="text" id="selDepositor" name="" placeholder="계좌확인을 진행해 주세요." value="" disabled>
+                                </div>
+                            </div>
+                            <!--// '직접 입력' 선택 시 나타남 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_footer">
+                <div class="dialog_footer_btn">
+                    <button type="button" class="btn primary"><span>저장</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

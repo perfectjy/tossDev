@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '질병/상해 서류제출', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <h2 class="governing_title"><strong>서류를 제출하실 내역을</strong> 선택해 주세요.</h2>
+                        <p class="info_text">현재 보험금청구 처리가 <span class="highlight">진행 중</span>인 건만 서류제출이 가능합니다.</p>
+                    </div>
+
+                    <div class="list_top_choice">
+                        <label for="choice" class="item_label">
+                            청구대상<br class="mo_br">(치료받으신 분)
+                        </label>
+                        <select id="choice" name="" title="청구대상 선택">
+                            <option value="">본인</option>
+                            <option value="">본인(단체보험)</option>
+                            <option value="">본인 외(본인이 계약자인 경우)</option>
+                            <option value="">본인 외(본인이 친권자인 경우)</option>
+                        </select>
+                    </div>
+
+                    <!-- 목록이 없을때 -->
+                    <div class="no_list">
+                        <p>
+                            접수된 내역이 없습니다.<br>
+                            <span class="sub_txt">(보험금청구가 처리 중일 경우 조회되지 않을 수 있습니다.)</span>
+                        </p>
+                    </div>
+                    <!--// 목록이 없을때 -->
+                    
+                    <div class="box_rd_list">
+                        <div class="big_rdo">
+                            <input id="radio1" type="radio" name="radio">
+                            <label for="radio1">
+                                <div class="sub_conts">
+                                    <div class="subject">
+                                        <p class="name">급성 부비동염</p>
+                                    </div>
+                                    <div class="substance">
+                                        <dl>
+                                            <dt>접수번호</dt>
+                                            <dd>2006037086</dd>                                            
+                                            <dt>접수일/추가접수일</dt>
+                                            <dd>2021.06.01/2021.06.08</dd>
+                                            <dt>치료받으신 분</dt>
+                                            <dd>하이현</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="big_rdo">
+                            <input id="radio2" type="radio" name="radio">
+                            <label for="radio2">
+                                <div class="sub_conts">
+                                    <div class="subject">
+                                        <p class="name">집 앞 계단에서 넘어져 타박상</p>
+                                    </div>
+                                    <div class="substance">
+                                        <dl>
+                                            <dt>접수번호</dt>
+                                            <dd>담당자 배정전</dd>                                            
+                                            <dt>접수일/추가접수일</dt>
+                                            <dd>2021.06.09</dd>
+                                            <dt>치료받으신 분</dt>
+                                            <dd>하이대</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="big_rdo">
+                            <input id="radio3" type="radio" name="radio">
+                            <label for="radio3">
+                                <div class="sub_conts">
+                                    <div class="subject">
+                                        <p class="name">골목길에서 갑자기 튀어나온 오토바이와 부딪혀 전신 타박상 및 양손 염좌</p>
+                                    </div>
+                                    <div class="substance">
+                                        <dl>
+                                            <dt>접수번호</dt>
+                                            <dd>2006037086</dd>                                            
+                                            <dt>접수일/추가접수일</dt>
+                                            <dd>2021.06.01/2021.06.08</dd>
+                                            <dt>치료받으신 분</dt>
+                                            <dd>하이현</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>보험금 심사 과정에서 원본서류 및 추가서류 제출을 요청 드릴 수 있습니다.</li>
+                                <li>진단급여금을 청구하시는 경우 금액에 상관없이 반드시 진단서 원본서류가 필요합니다.(사본은 진단서 발행 병원의 원본대조필 도장이 찍힌 것)</li>
+                                <li>기타 문의사항은 인터넷 콜센터(<span class="tel_number">02-2116-1004</span>, 평일 09:00~18:00)로 연락해 주세요.</li>
+                            </ul>
+                        </div>
+                    </div>           
+
+                    <div class="fixed_btm_btns">                        
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>다음</span></button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '콜센터 이용안내', tooltip: false, prev: true, menu: true };
+
+        $(function() {
+            // '평일' or '심야/주말/공휴일' 선택
+            $(document).off('click.seltab').on('click.seltab', '.tab_section .tab > a', function(e) {
+                var $_this = $(this),
+                    selVal = $_this.data('state'),
+                    tabIndex = $_this.closest('.tab').index(),
+                    tab = $('.tab_panel').eq(tabIndex).find('.tab_section .tab'),
+                    hideObj = $('.hide_obj');
+                    
+                if (!!selVal) {
+                    if (selVal === 1) {
+                        hideObj.show();
+                        hideObj.next('span').hide();
+                    } else {
+                        hideObj.hide();
+                        hideObj.next('span').show();
+                    }
+
+                    if (selVal === 'etc') {
+                        $('.accordion.regular').hide();
+                        $('.accordion.etc').show();
+                    } else {
+                        $('.accordion.regular').show();
+                        $('.accordion.etc').hide();
+                    }
+                } else {
+                    hideObj.show();
+                    hideObj.next('span').hide();
+                    
+                    tab.eq(0).find('a').trigger('click');
+                }
+
+                // 열려있는 accordion 모두 닫기
+                $('.tab_panel .accordion .title').find('a')
+                    .attr('aria-expanded',false)
+                    .removeClass('active')
+                    .find('.ico').text('내용열기')
+                    .parents('.title').next('.panel').removeClass('active')
+                    .attr('aria-hidden',true)
+                    .slideUp(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tab_section t1">
+                        <div class="tab_list tab_nav">
+                            <ul>
+                                <li class="tab active"><a href="#HICS02030011" title="현재선택"><span>보이는 ARS</span></a></li>
+                                <li class="tab"><a href="#HICS02030013"><span>음성 ARS</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HICS02030011" class="tab_panel">
+                                <h2 class="offscr">보이는 ARS</h2>
+                                <p class="dsc_txt">대표콜센터와 통화하실 때 ARS 메뉴를 화면으로 보며 편리하게 이용할 수 있습니다.<br><span class="sub_txt">안드로이드 스마트폰에서 미리 현대해상 앱을 먼저 설치해 주세요.</span></p>
+                                <div class="container_ars type_visible">
+            
+                                    <dl class="typical_call">
+                                        <dt>대표콜센터</dt>
+                                        <dd class="p_br">1588-<span class="highlight">5656</span></dd>
+                                        <dd class="mo_br"><a href="tel:1588-5656">1588-<span class="highlight">5656</span></a></dd>
+                                    </dl>
+                                    <dl class="foreign_call">
+                                        <dt>해외에서 거실 때</dt>
+                                        <dd>82-2-732-5656</dd>
+                                    </dl>
+            
+                                    <div class="tab_section t1">
+                                        <div class="tab_list tab_line">
+                                            <ul>
+                                                <li class="tab active"><a href="#HICS02030011_sub" title="현재선택" data-state="1"><span>평일(09:00~18:00)</span></a></li>
+                                                <li class="tab"><a href="#HICS02030011_sub" data-state="2"><span>심야/토&middot;일/공휴일</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab_contents">
+                                            <div id="HICS02030011_sub" class="tab_panel">
+                                                <p class="dsc_txt">해당 번호를 누르면 서비스 내용을 확인할 수 있어요.</p>
+                                                <div class="accordion bg_white">
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">1</em>자동차 고장출동</span>
+                                                    </div>
+                                                    <div class="panel">1번을 누르시면 음성 ARS로 바로 전환됩니다.</div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">2</em>자동차 사고접수</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>사고현장 또는 사고현장 근처인 경우</li>
+                                                            <li><span class="num">2</span>사고현장이 아닌 경우</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">3</em>질병/상해 보험금청구</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>보험금청구</li>
+                                                            <li><span class="num">2</span>보험금청구 필요서류 안내</li>
+                                                            <li><span class="num">3</span>보험금 접수내역 및 담당자 확인</li>
+                                                            <li class="hide_obj"><span class="num">0</span>상담사 연결</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">4</em>계약조회, 변경, 해지</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>계약조회</li>
+                                                            <li><span class="num">2</span>계약 변경, 해지</li>
+                                                            <li><span class="num">3</span>어린이보험 자녀등록</li>
+                                                            <li><span class="num">4</span>개인정보 변경</li>
+                                                            <li><span class="num">5</span>자동차 해지 필요서류 안내</li>
+                                                            <li class="hide_obj"><span class="num">0</span>상담사 연결</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">5</em>보험료 납입 셀프서비스</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>가상계좌 부여/조회</li>
+                                                            <li><span class="num">2</span>즉시이체</li>
+                                                            <li><span class="num">3</span>자동이체계좌 또는 자동이체일 변경</li>
+                                                            <li><span class="num">4</span>신용카드 납부 등록/변경</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">6</em>단기운전자 확대 특약 가입</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02 hide_obj">
+                                                            <li><span class="num">1</span>단기운전자 확대 특약 가입</li>
+                                                            <li><span class="num">0</span>상담사 연결</li>
+                                                        </ul>
+                                                        <span style="display:none;">6번을 누르시면 음성 ASR로 바로 전환됩니다.</span>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">7</em>보험 신규가입 상담</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>자동차보험 가입 상담</li>
+                                                            <li><span class="num">2</span>질병, 상해, 화재보험 가입 상담</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="title">
+                                                        <span class="toggle"><em class="num_box">8</em>대출 신청 및 상환</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>보험계약대출 신청</li>
+                                                            <li><span class="num">2</span>보험계약대출 AI 음성봇 신청</li>
+                                                            <li><span class="num">3</span>보험계약대출 상환</li>
+                                                            <li><span class="num">4</span>아파트 담보대출 등 신규대출 상담신청</li>
+                                                            <li class="hide_obj"><span class="num">5</span>주택담보대출 상환, 퇴직연금, 펀드 문의</li>
+                                                            <li class="hide_obj"><span class="num">0</span>상담사 연결</li>
+                                                        </ul>
+                                                    </div>
+                                                        <div class="title">
+                                                        <span class="toggle"><em class="num_box">9</em>증권 및 증명서 발급</span>
+                                                    </div>
+                                                    <div class="panel">
+                                                        <ul class="lst_num col02">
+                                                            <li><span class="num">1</span>보험증권 재발급</li>
+                                                            <li><span class="num">2</span>교통사고 피해확인서 발급</li>
+                                                            <li><span class="num">3</span>자동차보험 가입증명서 발급</li>
+                                                            <li><span class="num">4</span>연말소득공제 납입증명서 발급</li>
+                                                            <li><span class="num">5</span>연말정산용 실손의료보험금 지급내역서 발급</li>
+                                                            <li><span class="num">6</span>종합소득세신고 납입증명서 발급</li>
+                                                            <li class="hide_obj"><span class="num">0</span>상담사 연결</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div class="title">
+                                        <span class="toggle">유의사항</span>
+                                    </div>
+                                    <div class="panel">
+                                        <ul class="list_dot">
+                                            <li>매년 1~2월에 한하여, ’10’번을 누르면 ‘연말정산 증명서 발급‘ 관련 ARS 서비스를 이용하실 수 있습니다.</li>
+                                            <li class="hide_obj">매년 5월에 한하여, ’10’번을 누르면 ‘종합소득세 신고증명서 발급‘ 관련 ARS 서비스를 이용하실 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HICS02030013" class="tab_panel">
+                                <h2 class="offscr">음성ARS</h2>
+                                <div class="container_ars type_voice">
+                                    <dl class="typical_call">
+                                        <dt>대표콜센터</dt>
+                                        <dd class="p_br">1588-<span class="highlight">5656</span></dd>
+                                        <dd class="mo_br"><a href="tel:1588-5656">1588-<span class="highlight">5656</span></a></dd>
+                                    </dl>
+                                    <dl class="foreign_call">
+                                        <dt>해외에서 거실 때</dt>
+                                        <dd>82-2-732-5656</dd>
+                                    </dl>
+            
+                                    <div class="tab_section t1">
+                                        <div class="tab_list tab_line">
+                                            <ul>
+                                                <li class="tab active"><a href="#HICS02030013_sub" title="현재선택" data-state="1"><span>평일<br class="mo_br" />(09:00~18:00)</span></a></li>
+                                                <li class="tab"><a href="#HICS02030014" data-state="2"><span>심야/<br class="mo_br" />토&middot;일/공휴일</span></a></li>
+                                                <li class="tab"><a href="#HICS02030015" data-state="etc"><span>기타 ARS</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab_contents">
+                                            <div id="HICS02030013_sub" class="tab_panel">
+                                                <h3 class="offscr">평일(09:00~18:00)</h3>
+                                                <p class="dsc_txt">해당 번호를 누르면 서비스 내용을 확인할 수 있어요.</p>
+                                                
+                                                <div class="accordion other">
+                                                    <div class="group">
+                                                        <div class="title n1">
+                                                            <span class="toggle"><em class="num">1</em>고장출동</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">자동차 고장출동 요청</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>위치추적 동의(휴대전화일 경우)</li>
+                                                                    <li><span class="num">2</span>위치추적 미동의, 고속도로, 자동차전용도로(휴대전화일 경우)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n2">
+                                                            <span class="toggle"><em class="num">2</em>사고접수</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">자동차 사고접수</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>사고현장 또는 사고현장 근처인 경우(휴대전화일 경우)</li>
+                                                                    <li><span class="num">2</span>사고현장이 아닌 경우(휴대전화일 경우)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n3">
+                                                            <span class="toggle"><em class="num">3</em>보험금청구</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">질병, 상해사고접수 및 보험금청구</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>보험금청구를 위한 필요서류 문자 안내</li>
+                                                                    <li><span class="num">2</span>보험금청구 서류 제출을 위한 팩스번호 문자 안내</li>
+                                                                    <li><span class="num">3</span>보험금청구서 FAX 직접발급</li>
+                                                                    <li><span class="num">0</span>상담사 연결</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- //group -->
+                
+                                                    <div class="group">
+                                                        <div class="title n1">
+                                                            <span class="toggle"><em class="num">4</em>장기보험관리</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">질병, 상해, 화재보험 조회, 변경, 해지 및 보험료 납부</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>계약사항 문자 안내</li>
+                                                                    <li><span class="num">2</span>계약조회 및 변경</li>
+                                                                    <li><span class="num">3</span>계약해지</li>
+                                                                    <li><span class="num">4</span>보험료 납부</li>
+                                                                    <li><span class="num">0</span>상담사 연결</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n2">
+                                                            <span class="toggle"><em class="num">5</em>자동차보험관리</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">자동차보험 조회, 변경, 해지</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>계약사항 문자 안내</li>
+                                                                    <li><span class="num">2</span>계약조회 및 변경</li>
+                                                                    <li><span class="num">3</span>계약해지</li>
+                                                                    <li><span class="num">4</span>ARS단기운전자 확대 특약 가입</li>
+                                                                    <li><span class="num">5</span>자동차 해지 필요서류 문자 안내</li>
+                                                                    <li><span class="num">0</span>상담사 연결</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n3">
+                                                            <span class="toggle"><em class="num">6</em>가입상담</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">보험 신규가입 상담</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>자동차보험 가입 상담</li>
+                                                                    <li><span class="num">2</span>질병, 상해, 화재보험 가입 상담</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- //group -->
+                
+                                                    <div class="group">
+                                                        <div class="title n1">
+                                                            <span class="toggle"><em class="num">7</em>대출/퇴직연금/<br class="mo_br"/>펀드</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                            <h4 class="tit">대출, 퇴직연금, 펀드 문의</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>보험계약대출 ARS 신청 및 상환</li>
+                                                                    <li><span class="num">2</span>보험계약대출 AI 음성봇 신청</li>
+                                                                    <li><span class="num">3</span>보험계약대출 신청 및 상환</li>
+                                                                    <li><span class="num">4</span>주택담보대출 상환</li>
+                                                                    <li><span class="num">5</span>퇴직연금, 펀드</li>
+                                                                    <li><span class="num">0</span>상담사 연결</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n2">
+                                                            <span class="toggle"><em class="num">8</em>증권 및 증명서<br class="mo_br"> 발급</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">증권 및 증명서 발급</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>증권 재발급</li>
+                                                                    <li><span class="num">2</span>교통사고 피해확인서</li>
+                                                                    <li><span class="num">3</span>자동차보험 가입증명서</li>
+                                                                    <li><span class="num">0</span>상담사 연결</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n3">
+                                                            <span class="toggle"><em class="num">9</em>불편사항</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">불편사항 접수</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>자동차 고장출동, 사고접수 불편사항</li>
+                                                                    <li><span class="num">2</span>계약 관련 불편사항</li>
+                                                                    <li><span class="num">3</span>ARS 이용요금 안내</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- //group -->
+                                                </div><!-- //accordion -->
+                                            </div>
+                                            <div id="HICS02030014" class="tab_panel">
+                                                <h3 class="offscr">심야/주말/공휴일</h3>
+                                                <p class="dsc_txt">해당 번호를 누르면 서비스 내용을 확인할 수 있어요.</p>
+                                                
+                                                <div class="accordion other">
+                                                    <div class="group line2">
+                                                        <div class="title n1">
+                                                            <span class="toggle"><em class="num">1</em>고장출동</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">자동차 고장출동 요청</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>위치추적 동의(휴대전화일 경우)</li>
+                                                                    <li><span class="num">2</span>위치추적 미동의, 고속도로, 자동차전용도로(휴대전화일 경우)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n2">
+                                                            <span class="toggle"><em class="num">2</em>사고접수</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">자동차 사고접수</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>사고현장 또는 사고현장 근처인 경우(휴대전화일 경우)</li>
+                                                                    <li><span class="num">2</span>사고현장이 아닌 경우(휴대전화일 경우)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n3">
+                                                            <span class="toggle"><em class="num">3</em>단기운전자<br class="mo_br">확대 특약</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">ARS 단기운전자 확대 특약 가입</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- //group -->
+                
+                                                    <div class="group">
+                                                        <div class="title n1">
+                                                            <span class="toggle"><em class="num">4</em>가입상담</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">보험 신규가입 상담</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>자동차보험 가입 상담</li>
+                                                                    <li><span class="num">2</span>질병, 상해, 화재보험 가입 상담</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n2">
+                                                            <span class="toggle"><em class="num">5</em>보험계약대출</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">보험계약대출 신청 및 상환</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>보험계약대출 ARS 신청 및 상환</li>
+                                                                    <li><span class="num">2</span>보험계약대출 AI 음성봇 신청</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title n3">
+                                                            <span class="toggle"><em class="num">6</em>증권 및 증명서<br class="mo_br"> 발급</span>
+                                                        </div>
+                                                        <div class="panel">
+                                                            <div class="brd_org">
+                                                                <h4 class="tit">증권 및 증명서 발급</h4>
+                                                                <ul class="lst_num col02">
+                                                                    <li><span class="num">1</span>증권 재발급</li>
+                                                                    <li><span class="num">2</span>교통사고 피해확인서</li>
+                                                                    <li><span class="num">3</span>자동차보험 가입증명서</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- //group -->
+                                                </div><!-- //accordion -->
+                                            </div>
+                                            <div id="HICS02030015" class="tab_panel">
+                                                <h3 class="offscr">기타ARS</h3>
+                                                <p class="dsc_txt">* 이용가능시간: 평일 09:00~18:00<br>* 고장/ 사고접수: 365일 24시간<br><span class="sub_txt">(고장/사고접수는 하이카다이렉트 고객센터 및 장애인 전용 콜센터에서만 가능합니다.)</span></p>
+                                                <ul class="lst_etcars">
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">다이렉트 자동차보험/운전자보험,<br>그 외 다이렉트보험 가입상담</p>
+                                                            <span class="txt">하이카다이렉트 고객센터</span>
+                                                            <span class="tel">1577-<em class="highlight">1001</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-1001" class="pc_hide">
+                                                            <p class="tit">다이렉트 자동차보험/운전자보험,<br>그 외 다이렉트보험 가입상담</p>
+                                                            <span class="txt">전화가입상담센터</span>
+                                                            <span class="tel">1577-<em class="highlight">1001</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">인터넷, 모바일, 앱<br>이용 관련 문의</p>
+                                                            <span class="txt">인터넷 콜센터</span>
+                                                            <span class="tel">02-2116-<em class="highlight">1004</em></span>
+                                                        </div>
+                                                        <a href="tel:02-2116-1004" class="pc_hide">
+                                                            <p class="tit">인터넷, 모바일, 앱<br>이용 관련 문의</p>
+                                                            <span class="txt">인터넷 콜센터</span>
+                                                            <span class="tel">02-2116-<em class="highlight">1004</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">보험계약대출 이용 및<br>담보대출 상환 관련 문의</p>
+                                                            <span class="txt">대출상담 콜센터</span>
+                                                            <span class="tel">1588-<em class="highlight">5655</em></span>
+                                                        </div>
+                                                        <a href="tel:1588-5655" class="pc_hide">
+                                                            <p class="tit">보험계약대출 이용 및<br>담보대출 상환 관련 문의</p>
+                                                            <span class="txt">대출상담 콜센터</span>
+                                                            <span class="tel">1588-<em class="highlight">5655</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">홈쇼핑, TM, 인터넷으로 보험 가입 후<br>계약조회, 사고접수(가입 상담도 가능)</p>
+                                                            <span class="txt">전략채널전담 콜센터</span>
+                                                            <span class="tel">1577-<em class="highlight">5659</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-5659" class="pc_hide">
+                                                            <p class="tit">홈쇼핑, TM, 인터넷으로 보험 가입 후<br>계약조회, 사고접수(가입 상담도 가능)</p>
+                                                            <span class="txt">전략채널전담 콜센터</span>
+                                                            <span class="tel">1577-<em class="highlight">5659</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">방카슈랑스 관련 상담,<br>서비스 이용 문의</p>
+                                                            <span class="txt">방카슈랑스 콜센터</span>
+                                                            <span class="tel">1588-<em class="highlight">5658</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-5659" class="pc_hide">
+                                                            <p class="tit">방카슈랑스 관련 상담,<br>서비스 이용 문의</p>
+                                                            <span class="txt">방카슈랑스 콜센터</span>
+                                                            <span class="tel">1588-<em class="highlight">5658</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">교차판매 관련 상담</p>
+                                                            <span class="txt">교차판매지원 콜센터</span>
+                                                            <span class="tel">1577-<em class="highlight">5658</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-5659" class="pc_hide">
+                                                            <p class="tit">교차판매 관련 상담</p>
+                                                            <span class="txt">교차판매지원 콜센터</span>
+                                                            <span class="tel">1577-<em class="highlight">5658</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">친절하고 사려깊은 전문상담사와<br>마음 편하게 상담</p>
+                                                            <span class="txt">장애인 전용 콜센터</span>
+                                                            <span class="tel">02-2116-<em class="highlight">1060</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-5659" class="pc_hide">
+                                                            <p class="tit">친절하고 사려깊은 전문상담사와<br>마음 편하게 상담</p>
+                                                            <span class="txt">장애인 전용 콜센터</span>
+                                                            <span class="tel">02-2116-<em class="highlight">1060</em></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="mo_hide">
+                                                            <p class="tit">어린이보험 전문가에게 가입 상담 및<br> 어린이보험 관련 문의를 할 수 있어요.</p>
+                                                            <span class="txt">어린이보험 전용 콜센터</span>
+                                                            <span class="tel">1688-<em class="highlight">0055</em></span>
+                                                        </div>
+                                                        <a href="tel:1577-5659" class="pc_hide">
+                                                            <p class="tit">어린이보험 전문가에게 가입 상담 및<br> 어린이보험 관련 문의를 할 수 있어요.</p>
+                                                            <span class="txt">어린이보험 전용 콜센터</span>
+                                                            <span class="tel">1688-<em class="highlight">0055</em></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!-- //tab_section -->
+                                </div>
+
+                                <div class="hide_obj">
+                                    <div class="accordion regular">
+                                        <div class="title">
+                                            <span class="toggle">유의사항</span>
+                                        </div>
+                                        <div class="panel">
+                                            <ul class="list_dot">
+                                                <li>매년 1~2월에 한하여, '33'번을 누르면 '연말정산 증명서 발급' 관련 ARS 서비스를 이용하실 수 있습니다.</li>
+                                                <li>매년 5월에 한하여, 33번을 눌러서 '종합소득세 신고증명서 발급' 관련 ARS 서비스를 이용하실 수 있습니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- '음성 ARS'의 '기타 ARS'일 때 나타남 -->
+                                <div class="accordion etc" style="display:none;">
+                                    <div class="title">
+                                        <span class="toggle">언어·청각장애인 전용 문자상담</span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="useinfo">
+                                            <ul class="list_dot">
+                                                <li>계약 관련 문의: 013-3366-5653 (평일 09:00~18:00)</li>
+                                                <li>고장출동 및 자동차 사고접수: 013-3366-5656 (365일 24시간)</li>
+                                            </ul>
+                                            <ul class="imp_txt">
+                                                <li>별도 정보이용료는 없으나, 고객님의 요금제에 따라 문자메시지 비용이 발생할 수 있습니다.</li>
+                                                <li>손말이음센터(www.relaycall.or.kr) 수어상담 서비스를 연계하여 이용 가능합니다. (문의: 국번없이 107)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- '음성 ARS'의 '기타 ARS'일 때 나타남 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

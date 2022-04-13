@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '현대해상 장기보험', tooltip: false, prev: false, menu: false };
+    </script>
+
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="complete">
+                        <div class="complete_title">
+                            <span class="ico_greeting"></span>
+                            안녕하세요. 하이대님 :)
+                        </div>
+                        <p class="complete_txt">
+                            <strong>하이현</strong>님께서 <strong>하이대</strong>님에게<br class="mo_br">
+                            <span class="highlight">'무배당실속꾸러미정기상해보험(Hi1504)'</span>의<br class="mo_br">
+                            수익자 등록을 요청하셨습니다.<br>
+                            아래 [수익자 등록]을 눌러 정보등록과<br class="mo_br"> 전자서명을 진행해 주세요.
+                        </p>
+                    </div>
+                    <div class="count_wrap">
+                        <div class="count_brd">
+                            <span class="text_time">등록가능기간</span>
+                            <strong class="count">2021.08.18 24:00까지</strong>
+                        </div>
+
+                        <!-- 등록가능기간 종료 or 등록이 완료된 경우 사라짐 -->
+                        <span class="message info">기간 내에 꼭 진행해 주세요.</span>
+
+                        <!-- 등록가능기간 종료 시 -->
+                        <span class="message terminate">등록가능기간이 종료되었습니다.</span>
+
+                        <!-- 이미 등록이 완료된 경우 -->
+                        <span class="message complete">수익자 등록이 완료되었습니다.</span>
+                    </div>
+
+                    <div class="complete_btns">
+                        <!-- 대기시간 경과 및 이미 등록 완료된 경우, '수익자 등록' 버튼 비노출 -->
+                        <button type="button" class="btn primary"><span>수익자 등록</span></button>
+
+                        <button type="button" class="btn primary mo_hide"><span>메인</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

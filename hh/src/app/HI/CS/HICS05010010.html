@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '질문/건의', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <div class="governing">
+                        <div class="governing_title">
+                            질문/건의 전에 확인해 주세요. 
+                        </div>
+                    </div>
+                    
+                    <h3 class="h3 bull">이전 질문/건의에 대한 답변을 확인하셨나요?</h3>
+                    <div class="btn_conts">
+                        <button type="button" class="btn line"><span>질문/건의 내역 및 답변보기</span></button>
+                    </div>
+
+                    <h3 class="h3 bull">자주 하는 질문(FAQ)을 찾아 보셨나요?</h3>
+                    <div class="form_search">
+                        <input type="text" class="inp_txt" placeholder="검색어 입력" title="검색어 입력">
+                        <button type="button" class="btn_search"><span class="offscr">검색</span></button>
+                        <p class="error_text">검색어를 2글자 이상 입력해 주세요.</p>
+                    </div>
+
+                    <h3 class="h3 bull">보험 가입 상담에 대한 질문인가요?</h3>
+                    <div class="btn_conts">
+                        <button type="button" class="btn line"><span>보험가입 상담받기</span></button>
+                    </div>
+
+                    <hr>
+
+                    <h3 class="h3">직접 질문/건의하실 경우 답변 확인 방법을 선택하고 내용을 작성해 주세요.</h3>
+                    <p class="info_text">
+                        계약관리 및 대출 등 문의/건의사항을 접수할 수 있습니다.<br>
+                        단, 개인 및 기업의 영업·판촉활동 관련 문의는 답변이 제한될 수 있습니다.
+                    </p>
+                    <p class="imp_txt">접수내용은 입력하신 전화번호 또는 이메일로 안내해 드리니, 정확하게 입력해 주세요.</p>
+                    <div class="form_wrap">
+                        <div class="form_list">
+                            <div class="form_item">
+                                <span class="radio_box">
+                                    <input type="radio" id="call" name="answer" checked>
+                                    <label for="call">상담사와 통화</label>
+                                </span>
+                                <span class="radio_box">
+                                    <input type="radio" id="email" name="answer">
+                                    <label for="email">이메일로 답변</label>
+                                </span>
+                            </div>
+                            <p class="error_text">답변 방법을 선택해 주세요.</p>
+                        </div>
+                        <div class="form_list">
+                            <label for="in_name" class="form_label">이름</label>
+                            <div class="form_item">
+                                <input type="text" class="inp_txt" id="in_name" placeholder="예:하이현">
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label for="birth" class="form_label">생년월일</label>
+                            <div class="pc_col">
+                                <div class="form_item">
+                                    <input type="tel" id="birth" name="birth" class="inp_txt" placeholder="예: 19901016" value="">
+                                </div>
+                                <div class="form_item">
+                                    <span class="radio_box">
+                                        <input type="radio" id="male" name="gender" checked>
+                                        <label for="male">남</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input type="radio" id="female" name="gender">
+                                        <label for="female">여</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="error_text">생년월일을 숫자 8자로 올바르게 입력해 주세요.</p>
+                            <p class="error_text">성별을 선택해 주세요.</p>
+                        </div>
+                        <div class="form_list">
+                            <label for="phone" class="form_label">휴대전화번호</label>
+                            <div class="contact_item">
+                                <div class="item">
+                                    <select id="phone" name="" title="이동통신사번호">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <input type="tel" name="" title="휴대전화번호" placeholder="숫자만 입력" value="" maxlength="8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label for="in_emil" class="form_label">이메일</label>
+                            <div class="email_item">
+                                <div class="item">
+                                    <input type="email" title="이메일 계정" id="in_emil" name="email_id" class="inp_txt" placeholder="이메일 입력" value="">
+                                </div>
+                                <div class="item">
+                                    <input type="email" title="이메일 도메인" name="email_domain" class="inp_txt" placeholder="예: hi.co.kr" value="">
+                                </div>
+                                <div class="item">
+                                    <select title="이메일 도메인 선택" name="sel_domain">
+                                        <option value="0">직접 입력</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="hotmail.com">hotmail.com</option>
+                                        <option value="yahoo.com">yahoo.com</option>
+                                        <option value="chol.com">chol.com</option>
+                                        <option value="korea.com">korea.com</option>
+                                        <option value="netian.com">netian.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label for="in_title" class="form_label">제목</label>
+                            <div class="form_item">
+                                <input type="text" class="inp_txt" id="in_title" placeholder="제목 입력">
+                            </div>
+                        </div>
+                        <div class="form_list">
+                            <label for="memo" class="form_label">내용</label>
+                            <div class="form_item">
+                                <textarea id="memo" placeholder="내용 입력" rows="8"></textarea>
+                                <p class="cont"><span>0</span> / 5,000자</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="agreement">
+                        <div class="agreement_title">
+                            <h3 class="h3"><span class="tag surely">필수</span><span>민원 접수&middot;처리를 위한 개인(신용)정보처리 <em class="emp">상세</em> 동의서</span></h3>
+                            <div class="terms_intro">
+                                귀하는 개인(신용)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 개인의 신용도 등을 평가하기 위한 목적 이외의 개인(신용)정보 제공 동의는 철회할 수 있습니다. 다만, 본 동의는 '민원 접수·처리'를 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+                            </div>
+                            <div class="agreement_btn">
+                                <a href="#none" class="btn_agree" title="약관팝업열기"><span>전체 동의</span></a><!-- 약관팝업에서 전체동의시 active 클래스 추가 -->
+                            </div>
+                        </div>
+                        <div class="agreement_section">
+                            <div class="agreemen_list">
+                                <div class="agree_item">
+                                    <button type="button" class="btn_chk"><span>1. 수집·이용에 관한 사항</span></button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="radio_title">고유식별정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub1N" class="agree_rdo" name="agreeSub1" type="radio">
+                                                <label for="agreeSub1N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub1Y" class="agree_rdo" name="agreeSub1" type="radio">
+                                                <label for="agreeSub1Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="radio_title">민감정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub2N" class="agree_rdo" name="agreeSub2" type="radio">
+                                                <label for="agreeSub2N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub2Y" class="agree_rdo" name="agreeSub2" type="radio">
+                                                <label for="agreeSub2Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>
+                                        </div>    
+                                    </li>
+                                    <li>
+                                        <span class="radio_title">개인(신용)정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub3N" class="agree_rdo" name="agreeSub3" type="radio">
+                                                <label for="agreeSub3N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub3Y" class="agree_rdo" name="agreeSub3" type="radio">
+                                                <label for="agreeSub3Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="agreemen_list">
+                                <div class="agree_item">
+                                    <button type="button" class="btn_chk"><span>2. 제공에 관한 사항</span></button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="radio_title">고유식별정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub4N" class="agree_rdo" name="agreeSub4" type="radio">
+                                                <label for="agreeSub4N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub4Y" class="agree_rdo" name="agreeSub4" type="radio">
+                                                <label for="agreeSub4Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>
+                                        </div>    
+                                    </li>
+                                    <li>
+                                        <span class="radio_title">민감정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub5N" class="agree_rdo" name="agreeSub5" type="radio">
+                                                <label for="agreeSub5N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub5Y" class="agree_rdo" name="agreeSub5" type="radio">
+                                                <label for="agreeSub5Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>
+                                        </div>    
+                                    </li>
+                                    <li>
+                                        <span class="radio_title">개인(신용)정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub6N" class="agree_rdo" name="agreeSub6" type="radio">
+                                                <label for="agreeSub6N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub6Y" class="agree_rdo" name="agreeSub6" type="radio">
+                                                <label for="agreeSub6Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="terms_conf_no">준법감시인 심의필 제 20218770호<span>(승인일 2021.10.13)</span></p>
+                    </div>                    
+                </div>
+                <div class="section_m">
+                    <div class="accordion">
+                        <div class="title">
+                            <span class="toggle">유의사항</span>
+                        </div>
+                        <div class="panel">
+                            <div class="useinfo">
+                                <ul class="list_dot">
+                                    <li>이용가능시간(평일 09:00~18:00)에 주신 질문/건의사항은 24시간 이내로 답변드리겠습니다.</li>
+                                    <li>평일 야간, 주말 등 업무시간 외 문의하신 경우나 빠른 답변이 어려운 질문에는 답변이 다소 늦어질 수 있습니다.</li>
+                                    <li>개인 및 기업의 영업∙판촉 활동 관련 문의는 답변이 제한될 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>질문/건의 등록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

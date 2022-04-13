@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="landing">
+        <div id="header">
+            <div class="header_out">
+                <div class="inner">
+                    <div class="logo"><span class="offscr">현대해상</span></div>
+                    <h1>고장출동서비스 만족도 조사</h1>
+                </div>
+            </div>
+        </div> 
+
+        <div id="container">
+			<div id="content">
+                <ul class="survey_list">
+                    <li>
+                        <p class="qs"><span class="num">1.</span><strong class="fs_bold">고장출동서비스</strong> 접수 후, 출동자와의 <strong class="fs_bold">최초 통화 만족도</strong>는 어떠셨나요?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e01" name="enf01">
+                                <label for="e01">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e02" name="enf01">
+                                <label for="e02">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e03" name="enf01">
+                                <label for="e03">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e04" name="enf01">
+                                <label for="e04">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e05" name="enf01">
+                                <label for="e05">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">2.</span>출동자가 <strong class="fs_bold">도착 예정시간 안내</strong>를 해드리고 <strong class="fs_bold">제시간</strong>에 신속하게 도착했나요?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e01" name="enf01">
+                                <label for="e01">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e02" name="enf01">
+                                <label for="e02">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e03" name="enf01">
+                                <label for="e03">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e04" name="enf01">
+                                <label for="e04">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e05" name="enf01">
+                                <label for="e05">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">3.</span>출동자의 <strong class="fs_bold">용모, 복장</strong> 및 <strong class="fs_bold">응대태도</strong>에 대한 만족도를 어떠셨나요?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e21" name="enf02">
+                                <label for="e21">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e22" name="enf02">
+                                <label for="e22">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e23" name="enf02">
+                                <label for="e23">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e24" name="enf02">
+                                <label for="e24">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e25" name="enf02">
+                                <label for="e25">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">4.</span>현장 문제해결을 위한 <strong class="fs_bold">출동자의 조치</strong>는 적절했는지요? (차량조치, 주의사항 안내 등)</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e31" name="enf03">
+                                <label for="e31">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e32" name="enf03">
+                                <label for="e32">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e33" name="enf03">
+                                <label for="e33">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e34" name="enf03">
+                                <label for="e34">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e35" name="enf03">
+                                <label for="e35">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="qs"><span class="num">5.</span>현대해상 <strong class="fs_bold">고장출동서비스</strong>에 <strong class="fs_bold">전반적으로</strong> 만족하셨나요?</p>
+                        <div class="ver_check">
+                            <span class="radio_box">
+                                <input type="radio" id="e41" name="enf04">
+                                <label for="e41">매우불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e42" name="enf04">
+                                <label for="e42">불만</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e43" name="enf04">
+                                <label for="e43">보통</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e44" name="enf04">
+                                <label for="e44">만족</label>
+                            </span>
+                            <span class="radio_box">
+                                <input type="radio" id="e45" name="enf04">
+                                <label for="e45">매우만족</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Case1) 5번 문항에 ‘만족‘ 선택 시 -->
+                        <div>
+                            <p class="qs"><span class="num">6.</span>어떤 점이 좋으셨나요?</p>
+                            <div class="box_check">
+                                <span class="check_box">
+                                    <input type="checkbox" id="p11" name="reason1">
+                                    <label for="p11">신속한<br>출동</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p12" name="reason1">
+                                    <label for="p12">꼼꼼한<br>차량조치</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p13" name="reason1">
+                                    <label for="p13">친절한<br>응대태도</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p14" name="reason1">
+                                    <label for="p14">상세한<br>안내와 설명</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p15" name="reason1">
+                                    <label for="p15">신뢰감을 주는<br>용모복장</label>
+                                </span>
+                            </div>
+                            <p class="qs"><span class="num">7.</span>(선택) 좋았던 점, 추가 개선사항 등을 알려주세요. 저희에게 큰 힘이 됩니다.</p>
+                            <textarea id="memo1" placeholder="200자 이내로 입력" rows="5"></textarea>
+                            <p class="cont"><span>0</span> / 200자</p>
+                        </div>
+                        <!-- Case1) 5번 문항에 ‘만족‘ 선택 시 -->
+
+                        <!-- Case2) 5번 문항에 ‘보통‘ 혹은 ‘불만’ 선택 시 -->
+                        <div style="display:none;">
+                            <p class="qs"><span class="num">6.</span>어떤 점을 개선하면 좋을까요?</p>
+                            <div class="box_check">
+                                <span class="check_box">
+                                    <input type="checkbox" id="p21" name="reason2">
+                                    <label for="p21">도착예정시간<br>준수</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p22" name="reason2">
+                                    <label for="p22">차량조치<br>점검</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p23" name="reason2">
+                                    <label for="p23">출동자<br>응대태도</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p24" name="reason2">
+                                    <label for="p24">상세<br>안내/설명</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p25" name="reason2">
+                                    <label for="p25">용모<br>복장</label>
+                                </span>
+                            </div>
+                            <p class="qs"><span class="num">7.</span>(선택) 개선해야 할 점을 남겨주시면 꼼꼼히 살펴 반영하겠습니다.</p>
+                            <textarea id="memo2" placeholder="200자 이내로 입력" rows="5"></textarea>
+                            <p class="cont"><span>0</span> / 200자</p>
+                        </div>
+                        <!-- Case2) 5번 문항에 ‘보통‘ 혹은 ‘불만’ 선택 시 -->
+
+                        <!-- Case3) 5번 문항에 ‘매우불만’ 선택 시 -->
+                        <div style="display:none;">
+                            <p class="qs"><span class="num">6.</span>어떤 점이 불편하셨나요?</p>
+                            <div class="box_check">
+                                <span class="check_box">
+                                    <input type="checkbox" id="p31" name="reason3">
+                                    <label for="p31">출동<br>지연</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p32" name="reason3">
+                                    <label for="p32">무성의한<br>차량조치</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p33" name="reason3">
+                                    <label for="p33">불친절한<br>응대태도</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p34" name="reason3">
+                                    <label for="p34">비용관련<br>불만</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p35" name="reason3">
+                                    <label for="p35">안내/설명<br>부재</label>
+                                </span>
+                                <span class="check_box">
+                                    <input type="checkbox" id="p36" name="reason3">
+                                    <label for="p36">단정하지 않은<br>용모복장</label>
+                                </span>
+                            </div>
+                            <p class="qs"><span class="num">7.</span>(선택) 불편했던 점을 남겨주시면 꼼꼼히 살펴 반영하겠습니다.</p>
+                            <textarea id="memo3" placeholder="200자 이내로 입력" rows="5"></textarea>
+                            <p class="cont"><span>0</span> / 200자</p>
+                        </div>
+                        <!-- Case3) 5번 문항에 ‘매우불만’ 선택 시 -->
+                    </li>
+                </ul>
+
+                <div class="fixed_btm_btns">                        
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>설문 완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_landing">
+                <p>현대해상화재보험(주) 대표이사 조용일·이성재</p>
+                <p>(03183) 서울특별시 종로구 세종대로 163, 현대해상빌딩(세종로)</p>
+                <p class="en">Copyright ⓒ Hyundai Marine & Fire Insurance Co.,Ltd.</p>
+                <p class="en">All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

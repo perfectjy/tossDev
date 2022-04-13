@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko" class="mobile">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '얼굴인증 등록/관리', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 데스크탑용 header -->
+            <div class="header_home"></div>
+            <!-- 모바일용 header -->
+            <div class="header_mb"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_s">
+                    <!-- case 1  -->
+                    <div class="governing">
+                        <div class="governing_title">
+                            서비스 이용약관에 동의 후<br class="p_br"> 본인인증을 해 주세요. 
+                        </div>
+                    </div>
+                    <!-- case 1a -->
+                    <div class="governing">
+                        <div class="governing_title">
+                            현재 기기에서 얼굴인증을<br class="p_br"> 등록하신 내역이 있습니다. 
+                        </div>
+                        <p class="info_text">
+                            앱을 재설치하신 경우 다시 등록하시면 기존의 얼굴인증이 자동으로 폐기됩니다.<br>
+                            얼굴인증이 잘 되지 않을 경우 [재촬영/해지] 메뉴에서 얼굴 정보를 다시 등록해 주세요.
+                        </p>
+                    </div>
+                    <!-- case 1b -->
+                    <div class="governing">
+                        <div class="governing_title">
+                            다른 기기에서 얼굴인증을<br class="p_br"> 등록하신 내역이 있습니다. 
+                        </div>
+                        <p class="info_text">
+                            <span class="highlight">다시 등록하시면 기존의 얼굴인증이 자동으로 폐기됩니다.</span>
+                        </p>
+                    </div>
+
+                    <div class="agreement">
+                        <div class="agreement_title">
+                            <h3 class="h3"><span class="tag pick">필수</span><span> 얼굴인증 서비스를 위한 개인(신용)정보 처리 <em class="emp">상세</em> 동의서</h3>
+                            <div class="terms_intro">
+                                귀하는 개인(신용)정보의 수집·이용에 관한 동의를 거부하실 수 있으며, 개인의 신용도 등을 평가하기 위한 목적 이외의 개인(신용)정보 제공 동의는 철회할 수 있습니다. 다만, 본 동의는 ‘얼굴인증 서비스’를 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무 수행이 불가능합니다.
+                            </div>                            
+                        </div>
+                        <div class="agreement_section">
+                            <div class="agreemen_list">
+                                <div class="agree_item">
+                                    <button type="button" class="btn_chk"><span>1. 수집·이용에 관한 사항</span></button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="radio_title">개인(신용)정보</span>
+                                        <div class="radio_set">
+                                            <div class="radio_box">
+                                                <input id="agreeSub10N" class="agree_rdo" name="agreeSub10" type="radio" checked>
+                                                <label for="agreeSub10N">동의안함</label>
+                                            </div>
+                                            <div class="radio_box">
+                                                <input id="agreeSub10Y" class="agree_rdo" name="agreeSub10" type="radio">
+                                                <label for="agreeSub10Y">동의함</label>
+                                                <button type="button" class="btn_blank"><span class="offscr">(약관팝업열기)</span></button>
+                                            </div>    
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>   
+                        <p class="terms_conf_no">준법감시인 심의필 제20215386호<span>(승인일 2021.06.30)</span></p>
+                    </div>
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>본인인증</span></button>
+                        </div>
+                    </div>
+                 
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

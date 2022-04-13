@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+    
+    <script type="text/javascript">
+        mbHeader = { title: '서비스차단 관리', tooltip: false, prev: true, menu: true };
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb monitoring"></div>
+        </div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="tbl_top_info">
+                        <div class="opt">
+                            <div class="unit">
+                                <span class="highlight">*</span>는 필수 입력 항목
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_wrap monitor">
+                        <div class="form_list">
+                            <div class="form_label">구분 <span class="highlight">*</span></div>
+                            <div class="form_item">
+                                <div class="radio_box">
+                                    <input type="radio" id="Sort1" name="sel_sort">
+                                    <label for="Sort1">메뉴 점검</label>
+                                </div>
+                                <div class="radio_box">
+                                    <input type="radio" id="Sort2" name="sel_sort">
+                                    <label for="Sort2">전체 시스템 차단</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_label">게시위치 선택 <span class="highlight">*</span></div>
+                            <div class="sel_position">
+                                <button type="button" class="btn line"><span>위치 선택</span></button>
+                                <div class="disp_value">
+                                    선택된 메뉴
+                                    <span class="value">3</span>
+                                    개
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list sel_period">
+                            <div class="form_label">게시기간 <span class="highlight">*</span></div>
+                            <div class="form_item">
+                                <div class="date_box">
+                                    <label for="s_date" class="offscr">시작일자</label>
+                                    <input type="text" class="inp_date" title="날짜선택" value="2021.07.21">
+                                </div>
+                                <div class="selbox">
+                                    <label for="selHour1" class="offscr">시간 선택</label>
+                                    <select id="selHour1" name="">
+                                        <option>선택</option>
+                                        <option value="00">00시</option>
+                                        <option value="01">01시</option>
+                                        <option value="02">02시</option>
+                                        <option value="03">03시</option>
+                                        <option value="04">04시</option>
+                                        <option value="05">05시</option>
+                                        <option value="06">06시</option>
+                                        <option value="07">07시</option>
+                                        <option value="08">08시</option>
+                                        <option value="09">09시</option>
+                                        <option value="10">10시</option>
+                                        <option value="11">11시</option>
+                                        <option value="12">12시</option>
+                                        <option value="13">13시</option>
+                                        <option value="14">14시</option>
+                                        <option value="15">15시</option>
+                                        <option value="16">16시</option>
+                                        <option value="17">17시</option>
+                                        <option value="18">18시</option>
+                                        <option value="19">19시</option>
+                                        <option value="20">20시</option>
+                                        <option value="21">21시</option>
+                                        <option value="22">22시</option>
+                                        <option value="23">23시</option>
+                                        <option value="24">24시</option>
+                                    </select>
+                                </div>
+                                <div class="selbox">
+                                    <label for="selMin1" class="offscr">분 선택</label>
+                                    <select id="selMin1" name="">
+                                        <option>선택</option>
+                                        <option value="00">00분</option>
+                                        <option value="10">10분</option>
+                                        <option value="20">20분</option>
+                                        <option value="30">30분</option>
+                                        <option value="40">40분</option>
+                                        <option value="50">50분</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="date_box">
+                                    <label for="s_date" class="offscr">종료일자</label>
+                                    <input type="text" class="inp_date" title="날짜선택" value="2021.07.21">
+                                </div>
+                                <div class="selbox">
+                                    <label for="selHour2" class="offscr">시간 선택</label>
+                                    <select id="selHour2" name="">
+                                        <option>선택</option>
+                                        <option value="00">00시</option>
+                                        <option value="01">01시</option>
+                                        <option value="02">02시</option>
+                                        <option value="03">03시</option>
+                                        <option value="04">04시</option>
+                                        <option value="05">05시</option>
+                                        <option value="06">06시</option>
+                                        <option value="07">07시</option>
+                                        <option value="08">08시</option>
+                                        <option value="09">09시</option>
+                                        <option value="10">10시</option>
+                                        <option value="11">11시</option>
+                                        <option value="12">12시</option>
+                                        <option value="13">13시</option>
+                                        <option value="14">14시</option>
+                                        <option value="15">15시</option>
+                                        <option value="16">16시</option>
+                                        <option value="17">17시</option>
+                                        <option value="18">18시</option>
+                                        <option value="19">19시</option>
+                                        <option value="20">20시</option>
+                                        <option value="21">21시</option>
+                                        <option value="22">22시</option>
+                                        <option value="23">23시</option>
+                                        <option value="24">24시</option>
+                                    </select>
+                                </div>
+                                <div class="selbox">
+                                    <label for="selMin2" class="offscr">분 선택</label>
+                                    <select id="selMin2" name="">
+                                        <option>선택</option>
+                                        <option value="00">00분</option>
+                                        <option value="10">10분</option>
+                                        <option value="20">20분</option>
+                                        <option value="30">30분</option>
+                                        <option value="40">40분</option>
+                                        <option value="50">50분</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label for="checkTitle" class="form_label">점검 타이틀 <span class="highlight">*</span></label>
+                            <div class="form_item">
+                                <input type="text" id="checkTitle" name="" value="서비스 정기점검 중입니다.">
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label for="checkCont" class="form_label">점검내용 <span class="highlight">*</span></label>
+                            <div class="form_item">
+                                <textarea id="checkCont" name="" rows="5">
+서비스 이용에 불편을 드려 죄송합니다.
+잠시 후 이용해 주세요.
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <label for="checkTime" class="form_label">점검시간 <span class="highlight">*</span></label>
+                            <div class="form_item">
+                                <input type="text" id="checkTime" name="" value="2021.07.08(목) 오후 4시 ~ 저녁 9시">
+                            </div>
+                        </div>
+
+                        <div class="form_list">
+                            <div class="form_label">채널별 게시여부 <span class="highlight">*</span></div>
+                            <div class="form_item vertical">
+                                <div class="check_box">
+                                    <input type="checkbox" id="NotiProp1" name="noti_prop">
+                                    <label for="NotiProp1">전체 게시</label>
+                                </div>
+                                <div class="check_box">
+                                    <input type="checkbox" id="NotiProp2" name="noti_prop">
+                                    <label for="NotiProp2">PC Web 게시</label>
+                                </div>
+                                <div class="check_box">
+                                    <input type="checkbox" id="NotiProp3" name="noti_prop" checked>
+                                    <label for="NotiProp3">Mobile Web 게시</label>
+                                </div>
+                                <div class="check_box">
+                                    <input type="checkbox" id="NotiProp4" name="noti_prop" checked>
+                                    <label for="NotiProp4">Mobile App 게시</label>
+                                </div>
+                                <div class="check_box">
+                                    <input type="checkbox" id="NotiProp5" name="noti_prop">
+                                    <label for="NotiProp5">게시 안 함</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="tbl_row mgt40">
+                        <caption>등록정보</caption>
+                        <colgroup>
+                            <col style="width:180px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">등록자</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">등록일</th>
+                                <td>2021.07.21 16:23</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">수정자</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">최종수정일</th>
+                                <td>2021.07.21 16:23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="fixed_btm_btns">
+                    <div class="btns">
+                        <button type="button" class="btn second"><span>삭제</span></button>
+                        <button type="button" class="btn primary"><span>저장</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

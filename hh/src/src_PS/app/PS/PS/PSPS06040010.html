@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상</title>
+<script type="text/javascript" src="/src_PS/app/PS/_pub_include/head.js"></script><!-- // Pub Include -->
+</head>
+<body data-category="ps">
+	<script type="text/javascript" src="/src_PS/app/PS/_pub_include/skip.js"></script><!-- // Pub Include -->
+	<div id="wrap" class="exclude">
+		<div id="header">
+			<script type="text/javascript" src="/src_PS/app/PS/_pub_include/header.js"></script><!-- // Pub Include -->
+		</div>
+		<script type="text/javascript" src="/src_PS/app/PS/_pub_include/breadscrumb.js"></script><!-- // Pub Include -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="step_list">
+                        <div class="step_bar"><span style="width:16.7%"></span></div>
+                        <div class="steps">
+                          <span class="offscr">현재단계</span><strong class="num">1</strong>
+                          <span class="offscr">전체단계</span><strong>6</strong>
+                        </div>
+                    </div>
+                    <div class="governing">
+                        <h2 class="governing_title">행복한 미래를 위한 한 걸음, 두근두근 은퇴설계로 준비하세요.</h2>
+                        <p class="info_text">입력하신 정보를 바탕으로 미래에 대한 예상치를 도출하여 은퇴시점에 맞춘 설계를 도와드립니다.</p>
+                    </div>
+
+                    <div class="comp">
+                        <h3 class="h3 hmark">기본정보 입력</h3>
+
+                        <div class="form_wrap parallel">
+                            <div class="form_list">
+                                <span class="form_label">성별</span>
+                                <div class="form_item gender">
+                                    <span class="radio_box card">
+                                        <input id="rd_man" type="radio" name="gender">
+                                        <label for="rd_man">남자</label>
+                                    </span>
+                                    <span class="radio_box card">
+                                        <input id="rd_woman" type="radio" name="gender">
+                                        <label for="rd_woman">여자</label>
+                                    </span>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">성별을 선택해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">배우자 유무</span>
+                                <div class="form_item wedding">
+                                    <span class="radio_box card">
+                                        <input id="rd_weddingY" type="radio" name="wedding">
+                                        <label for="rd_weddingY">있음</label>
+                                    </span>
+                                    <span class="radio_box card">
+                                        <input id="rd_weddingN" type="radio" name="wedding">
+                                        <label for="rd_weddingN">없음</label>
+                                    </span>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">배우자 유무를 선택해 주세요.</p>
+                            </div>
+                            <!--// 1 ) 성별, 배우자 -->
+
+                            <div class="form_list">
+                                <span class="form_label">현재 연령</span>
+                                <div class="range_amount age01">    
+                                    <div class="slider" data-min="19" data-max="80" data-step="1" data-unit="세" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">19세</span>
+                                        <span class="middle">50세</span>
+                                        <span class="end">80세</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price">
+                                        <span class="unit">세</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">19세~80세까지 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">배우자 연령</span>
+                                <div class="range_amount age01 disabled">    
+                                    <div class="slider" data-min="19" data-max="80" data-step="1" data-unit="세" aria-hidden="true"></div>
+                                    <div class="scope">
+                                        <span class="start">19세</span>
+                                        <span class="middle">50세</span>
+                                        <span class="end">80세</span>
+                                    </div>
+                                    <div class="unit_item">
+                                        <input type="text" class="inp_price" disabled>
+                                        <span class="unit">세</span>
+                                    </div>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">19세~80세까지 입력해 주세요.</p>
+                            </div>
+                            <!--// 2) 현재연령, 배우자연령 -->
+
+                            <div class="form_list">
+                                <label for="" class="form_label">보유자산</label>
+                                <div class="unit_item">
+                                    <input class="inp_price" type="tel" title="보유자산">
+                                    <span class="unit">만원</span> 
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">보유자산을 입력해 주세요.</p>
+                            </div>
+                            <div class="form_list">
+                                <span class="form_label">자녀 유무</span>
+                                <div class="form_item ht">
+                                    <span class="radio_box">
+                                        <input id="rd_childrenY" type="radio" name="children">
+                                        <label for="rd_childrenY">있음</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input id="rd_childrenN" type="radio" name="children">
+                                        <label for="rd_childrenN">없음</label>
+                                    </span>
+                                </div>
+                                <!-- 오류 메시지 -->
+                                <p class="error_text">자녀유무를 선택해 주세요.</p>
+                            </div>
+                            <!--// 2) 보유자산, 자녀유무 -->
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="comp">
+                    
+                        <div class="tbl_top_info">
+                            <h3 class="h3 hmark">자녀정보</h3>
+                            <div class="opt">
+							    <a href="#" class="btn ass">추가</a>
+							    <a href="#" class="btn ass">삭제</a>    
+							</div>
+                        </div>
+                            
+                        <div class="child_check">
+                            <div class="range_amount">    
+                                <div class="slider" data-min="1" data-max="60" data-step="1" data-unit="세" aria-hidden="true"></div>
+                                <div class="scope">
+                                    <span class="start">1세</span>
+                                    <span class="middle">30세</span>
+                                    <span class="end">60세</span>
+                                </div>
+                                <div class="unit_item">
+                                    <input type="text" class="inp_price">
+                                    <span class="unit">세</span>
+                                </div>
+                                <p class="error_text">1세~60세까지 입력해 주세요.</p>
+                            </div>
+                            <!--// 자녀나이 -->
+                            <div class="child_list">
+                                <div class="ht">
+                                    <span class="radio_box">
+                                        <input id="rd_childG1" type="radio" name="childrenGender1">
+                                        <label for="rd_childG1">남자</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input id="rd_childG2" type="radio" name="childrenGender1">
+                                        <label for="rd_childG2">여자</label>
+                                    </span>
+                                    <p class="error_text">성별을 입력해 주세요.</p>
+                                </div>
+                                <div class="ht">
+                                    <span class="radio_box">
+                                        <input id="rd_childW3" type="radio" name="childrenWedding1">
+                                        <label for="rd_childW3">미혼</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input id="rd_childW4" type="radio" name="childrenWedding1">
+                                        <label for="rd_childW4">기혼</label>
+                                    </span>
+                                    <p class="error_text">자녀 결혼 여부를 선택해 주세요.</p>
+                                </div>
+                            </div>
+                            <!--// 자녀성별 및 혼인유무 -->
+                        </div>
+                        <div class="child_check active"> <!-- 자녀선택 시 class 'active' 추가해주세요 -->
+                            <div class="check_box">
+                                <input id="check2" type="checkbox" name="check" checked>
+                                <label for="check2"><span class="offscr">자녀정보</span></label>
+                            </div>
+                            <!--// check_box -->
+                            <div class="range_amount">    
+                                <div class="slider" data-min="1" data-max="60" data-step="1" data-unit="세" aria-hidden="true"></div>
+                                <div class="scope">
+                                    <span class="start">1세</span>
+                                    <span class="middle">30세</span>
+                                    <span class="end">60세</span>
+                                </div>
+                                <div class="unit_item">
+                                    <input type="text" class="inp_price">
+                                    <span class="unit">세</span>
+                                </div>
+                            </div>
+                            <div class="child_list">
+                                <div class="ht">
+                                    <span class="radio_box">
+                                        <input id="rd_childG1_1" type="radio" name="childrenGender2">
+                                        <label for="rd_childG1_1">남자</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input id="rd_childG2_1" type="radio" name="childrenGender2">
+                                        <label for="rd_childG2_1">여자</label>
+                                    </span>
+                                </div>
+                                <div class="ht">
+                                    <span class="radio_box">
+                                        <input id="rd_childW3_1" type="radio" name="childrenWedding2">
+                                        <label for="rd_childW3_1">미혼</label>
+                                    </span>
+                                    <span class="radio_box">
+                                        <input id="rd_childW4_1" type="radio" name="childrenWedding2">
+                                        <label for="rd_childW4_1">기혼</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="title open">
+                            <span class="toggle">유의사항<span class="offscr">상세보기</span></span>
+                        </div>
+                        <div class="panel">
+                            <ul class="list_dot">
+                                <li>예상 결혼연령은 남자 30세, 여자 27세 기준입니다.</li>
+                                <li>평균결혼자금은 남성 1억 3,000만원, 여성 4,400만원 기준으로 가정합니다.(출처:한국결혼문화연구소)</li>
+                                <li>자녀의 학자금은 4년제 기준 19~22세를 대상으로 매년 1천만원 기준으로 가정합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="fixed_btm_btns">
+                        <div class="btns">
+                            <button type="button" class="btn second">취소</button>
+                            <button type="button" class="btn primary">다음</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <script type="text/javascript" src="/src_PS/app/PS/_pub_include/footer.js"></script><!-- // Pub Include -->
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+	<script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+
+    <script type="text/javascript">
+        mbHeader = { title: '마이페이지', tooltip: false, home: true, menu: true };
+
+        $(function() {
+            // 마이페이지 알림 개수 체크
+            var alimObj = $('.mypage_alim').find('.alim_item');
+            if (alimObj.length > 1) {
+                $('.mypage_alim').addClass('multi');
+            }
+
+            // 마이페이지 알림 닫기 버튼
+            $(document).off('click.alimdel').on('click.alimdel', '.alim_item .btn_alim_close', function() {
+                var $_this = $(this),
+                    alimWrap = $_this.closest('.mypage_alim'),
+                    alimObj = alimWrap.find('.alim_item'),
+                    alimCnt = alimObj.length - 1;
+                    thisalim = $_this.closest('.alim_item'),
+                    nextalim = $_this.closest('.alim_item').next('.alim_item');
+                
+                if (alimCnt >= 1) {
+                    thisalim.remove();
+                    if (alimCnt === 1) alimWrap.removeClass('multi');
+                } else {
+                    alimWrap.slideUp(200);
+                    // 2022.01.20 웹접근성 관련 focus 이동 추가
+                    alimWrap.next('.btn_conts').find('a.btn').focus();
+                    var timer = setTimeout(function() {
+                        thisalim.remove();
+                        clearTimeout(timer);
+                    }, 300);
+                }
+
+                // 웹접근성 관련 focus 이동
+                !!nextalim ? nextalim.focus() : '';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 모바일용 header -->
+            <div class="header_mb big"></div>
+        </div>       
+        <div id="container">
+			<div id="content">
+                <div class="section_m">
+                    <div class="governing">
+                        <div class="governing_title">
+                            <strong>하*현님, 안녕하세요!</strong>
+                        </div>
+                        <p class="added_text b">(최종 방문일시 2021.07.19 11:00:10)</p>
+                    </div>
+
+                    <div class="mypage_top_info b">
+                        <p>알려드릴 사항이 <span class="cnt">3건</span> 있어요.</p>
+                    </div>
+
+                    <div class="mypage_alim b">
+                        <!-- 생일 축하
+                            1. 노출기준/기간: 생일 D-30 ~ D-day까지
+                            2. 링크: X
+                        -->
+                        <div class="alim_item b" tabindex="0">
+                            <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                            <div class="subject birth">
+                                <p class="title">45번째 생일을 축하드립니다!</p>
+                            </div>
+                            <div class="cont">
+                                <div class="birthday"></div>
+                            </div>
+                        </div>
+
+                        <!-- 보험나이 변경안내
+                            1. 노출기준/기간: 상령일 D-60 ~ D-1까지
+                            2. 링크: '보험상품 > 내 보험 보장분석'
+                                - 상령일자 및 D-day를 화면과 같이 메시지 처리
+                        -->
+                        <div class="alim_item b" tabindex="0">
+                            <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                            <div class="subject">
+                                <p class="title">
+                                    <span class="highlight">53일</span> 후에 보험나이가<br>
+                                    1살 올라갑니다.
+                                </p>
+                            </div>
+                            <div class="cont">
+                                <p>
+                                    <span class="highlight">2022년 6월 28일</span>에 보험나이가 올라가면 보험가입 시 보험료가 더 올라갈 수 있어요.<br>
+                                    가입을 망설이는 보험이 있다면 보험나이가 오르기 전 가입해 보세요.
+                                </p>
+                                <div class="alim_btns">
+                                    <button type="button" class="btn line"><span>내 보험 보장분석</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 휴대전화번호 변경안내
+                            1. 노출기간: 고객정보의 휴대전화번호 앞자리가 010이 아닐 경우 ~  010으로 변경 시까지
+                            2. 링크: '마이페이지 > 개인정보 변경'
+                        -->
+                        <div class="alim_item b" tabindex="0">
+                            <button type="button" class="btn_alim_close"><span class="offscr">닫기</span></button>
+                            <div class="subject">
+                                <p class="title">
+                                    하*현님의 휴대전화번호가<br>
+                                    <span class="highlight">01X-1234-***</span> 가 맞나요?
+                                </p>
+                            </div>
+                            <div class="cont">
+                                <p>
+                                    <span class="highlight">계약 관련 중요안내사항 알림톡/문자메시지</span> 등을 빠짐없이 받으실 수 있도록,
+                                    고객님의 휴대전화번호가 바뀌면 즉시 개인정보에 반영해 주세요.
+                                </p>
+                                <div class="alim_btns">
+                                    <button type="button" class="btn line"><span>개인정보 변경</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 알림영역이 2건 이상일 경우 노출 -->
+                    <div class="btn_conts">
+                        <a href="#" class="btn line b">알림 모두 보기</a>
+                    </div>
+
+                    <h3 class="h_b">고객정보</h3>
+                    <table class="tbl_row_b">
+                        <caption>고객정보</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">휴대전화번호</th>
+                                <td>010-7107-9597</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이메일</th>
+                                <td>ksh@hi.co.kr</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주소</th>
+                                <td>(12345) 경기도 용인시 수지구 상현동 82 동일스위트 123동 456호</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="btn_conts">
+                        <button type="button" class="btn line b"><span>개인정보 변경</span></button>
+                    </div>
+
+                    <div class="tab_section t1 mypage">
+                        <div class="tab_list tab_nav">
+                            <ul class="b">
+                                <li class="tab active"><a href="#HIMY01010011" title="현재선택"><span>계약</span></a></li>
+                                <li class="tab"><a href="#HIMY01010013"><span>보상</span></a></li>
+                                <li class="tab"><a href="#HIMY01010016"><span>대출</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents">
+                            <div id="HIMY01010011" class="tab_panel">
+                                <h2 class="offscr">계약</h2>
+                                <div class="mypage_top_info b">
+                                    <p>유지 중인 계약이 <span class="cnt">3건</span> 있어요.</p>
+                                </div>
+
+                                <!-- 계약이 없을 때 -->
+                                <div class="no_list b">유지 중인 계약이 없습니다.</div>
+
+                                <div class="insu_list b">
+                                    <!-- CASE1) 자동차보험 -->
+                                    <div class="rd_box insu_item">
+                                        <div class="insu_title">
+                                            <span class="tag continue b">유지</span>
+                                            <div class="insu_name">Hicar개인용자동차보험</div>
+                                            <div class="car_number">34가12**</div>
+                                        </div>
+                                        <div class="insu_detail">
+                                            <div class="info_list">
+                                                <dl>
+                                                    <dt>계약번호</dt>
+                                                    <dd>M20211345678-000</dd>
+                                                    <dt>계약자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>피보험자</dt>
+                                                    <dd>하*현 외 2명</dd>
+                                                    <dt>보험기간</dt>
+                                                    <dd>2020.08.23~2021.08.23</dd>
+                                                    <dt>보험료</dt>
+                                                    <dd>2020.08.23~2021.08.23</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <a href="#" class="btn line b">단기운전자확대특약 가입하기</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- CASE2) 장기/일반보험 -->
+                                    <div class="rd_box insu_item">
+                                        <div class="insu_title">
+                                            <span class="tag continue b">유지</span>
+                                            <div class="insu_name">무배당행복을다모은보험(Hi0804)</div>
+                                            <div class="insu_pay">
+                                                월 <span class="pay">120,000원</span>
+                                            </div>
+                                        </div>
+                                        <div class="insu_detail">
+                                            <div class="info_list">
+                                                <dl>
+                                                    <dt>계약번호</dt>
+                                                    <dd>L20062142296</dd>
+                                                    <dt>계약자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>피보험자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>보험기간</dt>
+                                                    <dd>2015.04.23~2034.04.23</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <a href="#none" class="btn line b">내 보험이 충분한지 확인하기</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- CASE3) 장기보험_연금 -->
+                                    <div class="rd_box insu_item">
+                                        <div class="insu_title">
+                                            <span class="tag continue b">유지</span>
+                                            <div class="insu_name">연금저축손해보험노후사랑보험(Hi0604)</div>
+                                            <div class="insu_pay">
+                                                월 <span class="pay">500,000원</span>
+                                            </div>
+                                        </div>
+                                        <div class="insu_detail">
+                                            <div class="info_list">
+                                                <dl>
+                                                    <dt>계약번호</dt>
+                                                    <dd>L20062142296</dd>
+                                                    <dt>계약자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>피보험자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>보험기간</dt>
+                                                    <dd>2020.08.23~2021.08.23</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <a href="#none" class="btn line b">연금저축보험료 추가 납입하기</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- 미납 시 -->
+                                    <div class="rd_box insu_item">
+                                        <div class="insu_title">
+                                            <span class="tag bad b">연체</span>
+                                            <div class="insu_name">연금저축손해보험노후사랑보험(Hi0604)</div>
+                                            <div class="insu_pay warning">
+                                                월 <span class="pay">500,000원</span>
+                                            </div>
+                                        </div>
+                                        <div class="insu_detail">
+                                            <div class="info_list">
+                                                <dl>
+                                                    <dt>계약번호</dt>
+                                                    <dd>L20062142296</dd>
+                                                    <dt>계약자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>피보험자</dt>
+                                                    <dd>하*현</dd>
+                                                    <dt>보험기간</dt>
+                                                    <dd>2020.08.23~2021.08.23</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <a href="#none" class="btn line b">미납보험료 납입하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn_conts">
+                                    <button type="button" class="btn line b"><span>전체 계약 조회</span></button>
+                                </div>
+                            </div>
+                            <div id="HIMY01010013" class="tab_panel">
+                                <h2 class="offscr">보상</h2>
+                                <div class="tab_section t2">
+                                    <div class="tab_list tab_nav">
+                                        <ul class="b">
+                                            <li class="tab active"><a href="#HIMY01010013_tab" title="현재선택"><span>질병/상해</span></a></li>
+                                            <li class="tab"><a href="#HIMY01010014_tab"><span>재물/배상/휴대품</span></a></li>
+                                            <li class="tab"><a href="#HIMY01010015_tab"><span>자동차</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_contents">
+                                        <div id="HIMY01010013_tab" class="tab_panel">
+                                            <h3 class="offscr">질병/상해</h3>
+                                            <h3 class="h_b">질병/상해 청구 내역(최근 6개월)</h3>
+                                            <p class="b">
+                                                고객님이 피보험자로서 청구하신 내역만 조회됩니다.
+                                                단체상해보험의 경우 [전체 청구내역 조회]에서 확인해 주세요.
+                                            </p>
+
+                                            <div class="no_list b">
+                                                최근 6개월 이내 질병/상해로<br>
+                                                보험금을 청구하신 내역이 없습니다.
+                                            </div>
+
+                                            <div class="each_select_list b">
+                                                <div class="rd_box contract">
+                                                    <div class="sub_conts">
+                                                        <div class="subject">
+                                                            <span class="tag new b">신규</span>
+                                                            <p class="name">급성 부비동염</p>
+                                                        </div>
+                                                        <div class="substance">
+                                                            <dl>
+                                                                <dt>접수번호</dt>
+                                                                <dd>담당자 배정전</dd>
+                                                                <dt>상태</dt>
+                                                                <dd>진행중</dd>
+                                                                <dt>접수일/추가접수일</dt>
+                                                                <dd>2021.06.01</dd>
+                                                                <dt>치료받으신 분</dt>
+                                                                <dd>하*현</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <a href="#" class="btn_list"><span class="offscr">상세내역조회</span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="rd_box contract">
+                                                    <div class="sub_conts">
+                                                        <div class="subject">
+                                                            <span class="tag new b">신규</span>
+                                                            <span class="tag group b">단체</span>
+                                                            <p class="name">출근길에 오토바이에 치여 오른팔 골절</p>
+                                                        </div>
+                                                        <div class="substance">
+                                                            <dl>
+                                                                <dt>접수번호</dt>
+                                                                <dd>2012290468</dd>
+                                                                <dt>상태</dt>
+                                                                <dd>종결</dd>
+                                                                <dt>접수일/추가접수일</dt>
+                                                                <dd>2021.05.29</dd>
+                                                                <dt>치료받으신 분</dt>
+                                                                <dd>하*현</dd>
+                                                                <dt>단체명</dt>
+                                                                <dd>(주)현대해상화재보험</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <a href="#" class="btn_list"><span class="offscr">상세내역조회</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn_conts">
+                                                <button type="button" class="btn line b">전체 청구내역 조회</button>
+                                                <button type="button" class="btn line b">보험금청구</button>
+                                            </div>
+                                        </div>
+                                        <div id="HIMY01010014_tab" class="tab_panel">
+                                            <h3 class="offscr">재물/배상/휴대품</h3>
+                                            <h3 class="h_b">재물/배상/휴대품 청구 내역(최근 6개월)</h3>
+                                            <p class="b">고객님이 계약자로서 청구하신 내역만 조회됩니다. 계약자가 다른 분일 경우 [전체 청구 내역 조회]로 확인해 주세요.</p>
+
+                                            <div class="no_list b">
+                                                최근 6개월 이내 재물/배상/휴대품 파손으로<br>
+                                                보험금을 청구하신 내역이 없습니다.
+                                            </div>
+
+                                            <div class="each_select_list b">
+                                                <div class="rd_box contract">
+                                                    <div class="sub_conts">
+                                                        <div class="subject">
+                                                            <p class="name">숙소 앞에서 휴대폰을 소매치기 당함.</p>
+                                                        </div>
+                                                        <div class="substance">
+                                                            <dl>
+                                                                <dt>접수번호</dt>
+                                                                <dd>담당자 배정전</dd>
+                                                                <dt>접수일/추가접수일</dt>
+                                                                <dd>2021.06.01</dd>
+                                                                <dt>피보험자</dt>
+                                                                <dd>하*현</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <a href="#" class="btn_list"><span class="offscr">상세내역조회</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn_conts">
+                                                <button type="button" class="btn line b">전체 청구내역 조회</button>
+                                                <button type="button" class="btn line b">보험금 청구</button>
+                                            </div>
+                                        </div>
+                                        <div id="HIMY01010015_tab" class="tab_panel">
+                                            <h3 class="offscr">자동차</h3>
+                                            <h3 class="h_b">자동차 사고접수내역(최근 6개월)</h3>
+                                            <p class="b">고객님이 계약자로서 청구하신 내역만 조회됩니다. 계약자가 다른 분일 경우 [전체 청구 내역 조회]로 확인해 주세요.</p>
+
+                                            <div class="no_list b">
+                                                최근 6개월 이내 자동차 사고접수를 하신<br>
+                                                내역이 없습니다.
+                                            </div>
+
+                                            <div class="each_select_list b">
+                                                <div class="rd_box contract">
+                                                    <div class="sub_conts">
+                                                        <div class="subject">
+                                                            <p class="name">Hicar개인용자동차보험<br>(67나83**)</p>
+                                                        </div>
+                                                        <div class="substance">
+                                                            <dl>
+                                                                <dt>접수번호</dt>
+                                                                <dd>2012047481</dd>
+                                                                <dt>사고일</dt>
+                                                                <dd>2020.12.15</dd>
+                                                                <dt>사고접수일</dt>
+                                                                <dd>2020.12.16</dd>
+                                                            </dl>
+                                                        </div>
+                                                        <a href="#" class="btn_list"><span class="offscr">상세내역조회</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn_conts">
+                                                <button type="button" class="btn line b">전체 청구내역 조회</button>
+                                                <button type="button" class="btn line b">하이카서비스 내역 조회</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HIMY01010016" class="tab_panel">
+                                <h2 class="offscr">대출</h2>
+                                <div class="governing mypage">
+                                    <div class="governing_title">
+                                        보험계약대출은 총 1,550,000원이고,<br>
+                                        <strong class="highlight">2,500,000원</strong> 추가 대출이 가능합니다.
+                                    </div>
+
+                                    <!-- 보험계약대출가능금액(잔액)이 0원일 경우 -->
+                                    <div class="governing_title">
+                                        보험계약대출은 총 1,550,000원이고,<br>
+                                        대출 가능한 금액이 없습니다.
+                                    </div>
+                                    <!--// 보험계약대출가능금액(잔액)이 0원일 경우 -->
+
+                                    <!-- 대출내역과 대출가능금액이 모두 없을 경우 -->
+                                    <div class="governing_title">
+                                        상환하실 대출 내역이나<br>
+                                        대출 가능한 금액이 없습니다.
+                                    </div>
+                                    <!--// 대출내역과 대출가능금액이 모두 없을 경우 -->
+
+                                    <p class="added_text b">(대출 가능금액은 2021.05.26 기준)</p>
+                                    <div class="btn_conts">
+                                        <button type="button" class="btn line b">보험계약대출 신청 바로가기</button>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 b">보험계약대출내역(최근 10건)</h3>
+                                <div class="each_select_list b">
+                                    <div class="rd_box contract">
+                                        <div class="sub_conts">
+                                            <div class="subject">
+                                                <span class="tag good b">정상</span>
+                                                <p class="name">무배당하이라이프파워ECO운전자보험Hi0910(자가용/일반상해)</p>
+                                            </div>
+                                            <div class="substance">
+                                                <dl class="s_dt">
+                                                    <dt>대출이율</dt>
+                                                    <dd>4.00%</dd>
+                                                    <dt>대출잔액</dt>
+                                                    <dd>3,640,000원</dd>
+                                                    <dt>대출일</dt>
+                                                    <dd>2021.01.09</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_conts">
+                                        <button type="button" class="btn line b"><span>전체 보험계약대출내역 조회</span></button>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 b">신용대출내역(최근 10건)</h3>
+                                <div class="each_select_list b">
+                                    <div class="rd_box contract">
+                                        <div class="sub_conts">
+                                            <div class="subject">
+                                                <span class="code">12001507-01115</span>
+                                                <p class="name">신용대출</p>
+                                            </div>
+                                            <div class="substance">
+                                                <dl class="s_dt">
+                                                    <dt>고정금리</dt>
+                                                    <dd>2.42%</dd>
+                                                    <dt>대출잔액</dt>
+                                                    <dd>78,821,374원</dd>
+                                                    <dt>대출일자</dt>
+                                                    <dd>2015.07.31</dd>
+                                                    <dt>대출기간</dt>
+                                                    <dd>30년</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_conts">
+                                        <button type="button" class="btn line b"><span>전체 신용대출내역 조회</span></button>
+                                    </div>
+                                </div>
+
+                                <h3 class="h3 b">담보대출내역(최근 10건)</h3>
+                                <div class="each_select_list b">
+                                    <div class="rd_box contract">
+                                        <div class="sub_conts">
+                                            <div class="subject">
+                                                <span class="tag b">아파트</span>
+                                                <span class="sub">12001507-01115</span>
+                                                <p class="name">현대해상_아파트론[5년고정](A01)_MI가입(매년10%면제[21.5월]_소액임차 변경)</p>
+                                            </div>
+                                            <div class="substance">
+                                                <dl class="s_dt">
+                                                    <dt>적용금리</dt>
+                                                    <dd>2.42%</dd>
+                                                    <dt>약정금리</dt>
+                                                    <dd>
+                                                        <span class="label">기준</span> 1.13%<br>
+                                                        <span class="label">가산</span> 1.49%<br>
+                                                        <span class="label">약정</span> 2.62%
+                                                    </dd>
+                                                    <dt>대출잔액</dt>
+                                                    <dd>78,821,374원</dd>
+                                                    <dt>대출일자</dt>
+                                                    <dd>2015-07-31</dd>
+                                                    <dt>대출기간</dt>
+                                                    <dd>30년</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_conts">
+                                        <button type="button" class="btn line b"><span>전체 담보대출내역 조회</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

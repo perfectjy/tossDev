@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1240">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상</title>
+	
+	<script src="/src/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/src/assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="/src/assets/js/ui_plugins.js"></script>
+	<script src="/src/assets/js/ui_common.js"></script>	
+
+	<link type="text/css" rel="stylesheet" href="/src/assets/css/common.css">
+    
+</head>
+<body>
+    <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <div id="wrap" class="exclude">  <!-- PC 전용 class -->
+        <div id="header">
+            <!-- 데스크탑용 header -->
+			<div class="header_home"></div>
+        </div>        
+        <div class="breadcrumbs_wrap"></div>
+
+        <div id="container">
+			<div id="content">
+                <div class="section_l">
+                    <!-- admin editer -->
+                    <div class="tbl_top_info">
+                        <span class="unit">기준월: 2021.03 말 / 단위: %, 천원</span>
+                    </div>
+                    <table class="tbl_data">
+                        <caption>자산·부채 구성내역 및 계약자적립금 현황</caption>
+                        <colgroup>
+                            <col style="width:20%;" span="5">
+                        </colgroup>
+                        <thead class="line">
+                            <tr>
+                                <th rowspan="2" colspan="2" scope="col">구분</th>
+                                <th colspan="2" scope="colgroup">원리금보장형</th>
+                                <th rowspan="2" scope="col">소계</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">금리연동형</th>
+                                <th scope="col">이율보장형</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="13" scope="rowgroup">자산</th>
+                                <th scope="row" class="txt_l">Ⅰ.유동성자산</th>
+                                <td class="txt_r">15,424,659</td>
+                                <td class="txt_r">58,178,983</td>
+                                <td class="txt_r">73,603,642</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">Ⅱ.유가증권</th>
+                                <td class="txt_r">93,807,114</td>
+                                <td class="txt_r">3,219,231,794</td>
+                                <td class="txt_r">3,313,038,907</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">1.주식</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">2.채권</th>
+                                <td class="txt_r">83,800,378</td>
+                                <td class="txt_r">2,957,891,592</td>
+                                <td class="txt_r">3,041,691,970</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">3.수익증권</th>
+                                <td class="txt_r">10,006,736</td>
+                                <td class="txt_r">54,307,549</td>
+                                <td class="txt_r">64,314,285</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">4.외화유가증권</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r">207,032,652</td>
+                                <td class="txt_r">207,032,652</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">5.기타</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">Ⅲ.대출채권</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r">700,943,948</td>
+                                <td class="txt_r">700,943,948</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">1.보험약관대출금</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                                <td class="txt_r"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">2.신용대출금</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r">50,000,000</td>
+                                <td class="txt_r">50,000,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">3.기타대출금</th>
+                                <td class="txt_r"></td>
+                                <td class="txt_r">650,943,948</td>
+                                <td class="txt_r">650,943,948</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">기타자산</th>
+                                <td class="txt_r">726,014</td>
+                                <td class="txt_r">35,501,460</td>
+                                <td class="txt_r">36,227,474</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">소계</th>
+                                <td class="txt_r">109,957,786</td>
+                                <td class="txt_r">4,013,856,184</td>
+                                <td class="txt_r">4,123,813,970</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="5" scope="rowgroup">부채</th>
+                                <th scope="row" class="txt_l">기타부채</th>
+                                <td class="txt_r">37,964</td>
+                                <td class="txt_r">4,574,043</td>
+                                <td class="txt_r">4,612,008</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">일반계정 미지급금</th>
+                                <td class="txt_r">19,626</td>
+                                <td class="txt_r">532,802</td>
+                                <td class="txt_r">552,428</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">계약자 적립금</th>
+                                <td class="txt_r">110,239,707</td>
+                                <td class="txt_r">3,996,089,949</td>
+                                <td class="txt_r">4,106,329,656</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">기타포괄손익 누계</th>
+                                <td class="txt_r">-339,511</td>
+                                <td class="txt_r">12,659,390</td>
+                                <td class="txt_r">12,319,879</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt_l">소계</th>
+                                <td class="txt_r">109,957,786</td>
+                                <td class="txt_r">4,013,856,184</td>
+                                <td class="txt_r">4,123,813,970</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--// admin editer -->
+                </div>
+            </div>
+    
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
