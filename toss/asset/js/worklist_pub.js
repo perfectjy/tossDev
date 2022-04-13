@@ -60,7 +60,6 @@ const fn = {
 
 			if(!!$td_leng){
 				$td.eq(0).addClass('no');
-				$td.eq(5).addClass('tc');
 				$td.eq(7).addClass('tc worker');
 				$td.eq(8).addClass('tc');
 				$td.eq(9).addClass('tc end');
