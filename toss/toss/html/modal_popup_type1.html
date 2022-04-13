@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1" />
+    <title>make a modalPopup</title>
+    <link rel="stylesheet" type="text/css" href="../asset/css/guide.css">
+    <!-- <script type="text/javascript" src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../asset/js/jquery.easing.min.js"></script> -->
+    <!-- <script type="text/javascript" src="../asset/js/common.js"></script> -->
+    <link rel="shortcut icon" href="/practice/jyDev/asset/img/favicon-32x32.png">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modal Popup</h1>
+    </header>
+    <div class="wrap">
+        
+        <div class="guide_info">
+            <button type="button" class="btn line" data-modal-btn="dialogBottom">커튼 팝업</button>
+        </div>
+        <!-- dialog Bottom -->
+        <div class="dialog bottom" data-modal="dialogBottom">
+            <div class="dialog_wrap m">
+                <div class="dialog_header">
+                    <h1>Title</h1>
+                </div>
+                <div class="dialog_content">
+                    <div class="section">
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>★★★★★★★★</p>
+                    </div>
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap">
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        ; (function(win, doc) {
+            'use strict';
+
+            const global = 'test';
+            win[global] = {};
+        
+            const Global = win[global];
+            // 클래스 존재여부 확인 :: contains 
+            // 클래스 교체 :: replace('oldClass', 'newClass');
+           
+            Global.modalPopup = {
+                init : function(opt) {
+                    const e = this;
+                    e.id = opt.id;
+                    const modalWrap = doc.querySelector('[data-modal="'+ e.id +'"]');
+                    const modalBtn = doc.querySelector('[data-modal-btn="'+ e.id +'"]');
+                    const modalCloseBtns = modalWrap.querySelectorAll('.dialog_close');                    
+                    const html = doc.querySelector('html');
+                    
+                    modalBtn.addEventListener('click', modalOpen);
+
+                    [].forEach.call(modalCloseBtns, function(closeBtn){
+                        closeBtn.addEventListener('click', modalClose);
+                    });
+                 
+                    // body,html 클릭 시 팝업
+                    // modalWrap.addEventListener('click', function(e) {      
+                    //     if(e.target.classList.contains('show')){
+                    //         modalClose();
+                    //     }
+                    // });
+
+                    function modalOpen() {
+                        modalWrap.classList.add('show');
+                        html.classList.add('dialog_active');
+                    }
+
+                    function modalClose() {
+                        modalWrap.classList.remove('show');
+                        html.classList.remove('dialog_active');
+                    }
+                }
+            }
+            Global.modalPopup.init({
+                id: 'dialogBottom'
+            });
+              
+            Global.broswerCheck = {
+                init : function() {
+                    const user = navigator.userAgent; 
+                    const iosCheck = user.indexOf("iPhone");
+                    const androidCheck = user.indexOf("Android");
+                    const iPadCheck = user.indexOf("iPhone");
+                    const html = document.querySelector('html');
+                    let is_mobile = false; 
+
+                    if( iosCheck > -1 ||  androidCheck > -1 || iPadCheck > -1 ) { 
+                        is_mobile = true;
+                        console.log('mob');
+                        
+                        html.classList.add('mob');
+                    } else {
+                        is_mobile = false;
+                        console.log('pc');
+                    }
+                    return is_mobile; 
+                }
+            }
+            Global.broswerCheck.init(); // 브라우저 체크
+
+        })(window, document);
+    </script>
+</body>
+</html>
+

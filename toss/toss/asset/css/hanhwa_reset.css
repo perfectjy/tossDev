@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+
+/*================================================== :root 전역 변수 정의 ==================================================*/
+:root {
+    font-size: 10px; /*16px(브라우저의 기본 폰트 크기) * 62.5% = 10px*/
+
+    /* color */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray1: #333;
+    --color-gray2: #666;
+    --color-gray3: #999;
+    --color-gray4: #aaa;
+    --color-gray5: #bdbdbd;
+    --color-gray6: #ccc;
+    --color-gray7: #ddd;
+    --color-gray8: #eee;
+    --color-gray9: #f5f5f5;
+    --color-link: #715deb; /* 링크, 선택 */
+    --color-primary: #ff6600; /* 중요 */
+    --color-success: #28a745; /* 성공, 긍정 */
+    --color-error: #dc3545; /* 실패, 부정 */
+    --color-warning: #c48100; /* 경고 */
+
+    /* font-size */
+    --txt-xl: 2.0rem;
+    --txt-lg: 1.8rem;
+    --txt-md: 1.6rem;
+    --txt-sm: 1.4rem;
+    --txt-xs: 1.2rem;
+
+    /* letter-spacing */
+    --ls-negative: -0.05em;
+    --ls-positive: 0.05em;
+}
+
+
+@media all and (max-width:280px) {
+    :root {
+        font-size: 9px;
+    }
+}
+
+
+/*================================================== Reset ==================================================*/
+body, section, article, aside, header, main, footer, menu, nav,
+div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul,
+iframe, embed, object, audio, video, track, source,
+canvas, svg, picture, img, figure, figcaption, 
+form, fieldset, legend, label,
+a, span, em, strong, b, i,
+abbr, address, cite, time, mark, del,
+small, sub, sup, ruby, dfn, output, 
+code, kbd, pre, blockquote, q, details, summary, progress,
+table, caption, thead, tbody, tfoot, tr, th, td {margin:0; padding:0; border:0; vertical-align:baseline; box-sizing:border-box;}
+
+html,
+pre {font-family:'LIFEPLUS', '맑은 고딕', 'Malgun Gothic', 'Dotum', '돋움', 'gulim', '굴림', Helvetica, sans-serif; font-weight:500;}
+/* body {-webkit-text-size-adjust:none; text-size-adjust:none;} 아이폰 가로모드시 글씨 커지는 문제 */
+body {color:var(--color-gray2); line-height:1.5; word-break:break-all; word-wrap:break-word; -webkit-text-size-adjust:none; text-size-adjust:none;}
+h1, h2, h3, h4, h5, h6 {color:var(--color-black); font-size:initial; font-weight:700;}
+address {font-style:normal;}
+blockquote, q {quotes:none;}
+blockquote::before, blockquote::after,
+q::before, q::after {content:none;}
+pre {overflow:auto;}
+sub,
+sup {display:inline-block; padding-left:3px; color:var(--color-warning); font-size:10px; font-weight:300; line-height:0;}
+sub {vertical-align:sub;}
+sup {vertical-align:super;}
+b, em, strong {font-weight:700;}
+i, em {font-style:normal;}
+img, fieldset {vertical-align:middle;}
+ol, ul {list-style:none;}
+/* table {width:100%; border-collapse:separate; border-spacing:0; table-layout:fixed; word-break:normal;} */
+th, td {text-align:center; vertical-align:middle;}
+caption, legend {position:static; width:1px; height:1px; overflow:hidden;}
+fieldset, legend {background-color:transparent;}
+hr {height:0; border:0; background-color:transparent;}
+svg:not(:root) {overflow:hidden;}
+
+/* 아이폰(사파리) 터치 메뉴 활성화 관련 */
+a, button,
+[role=button], [role=link], [role=tab] {-webkit-touch-callout:none;}
+
+a {background-color:transparent; color:var(--color-link); text-decoration:none;}
+a[href^=tel]:not([class^=btn-]) {color:inherit;}
+
+button {display:inline-block; margin:0; padding:0; border:0; background-color:transparent; text-align:center; overflow:visible;}
+button,
+input[type=button], input[type=reset], input[type=submit] {vertical-align:middle; cursor:pointer; -webkit-appearance:button;}
+button[disabled], button[disabled]:hover, input[disabled] {cursor:default;}
+
+input, select, optgroup, option, textarea {border-radius:0; color:var(--color-black); font-family:'LIFEPLUS', '맑은 고딕', 'Malgun Gothic', 'Dotum', '돋움', 'gulim', '굴림', Helvetica, sans-serif; font-size:var(--txt-lg); font-weight:700; vertical-align:middle; box-sizing:border-box;}
+button, select {text-transform:none;}
+
+input,
+select {line-height:1.2;}
+textarea {line-height:1.5; resize:vertical}
+
+input::-ms-clear {display:none;}
+select::-ms-expand {display:none;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;}
+
+/* placeholder, focus */
+input::placeholder,
+textarea::placeholder {color:var(--color-gray5); font-size:2.0rem; font-weight:500; opacity:1;}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color:var(--color-gray5); font-size:var(--txt-lg); font-weight:500; opacity:1;}
+input::-moz-placeholder,
+textarea::-moz-placeholder {color:var(--color-gray5); font-size:var(--txt-lg); font-weight:500; opacity:1;}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {color:var(--color-gray5); font-size:var(--txt-lg); font-weight:500; opacity:1;}
+
+input::placeholder {text-align:left !important;}
+input::-webkit-input-placeholder {text-align:left !important;}
+input:-ms-input-placeholder {text-align:left !important;}
+
+input:focus::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {opacity:0;}
+input:focus::-moz-placeholder,
+select:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {opacity:0;}
+input:focus:-ms-input-placeholder,
+select:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {opacity:0;}
+
+
+@media all and (max-width:390px) {
+    input::placeholder,
+    textarea::placeholder {font-size:var(--txt-sm);}
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {font-size:var(--txt-sm);}
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {font-size:var(--txt-sm);}
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {font-size:var(--txt-sm);}
+}
+
+
+/*================================================ Easing 함수 ================================================*/
+/* https://easings.net/ko 가속 확인 */
+.easeInQuad {
+    -webkit-transition-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530) !important; 
+    -o-transition-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530) !important; 
+    transition-timing-function:cubic-bezier(0.550, 0.085, 0.680, 0.530) !important; /* easeInQuad */
+}
+.easeInCubic {
+    -webkit-transition-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190) !important; 
+    -o-transition-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190) !important; 
+    transition-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190) !important; /* easeInCubic */
+}
+.easeInQuart {
+    -webkit-transition-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220) !important; 
+    -o-transition-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220) !important; 
+    transition-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220) !important; /* easeInQuart */
+}
+.easeInQuint {
+    -webkit-transition-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060) !important; 
+    -o-transition-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060) !important; 
+    transition-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060) !important; /* easeInQuint */
+}
+.easeInSine {
+    -webkit-transition-timing-function:cubic-bezier(0.470, 0.000, 0.745, 0.715) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.470, 0.000, 0.745, 0.715) !important; 
+    -o-transition-timing-function:cubic-bezier(0.470, 0.000, 0.745, 0.715) !important; 
+    transition-timing-function:cubic-bezier(0.470, 0.000, 0.745, 0.715) !important; /* easeInSine */
+}
+.easeInExpo {
+    -webkit-transition-timing-function:cubic-bezier(0.950, 0.050, 0.795, 0.035) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.950, 0.050, 0.795, 0.035) !important; 
+    -o-transition-timing-function:cubic-bezier(0.950, 0.050, 0.795, 0.035) !important; 
+    transition-timing-function:cubic-bezier(0.950, 0.050, 0.795, 0.035) !important; /* easeInExpo */
+}
+.easeInCirc {
+    -webkit-transition-timing-function:cubic-bezier(0.600, 0.040, 0.980, 0.335) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.600, 0.040, 0.980, 0.335) !important; 
+    -o-transition-timing-function:cubic-bezier(0.600, 0.040, 0.980, 0.335) !important; 
+    transition-timing-function:cubic-bezier(0.600, 0.040, 0.980, 0.335) !important; /* easeInCirc */
+}
+.easeInBack {
+    -webkit-transition-timing-function:cubic-bezier(0.600, 0, 0.735, 0.045) !important; /* older webkit */
+    -webkit-transition-timing-function:cubic-bezier(0.600, -0.280, 0.735, 0.045) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.600, -0.280, 0.735, 0.045) !important; 
+    -o-transition-timing-function:cubic-bezier(0.600, -0.280, 0.735, 0.045) !important; 
+    transition-timing-function:cubic-bezier(0.600, -0.280, 0.735, 0.045) !important; /* easeInBack */
+}
+.easeOutQuad {
+    -webkit-transition-timing-function:cubic-bezier(0.250, 0.460, 0.450, 0.940) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.250, 0.460, 0.450, 0.940) !important; 
+    -o-transition-timing-function:cubic-bezier(0.250, 0.460, 0.450, 0.940) !important; 
+    transition-timing-function:cubic-bezier(0.250, 0.460, 0.450, 0.940) !important; /* easeOutQuad */
+}
+.easeOutCubic {
+    -webkit-transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000) !important; /* easeOutCubic */
+}
+.easeOutQuart {
+    -webkit-transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000) !important; /* easeOutQuart */
+}
+.easeOutQuint {
+    -webkit-transition-timing-function:cubic-bezier(0.230, 1.000, 0.320, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.230, 1.000, 0.320, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.230, 1.000, 0.320, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.230, 1.000, 0.320, 1.000) !important; /* easeOutQuint */
+}
+.easeOutSine {
+    -webkit-transition-timing-function:cubic-bezier(0.390, 0.575, 0.565, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.390, 0.575, 0.565, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.390, 0.575, 0.565, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.390, 0.575, 0.565, 1.000) !important; /* easeOutSine */
+}
+.easeOutExpo {
+    -webkit-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; /* easeOutExpo */
+}
+.easeOutCirc {
+    -webkit-transition-timing-function:cubic-bezier(0.075, 0.820, 0.165, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.075, 0.820, 0.165, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.075, 0.820, 0.165, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.075, 0.820, 0.165, 1.000) !important; /* easeOutCirc */
+}
+.easeOutBack {
+    -webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1) !important; /* older webkit */
+    -webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275) !important; 
+    -o-transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275) !important; 
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275) !important; /* easeOutBack */
+}
+.easeInOutQuad {
+    -webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955) !important; 
+    -o-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955) !important; 
+    transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955) !important; /* easeInOutQuad */
+}
+.easeInOutCubic {
+    -webkit-transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1.000) !important; /* easeInOutCubic */
+}
+.easeInOutQuart {
+    -webkit-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000) !important; /* easeInOutQuart */
+}
+.easeInOutQuint {
+    -webkit-transition-timing-function:cubic-bezier(0.860, 0.000, 0.070, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.860, 0.000, 0.070, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(0.860, 0.000, 0.070, 1.000) !important; 
+    transition-timing-function:cubic-bezier(0.860, 0.000, 0.070, 1.000) !important; /* easeInOutQuint */
+}
+.easeInOutSine {
+    -webkit-transition-timing-function:cubic-bezier(0.445, 0.050, 0.550, 0.950) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.445, 0.050, 0.550, 0.950) !important; 
+    -o-transition-timing-function:cubic-bezier(0.445, 0.050, 0.550, 0.950) !important; 
+    transition-timing-function:cubic-bezier(0.445, 0.050, 0.550, 0.950) !important; /* easeInOutSine */
+}
+.easeInOutExpo {
+    -webkit-transition-timing-function:cubic-bezier(1.000, 0.000, 0.000, 1.000) !important; 
+    -moz-transition-timing-function:cubic-bezier(1.000, 0.000, 0.000, 1.000) !important; 
+    -o-transition-timing-function:cubic-bezier(1.000, 0.000, 0.000, 1.000) !important; 
+    transition-timing-function:cubic-bezier(1.000, 0.000, 0.000, 1.000) !important; /* easeInOutExpo */
+}
+.easeInOutCirc {
+    -webkit-transition-timing-function:cubic-bezier(0.785, 0.135, 0.150, 0.860) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.785, 0.135, 0.150, 0.860) !important; 
+    -o-transition-timing-function:cubic-bezier(0.785, 0.135, 0.150, 0.860) !important; 
+    transition-timing-function:cubic-bezier(0.785, 0.135, 0.150, 0.860) !important; /* easeInOutCirc */
+}
+.easeInOutBack {
+    -webkit-transition-timing-function:cubic-bezier(0.680, 0, 0.265, 1) !important; /* older webkit */
+    -webkit-transition-timing-function:cubic-bezier(0.680, -0.550, 0.265, 1.550) !important; 
+    -moz-transition-timing-function:cubic-bezier(0.680, -0.550, 0.265, 1.550) !important; 
+    -o-transition-timing-function:cubic-bezier(0.680, -0.550, 0.265, 1.550) !important; 
+    transition-timing-function:cubic-bezier(0.680, -0.550, 0.265, 1.550) !important; /* easeInOutBack */
+}

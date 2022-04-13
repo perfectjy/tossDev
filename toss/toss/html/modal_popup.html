@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1" />
+    <title>make a modalPopup</title>
+    <link rel="stylesheet" type="text/css" href="../asset/css/guide.css">
+    <!-- <script type="text/javascript" src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../asset/js/jquery.easing.min.js"></script> -->
+    <!-- <script type="text/javascript" src="../asset/js/common.js"></script> -->
+    <script type="text/javascript" src="../asset/js/smooth-scrollbar.js"></script>
+    <link rel="shortcut icon" href="/practice/jyDev/asset/img/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <h1>Modal Popup</h1>
+    </header>
+    <div class="wrap">
+        
+        <div class="guide_info">
+            <button type="button" class="btn line" data-modal-btn="dialogSizeL">큰 팝업</button>
+            <button type="button" class="btn line" data-modal-btn="dialogSizeM">중간 팝업</button>
+            <button type="button" class="btn line" data-modal-btn="dialogSizeS">작은 팝업</button>
+            <button type="button" class="btn line" data-modal-btn="dialogAlert">알럿 팝업</button>
+            <button type="button" class="btn line" data-modal-btn="dialogBottom">커튼 팝업</button>
+        </div>
+    
+        <!-- dialog L -->
+        <div class="dialog full" data-modal="dialogSizeL">
+            <div class="dialog_wrap">
+                <div class="dialog_header">
+                    <h1>Title</h1>
+                </div>
+                <div class="dialog_content scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap">
+                        <button type="button" class="btn second dialog_close">취소</button>
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialog M -->
+        <div class="dialog full" data-modal="dialogSizeM">
+            <div class="dialog_wrap m">
+                <div class="dialog_header">
+                    <h1>Title</h1>
+                </div>
+                <div class="dialog_content scrollbar">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap">
+                        <button type="button" class="btn second dialog_close">취소</button>
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialog S -->
+        <div class="dialog modal" data-modal="dialogSizeS">
+            <div class="dialog_wrap s">
+                <div class="dialog_header">
+                    <h1>Title</h1>
+                </div>
+                <div class="dialog_content">
+                    <div class="section">
+                        <ul class="list_dot">
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                            <li>국가·지방자치단체·한국토지주택공사·지방공사(이하“국가 등” 이라함)가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>국가 등이 단독 또는 공동으로 총 지분의 100분의 50을 초과하여 출자한 부동산투자회사가 공급하는 주택분양보증의 세대수 요건을 충족하는 주택 또는 주거용 오피스텔</li>
+                            <li>조합주택시공보증서가 발급된 주택조합사업의 조합원이 분양받은 주택 또는 주거용 오피스텔</li>
+                            <li>아래 주택의 분양계약을 체결하고 분양대금의 5% 이상을 납부한 분</li>
+                            <li>주택분양보증(주상복합주택분양보증, 오피스텔분양보증 포함)을 받은 주택 또는 주거용 오피스텔</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap">
+                        <button type="button" class="btn second dialog_close">취소</button>
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialog Alert -->
+        <div class="dialog" data-modal="dialogAlert">
+            <div class="dialog_alert">
+                <div class="text">
+                    이용시간 : 평일 09:00 ~ 18:00<br>(주말/공휴일 제외) 이용가능 시간에 다시 방문해 주세요.
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap">
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialog Bottom -->
+        <div class="dialog bottom" data-modal="dialogBottom">
+            <div class="dialog_wrap m">
+                <div class="dialog_header">
+                    <h1>Title</h1>
+                </div>
+                <div class="dialog_content">
+                    <div class="section">
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                       <p>커튼 레이어 내용</p>
+                    </div>
+                </div>
+                <div class="dialog_footer">
+                    <div class="dialog_btn_wrap vertical">
+                        <button type="button" class="btn primary dialog_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        ; (function(win, doc) {
+            'use strict';
+
+            const global = 'test';
+            win[global] = {};
+        
+            const Global = win[global];
+        
+            // 스크롤바 
+            // const Scrollbar = win.Scrollbar;
+            // const bar = doc.querySelector('.scrollbar');
+            // Scrollbar.init(bar);
+         
+            Global.modalPopup = {
+                init : function(opt) {
+                    const e = this;
+                    e.id = opt.id;
+                    let fadeInEffect;
+                    let fadeOutEffect;
+                    const modalWrap = doc.querySelector('[data-modal="'+ e.id +'"]');
+                    const modalBtn = doc.querySelector('[data-modal-btn="'+ e.id +'"]');
+                    const modalCloseBtns = modalWrap.querySelectorAll('.dialog_close');   
+                    const modalInner = modalWrap.querySelector('.dialog_wrap');
+                    const modalHeader = modalWrap.querySelector('.dialog_header');
+                    const modalScrollCont = modalWrap.querySelector('.dialog_content');
+                    const modalFooterWrap = modalWrap.querySelector('.dialog_footer');
+                  
+                    const html = doc.querySelector('html');
+                    
+                    modalBtn.addEventListener('click', modalOpen);
+
+                    [].forEach.call(modalCloseBtns, function(closeBtn){
+                        closeBtn.addEventListener('click', modalClose);
+                    });
+                 
+                    // body,html 클릭 시 팝업
+                    // modalWrap.addEventListener('click', function(e) {      
+                    //     if(e.target.classList.contains('show')){
+                    //         modalClose();
+                    //     }
+                    // });
+
+                    function modalOpen() {
+                        modalWrap.classList.add('show');
+                        html.classList.add('dialog_active');
+
+                        if(!html.classList.contains('mob')) {
+                            clearInterval(fadeInEffect);
+                            clearInterval(fadeOutEffect);
+                            
+                            modalWrap.fadeIn = function(timing) {
+                                let newValue = 0;
+                                modalWrap.style.display = 'flex';
+                                modalWrap.style.opacity = 0;
+
+                                fadeInEffect = setInterval(function() {
+                                    if(newValue < 1) {
+                                        newValue += 0.01;
+                                    } else if(newValue === 1){
+                                        clearInterval(fadeInEffect);
+                                    }
+                                    modalWrap.style.opacity = newValue;
+                                }, timing);
+                            };    
+                            modalWrap.fadeIn();  
+                        }
+                        let headerH = modalHeader.offsetHeight;
+                        let contH = modalInner.offsetHeight;
+                        let footerH = modalFooterWrap.offsetHeight;
+                        let modalContH = contH - headerH - footerH; 
+    
+                        modalScrollCont.style.height = modalContH+'px';
+                    }
+
+                    function modalClose() {
+                        modalWrap.classList.remove('show');
+                        html.classList.remove('dialog_active');
+
+                        if(!html.classList.contains('mob')) {
+                            clearInterval(fadeInEffect);
+                            clearInterval(fadeOutEffect);
+                            modalWrap.fadeOut = function(timing) {
+                                let newValue = 1;
+                                
+                                fadeOutEffect = setInterval(function() {
+                                    if(newValue > 0) {
+                                        newValue -= 0.01;
+                                    } else if(newValue < 0) {
+                                        modalWrap.style.display = 'none';
+                                        modalWrap.style.opacity = 0;
+                                        clearInterval(fadeOutEffect);
+                                    }
+                                    modalWrap.style.opacity = newValue;
+                                }, timing);  
+                            };
+                            modalWrap.fadeOut();
+                        } 
+                    }
+                }
+            }
+            Global.modalPopup.init({
+                id: 'dialogSizeL'
+            });
+            Global.modalPopup.init({
+                id: 'dialogSizeM'
+            });
+            Global.modalPopup.init({
+                id: 'dialogSizeS'
+            });
+            Global.modalPopup.init({
+                id: 'dialogAlert'
+            });
+            Global.modalPopup.init({
+                id: 'dialogBottom'
+            });
+            
+            
+            Global.broswerCheck = {
+                init : function() {
+                    const user = navigator.userAgent; 
+                    const iosCheck = user.indexOf("iPhone");
+                    const androidCheck = user.indexOf("Android");
+                    const iPadCheck = user.indexOf("iPhone");
+                    const html = document.querySelector('html');
+                    let is_mobile = false; 
+
+                    if( iosCheck > -1 ||  androidCheck > -1 || iPadCheck > -1 ) { 
+                        is_mobile = true;
+                        console.log('mobile');
+                        
+                        html.classList.add('mob');
+                    } else {
+                        is_mobile = false;
+                        console.log('pc');
+                    }
+                    return is_mobile; 
+                }
+            }
+            Global.broswerCheck.init(); // 브라우저 체크
+
+        })(window, document);
+    </script>
+</body>
+</html>
+

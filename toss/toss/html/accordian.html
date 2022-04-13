@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge, chrome=1" />
+    <title>make a accordian</title>
+    <link rel="stylesheet" type="text/css" href="../asset/css/guide.css">
+    <script type="text/javascript" src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../asset/js/jquery.easing.min.js"></script>
+    <!-- <script type="text/javascript" src="../asset/js/common.js"></script> -->
+    <link rel="shortcut icon" href="/practice/jyDev/asset/img/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <h1>Accordian</h1>
+    </header>
+    <div class="wrap">
+
+        <div class="ui-acco" id="idName">
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <button type="button" class="ui-acco-btn" id="accoBtn0">
+                        <span>accodian menu 1</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn0" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <button type="button" class="ui-acco-btn" id="accoBtn1">
+                        <span>accodian menu 2</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn1" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <button type="button" class="ui-acco-btn" id="accoBtn2">
+                        <span>accodian menu 3</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn2" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <button type="button" class="ui-acco-btn" id="accoBtn3">
+                        <span>accodian menu 4</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn3" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <a href="#none" class="ui-acco-btn" id="accoBtn4">
+                        <span>link</span> 
+                    </a>
+                </div>
+            </div>
+            <!--// acco + link -->
+            <div class="ui-acco-wrap v1">
+                <div class="ui-acco-tit">
+                    <div>
+                        <input type="checkbox" id="acco1">
+                        <label class="lb_check" for="acco1">
+                            <span>약관동의</span>
+                        </label>
+                    </div>
+                    <button type="button" class="ui-acco-btn" id="accoBtn5">
+                        <span class="offscreen">약관 자세히 보기</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn5" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+            <!--// acco + checkbox -->
+            <div class="ui-acco-wrap v1">
+                <div class="ui-acco-tit">
+                    <div>
+                        <span>개인 정보</span>
+                        <a href="#" target="_blank" title="새 창 열림">새 창 보기</a>
+                    </div>
+                    <button type="button" class="ui-acco-btn" id="accoBtn6">
+                        <span class="offscreen">개인 정보 자세히보기</span> 
+                    </button>
+                </div>
+                <div class="ui-acco-panel" aria-labelledby="accoBtn6" aria-hidden="true">
+                    <div class="ui-acco-cont">
+                        <p>abcde</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            fn.accodianTypeA();
+            //fn.accodianTypeB();
+        });
+
+        const fn = {
+            accodianTypeA : function() {
+                $(document).on('click', '.ui-acco-btn', function() {
+                    var $accoWrap = $(this).parents('.ui-acco-wrap');
+                    var $accoPanel = $(this).parent().next();
+                   
+                    if(!$accoWrap.hasClass('active')) {
+                        $accoWrap.addClass('active');    
+                        $accoPanel.slideDown(300);
+                        $accoPanel.attr('aria-hidden', false);
+                        $(this).attr('aria-expanded', true);
+
+                        if($(this).attr('href')) {
+                            $(this).attr('aria-expanded',false); 
+                            $accoWrap.removeClass('active');
+                        }
+                    } else{
+                        $accoWrap.removeClass('active');
+                        $accoPanel.slideUp(300);
+                        $accoPanel.attr('aria-hidden', true);
+                        $(this).attr('aria-expanded', false);
+                    }
+                });
+            },
+            accodianTypeB : function() {
+                $(document).on('click', '.ui-acco-btn', function() {
+                    var $accoWrap = $(this).parents('.ui-acco-wrap');
+                    var $accoPanel = $(this).parent().next();
+
+                    if(!$accoWrap.hasClass('active')){
+                        $accoWrap.siblings().removeClass('active');
+                        $accoWrap.siblings().find('.ui-acco-panel').slideUp(300);
+                        $accoWrap.siblings().find('.ui-acco-panel').attr('aria-hidden', true);
+                      
+                        $accoWrap.addClass('active');
+                        $accoPanel.slideDown(300);
+                        $accoWrap.siblings().find('.ui-acco-btn').attr('aria-expanded', false);  
+                        $(this).attr('aria-expanded', true); 
+
+                        if($accoPanel.attr('aria-hidden') !== true){
+                            $accoPanel.attr('aria-hidden', false);  
+                        } 
+
+                        if($(this).attr('href')) {
+                            $(this).attr('aria-expanded',false); 
+                            $accoWrap.removeClass('active');
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>모바일 레이아웃</title>
+
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../asset/css/hanhwa_common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <button type="button" class="btnIco-back" aria-label="이전"></button>
+            <h1>타이틀</h1>
+            <button type="button" class="btnIco-menu" aria-label="전체메뉴"></button>
+        </header>
+
+        <div class="content" role="main">
+            <div class="form-row">
+                <div class="label">기본</div>
+                <input type="text" id="" class="ipt" title="기본" placeholder="기본">
+                <input type="text" id="" class="ipt" title="기본" placeholder="기본" value="기본">
+                <input type="text" id="" class="ipt" title="기본" readonly value="readonly">
+                <input type="text" id="" class="ipt" title="기본" disabled value="disabled">
+            </div>
+
+            <div class="form-row">
+                <div class="label">비밀번호</div>
+                <input type="password" class="ipt" maxlength="6" placeholder="비밀번호">
+            </div>
+
+            <div class="form-row">
+                <div class="label">주민등록번호</div>
+                <div class="setHalf">
+                    <input type="tel" class="ipt" maxlength="6" title="주민등록번호 앞 6자리" >
+                    <span class="sign">-</span>
+                    <input type="password" class="ipt" maxlength="7" title="주민등록번호 뒤 7자리">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="label">주민등록번호</div>
+                <div class="setHalf">
+                    <input type="tel" class="ipt" maxlength="6" title="주민등록번호 앞 6자리">
+                    <span class="sign">-</span>
+                    <input type="tel" class="ipt" maxlength="1" title="주민등록번호 뒤 첫 1자리" data-len="1"/>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="label">국적</div>
+                <div class="selBlock">
+                    <button type="button" class="selBtn" aria-label="국적 선택"></button>
+                    <input type="text" class="ipt" title="국적" placeholder="국적 선택" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="label">휴대폰번호</div>
+                <div class="setHalf">
+                    <div class="selBlock">
+                        <button type="button" class="selBtn" aria-label="통신사 선택"></button>
+                        <input type="text" class="ipt" title="통신사" placeholder="통신사 선택" readonly>
+                    </div>
+                    <input type="tel" class="ipt" maxlength="11" title="휴대폰 11자리" placeholder="-없이 숫자만 입력">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="label">휴대폰번호</div>
+                <input type="tel" class="ipt" maxlength="11" title="휴대폰 11자리" placeholder="-없이 숫자만 입력">
+            </div>
+
+            <div class="form-row">
+                <div class="label">카드번호</div>
+                <div class="setCard">
+                    <input type="password" class="ipt" maxlength="4" title="카드번호 첫 4자리" placeholder="4자리" disabled value="1234">
+                    <span class="sign">-</span>
+                    <input type="password" class="ipt" maxlength="4" title="카드번호 두번째 4자리" placeholder="4자리" disabled value="1234">
+                    <span class="sign">-</span>
+                    <input type="tel" class="ipt" maxlength="4" title="카드번호 세번째 4자리" placeholder="4자리">
+                    <span class="sign">-</span>
+                    <input type="tel" class="ipt" maxlength="4" title="카드번호 마지막 4자리" placeholder="4자리">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
