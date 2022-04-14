@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>Table</title>
+
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header id="header">
+            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
+            <button type="button" class="btn_prev" aria-label="이전">이전</button>
+            <p>한국투자증권에서 제공하는 서비스입니다</p>
+        </header>
+
+        <section id="container">
+            <div class="content">
+                
+
+                <div class="tbl_info">
+                    <h3 class="h3">퍼스트 발행어음 약정(6개월)</h3>
+                    <div class="opt">
+                        <button type="button" class="btn line t1">신규매수</button>
+                    </div>
+                </div>
+                <table class="tbl_row">
+                    <caption>상품명, 매수계좌, 매수금액, 약정기간, 만기이율, 중도해지이율, 만기일에 대한 정보</caption>
+                    <colgroup>
+                        <col class="w1">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">거래일시</th>
+                            <td>2022.05.03 11:11:11</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">매도액면금액</th>
+                            <td>2,000,000 원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">중도해지이율</th>
+                            <td><strong>연 0.20%</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">약정기간</th>
+                            <td>6개월(181일)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">경과일수</th>
+                            <td>연 3.00%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">소득세액</th>
+                            <td>연 0.20%</td>
+                        </tr>
+                        <tr class="pay">
+                            <th scope="row">상환금액</th>
+                            <td>2,000,010 원</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <br>
+                <br>
+
+                
+                <div class="tbl_info">
+                    <div class="input_wrap">
+                        <input type="checkbox" id="check1" name="sell">
+                        <label for="check1">매수일자 <span class="date">2022.05.02</span></label>
+                    </div>
+                </div>
+                <table class="tbl_row">
+                    <caption>매수금액, 세전평가금액, 약정기간, 중도해지이율, 만기일, 경과일수에 대한 정보</caption>
+                    <colgroup>
+                        <col class="w1">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">매수금액</th>
+                            <td>2,000,000 원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">세전평가금액</th>
+                            <td>2,000,150 원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">약정기간</th>
+                            <td>6개월(181일)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">중도해지이율</th>
+                            <td>연 0.20%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">만기일</th>
+                            <td>YYYY.MM.DD</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">경과일수</th>
+                            <td>1일</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                
+            </div>
+        </section>
+        
+    </div>
+</body>
