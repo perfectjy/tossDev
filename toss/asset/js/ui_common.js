@@ -1,10 +1,18 @@
-window.addEventListener('load', function() {
-    fn.tab({
-        dataset: 'tabW1'
-    });
-  
+$(function() {
+
+
+  $('.horizon_scrollbar').mCustomScrollbar({
+    horizontalScroll:true,
+    advanced:{
+      autoScrollOnFocus:true,
+      updateOnContentResize:true
+    }
+  });
 
 });
+
+
+
 
 const fn = {
     tab : function() {

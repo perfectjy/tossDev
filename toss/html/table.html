@@ -8,6 +8,8 @@
     <title>Table</title>
 
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../asset/js/ui_plugins.js"></script>
+    <script src="../asset/js/ui_common.js"></script>
     <link rel="stylesheet" href="../asset/css/common.css">
 </head>
 
@@ -16,13 +18,73 @@
 
         <header id="header">
             <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
-            <button type="button" class="btn_prev" aria-label="이전">이전</button>
+            <button type="button" class="btn_prev" aria-label="이전"></button>
             <p>한국투자증권에서 제공하는 서비스입니다</p>
         </header>
 
         <section id="container">
             <div class="content">
-                
+            
+                <div class="horizon_scrollbar">
+                    <table>
+                        <caption>매수일자, 매수금액, 세전평가, 세후평가, 매도시상환금액, 만기일, 경과일수, 중도해지이율에 대한 정보</caption>
+                        <colgroup>
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                            <col class="col2">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">매수일자</th>
+                                <th scope="col">매수금액</th>
+                                <th scope="col">세전평가</th>
+                                <th scope="col">세후평가</th>
+                                <th scope="col">매도시상환금액</th>
+                                <th scope="col">만기일</th>
+                                <th scope="col">경과일수</th>
+                                <th scope="col">중도해지이율</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="txt_c">2022.05.02</td>
+                                <td>2,000,000</td>
+                                <td>2,000,150</td>
+                                <td>2,000,150</td>
+                                <td>2,000,002</td>
+                                <td>2022.11.02</td>
+                                <td>1일</td>
+                                <td>0.20</td>
+                            </tr>
+                            <tr>
+                                <td class="txt_c">2022.04.30</td>
+                                <td>2,000,000</td>
+                                <td>2,000,150</td>
+                                <td>2,000,150</td>
+                                <td>2,000,003</td>
+                                <td>2022.10.30</td>
+                                <td>10일</td>
+                                <td>0.20%</td>
+                            </tr>
+                            <tr>
+                                <td class="txt_c">2022.04.16</td>
+                                <td>1,000,000</td>
+                                <td>2,000,050</td>
+                                <td>2,000,050</td>
+                                <td>2,000,005</td>
+                                <td>2022.10.16</td>
+                                <td>100일</td>
+                                <td>0.20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              
 
                 <div class="tbl_info">
                     <h3 class="h3">퍼스트 발행어음 약정(6개월)</h3>
@@ -33,7 +95,7 @@
                 <table class="tbl_row">
                     <caption>상품명, 매수계좌, 매수금액, 약정기간, 만기이율, 중도해지이율, 만기일에 대한 정보</caption>
                     <colgroup>
-                        <col class="w1">
+                        <col class="col4">
                     </colgroup>
                     <tbody>
                         <tr>
@@ -81,7 +143,7 @@
                 <table class="tbl_row">
                     <caption>매수금액, 세전평가금액, 약정기간, 중도해지이율, 만기일, 경과일수에 대한 정보</caption>
                     <colgroup>
-                        <col class="w1">
+                        <col class="col4">
                     </colgroup>
                     <tbody>
                         <tr>
