@@ -8,17 +8,72 @@
     <title>list</title>
 
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="../asset/css/common.css">
+    <script src="../asset/js/ui_plugins.js"></script>
+    <script src="../asset/js/ui_common.js"></script>
+    <link rel="stylesheet" href="../asset/css/guide.css">
 </head>
 
 <body>
     <div id="gWrap">
-        <div class="guide_cont">
-            <h1>Tab</h1>
-            <ul class="" data-tablist="">
-                
         
-            </ul>
+        <header id="header">
+            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
+            <button type="button" class="btn_prev" aria-label="이전"></button>
+            <p>한국투자증권에서 제공하는 서비스입니다</p>
+        </header>
+
+        <div class="guide_cont">
+            <div class="ui-tab" data-tabID="exTab1">
+                <div class="ui-tab-btns">
+                    <button type="button" class="ui-tab-btn">
+                        <span>탭메뉴1</span>
+                    </button>
+                    <button type="button" class="ui-tab-btn">
+                        <span>탭메뉴2</span>
+                    </button>
+                    <button type="button" class="ui-tab-btn">
+                        <span>탭메뉴3</span>
+                    </button>
+                </div>
+                <div class="ui-tab-panels">
+                    <section class="tab-panel">
+                        <h2 class="tab-tit">tab1 title</h2>
+                        <div class="cont">
+                            tab1 contents
+                            <div class="ui-tab" data-tabID="exTab6" style="margin-top:50px;">
+                                <div class="ui-tab-btns">
+                                    <button type="button" class="ui-tab-btn">
+                                        <span>탭메뉴1-1</span>
+                                    </button>
+                                    <button type="button" class="ui-tab-btn">
+                                        <span>탭메뉴2-1</span>
+                                    </button>
+                                </div>
+                                <div class="ui-tab-panels">
+                                    <section class="tab-panel">
+                                        <h2 class="tab-tit">tab1-1 title</h2>
+                                    </section>
+                                    <section class="tab-panel">
+                                        <h2 class="tab-tit">tab2-1 title</h2>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tab-panel">
+                        <h2 class="tab-tit">tab2 title</h2>
+                        <div class="cont">
+                            tab2 contents
+                        </div>
+                    </section>
+                    <section class="tab-panel">
+                        <h2 class="tab-tit">tab3 title</h2>
+                        <div class="cont">
+                            tab3 contents
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -1,15 +1,303 @@
 $(function() {
 
 
-  $('.horizon_scrollbar').mCustomScrollbar({
-    horizontalScroll:true,
-    advanced:{
-      autoScrollOnFocus:true,
-      updateOnContentResize:true
-    }
+  // A 링크 초기화
+  $(document).on('click', 'a', function(e) {
+    var $href = $(this).attr('href');
+    if($href == "#" || $href == "#none") {
+      e.preventDefault();
+    }      
   });
 
+
+  //commfn.accodian();
+  commfn.horizonTable();
+  commfn.tab('[data-tabID="exTab1"]');
 });
+
+
+const commfn = {
+  horizonTable : function() {
+    var $tblName = $('.horizon_scrollbar');
+
+    if(!!$tblName.length){
+      $tblName.mCustomScrollbar({
+        horizontalScroll:true,
+        advanced:{
+          autoScrollOnFocus:true,
+          updateOnContentResize:true
+        }
+      });
+    }
+  },
+  accodian : function() {
+    $(document).on('click', '.ui-acco-btn', function() {
+        var $accoWrap = $(this).parents('.ui-acco-wrap');
+        var $accoPanel = $(this).parent().next();
+      
+        if(!$accoWrap.hasClass('active')) {
+            $accoWrap.addClass('active');    
+            $accoPanel.slideDown(300);
+            $accoPanel.attr('aria-hidden', false);
+            $(this).attr('aria-expanded', true);
+
+            if($(this).attr('href')) {
+                $(this).attr('aria-expanded',false); 
+                $accoWrap.removeClass('active');
+            }
+        } else{
+            $accoWrap.removeClass('active');
+            $accoPanel.slideUp(300);
+            $accoPanel.attr('aria-hidden', true);
+            $(this).attr('aria-expanded', false);
+        }
+    });
+  },
+  tab : function(tabID) {
+    var $tabmenu = null;
+    var $menuItem = null;
+    var $panelItem = null;
+    var $selectItem = null;
+
+    function init() {
+        $tabmenu = $(tabID);
+        $menuItem = $tabmenu.find('> .ui-tab-btns').children();
+        $panelItem = $tabmenu.find('> .ui-tab-panels').children();
+    }
+    function initEvent() {
+        $menuItem.on('click', function() {
+            setSelectItem($(this));
+        });
+    }
+    function setSelectItem($item) {
+        console.log($item);
+        if($selectItem) {
+            $selectItem.removeClass('selected');
+        }
+        $selectItem = $item;
+        $selectItem.addClass('selected');
+
+        $item.each(function() {
+            var idx = $item.index();
+            $panelItem.eq(idx).attr('aria-hidden', false);
+            $panelItem.eq(idx).siblings().attr('aria-hidden', true);    
+        });
+    }
+    init();
+    initEvent();
+  },
+}
+
+
+
+
+
+
+
+
+$(function () {
+
+  inpFocus(); //input focus form-row.on
+  almCnt(); //알람 카운트
+  popType.init(); //popup role추가
+  inputDel(); //검색 input 삭제
+  tab(); //tab기능
+});
+
+//인풋 포커스
+var inpFocus = function(){
+  var inpt = $('.ipt'),
+      fr = $('.form-row'),
+      len = $('.ipt[data-len="1"]'),
+      srh = $(this).closest('.srchBox'),
+      inp = $(this).closest('.iptBlock');
+  
+      
+  $('.srchBox .ipt').wrap('<div ></div>');
+  $('.iptBlock').append('<button  aria-label="해당 필드 입력값 삭제" tabindex="-1"></button></div>');
+  
+  
+
+  if(len){
+      len.wrap('<div ></div');
+  }
+  inpt.on('mouseover focusin', function(){
+      fr.removeClass('on');
+      $(this).closest('.form-row').addClass('on');
+      if(srh){
+          $(this).closest('.iptBlock').addClass("on");
+      }
+      //srchOn();
+  }).on('mouseout focusout', function(){
+      fr.removeClass('on');
+      $(this).closest('.iptBlock').removeClass("on");
+  });
+}
+
+//검색 val 삭제 버튼
+var inputDel = function(){
+  var delBtn = $('.btnIco-del');
+  delBtn.on('click', function(){
+      var srchVal = $(this).prev().val('');
+  });
+}
+
+//알람 카운트
+var almCnt = function(){
+  var alm = $('.btnIco-noti'),
+      cnt = alm.attr("data-almct");
+      
+  if(cnt >= 1){
+      alm.attr("aria-label", "알림 새로운 " + cnt);
+      alm.append('<span>'+ cnt +'</div>');
+  }
+}
+
+//팝업
+var popType = {
+  basic:function(_this){
+      popup = _this,
+      lock = $('html'),
+      popupW = $('.popWrap'),
+      popupClose = $('.btnIco-close'),
+      popupId = $(_this),
+      wrap = $('.wrapper'),
+      btnThis = $(this),
+      popupfocus = $(_this);
+
+  },
+  open:function(_this){
+      popType.basic(_this);
+      if(!popupW.hasClass('nowOpen')){
+          $(popupId).addClass('nowOpen').attr('tabindex', "0").focus();
+          wrap.attr('aria-hidden','true');
+          lock.addClass('lock');
+      }   
+  },
+  close:function(_this){
+      popType.basic(_this);
+
+      if(popupW.hasClass('nowOpen')){
+          // $('.btn-p').attr('tabindex', "0").focus();
+          popupW.removeClass('nowOpen').removeAttr().focus();
+          lock.removeClass('lock');
+          wrap.attr('aria-hidden','false');
+      }
+  },
+  init:function(_this){
+      var btnOn = $('.popWrap').find('.popup').hasClass('sticky');
+      if(!btnOn){
+          $('.popWrap').addClass('noneBtn');
+      }
+
+      $('.popWrap').find('.popup').attr('role','dialog');
+      $('.popWrap.alert').find('.popup').attr('role','alertdialog');
+
+  }
+}
+
+//텝
+var tab = function(){
+  var tabWidget = $('.tab-wrap');
+
+  tabWidget.each(function () {
+      var _this = $(this),
+          tab1 = _this.find('.tab-nav'),
+          tabListItems = tab1.find('.tab-btn');
+          tabListItemActive = tab1.find('.tab-btn.on'),
+          tabPanels = _this.find('.tab-panel'),
+          tabPanelsActive = _this.find('.tab-panel.on')
+          panId= tabPanelsActive.attr('id'),
+          tab1.attr('role','tablist');
+      
+          var tabListItemID = tabListItemActive.attr('aria-controls'),
+              tabPanelActive = $(tabListItemID);
+          
+          //기본 tab
+          tabListItems.attr({
+              'aria-selected':'false'
+          })
+
+          //ON tab
+          tabListItemActive.attr({
+              'aria-selected':'true'
+          });
+
+          //기본 패널
+          tabPanels.attr({
+              'aria-expanded':'false',
+              'role':'tabpanel'
+          });
+
+          //기본 패널
+          tabPanelsActive.attr({
+              'aria-expanded':'true',
+              'aria-labelledby':panId
+          });
+
+          tabPanelActive.attr('aria-expanded','true').addClass('on');
+          
+      });
+
+
+  $('.tab-nav .tab-btn').on('click', function(e) {
+      e.preventDefault();
+
+      var _this = $(this),
+          tabpanid = _this.attr('aria-controls'),
+          tabpan = $('#' + tabpanid),
+          tagA = _this.attr('href');
+      
+      console.log('tabpanid', tabpanid);
+
+      if(tagA){
+          window.location = tagA;
+      }
+
+      _this.closest('.tab-nav').find('.tab-btn').removeClass('on').attr('aria-selected', 'false');
+      _this.addClass('on').attr('aria-selected','true');
+
+      if (tabpan.length > 0) {
+          tabpan.attr({
+              'aria-expanded':'true',
+              'aria-labelledby': tabpanid
+          }).addClass('on').siblings().attr('aria-expanded', 'false').removeClass('on');
+      } else {
+        _this.closest('.tab-nav').find('.tab_contents > .tab_panel').attr('aria-hidden','true').removeClass('on');
+      }
+  });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -541,4 +829,4 @@ const fn = {
 
 
 // easing
-!function(n){"function"==typeof define&&define.amd?define(["jquery"],function(e){return n(e)}):"object"==typeof module&&"object"==typeof module.exports?module.exports=n(require("jquery")):n(jQuery)}(function(n){function e(n){var e=7.5625,t=2.75;return n<1/t?e*n*n:n<2/t?e*(n-=1.5/t)*n+.75:n<2.5/t?e*(n-=2.25/t)*n+.9375:e*(n-=2.625/t)*n+.984375}void 0!==n.easing&&(n.easing.jswing=n.easing.swing);var t=Math.pow,u=Math.sqrt,r=Math.sin,i=Math.cos,a=Math.PI,o=1.70158,c=1.525*o,s=2*a/3,f=2*a/4.5;return n.extend(n.easing,{def:"easeOutQuad",swing:function(e){return n.easing[n.easing.def](e)},easeInQuad:function(n){return n*n},easeOutQuad:function(n){return 1-(1-n)*(1-n)},easeInOutQuad:function(n){return n<.5?2*n*n:1-t(-2*n+2,2)/2},easeInCubic:function(n){return n*n*n},easeOutCubic:function(n){return 1-t(1-n,3)},easeInOutCubic:function(n){return n<.5?4*n*n*n:1-t(-2*n+2,3)/2},easeInQuart:function(n){return n*n*n*n},easeOutQuart:function(n){return 1-t(1-n,4)},easeInOutQuart:function(n){return n<.5?8*n*n*n*n:1-t(-2*n+2,4)/2},easeInQuint:function(n){return n*n*n*n*n},easeOutQuint:function(n){return 1-t(1-n,5)},easeInOutQuint:function(n){return n<.5?16*n*n*n*n*n:1-t(-2*n+2,5)/2},easeInSine:function(n){return 1-i(n*a/2)},easeOutSine:function(n){return r(n*a/2)},easeInOutSine:function(n){return-(i(a*n)-1)/2},easeInExpo:function(n){return 0===n?0:t(2,10*n-10)},easeOutExpo:function(n){return 1===n?1:1-t(2,-10*n)},easeInOutExpo:function(n){return 0===n?0:1===n?1:n<.5?t(2,20*n-10)/2:(2-t(2,-20*n+10))/2},easeInCirc:function(n){return 1-u(1-t(n,2))},easeOutCirc:function(n){return u(1-t(n-1,2))},easeInOutCirc:function(n){return n<.5?(1-u(1-t(2*n,2)))/2:(u(1-t(-2*n+2,2))+1)/2},easeInElastic:function(n){return 0===n?0:1===n?1:-t(2,10*n-10)*r((10*n-10.75)*s)},easeOutElastic:function(n){return 0===n?0:1===n?1:t(2,-10*n)*r((10*n-.75)*s)+1},easeInOutElastic:function(n){return 0===n?0:1===n?1:n<.5?-t(2,20*n-10)*r((20*n-11.125)*f)/2:t(2,-20*n+10)*r((20*n-11.125)*f)/2+1},easeInBack:function(n){return 2.70158*n*n*n-o*n*n},easeOutBack:function(n){return 1+2.70158*t(n-1,3)+o*t(n-1,2)},easeInOutBack:function(n){return n<.5?t(2*n,2)*(7.189819*n-c)/2:(t(2*n-2,2)*((c+1)*(2*n-2)+c)+2)/2},easeInBounce:function(n){return 1-e(1-n)},easeOutBounce:e,easeInOutBounce:function(n){return n<.5?(1-e(1-2*n))/2:(1+e(2*n-1))/2}}),n});
+// !function(n){"function"==typeof define&&define.amd?define(["jquery"],function(e){return n(e)}):"object"==typeof module&&"object"==typeof module.exports?module.exports=n(require("jquery")):n(jQuery)}(function(n){function e(n){var e=7.5625,t=2.75;return n<1/t?e*n*n:n<2/t?e*(n-=1.5/t)*n+.75:n<2.5/t?e*(n-=2.25/t)*n+.9375:e*(n-=2.625/t)*n+.984375}void 0!==n.easing&&(n.easing.jswing=n.easing.swing);var t=Math.pow,u=Math.sqrt,r=Math.sin,i=Math.cos,a=Math.PI,o=1.70158,c=1.525*o,s=2*a/3,f=2*a/4.5;return n.extend(n.easing,{def:"easeOutQuad",swing:function(e){return n.easing[n.easing.def](e)},easeInQuad:function(n){return n*n},easeOutQuad:function(n){return 1-(1-n)*(1-n)},easeInOutQuad:function(n){return n<.5?2*n*n:1-t(-2*n+2,2)/2},easeInCubic:function(n){return n*n*n},easeOutCubic:function(n){return 1-t(1-n,3)},easeInOutCubic:function(n){return n<.5?4*n*n*n:1-t(-2*n+2,3)/2},easeInQuart:function(n){return n*n*n*n},easeOutQuart:function(n){return 1-t(1-n,4)},easeInOutQuart:function(n){return n<.5?8*n*n*n*n:1-t(-2*n+2,4)/2},easeInQuint:function(n){return n*n*n*n*n},easeOutQuint:function(n){return 1-t(1-n,5)},easeInOutQuint:function(n){return n<.5?16*n*n*n*n*n:1-t(-2*n+2,5)/2},easeInSine:function(n){return 1-i(n*a/2)},easeOutSine:function(n){return r(n*a/2)},easeInOutSine:function(n){return-(i(a*n)-1)/2},easeInExpo:function(n){return 0===n?0:t(2,10*n-10)},easeOutExpo:function(n){return 1===n?1:1-t(2,-10*n)},easeInOutExpo:function(n){return 0===n?0:1===n?1:n<.5?t(2,20*n-10)/2:(2-t(2,-20*n+10))/2},easeInCirc:function(n){return 1-u(1-t(n,2))},easeOutCirc:function(n){return u(1-t(n-1,2))},easeInOutCirc:function(n){return n<.5?(1-u(1-t(2*n,2)))/2:(u(1-t(-2*n+2,2))+1)/2},easeInElastic:function(n){return 0===n?0:1===n?1:-t(2,10*n-10)*r((10*n-10.75)*s)},easeOutElastic:function(n){return 0===n?0:1===n?1:t(2,-10*n)*r((10*n-.75)*s)+1},easeInOutElastic:function(n){return 0===n?0:1===n?1:n<.5?-t(2,20*n-10)*r((20*n-11.125)*f)/2:t(2,-20*n+10)*r((20*n-11.125)*f)/2+1},easeInBack:function(n){return 2.70158*n*n*n-o*n*n},easeOutBack:function(n){return 1+2.70158*t(n-1,3)+o*t(n-1,2)},easeInOutBack:function(n){return n<.5?t(2*n,2)*(7.189819*n-c)/2:(t(2*n-2,2)*((c+1)*(2*n-2)+c)+2)/2},easeInBounce:function(n){return 1-e(1-n)},easeOutBounce:e,easeInOutBounce:function(n){return n<.5?(1-e(1-2*n))/2:(1+e(2*n-1))/2}}),n});
