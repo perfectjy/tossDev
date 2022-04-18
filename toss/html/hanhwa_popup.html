@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>팝업</title>
+
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../asset/js/ui_hanhwa.js"></script>
+    <link rel="stylesheet" href="../asset/css/hanhwa_common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <button type="button" class="btnIco-back" aria-label="이전"></button>
+            <h1>팝업</h1>
+            <button type="button" class="btnIco-menu" aria-label="전체메뉴"></button>
+        </header>
+    
+        <div class="content" role="main">
+            <button type="button" class="btn-p" onclick="popType.open('#popBasic', this);">기본 팝업</button> 
+            <button type="button" class="btn-p" onclick="popType.open('#popFull', this);">FULL 팝업</button>
+            <button type="button" class="btn-p" onclick="popType.open('#popBottom', this);">bottomSheet</button>
+            <button type="button" class="btn-p" onclick="popType.open('#popAlert', this);">Alert</button>
+        </div>
+    
+        <div style="height:700px;"></div>
+    </div>
+    
+    <!-- 기본 popup (s) -->
+    <div class="popWrap" id="popBasic">
+        <!-- <div  role="dialog"></div> -->
+        <div class="popup">
+            <div class="popHead">
+                <h1>팝업타이틀</h1>
+            </div>
+            <div class="popBody">
+                레이어 팝업 최소 높이 238px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+            </div>
+    
+            <div class="btnArea sticky">
+                <button type="button" class="btn-d">취소</button>
+                <button type="button" class="btn-t">확인</button>
+            </div>
+    
+            <button type="button" class="btnIco-close" onclick="popType.close();" aria-label="팝업 닫기"></button>
+        </div>
+    </div>
+    <!-- 기본 popup (e) -->
+    
+    <!-- full popup (s) -->
+    <div class="popWrap full" id="popFull">
+        <div class="popup">
+            <div class="popHead">
+                <h1>팝업타이틀</h1>
+            </div>
+            <div class="popBody">
+                <div class="tab-wrap">
+                    <div class="tab-nav tab-sticky">
+                        <button class="tab-btn on" aria-controls="panel10">
+                            1depth
+                        </button>
+                        <button class="tab-btn" aria-controls="panel11">
+                            2depth
+                        </button>
+                        <button class="tab-btn" aria-controls="panel12">
+                            3depth
+                        </button>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="tab-panel on" id="panel10">
+                            1depth
+                        </div>
+                        <div class="tab-panel" id="panel11">
+                            2depth
+                        </div>
+                        <div class="tab-panel" id="panel12">
+                            3depth
+                        </div>
+                    </div>
+                </div>  
+                레이어 팝업 최소 높이 238px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                끝 끝
+            </div>
+    
+            <div class="btnArea sticky">
+                <button type="button" class="btn-s">취소</button>
+                <button type="button" class="btn-p">확인</button>
+            </div>
+    
+            <button type="button" class="btnIco-close" onclick="popType.close();" aria-label="팝업 닫기"></button>
+        </div>
+    </div>
+    <!-- full popup (e) -->
+    
+    <!-- bottom popup (s) -->
+    <div class="popWrap bottom" id="popBottom">
+        <div class="popup">
+            <div class="popHead">
+                <h1>팝업타이틀</h1>
+            </div>
+            <div class="popBody">
+                레이어 팝업 최소 높이 238px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                
+                레이어 팝업 최대 높이 472px<br>
+                타이틀이 없는 경우<br>
+                위,아래 여백 32px
+    
+                <br><br><br>
+                끝 끝
+            </div>
+    
+            <div class="btnArea sticky">
+                <button type="button" class="btn-s">취소</button>
+                <button type="button" class="btn-p">확인</button>
+            </div>
+    
+            <button type="button" class="btnIco-close" onclick="popType.close();" aria-label="팝업 닫기"></button>
+        </div>
+    </div>
+    <!-- bottom popup (e) -->
+    
+    <!-- alert popup (s) -->
+    <div class="popWrap alert" id="popAlert">
+        <!-- <div  role="alertdialog"></div> -->
+        <div class="popup">
+            <div class="popBody">
+                <p>
+                    로그인이 필요한 서비스입니다.<br>
+                    로그인 페이지로 이동하시겠습니까?
+                </p>
+            </div>
+    
+            <div class="btnArea sticky">
+                <button type="button" class="btn-d" onclick="popType.close();">취소</button>
+                <button type="button" class="btn-t">확인</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

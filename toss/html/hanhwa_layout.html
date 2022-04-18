@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>모바일 레이아웃</title>
+
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../asset/js/ui_hanhwa.js"></script>
+    <link rel="stylesheet" href="../asset/css/hanhwa_common.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <button type="button" class="btnIco-back" aria-label="이전"></button>
+            <h1>버튼</h1>
+            <button type="button" class="btnIco-noti" aria-label="알림"><span>3</span></button>
+            <button type="button" class="btnIco-menu" aria-label="전체메뉴"></button>
+        </header>
+        
+        <div class="content" role="main">
+    
+            <!-- tab-btn의 aria-controls과 tab-panel id 연결 -->
+            <!-- sticky tab (s) -->
+            <div class="tab-wrap">
+                <div class="tab-nav tab-sticky">
+                    <button class="tab-btn on" aria-controls="panel10">
+                        1depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel11">
+                        2depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel12">
+                        3depth
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-panel on" id="panel10">
+                        1depth
+                    </div>
+                    <div class="tab-panel" id="panel11">
+                        2depth
+                    </div>
+                    <div class="tab-panel" id="panel12">
+                        3depth
+                    </div>
+                </div>
+            </div>
+            <!-- sticky tab (e) -->
+    
+            <!-- 기본 tab (s) -->
+            <div class="tab-wrap">
+                <div class="tab-nav">
+                    <button class="tab-btn on" aria-controls="panel01">
+                        1depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel02">
+                        2depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel03">
+                        3depth
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-panel on" id="panel01">
+                        1depth
+                    </div>
+                    <div class="tab-panel" id="panel02">
+                        2depth
+                    </div>
+                    <div class="tab-panel" id="panel03">
+                        3depth
+                    </div>
+                </div>
+            </div>
+            <!-- 기본 tab (e) -->
+    
+            <!-- 기본 tab a (s) -->
+            <div class="tab-wrap">
+                <div class="tab-nav">
+                    <a href="#" class="tab-btn" aria-controls="panel04">
+                        1depth
+                    </a>
+                    <a href="https://www.naver.com/" class="tab-btn" aria-controls="panel05">
+                        2depth
+                    </a>
+                    <a href="#" class="tab-btn on" aria-controls="panel06">
+                        3depth
+                    </a>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-panel on" id="panel04">
+                        1depth
+                    </div>
+                    <div class="tab-panel" id="panel05">
+                        2depth
+                    </div>
+                    <div class="tab-panel" id="panel06">
+                        3depth
+                    </div>
+                </div>
+            </div>
+            <!-- 기본 tab a (e) -->
+    
+            <!-- tab in tab (s) -->
+            <div class="tab-wrap t1">
+                <div class="tab-nav">
+                    <button class="tab-btn on" aria-controls="panel07">
+                        1depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel08">
+                        2depth
+                    </button>
+                    <button class="tab-btn" aria-controls="panel09">
+                        3depth
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-panel on" id="panel07">
+                        1depth
+                        <div class="tab-wrap t2">
+                            <div class="tab-nav">
+                                <div class="tab-btn on" aria-controls="panel1-1">
+                                    1depth-01
+                                </div>
+                                <div class="tab-btn" aria-controls="panel1-2">
+                                    1depth-02
+                                </div>
+                                <div class="tab-btn" aria-controls="panel1-3">
+                                    1depth-03
+                                </div>
+                            </div>
+                            <div class="tab-contents">
+                                <div class="tab-panel on" id="panel1-1">
+                                    1depth-01-panel
+                                </div>
+                                <div class="tab-panel" id="panel1-2">
+                                    1depth-02-panel
+                                </div>
+                                <div class="tab-panel" id="panel1-3">
+                                    1depth-03-panel
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="panel08">
+                        2depth
+                    </div>
+                    <div class="tab-panel" id="panel09">
+                        3depth
+                    </div>
+                </div>
+            </div>
+            <!-- tab in tab (e) -->
+    
+    
+        </div>
+    </div>
+</body>
+</html>

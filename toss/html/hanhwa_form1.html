@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <title>모바일 레이아웃</title>
+    <title>Form 요소 1</title>
 
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../asset/js/ui_hanhwa.js"></script>
     <link rel="stylesheet" href="../asset/css/hanhwa_common.css">
 </head>
 
@@ -15,10 +17,10 @@
     <div class="wrapper">
         <header class="header">
             <button type="button" class="btnIco-back" aria-label="이전"></button>
-            <h1>타이틀</h1>
+            <h1>Form 요소 1</h1>
             <button type="button" class="btnIco-menu" aria-label="전체메뉴"></button>
         </header>
-
+    
         <div class="content" role="main">
             <div class="form-row">
                 <div class="label">기본</div>
@@ -27,30 +29,32 @@
                 <input type="text" id="" class="ipt" title="기본" readonly value="readonly">
                 <input type="text" id="" class="ipt" title="기본" disabled value="disabled">
             </div>
-
+    
             <div class="form-row">
                 <div class="label">비밀번호</div>
                 <input type="password" class="ipt" maxlength="6" placeholder="비밀번호">
             </div>
-
-            <div class="form-row">
-                <div class="label">주민등록번호</div>
-                <div class="setHalf">
-                    <input type="tel" class="ipt" maxlength="6" title="주민등록번호 앞 6자리" >
-                    <span class="sign">-</span>
-                    <input type="password" class="ipt" maxlength="7" title="주민등록번호 뒤 7자리">
-                </div>
-            </div>
-
+    
             <div class="form-row">
                 <div class="label">주민등록번호</div>
                 <div class="setHalf">
                     <input type="tel" class="ipt" maxlength="6" title="주민등록번호 앞 6자리">
                     <span class="sign">-</span>
-                    <input type="tel" class="ipt" maxlength="1" title="주민등록번호 뒤 첫 1자리" data-len="1"/>
+                    <input type="password" class="ipt" maxlength="7" title="주민등록번호 뒤 7자리">
                 </div>
             </div>
-
+    
+            <div class="form-row">
+                <div class="label">주민등록번호</div>
+                <div class="setHalf">
+                    <input type="tel" class="ipt" maxlength="6" title="주민등록번호 앞 6자리">
+                    <span class="sign">-</span>
+                    <div class="letter1">
+                        <input type="tel" class="ipt" maxlength="1" title="주민등록번호 뒤 첫 1자리" placeholder="●">
+                    </div>
+                </div>
+            </div>
+    
             <div class="form-row">
                 <div class="label">국적</div>
                 <div class="selBlock">
@@ -58,7 +62,7 @@
                     <input type="text" class="ipt" title="국적" placeholder="국적 선택" readonly>
                 </div>
             </div>
-
+    
             <div class="form-row">
                 <div class="label">휴대폰번호</div>
                 <div class="setHalf">
@@ -69,22 +73,49 @@
                     <input type="tel" class="ipt" maxlength="11" title="휴대폰 11자리" placeholder="-없이 숫자만 입력">
                 </div>
             </div>
-
+    
             <div class="form-row">
                 <div class="label">휴대폰번호</div>
                 <input type="tel" class="ipt" maxlength="11" title="휴대폰 11자리" placeholder="-없이 숫자만 입력">
             </div>
-
+    
             <div class="form-row">
                 <div class="label">카드번호</div>
                 <div class="setCard">
-                    <input type="password" class="ipt" maxlength="4" title="카드번호 첫 4자리" placeholder="4자리" disabled value="1234">
+                    <input type="password" class="ipt" maxlength="4" title="카드번호 첫 4자리" placeholder="4자리" disabled value="****">>
                     <span class="sign">-</span>
-                    <input type="password" class="ipt" maxlength="4" title="카드번호 두번째 4자리" placeholder="4자리" disabled value="1234">
+                    <input type="password" class="ipt" maxlength="4" title="카드번호 두번째 4자리" placeholder="4자리" disabled value="****">>
                     <span class="sign">-</span>
                     <input type="tel" class="ipt" maxlength="4" title="카드번호 세번째 4자리" placeholder="4자리">
                     <span class="sign">-</span>
                     <input type="tel" class="ipt" maxlength="4" title="카드번호 마지막 4자리" placeholder="4자리">
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="label">카드번호</div>
+                <div class="setCard">
+                    <input type="password" class="ipt" maxlength="4" title="카드번호 첫 4자리" placeholder="4자리" disabled value="****">
+                    <span class="sign">-</span>
+                    <input type="tel" class="ipt" maxlength="6" title="카드번호 두번째 6자리" placeholder="6자리">
+                    <span class="sign">-</span>
+                    <input type="tel" class="ipt" maxlength="5" title="카드번호 세번째 5자리" placeholder="5자리">
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="label">검색</div>
+                <div class="srchBox">
+                    <input type="text" class="ipt" title="검색" placeholder="검색어 입력해주세요.">
+                    <button type="button" class="btnIco-srch" aria-label="검색"></button>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="label">직업-팝업 호출 검색</div>
+                <div class="srchBox">
+                    <button type="button" class="btnIco-srch" aria-label="직업 검색 팝업"></button>
+                    <input type="text" class="ipt" title="직업 검색" placeholder="직업 검색" readonly>
                 </div>
             </div>
         </div>

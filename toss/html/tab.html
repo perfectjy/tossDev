@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <title>list</title>
-
+    <title>Tab</title>
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
     <script src="../asset/js/ui_plugins.js"></script>
     <script src="../asset/js/ui_common.js"></script>
@@ -22,58 +21,64 @@
             <p>한국투자증권에서 제공하는 서비스입니다</p>
         </header>
 
-        <div class="guide_cont">
-            <div class="ui-tab" data-tabID="exTab1">
-                <div class="ui-tab-btns">
-                    <button type="button" class="ui-tab-btn">
-                        <span>탭메뉴1</span>
-                    </button>
-                    <button type="button" class="ui-tab-btn">
-                        <span>탭메뉴2</span>
-                    </button>
-                    <button type="button" class="ui-tab-btn">
-                        <span>탭메뉴3</span>
-                    </button>
-                </div>
-                <div class="ui-tab-panels">
-                    <section class="tab-panel">
-                        <h2 class="tab-tit">tab1 title</h2>
-                        <div class="cont">
-                            tab1 contents
-                            <div class="ui-tab" data-tabID="exTab6" style="margin-top:50px;">
-                                <div class="ui-tab-btns">
-                                    <button type="button" class="ui-tab-btn">
-                                        <span>탭메뉴1-1</span>
-                                    </button>
-                                    <button type="button" class="ui-tab-btn">
-                                        <span>탭메뉴2-1</span>
-                                    </button>
+        <section id="container">
+            <div class="content">
+                <div class="guide_cont">
+
+                    <h2><span>tab</span></h2>
+                    <div class="ui-tab">
+                        <div class="ui-tab-btns">
+                            <button type="button" class="ui-tab-btn">
+                                <span>잔고조회</span>
+                            </button>
+                            <button type="button" class="ui-tab-btn">
+                                <span>입출금</span>
+                            </button>
+                            <button type="button" class="ui-tab-btn">
+                                <span>거래내역</span>
+                            </button>
+                        </div>
+                        <div class="ui-tab-panels">
+                            <section class="tab-panel">
+                                <h2 class="tab-tit">tab1 title</h2>
+                                <div class="cont">
+                                    잔고조회 내용
+                                    <div class="ui-tab">
+                                        <div class="ui-tab-btns">
+                                            <button type="button" class="ui-tab-btn">
+                                                <span>탭메뉴1-1</span>
+                                            </button>
+                                            <button type="button" class="ui-tab-btn">
+                                                <span>탭메뉴2-1</span>
+                                            </button>
+                                        </div>
+                                        <div class="ui-tab-panels">
+                                            <section class="tab-panel">
+                                                <h2 class="tab-tit">tab1-1 title</h2>
+                                            </section>
+                                            <section class="tab-panel">
+                                                <h2 class="tab-tit">tab2-1 title</h2>
+                                            </section>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="ui-tab-panels">
-                                    <section class="tab-panel">
-                                        <h2 class="tab-tit">tab1-1 title</h2>
-                                    </section>
-                                    <section class="tab-panel">
-                                        <h2 class="tab-tit">tab2-1 title</h2>
-                                    </section>
+                            </section>
+                            <section class="tab-panel">
+                                <h2 class="tab-tit">tab2 title</h2>
+                                <div class="cont">
+                                    입출금 내용
                                 </div>
-                            </div>
+                            </section>
+                            <section class="tab-panel">
+                                <h2 class="tab-tit">tab3 title</h2>
+                                <div class="cont">
+                                    거래내역 내용
+                                </div>
+                            </section>
                         </div>
-                    </section>
-                    <section class="tab-panel">
-                        <h2 class="tab-tit">tab2 title</h2>
-                        <div class="cont">
-                            tab2 contents
-                        </div>
-                    </section>
-                    <section class="tab-panel">
-                        <h2 class="tab-tit">tab3 title</h2>
-                        <div class="cont">
-                            tab3 contents
-                        </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>

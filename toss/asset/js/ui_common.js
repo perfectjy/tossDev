@@ -9,14 +9,13 @@ $(function() {
     }      
   });
 
-
   //commfn.accodian();
-  commfn.horizonTable();
-  commfn.tab('[data-tabID="exTab1"]');
+  fn.horizonTable();
+  fn.tab();
 });
 
 
-const commfn = {
+const fn = {
   horizonTable : function() {
     var $tblName = $('.horizon_scrollbar');
 
@@ -53,24 +52,21 @@ const commfn = {
         }
     });
   },
-  tab : function(tabID) {
-    var $tabmenu = null;
-    var $menuItem = null;
-    var $panelItem = null;
+  tab : function() {
+    var $tabmenu = $('.ui-tab');
     var $selectItem = null;
 
-    function init() {
-        $tabmenu = $(tabID);
-        $menuItem = $tabmenu.find('> .ui-tab-btns').children();
-        $panelItem = $tabmenu.find('> .ui-tab-panels').children();
-    }
-    function initEvent() {
+    $tabmenu.each(function() {
+        var $this = $(this),
+            $menuItem = $this.find('> .ui-tab-btns').children(),
+            $panelItem = $this.find('> .ui-tab-panels').children();
+
         $menuItem.on('click', function() {
-            setSelectItem($(this));
-        });
-    }
-    function setSelectItem($item) {
-        console.log($item);
+            setSelectItem($(this), $panelItem);
+         });
+    });
+
+    function setSelectItem($item, $pnl) {
         if($selectItem) {
             $selectItem.removeClass('selected');
         }
@@ -79,231 +75,18 @@ const commfn = {
 
         $item.each(function() {
             var idx = $item.index();
-            $panelItem.eq(idx).attr('aria-hidden', false);
-            $panelItem.eq(idx).siblings().attr('aria-hidden', true);    
+            $pnl.eq(idx).attr('aria-hidden', false);
+            $pnl.eq(idx).siblings().attr('aria-hidden', true);    
         });
     }
-    init();
-    initEvent();
   },
 }
 
 
 
 
-
-
-
-
-$(function () {
-
-  inpFocus(); //input focus form-row.on
-  almCnt(); //알람 카운트
-  popType.init(); //popup role추가
-  inputDel(); //검색 input 삭제
-  tab(); //tab기능
-});
-
-//인풋 포커스
-var inpFocus = function(){
-  var inpt = $('.ipt'),
-      fr = $('.form-row'),
-      len = $('.ipt[data-len="1"]'),
-      srh = $(this).closest('.srchBox'),
-      inp = $(this).closest('.iptBlock');
-  
-      
-  $('.srchBox .ipt').wrap('<div ></div>');
-  $('.iptBlock').append('<button  aria-label="해당 필드 입력값 삭제" tabindex="-1"></button></div>');
-  
-  
-
-  if(len){
-      len.wrap('<div ></div');
-  }
-  inpt.on('mouseover focusin', function(){
-      fr.removeClass('on');
-      $(this).closest('.form-row').addClass('on');
-      if(srh){
-          $(this).closest('.iptBlock').addClass("on");
-      }
-      //srchOn();
-  }).on('mouseout focusout', function(){
-      fr.removeClass('on');
-      $(this).closest('.iptBlock').removeClass("on");
-  });
-}
-
-//검색 val 삭제 버튼
-var inputDel = function(){
-  var delBtn = $('.btnIco-del');
-  delBtn.on('click', function(){
-      var srchVal = $(this).prev().val('');
-  });
-}
-
-//알람 카운트
-var almCnt = function(){
-  var alm = $('.btnIco-noti'),
-      cnt = alm.attr("data-almct");
-      
-  if(cnt >= 1){
-      alm.attr("aria-label", "알림 새로운 " + cnt);
-      alm.append('<span>'+ cnt +'</div>');
-  }
-}
-
-//팝업
-var popType = {
-  basic:function(_this){
-      popup = _this,
-      lock = $('html'),
-      popupW = $('.popWrap'),
-      popupClose = $('.btnIco-close'),
-      popupId = $(_this),
-      wrap = $('.wrapper'),
-      btnThis = $(this),
-      popupfocus = $(_this);
-
-  },
-  open:function(_this){
-      popType.basic(_this);
-      if(!popupW.hasClass('nowOpen')){
-          $(popupId).addClass('nowOpen').attr('tabindex', "0").focus();
-          wrap.attr('aria-hidden','true');
-          lock.addClass('lock');
-      }   
-  },
-  close:function(_this){
-      popType.basic(_this);
-
-      if(popupW.hasClass('nowOpen')){
-          // $('.btn-p').attr('tabindex', "0").focus();
-          popupW.removeClass('nowOpen').removeAttr().focus();
-          lock.removeClass('lock');
-          wrap.attr('aria-hidden','false');
-      }
-  },
-  init:function(_this){
-      var btnOn = $('.popWrap').find('.popup').hasClass('sticky');
-      if(!btnOn){
-          $('.popWrap').addClass('noneBtn');
-      }
-
-      $('.popWrap').find('.popup').attr('role','dialog');
-      $('.popWrap.alert').find('.popup').attr('role','alertdialog');
-
-  }
-}
-
-//텝
-var tab = function(){
-  var tabWidget = $('.tab-wrap');
-
-  tabWidget.each(function () {
-      var _this = $(this),
-          tab1 = _this.find('.tab-nav'),
-          tabListItems = tab1.find('.tab-btn');
-          tabListItemActive = tab1.find('.tab-btn.on'),
-          tabPanels = _this.find('.tab-panel'),
-          tabPanelsActive = _this.find('.tab-panel.on')
-          panId= tabPanelsActive.attr('id'),
-          tab1.attr('role','tablist');
-      
-          var tabListItemID = tabListItemActive.attr('aria-controls'),
-              tabPanelActive = $(tabListItemID);
-          
-          //기본 tab
-          tabListItems.attr({
-              'aria-selected':'false'
-          })
-
-          //ON tab
-          tabListItemActive.attr({
-              'aria-selected':'true'
-          });
-
-          //기본 패널
-          tabPanels.attr({
-              'aria-expanded':'false',
-              'role':'tabpanel'
-          });
-
-          //기본 패널
-          tabPanelsActive.attr({
-              'aria-expanded':'true',
-              'aria-labelledby':panId
-          });
-
-          tabPanelActive.attr('aria-expanded','true').addClass('on');
-          
-      });
-
-
-  $('.tab-nav .tab-btn').on('click', function(e) {
-      e.preventDefault();
-
-      var _this = $(this),
-          tabpanid = _this.attr('aria-controls'),
-          tabpan = $('#' + tabpanid),
-          tagA = _this.attr('href');
-      
-      console.log('tabpanid', tabpanid);
-
-      if(tagA){
-          window.location = tagA;
-      }
-
-      _this.closest('.tab-nav').find('.tab-btn').removeClass('on').attr('aria-selected', 'false');
-      _this.addClass('on').attr('aria-selected','true');
-
-      if (tabpan.length > 0) {
-          tabpan.attr({
-              'aria-expanded':'true',
-              'aria-labelledby': tabpanid
-          }).addClass('on').siblings().attr('aria-expanded', 'false').removeClass('on');
-      } else {
-        _this.closest('.tab-nav').find('.tab_contents > .tab_panel').attr('aria-hidden','true').removeClass('on');
-      }
-  });
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const fn = {
-    tab : function() {
+//const fn = {
+ //   tab : function() {
         //const id = opt.id;
         //const el_tabID = document.querySelector('#'+ id);
         //const el_btnWrap = el_tabID.querySelector(':scope > .ui-tab-btns');
@@ -359,8 +142,8 @@ const fn = {
             // }
        // });
 
-    }
-}
+  //  }
+// }
 
 
 // fn.tooltip();
