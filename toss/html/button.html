@@ -14,11 +14,10 @@
 
 <body>
 
-    <div id="gWrap">
+    <div id="wrap">
 
         <header id="header">
             <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
-            <button type="button" class="btn_prev" aria-label="이전"></button>
             <p>한국투자증권에서 제공하는 서비스입니다</p>
         </header>
 
@@ -34,37 +33,43 @@
 
                     <h2><span># line</span></h2>
                     
-                    <button type="button" class="btn_line">취소하기</button>
+                    <button type="button" class="btn">취소하기</button>
                     
                     <br>
 
-                    <button type="button" class="btn_line md">상세</button>
-                    <button type="button" class="btn_line md t1">매수</button>
-                    <button type="button" class="btn_line md t2">매도</button>
+                    <button type="button" class="btn sm">버튼</button>
+                    <button type="button" class="btn sm" disabled>매도</button>
+                    
+                    <br><br>
+
+                    <button type="button" class="btn sm t1">매수</button>
+                    <button type="button" class="btn sm t2">매도</button>
+                    
+                    <br><br>
+                    
+                    <button type="button" class="btn sm t3">매수가능금액</button>
 
                     <br><br>
 
-                    <button type="button" class="btn_line sm">상세</button>
-                    <button type="button" class="btn_line sm t1">매수</button>
-                    <button type="button" class="btn_line sm t2">매도</button>
-
-                    <button type="button" class="btn_line sm">+1천원</button>
-                    <button type="button" class="btn_line sm">+5만원</button>
-                    <button type="button" class="btn_line sm">전원</button>
-
-
-
+                    <div class="btn_wrap">
+                        <button type="button" class="btn sm pay">+1천원</button>
+                        <button type="button" class="btn sm pay">+1만원</button>
+                        <button type="button" class="btn sm pay">+5만원</button>
+                        <button type="button" class="btn sm pay">+10만원</button>
+                        <button type="button" class="btn sm pay">전액</button>
+                    </div>
+                   
                     <br><br>
 
                     <h2><span># bottom fixed btn</span></h2>
-                    <div class="fixed_btm_btns">
-                        <button type="button" class="btn second">다시 등록하기</button>
+                    <!-- <div class="fixed_btm_btns">
+                        <button type="button" class="btn second" disabled>다시 등록하기</button>
                         <button type="button" class="btn primary">기존 정보와 동일</button>
-                    </div>
-                    <!-- <div class="fixed_btm_btns t1">
+                    </div> -->
+                    <div class="fixed_btm_btns t1">
                         <button type="button" class="btn second">취소</button>
                         <button type="button" class="btn primary">다음</button>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>

@@ -14,11 +14,10 @@
 
 <body>
 
-    <div id="gWrap">
+    <div id="wrap">
 
         <header id="header">
             <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
-            <button type="button" class="btn_prev" aria-label="이전"></button>
             <p>한국투자증권에서 제공하는 서비스입니다</p>
         </header>
 
@@ -92,7 +91,7 @@
                     <div class="tbl_info">
                         <h3 class="h3">퍼스트 발행어음 약정(6개월)</h3>
                         <div class="opt">
-                            <button type="button" class="btn_line sm t1">신규매수</button>
+                            <button type="button" class="btn sm t1">신규매수</button>
                         </div>
                     </div>
                     <table class="tbl_row">
@@ -132,16 +131,17 @@
                         </tbody>
                     </table>
 
-
                     <br>
                     <br>
-
                     
                     <div class="tbl_info">
                         <div class="input_wrap">
                             <input type="checkbox" id="check1" name="sell">
-                            <label for="check1">매수일자 <span class="date">2022.05.02</span></label>
+                            <!-- <label for="check1"><span>만기일에 상환금액을 내 토스계좌로 다시 가져올게요</span></label> -->
+                            <label for="check1"><span>매수일자 <i class="date">2022.05.02</i></span></label>
                         </div>
+
+                        
                     </div>
                     <table class="tbl_row">
                         <caption>매수금액, 세전평가금액, 약정기간, 중도해지이율, 만기일, 경과일수에 대한 정보</caption>
@@ -150,12 +150,12 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th scope="row">매수금액</th>
-                                <td>2,000,000 원</td>
+                                <th scope="row"><strong>매수금액</strong></th>
+                                <td><strong>2,000,000원</strong></td>
                             </tr>
                             <tr>
                                 <th scope="row">세전평가금액</th>
-                                <td>2,000,150 원</td>
+                                <td>2,000,150원</td>
                             </tr>
                             <tr>
                                 <th scope="row">약정기간</th>
@@ -163,7 +163,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">중도해지이율</th>
-                                <td>연 0.20%</td>
+                                <td><strong class="point">연 0.20%</strong></td>
                             </tr>
                             <tr>
                                 <th scope="row">만기일</th>
