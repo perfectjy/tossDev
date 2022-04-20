@@ -19,22 +19,18 @@ q:before,q:after{content:''}
 sub,sup{vertical-align:super}
 
 input[type="radio"], input[type="checkbox"]{opacity:0 ;filter:alpha(opacity=0); display:inline-block; position:absolute; z-index:-1; vertical-align:top; appearance:none; -moz-appearance:none; -webkit-appearance:none; margin:0;}
-.lb_radio, .lb_check{position:relative; display:inline-flex; vertical-align:top; align-items:center; min-height:50px; font-size:14px; padding:0; margin:0; cursor:pointer; line-height:1;}
-.lb_radio:before, .lb_check:before{content:""; display:block; flex:0; min-width:20px; min-height:20px; margin-right:10px; box-sizing:border-box; border:2px solid #000;}
-:checked+.lb_radio:before, :checked+.lb_check:before{border:2px solid #000078;box-shadow:0 1px 4px rgba(0,0,120,.6);}
-:checked+.lb_radio:after, :checked+.lb_check:after{content:''; position:absolute; left:7px; top:19px; width:4px; height:8px; border:solid #000078; border-width:0 2px 2px 0; transition:all .5s;-webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
-.lb_radio span, .lb_check span{display:inline-block; vertical-align:middle; height:100%; font-size:15px; font-weight:500; border-bottom:1px solid transparent;}
-
+input[type="text"]{width:100%;height:60px;padding:15px 20px;font-size:18px;border:1px solid #ddd;border-radius:6px;}
+input[type=text]:focus{outline:transparent;border-color:#3B7AFE;}
 input[type=text]::-ms-clear{display:none}
-::-webkit-input-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:300;color:#bbb;opacity:1}
-:-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:300;color:#bbb;opacity:1}
-::-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:300;color:#bbb;opacity:1}
-:-ms-input-placeholder{font-family:'Noto Sans KR', 'roboto'!important;font-weight:300!important;color:#bbb!important;opacity:1}
+::-webkit-input-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+:-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+::-moz-placeholder{font-family:'Noto Sans KR', 'roboto';font-weight:400;font-size:18px;color:#ccc;opacity:1}
+:-ms-input-placeholder{font-family:'Noto Sans KR', 'roboto'!important;font-weight:400!important;color:#ccc!important;opacity:1}
 input[type=text]:focus::-webkit-input-placeholder{visibility:hidden}
 input[type=text]:focus:-moz-placeholder{visibility:hidden}
 input[type=text]:focus::-moz-placeholder{visibility:hidden}
 input[type=text]:focus:-ms-input-placeholder{visibility:hidden}
-select{width:100%;height:100%;padding:0 34px 0 10px;border-bottom:1px solid #000;vertical-align:middle;background:#fff url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='34px' height='8px' viewBox='0 0 34 8' enable-background='new 0 0 34 8' xml:space='preserve'%3E%3Cpolyline fill='none' stroke='%23222222' stroke-width='2' stroke-miterlimit='10' points='11.125,-0.5 17,6.5 23,-0.5 '/%3E%3C/svg%3E") 100% 50% no-repeat;background-size:34px 8px;font-size:20px;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+select{width:100%;height:60px;padding:0 40px 0 15px;border:1px solid #ddd;border-radius:6px;vertical-align:middle;background:#fff url(/toss/asset/img/ico_dropdown.png) right 20px top 50% no-repeat;background-size:14px 8px;font-size:18px;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 select::-ms-expand{display:none}
 
 

@@ -6,25 +6,65 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="format-detection" content="telephone=no">
     <title>Form</title>
-
     <script src="../asset/js/jquery-3.6.0.min.js"></script>
     <script src="../asset/js/ui_plugins.js"></script>
     <script src="../asset/js/ui_common.js"></script>
-    <link rel="stylesheet" href="../asset/css/guide.css">
+    <link rel="stylesheet" href="../asset/css/common.css">
 </head>
 
 <body>
-    <div id="gWrap">
-
-        <header id="header">
-            <h1 class="offscr">한국투자증권 토스 웹 발행어음거래</h1>
-            <button type="button" class="btn_prev" aria-label="이전"></button>
-            <p>한국투자증권에서 제공하는 서비스입니다</p>
-        </header>
+    <div id="wrap">
 
         <section id="container">
-            <div class="guide_cont">
+            <div class="content">
+                <div class="guide_cont">
 
+                    <h2><span>text</span></h2>
+                    <div class="form_list">
+                        <div class="form_item">
+                            <div class="form_info">
+                                <label for="check2" class="form_lb">매수금액입력</label>
+                                <button type="button" class="btn sm t4">매수가능금액</button>
+                            </div>
+                            <div class="unit_box">
+                                <input type="text" id="check2" name="inpText" placeholder="최소 1,000,000원 부터 매수가능해요">
+                                <span class="txt">원</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>checkbox</span></h2>
+                    <div class="form_list">
+                        <div class="form_item">
+                            <div class="check_box">
+                                <input type="checkbox" id="check1" name="inpCheck">
+                                <label for="check1"><span>매수일자 <i class="date">2022.05.02</i></span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>radio</span></h2>
+                    <div class="form_list">
+                        <div class="form_item">
+                            <div class="radio_box">
+                                <input type="radio" id="radio1" name="inpRadio">
+                                <label for="radio1">해지환급금</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>select</span></h2>
+                    <div class="form_list">
+                        <label for="select1" class="form_lb">레이블명</label>
+                        <div class="form_item">
+                            <select id="select1">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </section>
 
