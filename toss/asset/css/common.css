@@ -162,12 +162,17 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 
 .terms_list{margin:0 20px; border-top:1px solid #222;}
-.terms_list > li{padding:13px 10px 12px 31px; border-bottom:1px solid #eee;}
+.terms_list > li{padding:13px 0 12px; border-bottom:1px solid #eee;}
 .terms_list > li:last-child{padding-bottom:15px;}
-.terms_list .terms_item .ico_star{margin-top:15px;}
-.terms_list .terms_cont{display:flex; justify-content:space-between; align-items:center; line-height:23px;}
-.terms_list .terms_cont + p{margin-top:15px; line-height:23px;}
-.terms_list .terms_cont label{font-size:inherit;}
+.terms_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
+.terms_list .terms_item label{font-size:inherit;}
+.terms_list .terms_item label span{padding-left:22px;}
+.terms_list .terms_item label span::before{width:15px; height:11px; background:none; border-radius:0;}
+.terms_list .terms_item label span::after{left:0; width:15px; height:11px; background:url(/toss/asset/img/ico_check_03.png) left top no-repeat; background-size:15px 11px;}
+.terms_list .terms_item input[type="checkbox"]:checked + label span::before{background:transparent url(/toss/asset/img/ico_check_02.png) left top no-repeat; background-size:15px 11px;}
+.terms_list .terms_item input[type="checkbox"]:checked + label span::after{display:none;}
+.terms_list .terms_cont{margin-top:15px; line-height:23px;}
+.terms_list .terms_cont .ico_star{margin-top:15px;}
 
 
 
