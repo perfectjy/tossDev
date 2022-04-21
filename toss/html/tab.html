@@ -21,20 +21,16 @@
 
                     <h2><span>tab</span></h2>
                     <div class="ui-tab">
-                        <div class="ui-tab-btns">
-                            <button type="button" class="ui-tab-btn">
-                                <span>잔고조회</span>
+                        <div class="ui-tab-btns" role="tablist">
+                            <button type="button" class="ui-tab-btn" id="tabmenu1" role="tab" aria-controls="panel1" aria-selected="">
+                                <span>잔고</span>
                             </button>
-                            <button type="button" class="ui-tab-btn">
-                                <span>입출금</span>
-                            </button>
-                            <button type="button" class="ui-tab-btn">
-                                <span>거래내역</span>
+                            <button type="button" class="ui-tab-btn" id="tabmenu2" role="tab" aria-controls="panel2" aria-selected="">
+                                <span>거래상세/취소</span>
                             </button>
                         </div>
                         <div class="ui-tab-panels">
-                            <section class="tab-panel">
-                                <h2 class="tab-tit">tab1 title</h2>
+                            <section class="tab-panel" id="panel1" aria-labelledby="tabmenu1">
                                 <div class="cont">
                                     잔고조회 내용
                                     <div class="ui-tab">
@@ -57,16 +53,9 @@
                                     </div>
                                 </div>
                             </section>
-                            <section class="tab-panel">
-                                <h2 class="tab-tit">tab2 title</h2>
+                            <section class="tab-panel" id="panel2" aria-labelledby="tabmenu2">
                                 <div class="cont">
-                                    입출금 내용
-                                </div>
-                            </section>
-                            <section class="tab-panel">
-                                <h2 class="tab-tit">tab3 title</h2>
-                                <div class="cont">
-                                    거래내역 내용
+                                    거래상세/취소 내용
                                 </div>
                             </section>
                         </div>

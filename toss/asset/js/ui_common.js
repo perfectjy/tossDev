@@ -68,10 +68,10 @@ const fn = {
 
     function setSelectItem($item, $pnl) {
         if($selectItem) {
-            $selectItem.removeClass('selected');
+            $selectItem.removeClass('selected').attr('aria-selected', false);
         }
         $selectItem = $item;
-        $selectItem.addClass('selected');
+        $selectItem.addClass('selected').attr('aria-selected', true);
 
         $item.each(function() {
             var idx = $item.index();
