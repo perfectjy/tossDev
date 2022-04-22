@@ -1,17 +1,10 @@
 $(function() {
 
-
-  // A 링크 초기화
-  $(document).on('click', 'a', function(e) {
-    var $href = $(this).attr('href');
-    if($href == "#" || $href == "#none") {
-      e.preventDefault();
-    }      
-  });
-
-  //commfn.accodian();
   fn.horizonTable();
+  fn.hrefReset();
   fn.tab();
+  fn.popup();
+
 });
 
 
@@ -28,6 +21,14 @@ const fn = {
         }
       });
     }
+  },
+  hrefReset : function() {
+    $(document).on('click', 'a', function(e) {
+      var $href = $(this).attr('href');
+      if($href == "#" || $href == "#none") {
+        e.preventDefault();
+      }      
+    });
   },
   accodian : function() {
     $(document).on('click', '.ui-acco-btn', function() {
@@ -80,71 +81,118 @@ const fn = {
         });
     }
   },
+  popup : function() {
+      var $dialogBtn = $('[data-modal-btn]');
+      var btnID = $dialogBtn.data('modalBtn');
+      var $dialog = $('.dialog');
+      var dialogID = $dialog.data('modal');
+      var dialogValue = null;
+      // var $dialogBtn = $('[data-modal-btn='+id+']');
+      // var $closeBtn = $dialog.find('.dialog_close');
+
+      function dialogOpen() {
+        $dialogBtn.on('click', function(){
+          btnID = $(this).data();
+              
+          pop(dialogID, btnID);
+
+          console.log(dialogID);
+
+          // if(dialogValue === btnValue){
+
+          // }
+              
+          // if(idName === btnID){
+          //     console.log('aaa');
+          // } else {
+          //     console.log('bbb');
+          // }
+        });
+      }
+
+      function pop(dialogValue, btnValue){ 
+        $dialog.each(function(){
+          dialogValue = $(this).data();
+          
+          if(btnValue === dialogValue){
+            return dialogValue;
+          }
+        });
+        return true
+      } 
+      dialogOpen();
+  }
 }
 
 
+// $.fn.uiPopup = function() {
+// 	return this.each(function() { 
 
-
-//const fn = {
- //   tab : function() {
-        //const id = opt.id;
-        //const el_tabID = document.querySelector('#'+ id);
-        //const el_btnWrap = el_tabID.querySelector(':scope > .ui-tab-btns');
-        //const el_btn = el_btnWrap.querySelector('.ui-tab-btn');
-        //const tabPnls = el_tabID.querySelector(':scope > .ui-tab-panels');
-        
-
-        // function findParent(el, className){
-        //     let check = el.parentNode.classList.contains(className);
-            
-        //     if(check === true){
-        //         return el.parentNode;
-        //     }else{
-        //         return findParent(el.parentNode, className);
-        //     }
-        // }
-
-
-        // el_btn.addEventListener('click', function() {
-            
-        //     let parent = findParent(this, 'ui-tab-btns');
-        //     let btnArr = parent.querySelectorAll('.ui-tab-btn');
-
-        //     console.log(btnArr);
-
-        //     this.classList.add('selected');
-        //     btnArr.classList.remove('selected');
-
-        //     console.log('클릭OK');
-        // });
-
-
-
-        //const len = btn.length;
-
-        //$tabPanels.children().attr('role', 'tabpanel');
-        //$(tabID).attr('role', 'tablist');
-
-        //for(var i=0; i<len; i++) {
-          // $tabPanels.children().eq(i).attr('data-tab', i);
-          // btn.eq(i).attr({'role':'tab', 'data-tab':i, 'id':tabID+'Btn'+i});
-          // $tabPanels.children().eq(i).attr('aria-labelledby', tabID+'Btn'+i);          
-        //}
-
-        //btn.addEventListener('click', function(e) {
-          //  e.preventDefault();
-          //  var idx = $(this).index();
-            // if($(this).attr('data-tab') == idx) {
-            //     $tabPanels.children().eq(idx).attr('aria-hidden', false);
-            //     $tabPanels.children().eq(idx).siblings().attr('aria-hidden', true);
-            //     $(this).addClass('selected');
-            //     $(this).siblings().removeClass('selected');    
-            // }
-       // });
-
-  //  }
+//   }
 // }
 
+
+// var Dialog ={
+// 	focusClass:'dialog_focused',
+// 	open:function(tar, callback){
+// 		var $select_id = $(tar),
+// 			$body = $('body'),
+// 			$lastCloseBtn = '<a href="#" class="dialog_close last_focus" role="button"><span class="offscr">팝업창 닫기</span></a>';
+
+// 		if($('body').hasScrollBar()){ //스크롤유무 체크
+// 			Body.lock();
+// 		}
+			
+// 		//원래 포커스에 클래스 부여
+// 		var $focus = $(':focus');
+// 		if($focus.length){
+// 			$($focus).addClass(Dialog.focusClass);
+// 		}		
+		
+// 		//팝업 마지막 포커스 버튼 적용
+// 		// $select_id.find('.dialog_wrap').append($lastCloseBtn);
+
+// 		//열기
+// 		$select_id.attr({'aria-hidden':'false','tabindex':'0'}).fadeIn(100,function(){
+// 			if(!!callback){
+// 				callback();
+// 			}
+// 		}).addClass('n' + $('.dialog.show').length + ' show').focus();
+// 		if (!!!isMobile) $select_id.css({ display:'flex' });
+
+// 		$select_id.on('blur', function(){ $(this).removeAttr('tabindex'); });			
+		
+// 		if(!isMobile) {
+// 			// Dialog.height($select_id);
+// 			$select_id.find('.scrollbar').mCustomScrollbar({
+// 				advanced:{
+// 					autoScrollOnFocus:true,
+// 					updateOnContentResize:true
+// 				}
+// 			});
+// 		} 
+// 		else {
+// 			// $select_id.find('.dialog_content').scrollTop(0,0);
+// 			var $height = $(tar).height(),
+// 				$head = $(tar).find('.dialog_header').height(),
+// 				$content = $(tar).find('.dialog_content');
+
+// 			// if(!$(tar).hasClass('full'))$content.css('max-height',$height);
+// 			if($(tar).hasClass('bottom')) {
+// 				$content.css('max-height',$height - $head - 80);
+// 			}
+			
+// 			// top button
+// 			topButton(tar);
+// 		}
+		
+// 		//팝업 안에서만 포커스 이동
+// 		Dialog.focusMove(tar);
+
+// 		// 가로스크롤바
+// 		xScrInfo();
+// 	}
+// }
 
 // fn.tooltip();
 // fn.popup();

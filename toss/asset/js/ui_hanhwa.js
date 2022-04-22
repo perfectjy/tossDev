@@ -45,7 +45,6 @@ var inputDel = function(){
             $('.srchBox > .iptBlock').removeClass('on');
         }
         if($(this).prop('readonly') || $(this).prop('disabled') || $(this).hasClass('no_del')){
-            console.log("return");
             return false;
         }
 
@@ -56,8 +55,6 @@ var inputDel = function(){
         $(this).parent().removeClass('on');
     });
 }
-
-
 
 //알람 카운트
 var almCnt = function(){
@@ -85,93 +82,104 @@ var popType = {
     },
     open:function(ths){
         popType.basic(ths);
-        if(!popupW.hasClass('nowOpen')){
-            $(popupId).addClass('nowOpen').attr('tabindex', "0").focus();
-            wrap.attr('aria-hidden','true');
-            lock.addClass('lock');
+        $(popupId).addClass('nowOpen').attr('tabindex', "0").focus();
+        wrap.attr('aria-hidden','true');
+        lock.addClass('lock');
+        var btnOn = $(popupId).find('.popup .btnArea');
+        if(btnOn.length <= 0){
+            $(popupId).addClass('noneBtn');
+        }else{
+            $(popupId).removeClass('noneBtn');
         }
-
     },
-    close:function(ths){
-        popType.basic(ths);
-
-        if(popupW.hasClass('nowOpen')){
-            // $('.btn-p').attr('tabindex', "0").focus();
-            popupW.removeClass('nowOpen').removeAttr().focus();
+    close:function(tar){
+        if(tar.hasClass('nowOpen')){
+            $(popupId).removeClass('nowOpen').removeAttr().focus();
             lock.removeClass('lock');
             wrap.attr('aria-hidden','false');
         }
     },
     init:function(ths){
-        var btnOn = $('.popWrap').find('.popup').hasClass('sticky');
-        if(!btnOn){
-            $('.popWrap').addClass('noneBtn');
-        }
-
         $('.popWrap').find('.popup').attr('role','dialog');
         $('.popWrap.alert').find('.popup').attr('role','alertdialog');
+
+        $(document).on('click', '.dialog-close',function(e){
+            e.preventDefault();
+            var pop = $(this).attr('href');
+            if (pop == '#' || pop == '#none' || pop == undefined)pop = $(this).closest('.popWrap');
+            popType.close(pop);
+        })
     }
 }
 
 //텝
 var tab = function(){
-    var tabWidget = $('.tab-wrap');
+    var tabWidget = $('.tabWrap');
 
     tabWidget.each(function () {
         var ths = $(this),
-            tab1 = ths.find('.tab-nav'),
+            tab1 = ths.find('.tabList'),
             tabListItems = tab1.find('.tab-btn'),
             tabListHref = tabListItems.attr('href'),
-            //tabListItems = tab1.find('.tab-btn').attr('aria-controls'),
             tabListItemActive = tab1.find('.tab-btn.on'),
             tabPanels = ths.find('.tab-panel'),
             tabPanelsActive = ths.find('.tab-panel.on')
             panId= tabPanelsActive.attr('id'),
             tabPanels.removeClass('on'),
             tab1.attr('role','tablist');
-        
+            
             var tabListItemID = tabListItemActive.attr('aria-controls'),
-                tabPanelActive = $(tabListItemID);
+            tabPanelActive = $(tabListItemID);
             
-                
-                //기본 tab
-                tabListItems.attr({
-                    'aria-selected':'false'
-                });
-                
-                //ON tab
-                tabListItemActive.attr({
-                    'aria-selected':'true'
-            });
-            
-            //기본 패널
-            tabPanels.attr({
-                'aria-expanded':'false',
-                'role':'tabpanel'
-            });
-            
-            //기본 패널
-            tabPanelsActive.attr({
-                'aria-expanded':'true',
-                'aria-labelledby':panId
-            });
-            
-            tabPanelsActive.attr('aria-expanded','true').addClass('on');
-            
-            if(tabListHref){
-                var inx = tabListItemActive.index();
-                tabPanelsActive.removeClass('on').attr('aria-expanded', 'false');;
-                tabPanels.eq(inx).addClass('on').attr('aria-expanded', 'true');
-                var tabTitle = tabListItemActive.text();
-                console.log("tabTitle", tabTitle);
-                tabPanels.eq(inx).append('<h1>'+ tabTitle +'</h1>');
-            }
-            
+
+        //기본 tab
+        tabListItems.attr({
+            'aria-selected':'false',
+            'role':'tab'
         });
+        
+        //ON tab
+        tabListItemActive.attr({
+            'aria-selected':'true'
+        });
+        
+        //기본 패널
+        tabPanels.attr({
+            'aria-expanded':'false',
+            'role':'tabpanel'
+        });
+        
+        //기본 on 패널
+        tabPanelsActive.attr({
+            'aria-expanded':'true',
+            'aria-labelledby':panId
+        });
+        
+        tabPanelsActive.attr('aria-expanded','true').addClass('on');
+        
+        if(tabListHref){
+            var inx = tabListItemActive.index();
+            tabPanelsActive.removeClass('on').attr('aria-expanded', 'false');;
+            tabPanels.eq(inx).addClass('on').attr('aria-expanded', 'true');
+            var tabTitle = tabListItemActive.text();
+            tabPanels.eq(inx).append('<h1>'+ tabTitle +'</h1>');
+        }
+        
+    });
+
+    var tabWidgetBtn = tabWidget.find('.tab-btn');
+    tabWidgetBtn.each(function (index){
+        var ths = $(this),
+            panId = ths.attr('aria-controls');
+
+        tabWidget.find('.tabContents .tab-panel').eq(index).attr('aria-labelledby', panId);
+    });
 
 
-    $('.tab-nav .tab-btn').on('click', function(e) {
+
+    $('.tabList .tab-btn').on('click', function(e) {
         e.preventDefault();
+
 
         var ths = $(this),
             tabPanId = ths.attr('aria-controls'),
@@ -184,7 +192,7 @@ var tab = function(){
             tabPan.append('<h1>'+ tabTitle +'</h1>');
         }
 
-        ths.closest('.tab-nav').find('.tab-btn').removeClass('on').attr('aria-selected', 'false');
+        ths.closest('.tabList').find('.tab-btn').removeClass('on').attr('aria-selected', 'false');
         ths.addClass('on').attr('aria-selected','true');
 
         if (tabPan.length > 0) {
@@ -193,34 +201,49 @@ var tab = function(){
                 'aria-labelledby': tabPanId
             }).addClass('on').siblings().attr('aria-expanded', 'false').removeClass('on');
         } else {
-            ths.closest('.tab-nav').find('.tab-contents > .tab_panel').attr('aria-hidden','true').removeClass('on');
+            ths.closest('.tabList').find('.tabContents > .tab_panel').attr('aria-hidden','true').removeClass('on');
         }
     });
 
 }
 var tabStickys = function(){
-    $(window).on('scroll', function(){
-        var nowTop =  $(window).scrollTop(),
-            headerHt = $('.header').height();
+    var tabNav = $('.tabWrap').children().first('.tabList'),
+        sticky = $('.tabWrap > .tabList.tab-sticky');
+        // isTab = $('.content').children(),
+        // isPopUpTab = $('.popup > .popBody').children().first();
+        
+        $(window).on('scroll', function(){
+            var nowTop =  $(window).scrollTop(),
+            headerHt = $('.header').height(),
+            tabOff = $('.tabWrap').offset().top;
     
-        if (nowTop > headerHt) {
-            $('.tab-nav.tab-sticky').addClass('on');
-        }else{
-            $('.tab-nav.tab-sticky').removeClass('on');
-        }
-    });
-    $('.popBody').on('scroll', function(){
-        var nowTop =  $(this).scrollTop(),
-            popHead = $('.popHead').height();
-        if (nowTop > popHead) {
-            $('.tab-nav.tab-sticky').addClass('on');
-        }else{
-            $('.tab-nav.tab-sticky').removeClass('on');
-        }
-    });
-} 
+            if (nowTop > tabOff) {
+                tabNav.css('top', headerHt).addClass('tab-sticky');
+            }else{
+                tabNav.removeClass('tab-sticky');
+            }
+        });
+    
+        $('.popBody').on('scroll', function(){
+            var nowTop =  $(window).scrollTop(),
+            popHead = $('.wrapper .header').height();
+            if (nowTop > 0) {
+                sticky.css('top', popHead).addClass('tab-sticky');
+            }else{
+                sticky.css('top', 0).removeClass('tab-sticky');
+            }
+        });
 
-
+    // if(isTab.hasClass('tab-wrap') || isPopUpTab.hasClass('tab-wrap')){
+    //     isTab.children('.tab-nav').wrap('<div ></div>');
+    //     isPopUpTab.children('.tab-nav').wrap('<div ></div>');
+    //     isTab.children('.tab-basic').find('.tab-nav').addClass('tab-sticky');
+    //     isPopUpTab.find('.tab-nav').addClass('tab-sticky');
+    //     headerHt = $('.header').height();
+    //     isPopUpTab.find('.tab-nav').css('top', headerHt).parent('.tab-basic').css('height', '56px');
+    // }else{
+    // }
+}
 var allChk = {
     cked:function(){
         $('.chkGroup input[type=checkbox]').on('click', function(){
