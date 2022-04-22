@@ -54,8 +54,8 @@ const fn = {
     });
   },
   tab : function() {
-    var $tabmenu = $('.ui-tab');
-    var $selectItem = null;
+    var $tabmenu = $('.ui-tab'),
+        $selectItem = null;
 
     $tabmenu.each(function() {
         var $this = $(this),
@@ -82,47 +82,62 @@ const fn = {
     }
   },
   popup : function() {
-      var $dialogBtn = $('[data-modal-btn]');
-      var btnID = $dialogBtn.data('modalBtn');
-      var $dialog = $('.dialog');
-      var dialogID = $dialog.data('modal');
-      var dialogValue = null;
-      // var $dialogBtn = $('[data-modal-btn='+id+']');
-      // var $closeBtn = $dialog.find('.dialog_close');
+      var $dialogBtn, 
+          $dialog,
+          $closeBtn, 
+          btnName, 
+          dialogName = null;
 
-      function dialogOpen() {
-        $dialogBtn.on('click', function(){
-          btnID = $(this).data();
-              
-          pop(dialogID, btnID);
+        function init() {
+          $dialogBtn = $('[data-modal-btn]');
+          $dialog = $('.dialog');
+          $closeBtn = $('.dialog_close');
+        }
 
-          console.log(dialogID);
+        function event() {
+          $dialogBtn.on('click', function() {   
+            btnName = $(this).data('modalBtn');
+            $dialog.data('modal', btnName);
+         
+            $(this).siblings().attr('tabindex', -1);
+            $(this).removeAttr('tabindex'); 
 
-          // if(dialogValue === btnValue){
+            open(btnName, dialogName);   
+          });
 
-          // }
-              
-          // if(idName === btnID){
-          //     console.log('aaa');
-          // } else {
-          //     console.log('bbb');
-          // }
-        });
-      }
+          $closeBtn.on('click', function() {
+            
+            close($(this));
+          });
+        };
+        
+        function open(target) {
+          dialogName = $dialog.data('modal');
+          $('[data-modal='+target+']').addClass('show');
+          $('[data-modal='+target+']').focus();
+        }
 
-      function pop(dialogValue, btnValue){ 
-        $dialog.each(function(){
-          dialogValue = $(this).data();
-          
-          if(btnValue === dialogValue){
-            return dialogValue;
-          }
-        });
-        return true
-      } 
-      dialogOpen();
+        function close(target) {
+          target.closest($dialog).removeClass('show');
+          $dialogBtn.removeAttr('tabindex');
+        
+            
+        }
+        init();
+        event(); 
   }
 }
+
+
+// var target = document.querySelectorAll('.btn_open'); // 클릭할 버튼요소를 변수 처리
+
+// // 팝업 열기
+// for(var i = 0; i < target.length; i++){
+//   target[i].addEventListener('click', function(){
+//     targetID = this.getAttribute('href');
+//     document.querySelector(targetID).style.display = 'block';
+//   });
+// }
 
 
 // $.fn.uiPopup = function() {
