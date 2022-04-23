@@ -148,7 +148,7 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 
 .check_box label{position:relative; display:inline-block; padding-left:40px; line-height:27px; font-size:16px; color:#666;}
 .check_box label::before{content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); display:inline-block; width:30px; height:30px; background:#eee; border-radius:6px;}
-.check_box label::after{content:''; display:block; position:absolute; left:7px; top:50%; transform:translateY(-50%); width:16px; height:12px; background:url(../../asset/img/ico_check_01.png) no-repeat; background-size:16px 12px; animation:fadeIn .1s cubic-bezier(.4,.0,.23,1) forwards;}
+.check_box label::after{content:''; display:block; position:absolute; left:7px; top:50%; transform:translateY(-50%); width:16px; height:12px; background:url(../../asset/img/ico_check.png) no-repeat; background-size:16px 36px; animation:fadeIn .1s cubic-bezier(.4,.0,.23,1) forwards;}
 .check_box input[type="checkbox"]:checked + label{color:#3b7afe; font-weight:500;}
 .check_box input[type="checkbox"]:checked + label::before{background:#3b7afe;}
 
@@ -158,9 +158,9 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .terms_list > li:last-child{padding-bottom:15px;}
 .terms_list .terms_item{display:flex; justify-content:space-between; align-items:center; padding:0 10px; line-height:23px;}
 .terms_list .terms_item label{padding-left:22px; font-size:inherit;}
-.terms_list .terms_item label::before{width:15px; height:11px; background:none; border-radius:0;}
-.terms_list .terms_item label::after{left:0; width:15px; height:11px; background:url(../../asset/img/ico_check_03.png) left top no-repeat; background-size:15px 11px;}
-.terms_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check_02.png) left top no-repeat; background-size:15px 11px;}
+.terms_list .terms_item label::before{width:16px; height:12px; background:none; border-radius:0;}
+.terms_list .terms_item label::after{left:0; width:16px; height:12px; background:url(../../asset/img/ico_check.png) 0 -24px no-repeat; background-size:16px 36px;}
+.terms_list .terms_item input[type="checkbox"]:checked + label::before{background:transparent url(../../asset/img/ico_check.png) 0 -12px no-repeat; background-size:16px 36px;}
 .terms_list .terms_item input[type="checkbox"]:checked + label::after{display:none;}
 .terms_list .terms_cont{padding:15px 0 0 32px; line-height:23px;}
 .terms_list .terms_cont .ico_star{margin-top:15px;}
