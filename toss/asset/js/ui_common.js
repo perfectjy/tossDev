@@ -71,22 +71,22 @@ const fn = {
     
     function firstSelect($menu, $cont) {
       $menu.first().addClass('selected').attr('aria-selected', true);
-      $cont.first().addClass('selected').attr('aria-selected', true);
+      $cont.first().addClass('selected').attr('aria-hidden', false);
     }
 
     function setSelectItem($item, $pnl) {
         if($selectItem) {
             $selectItem.removeClass('selected').attr('aria-selected', false);
-            $pnl.removeClass('selected').attr('aria-selected', false);
+            $pnl.removeClass('selected').attr('aria-hidden', true);
         }
         $selectItem = $item;
         $selectItem.addClass('selected').attr('aria-selected', true);
-        $pnl.removeClass('selected').attr('aria-selected', false);
+        $pnl.addClass('selected').attr('aria-hidden', false);
 
         $item.each(function() {
             var idx = $item.index();
-            $pnl.eq(idx).attr('aria-hidden', false);
-            $pnl.eq(idx).siblings().attr('aria-hidden', true);    
+            $pnl.eq(idx).addClass('selected').attr('aria-hidden', false);
+            $pnl.eq(idx).siblings().removeClass('selected').attr('aria-hidden', true);    
         });
     }
   },
@@ -97,12 +97,13 @@ const fn = {
           btnName, 
           dialogName = null;
 
-
         function init() {
           $dialogBtn = $('[data-modal-btn]');
           $dialog = $('.dialog');
           $closeBtn = $('.dialog_close');
           $dialog.attr('role', 'dialog');
+
+          $dialog.attr('tabindex', -1);
         }
 
         function event() {
@@ -110,8 +111,8 @@ const fn = {
             btnName = $(this).data('modalBtn');
             $dialog.data('modal', btnName);
 
-            $(this).attr('data-actived', true).focus();
-            
+            $(this).attr('data-focused', true).focus();
+
             open(btnName);   
           });
 
@@ -122,16 +123,18 @@ const fn = {
         
         function open(target) {
           $('[data-modal='+target+']').addClass('show');
-          $('[data-modal='+target+']').find('.dialog_wrap').attr('tabindex', 0).focus();
+          $('[data-modal='+target+']').attr({'tabindex':0, 'aria-hidden': false}).focus();
         }
 
         function close(target) {
           var $dialogBody = target.closest($dialog);
               dialogName = $dialogBody.data('modal');
-              $dialogBody.removeClass('show');
+           
+              $dialogBody.removeClass('show').removeAttr('tabindex');
+              $dialogBody.attr('aria-hidden', true);
 
-          if($dialogBtn.data('actived') === true) {
-            $('[data-modal-btn='+dialogName+']').removeAttr('data-actived').focus();
+          if($dialogBtn.data('focused') === true) {
+            $('[data-modal-btn='+dialogName+']').removeAttr('data-focused').focus();
           }
         }
         init();

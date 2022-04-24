@@ -35,7 +35,7 @@
 .btn.t4{color:#222; border-color:#eee; background:#f9f9f9;}
 
 .btn.primary, .btn.second{width:100%; height:70px; font-size:18px; font-weight:500; border-radius:0; border:0;}
-.btn.primary{color:#fff; background:#3b7afe;}
+.btn.primary{color:#fff !important; background:#3b7afe;}
 .btn.second{color:#888; background:#eee;}
 .btn:disabled{color:#fff !important; border:0; background:#ccc;}
 
@@ -113,8 +113,8 @@ table{width:100%; table-layout:fixed; border-spacing:0; margin-top:15px; border-
 .ui-tab-btn:last-of-type{border-right:0;}
 .ui-tab-btn.selected{color:#222; background:#fff;}
 .ui-tab-btn.selected span{padding-bottom:7px; border-bottom:3px solid #3b7afe;}
-.tab-panel, .tab-panel[aria-hidden='true']{visibility:hidden; position:absolute; opacity:0; display:none; padding:40px 20px; font-size:14px;}
-.tab-panel.selected,.tab-panel[aria-hidden="false"]{visibility:visible; position:relative; opacity:1; z-index:1; display:block; animation:fadeIn .2s 1 linear forwards;}
+.tab-panel{visibility:hidden; position:absolute; opacity:0; display:none; padding:40px 20px; font-size:14px;}
+.tab-panel[aria-hidden='false']{visibility:visible; position:relative; opacity:1; z-index:1; display:block; animation:fadeIn .2s 1 linear forwards;}
 .tab-panel .ui-tab{margin-top:30px;}
 
 /* Form ***************************************************/
@@ -321,8 +321,8 @@ html.dialog_active{overflow:hidden; height:100%; -webkit-overflow-scrolling:none
 
 .dialog.modal{justify-content:center; align-items:center; left:0; background:#fff;}
 .dialog.modal.show .dialog_wrap{width:335px; transform:translateX(0);}
-.dialog.modal .dialog_wrap{max-height:550px; transform:translateX(100%);}
-.dialog.modal .dialog_content{height:408px;}
+.dialog.modal .dialog_wrap{transform:translateX(100%);}
+.dialog.modal .dialog_content{height:436px;}
 .dialog.modal .dialog_header h1{font-size:16px; line-height:27px;}
 
 .dialog.alert{justify-content:center; align-items:center; left:0; text-align:left; background:#fff;}
