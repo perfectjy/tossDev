@@ -61,18 +61,27 @@ const fn = {
         var $this = $(this),
             $menuItem = $this.find('> .ui-tab-btns').children(),
             $panelItem = $this.find('> .ui-tab-panels').children();
-
-        $menuItem.on('click', function() {
-            setSelectItem($(this), $panelItem);
-         });
+            
+            $menuItem.on('click', function() {
+                setSelectItem($(this), $panelItem);
+                $(this).siblings().removeClass('selected').attr('aria-selected', false);
+            });
+            firstSelect($menuItem, $panelItem);
     });
+    
+    function firstSelect($menu, $cont) {
+      $menu.first().addClass('selected').attr('aria-selected', true);
+      $cont.first().addClass('selected').attr('aria-selected', true);
+    }
 
     function setSelectItem($item, $pnl) {
         if($selectItem) {
             $selectItem.removeClass('selected').attr('aria-selected', false);
+            $pnl.removeClass('selected').attr('aria-selected', false);
         }
         $selectItem = $item;
         $selectItem.addClass('selected').attr('aria-selected', true);
+        $pnl.removeClass('selected').attr('aria-selected', false);
 
         $item.each(function() {
             var idx = $item.index();
