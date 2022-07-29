@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '반려동물 등록', prev: true, menu: true };
+
+    $(function() {
+
+      $(document).off('change.case1').on('change.case1', '#case1 input[name=animal]', function() {
+        var selVal = $(this).val(),
+          isDog = $('#isDog'),
+          isCat = $('#isCat');
+
+        if (selVal === '2') {
+          isDog.css({ display: 'none' });
+          isCat.css({ display: '' });
+        } else {
+          isDog.css({ display: '' });
+          isCat.css({ display: 'none' });
+        }
+      });
+    });
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+
+        <div class="section">
+          <div class="formWrap">
+            <div class="petImgInt">
+              <span class="photo"></span>
+              <a href="#none"><span class="hidden">반려동물 사진등록</span></a>
+            </div>
+            <div class="formItem" id="case1">
+              <span class="titItem">구분</span>
+              <div class="rdoGroup">
+                <div class="item"><input type="radio" name="animal" id="dog" value="1" checked="checked"><label for="dog"><span>강아지</span></label></div>
+                <div class="item"><input type="radio" name="animal" id="cat" value="2"><label for="cat"><span>고양이</span></label></div>
+              </div>
+              <div class="rdoSub">
+                <div class="rdoGroup" id="isDog">
+                  <div class="item"><input type="radio" name="dogKind" id="dog1"><label for="dog1"><span>소형견</span></label></div>
+                  <div class="item"><input type="radio" name="dogKind" id="dog2"><label for="dog2"><span>중형견</span></label></div>
+                  <div class="item"><input type="radio" name="dogKind" id="dog3"><label for="dog3"><span>대형견</span></label></div>
+                </div>
+                <div class="rdoGroup" id="isCat" style="display:none">
+                  <div class="item"><input type="radio" name="catKind" id="cat1"><label for="cat1"><span>집고양이</span></label></div>
+                  <div class="item"><input type="radio" name="catKind" id="cat2"><label for="cat2"><span>길고양이</span></label></div>
+                </div>
+              </div>              
+            </div>
+            <div class="formItem">
+              <label for="name" class="titItem">이름</label>
+              <div class="formEle">
+                <input type="text" placeholder="한글 또는 영문 입력" id="name">
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="birth" class="titItem">생일</label>
+              <div class="intCol3">
+                <div>
+                  <select id="birth" title="생일년도">
+                    <option>2020년</option>
+                    <option>2021년</option>
+                  </select>
+                </div>
+                <div>
+                  <select title="생일 월">
+                    <option>01월</option>
+                    <option>02월</option>
+                  </select>
+                </div>
+                <div>
+                  <select title="생일 일자">
+                    <option>01일</option>
+                    <option>02일</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="formItem">
+              <span class="titItem">성별</span>
+              <div class="rdoGroup">
+                <div class="item"><input type="radio" name="type" id="man"><label for="man"><span>남아</span></label></div>
+                <div class="item"><input type="radio" name="type" id="woman"><label for="woman"><span>여아</span></label></div>
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="kind" class="titItem">품종</label>
+              <div class="intSearch">
+                <input type="text" id="kind" placeholder="검색하기" readonly="readonly">
+                <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+              </div>
+            </div>
+            <div class="formItem">
+              <strong class="titItem">성격<em class="subTxt">(선택) 최대 3개까지 선택 가능해요</em></strong>
+              <div class="rdoGroup col3">
+                <div class="item"><input type="checkbox" name="yesrs" id="year1"><label for="year1"><span>활발해요</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year2"><label for="year2"><span>산책러버</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year3"><label for="year3"><span>다이어트</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year4"><label for="year4"><span>예민해요</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year5"><label for="year5"><span>애교많아요</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year6"><label for="year6"><span>탐험</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year7"><label for="year7"><span>장난꾸러기</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year8"><label for="year8"><span>조용해요</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year9"><label for="year9"><span>대식가</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year10"><label for="year10"><span>까다로운입맛</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year11"><label for="year11"><span>눈치백단</span></label></div>
+                <div class="item"><input type="checkbox" name="yesrs" id="year12"><label for="year12"><span>호기심 많아요</span></label></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="petInfoDelete">
+            <button type="button" class="deleteBtn"><span class="hidden">삭제</span></button>
+          </div> -->
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>나중에 할래요</span></button>
+              <button type="button" class="btn primary"><span>네, 연결할래요</span></button>
+            </div>
+          </div>
+
+        </div>
+			
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+</html>

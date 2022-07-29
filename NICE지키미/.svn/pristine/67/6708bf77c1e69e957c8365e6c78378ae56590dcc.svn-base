@@ -1,0 +1,114 @@
+@charset "euc-kr";
+ 
+
+/*****************************************************************
+  데이터놀이
+*****************************************************************/
+
+
+
+/* 이름랭킹 */
+.custForm.widAll {width:100%;}
+.rankView .rankList .first {color:#066bfd; font-weight: 500;}
+
+
+
+
+
+
+
+
+
+
+
+/* 금융소비자보호 -(탭)체계, (탭)금융소비자권리  */
+.cnsInfoBox h3 {position:relative; padding-left:12px; margin-bottom:12px;}
+.cnsInfoBox h3::before {position:absolute; content:''; top:9px; left:0; width:4px; height:4px; background-color:#444; border-radius: 50%;}
+
+/* 금융소비자보호 - (탭)민원접수 */
+p.listLine {position:relative; padding-left:22px; line-height: 22px; }
+p.listLine::before {position:absolute; content:''; top:11px; left:12px; width:4px; height:1px; background-color:#444;}
+dl.listNum {position: relative; padding-left:12px;}
+dl.listNum dt{float:left;}
+
+
+/* 고객센터 */
+
+.ui-allim.scroll { height:216px; padding:20px 15px; background: #fafafa; overflow-y: auto;}
+
+/* //고객센터 */
+
+
+
+
+
+/* PC */
+/* 보안프로그램설치안내  */
+/* .pweb .btns .btn.ics {width: auto; height: 44px; padding: 0 25px; border: 1px solid #0155c3; background: #0155c3; line-height: 36px; border-radius: 8px; } */
+/* .pweb .btns .btn.ics span {font-size: 15px; color: #fff;} */
+/* .pweb .btns .btn.ics span:before {padding-left:-5px;} */
+
+
+
+
+/* 사장님 신용관리 - 서비스 소개 */
+.creditTit {font-size:13px; margin-bottom: 20px;}
+.creditInfo {font-size:13px; line-height: 22px;}
+.grayBox { background:#f9f9f9; padding: 27px 25px; border-radius: 15px;}
+.bannerItem {height:280px; margin-top:19px;}
+.imgScale {display: block; text-align: center; margin-top:38px;}
+.imgScale img {width:50%;}
+
+.cimList {display:flex; justify-content: center; margin-top:44px;}
+.cimList >li {width:99px; height:99px; background:#eaf1ff; border-radius: 50%; margin: 0 -7px;}
+
+
+/* 사장님 신용관리 - 사업장 가맹점 정보 */
+.labResultBox.sales {padding:0; margin-top:45px;}
+
+.labResultBox.sales .salesGraphTop{display:flex; margin-bottom:20px;}
+.labResultBox.sales .salesGraphTop .arrow {display: inline-block; width: 65px; height: 65px; background: #eff2f8; border-radius: 50%; margin-right:15px;}
+.labResultBox.sales .salesGraphTop p {font-size:16px; font-weight: 700; line-height: 30px; color:#222;} 
+.labResultBox.sales .labResultGraph {margin: 0 64px 0 80px;}
+.labResultBox.sales .labResultGraph ul {margin-bottom:16px;}
+.labResultBox.sales .labResultGraph .bar span {position:absolute; left:-6px; right:0; top:-53px; min-width:56px; width:auto; font-family: 'Roboto'; background:#066bfd; color:#fff; padding:8px; border-radius: 8px;}
+.labResultBox.sales .labResultGraph .bar span img{position: relative; top: 4px; width: 10px; height: 10px; float: left; margin-left: 3px;}
+.labResultBox.sales .labResultGraph .bar span::before {content:''; position:absolute; left:22px; bottom:-7px; width:15px; height:15px; background: #066bfd; transform:rotate(45deg); border-radius: 2px;}
+.labResultBox.sales .labResultGraph .date {display:block; font-size:14px; color:#767676; text-align: center;}
+
+
+/* 사장님 신용관리 - 신용정보상세 */
+.mcmTitBox {margin-bottom:30px;}
+.mcmTitBox:not(:first-child) {margin-top:40px;}
+.mcmTitBox h2{font-size:19px; font-weight: 700; line-height: 30px; color:#222;}
+
+.accoTitle .num{float:right; margin-right:30px;}
+
+.cardInfoList .cardInfoItem:not(:first-child) {margin-top:32px;}
+.cardInfoList .cardInfoItem strong {font-size:15px; font-weight: 700;}
+.cardInfoList .cardInfoItem strong select {width: auto; height:30px; border: 0; font-size:15px; padding:0 35px 0 0; background:url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat calc(100% - 10px) 5px; background-size:24px;}
+.cardInfoList .cardInfoItem div {display:flex; justify-content: space-between; margin-top:12px;}
+.cardInfoList .cardInfoItem div dt {color:#767676; width:60px;}
+.cardInfoList .cardInfoItem div dd {color:#444; width: calc(100% - 60px); text-align:right;}
+
+
+/* 사장님 신용관리 - 사업장 설정 */
+.workplaceSet .lineboxList li button.delete{position:absolute; left:25px; top:25px; width:24px; height:24px; min-height:auto; border-radius: 50%; background:#066bfd; margin:0; padding:0;}
+.workplaceSet .lineboxList li button.delete::before {content:''; position:absolute; left:6px; top:11px; width:12px; height:2px; background:#fff; }
+.workplaceSet .lineboxList li strong {margin-left:32px;}
+.workplaceSet .lineboxList li span {margin-left:32px;}
+.workplaceSet .lineboxList li button.move {position:absolute; right:19px; top:50%; transform:translateY(-50%); width:20px; height: 7px; min-height:auto; padding:0; margin:0;}
+.workplaceSet .lineboxList li button.move::before {content:''; position:absolute; left:0; top:0; width:20px; height:2px; background:#767676;}
+.workplaceSet .lineboxList li button.move::after {content:''; position:absolute; left:0; bottom:0; width:20px; height:2px; background:#767676;}
+
+.workplaceBox {position:relative;}
+.workplaceBox .btn{position:absolute; top:-75px; right:0; width:45px; min-width:auto;}
+
+
+/* 사장님 신용관리 - 사업자등록 */
+.grayWrap .innerBox{padding: 35px 0; margin-bottom:45px;}
+.grayWrap .btnWrap {margin-top:40px;}
+
+.colorRed {color:#d50f3c;}
+
+.creditScoreBox {margin:-25px 0 40px 0 ;}

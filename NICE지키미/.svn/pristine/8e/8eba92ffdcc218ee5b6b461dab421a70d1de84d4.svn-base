@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '소비현황', prev: true, menu: true };
+    
+    $(function() {        
+      modal.openModal('#cardDetail');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="content">
+        <div class="section">
+          
+          <a href="#useCardList" class="btn base modalOpen">거래내역</a>
+          
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+
+    <!-- 카드상세내역 팝업 -->
+    <div class="uiModal full" id="cardDetail">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>거래상세내역</h1>						
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="dHead">
+              <h2 class="name">(주)나이스베이커리</h2>
+              <strong><span>150,000</span>원</strong>
+            </div>
+            <!--// detailHd -->
+            <div class="dCont">
+              <dl>
+                <div>
+                  <dt>카드번호</dt>
+                  <dd>1234-5678-1234-5678</dd>
+                </div>
+                <div>
+                  <dt>승인일시</dt>
+                  <dd>22.06.06 12:30</dd>
+                </div>
+                <div>
+                  <dt>승인상태</dt>
+                  <dd>승인</dd>
+                </div>
+                <div>
+                  <dt>사용구분</dt>
+                  <dd>체크</dd>
+                </div>
+                <div>
+                  <dt>결제방법</dt>
+                  <dd>일시불</dd>
+                </div>
+                <div>
+                  <dt>승인번호</dt>
+                  <dd>123456789</dd>
+                </div>
+                <div>
+                  <dt>가맹점 사업자번호</dt>
+                  <dd>107-19-27433</dd>
+                </div>
+              </dl>
+              <dl class="last">
+                <dt>결제내역문의</dt>
+                <dd>1544-7000</dd>
+              </dl>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom"></div>
+        </div>
+        
+      </div>
+    </div>
+    <!--// 카드상세내역 팝업 -->
+  </div>
+</body>
+
+</html>

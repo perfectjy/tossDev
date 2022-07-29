@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button - Guide</title>
+
+  <script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+  <style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}     
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+  <h1 class="guideTit">Button</h1>
+  <p class="para">
+    .btn (기본 클래스)
+  </p>
+  <div class="code">
+    <code>
+      <p>
+        &lt;div class=""&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn primary"&gt;&lt;span&gt;버튼명&lt;/span&gt;&lt;/button&gt;<br>
+        &lt;/div&gt;
+      </p>
+    </code>
+  </div>
+  <div class="guideItem">
+    <div class="bottomActiveBtns">
+      <div class="btnConts">
+        <button type="button" class="btn second"><span>이전</span></button>
+        <button type="button" class="btn primary"><span>확인</span></button>
+      </div>
+      </div>    
+  </div>
+  <div class="guideItem">
+    <button type="button" class="btn base"><span>확인</span></button>
+    <button type="button" class="btn base" disabled="disabled"><span>확인</span></button>
+  </div>
+  <div class="guideItem">
+    <div class="btnConts">
+      <button type="button" class="btn base"><span>개인정보변경</span></button>
+      <button type="button" class="btn base"><span>확인</span></button>
+    </div>
+  </div>
+  <div class="guideItem">
+    <div class="btnConts over">
+      <button type="button" class="btn base"><span>확인</span></button>
+      <button type="button" class="btn base"><span>개인정보변경</span></button>      
+    </div>
+  </div>
+  <div class="guideItem">
+    <div class="btnConts plex">
+      <button type="button" class="btn base"><span>버튼1</span></button>
+      <button type="button" class="btn base"><span>버튼2</span></button>
+      <button type="button" class="btn base"><span>버튼3</span></button>
+    </div>
+  </div>
+  <div class="guideItem">
+    <div class="">
+      <button type="button" class="btn sub"><span>로그인</span></button>
+    </div>
+  </div>
+  <div class="guideItem">
+    <div class="">
+      <button type="button" class="btn ics"><span class="">다운로드</span></button>
+    </div>
+  </div>
+  <div class="guideItem">
+    <button type="button" class="btn round"><span class="hidden">더보기</span><i class="more"></i></i></button>
+    <button type="button" class="btn round"><span class="hidden">공유하기</span><i class="share"></i></i></button>
+    <button type="button" class="btn round"><span class="hidden">캡쳐하기</span><i class="capture"></i></i></button>
+  </div>
+  <br><br><br><br><br><br>
+</div>
+</body>
+</html>

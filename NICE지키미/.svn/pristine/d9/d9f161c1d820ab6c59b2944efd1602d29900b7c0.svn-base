@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+  
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '대출받기', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width:62.5%"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">5</strong>
+              <span class="hidden">전체단계</span><strong>8</strong>
+            </div>
+          </div>
+          <div class="governing">
+            <h2 class="governingTitle">현재 운영 중인 사업장과 소득 정보를 입력해 주세요</h2>
+          </div> 
+
+          <div class="formWrap">
+            <div class="formItem">
+              <label for="biz" class="titItem">업종</label>
+              <div class="formEle">
+                <select id="biz">
+                  <option>선택</option>
+                </select>
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="comName" class="titItem">사업장명</label>
+              <div class="formEle">
+                <input type="text" placeholder="검색으로 입력" id="comName" disabled="disabled">
+              </div>
+              <div class="intBotBtn">
+                <button type="button" class="btn base"><span class="search">사업장 검색</span></button>
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="joinDate" class="titItem">개업일</label>
+              <div class="intDate">
+                <input type="text" id="joinDate" value="2202.01.01">
+                <a href="#none" class="btnDate"><span class="hidden">날짜 선택</span></a>
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="money" class="titItem">연 소득</label>
+              <div class="intPrice">
+                <input type="text" id="money" placeholder="숫자만 입력">
+                <span class="unit">만원</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>이전</span></button>
+              <button type="button" class="btn primary"><span>다음</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

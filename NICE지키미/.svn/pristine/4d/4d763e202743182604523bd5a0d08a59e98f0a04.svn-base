@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container" >
+      <div id="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width:calc((100% / 8) * 2 )"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">2</strong>
+              <span class="hidden">전체단계</span><strong>8</strong>
+            </div>
+          </div>
+          <div class="governing">
+            <h2 class="governingTitle">
+              PC에 저장된 공동인증서를<br>스마트폰으로 복사합니다.
+            </h2>
+          </div>
+          <h3 class="h4">공동인증서 가져오기 안내</h3>
+          <ol class="listCircle">
+            <li><i>1</i>PC 나이스지키미 [관리/설정 > [공동인증서 관리 > 스마트폰 공동인증서 복사] 선택</li>
+            <li><i>2</i>[모바일 기기로 인증서 내보내기] 팝업에서 공동인증서 선택 후 비밀번호 입력</li>
+            <li><i>3</i>인증번호 입력칸에 앱화면 아래 12자리 승인번호 입력 후 [마침] 버튼 누르기</li>
+            <li><i>4</i>PC에서 휴대폰 전송메시지 확인 후 아래 [확인] 버튼 누르기</li>
+            <li><i>5</i>모바일 앱 [공동인증서 관리 > 인증서 확인 > 공동인증서 가져오기] 누르면 복사 완료</li>
+          </ol>
+          <div class="formSingle">
+            <div class="intCol3">
+              <div><input type="text" value="1234" title="승인번호 앞 4자리"></div>
+              <div><input type="text" value="5678" title="승인번호 가운데 4자리"></div>
+              <div><input type="text" value="1111" title="승인번호 뒤 4자리"></div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>확인</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->   
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

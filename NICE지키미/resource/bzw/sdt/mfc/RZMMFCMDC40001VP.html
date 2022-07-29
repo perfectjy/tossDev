@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '개인신용정보 전송내역', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#agree01');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#agree01" class="btn base modalOpen">개인신용정보 수집&middot;이용에 관한 동의 약관</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal full" id="agree01">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>개인신용정보 수집&middot;이용에 관한 동의 약관</h1>
+				</div>
+				<div class="modalContent">
+					<div class="inner">
+						<!-- content -->
+						<div class="policyWrap">
+							<div class="policyNotice">
+								<p class="policyTit">개인신용정보 수집·이용에 관한 동의 <br>(가입상품 목록 조회)</p>
+								<div class="policyInfo">
+									<p>
+										NICE평가정보는 신용정보의 이용 및 보호에
+										관련 법률, 개인정보 보호법 등 관련 법령에 따라
+										다음과 같이 귀하의 개인(신용)정보를
+										처리합니다.
+									</p>
+								</div>
+							</div>
+							<div class="policyConts">
+								<dl>
+									<dt>수집·이용 목적</dt>
+									<dd>상세정보 전송요구를 위한 가입상품목록 조회</dd>
+								</dl>
+								<dl>
+									<dt>보유 및 이용기간</dt>
+									<dd>
+										<p class="emp"><em>상세정보 전송요구 시까지 또는 7일 중 짧은 기간</em></p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>수집&middot;이용 항목</dt>
+									<dd>
+										<p>개인신용정보</p>
+										<ul class="listDot">
+											<li>
+												개인식별정보
+												<ul class="listDash">
+													<li>전자서명, 접근토큰, 인증서, 전송요구서</li>
+												</ul>
+											</li>
+											<li>
+												신용거래정보
+												<ul class="listDash">
+													<li>
+														은행: 수신계좌목록(고객정보 최초 생성일시,
+														전송요구여부, 계좌번호, 회차번호, 상품명,
+														외화계좌여부, 마이너스 약정 여부, 계좌번호
+														별 구분 코드, 계좌번호별 상태 코드)
+													</li>
+													<li>
+														투자: 계좌목록조회(고객정보 최초
+														생성일시,전송요구 여부, 계좌번호, 계좌명,
+														계좌종류, 계좌상태)
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<div class="policyInfo">
+									귀하는 개인(신용)정보 수집·이용에 관한 동의를
+									거부하실 수 있습니다. 다만, “가입상품 목록
+									전송요구서 및 개인신용정보 수집·이용에 관한
+									동의＂는 본인신용정보 통합조회 서비스의
+									이용을 위해 필수적 사항이므로 동의를
+									거부하실 경우 금융자산 모아보기, 금융자산연결
+									서비스의 이용이 제한될 수 있습니다.
+								</div>
+							</div>
+						</div>
+						<!--// content -->
+					</div>
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>확인</span></button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

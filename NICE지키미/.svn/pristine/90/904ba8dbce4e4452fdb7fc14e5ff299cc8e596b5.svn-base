@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>품종검색</title>
+
+    <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '반려동물 나이 계산기', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+
+          <!-- 캡처 영역 -->
+          <div class="myPetAgeResult">
+            <div class="governing">
+              <h2 class="governingTitle">반려동물 나이 계산결과</h2>
+            </div>
+
+            <div class="ageResult">
+              <div class="ageResultTit">
+                <span class="agePet">
+                  <span class="thumb"><img src="../../../../img/bzw/@tmp/@tmp_cat.png" alt=""></span>
+                  <p>00년</p>
+                </span>
+                <span class="agePerson">
+                  <span class="thumb"><img src="../../../../img/bzw/etc/etc_mypet.png" alt=""></span>
+                  <p>00살</p>
+                </span>
+              </div>
+
+              <!-- 계산결과 분류에 따른 설명글 노출 -->
+              <div class="ageResultContent">
+                <strong>청년기</strong>
+                <p class="ageResultTxt">
+                  강아지 나이로 <span>3년 7개월</span>은 사람 나이로 <span>29살</span>입니다.
+                  계산기로 환산하면 <span>나신용</span> 님과 <span>0살</span> 차이가 나네요!
+                  청년기는 활동력과 건강이 가장 좋은 시기이니
+                  함께 산책과 활발한 운동을 즐기는 것은 어떨까요?
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <!-- //캡처 영역 -->
+
+          <div class="btnBox">
+            <button type="button" class="btn round"><span class="hidden">공유하기</span><i class="share"></i></button>
+            <button type="button" class="btn round"><span class="hidden">캡쳐하기</span><i class="capture"></i></button>
+          </div>
+
+          <!-- <div class="bottomActiveBtns"> -->
+          <div class="btnConts">
+            <button type="button" class="btn base"><span>다시하기</span></button>
+          </div>
+          <!-- </div> -->
+
+          <div class="petDesc">
+            <ul class="listDot">
+              <li>
+                나이 정보는 강아지/고양이 생애주기의 이해를 돕기 위한 참고자료이며, 품종과 환경에 따라 다를 수 있습니다.<br>
+                출처:한국동물병원협회
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottomQuickMenu scroll">
+            <ul class="pet">
+              <li><a href="#none" class="ico01"><span>색상별<br>랭킹</span></a></li>
+              <li><a href="#none" class="ico02"><span>반려동물<br>나이계산기</span></a></li>
+              <li><a href="#none" class="ico03"><span>반려동물<br>이름추천</span></a></li>
+              <li><a href="#none" class="ico04"><span>반려동물<br>이름랭킹</span></a></li><!-- 다자인 업데이트 필요 -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+</html>

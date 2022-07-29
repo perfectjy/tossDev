@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>금융소비자보호</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '약관', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modalid');
+    });
+  </script>
+</head>
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modalid" class="btn base modalOpen">제휴금융회사 정보</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+
+  <div class="uiModal full" id="modalid">
+    <div class="modalWrap">
+      <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>제휴금융회사 정보</h1>
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->
+          <div class="governing">
+            <h2 class="governingTitle">
+              NICE평가정보㈜와 맞춤대출 서비스를 제휴하고 있는 금융기관입니다.
+            </h2>
+          </div>
+
+          <!-- - Admin에서 등록한 제휴금융회사 표테이블 출력 -->
+          <table class="tblList">
+            <caption>제공 중인 법원/관보정보</caption>
+            <colgroup>
+              <col style="width:33.3%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">기관명</th>
+                <th scope="col">제휴계약일</th>
+                <th scope="col">고객센터</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">한국투자저축은행</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+              <tr>
+                <th scope="row">스마트저축은행</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+              <tr>
+                <th scope="row">KB저축은행</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+              <tr>
+                <th scope="row">롯데카드</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+              <tr>
+                <th scope="row">현대카드</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+              <tr>
+                <th scope="row">신한카드</th>
+                <td>2020.02.02</td>
+                <td>1588-0000</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btnConts">
+            <button type="button" class="btn primary"><span>닫기</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

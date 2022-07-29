@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객센터>신용상담신청</title>
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '신용상담신청', prev: true, menu: true};
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="tabWrap t1">
+            <ul class="tabList">
+              <li class="tab active"><a href="#tab01">신용상담신청</a></li>
+              <li class="tab"><a href="#tab02">상담내역</a></li>
+            </ul>
+            <div class="tabConts">
+              <div class="tabPanel" id="tab01">
+                <div class="tabWrap t2">
+                  <ul class="tabList">
+                    <li class="tab"><a href="#tabIn01">신용정보 정정청구</a></li>
+                    <li class="tab"><a href="#tabIn02">신용점수 이의신청</a></li>
+                    <li class="tab active"><a href="#tabIn03">신용상담</a></li>
+                  </ul>
+                  <div class="tabConts">
+                    <div class="tabPanel" id="tabIn01">
+                      <div class="formWrap">
+                        <div class="formItem">
+                          <label for="mail" class="titItem">이메일</label>
+                          <div class="intHalf mail">
+                            <span class="inp">
+                              <input type="text" id="mail">
+                            </span>
+                            <span class="inp">
+                              <select>
+                                <option>native.co.kr</option>
+                              </select>
+                            </span>
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>이메일 변경</span></button>
+                          </div>
+                        </div>
+                        <div class="formItem">
+                          <label for="hpnum" class="titItem">휴대폰 번호</label>
+                          <div class="formEle">
+                            <input type="tel" id="hpnum" value="01012**34**">                            
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>휴대전화번호 변경</span></button>
+                          </div>
+                          <p class="guideTxt listDot">개인정보를 수정하실 경우, 회원정보가 업데이트 됩니다.</p>
+                        </div>
+                        <div class="formItem">
+                          <strong class="titItem">청구 목적</strong>
+                          <div>
+                            <div class="uiItem">
+                              <input type="radio" name="period" id="period1" checked="checked">
+                              <label for="period1"><span>신용정보 삭제</span></label>
+                            </div>
+                            <div class="uiItem">
+                              <input type="radio" name="period" id="period1_1">
+                              <label for="period1_1"><span>신용정보 수정</span></label>
+                            </div>
+                          </div>  
+                        </div> 
+                        <div class="formItem">                          
+                          <label for="wriTxtarea1" class="titItem">잘못된 나의 신용정보</label>
+                          <div class="formEle">
+                            <textarea class="textarea" id="wriTxtarea1" rows="7" placeholder="본인의 신용정보를 확인한 날짜(년, 월, 일)를 포함하여 작성해주세요."></textarea>
+                          </div>
+                          <div class="byteLimit"><em>0</em>/ 2,000</div>
+                        </div>
+                        <div class="formItem">
+                          <label for="wriTxtarea2" class="titItem">정정할 내용</label>
+                          <div class="formEle">
+                            <textarea class="textarea" id="wriTxtarea2" rows="7" placeholder="내용입력"></textarea>
+                          </div>
+                          <div class="byteLimit"><em>0</em>/ 2,000</div>
+                        </div>
+                        <div class="formItem">
+                          <label for="wriTxtarea3" class="titItem">정정 사유</label>
+                          <div class="formEle">
+                            <textarea class="textarea" id="wriTxtarea3" rows="7" placeholder="내용입력"></textarea>
+                          </div>
+                          <div class="byteLimit"><em>0</em>/ 2,000</div>
+                        </div>
+                        <ul class="agreeList">
+                          <li>
+                            <div class="uiItem"><input type="checkbox" id="agr01"><label for="agr01">개인정보이용 및 제공 동의</label></div>
+                            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                          </li>
+                        </ul>
+                        <div class="uiAcco infoTip">
+                          <div class="uiAccoHeader open">          
+                            <button type="button" class="uiBtn">
+                              <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                            </button>
+                          </div>
+                          <div class="uiAccoContent">
+                            <ul class="listDot">
+                              <li>'신용정보 정정 신청서' 양식을 작성하신 후 신용정보 정정청구 버튼을 누르시면 당사에 ‘신용정보 정정신 청서’ 가 제출됩니다.</li>
+                              <li>정정청구를 받은 후 신용정보회사 등에서는 사실여부의 조사 및 확인을 위해 필요한 경우 신용정보 주체에게 관련 증빙자료의 제시를 요청할 수 있습니다.
+                                <em>관련 서류 및 증빙자료 제출 : (팩스) 02-2122-8060</em>
+                              </li>
+                              <li>신용정보집중기관 및 신용정보회사는 신용정보주체의 정정청구에 따른 사실 확인을 위하여 필요한 경우에는 당해 신용정보를 등록한 정보의 사실 여부를 입증할 수 있는 자료를 요청할 수 있습니다.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="bottomActiveBtns">
+                          <div class="btns">
+                            <button type="button" class="btn primary"><span>상담신청</span></button>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>                
+                    <div class="tabPanel" id="tabIn02">
+                      <div class="governing">
+                        <h2 class="governingTitle">지금 <span class="pColor">바로 해결</span>하실 수 있는<br class="mob">  문의가 있는지 확인해 보세요</h2>
+                      </div>
+                      <div class="uiAcco info">
+                        <div class="uiAccoHeader">
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;신용점수&#93; 개인 신용점수가 타사와 다릅니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;장기연체&#47;CB연체정보&#93; 연체의 기준이 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;대출&#47;채무보증정보&#93; 나의 대출정보가 내가 알고 있는 내용과 다릅니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;카드실적정보&#93; 카드실적은 신용점수에 어떻게 반영되는지 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;공공정보&#93; 공공정보는 어떤 사유로 등록되고 활용되는지 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                      </div>
+
+                      <div class="formWrap spm">
+                        <div class="formItem">
+                          <label for="mail2" class="titItem">이메일</label>
+                          <div class="intHalf mail">
+                            <span class="inp">
+                              <input type="text" id="mail2">
+                            </span>
+                            <span class="inp">
+                              <select>
+                                <option>native.co.kr</option>
+                              </select>
+                            </span>
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>이메일 변경</span></button>
+                          </div>
+                        </div>
+                        <div class="formItem">
+                          <label for="hpnum2" class="titItem">휴대폰 번호</label>
+                          <div class="formEle">
+                            <input type="tel" id="hpnum2" placeholder="" value="01012**34**">                            
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>휴대전화번호 변경</span></button>
+                          </div>
+                          <p class="guideTxt listDot">개인정보를 수정하실 경우, 회원정보가 업데이트 됩니다.</p>
+                        </div>
+                        <div class="formItem">
+                          <label for="inpType1" class="titItem">이의신청 유형</label>
+                          <div class="formEle">
+                            <select id="inpType1">
+                              <option>신용점수 산출 사유</option>
+                              <option>신용점수 변경 사유</option>
+                              <option>신용점수 상향 방법</option>
+                              <option>CB사간 신용점수 차이</option>
+                              <option>기타</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="formItem">                          
+                          <label for="wriTxtarea4" class="titItem">이의신청 내용</label>
+                          <div class="formEle">
+                            <textarea class="textarea" id="wriTxtarea4" rows="7" placeholder="내용입력"></textarea>
+                          </div>
+                          <div class="byteLimit"><em>0</em>/ 2,000</div>
+                        </div>
+                        <ul class="agreeList">
+                          <li>
+                            <div class="uiItem"><input type="checkbox" id="agr02"><label for="agr02">개인정보 제공 및 활용동의</label></div>
+                            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="uiAcco infoTip">
+                        <div class="uiAccoHeader open">          
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          <ul class="listDot">
+                            <li>의뢰하신 이의신청 내용이 사실과 다른 것이 확인될 경우, 이의신청이 거부될 수 있으며 이미 정정된 정보는 다시 복원 될 수 있습니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="bottomActiveBtns">
+                        <div class="btns">
+                          <button type="button" class="btn primary"><span>상담신청</span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabPanel" id="tabIn03">
+                      <div class="governing">
+                        <h2 class="governingTitle">문의하기 전 확인해 보세요</h2>
+                      </div>
+                      <div class="uiAcco info">
+                        <div class="uiAccoHeader">
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;신용점수&#93; 신용점수가 타사와 다릅니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;장기연체/CB연체정보&#93; 연체정보의 기준이 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;대출/채무보증정보&#93; 나의 대출정보가 내가 알고 있는 내용과 다릅니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;카드실적정보&#93; 카드실적은 신용점수에 어떻게 반영 되는지 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                        <div class="uiAccoHeader">        
+                          <button type="button" class="uiBtn">
+                            <span class="accoTitle">&#91;공공정보&#93; 공공정보는 어떤 사유로 등록되고 활용되는지 궁금합니다.</span><span class="hidden">펼치기</span>
+                          </button>
+                        </div>
+                        <div class="uiAccoContent">
+                          내용
+                        </div>
+                      </div>
+                      <div class="formWrap spm">
+                        <div class="formItem">
+                          <label for="mail3" class="titItem">이메일</label>
+                          <div class="intHalf mail">
+                            <span class="inp">
+                              <input type="text" id="mail3">
+                            </span>
+                            <span class="inp">
+                              <select>
+                                <option>native.co.kr</option>
+                              </select>
+                            </span>
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>이메일 변경</span></button>
+                          </div>
+                        </div>
+                        <div class="formItem">
+                          <label for="hpnum3" class="titItem">휴대폰 번호</label>
+                          <div class="formEle">
+                            <input type="tel" id="hpnum3" value="01012**34**">                            
+                          </div>
+                          <div class="intBotBtn">
+                            <button type="button" class="btn base"><span>휴대전화번호 변경</span></button>
+                          </div>
+                          <p class="guideTxt listDot">개인정보를 수정하실 경우, 회원정보가 업데이트 됩니다.</p>
+                        </div>
+                        <div class="formItem">
+                          <label for="inpType2" class="titItem">상담 유형</label>
+                          <div class="formEle">
+                            <select id="inpType2">
+                              <option>신용정보관리 및 열람</option>
+                              <option>신용점수</option>
+                              <option>장기연체정보</option>
+                              <option>대출/보증/단기카드대출(현금서비스)</option>
+                              <option>신용개설/신용조회기록</option>
+                              <option>공공정보</option>
+                              <option>신용회복지원제도</option>
+                              <option>단기연체정보</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="formItem">
+                          <label for="inpTitle" class="titItem">제목</label>
+                          <div class="formEle">
+                            <input id="inpTitle" type="text" placeholder="제목 입력">
+                          </div>                          
+                          <div class="byteLimit"><em>0</em>/ 50</div>
+                        </div>
+                        <div class="formItem">
+                          <label for="wriTxtarea5" class="titItem">내용</label>
+                          <div class="formEle">
+                            <textarea class="textarea" id="wriTxtarea5" rows="7" placeholder="내용입력"></textarea>
+                          </div>
+                          <div class="byteLimit"><em>0</em>/ 2,000</div>
+                        </div>
+                        <div class="bottomActiveBtns">
+                          <div class="btns">
+                            <button type="button" class="btn primary"><span>상담신청</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>                
+              <div class="tabPanel" id="tab02">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

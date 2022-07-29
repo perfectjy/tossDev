@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table - Guide</title>
+
+	<script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+	<style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}  
+    .guideItem h2 {margin-bottom:15px;}   
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+	<h1 class="guideTit">Table</h1>
+
+  <div class="guideItem">
+    <h2>기본테이블 .tblList</h2>
+    <table class="tblList">
+      <caption>제공 중인 법원/관보정보</caption>
+      <colgroup>
+        <col style="width:33.3%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">실종공시최고</th>
+          <th scope="col">실종선고</th>
+          <th scope="col">부재선고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">파산선고</th>
+          <td>면책선고</td>
+          <td>일부면책선고</td>
+        </tr>
+        <tr>
+          <th scope="row">국정상실</th>
+          <td>국적회복</td>
+          <td>국적이탈</td>
+        </tr>
+        <tr>
+          <th scope="row">국적취득</th>
+          <td>귀화허가</td>
+          <td>국적보유</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h2>가운데정렬 .tblList.txtC</h2>
+    <table class="tblList txtC">
+      <caption>제공 중인 법원/관보정보</caption>
+      <colgroup>
+        <col style="width:33.3%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">실종공시최고</th>
+          <th scope="col">실종선고</th>
+          <th scope="col">부재선고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">파산선고</th>
+          <td>면책선고</td>
+          <td>일부면책선고</td>
+        </tr>
+        <tr>
+          <th scope="row">국정상실</th>
+          <td>국적회복</td>
+          <td>국적이탈</td>
+        </tr>
+        <tr>
+          <th scope="row">국적취득</th>
+          <td>귀화허가</td>
+          <td>국적보유</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="guideItem">
+    <h2>약관내 테이블 .tblTerm</h2>
+    <table class="tblTerm">
+      <cpation>개인신용정보 제공동의</cpation>
+      <colgroup>
+        <col width="33%"/>
+        <col width="67%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="col">개인(신용) 정보를 제공받는 자</th>
+          <td><p class="emp"><em>나이스평가정보㈜ 신용정보사업 부문</em></p></td>
+        </tr>
+        <tr>
+          <th scope="col">제공받는 자의 이용목적</th>
+          <td><p class="emp"><em>본인인증.식별확인, 신용도 평가 및 제공, 통계작성, 연구.분석, 공공가관의 정책자료로 활용 등 개인신용평가회사의 업무목적</em></p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+</body>
+
+</html>

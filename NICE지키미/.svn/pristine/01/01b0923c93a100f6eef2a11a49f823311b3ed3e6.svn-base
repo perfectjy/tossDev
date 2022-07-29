@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '회원탈퇴', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">회원탈퇴 시 안내사항</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>회원탈퇴 시 안내사항을 확인하세요.</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <ul class="listDot">
+              <li>회원님의 정보는 회원탈퇴 이후 개인정보취급방침에 의해 일정기간 보존 후 자동삭제 됩니다.</li>
+              <li>탈퇴 시 회원님께서 보유하셨던 유료서비스 및 쿠폰은 모두 삭제됩니다.</li>
+              <li>회원탈퇴 후 재가입 시 이전 회원정보는 복구되지 않으며, 무료 서비스도 추가 제공되지 않습니다.</li>
+              <li>소셜연동 해제를 원하시면, 탈퇴 전 회원정보변경에서 소셜연동을 해제해야 합니다.</li>
+              <li>회원탈퇴 시 마이데이터 자산관리 서비스의 모든 정보는 파기되며 정보 복원은 불가합니다. 마이데이터 전송요구가 철회 및 기존에 수집된 개인신용정보가 삭제됩니다.</li>
+            </ul>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>확인</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

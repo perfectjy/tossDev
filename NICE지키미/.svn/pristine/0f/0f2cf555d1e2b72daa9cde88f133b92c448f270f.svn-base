@@ -1,0 +1,32 @@
+@charset "euc-kr";
+
+/* base or common */
+body {color:#222;} /* 수정? */
+.section  {padding: 0 20px;}
+.titPage {font-size:21px; font-weight: 700; margin-top: 30px;}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {width:100%; height:50px; border:1px solid #dcdff1; border-radius: 0; padding:0 15px; font-size: 15px;} /* 수정? */
+input::placeholder {color:#87909b;}
+.area {padding-top: 15px;}
+.insertWrap ul>li {margin-top: 25px;}
+.insertWrap .titItem {display: inline-block; font-size: 12px; margin-bottom: 8px;}
+.checkRight {display: flex; flex-direction: row; justify-content: flex-end; margin-top: 20px;}
+.checkToggle {display: inline-block; position: relative; vertical-align: middle; margin-right: 7px;}
+.checkToggle input[type=checkbox] {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%;opacity: 0;}
+.checkToggle label {position: relative; display: block; width: 33px; height: 20px; border-radius: 20px; border: 1px solid #c6cfdb; background: #c6cfdb;}
+.checkToggle input[type=checkbox]:checked+label {border-color: #066bfd; background: #066bfd;}
+.checkToggle label:after {content: ""; display: block; width: 18px; height: 18px; border-radius: 50%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: #fff; transition: .3s;}
+.checkToggle input[type=checkbox]:checked+label:after {left: calc(100% - 18px);}
+.checkToggle input[type=checkbox]+label::before {display: none;} /* reset? */
+.btnConts {display: flex; flex-direction: row; justify-content: center; margin-top: 20px;} /* 수정? */
+.btn {display: flex; flex-direction: row; justify-content: center; align-items: center; height: 56px; line-height: unset; border-radius: 10px;} /* 수정? */
+.btnLink {font-size: 14px; position: relative; padding-left: 12px; margin-left: 8px;}
+.btnLink::before {content:''; display: block; width: 4px; height: 4px; border-radius:4px; background-color: #d4d4d4; position: absolute; left: 0; top: calc(50% - 2px);}
+.btnLink:first-child {padding-left: 0; margin-left: 0;}
+.btnLink:first-child:before {display: none;}
+.btnSns {width:50px; height:50px; margin: 0 8px; font-size: 0; background-position: center; background-repeat: no-repeat; background-size: 100% auto;}
+.btnSns.naver {background-image: url(../../img/bzw/common/ico/ico_naver.png);}
+.btnSns.kakao {background-image: url(../../img/bzw/common/ico/ico_naver.png);}
+.btnSns.apple {background-image: url(../../img/bzw/common/ico/ico_naver.png);}

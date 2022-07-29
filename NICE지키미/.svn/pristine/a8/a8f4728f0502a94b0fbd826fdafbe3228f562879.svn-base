@@ -1,0 +1,210 @@
+@charset "euc-kr";
+ 
+
+/*****************************************************************
+  데이터놀이
+*****************************************************************/
+
+/* 반려동물 */
+.myPet {position:relative; padding-top:65px;}
+.myPet .petImg {position:absolute; top:0; left:0; right:0; text-align: center;}
+[class^="pet"] .photo {display:block; overflow:hidden; width:130px; height:130px; background:#fff url(../../img/bzw/etc/etc_mypet_default.png) no-repeat; background-size:100%; border:1px solid #8e9abd; border-radius: 50%;}
+[class^="pet"] .photo img {max-width:100%;}
+.myPet .petImg .photo {margin:0 auto;}
+.myPet .petImg p {font-size:16px; line-height:30px; color:#fff;}
+.myPet .petList {width: auto; border-radius:30px; padding:122px 0 30px 0; text-align: center; background:linear-gradient(#29b0ff, #127ef4, #0969ef); box-shadow: 10px 10px 20px rgba(53, 135, 255, 0.3);}
+.myPet .petList li a {color:#fff;}
+.myPet .petList li .photo {border:0;margin:0 auto;}
+.myPet .petList li .petRegister {position:relative; display:block; width:60px; height:60px; border-radius: 24px; border-color: #d4d4d4; background:#fff ;}
+.myPet .petList li .register {display:block; font-size:14px; line-height: 20px; margin-top:6px; text-align: center;}
+.myPet .petList li .petRegister::before{content:""; position:absolute; left:0; top:0; bottom:0; right:0; width:100%; height:100%; background:url(../../img/bzw/common/ico/ico_add.png) no-repeat center; background-size:15px;}
+
+
+/* 반려동물 정보 */
+.myPetInfo {position:relative; margin-top:32px; padding: 0 25px;}
+.myPetInfo .infoTit {font-size:15px; line-height: 22px; font-weight: 500;}
+.myPetInfo .infoList {font-size:14px; line-height: 30px; color:#444; margin-top:12px;}
+.myPetInfo .infoList >dt {float:left; margin-right:24px;}
+.myPetInfo .myPetInfoBtn {position:absolute; right:25px; top:-6px; width:55px; height:26px; line-height: 26px; border-radius: 13px; background: #1d6fdb; text-align: center;}
+.myPetInfo .myPetInfoBtn::before {content:""; position:absolute; right:10px; top:50%; transform:translateY(-50%); width:10px; height:17px; background:url(../../img/bzw/common/ico/ico_arr_fix.png) no-repeat center; background-size:50%;}
+.myPetInfo .myPetInfoBtn >span {font-size: 14px; letter-spacing: -.8px; color:#fff; margin-right:12px;}
+
+
+/* 카드정보 */
+.cardInfoWrap {position:relative; background: #f0f1f3; padding: 30px 20px 20px; margin:35px -20px 0 -20px; }
+.cardInfoWrap h3 {font-size:20px; line-height: 28px; font-weight: 700;}
+.cardInfoWrap strong {font-weight: 700;}
+.cardInfoWrap .cardInfo {position:relative; margin-top:16px; padding:25px; background: #fff; border-radius: 19px;}
+.cardInfoWrap .cardInfo > strong {font-size:17px; line-height: 25px;}
+.cardInfoWrap .cardInfo p {font-size:14px; line-height:24px; color:#767676; margin-top:14px;}
+.cardInfoWrap .cardInfo p strong:not(.pColor) {color:#000;}
+.cardInfoWrap .cardInfo .cardImg {width: 100%; margin-top:17px;}
+.cardInfoWrap .cardInfo .cardImg img {width: 100%;}
+.cardInfoWrap .cardInfo a {position:absolute; top:0; left:0; right:0; bottom:0;}
+
+
+/* 반려동물 사진등록 */
+.petImgInt {position:relative; width:130px; margin:0 auto;}
+.petImgInt a {position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
+.petImgInt a:after {position: absolute; content:''; width:32px; height:32px; top:86px; right:-4px; background:url(../../img/bzw/common/ico/ico_add_round.png) no-repeat; background-size: contain;}
+
+
+/* 품종검색 */
+.resultWrap {margin-top:30px; overflow-y:auto; height:calc(100vh - 380px)}
+.resultWrap .petList li {padding:0; display:block;}
+.resultWrap .petList li:not(:first-child) { margin-top:20px;}
+.resultWrap .petList label {display:flex; width:100%;}
+.resultWrap .petList .photo {border-radius: 50%;}
+.resultWrap .petList .name {padding-left:15px;font-size:16px; align-self: center; margin:0;}
+
+
+/* 반려동물 나이 계산기 */
+.lineFormSearch .btn {position:absolute; right:0; bottom:5px;}
+.petListWrap {margin:20px -20px 0 -20px; text-align:center;}
+.petList, .petList ul {font-size:0;}
+.petList li {display:inline-block; padding:0 5px;}
+.petList li a {display:block; color:#222;}
+.petList li .photo {width:60px; height:60px; border-radius: 24px; border-color: #d4d4d4;} 
+.petList li .name {display:block; font-size:14px; line-height: 20px; margin-top:6px; text-align: center;}
+.petList li .btnPet {width:60px; font-size:14px; line-height: 20px;}
+.petList li input:checked + label {font-weight: bold; color:#066bfd}
+.petList li input:checked + label .photo {border-color:#066bfd;}
+.petDesc {margin-top: 90px;}
+.petDesc .listDot {color:#767676;}
+.petDesc .listDot li::before {background: #767676;}
+
+
+/* 반려동물 나이 계산결과 */
+.ageResult {position:relative; padding-top:65px; color: #fff;}
+.ageResult .ageResultTit {position:absolute; left:0; top:0px; right: 0; display:flex; justify-content: center; align-items: center; text-align: center;}
+.ageResult .ageResultTit >span {margin: 0 -5px; }
+.ageResult .ageResultTit .thumb {display:block; overflow:hidden; width:100px; height:100px; border-radius: 50%;}
+.ageResult .ageResultTit .thumb img {max-width:100%;}
+.ageResult .ageResultTit .agePet .thumb {background:#fff url(../../img/bzw/etc/etc_mypet_default.png) no-repeat; background-size:100%; border:1px solid #8e9abd;}
+.ageResultContent {border-radius:30px; padding:80px 20px 30px 20px; text-align: center; background:linear-gradient(#29b0ff, #127ef4, #0969ef); box-shadow: 10px 10px 20px rgba(53, 135, 255, 0.3);}
+.ageResultContent strong {font-size: 18px;}
+.ageResultContent .ageResultTxt {margin-top: 10px; text-align: left;}
+
+
+/* 이름추천 */
+.nameRecomInfo {margin-top:20px;}
+
+
+/* 색상선택 */
+.colorSelect .selList {display:flex; flex-wrap: wrap; margin-top:-18px;}
+.colorSelect .selList >li {width: 25%; text-align:center; font-size: 12px; line-height: 21px; margin-top:18px;}
+.colorSelect .selList >li label {position:relative; display:inline-block;}
+.colorSelect .selList >li label:before {display:block; content:''; width:60px; height:60px;border:1px solid #eee; background-color:#fff; border-radius: 50%; margin:0 auto 5px; box-sizing: border-box;}
+.colorSelect .selList >li .beige:before {background-color: #faebd7;}
+.colorSelect .selList >li .blackBullet:before {background-color: url();}
+.colorSelect .selList >li .brown:before {background-color: #835136;}
+.colorSelect .selList >li .black:before {background-color: #000;}
+.colorSelect .selList >li .gray:before {background-color: #adadad;}
+.colorSelect .selList >li .yellow:before {background-color: #adadad;}
+.colorSelect .selList >li .darkBrown:before {background-color: #594944;}
+.colorSelect .selList >li .lightBrown:before {background-color: #cd9369}
+.colorSelect .selList >li .orange:before {background-color: #de8529;}
+.colorSelect .selList >li .reddishBrown:before {background-color: #743217;}
+.colorSelect .selList >li .blue:before {background-color: #a3d7ec;}
+.colorSelect .selList >li .grayBrown:before {background-color: #a79c88;}
+.colorSelect .selList >li .combin:before {background: linear-gradient(45deg, #e2a810, #fe1201)}
+.colorSelect .selList >li .blackTan:before {background:radial-gradient(black, white);}
+.colorSelect .selList >li input[type="radio"]:checked + label {color:#066bfd}
+.colorSelect .selList >li input[type="radio"]:checked + label:before {border:5px solid #fff;}
+.colorSelect .selList >li input[type="radio"]:checked + label:after {position:absolute; content:''; top:0; left:0; width:60px; height:60px; border:2px solid #066bfd; border-radius: 50%; box-sizing: border-box;}
+
+
+/* 이름상세, 색상별상세 */
+.grayWrap {background: #f0f1f3; margin:0 -20px 0 -20px; padding:0 20px; }
+.grayWrap .governing {background:#fff; width:calc(100% + 40px); margin:0 -20px; padding:0 20px 35px 20px;}
+.cardInfoWrap.gray {margin-top:0;}
+.rankDesc {padding-top:25px;}
+.rankDesc .nickList {font-size:16px; color:#222; margin-bottom:16px;}
+.rankDesc .nickList > li {display:inline-block;}
+.rankDesc strong {display:block; font-size:17px; line-height: 25px; font-weight: 700; color:#066bfd; margin:0 0 8px 0;}
+.rankDesc p {font-size:14px; line-height: 24px; color:#444;}
+
+.descConts {position:relative; background: #fff; border-radius: 16px; padding:20px; margin-top:20px;}
+.descConts strong {display:block; font-size:15px; color:#222; margin-bottom: 15px;}
+.descConts img {width:61px; height:61px; background: #fff; border: 1px solid #dcdff1; border-radius: 50%; margin-right:10px; overflow: hidden; object-fit: contain;}
+.descConts p {font-size:14px; color:#444; display:inline-block;}
+.descConts .rankView {margin-top:0px;}
+.descConts a.link {position: absolute; left:0; top:0; right:0; bottom:0;}
+
+.pCompare {display:flex; justify-content: center; text-align:center; line-height:22px; margin-top:15px;}
+.pCompare li div:before {display:block; content:''; width:85px; height:85px; margin:0 auto 10px auto;}
+.pCompare li .female::before {background: url(../../img/bzw/@tmp/@tmp_pet_female.png) no-repeat; background-size: 100%;}
+.pCompare li .male::before {background: url(../../img/bzw/@tmp/@tmp_pet_male.png) no-repeat; background-size: 100%;}
+.pCompare li p {font-weight: 700;}
+.pCompare .than {display:flex; justify-content: center; align-items: center; width:78px; height:85px;}
+.pCompare .than::before {content:"";display:inline-block; width:58px; height:100px; background:url(../../img/bzw/@tmp/@tmp_than.png)no-repeat center; background-size:50%;}
+
+
+/* 이름랭킹 */
+.custForm.widAll {width:100%;}
+.rankView .rankList .first {color:#066bfd; font-weight: 500;}
+
+/* 실험실 */
+.quizWrap .quizStage {color: #767676; line-height: 20px; margin-bottom:5px; font-size: 16px;} 
+.quizWrap .quizStage b {color: #222;} 
+.quizWrap h2 {font-size:21px; line-height: 30px; font-weight: 700;}
+.quizWrap .rdoGroup.full input[type=radio] + label {text-align: left; padding: 15px 20px; height: auto;}
+.quizWrap .quizImage {height: 155px; text-align: center; margin:35px 0 45px 0;}
+.quizWrap .quizImage img {max-width: 100%; max-height: 100%;}
+.quizWrap .btnConts a:nth-child(2) {margin-left:40px;}
+
+/* 이벤트 */
+.eventList {padding-top: 30px;}
+.eventList ul>li:not(:first-child){padding-top: 20px;}
+.eventList ul>li .imgWrap {background-color: #ddd; width: 100%; /*min-height: 130px;*/ border-radius: 19px;}
+.eventList ul>li .info { position: relative; padding: 0 65px 0 5px; margin-top:15px;}
+.eventList ul>li .info .tit {font-size: 16px; line-height: 22px; font-weight: 700; word-break: keep-all; text-overflow: ellipsis;  display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 2;}
+.eventList ul>li .info .date {display:block; padding-top: 5px; font-size: 12px; color: #767676;}
+.eventList ul>li .info .tag {position: absolute; right: 0; top: 0; width: 60px; height: 23px; background-color: #deeeff; display: flex; align-items: center; justify-content: center; border-radius: 18px; font-size: 12px; color: #0071ce; font-weight: 700;}
+.eventList ul>li.disabled .imgWrap::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3);}
+.eventList ul>li.disabled .imgWrap img {opacity:.4; filter: grayscale(100%);}
+.eventList ul>li.disabled .info .tag {background-color: #f9f9f9; color: #767676;}
+
+.boardTit {font-size: 21px; font-weight: 700;}
+.boardTit .date {padding-top: 10px; font-size: 12px; color: #767676;}
+.boardConts {padding: 30px 0 40px; font-size: 16px; word-break: keep-all;}
+.boardConts .imgWrap {margin: 0 -20px; padding-bottom:20px;}
+
+.pagenation {border-top: 1px solid #eee; }
+.pagenation li {position:relative; border-bottom: 1px solid #eee;}
+.pagenation li::before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat center; background-size: cover; }
+.pagenation li.prev::before {transform: translateY(-50%) rotate(180deg); }
+.pagenation li a {display: block; padding:20px 30px;}
+
+
+
+
+
+
+
+/* 금융소비자보호 -(탭)체계, (탭)금융소비자권리  */
+.cnsInfoBox h3 {position:relative; padding-left:12px; margin-bottom:12px;}
+.cnsInfoBox h3::before {position:absolute; content:''; top:9px; left:0; width:4px; height:4px; background-color:#444; border-radius: 50%;}
+/* dl.ruleList {position:relative; font-size:14px; line-height: 22px; color:#444; }
+dl.ruleList .line {text-decoration:underline; font-weight: 500;}
+dl.ruleList >div { padding-left:21px;}
+dl.ruleList >div dt {position:relative;}
+dl.ruleList >div dt::before {position:absolute; content:''; top:10px; left:-12px; width:4px; height:1px; background-color:#444;} */
+
+/* 금융소비자보호 - (탭)민원접수 */
+.listLine>li {position:relative; padding-left:20px; line-height: 22px; }
+.listLine>li:before {position:absolute; content:''; top:11px; left:12px; width:4px; height:1px; background-color:#444;}
+.listLine>li:not(:first-child) {margin-top:10px;}
+p.listLine {position:relative; padding-left:22px; line-height: 22px; }
+p.listLine::before {position:absolute; content:''; top:11px; left:12px; width:4px; height:1px; background-color:#444;}
+dl.listNum {position: relative; padding-left:12px;}
+dl.listNum dt{float:left;}
+
+
+
+/* 고객센터 */
+
+/* 공통 고려사항 */
+.ui-allim.scroll { height:216px; padding:20px 15px; background: #fafafa; overflow-y: auto;}
+
+/* //고객센터 */

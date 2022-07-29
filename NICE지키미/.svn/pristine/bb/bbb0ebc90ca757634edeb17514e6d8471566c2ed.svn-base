@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab - Guide</title>
+
+    <script src="../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../js/bzw/jquery-ui.min.js"></script>
+    <script src="../js/bzw/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../css/zkm/bzw/common.css">
+    <style>
+        .guideWrap {
+            padding: 40px;
+        }
+
+        .mobile .guideWrap {
+            padding: 20px;
+        }
+
+        .guideTit {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .guideItem {
+            margin-top: 40px;
+        }
+
+        .guideItem h2 {
+            margin-bottom: 15px;
+        }
+
+        .code {
+            display: block;
+            padding: 25px;
+            overflow: auto;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0;
+            background: #e0e0e0;
+        }
+
+        .mobile .code {
+            padding: 15px;
+        }
+
+        .code code {
+            display: inline-block;
+        }
+
+        .code code p {
+            display: inline;
+            white-space: nowrap;
+        }
+
+        p+p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guideWrap">
+        <h1 class="guideTit">Tab</h1>
+        <p class="para">
+            .uiTab (기본 클래스)<br>
+            .active (활성화)
+        </p>
+
+        <div class="guideItem">
+            <div class="tabWrap t1">
+                <ul class="tabList">
+                    <li class="tab"><a href="#tab01">첫번째탭</a></li>
+                    <li class="tab active"><a href="#tab02">두번째탭</a></li>
+                    <li class="tab"><a href="#tab03">세번째탭</a></li>
+                </ul>
+                <div class="tabConts">
+                    <div class="tabPanel" id="tab01">
+                        첫번째 탭 내용
+                    </div>
+                    <div class="tabPanel" id="tab02">
+                        <div class="tabWrap t2">
+                            <ul class="tabList">
+                                <li class="tab active"><a href="#tabIn01">첫번째 IN탭</a></li>
+                                <li class="tab"><a href="#tabIn02">두번째 IN탭</a></li>
+                                <li class="tab"><a href="#tabIn03">세번째 IN탭</a></li>
+                            </ul>
+                            <div class="tabConts">
+                                <div class="tabPanel" id="tabIn01">
+                                    첫번째 내용
+                                </div>
+                                <div class="tabPanel" id="tabIn02">
+                                    두번째 내용
+                                </div>
+                                <div class="tabPanel" id="tabIn03">
+                                    세번째 내용
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabPanel" id="tab03">
+                        세번째 탭 내용
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideItem">
+            <div class="tabWrap t1">
+                <ul class="tabList col2">
+                    <li class="tab active"><a href="#tab1">서비스 이용약관</a></li>
+                    <li class="tab"><a href="#tab2">개인정보처리방침</a></li>
+                    <li class="tab"><a href="#tab3">저작권 정책</a></li>
+                    <li class="tab"><a href="#tab4">웹접근성 안내</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guideItem">
+            <div class="tabWrap t1">
+                <ul class="tabList col3">
+                    <li class="tab active"><a href="#none">은행(3)</a></li>
+                    <li class="tab"><a href="#none">투자(1)</a></li>
+                    <li class="tab"><a href="#none">페이</a></li>
+                    <li class="tab"><a href="#none">보험</a></li>
+                    <li class="tab"><a href="#none">통신</a></li>
+                    <li class="tab"><a href="#none">카드</a></li>
+                    <li class="tab"><a href="#none">할부금융</a></li>
+                    <li class="tab f2"><a href="#none">P2P/대부/인수채권</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guideItem">
+            <div class="tabBox">
+                <div class="tabmenu rollTab">
+                    <ul>
+                        <li><a href="#tabCont2_1"><span>탭메뉴1탭메뉴1</span></a></li>
+                        <li><a href="#none"><span>탭메뉴2탭메뉴2</span></a></li>
+                        <li><a href="#tabCont2_3"><span>탭메뉴3탭메뉴3</span></a></li>
+                    </ul>
+                </div>
+                <div id="tabCont2_1" class="tab_panel">
+                    내용2_1 <br>
+                    내용2_1 <br>
+                    내용2_1 <br>
+                    내용2_1 <br>
+                    내용2_1 <br>
+                </div>
+                <div id="tabCont2_2" class="tab_panel">
+                    내용2_2 <br>
+                    내용2_2 <br>
+                    내용2_2 <br>
+                    내용2_2 <br>
+                    내용2_2 <br>
+                </div>
+                <div id="tabCont2_3" class="tab_panel">
+                    내용2_3 <br>
+                    내용2_3 <br>
+                    내용2_3 <br>
+                    내용2_3 <br>
+                    내용2_3 <br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

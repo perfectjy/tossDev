@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">마이데이터 서비스 이용</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>소비 내역을 정확하게 확인해 보시겠어요?</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="historyArea">
+              <p class="subTit">계좌 출처 및 메모 표시</p>
+              <div class="grayBox">
+                <dl class="tit">
+                  <dt>입금</dt>
+                  <dd><strong>+500,000원</strong></dd>
+                </dl>
+                <dl class="memo">
+                  <dt>15:47</dt>
+                  <dd>1,584,320원</dd>
+                </dl>
+              </div>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn second"><span>나중에 할래요</span></button>
+              <button type="button" class="btn primary"><span>네, 확인할래요</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

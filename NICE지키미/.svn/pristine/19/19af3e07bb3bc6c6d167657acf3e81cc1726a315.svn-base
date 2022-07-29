@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미:고객센터</title>
+
+    <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <link rel="stylesheet" href="../../../../css/bzw/ko.css">
+  <script type="text/javascript">
+    mbHeader = { title: '신용상담신청', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">
+    <!-- header -->    
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+
+          <div class="tabWrap t1">
+            <ul class="tabList">
+              <li class="tab"><a href="#tab01">신용상담신청</a></li>
+              <li class="tab active"><a href="#tab02">상담 내역</a></li>
+            </ul>
+            <div class="tabConts">
+              <div class="tabPanel" id="tab01">
+                첫번째 탭 내용
+              </div>    
+              <div class="tabPanel" id="tab02">
+                
+                <div class="questionListWrap">
+                  <ul class="questionList">
+                    <li>
+                      <a href="none">
+                        <div class="flagWrap">
+                          <span class="answer">처리중</span>
+                          <span class="answer done">답변완료</span>
+                          <span class="mark">신용상담</span>
+                        </div>
+                        <div class="questionTit">
+                          <strong><span class="questionType">[장기연체 정보]</span> 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                        </div>
+                        <div class="questionDate">
+                          2022.04.21
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="none">
+                        <div class="flagWrap">
+                          <span class="answer">처리중</span>
+                          <span class="answer done">답변완료</span>
+                          <span class="mark">신용정보 정정청구</span>
+                        </div>
+                        <div class="questionTit">
+                          <strong>신용정보 정정 신청서</strong>
+                        </div>
+                        <div class="questionDate">
+                          2022.04.21
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="none">
+                        <div class="flagWrap">
+                          <span class="answer">처리중</span>
+                          <span class="answer done">답변완료</span>
+                          <span class="mark">신용정보 정정청구</span>
+                        </div>
+                        <div class="questionTit">
+                          <strong>신용점수 이의 신청서</strong>
+                        </div>
+                        <div class="questionDate">
+                          2022.04.21
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <!-- 최초 노출 목록 개수가 10개 이하일 경우 노출되지 않아야 합니다
+                      클릭 시 목록 개수가 10개 씩 노출되어야 합니다. -->
+                <div class="btnBox">
+                  <button type="button" class="btn more"><span>더보기</span></button>
+                </div>
+
+                <!-- 내역이 없을 경우 노출 -->
+                <div class="noList" style="display:none">
+                  <p>검색된 결과가 없습니다.</p>
+                </div>
+                
+              </div>  
+            </div>
+          </div>
+
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '직장정보 수정하기', home: false, prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">
+                            나신용님의 소중한 <strong class="pColor">직장 정보</strong>를 확앤해주세요.
+                        </h2>
+                    </div>
+                    <div class="formWrap">
+                        <div class="formItem">
+                            <label for="company" class="titItem">직장이름</label>
+                            <div class="formEle">
+                                <input type="text" placeholder="직장이름 입력" id="company">
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <label for="group" class="titItem">부서이름</label>
+                            <div class="formEle">
+                                <input type="text" placeholder="부서이름 입력" id="group">
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <label for="address1" class="titItem">직장주소</label>
+                            <div class="intAddr nosp">
+                                <div class="intPost">
+                                    <input type="text" title="우편번호" placeholder="검색으로 입력" disabled>
+                                    <div class="intBtn">
+                                        <button type="button" class="btn base"><span>주소검색</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <input type="text" title="주소" disabled="disabled">
+                                </div>
+                                <div class="item">
+                                    <input type="text" title="상세주소" disabled="disabled">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <h3 class="tit">직장주소 변경을 위해 아래 증빙자료 중 하나를 제출해주세요.</h3>
+                            <div class="formEle filebox">
+                                <input class="uploadName" placeholder="증빙자료 첨부" readonly="readonly">
+                                <label for="attach"></label>
+                                <input type="file" id="attach" title="증빙자료 첨부">
+                            </div>
+                        </div>
+                        <div class="ineBoxConnect sp">
+                            <ul>
+                                <li>
+                                    <div class="ineBox">
+                                        <ul class="listDot">
+                                            <li>주소를 변경할 경우<br>
+                                            - 직장주소가 표시된 재직증명서(필수) 또는 명함(선택)<br>
+                                            - 1개월 이내 발급된 재직증명서에 신청인 생년월일 표기, 회사직인(또는 대표자인감 등) 날인 필수
+                                            </li>
+                                            <li>전화번호를 변경할 경우<br>전화번호가 표기된 재직증명서 또는 명함</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ineBox gray">
+                                        <p class="sColor">
+                                            대표자인 경우 사업자등록증명서(정부24 / 국세청 홈텍스 발급)
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="formItem">
+                            <label for="phone" class="titItem">전화번호</label>
+                            <div class="formEle">
+                                <input type="text" placeholder="전화번호 입력" id="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>취소</span></button>
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

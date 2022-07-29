@@ -1,0 +1,91 @@
+@charset "euc-kr";
+
+/* 공통 */
+.listStar > li{position:relative; padding-left:12px; margin-top:10px; line-height:22px;}
+.listStar > li:before {position:absolute; content:'*'; top:3px; left:0; width:4px; height:4px; color:#444; font-size:14px;}
+.listDot strong {font-weight:700; color:#444;}
+.listDot.mg .dash {margin-top:12px;}
+.listNum.mg {margin-top:12px;}
+.listNum.mg li{margin-top:0;} 
+
+/* 고객선터 > 서비스문의 */
+.infoTxt {padding-left:5px; margin-top:10px; font-size:12px; color:#444;}
+.infoTxt::before {content:''; display:inline-block; width:4px; height:4px; margin-right:11px; vertical-align:middle; border-radius:50%; background:#444;}
+.inqList li:not(:first-child) {margin-top:10px;}
+.inqList li a {position:relative; display:inline-block; width:100%; padding:14px 24px; border:1px solid #eee; border-radius:12px;}
+.inqList li a .qnaTagStatus {display:inline-block; height:22px; padding:0 10px; min-width:55px; border-radius:4px; background:#767676; color:#fff; font-size:13px; font-weight:500; text-align:center;}
+.inqList li a .qnaTagStatus.complete {background-color:#066bfd;}
+.inqList li a:after{content: ''; position: absolute; right:14px; top:50%; width: 24px; height: 24px; background:url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat; background-size: 100%; transform:translateY(-50%) rotate(-90deg);}
+.inqList .contTxt {display:block;  margin:15px auto 6px; font-size:16px; font-weight: 700; color:#222;}
+.inqList .data {display:block; color:#767676;}
+
+/* 고객선터 > 신용상담신청 */
+.priAgree {padding-top:30px; display:block;}
+.priAgree + .uiAccoWrap.srvInfo {margin-top:30px;}
+.priAgree .inpBtn{position:relative; display:inline-block; width:20px; height:20px; vertical-align:text-bottom;}
+.priAgree .inpBtn:after {position:absolute; left:7px; top:5px; content: ''; width:7px; height:7px; border-top:2px solid #222; border-right: 2px solid #222; transform: rotate(45deg);}
+.uiAccoWrap.srvInfo .listDot strong {display:block; margin-top:10px; color:#444; font-weight:700;}
+
+
+/* 미소짓는 데이터생활 > 소비자보호 */
+/* .perCreditSlider {margin-bottom:15px;}
+.perCreditSlider li {height:260px;}
+.perCreditSlider [class^=slideItem] {position:relative; width:100%; margin:0 auto; height:260px; max-height:100%; background:#fff url(../../img/bzw/common/bg/bg_phone.png) no-repeat 50% 50% /280px auto;}
+.wordBalloonBox {position:absolute; bottom:0; right:0; width:200px; height:120px; background:url(../../img/bzw/common/bg/bg_balloon.png) no-repeat right bottom  / 200px 120px;}
+.wordBalloonBox p {display:inline-block; padding:15px;} */
+
+
+/* 미소짓는 데이터생활 > 신용평점체계공시(개인/개인사업자)*/
+/* .selectBox + .tabWrap {margin-top:25px;} */
+.creditScoreInfo .h3 {margin-bottom:13px;}
+.creditScoreInfo .h4 {font-weight:500;}
+.creditScoreInfo .infoBox:not(:first-child){margin-top:15px;}
+.creditScoreInfo .listDot strong {color:#222; font-weight:700;}
+.creditScoreInfo .infoBox h4 {margin-bottom:8px;}
+.creditScoreInfo .infoBox li > .title {color:#444; font-weight:700;}
+.creditScoreInfo .infoBox li > .txt {color:#444;}
+.infoBox + .listDot {margin-top:16px;}
+
+.conInfoWrap .listDot {margin-bottom:24px;}
+/* .infoBox dl dt {min-width:85px; color:#767676;} */
+.arrow {margin-bottom:20px;}
+.arrow span {display:block; padding-left:16px;}
+.arrow + .infoWrap {margin-top:0}
+.infoWrap {margin-top:25px;}
+.infoWrap > .listDot {margin-bottom:20px; font-weight:700;}
+.infoWrap .tblList + .listDash {margin-top:20px;}
+.infoWrap .btnConts {margin-top:15px;}
+
+.listInfo .date {display:block; margin-top:8px;}
+.listInfo.t1 > .subTxt {display:block; margin-top:6px; color:#767676;}
+.selectBox {margin-bottom:36px}
+
+.listStar strong {display:inline-block; font-weight:700; color:#444;}
+.btnConts.mg {margin:15px auto 30px;}
+
+.graphWrap {margin-top:15px;}
+.graphWrap .des {position:relative; font-size:14px;}
+.graphWrap div.des {height:60px;} 
+.graphWrap .des em {position:absolute; left:110px; top:10px; line-height:22px;}
+.graphWrap .des em:before {content:':'; position:absolute; left:-10px; top:8px; width:3px; height:7px;}
+.graphWrap .des > span {display:block; padding-left:17px;}
+.graphWrap .des [class^=element] {position:absolute; left:63px} 
+.graphWrap .des .elementTop {top:8px; left:56px;}
+.graphWrap .des .elementBottom {bottom:8px; border-top:1px solid #2e3653;}
+.graphWrap .des + .listDot {margin-top:20px;}
+.graphWrap .des > strong {display:inline-block;  font-weight:700;}
+.graphWrap div.des > strong {line-height:60px;}
+.desWrap {margin-top:13px; margin-left:-20px; text-align:center;}
+.desEl, .desEl .sign {position:relative;}
+.desEl [class^=element] {position:absolute; margin-left:6px;}
+.desEl .elementTop {top:8px;}
+.desEl .elementBottom {bottom:8px; border-top:1px solid #2e3653;}
+.desEl strong {display:inline-block; line-height:60px; font-weight:700;}
+.desEl .txt{position:absolute; bottom:-18px; left:-16px}
+.desEl + .pColor {margin-top:6px;}
+.graphbox {width:100%; background-color:#fff}
+.graphbox img {max-width:100%; max-height:100%;}
+
+
+
+

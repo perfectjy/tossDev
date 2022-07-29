@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">자동로그아웃 안내</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal modal" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>자동로그아웃</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="autoLogInfo">
+              <div class="timeBox">
+                자동 로그아웃 남은 시간
+                <span class="time"><strong>58</strong>초</span>
+              </div>
+              <p>안전한 나이스지키미 서비스 이용을 위해<br>로그인 후 10분 동안 서비스 이용이 없어<br>자동 로그아웃됩니다.</p>
+              <strong>로그인을 연장하시겠습니까?</strong>
+            </div>
+
+            <div class="btnConts">
+              <button type="button" class="btn primary"><span>로그인 연장</span></button>
+            </div>                     
+            <!--// content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '변경조건 입력', prev: true, menu: true };
+        
+        $(function () {
+            var $slider = $('.rangeDues').find('.slider'),
+                $dispObj = $('#selDues'),
+                $initTxt = $dispObj.text();
+
+            $slider.slider({
+                min: 0,
+                max: 4,
+                step: 1,
+                range: 'min',
+                create: function (e) {
+                    $slider.find('.ui-slider-handle').html('<span class="hidden">선택한 값은 <i>' + $initTxt + '</i> 입니다.</span>');
+                },
+                stop: function (event, ui) {
+                    if (ui.value === 0) {
+                        valText = $slider.next('.scope').find('.start').text();
+                    } else if (ui.value === 1) {
+                        valText = $slider.next('.scope').find('.middle').text();
+                    } else if (ui.value === 2) {
+                        valText = $slider.next('.scope').find('.middle2').text();
+                    } else if (ui.value === 3) {
+                        valText = $slider.next('.scope').find('.middle3').text();
+                    } else if (ui.value === 4) {
+                        valText = $slider.next('.scope').find('.end').text();
+                    }
+                    
+                    $dispObj.html(valText);
+                    $slider.find('.ui-slider-handle').find('i').html(valText);
+                }
+            });
+        });
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle">신용점수 예측하기를 시작할게요!</h2>
+                        <p class="governingInfo">바꿔보고 싶은 내 신용정보만 입력해주세요.</p>
+					</div>
+					<div class="flowTxtBox">
+                        <!-- STEP 1 : 거래기간 설정 (공통-마지막단계에서 .togBtn 보여주기) -->
+                        <p class="ing">거래기간을 좀 더 늘려 볼까요?</p>
+                        <div class="formSearch">
+                            <div class="flowCont">
+                                <div class="rateArea">
+                                    <span class="tit">평가 반영 비중</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p><strong>평가반영비중</strong>
+                                                신용생활을 얼마나 했는지는 신용점수를 평가하는데 <span>14</span>% 비중을 차지해요.<br>카드를 보유한 기간, 대출 거래기간이 길수록 유리해요!
+                                            </p>
+                                            <!--// 장기연체 : 9% -->
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="barArea">
+                                        <span class="bar" style="width:14%;"></span>
+                                    </div>
+                                    <p class="per"><span>14</span>%</p>
+                                    <p class="fTxt">현재 신용거래기간은 <span><i>N</i>년 <i>NN</i>개월</span>이에요. 얼마나 늘려 볼까요?</p>
+                                    
+                                    <div class="rangeDuesWrap">
+                                        <span class="hidden">거래기간 선택</span>
+                                        <div class="rangeDues term">
+                                            <div class="slider" data-min="0" data-max="4" data-step="1"  aria-hidden="true"></div>
+                                            <div class="scope">
+                                                <span class="start">0</span>
+                                                <span class="middle">6개월</span>
+                                                <span class="middle2">1년</span>
+                                                <span class="middle3">2년</span>
+                                                <span class="end">3년</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong class="last">거래기간 <span class="pColor"><i>N</i>년 <i>NN</i>개월</span>의 신용점수를 알아볼게요.</strong>
+                                </div>
+                                
+                                <div class="btnConts">
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt emo2">거래기간을<div class="point">6개월<!-- <button type="button" class="togBtn">6개월</button> --></div>늘렸어요</div>
+                        </div>
+                        
+                        <!-- STEP 2 : 기존대출 설정 -->
+                        <p class="ing">이어서 기존 대출정보를 바꿔볼까요?</p>
+                        <div class="formSearch">
+                            <div class="flowCont">
+                                <div class="rateArea">
+                                    <span class="tit">평가 반영 비중</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p><strong>평가반영비중</strong>
+                                                신용생활을 얼마나 했는지는 신용점수를 평가하는데 <span>14</span>% 비중을 차지해요.<br>카드를 보유한 기간, 대출 거래기간이 길수록 유리해요!
+                                            </p>
+                                            <!--// 장기연체 : 9% -->
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="barArea">
+                                        <span class="bar" style="width:25%;"></span>
+                                    </div>
+                                    <p class="per"><span>25</span>%</p>
+                                </div>
+                                <div class="btnInBox">
+                                    <button type="button" class="btn base"><span>모든 대출을 전액 상환할래요</span></button>
+                                </div>
+        
+                                <div class="sComp">
+                                    <p class="fTxt"><span>점포명</span>에서 대출한 금액 <span>N,NNN만원</span>있어요. 얼마나 상환해 볼까요?</p>
+                                    <div class="formItem money">
+                                        <div class="btnConts">
+                                            <button type="button" class="btn base">+1만</button>
+                                            <button type="button" class="btn base">+10만</button>
+                                            <button type="button" class="btn base">+100만</button>
+                                            <button type="button" class="btn base">전액</button>
+                                        </div>
+                                        <div class="intPrice">
+                                            <input type="text" id="money" placeholder="숫자만 입력">
+                                            <span class="unit">만원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sComp">
+                                    <p class="fTxt"><span>점포명</span>에서 대출한 금액 <span>N,NNN만원</span>있어요. 얼마나 상환해 볼까요?</p>
+                                    <div class="formItem money">
+                                        <div class="btnConts">
+                                            <button type="button" class="btn base">+1만</button>
+                                            <button type="button" class="btn base">+10만</button>
+                                            <button type="button" class="btn base">+100만</button>
+                                            <button type="button" class="btn base">전액</button>
+                                        </div>
+                                        <div class="intPrice">
+                                            <input type="text" id="money" placeholder="숫자만 입력">
+                                            <span class="unit">만원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <strong class="last">대출을 <span class="pColor">일부 상환</span>한 후의 신용점수를 알아볼게요.</strong>
+                                
+                                <div class="btnConts">
+                                    <button type="button" class="btn second"><span>기존 상태 유지</span></button>
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt">기존 대출을<div class="point">일부 상환 <!-- <button type="button" class="togBtn">일부 상환</button> --></div>하고,</div>
+                        </div>
+
+                        <!-- STEP 3 : 신규대출 설정 -->
+                        <p class="ing">새로운 대출을 받을 예정인가요?</p>
+                        <div class="formSearch">
+                            <div class="flowCont">
+                                <div class="rateArea">
+                                    <span class="tit">평가 반영 비중</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p><strong>평가반영비중</strong>
+                                                신용생활을 얼마나 했는지는 신용점수를 평가하는데 <span>14</span>% 비중을 차지해요.<br>카드를 보유한 기간, 대출 거래기간이 길수록 유리해요!
+                                            </p>
+                                            <!--// 장기연체 : 9% -->
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="barArea">
+                                        <span class="bar" style="width:25%;"></span>
+                                    </div>
+                                    <p class="per"><span>25</span>%</p>
+                                    <p class="fTxt">대출을 어디서 받는지에 따라 신용점수 반영에 차이가 있어요.<br>어디서 얼마를 받아볼까요?</p>
+                                </div>
+                                
+                                <div class="sComp">
+                                    <div class="formItem">
+                                        <label for="bsGoods" class="titItem">업권 선택</label>
+                                        <select id="bsGoods">
+                                            <option selected="selected">은행</option>
+                                            <option>캐피탈/리스</option>
+                                            <option>보험</option>
+                                            <option>상호금융/조합</option>
+                                            <option>저축은행</option>
+                                            <option>카드</option>
+                                        </select>
+                                    </div>
+                                    <div class="formItem money">
+                                        <label for="money" class="titItem">예상 대출금액</label>
+                                        <div class="btnConts">
+                                            <button type="button" class="btn base">+1만</button>
+                                            <button type="button" class="btn base">+10만</button>
+                                            <button type="button" class="btn base">+50만</button>
+                                            <button type="button" class="btn base">+100만</button>
+                                        </div>
+                                        <div class="intPrice">
+                                            <input type="text" id="money" placeholder="숫자만 입력">
+                                            <span class="unit">만원</span>
+                                        </div>
+                                    </div>
+                                    <p class="fTxt bold">예상 개설일: <span>YYYY</span>년 <span>MM</span>월 <span>DD</span>일</p>
+                                </div>
+                                
+                                <div class="sComp">
+                                    <div class="btnInBox">
+                                        <button type="button" class="btn base"><span class="more">다른곳에서도 대출 받을래요</span></button>
+                                    </div>
+                                    <p class="infoTxt">새로운 대출 등록은 최대 3건 가능합니다.</p>
+                                </div>
+                                
+                                <strong class="last"><span class="pColor">은행</span>에서 총 <span class="pColor"><i>N,NNN</i>만원</span> 대출 후 신용점수를 알아볼게요.</strong>
+        
+                                <div class="btnConts">
+                                    <button type="button" class="btn second"><span>기존 상태 유지</span></button>
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt emo11">새로운 대출을<div class="point"><i>N</i>건 <i>N,NNN</i>만원 <!-- <button type="button" class="togBtn">N건 N,NNN만원</button> --></div> 받았어요</div>
+                        </div>
+
+                        <!-- STEP 4 : 연제정보 설정 -->
+                        <p class="ing">이어서 연체를 상환해볼까요?</p>
+                        <div class="formSearch">
+                            <div class="flowCont">
+                                <div class="rateArea">
+                                    <span class="tit">평가 반영 비중</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p><strong>평가반영비중</strong>
+                                                신용생활을 얼마나 했는지는 신용점수를 평가하는데 <span>14</span>% 비중을 차지해요.<br>카드를 보유한 기간, 대출 거래기간이 길수록 유리해요!
+                                            </p>
+                                            <!--// 장기연체 : 9% -->
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="barArea">
+                                        <span class="bar" style="width:48%;"></span>
+                                    </div>
+                                    <p class="per"><span>48</span>%</p>
+                                    <p class="fTxt">현재 등록되어 있는 <span>N</span>건의 연체 중, 상환해 볼 연체를 선택해주세요.</p>
+                                </div>
+                                <div class="btnInBox">
+                                    <button type="button" class="btn base"><span>모든 연체를 상환할래요</span></button>
+                                </div>
+                            
+                                <div class="sComp">
+                                    <ul class="chkList t1">
+                                        <li>
+                                            <input type="checkbox" name="overdue1" id="overdue1" checked="checked">
+                                            <label for="overdue1" class="item">
+                                                <span class="tit">장기연체(신용정보원)</span>
+                                                <dl>
+                                                    <div>
+                                                        <dt>점포명</dt>
+                                                        <dd>OK저축은행</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연체발생일</dt>
+                                                        <dd>2019.02.25</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연체금액</dt>
+                                                        <dd>15,164,000원</dd>
+                                                    </div>
+                                                </dl>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="overdue2" id="overdue2">
+                                            <label for="overdue2" class="item">
+                                                <span class="tit">단기연체</span>
+                                                <dl>
+                                                    <div>
+                                                        <dt>점포명</dt>
+                                                        <dd>OK저축은행</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연체발생일</dt>
+                                                        <dd>2019.02.25</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>연체금액</dt>
+                                                        <dd>15,164,000원</dd>
+                                                    </div>
+                                                </dl>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <strong class="last">연체를 <span class="pColor">일부 상환</span>한 후의 신용점수를 알아볼게요.</strong>
+                                </div>
+                                
+                                <div class="btnConts">
+                                    <button type="button" class="btn second"><span>기존 상태 유지</span></button>
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt emo4">이어서 연체를<div class="point">일부 상환 <!-- <button type="button" class="togBtn">일부 상환</button> --></div> 했어요</div>
+                        </div>
+
+                        <!-- STEP 5 : 신용카드/체크카드/현금서비스 사용액 -->
+                        <p class="ing">소비습관도 바꿔볼까요?</p>
+                        <div class="formSearch card">
+                            <div class="flowCont">
+                                <div class="rateArea">
+                                    <span class="tit">평가 반영 비중</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p><strong>평가반영비중</strong>
+                                                신용생활을 얼마나 했는지는 신용점수를<br> 평가하는데 <span>14</span>% 비중을 차지해요.<br>카드를 보유한 기간, 대출 거래기간이 길수록 유리해요!
+                                            </p>
+                                            <!--// 장기연체 : 9% -->
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="barArea">
+                                        <span class="bar" style="width:65%;"></span>
+                                    </div>
+                                    <p class="per"><span>65</span>%</p>
+                                    <p class="fTxt">신용/체크카드 사용금액은 신용점수에 높은 영향을 줘요.</p>
+                                </div>
+                              
+                                <div class="sComp">
+                                    <p class="fTxt">최근 12개월 동안 평균 <span>신용카드</span> 한달 사용액은 <span><i>N,NN</i>만원</span>이에요.<br>평균 한달 사용액을 바꿔볼까요?</p>
+                                    <div class="editCont">
+                                        <div class="uiCont">
+                                            <div class="uiItem"><input type="radio" name="editCard1" id="edit1" checked="checked"><label for="edit1"><span>변경할래요</span></label></div>
+                                            <div class="uiItem"><input type="radio" name="editCard1" id="edit2"><label for="edit2"><span>유지할래요</span></label></div>
+                                        </div>
+                                        <div class="formItem money">
+                                            <span class="hidden">평균 한달사용액</span>
+                                            <div class="btnConts">
+                                                <button type="button" class="btn base">+1만</button>
+                                                <button type="button" class="btn base">+10만</button>
+                                                <button type="button" class="btn base">+50만</button>
+                                                <button type="button" class="btn base">+100만</button>
+                                            </div>
+                                            <div class="intPrice">
+                                                <input type="text" id="money" placeholder="숫자만 입력">
+                                                <span class="unit">만원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sComp">
+                                    <p class="fTxt">최근 12개월 동안 평균 <span>체크카드</span> 한달 사용액은 <span><i>N,NN</i>만원</span>이에요.<br>평균 한달 사용액을 바꿔볼까요?</p>
+                                    <div class="editCont">
+                                        <div class="uiCont">
+                                            <div class="uiItem"><input type="radio" name="editCard2" id="edit3" checked="checked"><label for="edit3"><span>변경할래요</span></label></div>
+                                            <div class="uiItem"><input type="radio" name="editCard2" id="edit4"><label for="edit4"><span>유지할래요</span></label></div>
+                                        </div>
+                                        <div class="formItem money">
+                                            <span class="hidden">평균 한달사용액</span>
+                                            <div class="btnConts">
+                                                <button type="button" class="btn base">+1만</button>
+                                                <button type="button" class="btn base">+10만</button>
+                                                <button type="button" class="btn base">+50만</button>
+                                                <button type="button" class="btn base">+100만</button>
+                                            </div>
+                                            <div class="intPrice">
+                                                <input type="text" id="money" placeholder="숫자만 입력">
+                                                <span class="unit">만원</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="sComp">
+                                    <p class="fTxt">최근 12개월 동안 평균 <span>현금서비스</span> 한달 사용액은 <span><i>N,NN</i>만원</span>이에요.<br>앞으로도 비슷하게 사용하실건가요?</p>
+                                    <div class="editCont full">
+                                        <div class="uiItem"><input type="radio" name="editCard3" id="edit5" checked="checked"><label for="edit5"><span>그만 사용할 예정이에요.</span></label></div>
+                                        <div class="uiItem"><input type="radio" name="editCard3" id="edit6"><label for="edit6"><span>유지할 예정이에요.</span></label></div>
+                                    </div>
+                                </div>
+                                <strong class="last sComp"><span class="pColor">신용카드/체크카드/현금서비스</span> 사용계획을 변경한 후의 신용점수를 알아볼게요.</strong>
+                            
+                                <div class="btnConts">
+                                    <button type="button" class="btn second"><span>기존 상태 유지</span></button>
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt">신용카드 한달 사용액을 <div class="point"><i>N,NNN</i>만원 <!-- <button type="button" class="togBtn">N,NNN만원</button> --></div>,</div>
+                            <div class="itemTxt">체크카드 한달 사용액을 <div class="point"><i>N,NNN</i>만원 <!-- <button type="button" class="togBtn">N,NNN만원</button> --></div>으로 바꿨어요.</div>
+                            <div class="itemTxt emo7">현금서비스 사용 계획을 <div class="point">변경 <!-- <button type="button" class="togBtn">변경</button> --></div>했어요</div>
+                        </div>
+
+                        <!-- STEP 6 : 마이데이터등록 설정 -->
+                        <p class="ing last">혹시, 마이데이터는 등록했나요?</p>
+                        <div class="formSearch">
+                            <div class="flowCont">
+                                <p class="fTxt">마이데이터 정보를 등록하면 신용점수를 올릴 수 있어요!<br>등록해 볼 정보를 눌러서 선택해주세요.</p>
+                                <ul class="chkList">
+                                    <li>
+                                        <input type="checkbox" name="cert1" id="cert1" checked="checked">
+                                        <label for="cert1" class="item">
+                                            <strong>국세청 소득금액증명서</strong>
+                                            <p>최근 등록일: <span>2022.03.11</span></p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="cert2" id="cert2">
+                                        <label for="cert2" class="item">
+                                            <strong>건강보험 납부증명서</strong>
+                                            <p>미등록</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="cert3" id="cert3">
+                                        <label for="cert3" class="item">
+                                            <strong>국민연금 납부증명서</strong>
+                                            <p>미등록</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="cert4" id="cert4">
+                                        <label for="cert4" class="item">
+                                            <strong>이동통신요금 납부내역</strong>
+                                            <p>최근 등록일: <span>2022.03.11</span></p>
+                                        </label>
+                                    </li>
+                                </ul>
+                              
+                                <strong class="last"><span class="pColor"><i>N</i>건</span>의 마이데이터정보를 추가로 등록한 후의 신용점수를 알아볼게요.</strong>
+                            
+                                <div class="btnConts">
+                                    <button type="button" class="btn second"><span>기존 상태 유지</span></button>
+                                    <button type="button" class="btn primary"><span>변경 적용</span></button>
+                                </div>
+                            </div>
+                            <div class="itemTxt emo5">마이데이터도 <div class="point"><i>N</i>건 <!-- <button type="button" class="togBtn">N건</button> --></div>등록했어요</div>
+                        </div>
+
+                        <div class="formSearch last">
+                            <div class="itemTxt emo9">모든 변경조건 입력을 완료했어요</div>
+                            <p>다시 변경하고 싶은 항목이 있다면, 위의 <span class="pColor">항목</span>을 눌러 다시 입력할수 있어요</p>
+                        </div>
+					</div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>예측결과 확인하기</span></button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

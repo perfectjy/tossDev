@@ -1,0 +1,29 @@
+(function(){
+  var str='';
+    str+='<div class="header" id="header">';
+    str+='  <!-- desk top header -->';
+    str+='  <div class="headerHome">';
+    str+='   <div class="headerGnb">';
+    str+='      <h1><a href="#none" title="나이스지키미 홈으로 이동하기"><span class="hidden">나이스지키미</span></a></h1>';
+    str+='      <h2 class="hidden">주요메뉴</h2>';
+    str+='      <nav class="gnb">';
+
+    str+='      </nav>';
+    str+='    </div>';       
+    str+='  </div>';
+    str+='  <!--// desk top header -->';
+
+    str+='  <!-- mobile header -->';
+    str+='  <div class="headerMob">';
+    str+='   <a href="#none" class="gnbNice" role="button"><span class="hidden">나이스지키미</span></a>';
+    str+='   <h1 class="gnbTitle"></h1>';
+    str+='   <button type="button" class="btnPrev"><span class="hidden">이전화면</span></button>';
+    str+='   <button type="button" id="btnGnb" class="btnGnb"><span class="hidden">전체메뉴 열기</span></button>';
+    str+='  </div>';
+    str+='  <!--// mobile header -->';
+    str+='</div>';
+    str+='<div class="mbGnbMenu">';
+    str+='  <button type="button" class="btnGnbClose"><span class="hidden">전체메뉴 닫기</span></button>';
+    str+='</div>';
+  document.write(str);
+})();

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미소짓는 데이터생활 > 소비자보호</title>
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>  
+  <script src="../../../js/bzw/ui.common.js"></script>
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '신용평점체계공시(개인/개인사업자)',  home: false, prev: true, menu: true};
+  </script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="selectBox">
+            <select title="성능지표 산출원리">
+              <option>성능지표 산출원리</option> <!-- 선택 -->
+              <option>개인신용평점의 의미</option>
+              <option>신용평점모형의 성능지표</option>
+              <option>개인신용평가 관련통계</option>
+              <option>법령 상 기준</option>  
+            </select>
+          </div>
+
+          <h3 class="h3">K-S 통계량(Kolmogorov-Smirnov Statistics)</h3>
+          <ul class="listDot">
+            <li>K-S 통계량은 우량집단과 불량집단의 누적분포의 차이를 나타내는 자료로 개인신용평점모형의 변별력 평가 시 주요 판별 통계량으로 활용됩니다.</li>
+            <li>K-S 통계량이 50이상이면 우수한 모형으로 판단합니다.</li>
+            <li>신용평점에 따른 우불량 집단의 분포차이로 누적 우량비율과 누적 불량비율 차이의 최대 값을 K-S 통계량으로 정의합니다.</li>
+          </ul>
+          <div class="graphWrap">
+             <div class="graphbox">
+              <img src="../../../img/zkm/bzw/etc/etc_graph1.png" alt="K-S 통계량을 나나태는 그래프"> 
+             </div>
+             <p class="des"> &#8251; <strong class="pColor">K - S</strong> = MAX &#124; 누적우량구성비 - 누적불량구성비 &#124; <span>&#58; 우불량 누적분포 사이의 MAXIMUM SEPARA</span> </p>
+          </div>
+
+          <div class="comp">
+            <h3 class="h3">지니(GINI) 계수</h3>
+            <ul class="listDot">
+              <li>Gini계수는 주로 소득 불평등을 측정하는 지표로 사용되는데, 소득 대신 신용평점에 따른 불량누적분포를 이용하여 신용평점모형의 변별력을 판별하는 지표로 활용합니다.</li>
+              <li>B. 누적불량 구성비를 y축으로, 누적구성비를 x축으로 나타낸 그래프 사이의 면적의 합을 나타내며, 면적이 넓을수록 변별력이 우수한 것으로 판단이 가능합니다.</li>
+            </ul>
+            <div class="graphWrap">
+              <div class="graphbox">
+                <img src="../../../img/zkm/bzw/etc/etc_graph2.png" alt="지니(GINI) 계수를 나타내는 그래프">
+              </div>
+              <div class="des">
+                <div class="formula">
+                  <strong class="pColor">&#8251; GINI =</strong><strong class="frac"><span>A</span><span>A + B</span></strong>
+                </div>
+                <em> GINI 계수는 A면적의 크기에 비례하며, 값이 클수록 변별력이 높음</em>
+              </div>
+              <p class="listDot">모형 변별력 지표로서 활용할 때는 0.6이상이면 모형의 변별력이 뛰어난 것으로 판단하게 됩니다.</p>
+            </div>
+          </div>
+          <div class="comp">
+            <h3 class="h3">PSI(Population Stability Index)</h3>
+            <p class="listDot">PSI는 모집단의 안정성을 나타내는 지수로, 기준시점 대비 현재 분포의 차이를 나타내며 수치가 클수록 모집단의 변화가 크다는 것을 의미합니다.</p>
+            <div class="desWrap">
+              <div class="formula">
+                <strong>PSI =</strong><span>Σ (&#37;O - &#37;E) ·In</span><strong class="frac"><span>&#37;O</span><span>&#37;E</span></strong>
+                <em>점수대별</em>
+              </div>
+              <p class="pColor">(&#37;E &#58; 기준시점 구성비, &#37;O &#58; 현재 구성비)</p>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

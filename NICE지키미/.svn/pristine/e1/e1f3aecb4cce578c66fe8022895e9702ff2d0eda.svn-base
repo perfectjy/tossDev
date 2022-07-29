@@ -1,0 +1,106 @@
+@charset "euc-kr";
+
+/* 공통 */
+.listStar > li{position:relative; padding-left:12px; margin-top:10px; line-height:22px;}
+.listStar > li:before {position:absolute; content:'*'; top:3px; left:0; width:4px; height:4px; color:#444; font-size:14px;}
+.listDot strong {font-weight:700; color:#444;}
+.listDot.mg .dash {margin-top:12px;}
+.listNum.mg {margin-top:12px;}
+.listNum.mg li{margin-top:0;} 
+
+/* 고객선터 > 서비스문의 */
+.infoTxt {padding-left:5px; margin-top:10px; font-size:12px; color:#444;}
+.infoTxt::before {content:''; display:inline-block; width:4px; height:4px; margin-right:11px; vertical-align:middle; border-radius:50%; background:#444;}
+.inqList li:not(:first-child) {margin-top:10px;}
+.inqList li a {position:relative; display:inline-block; width:100%; padding:14px 24px; border:1px solid #eee; border-radius:12px;}
+.inqList li a .qnaTagStatus {display:inline-block; height:22px; padding:0 10px; min-width:55px; border-radius:4px; background:#767676; color:#fff; font-size:13px; font-weight:500; text-align:center;}
+.inqList li a .qnaTagStatus.complete {background-color:#066bfd;}
+.inqList li a:after{content: ''; position: absolute; right:14px; top:50%; width: 24px; height: 24px; background:url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat; background-size: 100%; transform:translateY(-50%) rotate(-90deg);}
+.inqList .contTxt {display:block;  margin:15px auto 6px; font-size:16px; font-weight: 700; color:#222;}
+.inqList .data {display:block; color:#767676;}
+
+/* 고객선터 > 신용상담신청 */
+.priAgree {padding-top:30px; display:block;}
+.priAgree + .uiAccoWrap.srvInfo {margin-top:30px;}
+.priAgree .inpBtn{position:relative; display:inline-block; width:20px; height:20px; vertical-align:text-bottom;}
+.priAgree .inpBtn:after {position:absolute; left:7px; top:5px; content: ''; width:7px; height:7px; border-top:2px solid #222; border-right: 2px solid #222; transform: rotate(45deg);}
+.uiAccoWrap.srvInfo .listDot strong {display:block; margin-top:10px; color:#444; font-weight:700;}
+
+
+/* 미소짓는 데이터생활 > 소비자보호 */
+/* .perCreditSlider {margin-bottom:15px;}
+.perCreditSlider li {height:260px;}
+.perCreditSlider [class^=slideItem] {position:relative; width:100%; margin:0 auto; height:260px; max-height:100%; background:#fff url(../../img/bzw/common/bg/bg_phone.png) no-repeat 50% 50% /280px auto;}
+.wordBalloonBox {position:absolute; bottom:0; right:0; width:200px; height:120px; background:url(../../img/bzw/common/bg/bg_balloon.png) no-repeat right bottom  / 200px 120px;}
+.wordBalloonBox p {display:inline-block; padding:15px;} */
+
+
+/* 미소짓는 데이터생활 > 신용평점체계공시(개인/개인사업자)*/
+.selectBox + .tabWrap {margin-top:25px;}
+.creditScoreInfo .h3 {margin-bottom:13px;}
+.creditScoreInfo .h4 {font-weight:500;}
+.creditScoreInfo .infoBox:not(:first-child){margin-top:15px;}
+.creditScoreInfo .listDot strong {color:#222; font-weight:700;}
+.creditScoreInfo .infoBox h4 {margin-bottom:8px;}
+.creditScoreInfo .infoBox li > .title {color:#444; font-weight:700;}
+.creditScoreInfo .infoBox li > .txt {color:#444;}
+.infoBox + .listDot {margin-top:16px;}
+.flowlist {display:flex; margin:30px 0; align-content:space-between; justify-content:center; gap:20px; flex-wrap:wrap;}
+.flowlist li {flex:none; position:relative; width:calc(50% - 10px); padding:15px 15px;  background-color:#f5f8ff; border-radius:12px; box-sizing:border-box;}
+.flowlist li:after{content:''; position:absolute; left:50%; bottom:-7px; display:block; width:0; border-top:12px solid #cad5ee; border-right:10px solid transparent; border-left:10px solid transparent; transform:translateX(-50%);}
+.flowlist li:nth-child(4):after,
+.flowlist li:nth-child(5):after,
+.flowlist li:nth-child(6):after {top:-6px; border-bottom:12px solid #cad5ee; border-top:0; bottom:inherit;}
+.flowlist li * {display:block; font-size:12px;}
+.flowlist li .title,
+.flowlist li em  {font-weight:700; color:#066bfd;}
+.flowlist li em {margin-top:5px;}
+.flowlist li .txt {margin-top:7px; color:#767676;}
+.flowlist li.center {position:relative; width:100%; height:151px; padding:0; border-radius:15px;}
+.flowlist li.center:before {content:''; display:block; height:100%; background-image:url(../../img/bzw/common/bg/bg_nice.png); background-repeat:no-repeat; background-size:100% 151px; background-color:transparent;}
+.flowlist li.center:after {display:none;}
+.flowlist li.center > span {position:absolute; left:50%; bottom:13px; display:block; text-align:center; color:#fff; font-weight:700; font-size:13px; transform:translateX(-50%);}
+
+.conInfoWrap .listDot + .infoBox{margin-top:24px;}
+.infoBox dl dt {min-width:85px; color:#767676;}
+.arrow {margin-bottom:20px;}
+.arrow span {display:block; padding-left:16px;}
+.arrow + .infoWrap {margin-top:0}
+.infoWrap {margin-top:25px;}
+.infoWrap > .listDot {margin-bottom:20px; font-weight:700;}
+.infoWrap .tblList + .listDash {margin-top:20px;}
+.infoWrap .btnConts {margin-top:15px;}
+
+.listInfo .date {display:block; margin-top:8px;}
+.listInfo.t1 > .subTxt {display:block; margin-top:6px; color:#767676;}
+.selectBox {margin-bottom:36px}
+.infoBox .tit,
+.infoBox .h4.tit {display:block; margin-bottom:8px; font-weight:500;}
+.listStar strong {display:inline-block; font-weight:700; color:#444;}
+.btnConts.mg {margin:15px auto 30px;}
+
+.graphWrap {margin-top:15px;}
+.graphWrap .des {position:relative; font-size:14px;}
+.graphWrap div.des{margin:15px 0 30px;}
+.graphWrap .des em {position:absolute; left:110px; /* left:calc(100% - 220px);*/ top:-10px; line-height:22px;}
+.graphWrap .des em:before {content:':'; position:absolute; left:-10px; top:8px; width:3px; height:7px;}
+.graphWrap .des > span {display:block; padding-left:17px;}
+.graphWrap .des [class^=element] {position:absolute; left:63px} 
+.graphWrap .des .elementTop {top:-12px; left:56px;}
+.graphWrap .des .elementBottom {bottom:-12px; border-top:1px solid #2e3653;}
+.graphWrap .des + .listDot {margin-top:20px;}
+.graphWrap .des > strong {display:inline-block; font-weight:700;}
+.desWrap {margin-top:30px; margin-left:-20px; text-align:center;}
+.desEl {position:relative;}
+.desEl [class^=element] {position:absolute; margin-left:6px;}
+.desEl .elementTop {top:-12px;}
+.desEl .elementBottom {bottom:-12px; border-top:1px solid #2e3653;}
+.desEl strong {font-weight:700;}
+.desEl .txt{position:absolute; top:20px; left:-12px}
+.desEl .sign {position:relative;}
+.desEl + .pColor {margin-top:25px;}
+.graphbox {width:100%; background-color:#fff}
+.graphbox img {max-width:100%; max-height:100%;}
+
+
+

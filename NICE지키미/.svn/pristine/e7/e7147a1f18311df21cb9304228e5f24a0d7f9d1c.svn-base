@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content" id="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">증빙자료 첨부</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom active" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>증빙자료 첨부 수단을 선택하세요.</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div>
+              <ul class="lineboxList t2">
+                <li>
+                  <button type="button" class="btnReg camera">
+                    <strong>사진 촬영만 하면 바로 첨부돼요.</strong>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btnReg gallery">
+                    <strong>갤러리에서 첨부하세요.</strong>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btnReg file">
+                    <strong>내 파일에서 첨부하세요.</strong>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!--// content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

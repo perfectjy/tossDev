@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '모으다', home: false, prev: true, menu: true };
+
+    $(function(){
+      // swiper
+      if(!isMobile) {
+        swiper1.destroy();
+        swiper1 = undefined;
+      } else {
+        var swiper1 = new Swiper('.bnrSlider', {
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content" id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              나신용님<br> 얼마나 모았을까요?
+            </h2>
+            <div class="amountWrap">
+              <p class="amountTit"><strong>1,000,000,000</strong>원</p>
+              <div class="fRow">
+                <div>
+                  <p class="amountExp aUp"><i></i> 전달대비 +100,000,000 원</p> <!--[D] 증가 : aUp, 감소 : aDown-->
+                </div>
+                <div class="dRight">
+                  금액감추기
+                  <div class="btnSwitch">
+                    <input type="checkbox" id="switchChk">
+                    <label for="switchChk"><span class="hidden">설정해제</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="income"> <!-- 소득 -->
+            <div class="familyTab">
+              <ul>
+                <li>
+                  <span>나신용</span><button type="button" class="cF2 active">나</button>
+                </li>
+                <li>
+                  <button type="button" class="cF1 ">처</button>
+                </li>
+                <li>
+                  <button type="button" class="cF2">부</button>
+                </li>
+                <li>
+                  <button type="button" class="cF3 ">자2</button>
+                </li>
+                <li>
+                  <button type="button" class="cBlank"></button>
+                </li>
+              </ul>
+            </div>
+            <div class="ineBox">
+              <div class="emo emo01">
+                <div>
+                  <h3 class="tit"><strong>소득</strong></h3>
+                  <p class="exp">내 또래보다 <strong>1,000,000</strong>원 <br>덜 받네요.</p>
+                  <p class="rank">하위 <strong>11</strong>%</p>
+                </div>
+              </div>
+              <div class="btnWrap">
+                <a href="#">내 가족 소득 확인</a>
+              </div>
+            </div>
+            <div class="ineBox gray">
+              <div class="fRow">
+                <h3 class="tit">내 직장 <strong>5</strong>건</h3>
+                <a href="#" class="btn sub">수정</a>
+              </div>
+              <div>
+                <p class="date">등록일:2022.06.04</p>
+                <p class="name">국민은행 마이데이터사업실</p>
+                <p class="regist">등록기관:삼성카드주식회사</p>
+              </div> 
+            </div>
+            <div class="bnrSlider">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox house">
+                    <h3 class="tit"><strong>지키미케어십</strong><i class="tag new">신규</i></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox car">
+                    <h3 class="tit"><strong>지키미케어십2</strong></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox income">
+                    <h3 class="tit"><strong>지키미케어십3</strong><i class="tag new">신규</i></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="comp"> <!-- 금융자산 -->
+            <div class="ineBox gray2_1">
+              <div class="fRow">
+                <h3 class="tit"><strong>금융자산</strong></h3>
+                <a href="#" class="btn sub">마이데이터 연결</a>
+              </div>
+              <div class="exp">
+                현재 신용에 도움이 되는 마이데이터가 <em>00</em>개  기관, <em>00</em>개 상품 연결 중 이네요!
+              </div>
+            </div>
+
+            <div class="ineBoxList">
+              <ul>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div class="sIcon bank">
+                        <p><span>은행</span> <b>10</b></p>
+                      </div>
+                      <div class="sTxt">
+                        <a href="#" class="link">더 모으기 +</a>
+                        <p class="amountTit"><strong>1,000,000,000</strong>원</p>
+                        <p class="amountExp aDown"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div class="sIcon invest">
+                        <p><span>투자</span> <b>1</b></p>
+                      </div>
+                      <div class="sTxt">
+                        <a href="#" class="link">더 모으기 +</a>
+                        <p class="amountTit"><strong>1,000,000,000</strong>원</p>
+                        <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div class="sIcon pay">
+                        <p><span>페이</span> <b>1</b></p>
+                      </div>
+                      <div class="sTxt">
+                        <a href="#" class="link">더 모으기 +</a>
+                        <p class="amountTit"><strong>30,000,000</strong>원</p>
+                        <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div class="sIcon insure">
+                        <p><span>보험</span> <b>3</b></p>
+                      </div>
+                      <div class="sTxt">
+                        <a href="#" class="link">더 모으기 +</a>
+                        <p class="amountTit"><strong>20,000,000</strong>원</p>
+                        <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div class="sIcon pension">
+                        <p><span>연금</span> <b>5</b></p>
+                      </div>
+                      <div class="sTxt">
+                        <a href="#" class="link">더 모으기 +</a>
+                        <p class="amountTit"><strong>500,000</strong>원</p>
+                        <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bnrWrap">
+              <a href="#" class="bnrBox data">
+                <h3 class="tit"><strong>데이터가 맞지 않나요?!</strong></h3>
+                <p class="exp"><strong>주 1회 정기적인</strong>데이터 전송동의로 해결하세요 <i class="iQue">?</i></p>
+              </a>
+            </div>
+          </div>
+
+          <div class="comp"> <!-- 부동산/자동차 -->
+            <div class="ineBoxConnect">
+              <ul>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div>
+                        <h3 class="tit"><strong>부동산</strong> <strong>10</strong>건</h3>
+                        <p class="exp">우리 동네 집값은 얼마나 올랐을까?</p>
+                      </div>
+                      <a href="#" class="btn sub">내 부동산 더 모으기</a>
+                    </div>
+                    <div class="bgGraph">
+                      <div class="sTxt">
+                        <p class="amountTit"><strong>500,000,000</strong>원</p>
+                        <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p>
+                      </div>
+                    </div>
+                    <div class="hashWrap">
+                      <span class="hash">#우리집 시세</span>
+                      <span class="hash">#부동산 세금</span>
+                    </div> 
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox gray">
+                    <div class="fRow">
+                      <h3 class="tit"><strong>우리집</strong> <em>[자가]</em></h3>
+                      <a href="#" class="btn sub">수정</a>
+                    </div>
+                    <p class="exp">서울 영등포구 의사당대로 38 101동 101호</p>
+                    <div class="btnWrap">
+                      <a href="#">우리집 시세</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="ineBox">
+              <div class="fRow">
+                <div>
+                  <h3 class="tit"><strong>자동차</strong> <strong>1</strong>건</h3>
+                  <p class="exp">자동차 생활도 나이스하게!</p>
+                </div>
+                <a href="#" class="btn sub">내 차 더 모으기</a>
+              </div>
+              <div class="bgCar">
+                <div class="sTxt">
+                  <p class="amountTit"><strong>500,000,000</strong>원</p>
+                  <p class="amountExp aUp"><i></i> 전달대비 <span>+100,000,000</span> 원</p> 
+                </div>
+              </div>
+              <div class="hashWrap">
+                <span class="hash">#유지비</span>
+                <span class="hash">#소유권</span>
+                <span class="hash">#저당권</span>
+                <span class="hash">#자동차시세</span>
+                <span class="hash">#리콜대상</span>
+                <span class="hash">#유가정보</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="navSlide">
+            <ul>
+              <li>
+                <a href="#" class="navBox use">
+                  <p class="tit">쓰고</p>
+                  <p class="exp">얼마나 썼을까?</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="navBox bor">
+                  <p class="tit">빌리고</p>
+                  <p class="exp">얼마나 빌렸을까?</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="navBox rep">
+                  <p class="tit">갚고</p>
+                  <p class="exp">얼마나 밀렸을까?</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>마이데이터 연결</span></button>
+              <button type="button" class="btn primary"><span>소득 모아보기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

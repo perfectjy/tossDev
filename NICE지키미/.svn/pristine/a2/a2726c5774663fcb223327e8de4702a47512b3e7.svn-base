@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+    <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '이름추천', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+
+          <div class="lineFormSearch">
+            <div class="itemLine">
+              <span class="custForm">
+                 <span class="inp"><input type="text" placeholder="희망하는 글자" class="wid3"></span>
+              </span>
+              를(을) 포함하는
+            </div>
+            <div class="itemLine">
+              <span class="custForm">
+                <span class="inp">
+                  <input type="text" placeholder="색 선택" readonly="readonly" class="wid">
+                  <a href="#none" class="btnSearch" role="button"><span class="hidden">색상선택 팝업열기</span></a>
+                </span>
+              </span>
+              색 
+              <span class="custForm">
+                <span class="inp">
+                  <input type="text" placeholder="품종 선택" readonly="readonly" class="wid2">
+                  <a href="#none" class="btnSearch" role="button"><span class="hidden">품종선택 팝업열기</span></a>
+                </span>
+             </span>
+             에게
+            </div>
+            <div class="itemLine">
+              찰떡인 이름은?
+            </div>
+            <p>
+              세 조건 중 최소 1가지 이상 조건을 채워주세요.<br>
+              한글 또는 영어이름도 추천 받을 수 있습니다.
+            </p>
+          </div>
+
+          <div class="btnConts">
+            <button type="button" class="btn primary"><span>추천받기</span></button>
+          </div>
+
+          <!-- 이름추천결과 -->
+          <div class="nameRecomResult">
+            <div class="noList">
+              <p>검색된 결과가 없습니다.</p>
+            </div>
+            <div id="capture">
+              <h2 class="h2">이름추천 결과</h2>
+              <ul class="nameRecomList">
+                <li><a href="#none"><strong>레오</strong><span>2.5%</span></a></li>
+                <li><a href="#none"><strong>베리</strong><span>2.5%</span></a></li>
+                <li><a href="#none"><strong>도비</strong><span>2.5%</span></a></li>
+                <li><a href="#none"><strong>레오</strong><span>2.5%</span></a></li>
+                <li><a href="#none"><strong>베리</strong><span>2.5%</span></a></li>
+                <li><a href="#none"><strong>도비</strong><span>2.5%</span></a></li>
+              </ul>
+            </div>            
+  
+            <div class="nameRecomInfo">
+              <span>추천지수</span>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <strong class="tit">추천지수</strong>
+                  <p>이름이 차지하는 비중을 의미합니다.</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="btnBox">
+              <button type="button" class="btn round"><span class="hidden">공유하기</span><i class="share"></i></i></button>
+              <button type="button" class="btn round"><span class="hidden">캡쳐하기</span><i class="capture"></i></i></button>
+            </div>
+          </div>          
+
+          <div class="playComMenu scroll">
+            <ul class="pet">
+              <li><a href="#none" class="ico02"><span>반려동물</span></a></li>
+              <li><a href="#none" class="ico01"><span>색상별<br>랭킹</span></a></li>
+              <li><a href="#none" class="ico03"><span>반려동물<br>이름추천</span></a></li>
+              <li><a href="#none" class="ico04"><span>반려동물<br>이름랭킹</span></a></li><!-- 다자인 업데이트 필요 -->
+            </ul>
+          </div>
+          <!--// playComMenu.scroll -->
+
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

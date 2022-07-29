@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미::데이터놀이</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '나이스 실험실', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal" class="btn base modalOpen">오답</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="uiModal modal" id="modal">
+		<div class="modalWrap">
+			<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+			<div class="modalHeader">
+				<h1>오답</h1>
+			</div>
+			<div class="modalContent">
+				<div class="inner">
+					<!-- content -->
+					<div class="wrongBox">
+                        <ul class="samll">
+                           <li><strong>지수</strong>23,576명</li> 
+                           <li><strong>제니</strong>4,621명</li> 
+                        </ul>
+                        <p>지수가 23,576명 제니 4,621명으로 <br>지수가 더 많아요</p>
+                    </div>
+					<!--// content -->
+				</div>
+				<div class="modalBottom">
+					<div class="btns">
+						<button type="button" class="btn primary"><span>확인</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

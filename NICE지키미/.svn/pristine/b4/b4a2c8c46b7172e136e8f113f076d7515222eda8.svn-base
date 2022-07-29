@@ -1,0 +1,192 @@
+@charset "euc-kr";
+
+/* 데이터놀이 - 반려동물 */
+.myPet {position:relative; padding-top:65px;}
+.myPet .petImg {position:absolute; top:0; left:0; right:0; text-align: center;}
+[class^="pet"] .photo {display:block; overflow:hidden; width:130px; height:130px; background:#fff url(../../img/bzw/etc/etc_mypet_default.png) no-repeat; background-size:100%; border:1px solid #8e9abd; border-radius: 50%;}
+[class^="pet"] .photo img {max-width:100%;}
+.myPet .petImg .photo {margin:0 auto;}
+.myPet .petImg p {font-size:16px; line-height:30px; color:#fff;}
+.myPet .petList {width: auto; border-radius:30px; padding:122px 0 30px 0; text-align: center; background:linear-gradient(#29b0ff, #127ef4, #0969ef); box-shadow: 10px 10px 20px rgba(53, 135, 255, 0.3);}
+.myPet .petList li a {color:#fff;}
+.myPet .petList li .photo {border:0;margin:0 auto;}
+.myPet .petList li .petRegister {position:relative; display:block; width:60px; height:60px; border-radius: 24px; border-color: #d4d4d4; background:#fff ;}
+.myPet .petList li .register {display:block; font-size:14px; line-height: 20px; margin-top:6px; text-align: center;}
+.myPet .petList li .petRegister::before{content:""; position:absolute; left:0; top:0; bottom:0; right:0; width:100%; height:100%; background:url(../../img/bzw/common/ico/ico_add.png) no-repeat center; background-size:50%;}
+
+.petListBox {margin:20px -20px 0 -20px; text-align:center;}
+/* .petListBox .petList {width:380px;} */
+.petList, .petList ul {font-size:0;}
+.petList li {display:inline-block; padding:0 5px;}
+.petList li a {display:block; color:#222;}
+.petList li .photo {width:60px; height:60px; border-radius: 24px; border-color: #d4d4d4;} 
+.petList li .name {display:block; font-size:14px; line-height: 20px; margin-top:6px; text-align: center;}
+.petList li .btnPet {width:60px; font-size:14px; line-height: 20px;}
+.petList li input:checked + label {font-weight: bold; color:#066bfd}
+.petList li input:checked + label .photo {border-color:#066bfd;}
+
+/* 반려동물 정보 */
+.myPetInfo {position:relative; margin-top:32px; padding: 0 25px;}
+.myPetInfo h3 {font-size:15px; line-height: 22px; font-weight: 500;}
+.myPetInfo .petInfoList {font-size:14px; line-height: 30px; color:#444; margin-top:12px;}
+.myPetInfo .petInfoList >dt {float:left; margin-right:24px;}
+.myPetInfo .myPetInfoBtn {position:absolute; right:12px; top:12px; width:55px; height:36px; border-radius: 13px; background: #1d6fdb;}
+.myPetInfo .myPetInfoBtn {font-size: 14px; line-height: 25px; letter-spacing: -.8px; color:#fff; margin-right: 12px;}
+.myPetInfo .myPetInfoBtn::before {content:""; position:absolute; right:10px; top:50%; transform:translateY(-50%); width:10px; height:17px; background:url(../../img/bzw/common/ico/ico_arr_fix.png) no-repeat center; background-size:50%;}
+
+/* 카드정보 */
+.cardInfoWrap {position:relative; background: #f0f1f3; padding: 30px 20px 20px; margin:35px -20px 0 -20px; }
+.cardInfoWrap strong {font-weight: 700;}
+.cardInfoWrap h3 {font-size:20px; line-height: 28px; font-weight: 700;}
+.cardInfoWrap .cardInfo {position:relative; margin-top:16px; padding:25px; background: #fff; border-radius: 19px;}
+.cardInfoWrap .cardInfo > strong {font-size:17px; line-height: 25px;}
+.cardInfoWrap .cardInfo p {font-size:14px; line-height:24px; color:#767676; margin-top:14px;}
+.cardInfoWrap .cardInfo p strong:not(.pColor) {color:#000;}
+.cardInfoWrap .cardInfo .cardImg {width: 100%; margin-top:17px;}
+.cardInfoWrap .cardInfo .cardImg img {width: 100%;}
+.cardInfoWrap .cardInfo a {position:absolute; top:0; left:0; right:0; bottom:0;}
+
+/* 반려동물 사진등록 */
+.petImgInt {position:relative; width:130px; margin:0 auto;}
+.petImgInt a {position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
+.petImgInt a:after {position: absolute; content:''; width:32px; height:32px; top:86px; right:-4px; background:url(../../img/bzw/common/ico/ico_add_round.png) no-repeat; background-size: 100%;}
+
+/* 품종검색 */
+.resultWrap {margin-top:30px; overflow-y:auto; height:calc(100vh - 380px)}
+.resultWrap .petList li {padding:0; display:block;}
+.resultWrap .petList li:not(:first-child) { margin-top:20px;}
+.resultWrap .petList label {display:flex; width:100%;}
+.resultWrap .petList .photo {border-radius: 50%;}
+.resultWrap .petList .name {padding-left:15px;font-size:16px; align-self: center; margin:0;}
+
+/* .myPetImg {position:absolute; left:50%; top:-65px; transform:translateX(-50%); display:flex; justify-content: center; align-items: center; width:130px; height:130px;  border:1px solid #8e9abd; border-radius: 50%; cursor: pointer; background:#fff; overflow: hidden;}
+.myPetImg >img {width:50%; height: 50%; object-fit:contain; }
+.myPetTxt {width:100%; font-size:16px; line-height:30px; letter-spacing:-1px; color:#fff; margin-top:4px;}
+.myPet .myPetData {padding: 0 20px;}
+.myPet .myPetData ul {display: flex; justify-content: space-between; align-items: center; }
+.myPet .myPetData ul li span {display:block; color:#fff; margin-top:4px; cursor: pointer;} */
+
+/* myPetData 사진 입력 방법 */
+/* .myPetData ul li .myPetList.myPet01::before {background:url(../../img/bzw/etc/etc_mypet_default.png) no-repeat center; background-size:50%;}
+.myPetData ul li .myPetList.myPet02::before {background:url(../../img/bzw/etc/etc_mypet_default.png) no-repeat center; background-size:50%;}
+.myPetData ul li .myPetList.myPet03::before {background:url(../../img/bzw/etc/etc_mypet_default.png) no-repeat center; background-size:50%;}
+.myPetData ul li .myPetList.myPet04::before {background:url(../../img/bzw/etc/etc_mypet_default.png) no-repeat center; background-size:50%;} */
+
+
+
+
+/* 데이터놀이 - 반려동물 등록 */
+/* .petInfoData {position:relative; margin-top:40px;}
+.petInfoImg {position:relative; display:inline-block; left:50%; top:0; transform:translateX(-50%); width:130px; height:130px;  border:1px solid #8e9abd; border-radius: 50%; cursor: pointer; background:#fff;}
+.petInfoImg >img {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:50%; height: 50%; object-fit:contain; }
+.petInfoImg::after {content:""; position:absolute; right:-5px; bottom: 10px; width:32px; height:32px; background:url(../../img/bzw/common/ico/ico_add_round.png) no-repeat center; background-size: 100%;}
+.petInfoDelete {position:absolute; right:0; top:-40px; width:60px; height:30px; border: 1px solid #000;}
+
+.petInfoList {margin-top: 40px;}
+.petInfoList .petInfoItem {margin-bottom:30px;}
+.petInfoList .petInfoItem .petItemTit {display:inline-block; font-size:12px; left: -.6px; color:#222; margin-bottom: 4px;}
+.petInfoList .petInfoItem .petItemTit + span {font-size:12px; left: -.7px; color:#87909b;} */
+
+/* 공통 고려사항 */
+.rdoGroup.petType1, .rdoGroup.petType2 {margin-top: 10px;}
+
+
+.petInfoItem .date {display:flex; justify-content: space-between; align-items: center; gap: 11px;}
+.petInfoItem .date>div {width:100%;}
+
+
+
+/* .petType {width:100%; margin-top: 30px;}
+.petType .petTypeList {overflow-y: scroll; height:calc(100vh - 375px);}
+.petType .petTypeList li {margin-bottom: 20px;}
+.petType .petTypeList li:last-child {margin-bottom: 0;} */
+
+
+
+
+/* 반려동물 나이 계산기 */
+.lineFormSearch .btn {position:absolute; right:0; bottom:5px;}
+
+.myPetData ul {display: flex; justify-content: flex-start; align-items: center; margin-top:30px;}
+.myPetData ul li {margin-right: 10px;}
+.myPetData ul li .myPetList {position:relative; display:block; width:60px; height:60px; border:1px solid #c6cfdb; border-radius:25px; background:#fff; color:#f2f3f5;}
+.myPetData ul li .myPetList:last-child {margin: 0;}
+.myPetData ul li .myPetList::before {content:""; position:absolute; left:0; top:0; width:100%; height: 100%;}
+.myPetData ul li .myPetList.petBtn::before {content:""; position:absolute; width:30px; height:30px; left:50%; top: 50%; transform: translate(-50%, -50%); background:url(../../img/bzw/common/ico/ico_add.png) no-repeat center; background-size:50%;}
+.myPetData ul li span {position: absolute; left:0; bottom: -20px; display:block; width:100%; color:#444; text-align: center; margin-top:4px; cursor: pointer;}
+
+.petDesc {margin-top: 90px;}
+.petDesc .listDot {color:#767676;}
+.petDesc .listDot li::before {background: #767676;}
+
+
+/* 반려동물 나이 계산결과 */
+.ageResult {position:relative; padding-top:65px; color: #fff;}
+.ageResult .ageResultTit {position:absolute; left:0; top:0px; right: 0; display:flex; justify-content: center; align-items: center;}
+.ageResult .ageResultTit span {text-align: center; margin: 0 -5px; }
+.ageResult .ageResultTit .thumb {display:block; overflow:hidden; width:100px; height:100px; border-radius: 50%;}
+.ageResult .ageResultTit .thumb img {max-width:100%;}
+.ageResult .ageResultTit .agePet .thumb {background:#fff url(../../img/bzw/etc/etc_mypet_default.png) no-repeat; background-size:100%; border:1px solid #8e9abd;}
+.ageResultContent {border-radius:30px; padding:80px 20px 30px 20px; text-align: center; background:linear-gradient(#29b0ff, #127ef4, #0969ef); box-shadow: 10px 10px 20px rgba(53, 135, 255, 0.3);}
+.ageResultContent strong {font-size: 18px;}
+.ageResultContent .ageResultTxt {margin-top: 10px; text-align: left;}
+
+
+
+
+/* 이름추천 결과 */
+.nameRcmndResult {display:flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; }
+.nameRcmndResult >li {width:calc(20% - 15px); border: 1px solid #d4d4d4; border-radius: 8px; padding: 10px 12px; margin-right: 10px; margin-top: 10px;}
+.nameRcmndResult >li:nth-child(4n) {margin-right: 0px;}
+
+
+
+/* 색상선택 */
+.colorSelect .colorSelectList {display:flex; justify-content: flex-start; align-items: center; width: calc(100% + 16px); margin-left: -16px; flex-wrap: wrap;}
+.colorSelect .colorSelectList >li {display:inline-block; width:calc(25% - 16px); margin: 0 0 40px 16px; text-align: center; font-size:12px;}
+.colorSelect .colorSelectList >li div {position:relative; width:60px; height:60px; border:1px solid #d4d4d4; border-radius: 50%;}
+.colorSelect .colorSelectList >li.checked >div{border:1px solid #066bfd; color:#066bfd;}
+.colorSelect .colorSelectList >li div input[type=radio]:checked {border:1px solid #ddd;}
+.colorSelect .colorSelectList >li div input[type=radio] + label {position:absolute; left:50%; transform: translateX(-50%); bottom: -25px; width:100%;}
+
+
+.colorSelect .colorSelectList >li div.brown {background: #d17d00;}
+.colorSelect .colorSelectList >li div.black {background: #0a0a0a;}
+.colorSelect .colorSelectList >li div.yellow {background: #ffdd00;}
+.colorSelect .colorSelectList >li div.beige {background: #f9eed0;}
+.colorSelect .colorSelectList >li div.blackBullet {background: url();}
+.colorSelect .colorSelectList >li div.rainbow {background: url();}
+.colorSelect .colorSelectList >li div.orange {background: #ff9900;}
+.colorSelect .colorSelectList >li div.maroon {background: #742c07;}
+.colorSelect .colorSelectList >li div.blue {background: #0086fc;}
+.colorSelect .colorSelectList >li div.gray {background: #b5b5b5;}
+.colorSelect .colorSelectList >li div.brown {background: #d17d00;}
+.colorSelect .colorSelectList >li div.darkBrown {background: #4e3816;}
+.colorSelect .colorSelectList >li div.partridge {background: #9e5e00;}
+.colorSelect .colorSelectList >li div.taupe {background: #6e675d;}
+
+
+
+
+/* 이름상세 */
+.nameDescContainer {background: #f0f1f3; padding: 30px 20px 20px; margin:35px -20px 0 -20px; }
+.custForm.widAll {width:100%;}
+.nameDescContainer {position:relative; }
+.nameDesc {padding:10px 20px;}
+.nameDescContent {background: #fff; border-radius: 16px; padding:20px; margin-top:20px;}
+.nameDescContent .rankView {margin-top:0px;}
+
+
+
+/* 이름랭킹 */
+.rankView .rankTop>li a{display:block; box-sizing:border-box; padding-top:0px; text-align:center; color:#fff; font-weight:700;}
+.rankView .rankList>li a{flex:1; margin-left: 30px;}
+.rankView .rankList>li a .name {margin-left: 0;}
+.rankView .rankList .first {color:#066bfd; font-weight: 500;}
+
+
+
+
+
+
+

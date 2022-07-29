@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '금융자산 모아보기', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              나신용님 <strong class="pColor">금융자산</strong>을 얼마나 모았을까요?
+            </h2>
+            <div class="governingAmount">
+              <p class="tit"><strong class="robotoB">1,000,000,000</strong>원</p>
+              <p class="exp"><i class="aUp"></i> 전달대비 +100,000,000 원</p>
+            </div>
+          </div>
+
+          <div class="dRight">
+            금액감추기
+            <div class="btnSwitch">
+              <input type="checkbox" id="switchChk">
+              <label for="switchChk"><span class="hidden">설정해제</span></label>
+            </div>
+          </div>
+          <div class="financialSection">
+            <div class="boxWrap">
+              <a href="#none" class="plusBox">
+                <strong class="bColor">나신용</strong>님 <strong class="bColor">국민은행</strong>자산이 <strong class="pColor">40%</strong> 로 
+                보유 비중이 제일 많네요  
+              </a>
+            </div>
+            <!--그래프 영역 -->
+            <div class="graphConts">
+              <div class="graphArea">
+                <div class="graphHeader">
+                  <p class="totalResult">
+                    총 예수금 40,400,000원이 남았네요<br/>
+                    지난달 보다 <strong class="pColor">-1,000,000원이 더</strong> 늘었네요
+                  </p>
+                  <div class="graphInfoTab">
+                    <div class="dateWrap">
+                      <p class="year roboto">2022</p>
+                      <p class="month"><strong class="pColor">6</strong>월</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="dataWrap">
+                  <div class="chartArea">
+                  </div>
+                  <div class="insuranceList">
+                    <dl>
+                      <dt class="d1">종합보험</dt>
+                      <dd>100,000,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt class="d2">어린이보험</dt>
+                      <dd>1,000,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt class="d3">생명보험</dt>
+                      <dd>50,000,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt class="d4">암보험</dt>
+                      <dd>2,000,000원</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--그래프 영역 -->
+            <div class="addListSec">
+              <div class="addHeader">
+                <span class="addExp">현재 신용에 도움이 되는 마이데이터가 <strong class="pColor">00</strong>개 기관, <strong class="pColor">00</strong>개 상품 연결 중 이네요!</span>
+                <!--keywordList //-->
+                <div class="keywordList2 acco"> 
+                  <ul>
+                    <li><input type="checkbox" name="faqWord" id="word1"><label for="word1">전체</label></li>
+                    <li><input type="checkbox" name="faqWord" id="word2"><label for="word2">은행</label></li>
+                    <li><input type="checkbox" name="faqWord" id="word3"><label for="word3">투자</label></li>
+                    <li><input type="checkbox" name="faqWord" id="word4"><label for="word4">페이</label></li>
+                    <li><input type="checkbox" name="faqWord" id="word5" checked="checked"><label for="word5">보험</label></li>
+                    <li><input type="checkbox" name="faqWord" id="word6"><label for="word6">연금/IRP</label></li>
+                  </ul>
+                  <button class="moreviewBtn"><span class="hidden">더보기</span></button>
+                </div>
+                <!--test //-->
+                <script>
+                  var $tab = $('.keywordList2'), $moreBtn = $($tab).find('.moreviewBtn');
+                  $moreBtn.on('click', ()=> $tab.toggleClass('active'))
+                </script>
+                <!--// test -->
+                <!--// keywordList -->
+
+                <div class="addTab">
+                  <div class="addTabHeader">
+                    <div class="titleCont">
+                      <h3 class="insurance">보험 <i class="countTag">2</i></h3>
+                      <button type="button" class="btnPlus"><span class="hidden">추가하기</span></button>
+                    </div>
+                    <div class="sort">
+                      <select>
+                        <option>가나다순</option>
+                        <option>가나다순</option>
+                        <option>가나다순</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="addTabConts">
+                    <ul>
+                      <li>
+                        <dl class="myAccInfo">
+                          <dt class="icoName">
+                            <i class="bankIcon tS"><img src="../../../img/bzw/common/ico/ico_Fsh.png" alt=""></i>
+                            <span>보험사명</span>
+                          </dt>
+                          <dd>
+                            <p class="accountTit">신한 주거래 우대통장 [저축예금]</p>
+                            <p class="paymentMonth"><strong class="roboto">400</strong>개월</p>
+                          </dd>
+                        </dl>
+                        <div class="btmBox">
+                          <p class="insuranceExp">매월<br/><strong class="roboto pColor">500,000</strong>원 납입하네요</p>
+                        </div>
+                      </li>
+                      <li>
+                        <dl class="myAccInfo">
+                          <dt class="icoName">
+                            <i class="bankIcon tS"><img src="../../../img/bzw/common/ico/ico_Fsh.png" alt=""></i>
+                            <span>보험사명</span>
+                          </dt>
+                          <dd>
+                            <p class="accountTit">신한 주거래 우대통장 [저축예금]</p>
+                            <p class="paymentMonth"><strong class="roboto">400</strong>개월</p>
+                          </dd>
+                        </dl>
+                        <div class="btmBox">
+                          <p class="insuranceExp">매월<br/><strong class="roboto pColor">500,000</strong>원 납입하네요</p>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>마이데이터 연결관리</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

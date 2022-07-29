@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '회원탈퇴', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">회원탈퇴 시 안내사항</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>회원탈퇴 시 아래 안내사항을 확인해 주세요.</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <ul class="listDot">
+              <li>회원탈퇴 이후에도 개인정보 취급방침에 따라 일부 정보는 일정 기간 보관됩니다.</li>
+              <li>회원탈퇴 시 마이데이터 자산관리 서비스의 모든 정보는 파기되며 다시 복원할 수 없습니다. 마이데이터 정보 전송 요구는 철회되고, 기존에 수집된 개인신용정보는 모두 삭제됩니다.
+              </li>
+            </ul>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>확인 및 동의</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

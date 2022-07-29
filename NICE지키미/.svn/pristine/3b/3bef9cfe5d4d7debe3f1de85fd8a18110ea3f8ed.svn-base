@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accodian - Guide</title>
+
+  <script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+  <style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}     
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap"> 
+  <h1 class="guideTit">아코디언</h1>
+  <div class="code">
+    <code>
+      <p>
+        &lt;div class="uiAccoWrap"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="uiAccoHeader"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="uiBtn"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="accoTitle"&gt;제목&lt;span&gt;&lt;span class="hidden"&gt;펼치기&lt;/span&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="uiAccoContent"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;내용<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;
+      </p>
+    </code>
+  </div>
+
+  <div class="guideItem">
+    <div class="uiAccoWrap">
+      <div class="uiAccoHeader">
+        <button type="button" class="uiBtn">
+          <span class="accoTitle">아코디언 타이틀</span><span class="hidden">펼치기</span>
+        </button>
+      </div>
+      <div class="uiAccoContent">
+        국내에서 결제한 신용.체크카드 이용금액에 대해 일부 업종을 제외하고 모두 인정됩니다.<br>
+        (제외 업종 : 대형마트, 대형 백화점(아울렛 포함), 복합 쇼핑몰, 면세점, 대형 전자전문 판매점, 대형 종합 온라인몰입니다.)
+      </div>
+      <div class="uiAccoHeader">        
+        <button type="button" class="uiBtn">
+          <span class="accoTitle">가입자격</span><span class="hidden">펼치기</span>
+        </button>
+      </div>
+      <div class="uiAccoContent">
+        사업자등록증을 소지하고, 신청일 현재 정상영업중인 업체 (단. 불량정보 등의 사유로 가입이 제한될 수 있습니다.)
+      </div>
+    </div>
+  </div>  
+
+  <div class="guideItem">
+    <div class="uiAccoWrap">
+      <div class="uiAccoHeader open">          
+        <button type="button" class="uiBtn">
+          <span class="accoTitle">가입절차</span><span class="hidden">펼치기</span>
+        </button>
+      </div>
+      <div class="uiAccoContent">
+        국내에서 결제한 신용.체크카드 이용금액에 대해 일부 업종을 제외하고 모두 인정됩니다.<br>
+        (제외 업종 : 대형마트, 대형 백화점(아울렛 포함), 복합 쇼핑몰, 면세점, 대형 전자전문 판매점, 대형 종합 온라인몰입니다.)
+      </div>
+      <div class="uiAccoHeader">        
+        <button type="button" class="uiBtn">
+          <span class="accoTitle">가입자격</span><span class="hidden">펼치기</span>
+        </button>
+      </div>
+      <div class="uiAccoContent">
+        사업자등록증을 소지하고, 신청일 현재 정상영업중인 업체 (단. 불량정보 등의 사유로 가입이 제한될 수 있습니다.)
+      </div>
+    </div>
+  </div> 
+
+  <div class="guideItem">
+    <div class="infoToggle open">
+      <div class="tit">
+        <strong>꼭 알아두세요!</strong>
+        <a href="#infoContents3" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+      </div>      
+      <div id="infoContents3" class="infoTogConts">
+        안드로이드 OS 11부터 구글 보안 정책 변경으로 인하여 각 앱마다 공동인증서를 따로 등록해야 사용 가능합니다.
+      </div>
+    </div>
+    
+  </div>
+  <div class="guideItem">
+    <div class="infoToggle">
+      <div class="tit">
+        <strong>꼭 알아두세요!</strong>
+        <a href="#infoContents2" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+      </div>      
+      <div id="infoContents2" class="infoTogConts">
+        안드로이드 OS 11부터 구글 보안 정책 변경으로 인하여 각 앱마다 공동인증서를 따로 등록해야 사용 가능합니다.
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+</body>
+</html>

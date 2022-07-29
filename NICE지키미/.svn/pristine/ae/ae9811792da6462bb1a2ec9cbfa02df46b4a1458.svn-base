@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '집정보 수정하기', home: false, prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">
+                            나신용님의 소중한 <strong class="pColor">우리집 정보</strong>를 확앤해주세요
+                        </h2>
+                    </div>
+                    <div class="formWrap">
+                        <div class="formItem">
+                            <label class="titItem">주소</label>
+                            <div class="intAddr nosp">
+                                <div class="intBtnType">
+                                    <input type="text" title="우편번호" placeholder="검색으로 입력" disabled>
+                                    <div class="intBtn">
+                                        <button type="button" class="btn base"><span>우편번호 검색</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <input type="text" title="주소" disabled="disabled">
+                                </div>
+                                <div class="item">
+                                    <input type="text" title="상세주소" disabled="disabled">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formItem spb">
+                            <!-- <h3 class="tit">자택주소 변경을 위해 아래 증빙자료 중 하나를 제출해주세요.</h3> -->
+                            <label class="titItem">자택주소 변경을 위해<br> 아래 증빙자료 중<br> 하나를 제출해주세요.</label>
+                            <div class="formEle filebox">
+                                <input class="uploadName" placeholder="증빙자료 첨부" readonly="readonly">
+                                <label for="attach"></label>
+                                <input type="file" id="attach" title="증빙자료 첨부">
+                            </div>
+                        </div>
+                        <div class="ineBoxConnect sp">
+                            <ul>
+                                <li>
+                                    <div class="ineBox">
+                                        <ul class="listDot">
+                                            <li>주민등록초본 (최근1개월)</li>
+                                            <li>최근 1개월 내 발급된 서류 중 발송월/기관명/집주소/이름이 함께 표시된 것 (예: 유무선 통신요금, 공공요금 및 카드대금 고지서
+                                                등)</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ineBox gray">
+                                        <p class="sColor">
+                                            주민등록등본은 본인을 제외한 가족의 이름, 주민등록번호를 삭제하고 제출해 주세요.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="formItem">
+                            <label for="phone" class="titItem">전화번호</label>
+                            <div class="intHalf phone">
+                                <span class="inp">
+                                    <select id="phone" title="국번">
+                                        <option>02</option>
+                                        <option>031</option>
+                                    </select>
+                                </span>
+                                <span class="inp">
+                                    <input type="tel" placeholder="숫자 7~8자리 입력" title="전화번호">
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>취소</span></button>
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

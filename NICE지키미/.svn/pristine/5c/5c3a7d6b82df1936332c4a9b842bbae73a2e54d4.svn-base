@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객센터 > 서비스문의</title>
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '서비스문의', prev: true, menu: true};
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content" id="content">
+        <div class="section">
+          <div class="tabWrap t1">
+            <ul class="tabList">
+              <li class="tab active"><a href="#tab01">서비스문의</a></li>
+              <li class="tab"><a href="#tab02">문의내역</a></li>
+            </ul>
+            <div class="tabConts">
+              <div class="tabPanel" id="tab01">
+                <div class="governing">
+                  <h2 class="governingTitle">지금 <span class="pColor">바로 해결</span>하실 수 있는<br class="mob">  문의가 있는지 확인해 보세요</h2>
+                </div>
+                <div class="uiAcco info">
+                  <div class="uiAccoHeader">
+                    <button type="button" class="uiBtn">
+                      <span class="accoTitle">내 신용점수에 대해 문의하고 싶습니다.</span><span class="hidden">펼치기</span>
+                    </button>
+                  </div>
+                  <div class="uiAccoContent">
+                    내용
+                  </div>
+                  <div class="uiAccoHeader">        
+                    <button type="button" class="uiBtn">
+                      <span class="accoTitle">개명을 해서, 바뀐 이름으로 수정하고 싶습니다.</span><span class="hidden">펼치기</span>
+                    </button>
+                  </div>
+                  <div class="uiAccoContent">
+                    내용
+                  </div>
+                  <div class="uiAccoHeader">        
+                    <button type="button" class="uiBtn">
+                      <span class="accoTitle">변동알람 문자를 받고 싶지 않습니다.</span><span class="hidden">펼치기</span>
+                    </button>
+                  </div>
+                  <div class="uiAccoContent">
+                    내용
+                  </div>
+                  <div class="uiAccoHeader">        
+                    <button type="button" class="uiBtn">
+                      <span class="accoTitle">나에게 다른 사람의 알림 문자나 메일이 옵니다.</span><span class="hidden">펼치기</span>
+                    </button>
+                  </div>
+                  <div class="uiAccoContent">
+                    내용
+                  </div>
+                  <div class="uiAccoHeader">        
+                    <button type="button" class="uiBtn">
+                      <span class="accoTitle">회원탈퇴 시 주의사항이 궁금합니다.</span><span class="hidden">펼치기</span>
+                    </button>
+                  </div>
+                  <div class="uiAccoContent">
+                    내용
+                  </div>
+                </div>
+                <div class="formWrap spm">
+                  <div class="formItem">
+                    <label for="mail" class="titItem">이메일</label>
+                    <div class="formEle">
+                      <input type="text" id="mail" value="@native.co.kr">
+                      <div class="intBotBtn">
+                        <button type="button" class="btn base"><span>이메일 변경</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formItem">
+                    <label for="hpnum" class="titItem">휴대폰 번호</label>
+                    <div class="inpPhone">
+                      <input type="tel" id="hpnum" placeholder="" value="01012**34**">
+                      <div class="intBotBtn">
+                        <button type="button" class="btn base"><span>휴대전화번호 변경</span></button>
+                      </div>
+                    </div>
+                    <p class="guideTxt">개인정보를 수정하실 경우, 회원정보가 업데이트 됩니다.</p>
+                  </div>
+                  <div class="formItem">
+                    <label for="inpType" class="titItem">상담유형</label>
+                    <div class="formEle">
+                      <select title="상담유형 선택">
+                        <option>서비스</option>
+                        <option>결제</option>
+                        <option>가입/탈퇴</option>
+                        <option>기타</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="formItem">
+                    <label for="inpTitle" class="titItem">제목</label>
+                    <div class="formEle">
+                      <input id="inpTitle" type="text" placeholder="제목 입력">
+                    </div>                    
+                    <div class="byteLimit"><em>0</em>/ 50</div>
+                  </div>
+                  <div class="formItem">                    
+                    <label for="wriTxtarea" class="titItem">내용</label>
+                    <div class="formEle">
+                      <textarea class="textarea" id="wriTxtarea3" rows="7" placeholder="내용입력"></textarea>
+                    </div>
+                    <div class="byteLimit"><em>0</em>/ 2,000</div>
+                  </div>
+                  <div class="bottomActiveBtns">
+                    <div class="btns">
+                      <button type="button" class="btn primary"><span>문의등록</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabPanel" id="tab02">
+                <!-- 최초 노출개수 10개  -->
+                <ul class="lineboxList">
+                  <li>
+                    <div class="tagList"><span class="tag bl">답변완료</span></div>
+                    <strong>[유료서비스] 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                    <span class="date roboto">2022. 04. 21</span>
+                    <a href="#none" class="link"><span class="hidden">상세보기</span></a>
+                  </li>
+                  <li>
+                    <div class="tagList"><span class="tag bl">답변완료</span></div>
+                    <strong>[유료서비스] 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                    <span class="date roboto">2022. 04. 21</span>
+                    <a href="#none" class="link"><span class="hidden">상세보기</span></a>
+                  </li>
+                  <li>
+                    <div class="tagList"><span class="tag ga">처리중</span></div>
+                    <strong>[유료서비스] 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                    <span class="date roboto">2022. 04. 21</span>
+                    <a href="#none" class="link"><span class="hidden">상세보기</span></a>
+                  </li>
+                  <li>
+                    <div class="tagList"><span class="tag bl">답변완료</span></div>
+                    <strong>[유료서비스] 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                    <span class="date roboto">2022. 04. 21</span>
+                    <a href="#none" class="link"><span class="hidden">상세보기</span></a>
+                  </li>
+                  <li>
+                    <div class="tagList"><span class="tag ga">처리중</span></div>
+                    <strong>[유료서비스] 제목 전체가 노출됩니다. (2열 표기 가능)</strong>
+                    <span class="date roboto">2022. 04. 21</span>
+                    <a href="#none" class="link"><span class="hidden">상세보기</span></a>
+                  </li>
+                </ul>
+                <!-- 더보기: 10개씩 노출 -->
+                <div class="btnMoreBox">
+                  <button type="button" class="btn more"><span>더보기</span></button>
+                </div>  
+                <!--// 더보기: 10개씩 노출 -->
+
+                <!-- 데이터 없을때 노출 -->
+                <div class="noList">
+                  <p>검색된 결과가 없습니다.</p>
+                </div>
+                <!--// 데이터 없을때 노출 -->
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

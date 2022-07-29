@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '회원가입', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">마이데이터 연결</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>통신 정보를 연결하면 신용정보를 올릴 수 있어요.</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="infoTxt2">
+              <p class="subTit">마이데이터를 연결할까요?</p>
+              <p class="exp">단 30초면 모든 기관을 찾고 연결할 수 있어요.</p>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn second"><span>나중에 할래요</span></button>
+              <button type="button" class="btn primary"><span>네, 연결할래요</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

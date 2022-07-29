@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+
+  <script type="text/javascript">
+    mbHeader = { title: '신용점수 올리기', prev: true, menu: true};
+
+    $(function() {        
+      modal.openModal('#modalid5');
+    });
+  </script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modalid5" class="btn base modalOpen">[팝업]개인(신용)정보 수집 및 이용 동의</a>
+        </div> 
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modalid5">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <p class="hSubTxt">나이스지키미 앱에서 신용생활 시작하기!</p>
+          <h1>앱에서 쉽고 빠르게<br>  마이데이터를 연결하세요</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <p class="txtLink">
+              <a href="#none" class="btnLine">다음에 이용할게요 :)</a>
+            </p>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>앱으로 보기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

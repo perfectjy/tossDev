@@ -1,0 +1,109 @@
+@charset "euc-kr";
+
+/* common */
+.pointColor{color:#066bfd;}
+
+/* custForm.round */
+.rankSection .custForm.round{text-align:right;}
+.rankSection .custForm.round select{background:url(../../img/bzw/common/ico/ico_select_rank_arr.png) right 8px top 5px no-repeat; background-size:15px 35px;}
+.rankSection .custForm.round select.low{background-position:right 8px top -15px;}
+
+.custForm.round{margin-top:10px;}
+.custForm.round select{width:75px; height:27px; padding-right:20px; color:#1d6fdb; font-size:14px; border:1px solid #1d6fdb; border-radius:27px;}
+.custForm.round select option:not(:checked){color:#444;}
+
+/* name/pet 검색 */
+.lineFormSearch { position:relative; margin-top:-12px;}
+.lineFormSearch .itemLine { line-height: 30px; font-size:18px; font-weight: 700; padding-bottom:6px; margin-top:12px;}
+.lineFormSearch .custForm {position:relative; display:inline-block; line-height:30px;}
+.lineFormSearch .custForm:after {position:absolute; content:''; left:0; right:0; bottom:-6px; border-bottom:1px solid #707070;}
+.lineFormSearch .custForm select {height:30px; padding:0 25px 0 0; font-size:18px; border:0; background:url(../../img/bzw/common/ico/ico_select_arr.png) right center no-repeat; background-size:23px;}
+.lineFormSearch .custForm input[type=text]{height:30px; padding:0; font-size:18px; border:0; border-radius:0;}
+.lineFormSearch .custForm input[type=text]::-webkit-input-placeholder{color:#d4d4d4; font-weight: 400;}
+.lineFormSearch .custForm .inp{position:relative; display:inline-block; width:80px;}
+.lineFormSearch .custForm .inp.firstName{width:50px; padding-right:10px;}
+.lineFormSearch .custForm .inp.firstName::after{content:'/'; position:absolute; right:3px; top:-5px; display:inline-block; font-size:18px; color:#d4d4d4; line-height:40px;}
+.lineFormSearch .infoTxt {margin-top:10px; font-size:14px; color:#767676;}
+
+/* text */
+.guideText{margin-top:32px; text-align:center; font-size:15px; line-height:24px; letter-spacing:-1px;}
+.guideText strong{display:block; color:#222; font-size:18px; font-weight: 700;}
+.guideText p{margin-top:10px; font-size:14px; line-height:18px; letter-spacing:-.8px;}
+
+/* 데이터놀이 - 이름분석 */
+.analyzeNameImg{width:295px; height:295px; margin:20px auto 0; background:url(../../img/bzw/@tmp/@tmp_dataplay.png) no-repeat; background-size:296px;}
+.analyzeSection.main .governingTitle{text-align:center; letter-spacing:-1.25px;}
+.analyzeSection.main .governing{margin-bottom:25px;}
+.mobile .analyzeSection .btmFixList{margin-top:140px;}
+dl.keywordName{display:flex; margin-top:20px;}
+dl.keywordName dt{font-size:14px; margin-right:15px;}
+dl.keywordName dd{overflow-x:scroll; width:calc(100% - 70px); float:left;}
+dl.keywordName .keywordList>li{display:inline;}
+dl.keywordName .keywordList>li:not(:last-child){margin-right:10px;}
+dl.keywordName .keywordList>li a{color:#87909b; text-decoration:underline;}
+
+/* chart area */
+.chartBox{position:relative; min-height:150px; margin-top:38px;}
+.chartBox.bg{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; width:100%; min-height:250px; padding:28px 0; text-align:center; background:#f2f3f5; border-radius:30px;}
+.chartBox.bg p{margin-top:13px; color:#767676; font-size:15px;}
+.chartBox.bg p>strong{color:#444; font-weight:700;}
+.chartBox dl.gender{display:flex; justify-content:center;}
+.chartBox dl.gender dd{font-size:18px;}
+.chartBox dl.gender dd strong{font-size:21px; font-weight:700;}
+.chartBox dl.gender>div{text-align:center;}
+.chartBox dl.gender>div::before{content:''; display:inline-block; width:140px; height:113px;}
+.chartBox .man::before{background:url(../../img/bzw/common/bg/bg_puzzle_man.png) no-repeat; background-size:140px 113px;}
+.chartBox .woman::before{background:url(../../img/bzw/common/bg/bg_puzzle_woman.png) no-repeat; background-size:140px 113px;}
+.chartView{display:flex;}
+.chartView .box{flex:1;}
+.chartView .box:first-child{margin-right:10px;}
+.chartView .item{width:100%; color:#fff; margin-bottom:10px; padding:13px 17px; border-radius:23px;}
+.chartView .item p{font-size:14px; line-height:20px;}
+.chartView .item strong{font-size:15px; font-weight:400;}
+.chartView .item .dataVal{font-size:18px; font-weight:700; letter-spacing:-.8px;}
+.chartView .item.whole{height:120px; background:#ff6475 url(../../img/bzw/@tmp/@tmp_chart_view_04.png) left bottom 8px no-repeat; background-size:131px 57px;}
+.chartView .item.people{height:150px; color:#222; background:rgba(185, 210, 235, 0.3);}
+.chartView .item.people ul{display:flex; justify-content:center;}
+.chartView .item.gender{height:140px; background:#41d5e2 url(../../img/bzw/@tmp/@tmp_chart_view_02.png) center bottom 13px no-repeat; background-size:96px 51px;}
+.chartView .item.gender strong{display:block; margin-top:18px; text-align:center;}
+.chartView .item.region{height:189px; background:#5683ff url(../../img/bzw/@tmp/@tmp_chart_view_03.png) left bottom 18px no-repeat; background-size:192px 85px;}
+.chartView .item.year{height:120px; background:#fec505 url(../../img/bzw/@tmp/@tmp_chart_view_01.png) center bottom no-repeat; background-size:108px 48px;}
+.chartView .item.year strong{display:block; margin-top:12px; text-align:center;}
+
+/* 데이터놀이 - 이름추천 */
+.rankView{position:relative; margin-top:100px;}
+.rankView .rankTop{display:flex; justify-content:center; align-items:end;}
+.rankView .rankTop>li{box-sizing:border-box; padding-top:15px; text-align:center; color:#fff; font-weight:700;}
+.rankView .rankTop>li span{line-height:1;}
+.rankView .rankTop>li .num{display:block; margin-bottom:8px; font-size:19px;}
+.rankView .rankTop>li .name{display:block; margin-bottom:5px; font-size:14px;}
+.rankView .rankTop>li p{font-size:9px;}
+.rankView .rankTop>li:nth-child(1){position:absolute; width:125px; height:125px; padding-top:20px; border-radius:50%; background:#5683ff; border:2px solid #fff;}
+.rankView .rankTop>li:nth-child(1) .num{font-size:26px;}
+.rankView .rankTop>li:nth-child(1) .name{font-size:20px;}
+.rankView .rankTop>li:nth-child(1) p{font-size:13px;}
+.rankView .rankTop>li:not(:nth-child(1)){width:92px; height:92px; border-radius:50%;}
+.rankView .rankTop>li:nth-child(2){margin-right:45px; background:#fec505;}
+.rankView .rankTop>li:nth-child(3){margin-left:45px;background:#ff6475;}
+.rankView .rankList{margin-top:40px;}
+.rankView .rankList>li{display:flex; justify-content:space-between; align-items:center; height:40px; padding:0 6px; border-bottom:1px solid #d4d4d4;}
+.rankView .rankList>li .num{min-width:20px; text-align:center;}
+.rankView .rankList>li .name{flex:1; margin-left:30px;}
+.rankView .rankList>li .totalNum span{padding-right:2px;}
+
+/* btmFixList */
+.btmFixList{width:1180px; margin:0 auto;}
+.mobile .btmFixList{width:auto; margin:78px -20px 0;}
+.btmFixList .btnBox{margin-top:28px;}
+
+/* categorySlider */
+.categorySlider{overflow:hidden; position:relative;}
+.categorySlider .swiper-wrapper{display:flex; justify-content:space-between; align-items:end; width:600px; margin:0 auto;}
+.categorySlider .swiper-slide{width:auto; text-align:center;}
+.categorySlider .btn{min-width:auto; width:65px; height:65px; padding-top:23px; line-height:1; color:#767676; font-size:14px; border-radius:12px; background:#f2f3f5;}
+.mobile .categorySlider::before, .mobile .categorySlider::after{content:''; position:absolute; top:0; z-index:2; display:block; width:40px; height:100%;}
+.mobile .categorySlider::before{left:0; background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.19931722689075626) 100%);}
+.mobile .categorySlider::after{right:0; background:linear-gradient(90deg, rgba(255,255,255,0.19931722689075626) 0%, rgba(255,255,255,1) 100%);}
+.mobile .categorySlider .swiper-wrapper{display:flex; justify-content:initial; align-items:end; width:auto;}
+.mobile .categorySlider .swiper-slide-active{height:75px;}
+.mobile .categorySlider .swiper-slide-active .btn{width:75px; height:75px; padding-top:27px; color:#fff; background:#066bfd; transition:all .1s;}

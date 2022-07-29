@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '나이스 실험실', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="stepList">
+                        <div class="stepBar"><span style="width:calc((100% / 20) * 1)"></span></div>
+                        <div class="steps">
+                            <span class="hidden">현재문항</span><strong class="num">1</strong>
+                            <span class="hidden">전체문항</span><strong>20</strong>
+                        </div>
+                    </div>
+					<div class="oxQuizWrap">
+                        <div class="score">현재점수 <strong class="pColor">20</strong></div>
+                        <div data-quiz-next="current">  
+                            <div class="oxQuiz" data-quiz="question-1">
+                                <div data-quiz-title="title">
+                                    <span class="num">문제 1</span>
+                                    <h2 class="h2"><span class="pColor">지수</span>는 제니보다 흔한 이름이다?</h2>
+                                </div>
+                                <div class="testBox" data-quiz-select="select">
+                                    <div class="hintBox">
+                                        <p><strong>HINT</strong>지수는 전국에 23,576명 있어요.</p>
+                                    </div>
+                                    <div class="selOX">
+                                        <strong class="yes"><input type="radio" name="type" id="yes" data-quiz-answer="bingo"><label for="yes"><span class="hidden">맞다</span></label></strong>
+                                        <strong class="no"><input type="radio" name="type" id="no" data-quiz-answer="wrong"><label for="no"><span class="hidden">아니다</span></label></strong>
+                                    </div>
+                                </div>
+                                <div class="ansBox" data-quiz-result="true">
+                                    <p class="correct yes">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                </div>
+                                <div class="ansBox" data-quiz-result="false">
+                                    <p class="correct no">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                    <div class="btnConts">
+                                        <button type="button" class="btn primary"><span>결과보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nextTest" data-quiz-next="next">                           
+                            <div class="oxQuiz" data-quiz="question-2">
+                                <div data-quiz-title="title">
+                                    <span class="num">문제 2</span>
+                                    <h2 class="h2"><span class="pColor">지수</span>는 제니보다 흔한 이름이다?</h2>
+                                </div>
+                                <div class="testBox" data-quiz-select="select">
+                                    <div class="hintBox">
+                                        <p><strong>HINT</strong>지수는 전국에 23,576명 있어요.</p>
+                                    </div>
+                                    <div class="selOX">
+                                        <strong class="yes"><input type="radio" name="type" id="yes1" data-quiz-answer="wrong"><label for="yes1"><span class="hidden">맞다</span></label></strong>
+                                        <strong class="no"><input type="radio" name="type" id="no1" data-quiz-answer="bingo"><label for="no1"><span class="hidden">아니다</span></label></strong>
+                                    </div>
+                                </div>
+                                <div class="ansBox" data-quiz-result="true">
+                                    <p class="correct yes">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                </div>
+                                <div class="ansBox" data-quiz-result="false">
+                                    <p class="correct no">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                    <div class="btnConts">
+                                        <button type="button" class="btn primary"><span>결과보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="nextTest" data-quiz-next="next">                           
+                            <div class="oxQuiz" data-quiz="question-3">
+                                <div data-quiz-title="title">
+                                    <span class="num">문제 3</span>
+                                    <h2 class="h2"><span class="pColor">지수</span>는 제니보다 흔한 이름이다?</h2>
+                                </div>
+                                <div class="testBox" data-quiz-select="select">
+                                    <div class="hintBox">
+                                        <p><strong>HINT</strong>지수는 전국에 23,576명 있어요.</p>
+                                    </div>
+                                    <div class="selOX">
+                                        <strong class="yes"><input type="radio" name="type" id="yes2" data-quiz-answer="wrong"><label for="yes2"><span class="hidden">맞다</span></label></strong>
+                                        <strong class="no"><input type="radio" name="type" id="no2" data-quiz-answer="bingo"><label for="no2"><span class="hidden">아니다</span></label></strong>
+                                    </div>
+                                </div>
+                                <div class="ansBox" data-quiz-result="true">
+                                    <p class="correct yes">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                </div>
+                                <div class="ansBox" data-quiz-result="false">
+                                    <p class="correct no">
+                                        <span class="pColor">지수 23,576명</span> 제니 4,621명으로 지수가 더 많아요.
+                                    </p>
+                                    <div class="btnConts">
+                                        <button type="button" class="btn primary"><span>결과보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            var queAnswer = {
+                                gTarget: null,
+                                gTargetString: null,
+                                gParent: null,
+                                gTitle: null,
+                                gSelWrap: null,
+                                gSelItem: null,
+                                gTargetNext: null,
+                                flag : null,
+                                num: 1,
+                                selectAnswer: function(v) {
+                                    var o = this;
+                                    o.flag = $(v.target).is('[data-quiz-answer=bingo]');
+                                    o.gTitle.hide();
+                                    o.gSelWrap.hide();
+                                    o.gParent.attr('data-quiz-next', 'prev');
+                                    o.gTarget.find('[data-quiz-result='+o.flag+']').show();
+                                    o.num = parseInt(o.gTargetString.substr(o.gTargetString.length-1,1)) + 1;
+                                    if(o.flag) {
+                                        o.gTargetNext.show();
+                                        queAnswer.init('question-' + o.num);
+                                    }
+                                },
+                                init: function(v) {
+                                    var o = this;
+                                    o.gTarget = $('[data-quiz='+ v +']');
+                                    o.gTargetString = v;
+                                    o.gParent = o.gTarget.parent('[data-quiz-next]');
+                                    o.gTitle = o.gTarget.find('[data-quiz-title=title]');
+                                    o.gSelWrap = o.gTarget.find('[data-quiz-select=select]');
+                                    o.gSelItem = o.gSelWrap.find('[data-quiz-answer]');
+                                    o.gTargetNext = o.gParent.next('[data-quiz-next=next]');
+
+                                    o.gParent.attr('data-quiz-next', 'current');
+
+                                    o.gSelItem.off('change.quiz').on('change.quiz', function(v) {
+                                        o.selectAnswer(v);
+                                    })
+                                }
+                            }
+                            queAnswer.init('question-1');
+                        });
+                    </script>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

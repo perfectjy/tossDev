@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::키워주는신용생활</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>    
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+      mbHeader = { title: '나이스지키미', prev: true, menu: true };
+  
+      $(function() {        
+        modal.openModal('#modalid');
+        
+        $( "#sortable" ).sortable();
+      });
+    </script>
+</head>
+<body>
+
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <a href="#modalid" class="btn base modalOpen">[팝업]상품가입 이탈방지</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- 풀 모달 -->
+  <div class="uiModal full" id="modalid">
+    <div class="modalWrap">
+      <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>사업장 설정</h1>
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->
+          <div class="governing">
+            <h2 class="governingTitle">사업장 목록 순서를 설정할 수 있어요.</h2>
+          </div>
+          
+          <ul class="lineSetBox move" id="sortable">
+            <li class="ui-state-default">              
+              <strong>여의도 김밥</strong>
+              <span>111-11-1111</span>
+              <button type="button" class="btnDel"><span class="hidden">삭제</span></button>
+            </li>
+            <li class="ui-state-default">
+              <strong>종로 김밥</strong>
+              <span>111-11-1111</span>
+              <button type="button" class="btnDel"><span class="hidden">삭제</span></button>
+            </li>
+            <li class="ui-state-default">
+              <strong>충무 김밥</strong>
+              <span>111-11-1111</span>
+              <button type="button" class="btnDel"><span class="hidden">삭제</span></button>
+            </li>
+          </ul>
+
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btns">
+            <button type="button" class="btn primary"><span>완료</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+  
+
+</body>
+</html>

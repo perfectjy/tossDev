@@ -1,0 +1,223 @@
+@charset "euc-kr";
+
+input::placeholder {color:#87909b;}
+/* .formItem {width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap:10px; position: relative;} */
+/* .formItem input[type=text],
+.formItem input[type=password],
+.formItem input[type=email],
+.formItem input[type=tel],
+.formItem button, */
+/* .formItem a {flex:1;} */
+.formItem .inpBox,
+.formItem .secure {flex:1; width:100%;}
+.formItem .secure input[type=text],
+.formItem .secure input[type=password] {padding:0 30px 0 15px;}
+.formItem .txt {height:50px; line-height: 50px;}
+/* .formItem .btn.base {max-width: 117px;} */
+
+/* .insertWrap .formExp {font-size: 12px; margin-top: 8px;} */
+
+
+/* .checkRight {display: flex; flex-direction: row; justify-content: flex-end; margin-top: 20px;}
+.checkToggle {display: inline-block; position: relative; vertical-align: middle; margin-left: 7px;}
+.checkToggle input[type=checkbox] {display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%;opacity: 0;}
+.checkToggle label {position: relative; display: block; width: 33px; height: 20px; border-radius: 20px; border: 1px solid #c6cfdb; background: #c6cfdb;}
+.checkToggle input[type=checkbox]:checked+label {border-color: #066bfd; background: #066bfd;}
+.checkToggle label:after {content: ""; display: block; width: 18px; height: 18px; border-radius: 50%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: #fff; transition: .3s;}
+.checkToggle input[type=checkbox]:checked+label:after {left: calc(100% - 18px);}
+.checkToggle input[type=checkbox]+label::before {display: none;} reset? */
+.btnConts {display: flex; justify-content: center;} /* 수정? */
+.btnConts.login {margin-top: 20px;}
+.btnConts.link {margin-top: 35px;}
+.btnConts.sns {margin-top: 100px;}
+.btnLink {font-size: 14px; position: relative; padding-left: 12px; margin-left: 8px;}
+.btnLink::before {content:''; display: block; width: 4px; height: 4px; border-radius:4px; background-color: #d4d4d4; position: absolute; left: 0; top: calc(50% - 2px);}
+.btnLink:first-child {padding-left: 0; margin-left: 0;}
+.btnLink:first-child:before {display: none;}
+.btnSns {width:50px; height:50px; margin: 0 8px; font-size: 0; background-position: center; background-repeat: no-repeat; background-size: 100% auto; position: relative;}
+.btnSns.naver {background-image: url(../../img/bzw/common/ico/ico_naver.png);}
+.btnSns.kakao {/*background-image: url(../../img/bzw/common/ico/ico_kakao.png);*/ background-color: #ffeb00; border-radius: 50%;}
+.btnSns.apple {/*background-image: url(../../img/bzw/common/ico/ico_apple.png);*/ background-color: #222; border-radius: 50%;}
+.btnSns .toolTip {display: none; width: 230px; position: absolute; top:-60px; left: 50%; transform: translateX(-50%); background-color: #fff; padding: 10px 10px; box-shadow: #ddd 0 5px 10px; font-size: 14px; border-radius: 5px; color: #444;}
+.btnSns.active .toolTip {display: flex; justify-content: space-between;}
+.btnSns .toolTip i {display: inline-block; width: 20px; height: 20px; background: url(../../img/bzw/common/ico/ico_hand.png) no-repeat center center; background-size: 180% auto;}
+.btnSns .toolTip::after {content:''; display: block; width: 0; height: 0; border-top: 10px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; position: absolute; bottom:-8px; left: 50%; transform: translateX(-50%);}
+.btnLine {text-decoration: underline;}  /* 수정? */
+.btnArrow {padding-right: 16px; position: relative; font-size: 15px;}  /* 수정? */
+.btnArrow::before {content: ''; position: absolute; width: 6px; height: 10px; background: url(../../img/bzw/common/ico/ico_arr_prev.png) no-repeat -5px -4px; background-size: 18px; right: 0; top: 50%; transform: translateY(-50%) rotate(180deg);}  /* 수정? */
+.btnAdd {display: block; width: 46px; height: 46px; border-radius: 50%; border: 1px solid #87909b; position: relative;}
+.btnAdd::before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url(../../img/bzw/common/ico/ico_add.svg); width: 15px; height: 15px; background-size: 100%;}
+
+.mobile .bottomActiveBtns .btnConts.btm {background-color: #f5f5f5; padding: 35px 0 35px 0;}
+.mobile .bottomActiveBtns .btnConts.btm .btnBtm {font-size: 16px; position: relative; margin-left: 24px;}
+.mobile .bottomActiveBtns .btnConts.btm .btnBtm::after {content: ''; display: inline-block; width: 24px; height: 24px; background: url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat; background-size: 100%; transform: rotate(180deg); vertical-align: top; margin-left: 5px;}
+
+.uiModal .btnConts.btnList {margin-top: 0; padding-bottom: 20px;}
+.btnConts.btnList ul {width: 100%;}
+.btnConts.btnList ul>li {margin-top: 10px;}
+.btnConts.btnList ul>li:first-child {margin-top: 0;}
+.btnConts.btnList ul>li button, 
+.btnConts.btnList ul>li a {border-color: #dcdff1; color: #444; font-weight: 400;}
+.uiModal .btnConts.link {padding-bottom: 20px;}
+
+.btnConts.min {margin-top: 20px;}
+
+ /*수정_공통요소 --start*/
+.pagenation li span {display: block; padding:20px 30px; position: relative;}
+.pagenation li span::before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat center; background-size: cover; }
+.pagenation li.prev span::before {transform: translateY(-50%) rotate(180deg); }
+/*수정_공통요소 --end*/
+
+/*imgWrap start - 정리 필요*/
+.imgWrap {display: block; overflow: hidden; position: relative;}
+.imgWrap img {max-width: 100%; }
+/*imgWrap end - 정리 필요*/
+
+/* nicet실험실 start */
+.labRtxt {margin: -30px 0 -10px 0; text-align: right; color: #767676;}
+.labBox {display: flex; flex-direction: column; justify-content: space-between; margin-top: 20px; padding:30px; min-height: 380px; border-radius: 30px;}
+.labBox.lab01 {background-color: #dbeeff;}
+.labBox.disabled {background-color: #f2f3f5;}
+.labBox .tit {font-size: 20px; font-weight: 700;}
+.labBox .exp {margin-top: 10px; color: #767676; font-size: 14px;}
+
+.myResult {margin-top:-20px;}
+.myResult dt {color:#066bfd; font-size: 18px; font-weight: 700;}
+.myResult dd {margin-top: 20px; color: #767676; font-size: 14px;}
+.myResult .btnArrow strong {color:#066bfd;}
+
+.grayArea {margin: 40px -20px -70px -20px; padding: 20px 20px 40px 20px;  background-color: #f0f1f3;}
+.labResultBox {display: flex; flex-direction: column; justify-content: space-between; margin-top: 20px; padding:25px; min-height: 250px; background-color: #fff; border-radius: 30px;}
+.labResultBox .labResultTop {display: flex; flex-direction: row; justify-content: space-between;}
+.labResultBox .labResultLeft {font-size: 16px;}
+.labResultBox .labResultRight {text-align: right;}
+.labResultBox .labResultRight span {color: #767676; font-size: 14px;}
+.labResultBox .labResultRight strong {color: #066bfd; font-size: 18px; font-weight: 700;}
+.labResultBox .labResultRight em {color: #066bfd; font-size: 18px;}
+.labResultBox .labResultMid {margin-top: 10px;}
+.labResultBox .labResultMid .labResultImg {width: 100px; height: 100px; background-color: #f1f1f1; margin: 0 auto;}
+.labResultBox .labResultMid .labResultTit {margin-top: 15px; text-align:center; color: #066bfd; font-size: 20px; font-weight: 700;}
+.labResultBox .labResultGraph {text-align: center;}
+.labResultBtn {margin-top: 20px; text-align: center;}
+.labResultBtn button, .labResultBtn a {background-color: #fff;}
+/* nicet실험실 end */
+
+/*-----certArea start-----*/
+.certArea {display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 0 0 70px 0;}
+.certArea.progressWrap { margin: 110px 0 80px;}
+.certArea .imgWrap {width: 150px; height: 150px; background-size: contain; background-repeat: no-repeat;}
+.certArea .imgWrap.face {background-image: url('../../img/bzw/common/bg/bg_face.png');}
+.certArea .imgWrap.lock {background-image: url('../../img/bzw/common/bg/bg_lock.png');}
+.certArea .imgWrap.shield {background-image: url('../../img/bzw/common/bg/bg_shield.png');}
+.certArea .imgWrap.lockAtt {background-image: url('../../img/bzw/common/bg/bg_lock_att.png');}
+
+.certArea .exp {padding-top: 20px; text-align: center;}
+.certArea .progressDot {display: flex; gap: 16px;}
+.certArea .progressDot span {width: 15px; height: 15px; border-radius: 50%; display: block; background-color: #c6cfdb;}
+.certArea .progressDot span.active {background-color: #222;}
+/*-----certArea end-----*/
+
+
+/*eventArea start ---*/
+.eventWrap .noList {margin-top: 50px;}
+.eventWrap .eventList {padding-top: 30px;}
+.eventWrap .eventList ul>li:not(:first-child){padding-top: 20px;}
+.eventWrap .eventList ul>li .imgWrap {background-color: #ddd; width: 100%; /*min-height: 130px;*/ border-radius: 19px;}
+.eventWrap .eventList ul>li .info { position: relative; padding: 0 65px 0 5px; margin-top:15px;}
+.eventWrap .eventList ul>li .info .tit {font-size: 16px; line-height: 22px; font-weight: 700; word-break: keep-all; text-overflow: ellipsis;  display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 2;}
+.eventWrap .eventList ul>li .info .date {display:block; padding-top: 5px; font-size: 12px; color: #767676;}
+.eventWrap .eventList ul>li .info .tag {position: absolute; right: 0; top: 0; width: 60px; height: 23px; background-color: #deeeff; display: flex; align-items: center; justify-content: center; border-radius: 18px; font-size: 12px; color: #0071ce; font-weight: 700;}
+.eventWrap .eventList ul>li.disabled .imgWrap::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3);}
+.eventWrap .eventList ul>li.disabled .imgWrap img {opacity:.4}
+.eventWrap .eventList ul>li.disabled .info .tag {background-color: #f9f9f9; color: #767676;}
+
+.postWrap {margin-top: -37px;}
+.postWrap .postDate {font-size: 12px; color: #767676; padding-top: 8px;}
+.postWrap.event .postContent {padding-top: 30px; font-size: 16px; word-break: keep-all;}
+.postWrap.event .postContent .imgWrap {margin: 0 -20px;}
+.postWrap.event .postContent .eventTxt {padding-top: 20px; font-size: 16px; word-break: keep-all;}
+/*eventArea end ---*/
+
+/*quizWrap --start*/
+.quizWrap .quizStage {color: #767676; /* font-family: 'Roboto'; font-weight: 500; */ font-size: 16px;} 
+.quizWrap .quizStage b {color: #222;} 
+.quizWrap .rdoGroup.col {flex-direction: column; gap: 15px;}
+.quizWrap .rdoGroup.col input[type=radio] + label {text-align: left; padding: 15px 20px; height: auto;}
+
+.quizWrap .quizImage {background-color: #ddd; height: 155px; margin: 0 auto;} /*임시 이미지*/
+.quizWrap .quizOptions {padding-top: 40px;} /*임시 패딩*/
+.quizWrap .btnConts.quizNav {gap: 40px;}
+/*quizWrap --end*/
+
+/* mydata */
+.mydataArea .uiItem em {color: #066bfd;}
+.mydataArea .mydataCheck {margin-top: 20px;}
+.mydataSlider {position: relative; padding-bottom: 30px; overflow: hidden;}
+.mydataSlider>.swiper-pagination-bullets {bottom: 0;}
+.mydataSlider .swiper-pagination-bullet {border-radius: 8px; width: 4px; height: 4px;}
+.mydataSlider .swiper-pagination-bullet-active {background: #066bfd; width: 16px;}
+.mydataCheck > ul > li {display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px;}
+.mydataCheck .uiItem {width: calc(100%/3 - 7px); height: 89px; margin: 0;}
+.mydataCheck .uiItem input[type=checkbox] + label {width: 100%; height: 100%; padding: 10px; text-align: center; background-color: #fff; border: #d9d9d9 solid 1px; border-radius: 10px; display: flex; flex-direction: column; justify-content: space-between;}
+.mydataCheck .uiItem input[type=checkbox] + label i {display: inline-block; width: 100%; height: 50px;}
+.mydataCheck .uiItem input[type=checkbox] + label i img {max-width: 100%; max-height: 100%;}
+.mydataCheck .uiItem input[type=checkbox]:checked + label {border: #066bfd solid 1px;}
+.mydataCheck .uiItem input[type=checkbox] + label:before {position: absolute; content: ''; top: 5px; left: auto; right: 5px; width: 24px; height: 24px; border: none; border-radius: 10px; box-sizing: border-box;}
+.mydataCheck .uiItem input[type=checkbox]:checked + label:before {background-color: #fff;}
+.mydataCheck .uiItem input[type=checkbox]:checked + label:after {border-color: #066bfd;position: absolute; right: 11px; left: auto; top: 12px;}
+.mydataCheck .uiItem.connected input[type=checkbox] + label {background-color: #f5f8ff;}
+.mydataCheck .uiItem.connected input[type=checkbox] + label::before {content: ''; display: block; width: 21px; height: 16px; background: url(../../img/bzw/common/ico/ico_connected.png) no-repeat center; background-size: 100% auto; border-radius: 0;}
+.tabWrap.t1.mydataTab {margin: 50px -20px 10px -20px; padding: 50px 20px 0 20px; border-top: #f9f9f9 solid 10px;}
+.tabWrap.t1.mydataTab > .tabList {flex-wrap: wrap;}
+.tabWrap.t1.mydataTab > .tabList > li {min-width: calc(100%/3);}
+.tabWrap.t1.mydataTab > .tabList > li.f2 {flex: 2;}
+.tabWrap.t1.mydataTab > .tabList li:nth-child(3n-2)::before {display: none;}
+
+.mydataAcco.uiAccoWrap .uiAccoHeader {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.mydataAcco.uiAccoWrap .uiAccoHeader .uiBtn {width: 64px; height: 64px; border: none;}
+.mydataAcco.uiAccoWrap .uiAccoHeader .uiBtn.active:before {border: none;}
+.mydataAcco.uiAccoWrap .uiAccoContent {background-color: #fff; padding: 0 0 20px 0; border-bottom: none;  margin-bottom: 0;}
+/*quizWrap --end*/
+
+/*myDataArea --start*/
+.myDataArea .progressWrap {display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 40px;}
+.myDataArea .progressWrap .progressBar {position: relative; width: 100px; height: 3px; background-color: #eee; border-radius: 3px;}
+.myDataArea .progressWrap .progress {position: absolute; background-color: #222; height: 100%; border-radius: 3px;}
+.myDataArea .progressWrap .progressIdx {font-size: 11px; color: #767676; letter-spacing: 1px;}
+.myDataArea .progressWrap .progressIdx b {font-size: 14px; color: #222; font-weight: 700;}
+
+.myDataArea .myDataContTit {font-size: 15px; font-weight: 700; margin-bottom: 25px;}
+.myDataArea .myDataInpWrap {display: flex; gap: 10px; padding-top: 30px;}
+.myDataArea .myDataInpWrap input {font-size: 15px; font-weight: 500;}
+.myDataArea .myDataImgArea {margin-bottom: 40px;}
+.myDataArea .myDataImgArea .imgWrap {width: 150px; margin: 0 auto; height: 150px; background-color: #e8e8e8;}
+.myDataArea .IcoNoti {position: relative; display: block; color: #444; padding-left: 18px; margin-top: 115px;}
+.myDataArea .IcoNoti i {position: absolute; left: 0;}
+
+.listCircle {color: #444; font-size: 14px;}
+.listCircle>li {position: relative; padding-left: 30px; line-height: 22px;}
+.listCircle>li span.exp {font-weight: 700;}
+.listCircle>li+ li {margin-top: 23px;}
+.listCircle>li>i {position: absolute; left: 7px; top: 1px;color: #fff; text-align: center;}
+.listCircle>li>i::before {content: ''; z-index: -1; position: absolute; left: 60%; top: 50%; width: 20px; height: 20px; background-color: #c3d9ed; border-radius: 50%; transform: translate(-50%, -50%);}
+.listCircle.line>li::after {content: ''; height: calc(100% - 5px); width: 2px; background-color: #c3d9ed; position: absolute; left: 10px; top: 26px;}
+.listCircle.line>li:last-child:after {display: none;}
+
+.listNum li {position: relative; padding-left: 20px; line-height: 22px;}
+.listNum i {position: absolute; left: 0;}
+
+.governingExp {font-size: 13px; color: #767676; padding-top: 15px;} /*공통 ?*/
+.myDataConts { border: 1px solid #c6cfdb; border-radius: 10px; box-sizing: border-box; padding: 0 13px 25px;} /*공통 ?*/
+/*myDataArea --end*/
+
+/*policy---start*/
+.policyWrap .policyNotice {word-break: keep-all;}
+.policyWrap .policyNotice .policyTit {font-size: 18px; font-weight: 700;}
+.policyWrap .policyNotice .policySubTit {font-size: 15px; font-weight: 700; padding-top: 20px;}
+.policyWrap .policyNotice .policyInfo {font-size: 14px; color: #444; padding-top: 20px;}
+
+.policyConts {padding-top: 20px;}
+.policyConts table {border-top: 1px solid #444;}
+.policyConts table th {font-size: 13px; }
+.policyConts table td {}
+/*policy---end*/

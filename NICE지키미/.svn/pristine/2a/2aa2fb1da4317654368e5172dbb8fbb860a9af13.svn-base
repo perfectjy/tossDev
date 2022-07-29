@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '휴대폰 번호 등록', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              나이스 고객님<br> 고객님의 가입정보가 다른 고객님의 정보와 중복되어 휴대폰번호 및 이메일 주소 재등록이 필요합니다
+            </h2>
+          </div>
+          <div class="insertWrap">
+            <ul>
+              <li>
+                <label for="logtel" class="titItem">휴대폰 번호</label>
+                <div class="formItem">
+                  <input type="text" placeholder="-없이 11자리 숫자 입력" title="휴대폰 번호 입력" id="logtel" maxlength="11">
+                  <button type="button" class="btn base"><span>확인번호 발송</span></button>
+                </div>
+              </li>
+              <li>
+                <label for="lognum" class="titItem">확인번호 입력</label>
+                <div class="formItem">
+                  <input type="text" placeholder="숫자 6자리" title="확인번호 입력" id="lognum" maxlength="6">
+                  <button type="button" class="btn base"><span>확인</span></button>
+                </div>
+                <p class="formExp">휴대폰 확인번호 발송은 일3회로 제한됩니다</p>
+              </li>
+              <li>
+                <label for="logemail" class="titItem">이메일</label>
+                <div class="formItem">
+                  <input type="email" placeholder="도메인을 포함한 이메일 입력" title="이메일 입력" id="logemail">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bottomActiveBtns">
+            <div class="btnConts">
+              <button type="button" class="btn second"><span>나중에 할래요</span></button>
+              <button type="button" class="btn primary"><span>네, 변경할래요</span></button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

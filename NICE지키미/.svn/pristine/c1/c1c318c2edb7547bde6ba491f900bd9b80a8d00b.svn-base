@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '소비현황', prev: true, menu: true };
+    
+    $(function() {        
+      modal.openModal('#useCardList');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="content">
+        <div class="section">
+          
+          <a href="#useCardList" class="btn base modalOpen">거래내역</a>
+          
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+
+    <!-- 카드거래내역 팝업 -->
+    <div class="uiModal full" id="useCardList">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>거래내역</h1>						
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="tabWrap t1">
+              <ul class="tabList">
+                <li class="tab active"><a href="#tab01">전체</a></li>
+                <li class="tab"><a href="#tab02">카드</a></li>
+                <li class="tab"><a href="#tab03">페이</a></li>
+              </ul>
+              <div class="tabConts">
+                <div class="tabPanel" id="tab01">
+                  <div class="mthInfo">
+                    <div class="control">
+                      <div class="intDate">
+                        <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                        <input type="text" id="monthDate" class="robotoB" value="6">월
+                      </div>
+                      <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                      <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                    </div>
+                    <div class="opt">
+                      최신순
+                    </div>
+                  </div>
+                  <!--// mthInfo -->
+                  <div class="sideLineArea">
+                    <ul class="sideLineList t1">
+                      <li class="active">
+                        <span class="date"><i>20</i>일</span>
+                        <span class="cnt"><i>3</i>건</span>
+                        <div class="box">
+                          <span class="time">23:15</span>
+                          <div class="payItem">                          
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_kb.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>(주)나이스베이커리</p>
+                              <strong class="minus"><span class="robotoB">6,000,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">할부</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_nh.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>식자재마트</p>
+                              <strong class="minus"><span class="robotoB">120,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <span class="time">15:00</span>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>이마트 신촌점</p>
+                              <strong class="minus"><span class="robotoB">100,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="date"><i>19</i>일</span>
+                        <span class="cnt"><i>2</i>건</span>
+                        <div class="box">
+                          <span class="time">23:15</span>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>네이버페이 충전</p>
+                              <strong class="plus"><span class="robotoB">6,000,000</span>원</strong>
+                            </div>
+                            <span class="tag re">적립</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_toss.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>이마트 신촌점</p>
+                              <strong class="minus"><span class="robotoB">120,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tabPanel" id="tab02">
+                  <div class="mthInfo">
+                    <div class="control">
+                      <div class="intDate">
+                        <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                        <input type="text" id="monthDate" class="robotoB" value="6">월
+                      </div>
+                      <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                      <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                    </div>
+                    <div class="opt">
+                      최신순
+                    </div>
+                  </div>
+                  <!--// mthInfo -->
+                  <div class="sideLineArea">
+                    <ul class="sideLineList t1">
+                      <li class="active">
+                        <span class="date"><i>20</i>일</span>
+                        <span class="cnt"><i>3</i>건</span>
+                        <div class="box">
+                          <span class="time">23:15</span>
+                          <div class="payItem">                          
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_kb.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>(주)나이스베이커리</p>
+                              <strong class="minus"><span class="robotoB">6,000,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">할부</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_nh.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>식자재마트</p>
+                              <strong class="minus"><span class="robotoB">120,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <span class="time">15:00</span>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>이마트 신촌점</p>
+                              <strong class="minus"><span class="robotoB">100,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="date"><i>19</i>일</span>
+                        <span class="cnt"><i>2</i>건</span>
+                        <div class="box">
+                          <span class="time">23:15</span>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>네이버페이 충전</p>
+                              <strong class="plus"><span class="robotoB">6,000,000</span>원</strong>
+                            </div>
+                            <span class="tag re">적립</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_toss.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>이마트 신촌점</p>
+                              <strong class="minus"><span class="robotoB">120,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tabPanel" id="tab03">
+                  <div class="mthInfo">
+                    <div class="control">
+                      <div class="intDate">
+                        <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                        <input type="text" id="monthDate" class="robotoB" value="6">월
+                      </div>
+                      <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                      <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                    </div>
+                    <div class="opt">
+                      최신순
+                    </div>
+                  </div>
+                  <!--// mthInfo -->
+                  <div class="sideLineArea">
+                    <ul class="sideLineList t1">
+                      <li class="active">
+                        <span class="date"><i>20</i>일</span>
+                        <span class="cnt"><i>3</i>건</span>
+                        <div class="box">
+                          <span class="time">23:15</span>
+                          <div class="payItem">                          
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_kb.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>(주)나이스베이커리</p>
+                              <strong class="plus"><span class="robotoB">6,000,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">할부</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_nh.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>식자재마트</p>
+                              <strong class="minus"><span class="robotoB">120,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                          <div class="payItem">
+                            <i><img src="../../../img/zkm/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                            <div class="payCont fRow">
+                              <p>이마트 신촌점</p>
+                              <strong class="plus"><span class="robotoB">100,000</span>원</strong>
+                            </div>
+                            <span class="tag ga">일시불</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom"></div>
+        </div>
+        
+      </div>
+    </div>
+    <!--// 카드거래내역 팝업 -->
+  </div>
+</body>
+
+</html>

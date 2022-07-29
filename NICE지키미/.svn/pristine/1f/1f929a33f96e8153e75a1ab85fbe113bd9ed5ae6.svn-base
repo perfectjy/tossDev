@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>품종검색</title>
+
+    <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <link rel="stylesheet" href="../../../../css/bzw/ko.css">
+  <script type="text/javascript">
+    mbHeader = { title: '품종검색', prev: true, menu: true };
+</script>
+</head>
+<body>
+	<div class="guideWrap">
+    <h1 class="guideTit">모달 팝업</h1>
+
+    <div class="code">
+      <code>
+        <p>
+          
+        </p>
+      </code>
+    </div>
+
+    <div class="guideItem">
+      <a href="#modalid" class="btn base modalOpen openFocus0">클릭하면 풀팝업 활성화</a>
+    </div>
+
+
+    <!-- 풀 모달 -->
+    <div class="uiModal full active" id="modalid" aria-hidden="false" aria-live="polit" style="z-index: 310;">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>품종검색</h1>						
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="governing">
+              <h2 class="governingTitle">품종을 선택하세요</h2>
+            </div>
+
+            <div class="petInfoList">
+              <div class="petInfoItem">
+                <strong class="petItemTit">품종</strong>
+                <div class="serarchBox">
+                  <input type="text" class="search" placeholder="검색">
+                  <span class="searchImg"><span class="hidden">검색</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="petType">
+              <ul class="petTypeList">
+
+                <li class="typeRound">
+                  <input type="radio" name="animalKind" value="" id="petList01" title="아메리칸 코카 스파니엘" checked="checked" class="typeRound">
+                  <label for="petList01">
+                    <span class="petTypeImg petImg01"></span>
+                    <span class="petTypeName">아메리칸 코카 스파니엘</span>
+                  </label>
+                </li>
+
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList02" title="아메리칸 불리" class="typeRound">
+                  <label for="petList02">
+                    <span class="petTypeImg petImg02"></span>
+                    <span class="petTypeName">아메리칸 불리</span>
+                  </label>
+                </li>
+
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList03" title="꼬똥 드 뚤레아"  class="typeRound">
+                  <label for="petList03">
+                    <span class="petTypeImg petImg03"></span>
+                    <span class="petTypeName">꼬똥 드 뚤레아</span>
+                  </label>
+                </li>
+
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04" title="아키다"  class="typeRound">
+                  <label for="petList04">
+                    <span class="petTypeImg petImg04"></span>
+                    <span class="petTypeName">아키다</span>
+                  </label>
+                </li>
+
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04" title="아키다"  class="typeRound">
+                  <label for="petList04">
+                    <span class="petTypeImg"></span>
+                    <span class="petTypeName">아키다</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04" title="아키다"  class="typeRound">
+                  <label for="petList04">
+                    <span class="petTypeImg"></span>
+                    <span class="petTypeName">아키다</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04" title="아키다"  class="typeRound">
+                  <label for="petList04">
+                    <span class="petTypeImg"></span>
+                    <span class="petTypeName">아키다</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btnConts">
+              <button type="button" class="btn second"><span>취소</span></button>
+              <button type="button" class="btn primary"><span>등록</span></button>
+            </div>
+          </div>
+        </div>
+        
+      <a href="#" class="dialog_close last_focus" role="button"><span class="hidden">팝업창 닫기</span></a></div>
+    </div>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '마이데이터 동의', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container" >
+      <div class="content">
+        <div class="section">
+          <!--myDataSection //-->
+            <div class="myDataSection">
+            <div class="governing">
+              <h2 class="governingTitle">개인신용정보 전송내역</h2>
+            </div>
+            <ul class="agreeList">
+              <li>
+                <div class="uiItem"><input type="checkbox" id="agr01" checked disabled><label for="agr01">[필수] 마이데이터 서비스 이용약관</label></div>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+              <li>
+                <div class="uiItem"><input type="checkbox" id="agr02" checked disabled><label for="agr02">[필수] 개인(신용)정보 수집 및 이용에 대한 동의</label></div>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+              <li>
+                <div class="uiItem"><input type="checkbox" id="agr03"><label for="agr03">[선택] 개인(신용)정보 수집 및 이용 동의</label></div>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+              <li>
+                <div class="uiItem"><input type="checkbox" id="agr04"><label for="agr04">[선택] 개인(신용)정보 제3자 제공동의</label></div>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// myDataSection-->
+      </div>
+    </div>
+    <!--// container --> 
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

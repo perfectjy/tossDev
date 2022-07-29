@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Guide</title>
+
+    <script src="../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../js/bzw/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../css/bzw/common.css">
+    <style> 
+      .guideWrap {padding:40px;}  
+      .mobile .guideWrap {padding:20px;} 
+      .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+      .guideItem {margin-top:40px;}  
+      .guideItem h2 {margin-bottom:15px;}   
+      .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+      .mobile .code {padding:15px;}
+      .code code { display: inline-block; }
+      .code code p { display: inline; white-space: nowrap; }
+      p + p { margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="guideWrap">
+  <h1 class="guideTit">FORM INPUT GUIDE</h1>
+  
+  <div class="guideItem">
+
+    <div class="formWrap">
+      <div class="formItem">
+        <label for="logid" class="titItem">아이디</label>
+        <div class="formEle">
+          <input type="text" placeholder="아이디 입력" title="아이디 입력" id="logid">
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="logpw" class="titItem">비밀번호</label>
+        <div class="formEle">
+          <div class="secure">
+            <input type="password" placeholder="비밀번호 입력" title="비밀번호 입력" id="logpw">
+          </div>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="hpnum" class="titItem">휴대폰 번호</label>
+        <div class="intBtnType">
+          <input type="tel" id="hpnum" placeholder="- 없이 11자리 숫자 입력">
+          <span class="intBtn">
+            <button type="button" class="btn base"><span>확인번호 발송</span></button>
+          </span>
+        </div>
+      </div>
+      <div class="formItem">
+        <span class="titItem">우편물수령지</span>
+        <div class="intAddr">
+          <div class="uiItem"><input type="radio" name="period" id="period1" checked="checked"><label for="period1"><span>자택</span></label></div>
+          <div class="uiItem"><input type="radio" name="period" id="period2"><label for="period2"><span>직장</span></label></div>
+          <div class="intPost">
+            <input type="text" title="우편번호" placeholder="검색으로 입력" disabled>
+            <span class="intBtn">
+              <button type="button" class="btn base"><span>주소검색</span></button>
+            </span>
+          </div>
+          <div class="item">
+            <input type="text" title="주소" disabled="disabled">
+          </div>
+          <div class="item">
+            <input type="text" title="상세주소" disabled="disabled">
+          </div>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="kind" class="titItem">품종</label>
+        <div class="intSearch">
+          <input type="text" id="kind" class="inpTxt" placeholder="검색하기">
+          <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="tt" class="titItem">검색 input에 class="inpTxt" 적용시 clear버튼 활성화</label>
+        <div class="formEle">
+          <input type="text" placeholder="아이디 입력" class="inpTxt" d="tt">
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="logname" class="titItem">주민등록번호</label>
+        <div class="intHalf hyphen">
+          <span class="inp">
+            <input type="tel" placeholder="910101" title="주민등록번호 앞6자리" id="logrrn1" maxlength="6">
+          </span>
+          <span class="inp"> 
+            <input type="password" placeholder="뒤 7자리" title="주민등록번호 뒤 7자리" maxlength="7">
+          </span>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="mail" class="titItem">이메일</label>
+        <div class="intHalf mail">
+          <span class="inp">
+            <input type="text" id="mail">
+          </span>
+          <span class="inp">
+            <select>
+              <option>native.co.kr</option>
+            </select>
+          </span>
+        </div>
+        <div class="intBotBtn">
+          <button type="button" class="btn base"><span>이메일 변경</span></button>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="joinDate" class="titItem">입사일</label>
+        <div class="intDate">
+          <input type="text" id="joinDate" value="2202.01.01">
+          <a href="#none" class="btnDate"><span class="hidden">날짜 선택</span></a>
+        </div>
+      </div>
+      <div class="formItem">
+        <label for="money" class="titItem">연 소득</label>
+        <div class="intUnit">
+          <input type="text" id="money" placeholder="숫자만 입력">
+          <span class="unit">만원</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

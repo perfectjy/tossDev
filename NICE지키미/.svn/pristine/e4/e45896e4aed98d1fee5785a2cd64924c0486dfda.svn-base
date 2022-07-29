@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Guide</title>
+
+    <script src="../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../js/bzw/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../css/bzw/common.css">
+    <style> 
+      .guideWrap {padding:40px;}  
+      .mobile .guideWrap {padding:20px;} 
+      .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+      .guideItem {margin-top:40px;}  
+      .guideItem h2 {margin-bottom:15px;}   
+      .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+      .mobile .code {padding:15px;}
+      .code code { display: inline-block; }
+      .code code p { display: inline; white-space: nowrap; }
+      p + p { margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="guideWrap">
+  <h1 class="guideTit">FORM</h1>
+  
+  <div class="guideItem">
+    <h2>input type=["radio"]</h2>
+    <div>
+      <div class="uiItem"><input type="radio" name="period" id="period1" checked="checked"><label for="period1"><span>1주</span></label></div>
+      <div class="uiItem"><input type="radio" name="period" id="period2"><label for="period2"><span>2주</span></label></div>
+      <div class="uiItem"><input type="radio" name="period" id="period3"><label for="period3"><span>1개월</span></label></div>
+    </div>
+  </div>
+  <div class="guideItem">
+    <h2>input type=["radio"] :disabled</h2>
+    <div>
+      <div class="uiItem"><input type="radio" name="period" id="period11" checked="checked" disabled="disabled"><label for="period11"><span>1주</span></label></div>
+      <div class="uiItem"><input type="radio" name="period" id="period12" disabled="disabled"><label for="period12"><span>2주</span></label></div>
+    </div>
+  </div>
+
+  <div class="guideItem">
+    <h2>input type=["checkbox"]</h2>
+    <div>
+      <div class="uiItem"><input type="checkbox" name="period" id="per1" checked="checked"><label for="per1"><span>1주</span></label></div>
+      <div class="uiItem"><input type="checkbox" name="period" id="per2"><label for="per2"><span>2주</span></label></div>
+      <div class="uiItem"><input type="checkbox" name="period" id="per3"><label for="per3"><span>1개월</span></label></div>
+    </div>
+  </div>
+
+  <div class="guideItem">
+    <h2>input type=["checkbox"] :disabled</h2>
+    <div>
+      <div class="uiItem"><input type="checkbox" name="period" id="per11" checked="checked" disabled="disabled"><label for="per11"><span>1주</span></label></div>
+      <div class="uiItem"><input type="checkbox" name="period" id="per12" disabled="disabled"><label for="per12"><span>2주</span></label></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+    <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <link rel="stylesheet" href="../../../../css/bzw/ko.css">
+  <link rel="stylesheet" href="../../../../css/bzw/jy.css">
+  <script type="text/javascript">
+    mbHeader = { title: '반려동물 나이 계산기', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="skipNavi"> 
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+  <div class="wrap" id="wrap">  
+    <!-- header -->    
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+
+          <div class="lineFormSearch">
+            <div class="itemLine">
+              우리
+              <span class="custForm">
+                <select title="동물 구분">
+                  <option>강아지</option>
+                  <option>고양이</option>
+                </select>
+              </span>
+              의 나이는
+            </div>
+            <div class="itemLine">
+              <span class="custForm">
+                <select title="년도선택">
+                  <option>01년</option>
+                  <option>20년</option>
+                  <option>21년</option>
+                </select>
+              </span>
+              <span class="custForm">
+                <select title="개월선택">
+                  <option>00개월</option>
+                  <option>01개월</option>
+                  <option>02개월</option>
+                </select>
+              </span>
+              이고
+            </div>
+            <div class="itemLine">
+              <span class="custForm">
+
+                <!-- 동물구분 강아지 선택시 출현 -->
+                <select title="강아지 세부구분">
+                  <option>소형견</option>
+                  <option>중형견</option>
+                  <option>대형견</option>
+                </select>
+                <!-- 동물구분 고양이 선택시 출현 -->
+                <select title="고양이 세부구분" style="display:none">
+                  <option>집고양이</option>
+                  <option>길고양이</option>
+                </select>
+
+              </span>
+              입니다
+            </div>
+            <div class="itemLine">
+              <span>나와 몇 살 차이일까요?</span>
+            </div>
+            <button type="button" class="btn sub"><span>초기화</span></button>
+          </div>
+
+          <div class="petListBox">
+            <div class="petList">              
+              <ul>                
+                <li>
+                  <input type="radio" name="animalKind" id="petList01" checked="checked">
+                  <label for="petList01">
+                    <span class="photo"><img src="../../../../img/bzw/@tmp/@tmp_cat.png" alt=""></span>
+                    <span class="name">토순이</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="animalKind" id="petList02">
+                  <label for="petList02">
+                    <span class="photo"><img src="../../../../img/bzw/@tmp/@tmp_cat.png" alt=""></span>
+                    <span class="name">돌돌이</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList03">
+                  <label for="petList03">
+                    <span class="photo"></span>
+                    <span class="name">펫이름</span>
+                  </label>
+                </li>  
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04">
+                  <label for="petList04">
+                    <span class="photo"></span>
+                    <span class="name">펫이름</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="animalKind" value="" id="petList04">
+                  <label for="petList04">
+                    <span class="photo"></span>
+                    <span class="name">펫이름</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btnConts">
+            <button type="button" class="btn primary"><span>계산하기</span></button>
+          </div>
+
+          <div class="petDesc">
+            <ul class="listDot">
+              <li>
+                나이 정보는 강아지/고양이 생애주기의 이해를 돕기 위한 참고자료이며, 품종과 환경에 따라 다를 수 있습니다.<br>
+                출처:한국동물병원협회
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottomQuickMenu scroll">
+            <ul class="pet">
+              <li><a href="#none" class="ico01"><span>색상별<br>랭킹</span></a></li>
+              <li><a href="#none" class="ico02"><span>반려동물<br>나이계산기</span></a></li>
+              <li><a href="#none" class="ico03"><span>반려동물<br>이름추천</span></a></li>
+              <li><a href="#none" class="ico04"><span>반려동물<br>이름랭킹</span></a></li><!-- 다자인 업데이트 필요 -->
+            </ul>
+          </div>
+          <!--// bottomQuickMenu.scroll -->
+
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+</html>

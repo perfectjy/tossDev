@@ -1,0 +1,129 @@
+@charset "euc-kr";
+ 
+/* 고객센터 */
+.ui-allim.scroll { height:216px; padding:20px 15px; background: #fafafa; overflow-y: auto;}
+
+/*****************************************************************
+  사장님 신용관리
+*****************************************************************/
+.scrTop {margin:-30px 0 45px 0;}
+.scrTop p {line-height: 22px; margin-bottom:15px;}
+
+.scrollmenu {position:relative; left:0; right:0; top:0; margin:0px -4px; overflow:hidden;}
+.scrollmenu >li {display:inline-block;vertical-align:top;padding:0 4px;}
+.scrollmenu >li a {display:block;height:42px; line-height:42px;padding:0 14px;font-size:16px;border-radius:21px;background:#f5f5f5;}
+.scrollmenu >li.active a, 
+.scrollmenu >li a.on {background-color:#3587ff;color:#fff;}
+
+.scPanel ~ .scPanel {margin-top:40px;}
+
+.lineSetBox li {position:relative; border:1px solid #d4d4d4; font-size:16px; line-height: 24px; border-radius: 15px; padding:20px; overflow:hidden;}
+.lineSetBox li:not(:first-child) {margin-top:15px;}
+.lineSetBox li span {display:block; font-size:13px; line-height: 19px; color:#767676; margin-top:5px;}
+.lineSetBox li a {position:absolute; top:0; left:0; right:0; bottom:0;}
+.lineSetBox li .link:after {content:''; position: absolute; right: 28px; top: 50%; width: 8px; height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg) translateY(-50%);}
+
+.lineSetBox.move li {padding-left:52px;}
+.lineSetBox.move li:after {position:absolute; content:''; right:20px; top:50%; margin-top:-3px; width:20px; height:6px; border:1px solid #767676; border-width: 1px 0;;}
+.lineSetBox.move li .btnDel{position:absolute; top:50%; transform:translateY(-50%); left:20px; width:24px; height:24px; background:#066bfd; border-radius: 50%;}
+.lineSetBox.move li .btnDel::before {content:''; position:absolute; left:6px; top:11px; width:12px; height:2px; background:#fff; border-radius: 1px; }
+
+.bizNumInfo {padding:30px 0; margin-bottom:40px;}
+
+.scoreInfo {margin-top:10px;font-size: 13px; }
+.scoreInfo .date {font-size:13px; line-height: 22px; color:#066bfd; margin-bottom:13px;}
+.isScore {position:relative; border:1px solid #d4d4d4; border-radius: 15px; padding:28px 25px;}
+.isScore a {position:absolute; top:0; left:0; right:0; bottom:0;}
+.isScore a:before {right:24px;}
+.isScore .score {display:inline-block; height:40px; line-height: 40px;}
+.isScore .score strong {font-size:32px; font-weight: 200; font-family: 'Roboto';}
+.isScore .vary {position:relative; display:inline-block; vertical-align:top; margin:10px 0 0 8px; height:22px; line-height: 22px; color:#fff; padding:0 10px 0 23px; background-color:#0062ff; border-radius: 11px;}
+.isScore .up:before {position:absolute; content:''; left:10px; top:2px; border:8px solid #fff; border-width:5px 5px 8px 5px; border-color:transparent transparent #fff transparent}
+.isScore .grade {position:relative; display:inline-block; margin-left:35px; padding-left:35px;}
+.isScore .grade:before {position:absolute; content:''; left:0; top:-9px; bottom:-9px;; border-left:1px solid #eee;}
+.isScore .grade .pColor {font-size:32px; font-weight: 200; font-family: 'Roboto';}
+
+.borderWrap {border:1px solid #d4d4d4; border-radius: 15px; padding:20px 25px; margin-top:15px;}
+.borderWrap h3 {font-size:16px; color:#222; margin-bottom:22px;}
+.borderWrap .btnArrow {display:block; font-size:16px; font-weight: 700;}
+.borderWrap .graphTit {font-size:13px; color:#767676;}
+.borderWrap .valueList {border:0; padding:0; margin-top:6px;}
+.borderWrap .h4 {font-size:16px; margin:0;}
+
+.listV li {position:relative; min-height:55px; font-size:14px; line-height: 22px; padding:5px 0 0 70px; margin-top:20px;}
+.listV li a {position:absolute; top:0; right:0; bottom:0; left:0;}
+.listV li:before {position:absolute; content:''; top:0; left:0; width:55px; height:55px; border-radius:50%; background-color:#f1f1f1;}
+.listV strong{display: block; font-size:15px; font-weight: 700; color: #222; margin-bottom:2px; }
+.listV span {display:block;}
+
+.scSwiper {overflow:hidden;}
+.scoreResult .emo {position:relative; font-size:16px; line-height: 23px; padding:5px 0;}
+.scoreResult .emo::before {content:''; position:absolute; top:0px; right:-40px; width:30px; height: 45px; }
+.scoreResult .emo.good::before {background:url(../../../img/zkm/bzw/sub/ico_Semo01.png) no-repeat; background-size: contain;}
+.scoreResult .emo.soso::before {background:url(../../../img/zkm/bzw/sub/ico_emo02.png) no-repeat; background-size: contain;}
+
+h3.titH {margin-top:40px; font-size:19px;}
+h3.titH .tag { margin:4px 0 0 12px;}
+.crsBox {display:flex; justify-content:flex-start; align-items: center; background:#eff2f8; padding:30px 25px; border-radius: 15px; margin:26px 0 40px 0;}
+.crsBox .crsIcon {display: flex; justify-content: center; align-items: center; width:77px; height:75px; border-radius: 50%; background:#fff; margin-right:25px; overflow:hidden; }
+.crsBox .crsIcon img {width: 50%;}
+.crsBox .crsTxt strong{display:block; font-size: 14px; font-weight: 500; color:#222; margin-bottom:11px;}
+.crsBox .crsTxt dl {display:flex;}
+.crsBox .crsTxt dl div {font-size:13px; color:#222;}
+.crsBox .crsTxt dl div:not(:first-child) {margin-left:17px;}
+.crsBox .crsTxt dl div dt {margin-bottom: 4px;}
+.crsBox .crsTxt dl div dd.num {font-size:17px; font-weight: 700; }
+
+.headBox {position:relative; margin-top:15px;}
+.headBox:after  {position:absolute; content:''; right:11px; bottom:-2px; width:75px; height: 60px; background:url(../../../img/zkm/bzw/sub/ico_store.png) no-repeat; background-size:100%;}
+
+.scoreResult .salesGraphInfo {display:flex; justify-content: start; align-items: center;}
+.scoreResult .salesGraphInfo .scoreArrow {display:inline-block; width:44px; height:50px; margin: 0 18px;}
+.scoreResult .salesGraphInfo .scoreArrow.up {background:url(../../../img/zkm/bzw/common/ico/ico_incrs.png) no-repeat; background-size:100%;}
+.scoreResult .salesGraphInfo .scoreArrow.down {background:url(../../../img/zkm/bzw/common/ico/ico_decrs.png) no-repeat; background-size:100%;}
+.scoreResult .salesGraphInfo .scoreTxt {font-size:16px; font-weight: 700; line-height: 22px;}
+.scoreResult .verBarGraph {margin:15px 64px 0 64px;}
+.scoreResult .verBarGraph em, 
+.scoreResult .verBarGraph .primary em{ color:#767676;}
+.scoreResult .verBarGraph .primary em::before {content:'~'; position:absolute; left:-4px; top:4px;}
+
+.inTit {font-size:15px; font-weight: 700;}
+.inTit select {width: auto; height:30px; border: 0; font-size:15px; padding:0 35px 0 0; background:url(../../../img/zkm/bzw/common/ico/ico_acco_arr.png) no-repeat calc(100% - 10px) 5px; background-size:24px;}
+.cardInfoList {margin-top:-22px;}
+.cardInfoList div {display:flex; justify-content: space-between;}
+.cardInfoList div:not(:first-child) { margin-top:10px;}
+.cardInfoList div dt {color:#767676; width:35%;}
+.cardInfoList div dd {color:#444; width:65%; text-align:right;}
+.useDetail {margin-top:-12px;}
+.useDetail .cardInfoList {margin-top:0;}
+.useDetail .inTit {margin:25px 0 8px 0;}
+.useDetail .inTit:first-child {margin-top:0;}
+
+/*------------------------------------------------*/
+
+
+/* 관리 설정 - 결제/서비스 이용내역 */
+
+.borderBoxList li{border:1px solid #d4d4d4; border-radius: 15px; padding: 28px 24px 20px 25px; margin-top:15px;}
+.borderBoxList li .topTit {position:relative; display:block;}
+.borderBoxList li .topTit strong { font-size:16px; line-height: 24px; font-weight: 700;}
+.borderBoxList li .topTit a {position:absolute; top:0; right:0; bottom:0; left:0;}
+.borderBoxList li .topTit .tagList {display:inline-block; margin-left:4px;}
+.borderBoxList li dl {font-size:13px; line-height: 24px; font-weight: 400; margin-top:15px;}
+.borderBoxList li dl div {display:flex; justify-content:space-between; margin-top:5px;}
+.borderBoxList li dl div.sale {color:#767676; }
+.borderBoxList li dl div.sale dd {font-weight: 400;}
+.borderBoxList li dl div dd {font-weight: 700;}
+.wrapUp {background: #f9f9f9;}
+.lie {color:#222; font-weight: 400; text-decoration: line-through; margin-right:14px;}
+
+
+.manageBoxList {}
+.manageBoxList li {position:relative; border:1px solid #d4d4d4; border-radius: 15px; padding: 26px 20px; margin-top:15px;}
+.manageBoxList li strong {font-size:16px; line-height: 26px; font-weight: 700;}
+.manageBoxList li a {position:absolute; top:0; right:0; bottom:0; left:0;}
+.manageBoxList li a:after {content: ''; position: absolute; right: 20px; top: 50%; width: 8px; height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg) translateY(-50%);}
+.careLink {position:relative; display:block; font-size:13px; line-height: 23px; font-weight: 400; color:#066bfd; margin : -30px 0 30px 0;}
+.careLink::after {content:''; position:relative; top:1px; display:inline-block; width: 6px; height: 6px; border-top: 1px solid #066bfd; border-right: 1px solid #066bfd; transform: rotate(45deg) translateY(-50%);}
+.userId {position:relative; font-size:13px; line-height: 26px; font-weight: 400; padding-left:10px; }
+.userId::before {content:''; position:absolute; left: 0; top: 4px; width:2px; height: 12px; background: #767676; margin-right:10px;}

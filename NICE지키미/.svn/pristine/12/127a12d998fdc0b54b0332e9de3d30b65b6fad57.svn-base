@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+
+    $(function(){
+        // swiper
+        if(!isMobile) {
+          swiper.destroy();
+          swiper = undefined;
+        } else {
+          var swiper = new Swiper('.mydataSlider', {
+            spaceBetween: 20,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        }
+      });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              어떤 기관을 연결할까요?
+            </h2>
+          </div>
+          <div class="myDataConts">
+            <div class="uiItem">
+              <input type="checkbox" name="period" id="my0">
+              <label for="my0"><span><em>나신용</em>님이 이용중인 기관 <em>13개</em></span></label>
+            </div>
+            <div class="mydataCheck mydataSlider">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my1" checked="checked">
+                    <label for="my1">
+                      <i><img src="../../../img/bzw/common/ico/ico_kb.png" alt=""></i>
+                      <span>KB 국민은행</span>
+                    </label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my2" checked="checked">
+                    <label for="my2">
+                      <i><img src="../../../img/bzw/common/ico/ico_bnk.png" alt=""></i>
+                      <span>경남은행</span>
+                    </label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my3" checked="checked">
+                    <label for="my3">
+                      <i><img src="../../../img/bzw/common/ico/ico_nh.png" alt=""></i>
+                      <span>농협은행</span>
+                    </label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my4">
+                    <label for="my4">
+                      <i><img src="../../../img/bzw/common/ico/ico_db.png" alt=""></i>
+                      <span>DB 저축은행</span>
+                    </label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my5">
+                    <label for="my5">
+                      <i><img src="../../../img/bzw/common/ico/ico_citi.png" alt=""></i>
+                      <span>씨티은행</span>
+                    </label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my6">
+                    <label for="my6">
+                      <i><img src="../../../img/bzw/common/ico/ico_hana.png" alt=""></i>
+                      <span>하나은행</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my7">
+                    <label for="my7"><i></i><span>투자1</span></label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my8">
+                    <label for="my8"><i></i><span>투자2</span></label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my9">
+                    <label for="my9"><i></i><span>투자3</span></label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my10">
+                    <label for="my10"><i></i><span>페이1</span></label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my11">
+                    <label for="my11"><i></i><span>페이2</span></label>
+                  </div>
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my12">
+                    <label for="my12"><i></i><span>페이3</span></label>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="uiItem">
+                    <input type="checkbox" name="period" id="my13">
+                    <label for="my13"><i></i><span>보험1</span></label>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="tabWrap t1">
+              <ul class="tabList col3">
+                <li class="tab active"><a href="#none">은행(3)</a></li>
+                <li class="tab"><a href="#none">투자(1)</a></li>
+                <li class="tab"><a href="#none">페이</a></li>
+                <li class="tab"><a href="#none">보험</a></li>
+                <li class="tab"><a href="#none">통신</a></li>
+                <li class="tab"><a href="#none">카드</a></li>
+                <li class="tab"><a href="#none">할부금융</a></li>
+                <li class="tab f2"><a href="#none">P2P/대부/인수채권</a></li>
+              </ul>
+            </div>
+
+            <div class="uiAcco mydataAcco">
+              <div class="uiAccoHeader open">
+                <div class="uiItem">
+                  <input type="checkbox" name="period" id="bank0">
+                  <label for="bank0"><span>은행</span></label>
+                </div>
+                <button type="button" class="uiBtn">
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="mydataCheck">
+                  <ul>
+                    <li>
+                      <div class="uiItem">
+                        <!-- [D]연결 전 : input(checkbox)+label -->
+                        <input type="checkbox" name="period" id="bank1" checked="checked">
+                        <label for="bank1"><i><img src="../../../img/bzw/common/ico/ico_kb.png" alt=""></i><span>국민은행</span></label>
+                        <!-- [D]연결 후 : button+span(연결중) -->
+                        <!-- <button type="button"><i><img src="../../../img/bzw/common/ico/ico_kb.png" alt=""></i><span>국민은행</span></button>
+                        <span class="hidden">연결중</span> -->
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="bank2" checked="checked">
+                        <label for="bank2"><i><img src="../../../img/bzw/common/ico/ico_bnk.png" alt=""></i><span>경남은행</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="bank3" checked="checked">
+                        <label for="bank3"><i><img src="../../../img/bzw/common/ico/ico_nh.png" alt=""></i><span>농협은행</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <!-- [D]연결 전 : input(checkbox)+label -->
+                        <!-- <input type="checkbox" name="period" id="bank4">
+                        <label for="bank4"><i><img src="../../../img/bzw/common/ico/ico_db.png" alt=""></i><span>DB저축은행</span></label> -->
+                        <!-- [D]연결 후 : button+span(연결중) -->
+                        <button type="button"><i><img src="../../../img/bzw/common/ico/ico_db.png" alt=""></i><span>DB저축은행</span></button>
+                        <span class="hidden">연결중</span>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="bank5">
+                        <label for="bank5"><i><img src="../../../img/bzw/common/ico/ico_citi.png" alt=""></i><span>씨티은행</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="bank6">
+                        <label for="bank6"><i><img src="../../../img/bzw/common/ico/ico_hana.png" alt=""></i><span>하나은행</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uiAcco mydataAcco">
+              <div class="uiAccoHeader open">
+                <div class="uiItem">
+                  <input type="checkbox" name="period" id="invest0">
+                  <label for="invest0"><span>투자</span></label>
+                </div>
+                <button type="button" class="uiBtn">
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="mydataCheck">
+                  <ul>
+                    <li>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest1" checked="checked">
+                        <label for="invest1"><i></i><span>투자1</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest2">
+                        <label for="invest2"><i></i><span>투자2</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest3">
+                        <label for="invest3"><i></i><span>투자3</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest4">
+                        <label for="invest4"><i></i><span>투자4</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest5">
+                        <label for="invest5"><i></i><span>투자5</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="invest6">
+                        <label for="invest6"><i></i><span>투자6</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uiAcco mydataAcco">
+              <div class="uiAccoHeader">
+                <div class="uiItem">
+                  <input type="checkbox" name="period" id="pay0">
+                  <label for="pay0"><span>페이</span></label>
+                </div>
+                <button type="button" class="uiBtn">
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="mydataCheck">
+                  <ul>
+                    <li>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay1">
+                        <label for="pay1"><i></i><span>페이1</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay2">
+                        <label for="pay2"><i></i><span>페이2</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay3">
+                        <label for="pay3"><i></i><span>페이3</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay4">
+                        <label for="pay4"><i></i><span>페이4</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay5">
+                        <label for="pay5"><i></i><span>페이5</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="pay6">
+                        <label for="pay6"><i></i><span>페이6</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uiAcco mydataAcco">
+              <div class="uiAccoHeader">
+                <div class="uiItem">
+                  <input type="checkbox" name="period" id="insure0">
+                  <label for="insure0"><span>보험</span></label>
+                </div>
+                <button type="button" class="uiBtn">
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="mydataCheck">
+                  <ul>
+                    <li>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure1">
+                        <label for="insure1"><i></i><span>보험1</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure2">
+                        <label for="insure2"><i></i><span>보험2</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure3">
+                        <label for="insure3"><i></i><span>보험3</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure4">
+                        <label for="insure4"><i></i><span>보험4</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure5">
+                        <label for="insure5"><i></i><span>보험5</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="insure6">
+                        <label for="insure6"><i></i><span>보험6</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uiAcco mydataAcco">
+              <div class="uiAccoHeader">
+                <div class="uiItem">
+                  <input type="checkbox" name="period" id="comm0">
+                  <label for="comm0"><span>통신</span></label>
+                </div>
+                <button type="button" class="uiBtn">
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="mydataCheck">
+                  <ul>
+                    <li>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm1">
+                        <label for="comm1"><i></i><span>통신1</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm2">
+                        <label for="comm2"><i></i><span>통신2</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm3">
+                        <label for="comm3"><i></i><span>통신3</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm4">
+                        <label for="comm4"><i></i><span>통신4</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm5">
+                        <label for="comm5"><i></i><span>통신5</span></label>
+                      </div>
+                      <div class="uiItem">
+                        <input type="checkbox" name="period" id="comm6">
+                        <label for="comm6"><i></i><span>통신6</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btnConts">
+              <button type="button" class="btn primary"><span>7개 연결하기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

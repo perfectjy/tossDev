@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/bzw/jquery-1.11.3.js"></script>
+	<script src="../../../js/bzw/jquery-ui.min.js"></script>
+	<script src="../../../js/bzw/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '케어십알림', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal1');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#content">본문내용 바로가기</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal1" class="btn base modalOpen">[팝업] 기존 알림 재설정</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal full" id="modal1">
+			<div class="modalWrap">
+				<button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1><span>나신용</span>님, 기존 알림을 다시 설정해 주세요.</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<ul class="listDot">
+							<li>알림 종류별 수신채널(문자/알림톡, 이메일, 앱푸시)을 동일하게 설정해주세요.</li>
+							<li>설정을 변경하지 않고 이 창을 닫으실 경우 기존 설정이 유지되지만 <strong class="bold">케어십알림 메뉴 이용 및 알림설정 변경을 이용할 수
+									없어요.</strong>
+							</li>
+						</ul>
+						<ol class="selectList">
+							<li>
+								<h2 class="h4">
+									<span class="num">1.</span>
+									<span class="tit">수신할 알림 종류 선택</span>
+								</h2>
+								<div class="agreement">
+									<div class="agreeTitle">
+										<input type="checkbox" id="agreeAll"><label for="agreeAll"><span>모든 알림
+												받기</span></label>
+									</div>
+									<div class="agreeSection">
+										<ul class="agreeList">
+											<li>
+												<div class="uiItem"><input type="checkbox" name="alarm1"
+														id="alr1"><label for="alr1"><span>신용변동
+															알림</span></label></div>
+											</li>
+											<li>
+												<div class="uiItem"><input type="checkbox" name="alarm1"
+														id="alr2"><label for="alr2"><span>신용조회
+															알림</span></label></div>
+											</li>
+											<li>
+												<div class="uiItem"><input type="checkbox" name="alarm1"
+														id="alr3"><label for="alr3"><span>마이데이터
+															알림</span></label></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h2 class="h4">
+									<span class="num">2.</span>
+									<span class="tit">알림 수신채널 선택</span>
+								</h2>
+								<div class="agreeSection">
+									<ul class="agreeList">
+										<li>
+											<div class="uiItem"><input type="checkbox" name="alarm2" id="alr4"><label
+													for="alr4"><span>문자/알림톡</span></label></div>
+										</li>
+										<li>
+											<div class="uiItem"><input type="checkbox" name="alarm2" id="alr5"><label
+													for="alr5"><span>이메일</span></label></div>
+										</li>
+										<li>
+											<div class="uiItem"><input type="checkbox" name="alarm2" id="alr6"><label
+													for="alr6"><span>앱푸시</span></label></div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<!--// content -->
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>설정 내용 저장하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@charset "euc-kr";
+
+/* common */
+.pointColor{color:#066bfd;}
+
+.btnBox{margin-top:28px; text-align:center;}
+
+/* name/pet 검색 */
+.lineFormSearch { position:relative; margin-top:-12px;}
+.lineFormSearch .itemLine { line-height: 30px; font-size:18px; font-weight: 700; padding-bottom:6px; margin-top:12px;}
+.lineFormSearch .custForm {position:relative; display:inline-block; line-height:30px;}
+.lineFormSearch .custForm:after {position:absolute; content:''; left:0; right:0; bottom:-6px; border-bottom:1px solid #707070;}
+.lineFormSearch .custForm select {height:30px; padding:0 25px 0 0; font-size:18px; border:0; background:url(../../img/bzw/common/ico/ico_select_arr.png) right center no-repeat; background-size:23px;}
+.lineFormSearch .custForm input[type=text]{height:30px; padding:0; font-size:18px; border:0; border-radius:0;}
+.lineFormSearch .custForm input[type=text]::-webkit-input-placeholder{color:#d4d4d4; font-weight: 400;}
+.lineFormSearch .custForm .inp{position:relative; display:inline-block; width:80px;}
+.lineFormSearch .custForm .inp.firstName{width:50px; padding-right:10px;}
+.lineFormSearch .custForm .inp.firstName::after{content:'/'; position:absolute; right:3px; top:-5px; display:inline-block; font-size:18px; color:#d4d4d4; line-height:40px;}
+.lineFormSearch .infoTxt {margin-top:10px; font-size:14px; color:#767676;}
+
+/* text */
+.guideText{margin-top:32px; text-align:center; font-size:15px; line-height:24px; letter-spacing:-1px;}
+.guideText strong{display:block; color:#222; font-size:18px; font-weight: 700;}
+.guideText p{margin-top:10px; font-size:14px; line-height:18px; letter-spacing:-.8px;}
+.noDataText{position:relative; margin-top:50px; text-align:center; color:#444; font-size:14px;}
+.noDataText::before{content:'!'; box-sizing:border-box; display:block; width:55px; height:55px; margin:0 auto 15px; line-height:50px; text-align:center; font-size:27px; color:#767676; font-weight:500; border:1px solid #707070; border-radius:50%;}
+
+/* 데이터놀이 - 이름분석 */
+.analyzeNameImg{width:295px; height:295px; margin:20px auto 0; background:url(../../img/bzw/@tmp/@tmp_dataplay.png) no-repeat; background-size:296px;}
+.analyzeSection .governingTitle{text-align:center; letter-spacing:-1.25px;}
+.analyzeSection .governing{margin-bottom:25px;}
+dl.keywordName{display:flex; margin-top:20px;}
+dl.keywordName dt{font-size:14px; margin-right:15px;}
+dl.keywordName dd{overflow-x:scroll; width:calc(100% - 70px); float:left;}
+dl.keywordName .keywordList>li{display:inline;}
+dl.keywordName .keywordList>li:not(:last-child){margin-right:10px;}
+dl.keywordName .keywordList>li a{color:#87909b; text-decoration:underline;}
+
+/* chart area */
+.chartBox{width:100%; min-height:250px; margin-top:-25px; background:#f2f3f5; border-radius:30px;}
+.chartBox.nobg{position:relative; height:250px; border-radius:0; background:none;}
+.chartBox.nobg::before{content:''; display:block; width:100%; height:250px; background:#f2f3f5;}
+.chartBox.nobg .dataset{position:absolute; top:14px; left:14px;}
+.chartBox.nobg .dataset>div{position:relative; display:flex; margin-bottom:3px; color:#444; font-size:12px;}
+.chartBox.nobg .dataset>div::before{content:''; display:inline-block; width:10px; height:10px; margin:5px 2px 0 0; border-radius:50%;}
+.chartBox.nobg .dataset .total::before{background-color:#066bfd;}
+.chartBox.nobg .dataset .man::before{background-color:#7b9fdf;}
+.chartBox.nobg .dataset .woman::before{background-color:#ffc2b8;}
+.chartBox.gender{display:flex; flex-direction:column; justify-content:center; text-align:center;}
+.chartBox.gender dl{display:flex; justify-content:center;}
+.chartBox.gender dl dd{font-size:18px;}
+.chartBox.gender dl dd strong{font-size:21px; font-weight:700;}
+.chartBox.gender dl>div{text-align:center;}
+.chartBox.gender dl>div::before{content:''; display:inline-block; width:140px; height:113px;}
+.chartBox.gender .man::before{background:url(../../img/bzw/common/bg/bg_puzzle_man.png) no-repeat; background-size:140px 113px;}
+.chartBox.gender .woman::before{background:url(../../img/bzw/common/bg/bg_puzzle_woman.png) no-repeat; background-size:140px 113px;}
+.chartBox.gender p{margin-top:13px; color:#767676; font-size:15px;}
+.chartBox.gender p>strong{color:#444; font-weight:700;}
+.chartBox.nobg{background:none;}
+
+
+/* fixedList */
+.fixedList{margin-top:78px;}
+.listSwiper li{display:inline-block; margin-right:16px;}
+.listSwiper .btn{width:65px; height:65px; padding-top:23px; line-height:1; color:#767676; font-size:14px; border-radius:12px; background:#f2f3f5;}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">주거유형 선택</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom active" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+
+                <div class="modalHeader">
+                    <h1>나신용님 자가이신가요? 주거유형을 선택해주세요.</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="btnRtypeWrap">
+                            <button type="button" class="mine active">매매</button>
+                            <button type="button" class="lease">전세</button>
+                            <button type="button" class="monthly">월세</button>
+                        </div>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

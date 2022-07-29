@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '쓰다', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+         
+          <div class="useMain">
+            <div class="governing">
+              <a href="#none" class="governingTitle">
+                <strong>나신용</strong>님<br>
+                <strong class="pColor">6월</strong>에는 <strong class="pColor">얼마나</strong> 썼을까요?
+              </a>
+              <div class="governingAmount">
+                <div class="tagList">
+                  <span class="tag bl">신용카드</span>
+                  <span class="tag re">체크카드</span>
+                  <span class="tag gr">페이</span>
+                </div>
+                <p class="tit">
+                  <strong class="robotoB">5,000,000</strong>원
+                  <button type="button" class="btn ics2"><span class="hidden">새로고침</span><i class="refresh"></i></button>
+                </p>
+                <p class="exp"><i class="aUp"></i> 전달대비 +100,000,000 원</p>
+              </div>
+            </div>
+            <!--// governing -->
+            <div class="dRight">
+              금액감추기
+              <div class="btnSwitch">
+                <input type="checkbox" id="switchChk">
+                <label for="switchChk"><span class="hidden">설정해제</span></label>
+              </div>
+            </div>
+            <div class="consume">
+              <div class="ineBox">
+                <div class="fRow">
+                  <div class="fx">
+                    <p class="exp">소비는 <span class="pColor">잘하고 있을까</span>?</p>
+                    <strong class="tit"><span>내 또래</span>는<br><span><i class="robotoB">10,000,000</i>원</span> 썼네요</strong>
+                  </div>
+                  <div class="emo"><img src="../../../img/bzw/sub/ico_Semo01.png" title="소비 상위"></div>
+                </div>
+                <dl class="fRow line">
+                  <dt>월 권장 소비액
+                    <div class="tooltipWrap">
+                      <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                      <div class="toolTip">
+                          <i></i>
+                          <p>월 권장 소비액은  월 소득이 유사한 또래의 구매력 구간의 평균 연간 소득과  대출금액을 기반으로 산출된 것입니다.</p>
+                          <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                      </div>
+                    </div>
+                  </dt>
+                  <dd class="sum"><strong class="robotoB">6,000,000</strong>원</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <!--// useMain -->
+
+          <div class="userAmount">
+            <div class="governing">
+              <h2 class="governingTitle">이번 달에<br><strong class="pColor">쓴 내역이에요</strong></h2>
+              <a href="#none" class="btnArrow" role="button">내 카드 찾기</a>
+            </div>
+            <div class="infoPay">
+              <div class="tagList">
+                <span class="tag bl">신용카드</span>
+                <span class="tag re">체크카드</span>
+                <span class="tag gr">페이</span>
+              </div>
+              <div class="infoToggle pay">
+                <div class="tit">
+                  <a href="#info1" class="infoTogBtn"><i>6</i>장<span class="hidden">내용열기</span></a>
+                </div>      
+                <div id="info1" class="infoTogConts">
+                  <div class="payItem">
+                    <i><img src="../../../img/bzw/common/ico/thumb_kb.png" alt=""></i>
+                    <div class="payCont">
+                      <p class="name">국민카드 톡톡 My point 카드</p>
+                      <strong><em>500,000</em>원</strong>
+                    </div>
+                  </div>
+                  <div class="payItem">
+                    <i><img src="../../../img/bzw/common/ico/thumb_nh.png" alt=""></i>
+                    <div class="payCont">
+                      <p class="name">농협카드<em>톡톡 My point 카드</em></p>
+                      <strong><em>500,000</em>원</strong>
+                    </div>
+                  </div>
+                  <div class="payItem">
+                    <i><img src="../../../img/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                    <div class="payCont">
+                      <p class="name">농협카드<em>톡톡 My point 카드</em></p>
+                      <strong><em>500,000</em>원</strong>
+                    </div>
+                  </div>
+                  <div class="payItem">
+                    <i><img src="../../../img/bzw/common/ico/thumb_hana.png" alt=""></i>
+                    <div class="payCont">
+                      <p class="name">하나카드<em>톡톡 My point 카드</em></p>
+                      <strong><em>500,000</em>원</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--// infoToggle -->
+              <dl class="payBox">
+                <dt class="tag ga"><span class="hidden">이달에 쓴 총 합계금액</span>예정</dt>
+                <dd class="sum">
+                  <strong class="robotoB">6,000,000</strong>원
+                  <button type="button" class="btn ics2"><span class="hidden">새로고침</span><i class="refresh"></i></button>
+                </dd>
+              </dl>
+              <!--// payBox -->
+              <ul class="bgBoxList">
+                <li>
+                  <dl class="loan">
+                    <dt>단기카드대출<br>현금서비스</dt>
+                    <dd><strong class="roboto">500,000</strong>만원</dd>
+                  </dl>
+                  <div class="cprItem plus">
+                    <p><i class="aUp"></i> 전달대비</p>
+                    <span class="roboto">+1,000,000</span>원
+                  </div>
+                </li>
+                <li>
+                  <dl class="loan">
+                    <dt>장기카드대출<br>카드론</dt>
+                    <dd><strong class="roboto">400,000</strong>만원</dd>
+                  </dl>
+                  <div class="cprItem minus">
+                    <p><i class="aDown"></i> 전달대비</p>
+                    <span class="roboto">-1,000,000</span>원
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--// userAmount -->
+
+          <div class="userAmount">
+            <div class="governing">
+              <h2 class="governingTitle">카드가<strong class="pColor">안보이나요</strong>?</h2>
+              <a href="#none" class="btnArrow" role="button">내 카드 찾기</a>
+            </div>
+            <div class="infoCard">
+              <div class="tagList">
+                <span class="tag bl">신용카드</span>
+              </div>
+              <ul class="lineList">
+                <li>
+                  <i><img src="../../../img/bzw/common/ico/thumb_kb.png" alt=""></i>
+                  <p class="name">국민카드</p>
+                </li>
+                <li>
+                  <i><img src="../../../img/bzw/common/ico/thumb_nh.png" alt=""></i>
+                  <p class="name">농협카드</p>
+                </li>
+                <li>
+                  <i><img src="../../../img/bzw/common/ico/thumb_lotte.png" alt=""></i>
+                  <p class="name">롯데카드</p>
+                </li>
+                <li>
+                  <i><img src="../../../img/bzw/common/ico/thumb_hana.png" alt=""></i>
+                  <p class="name">하나카드</p>
+                </li>
+              </ul>
+            </div>
+            <div class="btnConts">
+              <button type="button" class="btn base"><span>마이데이터 연결하기</span></button>
+            </div>
+          </div>
+          <!--// CASE 1 : 신용카드없고 카드정보 있는 경우 -->
+
+          <div class="userAmount">
+            <div class="governing">
+              <h2 class="governingTitle">카드가<strong class="pColor">안보이나요</strong>?</h2>
+              <a href="#none" class="btnArrow" role="button">내 카드 찾기</a>
+            </div>
+            <div class="infoCard">
+              <div class="tagList">
+                <span class="tag bl">신용카드</span>
+              </div>
+                <!-- 데이터 없는 경우 -->
+                <div class="noList">
+                  <p>나신용 카드정보가 없네요</p>
+                </div>
+                <!--// 데이터 없는 경우 -->
+            </div>
+            <div class="btnConts">
+              <button type="button" class="btn base"><span>마이데이터 연결하기</span></button>
+            </div>
+          </div>
+          <!--// CASE 2 : 신용카드없고 카드정보 없는 경우 -->
+
+          <div class="linkArea">
+            <div class="bgBoxLink">            
+              <p>월 이용금액 줄이면<br><strong>신용점수</strong>얼마나 오를까?</p>
+              <a href="#none" target="_blank" title="새창열림" class="link"><span class="hidden">신용점수 예측하기 바로가기</span></a>
+            </div>
+            <a href="#" class="bnrBox gat5" target="_blank" title="새창열림" title="연체방지서비스 바로가기">
+              <p class="exp">이번달 카드 납부금액은</p>
+              <strong><span class="pColor">1,000,000원</span> 입니다!</strong>
+            </a>
+          </div>
+          <!--// linkArea -->
+
+          <div class="userCredit">
+            <div class="governing">
+              <a href="#none" class="governingTitle">
+                <strong>나신용</strong>님의<br>
+                신용점수 <strong class="pColor">980점</strong>으로<br>발급 받을 수 있는 카드는?
+              </a>
+            </div>
+            <div class="idxInfo">
+              <h3>카드발급 가능지수</h3>
+              <div class="txt">카드대출 기관수 <span class="cnt robotoB">2</span>
+                <a href="#cardPossIdx" class="ui-btn modalOpen">팝업</a>
+              </div>
+              <strong><span class="robotoB">90.9</span>%</strong>
+            </div>
+          </div>
+          <!--// userCredit -->
+
+          <div class="userCons comp">
+            <h2 class="h2"><strong class="pColor">어디에</strong> 제일 많이 썼을까요?</h2>
+            <!-- [카테고리 타입명]
+                ct1 : 외식,
+                ct2 : 커피/간식, 
+                ct3 : 마트/편의점, 
+                ct4 : 금융/세금 
+                ct5 : 의료/건강, 
+                ct6 : 취미/여가, 
+                ct7 : 쇼핑, 
+                ct8 : 교통/자동차 
+                ct9 : 주거/통신
+            -->
+            <div class="groupBox ct1">
+              <h3 class="tit"><strong>나신용</strong>님<br><strong class="pColor">외식</strong> 소비생활이 제일 많네요</h3>
+              <dl class="boxCont">
+                <dt><span class="hidden">소비 비율과 사용금액</span></dt>
+                <dd class="fRow">
+                  <strong class="robotoB">50.9</strong>%
+                  <p><em class="robotoB">1,000,000</em>원</p>
+                </dd>
+              </dl>
+              <a href="#none" target="_blank" title="새창열림"><span class="hidden">내 또래와 소비비교 화면 바로가기</span></a>
+            </div>
+          </div>
+          <!--// userCons -->
+
+          <div class="recomCard">
+            <h2 class="h2">내 <strong class="pColor">소비습관</strong>에 딱 맞는 <strong class="pColor">카드추천</strong></h2>
+            <p class="infoTxt">카드이용내역을 분석하여 가장 많은 혜택을 누릴 수 있는 카드를 찾아드릴게요~</p>
+            <div class="box">
+              카드혜택정의 후 디자인 나오면 작업예정
+            </div>
+          </div>
+          <!--// recomCard -->
+
+          <div class="myCardLife">
+            <h2 class="h2">나의 지난 3개월간 <strong>카드생활</strong>?</h2>
+            <p class="infoTxt">1년간의 월평균 실적</p>
+            <a href="#none" class="link">내 또래보다 <strong>신용카드</strong> 이용금액이<br><strong>500,000원</strong> 적어요</a>
+            
+            <div class="matchWrap">
+              <em class="tit">월평균</em>
+              <div class="matchBox">
+                <dl class="cardA">
+                  <dt><span class="tag bl">신용카드</span></dt>
+                  <dd>
+                    <strong class="robotoB">60.9</strong>%
+                    <span><strong class="robotoB">1,000,000</strong>원</span>
+                  </dd>
+                </dl>
+                <dl class="cardB">
+                  <dt><span class="tag re">체크카드</span></dt>
+                  <dd>
+                    <strong class="robotoB">39.1</strong>%
+                    <span><strong class="robotoB">800,000</strong>원</span>
+                  </dd>
+                </dl>
+              </div>
+              <ul class="matchList">
+                <li>
+                  <em>6월</em>
+                  <div class="matchBar">
+                    <div class="bar">
+                      <span class="cardA" style="width:50%;"><i class="hidden">신용카드 그래프</i></span>
+                      <span class="cardB" style="width:50%;"><i class="hidden">체크카드 그래프</i></span>
+                    </div>
+                    <div class="cardContA">
+                      <span class="hidden">신용카드 월평균 금액 및 비율</span>
+                      <span><i>500,000</i>원</span>
+                      <p class="tip robotoB"><i>50</i>%</p>
+                    </div>
+                    <div class="cardContB">
+                      <span class="hidden">체크카드 월평균 금액 및 비율</span>
+                      <span><i>500,000</i>원</span>
+                      <p class="tip robotoB"><i>50</i>%</p>
+                    </div>   
+                  </div>
+                </li>
+                <li>
+                  <em>5월</em>
+                  <div class="matchBar">
+                    <div class="bar">
+                      <span class="cardA" style="width:30%;"><i class="hidden">신용카드 그래프</i></span>
+                      <span class="cardB" style="width:70%;"><i class="hidden">체크카드 그래프</i></span>
+                    </div>
+                    <div class="cardContA">
+                      <span class="hidden">신용카드 월평균 금액 및 비율</span>
+                      <span><i>300,000</i>원</span>
+                      <p class="tip robotoB"><i>30</i>%</p>
+                    </div>
+                    <div class="cardContB">
+                      <span class="hidden">체크카드 월평균 금액 및 비율</span>
+                      <span><i>700,000</i>원</span>
+                      <p class="tip robotoB"><i>70</i>%</p>
+                    </div>   
+                  </div>
+                </li>
+                <li>
+                  <em>4월</em>
+                  <div class="matchBar">
+                    <div class="bar">
+                      <span class="cardA" style="width:95%;"><i class="hidden">신용카드 그래프</i></span>
+                      <span class="cardB" style="width:5%;"><i class="hidden">체크카드 그래프</i></span>
+                    </div>
+                    <div class="cardContA">
+                      <span class="hidden">신용카드 월평균 금액 및 비율</span>
+                      <span><i>950,000</i>원</span>
+                      <p class="tip robotoB"><i>95</i>%</p>
+                    </div>
+                    <div class="cardContB">
+                      <span class="hidden">체크카드 월평균 금액 및 비율</span>
+                      <span><i>50,000</i>원</span>
+                      <p class="tip robotoB"><i>5</i>%</p>
+                    </div>   
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--// matchWrap -->
+            <div class="infoToggle detail">
+              <div class="tit">
+                <a href="#info2" class="infoTogBtn"><span class="hidden"></span></a>
+              </div>      
+              <div id="info2" class="infoTogConts">
+                <div class="matchList cate">
+                  <ul class="sortInfo">
+                    <li class="c1">일시불</li>
+                    <li class="c2">할부</li>
+                    <li class="c3">현금서비스</li>
+                    <li class="c4">카드론</li>
+                  </ul>
+                  <div class="sortDetail">
+                    <ul class="sortBar">
+                      <li>
+                        <span class="mth">6월</span>
+                        <div class="bar">
+                          <p class="c1" style="height:40%;"><i class="hidden">일시불 그래프</i></p>
+                          <p class="c2" style="height:20%;"><i class="hidden">할부 그래프</i></p>
+                          <p class="c3" style="height:28%;"><i class="hidden">현금서비스 그래프</i></p>
+                          <p class="c4" style="height:75%;"><span><i class="robotoB">800,000</i>원</span><i class="hidden">카드론 그래프</i></p>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="mth">5월</span>
+                        <div class="bar">
+                          <p class="c1" style="height:10%;"><i class="hidden">일시불 그래프</i></p>
+                          <p class="c2" style="height:28%;"><i class="hidden">할부 그래프</i></p>
+                          <p class="c3" style="height:60%;"><span><i class="robotoB">650,000</i>원</span><i class="hidden">현금서비스 그래프</i></p>
+                          <p class="c4" style="height:22%;"><i class="hidden">카드론 그래프</i></p>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="mth">4월</span>
+                        <div class="bar">
+                          <p class="c1" style="height:18%;"><i class="hidden">일시불 그래프</i></p>
+                          <p class="c2" style="height:75%;"><span><i class="robotoB">720,000</i>원</span><i class="hidden">할부 그래프</i></p>
+                          <p class="c3" style="height:40%;"><i class="hidden">현금서비스 그래프</i></p>
+                          <p class="c4" style="height:22%;"><i class="hidden">카드론 그래프</i></p>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="perText">
+                      <li>100%</li>
+                      <li>80%</li>
+                      <li>60%</li>
+                      <li>40%</li>
+                      <li>20%</li>
+                      <li>0%</li>
+                    </ul>
+                    <div class="hidden">
+                      <table class="tblList txtC">
+                        <caption>해당 월 가장 큰 비중을 차지하는 결제방법의 가격</caption>
+                        <colgroup>
+                          <col style="width:25%" span="5">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="5">결제 방식</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">월</th>
+                            <th scope="col">일시불</th>
+                            <th scope="col">힐부</th>
+                            <th scope="col">현금<br>서비스</th>
+                            <th scope="col">카드론</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">6월</th>
+                            <td>40%</td>
+                            <td>20%</td>
+                            <td>28%</td>
+                            <td>75%</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5월</th>
+                            <td>10%</td>
+                            <td>28%</td>
+                            <td>60%</td>
+                            <td>22%</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4월</th>
+                            <td>18%</td>
+                            <td>75%</td>
+                            <td>40%</td>
+                            <td>22%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!--// 접근성 테이블 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--// infoToggle.detail -->
+            <div class="bottomActiveBtns">
+              <div class="btns">
+                <button type="button" class="btn primary"><span>마이데이터 연결하기</span></button>
+              </div>
+            </div>
+          </div>
+          <!--// myCardLife -->
+
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+
+  <!-- 커튼팝업 [카드발급 가능지수] S -->
+  <div class="uiModal bottom" id="cardPossIdx">
+    <div class="modalWrap">
+      <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>카드발급 가능지수</h1>
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->          
+          <ul class="listDash">
+            <li><em>나신용</em>님의 신용카드 발급 가능성은 매우 높습니다.
+              <p>카드발급 가능지수는 NICE평가정보가 자체 계산해 제공하는 것으로 단순 참고용입니다.</p>
+              <p>모든 카드사의 카드 발급을 보장하지 않습니다.</p>
+            </li>
+            <li>카드대출기관수
+              <p>카드론, 현금서비스, 일부결제금액이월약정(리볼빙)을 이용하는 금융회사 수가 3개 이상인 경우, 신용카드의 신규발급이 제한되고 있습니다.</p>
+            </li>
+          </ul>
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btns">
+            <button type="button" class="btn primary"><span>확인</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 커튼팝업 E -->
+</body>
+
+</html>

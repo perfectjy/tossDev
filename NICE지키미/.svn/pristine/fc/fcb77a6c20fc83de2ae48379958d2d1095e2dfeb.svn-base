@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <a href="#modalid" class="btn base modalOpen">주소찾기</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal full active" id="modalid">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>주소찾기</h1>						
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="intSearch arSearch">
+              <input type="text" class="inpTxt" placeholder="도로명, 건물명, 지번 입력" title="도로명, 건물명, 지번 입력">
+              <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+            </div>
+            
+            <div class="arList">
+              <ul>
+                <li>
+                  <span>도로명+건물번호</span>
+                  <strong>은행로 17</strong>
+                </li>
+                <li>
+                  <span>지역명(동/리) +번지</span>
+                  <strong>여의도동 14</strong>
+                </li>
+                <li>
+                  <span>지역명(동/리) + 건물명</span>
+                  <strong>여의도동 나이스1사옥</strong>
+                </li>
+                <li>
+                  <span>사서함명 + 번호</span>
+                  <strong>여의도우체국사서함 1~100</strong>
+                </li>
+              </ul>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <div class="arFooter">
+                <span class="roboto">Powered by <strong>kakao</strong></span> <a href="#">우편번호 서비스 안내</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

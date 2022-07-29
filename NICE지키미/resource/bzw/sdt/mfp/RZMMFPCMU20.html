@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용정보 이용·제공내역', prev: true, menu: true };
+
+		$(function () {
+			$('.periodBtnWrap .btn').on('click', function () {
+				$(this).parent().addClass('active');
+				$(this).parent().siblings().removeClass('active');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+					<div class="governing">
+						<h2 class="governingTitle"><strong class="pColor">나신용</strong>님의 신용정보를<br> 조회&middot;이용&middot;제공한 내역입니다</h2>
+					</div>
+                    <div class="userInfoWrap">
+                        <div class="userInfoBox">
+                            <h3 class="h3">신청자 정보</h3>
+                            <dl>                            
+                                <dt>이름</dt>
+                                <dd>나신용</dd>
+                                <dt>주민등록번호</dt>
+                                <dd>123456-1******</dd>
+                                <dt>조회기간</dt>
+                                <dd>YYYY.MM.DD~YYYY.MM.DD</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    
+
+					<div class="topListInfo">
+                        <h3 class="h3">이용내역</h3>
+                        <span class="cnt">총 <i>2</i>건</span>
+                    </div>
+
+                    <dl class="infoBox">
+                        <div>
+                            <dt>이용날짜</dt>
+                            <dd>YYYY.MM.DD</dd>
+                        </div>
+                        <div>
+                            <dt>이용목적</dt>
+                            <dd>본인신용관리</dd>
+                        </div>
+                        <div>
+                            <dt>이용한 신용정보 내용</dt>
+                            <dd>신용거래정보</dd>
+                        </div>
+                        <div>
+                            <dt>보유 및 이용기간</dt>
+                            <dd>3년</dd>
+                        </div>
+                    </dl>
+                    <dl class="infoBox">
+                        <div>
+                            <dt>이용날짜</dt>
+                            <dd>YYYY.MM.DD</dd>
+                        </div>
+                        <div>
+                            <dt>이용목적</dt>
+                            <dd>본인신용관리</dd>
+                        </div>
+                        <div>
+                            <dt>이용한 신용정보 내용</dt>
+                            <dd>신용거래정보</dd>
+                        </div>
+                        <div>
+                            <dt>보유 및 이용기간</dt>
+                            <dd>3년</dd>
+                        </div>
+                    </dl>
+                    <div class="btnBottom">
+                        <div class="alignC">
+                            <button type="button" class="btnLine"><span>신용조회 기록 삭제</span></button>
+                        </div>
+                        <p class="impTxt">최근 3년간의 신용조회 기록이 삭제됩니다.(오늘 조회한 기록은 내일 삭제할 수 있습니다.)</p>
+                    </div>
+
+					<div class="comp">
+                        <h3 class="h3">제공내역</h3>
+						<div class="periodBtnWrap">
+							<div class="tabWrap t1">
+								<ul class="tabList col2">
+									<li class="tab active"><a href="#none">1년이내</a></li>
+									<li class="tab"><a href="#none">1~2년</a></li>
+									<li class="tab"><a href="#none">2~3년</a></li>
+									<li class="tab"><a href="#none">전체</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="topListInfo">
+							<span class="cnt">총 <i>2</i>건</span>
+						</div>
+						<!--// listInfo -->
+						<dl class="infoBox">
+							<div>
+								<dt>제공받은 자</dt>
+								<dd>본인</dd>
+							</div>
+							<div>
+								<dt>제공목적</dt>
+								<dd>본인열람</dd>
+							</div>
+							<div>
+								<dt>제공한 날짜</dt>
+								<dd>YYYY.MM.DD~</dd>
+							</div>
+							<div>
+								<dt>제공한 신용정보의 내용</dt>
+								<dd>신용거래정보</dd>
+							</div>
+							<div>
+								<dt>보유 및 이용기간</dt>
+								<dd>-</dd>
+							</div>
+						</dl>
+						<dl class="infoBox">
+							<div>
+								<dt>제공받은 자</dt>
+								<dd>(주)KB국민카드</dd>
+							</div>
+							<div>
+								<dt>제공목적</dt>
+								<dd>단순상담조회</dd>
+							</div>
+							<div>
+								<dt>제공한 날짜</dt>
+								<dd>YYYY.MM.DD~</dd>
+							</div>
+							<div>
+								<dt>제공한 신용정보의 내용</dt>
+								<dd>신용거래정보, 신용점수정보</dd>
+							</div>
+							<div>
+								<dt>보유 및 이용기간</dt>
+								<dd>거래종료일로부터 최장 5년</dd>
+							</div>
+						</dl>
+                        <div class="btnBottom">
+                            <div class="alignC">
+                                <button type="button" class="btnLine"><span>제공내역 일괄삭제</span></button>
+                            </div>
+                            <p class="impTxt">어제 날짜까지 제공한 내역만 삭제됩니다. 제공목적이 '고객관리'인 내역은 삭제되지 않습니다.</p>
+                        </div>
+
+						<!-- case 01 : 조회 건이 999건 초과한 경우 -->
+						<div class="noList">
+							<p>999건을 초과해 조회할 수 없습니다.</p>
+						</div>
+						<!-- case 02 : 조회 진행 중 Time Out 발생한 경우 -->
+						<div class="noList">
+							<p>조회시간을 초과했습니다.</p>
+							<a href="#none" class="btnLine">제공내역 다시 조회하기</a>
+						</div>
+						<!-- case 03 : 조회 결과 없는 경우 -->
+						<div class="noList">
+							<p>조회 결과가 없습니다.</p>
+						</div>
+					</div>
+					<!--// comp [제공내역] -->
+
+					<div class="comp">
+						<div class="receiveChkBox">
+							<p>개인신용정보 이용&middot;제공내역 <br>연 1회 이메일로 받기</p>
+							<div class="btnSwitch">
+								<input type="checkbox" id="switchChk">
+								<label for="switchChk"><span class="hidden">설정해제</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="uiAcco infoTip">
+						<div class="uiAccoHeader">
+							<button type="button" class="uiBtn">
+								<span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+							</button>
+						</div>
+						<div class="uiAccoContent">
+							<ul class="listDot">
+								<li>최근 3년의 범위는 이용내역의 경우 2016년 3월 12일 이후 최근 3년, 제공내역의 경우 2015년 3월 12일 이후 최근 3년에 해당합니다.
+								</li>
+								<li>이용내역 중 '보유 및 이용기간' : NICE평가정보㈜의 보유 및 이용기간을 의미합니다.</li>
+								<li>제공내역 중 '보유 및 이용기간' : NICE평가정보㈜로부터 개인신용정보를 제공받은 기관의 보유 및 이용기간을 의미합니다.</li>
+								<li>제공받은 자의 범위는 금융회사, 신용정보집중기관, 신용정보회사, 공공기관, 그 밖의 신용정보 제공·이용자, 본인 등 당해 신용정보주체의 개인신용정보를
+									제공받은 자를 모두 포함합니다.</li>
+								<li>이용 및 제공한 신용거래정보는 식별정보, 대출개설, 대출상환실적, 카드개설, 카드사용실적, 보증, 연체 등의 정보입니다.</li>
+								<li>이용 및 제공한 신용점수정보는 신용점수 정보입니다.</li>
+								<li>이용목적
+									<ul class="listNum">
+										<li>
+											<i>①</i>상담업무: 상담업무를 위해 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>②</i>본인신용관리: 본인의 신용변동여부 통지 목적으로 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>③</i>상품안내: 상품 및 서비스 소개 및 추천 등을 위해 신용정보를 이용한 것입니다.
+										</li>
+									</ul>
+								</li>
+								<li>제공목적
+									<ul class="listNum">
+										<li>
+											<i>①</i>고객관리: 신용정보주체와 상거래가 있는 기관에서 거래기간 동안 신용정보주체의 신용정보 변동내역을 제공받는 내역입니다.
+											(이를 통해 기관은 신용정보주체의 신용정보를 최소한으로 조회합니다.)
+										</li>
+										<li>
+											<i>②</i>카드발급: 신용카드, 체크카드 발급심사를 위한 목적으로 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>③</i>공공목적조회: 공공기관이 공공 목적으로 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>④</i>기타민원: 금융회사, 법무사 등에 신청한 민원업무처리 목적으로 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>⑤</i>본인열람: 본인이 자신의 신용정보를 조회한 것입니다.
+										</li>
+										<li>
+											<i>⑥</i>신용조사: 채권추심회사가 신용조사 목적으로 조회한 것입니다.
+										</li>
+										<li>
+											<i>⑦</i>단순상담조회: 대출이나 카드발급을 정식으로 신청하기 전에 상담업무를 처리하기 위해 조회한 것입니다.
+										</li>
+										<li>
+											<i>⑧</i>금융거래 등 상거래: 대출, 카드, 할부금융, 리스, 주택자금, 보증 등 금융거래를 비롯한 상거래관계의 설정 및 유지 여부
+											판단목적으로 조회한 것입니다.
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<p class="listDot">이 열람시스템으로 열람한 내역은 3년간 NICE평가정보에 기록이 보존됩니다.</p>
+						</div>
+					</div>
+					<!--// comp [꼭 알아두세요] -->
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

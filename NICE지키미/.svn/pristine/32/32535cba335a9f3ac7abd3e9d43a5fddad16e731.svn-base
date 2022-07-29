@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '나이스지키미', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal1');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal1" class="btn base modalOpen">[팝업]결제옵션 변경</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modal1">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>결제옵션 변경</h1>
+          <p class="hSubTxt">최근에 변경된 대한민국의 법률로 인해 여러 결제 옵션이  제공됩니다. 결제 옵션 선택은 아래의 사항을 포함합니다.</p>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <ul class="listDot">
+              <li>구매를 보호하고 결제를 처리하며 모든 결제 정보를  저장하는 주체</li>
+              <li>구매와 관련된 고객 지원을 제공하는 주체</li>
+              <li>사용 가능한 결제 수단</li>
+              <li>구매 시 사용할 수 있는 혜택</li>
+            </ul>
+            <p class="moSubTxt">Google은 Google Play를 통한 구매만 보호합니다. Play기프트 카드, Play포인트, 구매 관리, 정기 결제 관리와 같은 Google Play가 제공하는 기능은 결제 시 Google Play를 선택한 경우에만 사용할 수 있습니다</p>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn base"><span>자세히 알아보기</span></button>
+              <button type="button" class="btn primary" onClick="modal.hideModal('#modal1');modal.openModal('#modal2')"><span>계속</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+
+
+    <!--결제방법 팝업 -->
+       <!-- popup -->
+    <div class="uiModal bottom" id="modal2">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>결제방법 선택</h1>
+          <p class="hSubTxt">결제를 보호하고 처리하며 고객 서비스를 제공할 주체를  선택하세요. 혜택 및 사용 가능한 결제 수단이 다를 수 있습니다.</p>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="paymentWrap">
+              <ul class="paymentList">
+                <li>
+                  <a href="#none">
+                    <h3 class="h4">나이스지키미</h3>
+                    <p class="moSubTxt">신용카드, 휴대폰, 삼성페이, 네이버페이 +그 외 결제수단 </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <h3 class="h4">Google Play</h3>
+                    <ul class="cardPaylist">
+                      <li><span class="hidden">BC카드 이미지</span></li>
+                      <li><span class="hidden">KB국인은행 임미지</span></li>
+                      <li><span class="hidden">카카오페이 이미지</span></li>
+                      <li><span class="hidden">SK 이미지</span></li>
+                      <li><span class="hidden">안드로이드 이미지</span></li>
+                    </ul>
+                    <p class="moSubTxt">+그 외 결제수단</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn base"><span>자세히 알아보기</span></button>
+              <button type="button" class="btn primary"><span>계속</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <!--// 결제방법 팝업 -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tab - Guide</title>
+
+	<script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+	<style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}  
+    .guideItem h2 {margin-bottom:15px;}   
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+	<h1 class="guideTit">Tab</h1>
+  <p class="para">
+    .uiTab (기본 클래스)<br>
+		.active (활성화)
+  </p>
+
+  <div class="guideItem">
+    <div class="tabWrap">
+			<ul class="tabList">
+				<li class="tab active"><a href="#tab01">첫번째탭</a></li>
+				<li class="tab"><a href="#tab02">두번째탭</a></li>
+				<li class="tab"><a href="#tab03">세번째탭</a></li>
+			</ul>
+			<div class="tabConts">
+				<div class="tabPanel" id="tab01">
+					첫번째 탭 내용
+				</div>                
+				<div class="tabPanel" id="tab02">
+					<div class="uiTab t2">
+            <ul class="tabList">
+              <li class="tab active"><a href="#tabIn01">첫번째 IN탭</a></li>
+              <li class="tab"><a href="#tabIn02">두번째 IN탭</a></li>
+              <li class="tab"><a href="#tabIn03">세번째 IN탭</a></li>
+            </ul>
+            <div class="tabConts">
+              <div class="tabPanel" id="tabIn01">
+                첫번째 내용
+              </div>                
+              <div class="tabPanel" id="tabIn02">
+                두번째 내용
+              </div>
+              <div class="tabPanel" id="tabIn03">
+                세번째 내용
+              </div>
+            </div>
+          </div>
+				</div>
+				<div class="tabPanel" id="tab03">
+					세번째 탭 내용
+				</div>
+			</div>
+		</div>
+  </div>
+  
+</div>
+</body>
+
+</html>

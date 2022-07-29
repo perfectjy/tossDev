@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Board List - Guide</title>
+
+	<script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+	<style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}  
+    .guideItem > h2 {margin-bottom:15px;}   
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+	<h1 class="guideTit">Board List</h1>
+
+  <div class="guideItem">
+    <h2>Tag</h2>
+    <div class="tagList">
+      <span class="tag bl">매우안정</span>
+      <span class="tag bg">안정</span>
+      <span class="tag gr">다소안정</span>
+      <span class="tag br">보통</span>
+      <span class="tag re">우려</span>
+      <span class="tag ga">실행완료</span>
+    </div>
+  </div>
+
+  <div class="guideItem">
+    <h2>목록리스트 .lineboxList</h2>
+    <ul class="lineboxList">
+      <li>
+        <strong>금융감독원</strong>
+        <span>금융서비스에 대한 민원 접수 및 조회</span>
+        <a href="https://www.fss.or.kr/fss/main/main.do" target="_blank" title="새창열림" class="link"><span class="hidden">사이트 바로가기</span></a>
+      </li>
+      <li>
+        <strong>금융감독원 보이스피싱지킴이</strong>
+        <span>보이스피싱 피해 신고 및 상담, 보이스피싱 예방법 안내</span>
+        <a href="https://www.fss.or.kr/fss/main/sub1voice.do?menuNo=200725" target="_blank" title="새창열림" class="link"><span class="hidden">사이드 바로가기</span></a>
+      </li>
+      <li>
+        <button type="button" class="link">
+          <strong>나지킴(NA JI KIM)</strong>
+          <span>SignKorea / 만료일 2023. 03. 16</span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="link" disabled="disabled">
+          <strong>나지킴(NA JI KIM)</strong>
+          <span>SignKorea / 만료일 2023. 03. 16</span>
+        </button>
+      </li>
+      <li>
+        <strong>위탁</strong>
+        <span class="roboto">1002841184273</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="guideItem">
+    <h2>박스형 link</h2>
+    <div class="bgBoxLink">            
+      <strong>NICE평가정보에서 <span class="pColor">안전하게 제공되고있는 내 신용정보</span>는 어떤게 있을까요?</strong>
+      <a href="#none" class="btnArrow">지금 바로 확인하기</a>
+    </div>
+
+    <div class="bgBoxLink">            
+      <p><strong>나신용</strong>님, 최근에 맞춤대출로 <strong>대출 2건</strong>을 신청하셨네요.</p>
+      <a href="#none" class="btnArrow">자세히 보기</a>
+    </div>
+  </div>
+
+  <div class="guideItem">
+    <h2>list 상단건수</h2>
+    <div class="topListInfo">          
+      <span class="cnt">총 <i>2</i>건</span>
+    </div>
+    <br><br>
+    <div class="topListInfo">
+      <h3 class="h3">관보정보 내역</h3>
+      <span class="cnt">총 <i>2</i>건</span>
+    </div>
+
+    <br><br>
+    <div class="topListInfo">
+      <h2 class="h2">NICE 평가정보<span class="cnt">6</span></h2><!--// niceTit : 나이스평가정보 -->
+      <p class="opt">카드사 기준</p>
+    </div>
+  </div>
+  
+</div>
+</body>
+
+</html>

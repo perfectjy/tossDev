@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+  
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '자동차 시세', prev: true, menu: true };
+
+    $(function(){
+      // swiper
+      var swiper1 = new Swiper('.priceSlider', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".priceP",
+            clickable: true,
+          },
+        });
+      var swiper2 = new Swiper('.bnrSlider', {
+          spaceBetween: 10,
+          pagination: {
+            el: ".bnrP",
+            clickable: true,
+          },
+        });
+    });
+</script>
+</head>
+<body>
+  <div id="wrap"> 
+    <div id="skipNavi">
+      <a href="#content">본문내용 바로가기</a>
+    </div> 
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">내 차 자산은 얼마나 할까?</h2>
+          </div>
+          <div class="grBox">
+            <p class="mcPrice"><strong class="pColor">10,000</strong> 억 <strong class="pColor">2,000</strong> 원</p>
+            <div class="ineBox">
+              <div class="rnlBox">
+                <div class="thumBox">
+                  <span class="thumImg"><img src="../../../img/zkm/rzm/@tmp/@tmp_car.png" alt=""></span>
+                  <span class="tag bk">2022.05 년식</span>
+                </div>
+                <div class="txtinfoBox">
+                  <div class="tagWrap">
+                    <span class="tag bl">소유변경</span>
+                    <span class="tag gr">리콜대상</span>
+                    <span class="tag re">저당설정</span>
+                  </div> 
+                  <p class="licensePlate">123가4567</p>
+                  <span class="typeName">BMW 미니쿠퍼 컨트리맨</span>
+                </div>
+              </div>
+              <div class="btnWrap">
+                <a href="#"><strong class="undBld">10,000억 2,000만원</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="myCarInfoWrap">
+            <div class="tabBox">
+              <p class="contMainTit">또 <strong class="pColor">다른 혜택</strong>도 있어요</p>
+              <div class="rndLink tR">
+                <ul>
+                  <li><a class="ye" href="#none"><span>#유지비</span></a></li>
+                  <li><a class="bl" href="#none"><span>#소유권</span></a></li>
+                  <li><a class="re" href="#none"><span>#저당권</span></a></li>
+                  <li><a class="gr" href="#none"><span>#리콜대상</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="priceWrap">
+              <p class="contSubTit">전국 주유소</p>
+              <div class="priceHead">
+                <p class="tit"><strong>일 평균가격</strong></p>
+                <span class="date">2022.06.27</span>
+              </div>
+              <div class="priceSlider">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="oilType t1">
+                      <p class="tit">휘발유</p>
+                      <p class="price inc"><strong>2,190</strong> 원</p>
+                      <p class="exp atUp">전일대비 <strong>+30</strong> 원</p>
+                    </div>
+                    <div class="oilType t2">
+                      <p class="tit">경유</p>
+                      <p class="price dec"><strong>2,190</strong> 원</p>
+                      <p class="exp atDown">전일대비 <strong>-300</strong> 원</p>
+                    </div>
+                    <div class="oilType t3">
+                      <p class="tit">휘발유</p>
+                      <p class="price inc"><strong>2,190</strong> 원</p>
+                      <p class="exp atUp">전일대비 <strong>+30</strong> 원</p>
+                    </div>
+                    <div class="oilType t4">
+                      <p class="tit">경유</p>
+                      <p class="price dec"><strong>2,190</strong> 원</p>
+                      <p class="exp atDown">전일대비 <strong>-300</strong> 원</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="oilType t1">
+                      <p class="tit">휘발유</p>
+                      <p class="price inc"><strong>2,190</strong> 원</p>
+                      <p class="exp atUp">전일대비 <strong>+30</strong> 원</p>
+                    </div>
+                    <div class="oilType t2">
+                      <p class="tit">경유</p>
+                      <p class="price dec"><strong>2,190</strong> 원</p>
+                      <p class="exp atDown">전일대비 <strong>-300</strong> 원</p>
+                    </div>
+                    <div class="oilType t3">
+                      <p class="tit">휘발유</p>
+                      <p class="price inc"><strong>2,190</strong> 원</p>
+                      <p class="exp atUp">전일대비 <strong>+30</strong> 원</p>
+                    </div>
+                    <div class="oilType t4">
+                      <p class="tit">경유</p>
+                      <p class="price dec"><strong>2,190</strong> 원</p>
+                      <p class="exp atDown">전일대비 <strong>-300</strong> 원</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="changeWrap">
+                  <button type="button" class="btn sub"><span>주간평균 가격보기</span></button>
+                </div>
+              </div>
+              <div class="swiper-pagination priceP"></div>
+            </div>
+            <div class="bnrSlider">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#none" class="bnrBox installment">
+                    <h3 class="tit"><strong>자동차 구입 자금이 부족하세요</strong></h3>
+                    <span class="expSub">저렴한 금리 할부 기간을 선택할 수 있어요</span>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none" class="bnrBox installment">
+                    <h3 class="tit"><strong>자동차 구입 자금이 부족하세요</strong></h3>
+                    <span class="expSub">저렴한 금리 할부 기간을 선택할 수 있어요</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination bnrP"></div>
+            </div>
+          </div>
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>자동차 추가등록</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

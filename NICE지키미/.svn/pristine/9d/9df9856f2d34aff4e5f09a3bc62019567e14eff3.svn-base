@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+</head>
+
+<body>
+
+  <div class="code">
+    <code>
+      <p>
+        
+      </p>
+    </code>
+  </div>
+
+  <div class="guideItem">
+    <a href="#modalid" class="btn base modalOpen">클릭하면 풀팝업 활성화</a>
+  </div>
+
+  <!-- 풀 모달 -->
+  <div class="uiModal full" id="modalid">
+    <div class="modalWrap">
+      <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>문의내용 수정하기</h1>						
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->
+
+            <div class="formWrap">
+              
+            <div class="formItem">
+              <label for="sel" class="titItem">상담유형</label>
+              <div>
+                <select id="sel">
+                  <option>서비스</option>
+                  <option>유료서비스</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="formItem">
+              <label for="inpTitle" class="titItem">제목</label>
+              <input id="inpTitle" type="text" placeholder="멤버십 중도 해지하고싶어요.">
+              <span class="writeNumber"><em>0</em>  50</span>
+            </div>
+
+            <div class="formItem textareaArea">
+              <span class="writeNumber"><em>0</em>  2,000</span>
+              <label for="" class="titItem">내용</label>
+              <div class="write">
+                <textarea name="" id="" cols="" rows="7" class="textarea"></textarea>
+              </div>
+              
+              <ul class="listDot">
+                <li>주민번호, 계좌번호 및 비밀번호 등의 개인정보는 입력하지 마세요.</li>
+              </ul>
+            </div>
+          </div>
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btnConts">
+            <button type="button" class="btn primary"><span>수정</span></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+
+</html>

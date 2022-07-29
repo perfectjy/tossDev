@@ -1,0 +1,198 @@
+@charset "euc-kr";
+
+.cusMain {background-color: #f7f7f7; padding:5px 20px 30px 20px; margin:0 -20px;}
+.cusList li {margin-top:10px;}
+.cusList a {display:block; padding:15px 20px; color:#87909b; font-size:13px; background-color: #fff; border-radius: 15px; box-shadow: 6px 10px 40px 0 rgba(198, 207, 219, 0.3);;}
+.cusList a .variety {display:block; font-size:16px; font-weight: 700; color:#222; margin-bottom:6px;} 
+.cusMain .notiBox {position:relative; margin-top:30px;}
+.cusMain .notiBox h3 {margin-bottom:10px;}
+.cusMain .notiBox .notiTxt {display:block; border:solid 1px #dcdff1; border-radius: 10px; padding:15px; font-size:14px; line-height: 24px; background-color:#fff;}
+.cusMain .notiBox .btnMore {position:absolute; top:0; right:0; width:20px; height: 20;}
+.cusMain .notiBox .btnMore:before {position:absolute; content:''; width:10px; height:2px; background-color: #000; top:9px; left:5px;}
+.cusMain .notiBox .btnMore:after {position:absolute; content:''; width:2px; height:10px; background-color: #000; top:5px; left:9px;}
+
+.cusHelp {padding-top:17px;}
+.cusHelp h3 {margin-top:28px;}
+.cusHelp .telNum {margin-top:21px; font-family: "Roboto"; font-weight: 200; color:#066bfd; font-size:23px; line-height: 26px;}
+.cusHelp .telNum span:first-child:after {display:inline-block; content:''; width:4px; height:4px; border-radius: 50%; background-color:#c6cfdb; vertical-align: top; margin:11px 8px 0 10px;}
+.cusHelp .listDot {margin-top:19px;}
+.cusHelp .contact {margin-top:7px; font-size:13px; line-height:26px; padding:12px 14px; border:1px solid #eee; border-radius: 10px; background-color: #f9f9f9;}
+.cusHelp .contact .mail {display:inline-block; font-size:12px; position:relative; margin-left:20px;}
+.cusHelp .contact .mail:before {position:absolute; content:''; top:8px; left:-10px; width:2px; height:11px; background-color:#d4d4d4;}
+
+/* 데이터놀이 - bottomQuickMenu */
+.mobile .bottomQuickMenu.scroll{overflow-x:scroll; margin:0 -20px; padding:0 20px;} 
+.bottomQuickMenu.scroll ul {display:inline-flex; flex-wrap: nowrap;}
+.bottomQuickMenu.scroll ul>li{flex:none; width:100px;}
+.bottomQuickMenu ul{display:flex; height:95px; margin-top:40px;}
+.bottomQuickMenu ul>li{flex:1; margin-right:10px;}
+.bottomQuickMenu ul>li:last-child{margin-right:0;}
+.bottomQuickMenu ul>li a{position:relative; display:table; width:100%; height:95px; padding:54px 0 11px 0; color:#87909b; font-size:13px; text-align:center; border:1px solid #dcdff1; border-radius:15px;}
+.bottomQuickMenu ul>li a::before{content:''; position:absolute; left:50%; top:11px; display:block; width:40px; height:40px; transform:translateX(-50%);}
+.bottomQuickMenu .name a::before{background:url(../../img/bzw/common/btn/btn_name_quickmenu.png) no-repeat; background-size:120px 40px;}
+.bottomQuickMenu .name .ico01::before{background-position:0 0;}
+.bottomQuickMenu .name .ico02::before{background-position:-40px 0;}
+.bottomQuickMenu .name .ico03::before{background-position:-80px 0;}
+.bottomQuickMenu .pet a::before{background:url(../../img/bzw/common/btn/btn_pet_quickmenu.png) no-repeat; background-size:200px 40px;}
+.bottomQuickMenu .pet .ico01::before{background-position:0 0;}
+.bottomQuickMenu .pet .ico02::before{background-position:-40px 0;}
+.bottomQuickMenu .pet .ico03::before{background-position:-80px 0;}
+.bottomQuickMenu ul>li a span {display:table-cell; vertical-align: middle; font-size:13px; line-height: 14px;}
+
+/* 이름 추천 결과 */
+.h2 {font-size: 21px; line-height: 30px; font-weight: 700; margin:40px 0 18px 0;}
+.nameRecomList {margin:0 -4px; display:flex; flex-wrap: wrap; margin-top:-8px;}
+.nameRecomList li {padding:0 4px; width:25%; box-sizing: border-box; margin-top:8px;}
+.nameRecomList li a {display:block; border:1px solid #ddd; border-radius: 15px; text-align:Center; padding:16px 0;}
+.nameRecomList li a span {display:block;}
+
+
+
+
+
+
+/* 로그인 */
+.togCheck {font-size:14px; text-align:right; padding-right:10px;}
+.logBottom .togCheck {padding:20px 0; }
+.logBottom .logLink {text-align: center; font-size:14px; line-height: 20px; margin-top:36px;}
+.logBottom .logLink a {display:inline-block; }
+.logBottom .logLink a:not(:first-child):before {content:''; display: inline-block; width: 4px; height: 4px; border-radius:4px; background-color: #d4d4d4; vertical-align:top; margin:8px 6px 0 4px;}
+.logBottom .snsLogBox {margin-top:100px;}
+.logBottom .snsLogBox ul {text-align: center;}
+.logBottom .snsLogBox li {position:relative; display:inline-block; margin:0 6px;}
+.logBottom .snsLogBox a {display:block; width:50px; height:50px; background-size: 100%; background-color:#f1f1f1}
+.logBottom .snsLogBox a.snsNaver {background-image:url(../../img/bzw/common/ico/ico_naver.png);}
+.logBottom .snsLogBox a.snsKakao {background-image:url(../../img/bzw/common/ico/ico_kakao.png);}
+.logBottom .snsLogBox a.snsApple {background-image:url(../../img/bzw/common/ico/ico_apple.png);}
+.logBottom .snsLogBox .inform { width: 230px; position: absolute; top:-60px; left: 50%; transform: translateX(-50%); background-color: #fff; padding: 10px 10px; box-shadow: #ddd 0 5px 10px; font-size: 14px; border-radius: 5px; color: #444;}
+.logBottom .snsLogBox .inform:after {content:''; display: block; width: 0; height: 0; border-top: 10px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; position: absolute; bottom:-8px; left: 50%; transform: translateX(-50%);}
+
+/* 로그인 방법 선택 */
+.logSelType li:not(:first-child) {margin-top:10px;}
+
+.logCertWrap.pin:before, 
+.logCertWrap.bio:before,
+.logCertWrap.shield:before {display:block; content:''; height:195px; background-repeat: no-repeat; background-size:150px; background-position: 50% 25px;}
+.logCertWrap.pin:before {background-image:url(../../img/bzw/common/bg/bg_lock.png);}
+.logCertWrap.bio:before {background-image:url(../../img/bzw/common/bg/bg_face.png);}
+.logCertWrap.shield:before {background-image:url(../../img/bzw/common/bg/bg_shield.png);}
+.logCertWrap .btnArea {margin-top:50px;}
+.logCertWrap .subArea {margin-top:20px; text-align: center;}
+
+/* 잠금번호 입력 */
+.logCertWrap .passwordDot { padding:80px 0;}
+.passwordDot {text-align:center; font-size:0;}
+.passwordDot span {display:inline-block; width: 15px; height: 15px; border-radius: 50%; margin:0 8px; background-color: #c6cfdb;}
+.passwordDot .active {background-color: #222;}
+
+/* 아이디 */
+.infoViewBox {display:flex; height:175px; align-items: center; justify-content: center;}
+.infoViewBox p {font-size:15px;}
+
+
+/* 고객센터 - 상세내역 */
+.detailTit{margin-bottom:30px; line-height:1;}
+.detailTit .info{margin-top:15px;}
+.detailTit .info>li{position:relative; display:inline-block; padding-right:18px; color:#767676;}
+.detailTit .info>li:first-child{font-weight:700;}
+.detailTit .info>li:not(:first-child):before{content:''; position:absolute; left:-10px; top:2px; display:block; width:1px; height:11px; background-color:#d4d4d4;}
+
+.detailCont{padding:20px 0; border-top:1px solid #bababa;}
+
+.infoBox{padding:20px 15px; margin-bottom:15px; background:#f9f9f9; border:1px solid #eee; border-radius:10px;}
+.infoBox:last-child{margin-bottom:50px;}
+.infoBox div{display:flex; justify-content:space-between; margin-bottom:12px;}
+.infoBox div:last-child{margin-bottom:0;}
+.infoBox dt{color:#444;}
+.infoBox dd{font-weight:700;}
+
+.inquireList h3{padding:0 0 10px 15px; border-bottom:1px solid #bababa;}
+.inquireList .standBy .contArea{display:flex; align-items:center; justify-content:center; color:#767676; font-weight:700; background:#f9f9f9;}
+.inquireList .contArea{min-height:150px; padding:15px;}
+.inquireList .date{padding-left:15px; color:#767676;}
+.inquireList .btnArea{text-align:right; font-size:0;}
+.inquireList .btnArea .btn{min-width:60px; padding:0 15px; margin-left:10px;}
+.inquireList .comp{margin-top:40px;}
+
+
+
+
+
+
+
+
+
+
+
+/* 맞춤대출 ---------------------------------------------*/
+/* 서브메인 */
+.topBoxLink {position:relative; margin-bottom:45px; background:#eff2f8; border-radius:15px; font-size:16px; line-height: 24px; padding:26px 20px;}
+.topBoxLink strong {font-weight: 700;}
+.topBoxLink a {display:inline-block; font-size:15px; margin-top:5px;}
+
+.loanFItGuide {padding-top:230px;}
+.loanFItGuide p {font-size:14px; line-height: 22px; margin-bottom:45px; text-indent:-8px; padding-left:8px;}
+.loanLink li {min-height:65px; font-size:16px; line-height: 24px;;}
+.loanLink li:not(:first-child) {margin-top:20px;}
+.loanLink li a {display:block; height:100%; position:relative;padding:8px 0 0 80px; }
+.loanLink li a:before {position:absolute; content:''; top:0; left:0; width:65px; height:65px; border-radius: 50%; background-color:#f1f1f1;}
+.loanLink li a:after {}
+.loanLink li span {display:block; font-size:13px;}
+.loanLink li strong {font-weight: 700;}
+
+.allyBizList {margin-top:-12px;}
+.allyBizList h4 {margin-top:30px;}
+.allyBizList h4 .cnt {color:#066bfd; margin-left:6px;}
+
+/* 맞춤대출상품 모달 */
+.loadGoods li:not(:first-child) {margin-top:15px;}
+.loadGoods a {display:block; position:relative; padding:30px 55px 30px 25px; border:1px solid #d4d4d4; border-radius:15px; font-size:17px; line-height: 25px;}
+.loadGoods a:after {position: absolute;right:22px; top:50%; margin-top:-7px; content: '';width: 8px;height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg);}
+.loadGoods a img {height:19px;}
+.loadGoods a strong {display:block; margin-top:9px;}
+
+
+/* 업권선택 */
+.bizWrap .bizItem {margin-top:20px; border:1px solid #d4d4d4; border-radius: 15px; padding:25px 20px;}
+.bizWrap .bizItem label {font-weight: 700;}
+.bizWrap .bizItem label .cnt {display:inline-block; font-size:12px; line-height: 20px; background-color:#eff2f8; border-radius: 10px; padding:0 7px; margin-left:5px;}
+.bizSwiper .itemUnitList {display:flex; flex-wrap: wrap;}
+.bizSwiper .itemUnitList li {width:25%; padding:0 8px; text-align:center; font-size:12px; line-height: 16px; margin-top:30px; box-sizing: border-box;}
+.bizSwiper .itemUnitList li:nth-child(-n+4) {margin-top:25px;}
+.bizSwiper .itemUnitList li .logoPv {display:block; width:55px; height:55px; border:1px solid #eee; border-radius: 50%; overflow: hidden; margin:0 auto;}
+.bizSwiper .itemUnitList li .logoPv img {max-width:100%;}
+.bizSwiper .itemUnitList li .tit {display:block; margin-top:9px;}
+
+.bizItem.checked .itemUnitList li .logoPv {border-color:#066bfd;}
+.bizSwiper {overflow:hidden;}
+.bizSwiper .swiper-pagination {position:static; height:8px; margin-top:20px;}
+.bizSwiper .swiper-pagination .swiper-pagination-bullet {vertical-align: top;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

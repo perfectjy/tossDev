@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '로그인', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <h2 class="titPage">아이디/소셜 로그인</h2>
+          <div class="area">
+            <div class="insertWrap">
+              <ul>
+                <li>
+                  <dl>
+                    <dt><label for="logid" class="titItem">아이디</label></dt>
+                    <dd>
+                      <div class="formItem">
+                        <input type="text" placeholder="아이디 입력" title="아이디 입력" id="logid">
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><label for="logpw" class="titItem">비밀번호</label></dt>
+                    <dd>
+                      <div class="formItem">
+                        <input type="password" placeholder="비밀번호 입력" title="비밀번호 입력" id="logpw">
+                        <input type="checkbox" class="chkKeyPad" title="보안키패드 열기">
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="checkRight">
+              <span class="checkToggle">
+                <input type="checkbox" id="push">
+                <label for="push"></label>
+              </span>
+              <span>자동 로그인</span>
+            </div>
+            <div class="btnConts">
+              <button type="button" class="btn primary" disabled="disabled"><span>로그인</span></button>
+            </div>
+          </div>
+          <div class="area">
+            <div class="btnConts">
+              <a href="#login" class="btnLink">아이디/비밀번호 찾기</a>
+              <a href="#login" class="btnLink">회원가입</a>
+            </div>
+            <div class="btnConts">
+              <a href="#login" class="btnSns naver">Naver</a>
+              <a href="#login" class="btnSns kakao">kakao Talk</a>
+              <a href="#login" class="btnSns apple">Apple</a>
+            </div>
+            <div class="toolTip">
+              마지막으로 로그인한 계정입니다 <i></i>
+            </div>
+          </div>
+          <div class="btnConts">
+            <button type="button" data-id="loginAnother" class="btnPop btnBtm">다른 방식으로 로그인하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div data-id="loginAnother" class="popup btm">
+      <div>
+        <div class="popWrap" tabindex="0">
+          <!-- report2 messagePopup widePopup -->
+          <div class="popClose">
+            <button type="button" class="btn_close" title="팝업창 닫기">
+              <b><i></i><i></i></b>
+            </button>
+          </div>
+          <div class="popCon">
+            <h3 class="popTit">로그인 방법 선택</h3>
+            <div class="btnWrap">
+              <ul>
+                <li>
+                  <button type="button" class="btn base">잠금번호</button>
+                </li>
+                <li>
+                  <button type="button" class="btn base">생체인증</button>
+                </li>
+                <li>
+                  <button type="button" class="btn base">아이디</button>
+                </li>
+                <li>
+                  <button type="button" class="btn base">네이버</button>
+                </li>
+                <li>
+                  <button type="button" class="btn base">카카오</button>
+                </li>
+                <li>
+                  <button type="button" class="btn base">공동인증서</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--// popcon -->
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

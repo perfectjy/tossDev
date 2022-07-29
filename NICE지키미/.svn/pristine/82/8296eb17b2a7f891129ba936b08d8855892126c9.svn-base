@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '회원가입', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width: calc(100% * (1/2))"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">1</strong>
+              <span class="hidden">전체단계</span><strong>2</strong>
+            </div>
+          </div>
+          <div class="governing">
+            <h2 class="governingTitle">회원 가입 정보 입력</h2>
+          </div>
+
+          <div class="formWrap">
+            <div class="formItem">
+              <label for="logid" class="titItem">아이디</label>
+              <div class="formEle">
+                <input type="text" placeholder="영문, 숫자 포함 5자 이상 입력" id="logid">
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="logpw" class="titItem">비밀번호</label>
+              <div class="formEle">
+                <input type="password" placeholder="영문, 숫자, 특수문자 포함 8자 이상 입력" id="logpw">
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="logpw2" class="titItem">비밀번호 확인</label>
+              <div class="formEle">
+                <input type="password" placeholder="비밀번호 다시 입력" id="logpw2">
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="email" class="titItem">이메일</label>
+              <div class="formEle">
+                <input type="text" placeholder="도메인을 포함한 이메일 입력" id="email">
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="hpnum" class="titItem">휴대폰 번호</label>
+              <div class="intBtnType">
+                <input type="tel" id="hpnum" placeholder="- 없이 11자리 숫자 입력">
+                <span class="intBtn">
+                  <button type="button" class="btn base"><span>확인번호 발송</span></button>
+                </span>
+              </div>
+            </div>
+            <div class="formItem">
+              <label for="num" class="titItem">확인번호 입력</label>
+              <div class="intBtnType">
+                <input type="tel" id="num" placeholder="숫자 6자리">
+                <span class="intBtn">
+                  <button type="button" class="btn base"><span>확인</span></button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="uiAccoWrap srvInfo">
+            <div class="uiAccoHeader">          
+              <button type="button" class="uiBtn">
+                <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+              </button>
+            </div>
+            <div class="uiAccoContent">
+              <ul class="listDot">
+                <li>본인 소유 휴대폰 번호를 입력하셔야 신용변동 무료 알람서비스를 이용하실 수 있습니다.</li>
+                <li>휴대폰 확인번호 발송은 일 3회로 제한됩니다.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btnConts">
+            <button type="button" class="btn primary"><span>다음</span></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '금융자산 모아보기', prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">
+                            나신용님, <strong class="pColor">금융자산</strong>을 얼마나 모으셨나요?
+                        </h2>
+                        <div class="amountWrap">
+                            <p class="date">2022.06.19 기준</p>
+                            <p class="amountTit"><strong>1,000,000,000</strong>원</p>
+                            <div class="fRow">
+                                <div>
+                                    <p class="amountExp aUp"><i></i> 지난달보다 +100,000,000 원</p>
+                                    <!--[D] 증가 : aUp, 감소 : aDown-->
+                                </div>
+                                <div class="dRight">
+                                    금액감추기
+                                    <div class="btnSwitch">
+                                        <input type="checkbox" id="switchChk">
+                                        <label for="switchChk"><span class="hidden">설정해제</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="financialSection">
+                        <div class="boxWrap">
+                            <a href="#none" class="plusBox">
+                                <strong class="bColor">나신용</strong>님 <strong class="bColor">국민은행</strong>자산이 <strong class="pColor">40%</strong>로 보유 비중이 가장 높아요.
+                            </a>
+                        </div>
+                        <div class="addListSec">
+                            <div class="addHeader">
+                                <span class="addExp">현재 마이데이터가 내 신용에 도움되는 <strong class="pColor">00</strong>개 기관,
+                                    <strong class="pColor">00</strong>개 상품을 연결 중 이에요.</span>
+                                <!--tabBox-->
+                                <div class="myAccIndex">
+                                    <div class="tabmenu rollTab">
+                                        <ul>
+                                            <li><a href="#none"><span>전체</span></a></li>
+                                            <li><a href="#none"><span>은행</span></a></li>
+                                            <li><a href="#none"><span>투자</span></a></li>
+                                            <li><a href="#none"><span>페이</span></a></li>
+                                            <li class="active"><a href="#none"><span>보험</span></a></li>
+                                            <li><a href="#none"><span>연금/IRP</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--tabBox-->
+
+                                <!--그래프 영역 -->
+                                <div class="graphConts myAccWrap2">
+                                    <div class="graphArea">
+                                        <div class="graphHeader">
+                                            <p class="totalResult">
+                                                이번달은 총 4,400만원이 남았어요.
+                                                지난달 보다 <strong class="sColor">1,000,000</strong>원이 더 늘었어요.
+                                                <i class="emoji t1"></i>
+                                            </p>
+                                        </div>
+                                        <div style="height: 200px; background-color: #eee; text-align: center;">그래프 영역</div>
+                                        <div class="moreWrap">
+                                            <span class="exp">더 정확한 데이터를 원하세요?</span>
+                                            <a href="#none" class="btnArrow">추가연결하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//그래프 영역 -->
+
+                                <div class="myAccWrap">
+                                    <div class="myAccHeader">
+                                        <div class="myAccHeaderWrap">
+                                            <div class="titleCont">
+                                                <h3 class="insure">보험 <i class="countTag">3</i></h3>
+                                                <div class="mRight">
+                                                    <a href="#" class="link">보험자산 더 모으기 +</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="myAccContent">
+                                        <div class="ineBox">
+                                            <div class="fRow myAccBox">
+                                                <div class="fRow fLeft atUp">
+                                                    <!--[D] atDown-->
+                                                    <i></i>
+                                                    <div class="amountTit">지난달보다<br> <strong>100,000,000</strong> 원</div>
+                                                </div>
+                                                <div class="fRight">
+                                                    <div class="date">20202.06.19 기준</div>
+                                                    <div class="amountTit"><strong>100,000,000</strong> 원</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sortWrap">
+                                            <button type="button" class="btnSort active desc">금액순</button>
+                                            <!--[D] 선택시:active, 내림차순:desc, 오름차순:asc-->
+                                            <button type="button" class="btnSort asc">가나다순</button>
+                                        </div>
+                                        <ul class="myAccList bdr">
+                                            <li>
+                                                <dl class="myAccRow">
+                                                    <dt class="icoName">
+                                                        <i class="bankIcon tS">
+                                                            <img src="../../../img/zkm/rzm/@tmp/@bank07.png" alt="">
+                                                        </i>
+                                                        <span>신한저축은행</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#"
+                                                            class="amountTit btnArrow"><strong>100,000,000</strong>원</a>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="myAccRow">
+                                                    <dt class="icoName">
+                                                        <i class="bankIcon tS">
+                                                            <img src="../../../img/zkm/rzm/sub/ico_insure.png" alt="">
+                                                        </i>
+                                                        <span>신한저축은행</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#" class="amountTit btnArrow"><i class="end">만료</i><strong>?</strong>원</a>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="myAccRow">
+                                                    <dt class="icoName">
+                                                        <i class="bankIcon tS">
+                                                            <img src="../../../img/zkm/rzm/@tmp/@bank07.png" alt="">
+                                                        </i>
+                                                        <span>신한저축은행</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#" class="amountTit btnArrow"><i class="error">!</i><strong>?</strong>원</a>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnMoreBox">
+                                        <button type="button" class="btn more"><span>더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>마이데이터 연결하기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

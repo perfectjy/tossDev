@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/bzw/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">소득정보 모아보기</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full active" id="modal">
+            <div class="modalWrap">
+                <div class="cookieBox">
+                    <div class="uiItem">
+                        <input type="checkbox" name="period" id="today">
+                        <label for="today"><span>오늘 그만보기</span></label>
+                    </div>
+                    <div class="uiItem">
+                        <input type="checkbox" name="period" id="week">
+                        <label for="week"><span>1주일 그만보기</span></label>
+                    </div>
+                </div>
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>자산 등록/연결 안내</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="governing">
+                            <h2 class="governingTitle">
+                                나신용님<br> 1분이면 현재 얼마를 모았는지 알 수 있어요.
+                            </h2>
+                        </div>
+                        <div class="regList">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btnReg income">
+                                        <strong>소득정보 등록하기</strong>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnReg data">
+                                        <strong>마이데이터 연결하기</strong>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnReg house">
+                                        <strong>우리집 등록하기</strong>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnReg car">
+                                        <strong>자동차 등록하기</strong>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--// content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

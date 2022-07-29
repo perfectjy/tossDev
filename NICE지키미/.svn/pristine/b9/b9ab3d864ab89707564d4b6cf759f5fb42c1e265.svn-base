@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '로그인', prev: true, menu: true };
+
+    $(function() {
+        
+      modal.openModal('#modal');
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">가입정보 갱신요청(이메일)</a>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal full" id="modal">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>가입정보 갱신요청</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="governing">
+              <h2 class="governingTitle">
+                김신용고객님<br>
+                고객님의 이메일주소가 다른 고객님의 이메일과 중복되어 이메일주소 재등록이 필요합니다.
+              </h2>
+            </div>
+            <div class="formWrap">
+              <div class="formItem">
+                <label for="mail" class="titItem">이메일</label>
+                <div class="formEle">
+                  <input type="text" id="mail" placeholder="도메인을 포함한 이메일 입력">
+                </div>
+              </div>
+            </div>            
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btnConts">
+              <button type="button" class="btn second"><span>나중에 하기</span></button>
+              <button type="button" class="btn primary"><span>변경</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

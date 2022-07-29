@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modal - Guide</title>
+
+	<script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+	<style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}     
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+
+<body>
+	<div class="guideWrap">
+    <h1 class="guideTit">모달 팝업</h1>
+
+    <div class="code">
+      <code>
+        <p>
+          
+        </p>
+      </code>
+    </div>
+
+    <div class="guideItem">
+      <a href="#modalid" class="btn base modalOpen">클릭하면 풀팝업 활성화</a>
+    </div>
+
+    <div class="guideItem">
+      <a href="#modalid2" class="btn base modalOpen">클릭하면 모달팝업</a>
+    </div>
+
+    <div class="guideItem">
+      <a href="#modalid5" class="ui-btn modalOpen">커튼팝업</a>
+    </div>
+
+    <div class="guideItem">
+      <a href="#alertid1" class="ui-btn modalOpen">알럿</a>
+    </div>
+
+    <div class="guideItem">
+      <a href="#alertid2" class="ui-btn modalOpen">컨펌</a>
+    </div>
+
+    <div class="uiModal modal" id="modalid2">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>알림</h1>
+        </div>
+        <div class="modalContent">
+          <!-- content -->
+          <div class="inner">
+            <div class="ui-allim">
+              <p class="msg1">아이디 또는 비밀번호가<br>올바르지 않습니다.</p>
+              <p class="msg2">
+                확인 후 로그인 해 주세요.<br>
+                단, <strong>비밀번호 5회 연속 오류</strong> 시<br>
+                로그인이 제한됩니다.
+              </p>
+              <p class="msg2">
+                확인 후 로그인 해 주세요.<br>
+                단, <strong>비밀번호 5회 연속 오류</strong> 시<br>
+                로그인이 제한됩니다.
+              </p>
+              <p class="msg2">
+                확인 후 로그인 해 주세요.<br>
+                단, <strong>비밀번호 5회 연속 오류</strong> 시<br>
+                로그인이 제한됩니다.
+              </p>
+              <p class="msg2">
+                확인 후 로그인 해 주세요.<br>
+                단, <strong>비밀번호 5회 연속 오류</strong> 시<br>
+                로그인이 제한됩니다.
+              </p>
+            </div>
+          </div>          
+          <!--// content -->
+          <div class="btns">
+            <button type="button" class="btn second"><span>취소</span></button>
+            <button type="button" class="btn primary"><span>확인</span></button>
+          </div>
+        </div>
+      </div>				
+    </div>
+
+    <!-- 풀 모달 -->
+    <div class="uiModal full" id="modalid">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>가맹점번호조회</h1>						
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            
+            <div class="ui-form">
+              <label for="comNumber">사업자등록번호 (숫자만 입력)</label>
+              <input type="number" id="comNumber" class="ui-en"><!-- 영문, 숫자 -->
+              <button type="button" class="ui-btn typeClear"><span class="hidden">삭제</span></button>
+              
+            </div>
+            <div class="ui-btn-wrap">
+              <button type="button" class="ui-btn typeSearch"><span>조회</span></button>
+            </div>
+
+
+            <div class="ui-btn-wrap">
+              <a href="#modalid2" class="modalOpen">클릭하면 두번째 모달</a>
+            </div>
+
+            1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+            1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+            1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+            1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>끝
+            
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn second"><span>닫기</span></button>
+              <button type="button" class="btn primary"><span>비밀번호 재등록</span></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="uiModal bottom" id="modalid5">
+      <div class="modalWrap">
+        <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1>하나카드</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+
+            <div class="ui-allim">
+              <p class="msg1">간편로그인 웹 잠금번호를<br>변경해 주세요.</p>
+            </div>
+            <ul class="ui-list-group">
+              <li class="ui-list-dot">하나카드는 고객님의 개인정보를 안전하게 보호하고 개인정보도용으로 인한 피해를 예방하기 위해 <strong>3개월 이상 웹
+                  잠금번호를 변경하지 않은 경우 웹 잠금번호 변경을 안내하고 있습니다.</strong></li>
+              <li class="ui-list-dot">'지금 변경'버튼을 눌러 웹 잠금번호 변경을 진행해 주세요.</li>
+            </ul>
+
+            <!--// content -->
+          </div>
+          <div class="modalBottom">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>확인</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="uiModal alert" id="alertid1">
+      <div class="alertWrap">
+        <div class="msg">
+          필수 동의가 필요한 정보입니다.<br>
+          미동의 시, 회원가입을 진행할 수 없습니다.
+        </div>
+        <div class="btns">
+          <button type="button" class="btn primary typeModalClose"><span>확인</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="uiModal alert" id="alertid2">
+      <div class="alertWrap">
+        <div class="msg">
+          <h1>약관을 확인해주세요.</h1>
+          필수 동의가 필요한 정보입니다.<br>
+          미동의 시, 회원가입을 진행할 수 없습니다.
+        </div>
+        <div class="btns">
+          <button type="button" class="btn second typeModalClose"><span>취소</span></button>
+          <button type="button" class="btn primary"><span>확인</span></button>
+        </div>
+      </div>
+    </div>
+
+	</div>
+</body>
+
+</html>

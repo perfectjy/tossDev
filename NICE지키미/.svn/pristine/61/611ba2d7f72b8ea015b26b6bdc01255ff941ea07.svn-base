@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+  
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '대출받기', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width:37.5%"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">3</strong>
+              <span class="hidden">전체단계</span><strong>8</strong>
+            </div>
+          </div>
+          <div class="governing">
+            <h2 class="governingTitle">주민등록번호를 입력해 주세요.</h2>
+          </div> 
+
+          <div class="formWrap">
+            <div class="formItem">
+              <label for="logname" class="titItem">주민등록번호/외국인등록번호</label>
+              <div class="intHalf hyphen">
+                <span class="inp">
+                  <input type="tel" placeholder="910101" title="주민등록번호 앞6자리" id="logrrn1" maxlength="6">
+                </span>
+                <span class="inp">
+                  <input type="password" placeholder="뒤 7자리" title="주민등록번호 뒤7자리" maxlength="7">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>이전</span></button>
+              <button type="button" class="btn primary"><span>다음</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

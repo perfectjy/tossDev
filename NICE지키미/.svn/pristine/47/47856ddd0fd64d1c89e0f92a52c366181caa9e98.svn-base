@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+    <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '색상선택', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+</script>
+</head>
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">색상선택</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uiModal full" id="modal">
+    <div class="modalWrap">
+      <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>색상선택</h1>						
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->
+          <div class="governing">
+            <h2 class="governingTitle">반려견 색상을 선택하세요</h2>
+          </div>
+
+          <div class="colorSelect">
+            <ul class="selList">
+              <li>
+                <input type="radio" id="cor1" value="1" name="selAnimalColor">
+                <label for="cor1" class="white">흰색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor14" value="14" name="selAnimalColor">
+                <label for="cor14" class="brown">갈색</label>
+              </li>              
+              <li>
+                <input type="radio" id="cor13" value="13" name="selAnimalColor">
+                <label for="cor13" class="black">검은색</label>
+              </li>              
+              <li>
+                <input type="radio" id="cor12" value="12" name="selAnimalColor">
+                <label for="cor12" class="yellow">노란색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor3" value="3" name="selAnimalColor">
+                <label for="cor3" class="gray">회색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor11" value="11" name="selAnimalColor">
+                <label for="cor11" class="beige">베이지색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor9" value="9" name="selAnimalColor">
+                <label for="cor9" class="combin">여러색조합</label>
+              </li>
+              <li>
+                <input type="radio" id="cor2" value="2" name="selAnimalColor">
+                <label for="cor2" class="darkBrown">흑갈색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor5" value="5" name="selAnimalColor">
+                <label for="cor5" class="lightBrown">황갈색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor10" value="10" name="selAnimalColor">
+                <label for="cor10" class="blackTan">블랙탄</label>
+              </li>
+              <li>
+                <input type="radio" id="cor7" value="7" name="selAnimalColor">
+                <label for="cor7" class="orange">주황색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor99" value="99" name="selAnimalColor">
+                <label for="cor99" class="noColor">색상없음</label>
+              </li>
+              <li>
+                <input type="radio" id="cor8" value="8" name="selAnimalColor">
+                <label for="cor8" class="reddishBrown">적갈색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor6" value="6" name="selAnimalColor">
+                <label for="cor6" class="blue">파란색</label>
+              </li>
+              <li>
+                <input type="radio" id="cor4" value="4" name="selAnimalColor">
+                <label for="cor4" class="grayBrown">회갈색</label>
+              </li>
+            </ul>
+          </div>
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btns">
+            <button type="button" class="btn second"><span>나중에 할래요</span></button>
+            <button type="button" class="btn primary"><span>네, 연결할래요</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

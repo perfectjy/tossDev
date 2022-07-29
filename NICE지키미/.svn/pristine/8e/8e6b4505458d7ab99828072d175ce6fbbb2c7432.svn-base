@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>    
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script> 
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '대출받기', prev: true, menu: true };
+
+    $(function() {   
+      var $parent = $('.bizItem'),
+        $target = $parent.find('.uiItem'),
+        $check = $target.find('input[type=checkbox]');
+
+        $check.each(function() {
+          var $t = $(this);
+          if($t.is(':checked')) {
+              $t.closest($parent).addClass('checked');
+          }
+        });
+
+        $check.change(function() {
+          if($(this).is(':checked')) {
+            $(this).closest($parent).addClass('checked');
+          } else {
+            $(this).closest($parent).removeClass('checked');
+          }
+        });
+
+        var swiper = new Swiper(".bizSwiper", {
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width:87.5%"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">7</strong>
+              <span class="hidden">전체단계</span><strong>8</strong>
+            </div>
+          </div>
+          <div class="governing">
+            <h2 class="governingTitle">여러 금융기관을 방문할 필요 없이 예상한도와 금리를 조회해 보세요</h2>
+          </div> 
+
+          <div class="agreement">
+            <div class="agreeTitle">
+              <input type="checkbox" id="agreeAll"><label for="agreeAll">전체 업권 조회</label>
+            </div>
+            <div class="bizWrap">
+              <div class="bizItem">
+                <div class="uiItem">
+                  <input type="checkbox" id="biz1" name="chk">
+                  <label for="biz1"><span>금융업</span><span class="cnt">22</span></label>
+                </div>
+                <div class="bizSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="itemUnitList">
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank01.png" alt=""></span>
+                          <span class="tit">OK저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank02.png" alt=""></span>
+                          <span class="tit">월컴저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank03.png" alt=""></span>
+                          <span class="tit">다올저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank04.png" alt=""></span>
+                          <span class="tit">한국투자저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank05.png" alt=""></span>
+                          <span class="tit">SBI저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank06.png" alt=""></span>
+                          <span class="tit">KB저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank01.png" alt=""></span>
+                          <span class="tit">다올저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank02.png" alt=""></span>
+                          <span class="tit">한국투자저축은행</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="itemUnitList">
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank01.png" alt=""></span>
+                          <span class="tit">OK저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank02.png" alt=""></span>
+                          <span class="tit">월컴저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank03.png" alt=""></span>
+                          <span class="tit">다올저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank04.png" alt=""></span>
+                          <span class="tit">한국투자저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank05.png" alt=""></span>
+                          <span class="tit">SBI저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank06.png" alt=""></span>
+                          <span class="tit">KB저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank01.png" alt=""></span>
+                          <span class="tit">다올저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank02.png" alt=""></span>
+                          <span class="tit">한국투자저축은행</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>                
+              </div>
+              <div class="bizItem">
+                <div class="uiItem">
+                  <input type="checkbox" id="biz2" name="chk">
+                  <label for="biz2"><span>대부업</span><span class="cnt">2</span></label>
+                </div>
+                <div class="bizSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="itemUnitList">
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank01.png" alt=""></span>
+                          <span class="tit">OK저축은행</span>
+                        </li>
+                        <li>
+                          <span class="logoPv"><img src="../../../img/zkm/rzm/@tmp/@bank02.png" alt=""></span>
+                          <span class="tit">월컴저축은행</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>                
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>이전</span></button>
+              <button type="button" class="btn primary"><span>다음</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '나이스지키미', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal1');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal1" class="btn base modalOpen">[팝업]유효기간만료/재방문</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal bottom" id="modal1">
+			<div class="modalWrap">
+				<button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>현재 서비스를 이용 중이에요.<br> 1년 더 연장하면 오랫동안 케어 받을 수 있어요.</h1>
+					<!-- 가입기간이 1년 초과 -->
+					<!-- <h1>현재 서비스를 이용 중이에요.<br> 지키미케어십을 이용한 지~ <br> 벌써 1년이 지났어요.</h1> -->
+					<!--// 가입기간이 1년 초과 -->
+				</div>
+				<div class="modalContent">
+					<div class="inner">
+						<!-- content -->
+						<div class="iconPara">
+							<p class="inSrv">이전에 가입했던 정보 그대로<br> 지키미케어십 서비스를 이용해 보세요.</p>
+						</div>
+						<!--// content -->
+					</div>
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>같은 정보로 가입하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@charset "euc-kr";
+
+/* 공통 */
+.formItem .write {width:100%; border:1px solid #dcdff1; border-radius:0; padding:15px; font-size: 15px;}
+.textarea {width:100%; height:118px;}
+.formItem .writeNumber {display:inline-block; padding-left:5px; color:#767676; font-size:12px}
+.formItem input + .writeNumber {margin-top:10px;}
+.formItem .writeNumber em {position:relative; margin-right:6px; color:#066bfd; font-weight:700;}
+.formItem .writeNumber em:after {position:absolute; content:'/'; right:-6px; top:0; display:inline-block; font-size:12px; color:#767676;}
+.textareaArea {position:relative; overflow-wrap:break-word;}
+.textareaArea .writeNumber {position:absolute; right:0;} 
+
+/* 고객선터 > 서비스문의 */
+.uiBtnWrap {border-bottom:1px solid #eee;}
+.uiBtnWrap .btnList { position: relative;}
+.uiBtnWrap .btnList .uiBtn {width:100%; position:relative;}
+.uiBtnWrap .btnList .uiBtn:after { content: ''; position: absolute; right: 0; top:22px; width: 24px; height: 24px; background:url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat; background-size: 100%; transform: rotate(0); transition: all 0.3s ease-out;}
+.uiBtnWrap .btnList .btnTitle {display:block; text-align:left; padding: 20px 36px 20px 5px; font-size: 15px; line-height: 23px; color:#222; border-top:1px solid #eee; word-break: keep-all;}
+.uiBtnWrap .btnList .uiBtn.active {font-weight: 700; border-color:#bababa;}
+.uiBtnWrap .btnList .uiBtn.active:before {position:absolute; content:''; top:0; left:0; right:0; border-top:1px solid #bababa;}
+.uiBtnWrap .btnList .uiBtn.active:after { transform: rotate(180deg); }
+.uiBtnWrap + .formWrap {margin-top:38px;}
+.infoTxt { padding-left:5px; margin-top:10px; font-size:12px; color:#444;}
+.infoTxt::before {content:''; display:inline-block; width:4px; height:4px; margin-right:11px; vertical-align:middle; border-radius:50%; background:#444;}
+.inqList li:not(:first-child) {margin-top:10px;}
+.inqList li a {position:relative; display:inline-block; width:100%; padding:14px 24px; border:1px solid #eee; border-radius:12px;}
+.inqList li a .qnaTagStatus {display:inline-block; height:22px; padding:0 10px; min-width:55px; border-radius:4px; background:#767676; color:#fff; font-size:13px; font-weight:500; text-align:center;}
+.inqList li a .qnaTagStatus.complete {background-color:#066bfd;}
+.inqList li a:after{ content: ''; position: absolute; right:14px; top:50%; width: 24px; height: 24px; background:url(../../img/bzw/common/ico/ico_acco_arr.png) no-repeat; background-size: 100%; transform: translateY(-50%) rotate(-90deg);}
+.inqList .contTxt {display:block;  margin:15px auto 6px; font-size:16px; font-weight: 700; color:#222;}
+.inqList .dataDays {display:block; font-family:'Roboto'; color:#767676;}
+
+/* 고객선터 > 신용상담신청 */
+.priAgree {padding:30px 0; display:inline-block;}
+.priAgree .uiItem {position:relative;}
+.priAgree .inpBtn{position:absolute; top:4px; display:inline-block; width:20px; height:20px; margin-left:3px;}
+.priAgree .inpBtn:after {position:absolute; left:7px; top:5px; content: ''; width:7px; height:7px; border-top:2px solid #222; border-right: 2px solid #222; transform: rotate(45deg);}
+.infoTogConts li strong {display:block; color:#444; font-weight:700;}
+

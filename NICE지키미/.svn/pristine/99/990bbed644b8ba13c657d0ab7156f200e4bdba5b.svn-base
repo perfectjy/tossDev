@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/swiper.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '개인신용정보 조회사실통지요청', prev: true, menu: true };
+
+		$(function () {
+			// swiper
+			var swiper = new Swiper('.requestSwiper', {
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+					<div class="governing">
+						<h2 class="governingTitle">정보유출 피해를 입으셨나요?</h2>
+						<p class="governingInfo">내 신용정보 조회 시도가 있는 경우에 조회를 차단하고 조회 요청 내역을 알려드립니다.</p>
+					</div>
+
+					<div class="requestSwiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="consuInfo">
+									<img src="../../../img/zkm/rzm/sub/bg_introCerti1.png" alt="">
+									<div class="bubbleTip">
+										내 신용정보에<br>대한 조회 시도를<br>원천 차단할 수 있어요
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="consuInfo">
+									<img src="../../../img/zkm/rzm/sub/bg_introCerti1.png" alt="">
+									<div class="bubbleTip">
+										내 명의로<br> 신용조회 발생 시<br>문자나 이메일로<br>바로 알려드려요
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="consuInfo">
+									<img src="../../../img/zkm/rzm/sub/bg_introCerti1.png" alt="">
+									<div class="bubbleTip">
+										신용조회 발생 및<br>차단 내역을<br>확인할 수 있어요
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<!--// requestSwiper -->
+					<ul class="listDot">
+						<li>명의도용 가능성이 있는 경우(개인신용정보 유출, 신분증 분실 등), NICE평가정보는 개인의 요청을 받아 신용조회에 따른 정보 제공을 중지하고, 그 사실을 즉시
+							해당 개인에게 무상으로 알려드립니다.</li>
+					</ul>
+
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>조회사실 통지 요청하기</span></button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

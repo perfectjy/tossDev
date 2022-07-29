@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">    
+        $(function() {        
+          modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">소득정보 등록</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modal">
+            <div class="modalWrap">
+               
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>소득정보 등록</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="cookieBox">
+                        <div class="uiItem">
+                            <input type="checkbox" name="period" id="today">
+                            <label for="today"><span>오늘 그만보기</span></label>
+                        </div>
+                        <div class="uiItem">
+                            <input type="checkbox" name="period" id="week">
+                            <label for="week"><span>1주일 그만보기</span></label>
+                        </div>
+                    </div>
+                    <div class="inner">                        
+                        <!-- content -->
+                        <div class="governing">
+                            <h2 class="governingTitle">
+                                소득정보 등록방법을 알려드려요. 금융기관이 신용카드 발급 및 대출 심사 때 이 정보를 활용합니다
+                            </h2>
+                        </div>
+                        <ol class="listCircle">
+                            <li>
+                                <i>1</i>
+                                <span class="exp">소득금액증명서 조회</span>
+                                <div class="innerBox">
+                                    <ol>
+                                        <li>① 국세청 홈택스 방문 (www.hometax.go.kr)</li>
+                                        <li>② 소득금액증명서 조회</li>
+                                        <li>③ 발급번호 확인</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <i>2</i>
+                                <span class="exp">발급번호 입력</span>
+                                <div class="innerBox">
+                                    <ol>
+                                        <li>① 간편소득정보 등록신청</li>
+                                        <li>② 발급번호 입력</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <i>3</i>
+                                <span class="exp">담당자 확인 및 등록</span>
+                                <div class="innerBox">
+                                    <ul class="listDot">
+                                        <li>소득증빙서류 확인발급</li>
+                                        <li>발급번호 입력 시점으로부터 영업일 기준 3~5일 소요</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <i>4</i>
+                                <span class="exp">등록완료</span>
+                                <div class="innerBox">
+                                    <ul class="listDot">
+                                        <li>소득정보 등록완료</li>
+                                        <li>등록 후 철회가능 (☎ 1588-2486)</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ol>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>소득정보 등록</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

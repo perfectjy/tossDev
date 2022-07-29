@@ -1,0 +1,581 @@
+@charset "euc-kr";
+/*수정_공통 --start*/
+input::placeholder {color:#87909b;}
+.formItem .inpBox,
+.formItem .secure {flex:1; width:100%;}
+.formItem .secure input[type=text],
+.formItem .secure input[type=password] {padding:0 30px 0 15px;}
+.formItem .txt {height:50px; line-height: 50px;}
+
+/* li .listDash li:not(:first-child) {margin-top: 0;}
+.listDash li {position: relative; padding-left: 12px; line-height: 22px;}
+.listDash li::before {position: absolute; content: ''; border-radius: 0; height: 1px; top: 11px; left: 0; width: 4px; background-color: #444;} */
+/*수정_공통 --end*/
+
+/*imgWrap start - 정리 필요 */
+.imgWrap {display: block; overflow: hidden; position: relative;}
+.imgWrap img {max-width: 100%; }
+/*imgWrap end - 정리 필요 */
+
+.loadingSection.loan02::before {background-image: url('../../img/bzw/common/bg/bg_loan02.png');}
+
+/* mydata --start */
+.historyArea .subTit {font-size: 14px; color: #444;}
+.historyArea .grayBox {border: #d4d4d4 solid 1px; border-radius: 15px; background-color: #f9f9f9; padding: 25px; margin-top: 14px;}
+.historyArea .grayBox > dl {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+.historyArea .grayBox > dl + dl {margin-top: 10px;}
+.historyArea .grayBox .tit {font-size: 15px;}
+.historyArea .grayBox strong {color: #066bfd; letter-spacing: 0;}
+.historyArea .grayBox .memo dt {font-size: 12px; color: #767676;}
+/* .uiItem span {font-size: 15px; line-height: 23px;} */
+
+.myDataConts .myDataImgArea {margin-bottom: 40px;}
+.myDataConts .myDataImgArea .imgWrap {width: 150px; margin: 0 auto; height: 150px; background-color: #e8e8e8;}
+/* .myDataConts .listWrap { border: 1px solid #c6cfdb; border-radius: 10px; box-sizing: border-box; padding: 0 13px 25px;}  */
+
+.listNum li {position: relative; padding-left: 20px; line-height: 22px;}
+.listNum i {position: absolute; left: 0;}
+
+/*policy---start*/
+.policyWrap .policyArea:not(:first-of-type) {padding-top: 30px; margin-top: 30px; border-top: 1px solid #f5f5f5;}
+.policyWrap .policyNotice {word-break: keep-all;}
+.policyWrap .policyNotice .policyTit {font-size: 17px; font-weight: 700;}
+.policyWrap .policyNotice .policySubTit {font-size: 15px; font-weight: 700; padding-top: 20px;}
+.policyWrap .policyInfo {font-size: 14px; color: #444; padding-top: 20px;}
+.policyWrap .policyConts dt {font-size: 15px; font-weight: 700; padding-top: 30px;}
+.policyWrap .policyConts dd {color: #444; padding-top: 15px;}
+.policyWrap .policyConts .itemExp {padding-top: 30px;}
+.policyWrap .policyLinks {margin: 30px 0 0; border-top: 1px solid #f5f5f5;}
+.policyWrap .policySelectWrap {padding-top: 30px; display: flex; gap: 15px; flex-direction: column;}
+.policyWrap .policySelectWrap .psItem {display: flex; align-items: center;}
+.policyWrap .policySelectWrap .psItem select {width: 120px;}
+.policyWrap .policySelectWrap .psItem span {padding-left: 10px;}
+.policyWrap .agreement {padding-top: 30px;}
+.policyWrap .agreement .agreeSection {margin: 0}
+.policyWrap .emp em {font-size: 17px; font-weight: 700; color: #066bfb; border-bottom: 1px solid #066bfb;}
+
+.tableWrap {margin-top: 20px;}
+/*policy---end*/
+
+/* loading Section---start */
+.loadingSection .guideTit {margin-top: 30px; text-align: center;  font-size: 21px; font-weight: 700;}  
+.loadingSection .guideNoti { text-align: center; padding-top: 20px; font-size: 16px; color: #767676;}  
+.loadingSection::before {display: block; content: ''; height: 150px; background-repeat: no-repeat; background-size: 150px; background-position: 50%;} 
+.loadingSection.search::before {background-image: url(../../img/bzw/common/bg/bg_loading.png);}  
+.loadingSection.launcher::before {background-image: url(../../img/bzw/@tmp/@tmp_ico_launcher@2x.png); background-size: 100px;}  
+.loadingSection2::after {display: block; content: ''; height: 150px; background-repeat: no-repeat; background-position: 50%;} 
+.loadingSection2.raise::after {background-image: url(../../img/bzw/common/bg/bg_raise.png); background-size: auto 142px;}
+.loadingSection.realty::before {background-image: url(../../img/bzw/sub/bg_realty.png); background-size: auto 142px;}  
+
+/* .guideTextExp {text-align: center; font-size: 16px; color: #767676; padding-top: 20px;} */
+.guideTextExp2 {text-align: left; font-size: 15px; color: #444;}
+.guideTextExp2 strong {font-weight: 700;}
+
+/* .myDataSection.center .governing {margin-bottom: 25px;}
+.myDataSection.center .governing .governingTitle {text-align: center; letter-spacing: -1.25px;} */
+/* .myDataConts.certificate::before {display: block; content: ''; height: 150px; background-repeat: no-repeat; background-size: 150px; background-position: 50%; background-image: url(../../img/bzw/common/bg/bg_certificate.png);} */
+/*loading Section---end */
+
+/*careshipSection---start*/
+/* .careshipSection .tabWrap > .tabList {display: flex;} */
+.careshipSection .tabWrap > .tabList.careIdx .tab {flex: 1; border-radius: 15px; border: 1px solid #f5f5f5; background-color: #f5f5f5; box-sizing: border-box; }
+.careshipSection .tabWrap > .tabList.careIdx .tab:first-child {margin-right: 10px;}
+.careshipSection .tabWrap > .tabList.careIdx .tab a {display: block; padding: 25px 20px 20px; color: #444;}
+.careshipSection .tabWrap > .tabList.careIdx .innerBtn {padding: 0 20px 25px;}
+.careshipSection .tabWrap > .tabList.careIdx .innerBtn button {font-size: 14px; font-weight: 700;}
+.careshipSection .tabWrap > .tabList.careIdx .tab.active {background-color: #fff; border: 1px solid #066bfd;}
+
+.careshipSection .incomeExp {word-break: keep-all;}
+.careshipSection .income {font-size: 18px; color: #222; padding-top: 15px;}
+.careshipSection .income b {font-size: 18px; font-weight: 700; font-size: 27px; letter-spacing: -1px; padding-right: 2px;}
+.careshipSection .incomeInfo {padding-top: 20px; color: #767676; word-break: keep-all;}
+.careshipSection .incomeInfo b {font-weight: 700; color: #222;}
+.careshipSection .incomeBox {width: calc(50% - 5px); padding: 25px 20px 20px; background-color: #fff; border: 1px solid #066bfd; border-radius: 15px;}
+
+.careshipSection .familyWrap {display: flex; margin-bottom: 30px;}
+.careshipSection .familyWrap .familyList {width: calc(50% - 5px); margin-right: 10px;}
+.careshipSection .familyList button {position: relative; padding: 20px 0 20px 63px; color: #767676; width: 100%; text-align: left;}
+.careshipSection .familyList button.active {font-size: 15px; font-weight: 700; color: #222;}
+.careshipSection .familyList button.active::before,
+.careshipSection .familyList button.active::after {content: ''; position:absolute; left: 0; width: 100%; height: 1px; background-color: #c3d9ed; background: linear-gradient(to left, #c3d9ed00, #c3d9ed, #c3d9ed00);}
+.careshipSection .familyList button.active::before {top: 0;}
+.careshipSection .familyList button.active::after {bottom: 0;}
+.careshipSection .familyList button i {position: absolute; left: 0; top: 50%; transform: translateY(-50%) scale(0.8); width: 53px; height: 53px; border-radius: 50%; background-color: #f0f1f3; background-size: cover; background-repeat: no-repeat;}
+.careshipSection .familyList button.cF1 i {background-image: url(../../img/bzw/sub/ico_family01.png);}
+.careshipSection .familyList button.cF2 i {background-image: url(../../img/bzw/sub/ico_family03.png);}
+.careshipSection .familyList button.cF3 i {background-image: url(../../img/bzw/sub/ico_family02.png);}
+.careshipSection .familyList button.active i {transform: translateY(-50%) scale(1); background-image: none; background-color: #5c86e5; text-align: center; line-height: 53px; color: #fff; font-size: 17px; font-weight: 500;}
+
+.uiAcco[class *='borderBox'] {border: 1px solid #d4d4d4; border-radius: 15px; padding: 25px 20px; }
+.uiAcco[class *='borderBox'] .uiAccoHeader .uiBtn {width: 100%; }
+.uiAcco[class *='borderBox'] .uiAccoHeader .accoTitle {display: block; font-size: 17px; font-weight: 500; text-align: left;}
+.uiAcco[class *='borderBox'] .uiAccoHeader .accoSubExp {padding-top: 15px; font-size: 13px; color: #767676;}
+.uiAcco[class *='borderBox'] .uiAccoHeader .accoSubExp b {color: #444; font-weight: 700;}
+.uiAcco[class *='borderBox'] .uiAccoHeader .accoSubExp .count {color: #066bfd; font-weight: 700;}
+.uiAcco[class *='borderBox'] .uiAccoContent {padding-top: 30px; }
+
+.sideLineArea .sideLineList > li {padding-left: 27px; position: relative;}
+.sideLineArea .sideLineList > li+li {margin-top: 20px;}
+.sideLineArea:not(:first-of-type) {margin-top: 15px;}
+
+.sideLineArea .sideLineList .detailArea {background-color: #eff2f8; border-radius: 10px; padding: 20px 15px;}
+.sideLineArea .sideLineList .detailArea .uiAcco .uiAccoHeader .uiBtn {width: 100%; text-align: left;}
+
+.infoBox.t2  {border: 0; background-color: #eff2f8; border-radius: 10px;}
+.infoBox.t2 .dl .info {font-size: 13px;}
+.infoBox.t2 dt {text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.infoBox.t2 dt, .infoBox.t2 dd {color: #767676; font-weight: 400; width: 50%; }
+.infoBox.t2 .mCont dt {color: #222; font-weight: 700;}
+
+.infoBox.t5 {border: 0; color: #fff; background-color: #ff7070;}
+.infoBox.t5 dt, .infoBox.t3 dd {color: #fff; font-weight: 400;}
+.infoBox.t4 {border: 0; color: #fff; background-color: #3587ff;}
+.infoBox.t4 dt, .infoBox.t4 dd {color: #fff; font-weight: 400;}
+
+.infoBox strong.amount {font-family: 'roboto'; font-weight: 700; font-size: 16px; letter-spacing: -0.5px;}
+.infoBox strong.amount.exp {font-size: 22px;}
+.infoBox.center div {flex-direction: column;}
+.infoBox.center dt, .infoBox.center dd {padding: 0; text-align: center;}
+
+.sideLineArea .sideLineList > li::before, .sideLineArea .sideLineList > li::after {content: ''; position: absolute; top: 5px; }
+.sideLineArea .sideLineList > li::before {left: 5px; width: 1px; background-color: #c3d9ed; height: calc(100% + 20px); }
+.sideLineArea .sideLineList > li:last-child::before { height: calc(100% - 5px); }
+.sideLineArea .sideLineList > li::after {left:2px; width: 8px; height: 8px; background-color: #c3d9ed; border-radius: 50%;}
+.sideLineArea .sideLineList > li.active::after {background-color: #fff; top: 4px; border: 3.5px solid #066bfb; width: 5px; height: 5px; left: 0;}
+
+.sideLineArea .sideLineList .date {font-size: 12px; color: #767676; padding-bottom: 10px; display: block; position: relative;}
+.sideLineArea .sideLineList .date strong {padding-left: 10px; font-size: 16px; font-weight: 700; color: #222; letter-spacing: -0.5px;}
+.sideLineArea .sideLineList .date .tag {margin-left: 10px;}
+
+.adArea {margin-top: 30px;}
+.adBox {padding: 18px 15px 18px 90px; border-radius: 15px; position: relative; }
+.adBox .adBoxTit {display: flex; align-items: center;}
+.adBox .adBoxTit strong {font-size: 17px; font-weight: 700; padding-right: 10px;}
+.adBox .adBoxExp {padding-top: 8px; color: #767676; display: block;}
+.adBox .adBoxExp b {color: #444; font-weight: 700;}
+.adBox::before {content: ''; width: 65px; height: 65px; border-radius: 50%; background-color: #fff; background-size: 100%; background-repeat: no-repeat; position: absolute; left: 15px; top: 50%; transform: translateY(-50%);}
+
+.adBox.family {background-color: #f6f3ff;}
+.adBox.family::before {background-image: url(../../img/bzw/sub/ico_Dhouse.png);}
+/*careshipSection---end*/
+
+/* 모으다---start */
+.governingAmount {margin-top: 10px;}
+.governingAmount .tit {font-size: 21px;}
+.governingAmount .tit strong {font-size: 30px;}
+.governingAmount .exp {font-size: 12px; color:#767676;}
+.governingExp {font-size: 15px; color:#767676; margin-top: 20px;}
+.aUp::before {content: '↑'; color: #ff003a;}
+.aDown::before {content: '↓'; color: #066bfd;}
+
+.dRight {display: flex; flex-direction: row; justify-content: flex-end;}
+.dRight .btnSwitch {margin-left: 10px;}
+
+.infoBox.white {background-color: #fff;}
+.infoBox .fCol {flex-direction: column;}
+.infoBox .fCol .tit {font-size: 17px; font-weight: 700;}
+.infoBox .fCol .exp {font-size: 14px; color: #767676;}
+.infoBox .fCol .exp strong {font-weight: 700; color: #444;}
+.infoBox .fCol .rank {font-size: 18px;}
+.infoBox .fCol .rank strong {font-size: 27px; color: #222; font-weight: 700;}
+.infoBox .emo {width: 67px;}
+.infoBox .emo img {max-width: 100%;}
+
+.sideLineArea .tit {font-size: 17px; font-weight: 400; margin-bottom: 25px;}
+.sideLineArea .tit strong {font-weight: 700;}
+.sideLineArea .tit i {display: inline-block; width: 21px; height: 21px; background-color: #eff2f8; border-radius: 50%; text-align: center; line-height: 21px; font-size: 13px; font-family: 'Roboto'; font-weight: 200; margin-left: 5px;}
+.sideLineArea .sideLineList .date strong {font-size: 15px; color: #222; font-weight: 700;}
+.infoBox.t3  {background-color: #fff; padding: 25px 10px 10px 10px;}
+.infoBox.t3 dd {font-weight: 400;}
+.infoBox.t3 .mTit {display: flex; justify-content: flex-start; align-items: center; margin-bottom: 10px; font-size: 14px; font-weight: 700;}
+.infoBox.t3 .mTit i {width: 38px; height: 38px; margin-right: 10px; background-color: #d6d6d6; border-radius: 50%;}
+.infoBox.t3 .mTit i img {max-width: 100%;}
+.infoBox.t3 .mCont {background-color: #f8f9fb; border-radius: 10px; padding: 15px 10px; color: #444; font-size: 15px; font-weight: 700;}
+.infoBox.t3 .mCont>ul {width: 100%;}
+.infoBox.t3 .mCont>ul>li:not(:first-child) {border-top: #eee solid 1px; padding: 10px 0;}
+.infoBox.t3 .mCont>ul>li:first-child {padding-bottom: 10px;}
+.infoBox.t3 .mCont>ul>li:last-child {padding-bottom: 0;}
+.infoBox.t3 .mCont .subtit {display: block; font-size: 14px; color: #767676; font-weight: 400;}
+
+.ineBox {padding: 20px 20px; margin-top: 15px; background: #fff; border: 1px solid #d4d4d4; border-radius: 15px; position: relative; word-break: keep-all; overflow: hidden;}
+.ineBox .fRow {display: flex; flex-direction: row; justify-content: space-between; margin-top:35px;}
+.ineBox .fRow:not(.line):first-child{margin-top:0;}
+.ineBox .fRow .sum{font-size:17px;}
+.ineBox .fRow .sum strong{padding-right:2px; font-size:23px; font-weight:700; line-height:1; letter-spacing: -1px; vertical-align: bottom;}
+.ineBox .line {margin-top:15px; padding-top:20px; border-top:1px solid #eee;}
+.ineBox .line .tooltipWrap{margin-left:5px;}
+.ineBox h3 {font-weight: 400;}
+.ineBox .tit {font-size: 17px;}
+.ineBox .tit strong {font-weight: 700;}
+.ineBox .tit strong.roboto {font-size: 18px;}
+.ineBox .tit em {font-size:15px; color: #066bfd; font-weight: 700;}
+.ineBox .exp {font-size: 14px; color: #767676; margin-top: 5px;}
+.ineBox .exp strong {font-weight: 700; color: #444;}
+.ineBox .exp em {font-weight: 700; color: #066bfd; font-size: 16px;}
+.ineBox .exp.sSmall {font-size: 12px;}
+.ineBox .fRow + .exp {margin-top: 10px;}
+.ineBox .rank {font-size: 18px; margin-top: 5px;}
+.ineBox .rank strong {font-size: 27px; color: #222; font-weight: 700;}
+.ineBox .count {font-size: 18px; margin-top: 5px;}
+.ineBox .count strong {font-size: 27px; color: #066bfd; font-weight: 700;}
+.ineBox .date {font-size: 12px; color: #767676; margin-top: 10px;}
+.ineBox .name {font-size: 14px; color: #222;  margin-top: 3px;}
+.ineBox .regist {font-size: 13px; color: #767676;  margin-top: 3px;}
+.ineBox .btn {min-width: 40px; padding: 0 8px; background-color: #fff; flex-shrink: 0; margin-left: 10px;}
+.ineBox .emo {width: 67px; padding-top: 20px;}
+.ineBox .emo img {max-width: 100%; height: auto; display: block;}
+.ineBox .profile {width: 100px; flex-shrink: 0; text-align: center; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+.ineBox .profile i  {display: block; width: 80px;}
+.ineBox .profile i img {max-width: 100%;}
+.ineBox .profile p strong {font-weight: 700;}
+.ineBox .profile .btn {margin: 0;}
+.ineBox .btnWrap {margin: 20px -20px -20px -20px;}
+.ineBox .btnWrap a,
+.ineBox .btnWrap button {display: block; padding: 13px 0; text-align: center; background-color: #066bfd; color: #fff; font-size: 16px;}
+.ineBox .btnWrap .t2 {background-color: #fff; color: #066bfd; border-top: #d4d4d4 solid 1px;}
+.ineBox .btnWrap .t2::after {content: ''; display: inline-block; margin-left: 8px; width: 6px; height: 6px; border-top: 1px solid #222; border-right: 1px solid #222; transform: rotate(45deg) translateY(-50%);}
+.ineBox .sIcon {flex-shrink: 0;}
+.ineBox .sIcon i {display: block; width: 50px; height: 50px; border-radius: 20px 20px 5px 20px;}
+.ineBox .sIcon i.bank {background: #3587ff url(../../img/bzw/sub/ico_Lcoin.png) no-repeat center / 28px auto;}
+.ineBox .sIcon i.invest {background: #ff7070 url(../../img/bzw/sub/ico_Lchart.png) no-repeat center / 28px auto;}
+.ineBox .sIcon i.pay {background: #4fcf8c url(../../img/bzw/sub/ico_Lwallet.png) no-repeat center / 28px auto;}
+.ineBox .sIcon i.insure {background: #c04bf7 url(../../img/bzw/sub/ico_Lpercent.png) no-repeat center / 28px auto;}
+.ineBox .sIcon i.pension {background: #efcd42 url(../../img/bzw/sub/ico_Lmoneybox.png) no-repeat center / 28px auto;}
+.ineBox .sIcon p {display: flex; align-items: center; margin-top: 10px; font-size: 15px; color: #444;}
+.ineBox .sIcon p b {display: inline-block; width: 21px; height: 21px; line-height: 21px; text-align: center; background-color: #eff2f8; border-radius: 50%; font-size: 12px; color: #222; font-family: 'Roboto'; font-weight: 200; margin-left: 10px;}
+.ineBox .sTxt {text-align: right;}
+.ineBox .sTxt .link {font-size: 14px; color: #767676;}
+.ineBox .sTxt .tit {font-size: 15px;}
+.ineBox .sTxt .tit strong {font-size: 23px;}
+.ineBox .sIcon.bgGraph {width: 80px; height: 60px; background: url(../../img/bzw/sub/ico_chart.png) no-repeat 50% 0 / 57px auto; margin-top: -10px;}
+.ineBox .sIcon.bgCar {width: 80px; height: 60px; background: url(../../img/bzw/sub/ico_car.png) no-repeat 50% 0 / 75px auto; margin-top: 0;}
+.ineBox .hashWrap {margin-top: 30px; text-align: right;}
+.ineBox .hashWrap .hash {display: inline-block; margin: 5px 0 0 5px; border:#87909b solid 1px; color: #767676; padding: 2px 10px; border-radius: 30px; font-size: 12px;}
+.ineBox .hashWrap .hash:hover,
+.ineBox .hashWrap .hash.active { border:#066bfd solid 1px; color: #066bfd;}
+.ineBox .noList {margin-top: 10px;}
+.ineBox .noList p:before {width: 32px; height: 32px; margin: 0 auto 8px auto; font-size: 15px; line-height: 32px; font-weight: 700; color: #707070;}
+.ineBox .infoRow {margin-top: 32px; display: flex; flex-direction: row; justify-content: space-between; text-align: center;}
+.ineBox .infoRow>li {margin-left: 10px;}
+.ineBox .infoRow span {display: block; font-size: 13px; color: #767676;}
+.ineBox .infoRow i {display: block; width: 65px; height: 55px; text-align: center; line-height: 55px; background-color: #f0f6ff; border-radius: 10px; font-size: 24px; color: #222; margin-top: 5px;}
+.ineBox .iAdd {padding-left: 40px; position: relative;}
+.ineBox .iAdd::before {content: ''; display: block; width: 32px; height: 32px; border-radius: 50%; position: absolute; left: 0; top: 0;}
+.ineBox .iAdd.iHp::before {background: #e5e8fa url(../../img/bzw/sub/ico_hp.png) no-repeat center / 17px auto;}
+.ineBox .iAdd.iHome::before {background: #e5e8fa url(../../img/bzw/sub/ico_home.png) no-repeat center / 17px auto;}
+.ineBox .iAdd.iMap::before {background: #e5e8fa url(../../img/bzw/sub/ico_map.png) no-repeat center / 17px auto;}
+.ineBox .iAdd.iBuild::before {background: url(../../img/bzw/sub/ico_building.png) no-repeat center / 17px auto;}
+.ineBox .iAdd .exp {margin-top: 16px;}
+.ineBox .iAdd .exp.fcB {color: #222; margin-top: 10px;}
+.ineBox .iAdd .exp:first-child {margin-top: 0;}
+
+.ineBox.gray {background: #f8f9fb;}
+.ineBox.gray2 {background: #f5f5f5; border: none;}
+.ineBox.blue {border-color: #066bfd;}
+.ineBoxList .ineBox {margin-top:-10px; border-radius: 15px 15px 0 0;}
+.ineBoxList li:last-child .ineBox {border-radius: 15px;}
+.ineBoxConnect .ineBox {margin-top: -1px; border-radius: 0;}
+.ineBoxConnect>ul>li:first-child .ineBox {border-radius: 15px 15px 0 0;}
+.ineBoxConnect>ul>li:last-child .ineBox {border-radius: 0 0 15px 15px;}
+.comp > .ineBox:first-of-type {margin-top: 0;}
+.ineBoxConnect.sp {margin-top: 20px;}
+
+.sIconList {margin-top: 20px;}
+.sIconList>ul {display: flex; flex-direction: row; flex-wrap: wrap;}
+.sIconList>ul>li {width:50%; margin-top: 10px;}
+.sIconList .sIcon {display: flex; flex-direction: row; align-items: center;}
+.sIconList .sIcon i {display: block; width: 50px; height: 50px; border-radius: 20px 20px 5px 20px;}
+.sIconList .sIcon i.bank {background: #3587ff url(../../img/bzw/sub/ico_Lcoin.png) no-repeat center / 28px auto;}
+.sIconList .sIcon i.invest {background: #ff7070 url(../../img/bzw/sub/ico_Lchart.png) no-repeat center / 28px auto;}
+.sIconList .sIcon i.pay {background: #4fcf8c url(../../img/bzw/sub/ico_Lwallet.png) no-repeat center / 28px auto;}
+.sIconList .sIcon i.insure {background: #c04bf7 url(../../img/bzw/sub/ico_Lpercent.png) no-repeat center / 28px auto;}
+.sIconList .sIcon i.pension {background: #efcd42 url(../../img/bzw/sub/ico_Lmoneybox.png) no-repeat center / 28px auto;}
+.sIconList .sIcon p {display: flex; align-items: center; font-size: 15px; color: #444; padding-left: 10px;}
+.sIconList .sIcon p b {display: inline-block; width: 21px; height: 21px; line-height: 21px; text-align: center; background-color: #eff2f8; border-radius: 50%; font-size: 12px; color: #222; font-family: 'Roboto'; font-weight: 200; margin-left: 10px;}
+
+.bnrSlider {position: relative; overflow: hidden; margin-top: 15px;}
+.bnrSlider .bnrBox {margin-top: 0;}
+.bnrWrap {margin-top: 15px;}
+.bnrWrap2 {margin-top: 30px;} 
+.bnrBox {display:block; min-height: 90px; padding: 20px 20px 20px 90px; background: #f6f3ff; border-radius: 15px; position: relative;}
+.bnrBox::before {content:''; display: block; width: 65px; height: 65px; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background-color: #fff; border-radius: 50%;}
+.bnrBox .tit {font-size: 17px;} 
+.bnrBox .tit strong {font-weight: 700;}
+.bnrBox .tit .tag {margin-left: 10px;}
+.bnrBox .tit .tag.new {background-color: #066bfb; color: #fff; font-weight: 400;}
+.bnrBox .exp {color: #767676; margin-top: 10px;}
+.bnrBox .exp strong {color: #444; font-weight: 700;}
+.bnrBox.house {background: #f6f3ff;}
+.bnrBox.house::before {background-image: url(../../img/bzw/sub/ico_Dhouse.png); background-position: center; background-repeat: no-repeat; background-size: 65px auto;}
+.bnrBox.car {background: #f6f3ff;}
+.bnrBox.car::before {background-image: url(../../img/bzw/sub/ico_Dcar.png); background-position: center; background-repeat: no-repeat; background-size: 65px auto;}
+.bnrBox.income {background: #f6f3ff;}
+.bnrBox.income::before {background-image: url(../../img/bzw/sub/ico_Dincome.png); background-position: center; background-repeat: no-repeat; background-size: 65px auto;}
+.bnrBox.data {background: #f5f5f5;}
+.bnrBox.data::before {background-image: url(../../img/bzw/sub/ico_Ddata.png); background-position: center; background-repeat: no-repeat; background-size: 65px auto;}
+.bnrBox.card {background: #edf0ff;}
+.bnrBox.card::before {background-image: url(../../img/bzw/sub/ico_Dcard.png); background-position: center; background-repeat: no-repeat; background-size: 75px auto;}
+.bnrBox.cash {background: #f6f3ff;}
+.bnrBox.cash::before {background-image: url(../../img/bzw/sub/ico_Dcash.png); background-position: center; background-repeat: no-repeat; background-size: 75px auto;}
+
+.ineBox .iQue,
+.bnrBox .iQue,
+.governingTitle .iQue {display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; background-color: #444; font-size: 15px; color:#fff; font-family:'Roboto'; font-weight: 100; margin-left: 5px; border-radius: 50%; vertical-align: middle; padding-right: 1px;}
+
+.familyWrap2 {margin-top: 30px;}
+.familyWrap2>ul {display: flex; flex-direction: row; justify-content:space-around; padding: 0 10px;}
+.familyWrap2>ul>li {display: flex; flex-direction: column; justify-content:flex-end; align-items:center;}
+.familyWrap2 span {display: block; font-size: 12px; color: #444; margin-bottom: 3px;}
+.familyWrap2 button {width: 53px; height: 53px; background-color: #e8e8e8; border-radius: 50%; font-size: 0; margin-bottom: -10px;}
+.familyWrap2 button.cF1 {background: url(../../img/bzw/sub/ico_family01.png) no-repeat center / 53px auto;}
+.familyWrap2 button.cF2 {background: url(../../img/bzw/sub/ico_family02.png) no-repeat center / 53px auto;}
+.familyWrap2 button.cF3 {background: url(../../img/bzw/sub/ico_family03.png) no-repeat center / 53px auto;}
+.familyWrap2 button.active {background-image: none; background-color: #5c86e5; margin-bottom: -2px; line-height: 53px; color: #fff; font-size: 17px; font-weight: 500;}
+.familyWrap2 button.cBlank {background-image: none; background-color: #f5f5f5; border:#d6d6d6 solid 1px;}
+.familyWrap2+.ineBox {margin-top: 0;}
+
+.navSlide {position: relative; overflow-x:auto; margin: 40px -20px 0 -20px; padding:0 20px 0 10px;}
+.navSlide ul {display:inline-flex; flex-wrap: nowrap;}
+.navSlide ul li {margin-left:10px;}
+.navSlide .navBox {display: block; width: 120px; height: 150px; padding: 15px 15px;}
+.navSlide .navBox .tit {font-size: 18px; color: #222; font-weight: 700;}
+.navSlide .navBox .exp {font-size: 12px; color: #767676;}
+.navSlide .navBox.use {background: url(../../img/bzw/sub/bg_Buse.png) no-repeat center / 120px auto;}
+.navSlide .navBox.bor {background: url(../../img/bzw/sub/bg_Bborrow.png) no-repeat center / 120px auto;}
+.navSlide .navBox.rep {background: url(../../img/bzw/sub/bg_Brepay.png) no-repeat center / 120px auto;}
+
+
+
+.loadingSection3::after {display: block; content: ''; width: 90px; height: 90px; background-repeat: no-repeat; background-position: 50%; margin: 0 auto;} 
+.loadingSection3.income::after {background-image: url(../../img/bzw/sub/ico_Dincome.png); background-size: auto 90px; background-color: #f1f3fe; border-radius: 50%;}  
+.loadingSection3.data::after {background-image: url(../../img/bzw/sub/ico_Ddata.png); background-size: auto 90px; background-color: #f1f3fe; border-radius: 50%;}
+.loadingSection3.car::after {background-image: url(../../img/bzw/sub/ico_Dcar.png); background-size: auto 90px; background-color: #f1f3fe; border-radius: 50%;}
+.loadingSection3.house::after {background-image: url(../../img/bzw/sub/ico_Dhouse.png); background-size: auto 90px; background-color: #f1f3fe; border-radius: 50%;}
+
+.financeSlider {position: relative; overflow: hidden;}
+.financeSlider i {display: block; width: 55px; height: 55px; border: 1px solid #eee; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.financeSlider i img {max-width: 100%;}
+.financeSlider b {display: block; font-size: 12px; margin-top: 9px; margin: 0 auto; text-align: center; margin-top: 10px; word-break: keep-all;}
+.financeList>ul {display: flex; flex-wrap: wrap; margin-top: -30px; word-break: keep-all;}
+.financeList>ul>li {width:25%; margin-top: 30px;} /* display: flex; align-items: center; */
+.financeList i {display: block; width: 55px; height: 55px; border: 1px solid #eee; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.financeList i img {max-width: 100%;}
+.financeList span {display: block; font-size: 12px; margin-top: 9px; margin: 0 auto; text-align: center; margin-top: 10px; word-break: keep-all;}
+
+
+.regList>ul>li:not(:first-child) {margin-top: 20px; }
+.regList .btnReg {width: 100%; height: 75px; display: flex; flex-direction: row; align-items: center; background: url(../../img/bzw/common/ico/ico_add.png) no-repeat right center / 12px auto;}
+.regList .btnReg i {display: block; width: 65px; height: 65px; border-radius: 50%;}
+.regList .btnReg.income i {background: #f1f3fe url(../../img/bzw/sub/ico_Dincome.png) no-repeat center / 75px auto;}
+.regList .btnReg.data i {background: #f1f3fe url(../../img/bzw/sub/ico_Ddata.png) no-repeat center / 75px auto;}
+.regList .btnReg.house i {background: #f1f3fe url(../../img/bzw/sub/ico_Dhouse.png) no-repeat center / 75px auto;}
+.regList .btnReg.car i {background: #f1f3fe url(../../img/bzw/sub/ico_Dcar.png) no-repeat center / 75px auto;}
+
+.regList .btnReg.cF1 i {background: #f1f3fe url(../../img/bzw/sub/ico_family01.png) no-repeat center / 65px auto;}
+.regList .btnReg.cF2 i {background: #f1f3fe url(../../img/bzw/sub/ico_family02.png) no-repeat center / 65px auto;}
+.regList .btnReg.cF3 i {background: #f1f3fe url(../../img/bzw/sub/ico_family03.png) no-repeat center / 65px auto;}
+.regList .btnReg.cBlank i {background-image: none; background-color: #f5f5f5; border:#d6d6d6 solid 1px;}
+.regList .btnReg strong {margin-left: 16px; font-size: 16px; font-weight: 700;}
+
+.lineboxList.t2 button {display: flex; flex-direction: row; align-items: center; padding: 13px 15px; min-height: 85px;}
+.lineboxList.t2 .btnReg i {display: block; width: 55px; height: 55px; border-radius: 50%; border: #d9d9d9 solid 1px;}
+.lineboxList.t2 .btnReg.camera i {background: #f5f5f5 url(../../img/bzw/sub/ico_camera.png) no-repeat center / 28px auto;}
+.lineboxList.t2 .btnReg.gallery i {background: #f5f5f5 url(../../img/bzw/sub/ico_gallery.png) no-repeat center / 28px auto;}
+.lineboxList.t2 .btnReg.file i {background: #f5f5f5 url(../../img/bzw/sub/ico_file.png) no-repeat center / 28px auto;}
+.lineboxList.t2 .btnReg strong {margin-left: 10px; font-size: 15px; font-weight: 700;}
+
+.arSearch.intSearch .inpTxt {border-width: 1px 1px 1px 1px;}
+
+.arList {margin-top: 10px;}
+.arList>ul>li {margin-top: 30px;}
+.arList span {display:block; font-size: 13px; color: #767676;}
+.arList strong {display:block; font-size: 15px; color: #066bfd; margin-top: 10px;}
+
+.arFooter {width: calc(100% + 30px); margin: 0 -15px -20px -15px; background-color: #ececec; min-height: 70px; padding: 30px 15px; text-align: center; font-size: 12px; color: #767676;}
+.arFooter strong {font-weight: 500; font-size: 14px;}
+.arFooter a {color: #767676; padding-left: 10px;}
+.arFooter a::before {content: '|'; display: inline-block; margin-right: 10px; color: #d4d4d4;}
+
+.myInfo {margin-bottom: 60px;}
+
+/* .governing.fRow {display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end;}
+.governing.fRow .btn {min-width: 40px; padding: 0 8px; background-color: #fff; flex-shrink: 0; margin-left: 10px;} */
+.governing.bgRealty {background: url(../../img/bzw/sub/bg_calculator.png) no-repeat right 10px top 10px / 48px auto; padding-bottom: 10px;}
+
+.companyInfo .bgBoxLink2 {margin-top: 20px; position: relative; background-color: #eff2f8; border-radius: 15px; font-size: 16px; line-height: 24px; padding: 26px 20px;}
+.companyInfo .bgBoxLink2 a {display: block;}
+.companyInfo .bgBoxLink2 strong {font-weight: 700;}
+
+.formItem .tit {font-size: 15px; margin-bottom: 14px;}
+.filebox {position: relative;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0;}
+.filebox label {display: block; position: absolute; top: 0; right: 0; cursor: pointer; width: 100%; height: 50px; background: url(../../img/bzw/sub/ico_attach.png) no-repeat top 50% right 15px / auto 18px;}
+.filebox .uploadName {width: 100%; height: 50px; border: 1px solid #dcdff1; border-radius: 0; padding: 0 55px 0 15px; font-size: 15px; appearance: none;}
+/* 모으다---end */
+
+/*모으다_ 소득정보 등록 ----start*/
+.financialSection .boxWrap {margin-top: 30px;}
+.financialSection .plusBox {display: block; border: 1px solid #d4d4d4; color: #767676; border-radius: 15px; padding: 20px 92px 20px 25px; position: relative;}
+.financialSection .plusBox::before {content: ''; position: absolute; top: 50%; right: 20px; width: 12px; height: 12px; background-image: url(../../img/bzw//common/ico/ico_add.svg); background-repeat: no-repeat; background-size: cover; transform: translateY(-50%);}
+.financialSection .plusBox strong {font-weight: 700;}
+
+.financialSection .addListSec {margin-top: 50px;}
+.financialSection .addListSec .addExp {color: #767676;}
+.financialSection .graphConts {margin-top: 30px;}
+
+.addTab {padding-top: 30px;}
+.addTab .addTabHeader {display: flex; margin-bottom: 15px; align-items: center; justify-content: space-between;}
+.addTab .addTabHeader .titleCont {display: flex; align-items: center;}
+.addTab .addTabHeader h3 {position: relative; display: inline-block; padding: 0 10px 0 15px ; font-size: 16px;}
+.addTab .addTabHeader .countTag {display: inline-block; margin-left: 3px; background-color: #eff2f8; border-radius: 50%; width: 22px; height: 22px; font-size: 13px; font-family: 'roboto'; text-align: center; line-height: 22px;}
+.addTab .addTabHeader h3::after {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 5px; height: 30px; background-color: #066bfb;}
+.addTab .addTabHeader h3.investment::after {background-color: #ff7070;}
+.addTab .addTabHeader h3.pay::after {background-color: #4fcf8c;}
+.addTab .addTabHeader h3.insurance::after {background-color: #c04bf7;}
+.addTab .addTabHeader h3.pension::after {background-color: #efcd42;}
+
+.addTab .addTabConts ul {display: flex; flex-wrap: wrap}
+.addTab .addTabConts ul > li {width: calc(50% - 5px); display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; padding: 20px; box-sizing: border-box; border: 1px solid #d4d4d4; border-radius: 15px;}
+.addTab .addTabConts ul > li:nth-child(even) {margin-left: 10px;}
+.addTab .addTabConts ul > li:nth-child(n + 3) {margin-top: 10px;}
+.addTab .addTabConts .noList {margin-top: 45px;}
+.addTab .addTabConts .noList p {color: #757575; }
+.addTab .addTabConts .noList p:before {width: 30px; height: 30px; font-size: 15px; line-height: 30px;}
+
+.myAccInfo .icoName {display: flex; align-items: center; margin-bottom: 20px;}
+.myAccInfo .icoName span {color: #444; }
+.myAccInfo .accountVal {padding-right: 10px; font-size: 15px; font-weight: 700;}
+.myAccInfo .accountNum {font-size: 12px; padding-top: 10px; color: #767676; display: block;}
+.myAccInfo .accountNum.exp {padding-top: 0;}
+.myAccInfo .accountTit {word-break: keep-all;}
+.myAccInfo .paymentMonth {padding-top: 10px;}
+.myAccInfo strong {font-weight: 700;}
+.myAccInfo .accountExp {font-size: 18px;}
+
+.addTab .addTabConts .btmBox {padding-top: 15px;}
+.addTab .addTabConts .btmBox strong {font-weight: 700;}
+.addTab .addTabConts .btmBox .tag {margin-bottom: 3px;}
+.addTab .addTabConts .btmBox .insuranceExp {color: #767676;}
+.addTab .addTabConts .btmBox .balance {font-weight: 700;}
+.addTab .addTabConts .btmBox .balance.loan {color: #066bfb;}
+
+.historyList {margin-top: 30px; border: 1px solid #d4d4d4; border-radius: 15px; padding: 30px 20px;}
+.dateInfoWrap .year {display: flex;}
+.dateInfoWrap .year .btnCrl {width: 25px; height: 25px; position: relative; }
+.dateInfoWrap .year .btnCrl::before {content: ''; top: 0; left: 0; position: absolute; background: url(../../img//bzw/common/ico/ico_arr_prev.png) no-repeat; background-size: 25px; background-position: -8px 50%; width: 100%; height: 100%;}
+.dateInfoWrap .year .btnCrl.next::before {transform: rotate(180deg);}
+.dateInfoWrap .year p {font-size: 20px; font-weight: 700;}
+.dateInfoWrap .dateSub {display: flex; padding-top: 20px; justify-content: space-between; align-items: center;}
+.intDate.left {padding-left: 30px;}
+.intDate.left .btnDate {top: 50%; transform: translateY(-50%); left: -10px; right: unset; }
+.dateInfoWrap .month {font-size: 15px; font-weight: 700; color: #444;letter-spacing: 2px;}
+.dateInfoWrap .month strong {font-size: 16px;}
+.sort select {height: 30px; border: 0; color: #767676; font-size: 13px; background-size: 18px; background-position-y: 50%;}
+/*모으다_ 소득정보 등록 ----end */
+
+/*모으다_금융자산 모아보기 ----start*/
+.myAccountSec {border-top: 1px solid #d4d4d4; padding: 25px 0 0; display: flex;}
+.myAccountSec dd {padding-top: 12px;}
+
+.stockInfo {padding-top: 15px;}
+.stockInfo dl {display: flex; justify-content: space-between;}
+.stockInfo dt {font-size: 13px; color: #767676;}
+.stockInfo .total dd {text-align: right;}
+.stockInfo .total dd .txtBal strong {font-weight: 700; font-size: 16px;}
+.stockInfo .total dd .txtPer {font-weight: 700;}
+.stockInfo .stockDetail {align-items: center; margin-top: 15px; border-top: 1px solid #d4d4d4; padding-top: 20px;}
+.stockInfo .stockDetail .txtShare strong {display: block; font-weight: 700; font-size: 15px; color: #222;}
+.stockInfo .stockDetail .stockDetailList dl {text-align: right;}
+.stockInfo .stockDetail .stockDetailList dt {width: 55px; font-size: 12px;}
+.stockInfo .stockDetail .stockDetailList dd {padding-left: 15px; color: #767676; font-size: 12px;}
+/*모으다_금융자산 모아보기 ----end*/
+
+
+/*공통 --------*/
+.toggleBox {position: relative;}
+.toggleBox ul {display: flex; border: 1px solid #d4d4d4; border-radius: 20px; box-sizing: border-box;}
+.toggleBox input + label {padding: 3px 8px; display: block; font-size: 13px; color: #767676;}
+.toggleBox input:checked + label {color: #fff; transition: .3s; }
+.toggleBox .bar {position: absolute; z-index: -1; border-radius: 20px; background-color: #3587ff; display: block; height: 100%;}
+
+.myAdd {padding-top: 30px; }
+.myAdd .lineboxList li strong.inb {display: inline-block;}
+
+.bankIcon {display: block; overflow: hidden; border-radius: 50%; border: 1px solid #eee;}
+.bankIcon.tS { width: 33px; height: 33px; margin-right: 5px;}
+.bankIcon.tM {width: 55px; height: 55px; margin-right: 10px;}
+.bankIcon img {width: 100%; height: 100%; object-fit: cover;}
+
+.graphConts .graphBtnWrap {display: flex; align-items: center; justify-content: flex-end; padding: 0 25px;}
+.graphConts .graphArea {margin-top: 10px; padding: 35px 20px 30px; border: 1px solid #d6d6d6; border-radius: 15px; min-height: 240px;}
+/* .graphConts .graphArea .graphHeader {padding: 0 20px;} */
+.graphConts .graphArea .totalResult {font-size: 15px; font-weight: 700;}
+.graphConts .graphArea .totalResult .emoji{position: relative; margin-left:7px;}
+.graphConts .graphArea .totalResult .emoji::before {content: ''; position: absolute; top: 50%; transform: translateY(-50%); left: 0; display: inline-block; width: 35px; height: 30px; background-size: contain; background-repeat: no-repeat; background-position: center;}
+.graphConts .graphArea .totalResult .emoji.t1::before {background-image: url(../../img/bzw/sub/ico_emo11.png);}
+.graphConts .graphArea .totalResult .emoji.t2::before {background-image: url(../../img/bzw/sub/ico_emo12.png);}
+.graphConts .graphInfoTab {display: flex; padding-top: 30px; align-items: center; justify-content: space-between;}
+.graphInfoTab .dateWrap {display: flex; align-items: center;} 
+.graphInfoTab .dateWrap .year {font-size: 18px; font-weight: 700;} 
+.graphInfoTab .dateWrap .month {padding-left: 8px; letter-spacing: 2px; font-size: 15px; color: #444; font-weight: 700; line-height: 100%;} 
+.graphInfoTab .dateWrap .month strong {font-size: 16px;}
+.graphInfoTab .dateWrap .subExp {font-size: 13px; color: #767676;}
+.graphConts .moreWrap {padding-top: 40px; }
+.graphConts .moreWrap .exp {color: #767676; font-size: 13px; padding-right: 13px;}
+.graphConts .moreWrap .btnArrow {font-weight: 700;}
+
+.dataWrap .yield {display: flex; padding-top: 17px; align-items: center;}
+.dataWrap .yield dt {flex: 1; text-align: center; font-size: 18px; color: #444; font-weight: 700;}
+.dataWrap .yield dd {position: relative; padding-left: 50px; flex: 1;}
+.dataWrap .yield dd .txtPer {font-size: 24px; font-weight: 700; color: #ff003a; }
+.dataWrap .yield dd.decrese .txtPer {color: #066bfb;}
+.dataWrap .yield dd .txtBal {color: #767676; font-size: 13px;}
+.dataWrap .yield dd:before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: block; height: 21px; width: 21px; border-radius: 50%; background-color: #ffe6ec; }
+.dataWrap .yield dd::after {content: ''; position: absolute; top: calc(50% - 3px); left: 7px; transform: translateY(-50%); border: 4px solid transparent; border-bottom: 7px solid #ff003a;}
+.dataWrap .yield dd.decrese::before {background-color: #e7f0ff;}
+.dataWrap .yield dd.decrese::after {top: calc(50% + 5px); border-color: transparent; border-top: 7px solid #066bfb;}
+
+.dataWrap .chartArea {height: 195px; background-color: #cccccc; margin-top: 10px;} /*임시로 영역만*/
+.dataWrap .insuranceList {margin-top: 20px;}
+.dataWrap .insuranceList dl {display: flex; align-items: center;}
+.dataWrap .insuranceList dl:not(:first-of-type) {margin-top: 8px;}
+.dataWrap .insuranceList dt {position: relative; color: #767676; width: 80px; box-sizing: border-box; font-size: 12px; padding-left: 13px;}
+.dataWrap .insuranceList dt::before {content: ''; position: absolute; width: 8px; height: 8px; border-radius: 50%; left: 0; top: 50%; transform: translateY(-50%);}
+.dataWrap .insuranceList dt.d1::before {background-color: #3587ff;}
+.dataWrap .insuranceList dt.d2::before {background-color: #fa9759;}
+.dataWrap .insuranceList dt.d3::before {background-color: #314cff;}
+.dataWrap .insuranceList dt.d4::before {background-color: #ff7070;}
+.dataWrap .insuranceList dd {font-size: 13px; font-weight: 700; color: #444;}
+
+.btnCircle { display: flex; align-items: center; justify-content: center; display: block; width: 50px; height: 50px; border-radius: 50%; background-color: #f5f5f5; border: 1px solid #d6d6d6; margin-left: 5px;}
+.btnCircle span { color: #767676; }
+.btnCircle.active { background-color: #5c86e5; border: 0;}
+.btnCircle.active span { color: #fff; font-weight: 700;}
+
+
+
+.listCircle .innerBox {padding: 15px; border: 1px solid #d4d4d4; border-radius: 5px; margin-top: 15px;}
+.listCircle .innerBox .listDot>li:not(:first-child) {margin-top:2px;}
+.listCircle .innerBox ol>li:not(:first-child) {margin-top:2px;}
+
+.bColor {color: #444;}
+.rColor {color: #ff003a;}
+
+.tag.primary {background-color: #066bfb; color: #fff;}
+
+.myAccIndex {padding-top: 30px;}
+
+/* .keywordList2 {position: relative; margin-top: 30px; overflow: hidden;}
+.keywordList2 ul {height: 42px; display: flex;}
+.keywordList2 ul>li {margin:0 5px 5px 0;}
+.keywordList2 ul>li label {display: block; font-weight: 500; white-space: nowrap; border-radius: 21px; padding: 0 21px; line-height: 42px; background-color: #f5f5f5;}
+.keywordList2 ul>li input:checked + label {background-color: #066bfb; color: #fff;}
+
+.keywordList2.scroll ul {overflow: scroll} */
+.keywordList2.acco.active ul {flex-wrap: wrap; height: auto;}
+
+.btnPlus {border: 1px solid #d4d4d4; border-radius: 50%; width: 30px; height: 30px; background: url(../../img/bzw/common/ico/ico_add.svg) no-repeat; background-size: 12px; background-position: center;}
+/* .moreviewBtn {position: absolute; right: 0; top: 0; display: block; width: 42px; height: 42px; background:#fff; background: linear-gradient(to right,#ffffff00, #fff 70%);} */
+/* .moreviewBtn::after {content: ''; position: absolute; top: 50%; right: 0; width: 16px; height: 9px; background-image: url(../../img/bzw/common/ico/ico_acco_arr.png); background-repeat: no-repeat; background-size: 20px; background-position: center; transform: translateY(-50%);} */
+/* .active .moreviewBtn::after {transform: translateY(-50%) rotate(-180deg);} */
+/*공통 --------*/

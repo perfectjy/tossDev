@@ -1,0 +1,217 @@
+@charset "euc-kr";
+
+@import './font.css';
+@import './reset.css';
+@import './base.css';
+@import './layout.css';
+@import './popup.css';
+@import './content.css';
+@import './mem.css';
+@import './jy.css';
+@import './ljh.css';
+@import './ko.css';
+
+
+/* common color */
+.pColor{color:#066bfd !important;}
+.sColor{color:#d50f3c !important;}
+.bColor{color:#222 !important;}
+.gColor{color:#767676 !important;}
+.oColor {color:#af5700 !important;}
+
+.mobile .mbHide, .pweb .pcHide {display:none !important;} 
+
+.spm {margin-top:50px !important;}
+.pweb .spm {margin-top:70px !important;}
+
+.mtN {margin-top:0 !important;}
+.ptN {padding:0 !important;}
+
+.bold {font-weight: bold !important;}
+
+/* swiper pagination */
+.swiper-pagination {position:static; margin-top:18px; height:5px;}
+.swiper-pagination-bullet {vertical-align:top; width:5px; height:5px; margin:0 4px;}
+.swiper-pagination-bullet[role='button']:focus{opacity:1; background:transparent;}
+.swiper-pagination-bullet-active {width:15px; border-radius:2.5px}
+
+.pweb .swiper-pagination {height:7px; margin-top:30px;} 
+.pweb .swiper-pagination-bullet {width:7px; height:7px; border-radius: 4px;}
+.pweb .swiper-pagination-bullet-active {width:21px;}
+
+.topListInfo {margin-bottom:16px; display:flex; align-items:flex-end}
+.topListInfo .h2 {margin-top:40px;}
+.topListInfo .h3, .topListInfo .h4 {margin:0;}
+.topListInfo > .cnt {font-size:13px; line-height: 16px; margin-left:auto;}
+.topListInfo > .cnt i {font-weight: 700;}
+.topListInfo .opt {margin-left:auto; color:#767676;}
+
+.pweb .topListInfo {margin-bottom:24px;}
+.pweb .topListInfo .cnt {font-size:16px; line-height: 26px;}
+
+/* 안내 및 완료 Visual */
+.compVisual {text-align: center;}
+.compVisual p {font-size:14px; line-height: 24px;}
+.compVisual p:not(:first-child) {margin-top:26px;}
+.compVisual .icon {display:block; width:150px; height:150px; background-size:100%; margin:0 auto 25px auto;}
+.compVisual .cert {background-image:url(../../../img/zkm/rzm/common/bg/bg_lock_att.png);}
+.compVisual .insert {background-image:url(../../../img/zkm/rzm/common/bg/bg_lock.png);}
+.compVisual .bio {background-image:url(../../../img/zkm/rzm/common/bg/bg_face.png);}
+.compVisual .shield {background-image:url(../../../img/zkm/rzm/common/bg/bg_shield.png);}
+.compVisual .pw {background-image:url(../../../img/zkm/rzm/common/bg/bg_pw.png)}
+.compVisual .addInfo {background-image:url(../../../img/zkm/rzm/common/bg/bg_addinfo.png);}
+.compVisual .autoLog {background-image:url(../../../img/zkm/rzm/common/bg/bg_autologout.png);}
+.compVisual .logOut {background-image:url(../../../img/zkm/rzm/common/bg/bg_logout.png);}
+.compVisual .memJoin {background-image:url(../../../img/zkm/rzm/common/bg/bg_join.png);}
+.compVisual .getCert {background-image: url(../../../img/zkm/rzm/common/bg/bg_certificate.png);}
+.compVisual .loan02 {background-image: url(../../../img/zkm/rzm/common/bg/bg_loan02.png);}
+
+.pweb .compVisual .icon  {width:210px; height:210px; margin-bottom:45px;}
+.pweb .compVisual p {font-size:16px; line-height: 26px;}
+
+.visualBg {margin-top:40px;}
+.visualBg > span {display:block; background-repeat: no-repeat; background-position:center top; background-size:auto 100%;}
+.visualBg p {margin-top:25px;}
+.visualBg .others {height:240px; background-image:url(../../../img/zkm/rzm/common/bg/bg_others.png);}
+.visualBg .loanFit {height:203px; background-image:url(../../../img/zkm/rzm/common/bg/bg_mainLoan.png);}
+.visualBg .otherEnd {height:200px; background-color:#f1f1f1}
+.visualBg .cardFit {height:150px; background:#f1f1f1}
+.visualBg .realty { height:142px;background-image: url(../../../img/zkm/rzm/sub/bg_realty.png);}
+
+.pweb .visualBg .loanFit {height:284px;}
+.pweb .visualBg .listDot {text-align:left; margin-top:45px;}
+
+/*****************************************************************
+  약관동의
+*****************************************************************/
+.agreeTitle label {position:relative; display:block; font-size:17px; line-height: 23px; font-weight: 700; padding:16px 20px 19px 52px; border:1px solid #c6cfdb; border-radius: 10px; box-sizing: border-box;}
+.agreeTitle :checked + label {border-color:#066bfd;}
+.agreeTitle :checked + label span:after {content:' 완료'}
+.agreeTitle label:before {position:absolute; content:''; top:17px; left:19px; width:24px; height:24px; border:1px solid #d4d4d4; border-radius: 50%; box-sizing: border-box; -webkit-transition: 0.3s; transition:background-color, border-color 0.3s;}
+.agreeTitle :checked + label:before {border-color:#066bfd; background-color:#066bfd}
+.agreeTitle :checked + label:after {position:absolute; content:''; display:block; border-color:#fff; border-style:solid; border-width:0 0 2px 2px; width:10px; height:5px; left:25px; top:24px; transform: rotate(-45deg);}
+
+.pweb .agreeTitle label {font-size:18px; line-height: 28px; padding:20px 24px 20px 62px;}
+.pweb .agreeTitle input[type=checkbox]:focus + label {box-shadow:0px 0px 4px 2px rgba(0,97,255,0.3)}
+.pweb .agreeTitle label:before {top:20px; left:24px; width:28px; height:28px;}
+.pweb .agreeTitle :checked + label:after {width:11px; height:6px; top:29px; left:32px;}
+
+.agreement .agreeSection {border-top:1px solid #eee; margin-top:20px;}
+.agreement .uiAcco .uiAccoHeader {padding:0 35px 0 5px; margin-top:25px;}
+.agreement .uiAcco .uiAccoHeader .uiBtn {position:absolute; top:-3px; right:0; width:30px; height:30px;}
+.agreement .uiAcco .uiAccoHeader .uiBtn:after {top:4px;}
+.agreement .uiAcco .uiAccoHeader .uiBtn.active:before {display:none;}
+.agreement .uiAcco .uiAccoContent {padding:23px 2px 22px 23px; border-bottom:1px solid #eee;}
+
+.pweb .agreement .agreeSection {margin-top:25px;}
+.pweb .agreement .uiAcco .uiAccoHeader {margin-top:30px;}
+
+.agreeItem li {position:relative; padding:7px 0;}
+.agreeItem label {position:relative; display:inline-block;font-size:15px; line-height: 23px; padding:0 40px 0 28px;}
+.agreeItem input[type=checkbox]:focus + label:after {box-shadow:0px 0px 4px 2px rgba(0,97,255,0.3)}
+.agreeItem input[type=checkbox] + label:after {position:absolute; content:''; display:block; border-color:#bababa; border-style:solid; border-width:0 0 2px 2px; width:10px; height:5px; left:1px; top:7px; transform: rotate(-45deg);}
+.agreeItem input[type=checkbox]:checked + label:after {border-color:#066bfd;}
+.agreeItem li .uiBtn {position:absolute; width:24px; height:24px; top:7px; right:0;overflow:hidden;} 
+.agreeItem li .uiBtn:after {position: absolute;left:7px; top:6px; content: '';width: 8px;height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg);}
+
+.pweb .agreeItem label {font-size:18px;}
+.pweb .agreement .uiAcco .uiAccoContent {padding:30px 5px 28px 26px;}
+.pweb .agreeItem li {padding:13px 0;}
+
+.agreeList li {position:relative; margin-top:25px; padding:0 35px 0 5px;}
+.agreeList li .uiBtn {position:absolute; width:24px; height:24px; top:0; right:0;overflow:hidden;}
+.agreeList li .uiBtn:after {position: absolute;left:7px; top:6px; content: '';width: 8px;height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg);}
+
+.pweb .agreeList li {margin-top:35px;}
+
+.agreement .agreeList .agreeSub {padding:17px 0 0 34px;}
+.agreement .agrLink {display:inline-block; font-size:13px; line-height: 17px; color:#767676; border-bottom:1px solid #767676;}
+.agreement .subSelBox p {line-height: 22px; margin-bottom:13px;}
+.agreement .subSelBox .agreeSub {margin-bottom:24px;}
+.agreement .subSelBox .agreeItem li {display:inline-block;}
+
+.pweb .agreement .agrLink {font-size:15px;}
+.pweb .agreement .subSelBox p {font-size:16px;}
+
+
+/*****************************************************************
+  List type
+*****************************************************************/
+.lineboxList li {position: relative; overflow:hidden; padding:17px 55px 17px 25px; font-size:17px; line-height: 24px; display: flex; flex-direction: column; justify-content: center; border: #d9d9d9 solid 1px; border-radius: 10px;}
+.lineboxList li:not(:first-child) {margin-top:15px;}
+.lineboxList li > span,
+.lineboxList li button span {display:block; font-size:13px; line-height: 19px; color:#767676; padding:3px 0;}
+.lineboxList li strong {display:block; font-weight: 700; padding:3px 0;}
+.lineboxList li a {position:absolute; top:0; left:0; right:0; bottom:0; }
+.lineboxList li a.btnArrow.tp:before {right:24px; top:34px; margin:0;}
+.lineboxList li a:focus {border:1px solid #000;}
+.lineboxList li .del,
+.lineboxList li .import {font-size:15px; color:#222; position:absolute; right:20px; line-height:20px; top:50%; margin-top:-11px;}
+.lineboxList li a .del::before {content:'+'; display: inline-block; transform: rotate(45deg) translateY(15%); font-size: 1.5em;}
+.lineboxList li .import::before {content:'+'; display: inline-block; margin-right: 5px;}
+.lineboxList li button {margin:-17px -55px -17px -25px; padding:20px 55px 20px 25px; text-align:left; min-height:88px;}
+.lineboxList li button:disabled {background:#eff2f8; color:#87909b;}
+.lineboxList li button:disabled span {color:#87909b;}
+.lineboxList li button.link {position:relative;}
+.lineboxList li .link:after {content: ''; position: absolute; right: 20px; top: 50%; width: 8px; height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg) translateY(-50%);}
+.lineboxList li button.link:disabled:after {display:none;}
+.lineboxList li .tagList {margin-bottom:7px;}
+
+.pweb .lineboxList li {font-size:20px; padding: 32px 28px; line-height: 32px; border-radius: 20px;}
+.pweb .lineboxList li:not(:first-child) {margin-top:20px;}
+.pweb .lineboxList li > strong {padding:8px 0;}
+.pweb .lineboxList li button {margin:-32px -28px; padding:28px 40px;}
+.pweb .lineboxList li > span {font-size:15px; padding:8px 0;}
+.pweb .lineboxList li button span {font-size:15px; }
+.pweb .lineboxList li .date {margin-top:2px;}
+.pweb .lineboxList li .link:after {right:28px; width:10px; height:10px;}
+.pweb .lineboxList li .tagList {margin-bottom: 16px;}
+
+.pweb .lineboxList li .listTit strong {float: left; margin-right:30px;}
+.pweb .lineboxList li .listTit .tagList{ margin-top:12px;}
+
+.rdoList li {position:relative;}
+.rdoList li:not(:first-child) {margin-top:15px;}
+.rdoList .item {display:block; position:relative; border: #d9d9d9 solid 1px; border-radius: 10px; background-color: #fff; text-align: left; padding: 20px 20px 19px 42px;}
+.rdoList li.item {padding-left:20px;}
+.rdoList .item strong {display:block; font-weight: 500;font-size: 17px; line-height:24px;}
+.rdoList .item span {font-size: 12px; color:#767676; display: block; margin-top:4px;}
+.rdoList label:before {position:absolute; content:''; top:20px; left:9px; width:24px; height:24px; background:#fff; border-radius: 50%; box-sizing: border-box;-webkit-transition: 0.3s; transition: 0.3s;}
+.rdoList label:after {position: absolute; content: ''; display: block; border-color: #b9b9b9; border-style: solid; border-width: 0 0 2px 2px; width: 10px; height: 5px; left: 15px; top: 27px; transform: rotate(-45deg);}
+.rdoList :checked + label strong {font-weight: 700;}
+.rdoList :checked + label, .rdoList :checked + label:after {border-color: #066bfd;}
+.rdoList .mng label {background-color: #eff2f8; border-color:#dcdff1;}
+.rdoList .mng .status {width: 21px; height: 16px; position: absolute; top: 10px; right: 10px; background: url(../../../img/zkm/rzm/common/ico/ico_connected.png) no-repeat center; background-size: 100% auto;}
+
+.pweb .rdoList li:not(:first-child) {margin-top:20px;}
+.pweb .rdoList .item {padding:30px 35px 30px 66px;}
+.pweb .rdoList li.item {padding-left:40px;}
+.pweb .rdoList label:before {left:35px; top:40px;}
+.pweb .rdoList label:after {top:47px; left:41px;}
+.pweb .rdoList .item strong {font-size:24px; line-height: 34px;}
+.pweb .rdoList .item span {font-size:15px; line-height: 24px; margin-top:7px;}
+.pweb .rdoList .mng .status {width:24px; height:18px; top:13px; right:11px;}
+
+/* total text */
+.txtPara {font-size:14px; line-height: 22px;}
+.txtPara.ss {font-size:12px; line-height: 20px;}
+.txtPara strong {font-weight: 700;}
+.txtPara .tel {display:inline-block; border-bottom:1px solid #222; }
+div.txtPara p:not(:first-child) {margin-top:10px;}
+
+.txtListWrap .h4 {margin-bottom:11px;}
+.txtListWrap .h4:first-child {margin-top:0;}
+.txtListWrap .txtPara {margin-top:6px;}
+.txtListWrap .listDash .listNum {margin-bottom:10px;}
+.txtListWrap li .listDash li {margin-top:10px;}
+
+.pweb .txtPara {font-size:16px; line-height: 26px;}
+
+/* loading */
+.loadingSection .guideSubTxt {margin-top:20px; text-align:center;}
+.loadingSection .guideSubTxt .linkTxt {display:block; text-decoration:underline; font-size:15px;}
+.loadingSection .guideTxt {color:#767676;}
+
+
+
+

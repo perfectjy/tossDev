@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="stepList">
+            <div class="stepBar"><span style="width:calc( 100% * (4/8) )"></span></div>
+            <div class="steps">
+              <span class="hidden">현재단계</span><strong class="num">4</strong>
+              <span class="hidden">전체단계</span><strong>8</strong>
+            </div>
+          </div>
+          
+          <div class="governing">
+            <h2 class="governingTitle">
+              자산에 연결됐어요.
+            </h2>
+          </div>
+          <div class="myDataConts">
+            <p class="myDataContTit">관리할 자산을 선택해 주세요</p>
+            <div class="uiItemTit">
+              <div class="uiItem">
+                <input type="checkbox" name="period" id="bank0">
+                <label for="bank0"><span>은행</span></label>
+              </div>
+            </div>
+            <div class="uiAccoWrap mydataAcco2">
+              <div class="uiAccoHeader">
+                <button type="button" class="uiBtn">
+                  <span class="accoTitle mydataItem">
+                    <span>
+                      <i><img src="../../../../img/bzw/common/ico/thumb_kb.png" alt=""></i>
+                      <em>국민은행(2)</em>
+                    </span>
+                  </span>
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="">
+                  <ul class="btnLineboxWrap">
+                    <li>
+                      <div class="btnLinebox uiItem">
+                        <input type="checkbox" name="bank" id="bank1" checked="checked">
+                        <label for="bank1"><strong>AMA+급여 저축예금</strong><span>1002841184273</span></label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="btnLinebox uiItem connected">
+                        <input type="checkbox" name="bank" id="bank2">
+                        <label for="bank2"><strong>AMA+급여 저축예금</strong><span>1002841184273</span></label>
+                        <span class="hidden">관리중</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uiItemTit">
+              <div class="uiItem">
+                <input type="checkbox" name="period" id="invest0">
+                <label for="invest0"><span>투자</span></label>
+              </div>
+            </div>
+            <div class="uiAccoWrap mydataAcco2">
+              <div class="uiAccoHeader">
+                <button type="button" class="uiBtn">
+                  <span class="accoTitle mydataItem">
+                    <span>
+                      <i><img src="../../../../img/bzw/common/ico/thumb_toss.png" alt=""></i>
+                      <em>토스(1)</em>
+                    </span>
+                  </span>
+                  <span class="hidden">펼치기</span>
+                </button>
+              </div>
+              <div class="uiAccoContent">
+                <div class="">
+                  <ul class="btnLineboxWrap">
+                    <li>
+                      <div class="btnLinebox uiItem">
+                        <input type="checkbox" name="invest" id="invest1" checked="checked">
+                        <label for="invest1"><strong>위탁</strong><span>1002841184273</span></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <div class="bottomActiveBtns">
+            <div class="btnConts">
+              <button type="button" class="btn primary"><span>확인</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

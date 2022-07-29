@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script> 
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '자택정보 수정하기', home: false, prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="skipNavi">
+      <a href="#content">본문내용 바로가기</a>
+    </div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              나신용님의 소중한 <strong class="pColor">우리집 정보</strong>를 확앤해주세요.
+            </h2>
+          </div>
+
+          <div class="formWrap">
+            <div class="formItem">
+              <label for="address1" class="titItem">주소</label>
+              <div class="formEle">
+                <input type="text" placeholder="주소 입력" id="address1" title="">
+              </div>
+              <div class="intBotBtn">
+                <button type="button" class="btn base"><span>주소 검색</span></button>
+              </div>
+            </div>
+            <div class="formItem">
+              <div class="formEle">
+                <input type="text" placeholder="상세 주소" id="address2" title="상세 주소">
+              </div>
+            </div>
+            <div class="formItem">
+              <h3 class="tit">자택주소 변경을 위해 아래 증빙자료 중 하나를 제출해주세요.</h3>
+              <div class="formEle filebox">
+                <input class="uploadName" placeholder="증빙자료 첨부해 주세요." readonly="readonly">
+                <label for="attach"></label>
+                <input type="file" id="attach" title="증빙자료 첨부">
+              </div>
+            </div>
+            <div class="ineBoxConnect sp">
+              <ul>
+                <li>
+                  <div class="ineBox">
+                    <ul class="listDot">
+                      <li>주민등록초본 (최근1개월)</li>
+                      <li>유무선 통신, 공공요금, 카드 고지서 등으로 발송월/기관명/자택주소/이름이 함께 보이는 최근 1개월 내 발부된 서류</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox gray">
+                    <p class="sColor">
+                      주민등록등본은 본인을 제외한 가족, 주민등록번호를 삭제하여 접수해 주세요.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="formItem">
+              <label for="phone" class="titItem">전화번호</label>
+              <div class="formEle">
+                <input type="text" placeholder="전화번호 입력" id="phone">
+              </div>
+            </div>
+          </div>
+          
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>이전</span></button>
+              <button type="button" class="btn primary"><span>확인</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

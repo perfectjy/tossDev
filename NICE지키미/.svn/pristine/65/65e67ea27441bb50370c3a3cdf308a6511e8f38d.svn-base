@@ -1,0 +1,81 @@
+@charset "euc-kr";
+
+.dimed { position: fixed; left: 0; bottom: 0; top: 0; z-index: 298; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); }
+.lock {height:100%; overflow:hidden;}
+
+/* modal - layer popup */
+.uiModal { position: fixed; left: -300%; top:0; z-index: 300; width: 100%; height:100%; opacity:0; box-sizing: border-box;}
+.uiModal.active {left:0; opacity:1;background-color: rgba(0,0,0,0.8);}
+.uiModal.modal {padding:20px;}
+.uiModal.bottom {padding-top:50px;}
+.uiModal.alert {z-index:301;}
+.mobile .uiModal { transition: left 0s 0.6s, opacity 0s 0.6s, background 0.45s cubic-bezier(0.22,0.61,0.2,1) 0.15s;}
+.mobile .uiModal.active { transition-delay:0s}
+
+.modalWrap {position:relative; width:100%; background:#fff; overflow:hidden; }
+.uiModal.bottom .modalWrap {position:fixed; left:0; bottom:0; max-height:100%; padding:42px 20px 20px 20px; border-radius: 30px 30px 0 0;}
+
+.mobile .uiModal.modal .modalWrap {top:50%;  padding:30px 20px 20px 20px; border-radius: 20px; opacity:0;}
+.mobile .modalWrap {transform:translateY(120%); transition:all 0.45s cubic-bezier(0.22,0.61,0.2,1);}
+.mobile .uiModal.active .modalWrap {transform: translateY(0); transition-delay:0.15s}
+.mobile .uiModal.modal .modalWrap {margin:50px auto 0; transform:translateY(-50%)}
+.mobile .uiModal.modal.active .modalWrap {opacity:1; margin-top:0;}
+
+.uiModal .modalWrap .typeModalClose { position:absolute; right: 12px; top: 8px; display: block; width: 36px; height: 36px; background: url(../../img/bzw/common/ico/ico_closex.png) no-repeat center center; background-size: 20px; z-index:1;}
+.uiModal.bottom .modalWrap .typeModalClose {top:12px;}
+.uiModal.modal .modalWrap .typeModalClose {top:26px;}
+.uiModal .modalHeader h1 {font-size:19px; font-weight: 700; line-height: 27px;}
+.mobile .uiModal.modal .modalHeader h1 {padding-bottom:20px;}
+.uiModal.bottom .modalHeader{position:relative;}
+.uiModal.bottom .modalHeader h1 {padding-bottom:30px;}
+.uiModal.bottom .modalHeader .expNum{position: absolute; right: 25px; top: 32px; line-height: 1; font-size: 17px;}
+.uiModal.bottom .modalHeader .expNum span{font-weight:700;}
+
+.uiModal .btns {margin:40px 0 0 0;}
+.mobile .uiModal.modal .btns .btn,
+.mobile .alertWrap .btns .btn {font-size: 16px; line-height: 48px; border-radius: 10px;}
+
+.uiModal.full .modalWrap {transition-timing-function:cubic-bezier(0.2,0.6,0,1)}
+.uiModal.full .modalHeader h1 { font-size:16px; font-weight: 700;}
+
+.mobile .uiModal.full .modalWrap {height:100%;}
+.mobile .uiModal.full .modalHeader { position: absolute; left: 0; top: 0; display:flex; align-items:center; justify-content: center; width: 100%; height: 50px; padding:0 50px; background-color: #fff; text-align:center;}
+.mobile .uiModal.full .modalContent { height: 100%; padding:80px 20px 20px 20px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mobile .uiModal .modalBottom {height:96px;}
+.mobile .uiModal .modalBottom .btns {position:fixed; lefT:0; right:0; bottom:0; margin:0; padding:0 15px 20px 15px;}
+
+/* alert - modal, layer popup */
+.alertWrap {position:relative; width:300px; margin:0 auto; border-radius: 15px; padding:40px 20px 20px; top:50%; background:#fff; transform:translateY(-50%)}  
+.alertWrap .msg { color: #000; font-size: 15px; line-height: 22px; text-align: center; word-break: keep-all; }
+.alertWrap .msg h1 {font-size:17px; line-height: 25px; font-weight: 700; margin-bottom:10px;}
+
+.pweb .alertWrap {width:450px; padding:45px 40px 30px 40px;}
+.pweb .alertWrap .msg {font-size:20px; line-height: 30px;}
+.pweb .alertWrap .btns .btn {min-width:170px;}
+
+.pweb .uiModal .modalWrap {width:880px; margin:0 auto; top:50%; padding:0 0 50px 0; border-radius: 20px;transform:translateY(-50%)}
+.pweb .uiModal .modalHeader { padding:37px 80px 43px 40px;}
+.pweb .uiModal .modalHeader h1 {font-size:26px; line-height: 36px;}
+.pweb .uiModal .modalContent .inner {padding:0 40px;}
+.pweb .uiModal .modalWrap .typeModalClose {width:30px; height:30px; top:40px; right:40px;}
+
+.pweb .uiModal .modalBottom .btns {padding-top:40px; margin:0; background-color: #fff;}
+.pweb .uiModal .btns .btn {height:60px; font-size:18px;}
+
+.pweb .uiModal.full .modalWrap {max-height:720px;}
+.pweb .uiModal.full .modalContent {position:relative; height:calc(100% - 120px);}
+.pweb .uiModal.full .modalContent .inner {max-height:550px; overflow-y:auto;}
+
+.pweb .uiModal.modal .modalWrap, .pweb .uiModal.bottom .modalWrap {width:530px;}
+.pweb .uiModal.modal .inner {padding:0 40px;}
+
+.pweb .uiModal.bottom .modalWrap {position:relative; left:auto; bottom:auto; border-radius: 20px;}
+.pweb .uiModal.bottom .modalHeader h1 {padding:0;}
+
+
+
+
+
+
+
+

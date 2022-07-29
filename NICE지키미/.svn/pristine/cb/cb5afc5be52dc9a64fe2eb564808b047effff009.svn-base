@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agreement - Guide</title>
+
+  <script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/zkm/bzw/common.css">
+  <style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}     
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+  <h1 class="guideTit">Agreement</h1>
+  <div class="guideItem">
+    <div class="agreement" id="agreeAllChk1">
+      <div class="agreeTitle">
+        <input type="checkbox" id="chk-all1" data-chk-item="all"><label for="chk-all1"><span>나이스지키미 이용약관 모두 동의</span></label>
+      </div>
+      <div class="agreeSection">
+        <!-- <ul class="agreeItem">
+          <li>
+            <input type="checkbox" id=""><label for="">나이스지키미 이용약관 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li>
+            <input type="checkbox" id=""><label for="">개인정보 수집 및 제공 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+            <p><a href="#none" class="btnLine">개인정보처리방침 전체보기</a></p>
+          </li>
+          <li>
+            <input type="checkbox" id=""><label for="">고유식별정보 처리 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+        </ul> -->
+        <div class="uiAcco">
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk1-item1" data-chk-item="list-item"><label for="chk1-item1">신용정보 변동 알람 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <ul class="agreeItem">
+                <li>
+                  <input type="checkbox" id="chk1-item1-1" data-chk-item="list-sub"><label for="chk1-item1-1">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk1-item1-2" data-chk-item="list-sub"><label for="chk1-item1-2">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk1-item2" data-chk-item="list-item"><label for="chk1-item2">마케팅정보 활용동의 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <ul class="agreeItem">
+                <li>
+                  <input type="checkbox" id="chk1-item2-1" data-chk-item="list-sub"><label for="chk1-item2-1">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk1-item2-2" data-chk-item="list-sub"><label for="chk1-item2-2">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk1-item3" data-chk-item="list-item"><label for="chk1-item3">맞춤형 정보 수신 동의 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <ul class="agreeItem">
+                <li>
+                  <input type="checkbox" id="chk1-item3-1" data-chk-item="list-sub"><label for="chk1-item3-1">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk1-item3-2" data-chk-item="list-sub"><label for="chk1-item3-2">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+      $('#agreeAllChk1').uiCheckAll();
+    });
+    </script>
+
+    <!-- <div class="agreement">
+      <div class="agreeTitle">
+        <input type="checkbox" id="agreeAll"><label for="agreeAll">나이스지키미 이용약관 모두 동의</label>
+      </div>
+      <div class="agreeSection">
+        <ul class="agreeItem">
+          <li>
+            <input type="checkbox" id=""><label for="">나이스지키미 이용약관 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li>
+            <input type="checkbox" id=""><label for="">개인정보 수집 및 제공 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+            <p><a href="#none" class="btnLine">개인정보처리방침 전체보기</a></p>
+          </li>
+          <li>
+            <input type="checkbox" id=""><label for="">고유식별정보 처리 동의 (필수)</label>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+        </ul>
+        <div class="uiAccoWrap">
+          <div class="uiAccoHeader">
+            <div class="uiItem"><input type="checkbox" id=""><label for="">신용정보 변동 알람 (선택)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </div>
+          <div class="uiAccoContent">
+            회원정보, 결제 등 서비스 이용 및 약관변동 소식은 신용정보 알림과 별도로 메일 또는 SMS로 전송해 드려요.
+          </div>
+          <div class="uiAccoHeader">
+            <div class="uiItem"><input type="checkbox" id=""><label for="">마케팅정보 활용동의 (선택)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </div>
+          <div class="uiAccoContent">
+            제휴서비스, 마케팅, 이벤트 상품 등 포르모션 정보에 대한 알림은 받을 수 있어요.
+            <ul class="agreeItem">
+              <li>
+                마케팅정보 활용동의 (선택)
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+            <div class="checkWrap">
+              <div class="uiItem">
+                <input type="checkbox" name="period" id="per1" checked="checked"><label for="per1"><span>1주</span></label>
+              </div>
+              <div class="uiItem">
+                <input type="checkbox" name="period" id="per2"><label for="per2"><span>2주</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="uiAccoHeader">
+            <div class="uiItem"><input type="checkbox" id=""><label for="">맞춤형 정보 수신 동의 (선택)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </div>
+          <div class="uiAccoContent">
+            <ul class="agreeItem">
+              <li>
+                <input type="checkbox" id=""><label for="">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+              <li>
+                <input type="checkbox" id=""><label for="">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="guideItem">
+    <div class="agreement" id="agreeAllChk2">
+      <div class="agreeTitle">
+        <input type="checkbox" id="chk-all2" data-chk-item="all"><label for="chk-all2"><span>전체 동의</span></label>
+      </div>
+      <div class="agreeSection">
+        <ul class="agreeList">
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk2-item1" data-chk-item="list-item"><label for="chk2-item1">개인정보이용 및 제공 동의</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk2-item2" data-chk-item="list-item"><label for="chk2-item2">고유식별정보처리 동의</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk2-item3" data-chk-item="list-item"><label for="chk2-item3">서비스 이용약관 동의</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk2-item4" data-chk-item="list-item"><label for="chk2-item4">통신사 이용약관 동의</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+      $('#agreeAllChk2').uiCheckAll();
+    });
+    </script>
+  </div>
+
+  <div class="guideItem">
+    <div class="agreement" id="agreeAllChk3">
+      <div class="agreeTitle">
+        <input type="checkbox" id="chk-all3" data-chk-item="all"><label for="chk-all3"><span>나이스지키미 이용약관 모두 동의</span></label>
+      </div>
+      <div class="agreeSection">
+        <ul class="agreeList">
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk3-item1" data-chk-item="list-item"><label for="chk3-item1">나이스지키미 이용약관 동의 (필수)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk3-item2" data-chk-item="list-item"><label for="chk3-item2">개인정보수집 및 제공 동의 (필수)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+            <div class="agreeSub">
+              <a href="#none" class="agrLink">개인정보처리방침 전체보기</a>
+            </div>
+          </li>
+          <li data-chk-item="list">
+            <div class="uiItem"><input type="checkbox" id="chk3-item3" data-chk-item="list-item"><label for="chk3-item3">고유식별정보처리 동의 (필수)</label></div>
+            <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+          </li>
+        </ul>
+        <div class="uiAcco">
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk3-item4" data-chk-item="list-item"><label for="chk3-item4">신용정보 변동 알람 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <div class="subSelBox">
+                <p>회원정보, 결제 등 서비스 이용 및 약관변동 소식은 신용정보 변동 알람과 별도로 메일 또는 SMS로 전송해 드려요.</p>
+                <ul class="agreeItem">
+                  <li>
+                    <input type="checkbox" id="chk3-item4-1" data-chk-item="list-sub"><label for="chk3-item4-1">문자/알림톡</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk3-item4-2" data-chk-item="list-sub"><label for="chk3-item4-2">이메일</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk3-item5" data-chk-item="list-item"><label for="chk3-item5">마케팅정보 활용동의 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <div class="subSelBox">
+                <p>제휴서비스, 마케팅, 이벤트상품 등 프로모션 정보에 대한 알람을 받을 수 있어요.</p>
+                <div class="agreeSub"><a href="#none" class="agrLink">마케팅정보 활용동의 (선택)</a></div>
+                <ul class="agreeItem">
+                  <li>
+                    <input type="checkbox" id="chk3-item5-1" data-chk-item="list-sub"><label for="chk3-item5-1">문자/알림톡</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="chk3-item5-2" data-chk-item="list-sub"><label for="chk3-item5-2">이메일</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-chk-item="list">
+            <div class="uiAccoHeader">
+              <div class="uiItem"><input type="checkbox" id="chk3-item6" data-chk-item="list-item"><label for="chk3-item6">맞춤형 정보 수신 동의 (선택)</label></div>
+              <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+            </div>
+            <div class="uiAccoContent">
+              <ul class="agreeItem">
+                <li>
+                  <input type="checkbox" id="chk3-item6-1" data-chk-item="list-sub"><label for="chk3-item6-1">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk3-item6-2" data-chk-item="list-sub"><label for="chk3-item6-2">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <script>
+      $(document).ready(function() {
+        $('#agreeAllChk3').uiCheckAll();
+      });
+      </script>
+    </div>
+
+  </div>
+  <script>
+    // 공통 약관 전체선택
+    $.fn.uiCheckAll = function() {
+      return this.each(function() {
+        var uiCheckAll = {
+          gTarget: null,
+          gChkAllObj: null,
+          gChkListObj: null,
+          gChkListItemObj: null,
+          gChkListSubObj: null,
+          sData: {},
+          strAll: '[data-chk-item=all]',
+          strList: '[data-chk-item=list]',
+          strListItem: '[data-chk-item=list-item]',
+          strListSub: '[data-chk-item=list-sub]',
+          len: 0,
+          checkAllFn: function(v) {
+            var o = this,
+              $t = $(v),
+              $boolean = $t.is(':checked');
+
+            // sData 적용
+            o.sData.list.forEach(function(obj, index) {
+              obj.item = $boolean;
+
+              if(obj.sub !== undefined) {
+                obj.sub.forEach(function(objSub) {
+                  objSub.item = $boolean;
+                });
+              };
+            });
+            
+            if($boolean) {
+              o.sData.count = o.len;
+            } else {
+              o.sData.count = 0;
+            }
+            o.sData.all = $boolean;
+            o.gChkListItemObj.prop('checked', $boolean);
+            o.gChkListSubObj.prop('checked', $boolean);
+            // console.log('전체 카운트 : ' + o.sData.count)
+            console.log(o.sData);
+          },
+          checkListItemFn: function(v) {
+            var o = this,
+              $t = $(v),
+              $boolean = $t.is(':checked'),
+              idx = o.gChkListItemObj.index($t),
+              $sub = $t.closest(o.strList).find(o.strListSub),
+              len = 0; // 체크되지 않은 갯수
+              
+            o.sData.list.forEach(function(obj, index) {
+              if($boolean) {
+                if(idx === index) {
+                  obj.item = true;
+                  if(obj.sub !== undefined) {
+                    obj.sub.forEach(function(objSub,i) {
+                      objSub.item = true;
+                    });
+
+                    $sub.each(function(i) {
+                      if($sub.eq(i).is(':not(:checked)')) {
+                        len = len + 1;
+                      }
+                    });
+                    o.sData.count = o.sData.count + len + 1;
+                    obj.count = obj.sub.length + 1
+                    $sub.prop('checked', true);
+                  } else {
+                    o.sData.count = o.sData.count + 1;
+                  }
+                }
+              } else {
+                if(idx === index) {
+                  obj.item = false;
+                  if(obj.sub !== undefined) {
+                    obj.sub.forEach(function(objSub) {
+                      objSub.item = false;
+                    });
+                    obj.count = 0;
+                    $sub.prop('checked', false);
+                    o.sData.count = o.sData.count - (obj.sub.length + 1);
+                  } else {
+                    o.sData.count = o.sData.count - 1;
+                  }
+                }
+              }
+            });
+            o.activeAllFn();
+            console.log('전체 카운트 : ' + o.sData.count)
+            console.log(o.sData);
+          },
+          checkListSubFn: function(v) {
+            var o = this,
+              $t = $(v),
+              $boolean = $t.is(':checked'),
+              idx = o.gChkListSubObj.index($t),
+              $item = $t.closest(o.strList).find(o.strListItem),
+              $booleanItem = $item.is(':checked'),
+              idxItem = o.gChkListItemObj.index($item),
+              subCount = o.sData.list[idxItem].count,
+              len = o.sData.list[idxItem].sub.length;
+            
+            o.sData.list[idxItem].sub.forEach(function(obj, index) {
+              if(idx%len === index) {
+                if($boolean) {
+                  obj.item = true;
+                  o.sData.list[idxItem].count = subCount + 1;
+                  o.sData.count = o.sData.count + 1;
+                  subCount = o.sData.list[idxItem].count;
+
+                  if(len === subCount) {
+                    o.sData.list[idxItem].count = subCount + 1;
+                    o.sData.list[idxItem].item = true;
+                    o.sData.count = o.sData.count + 1;
+                    subCount = o.sData.list[idxItem].count;
+                    $item.prop('checked', true);
+                  }
+                  console.log('전체 카운트 : ' + o.sData.count , ' / 부분 카운트 : ' + subCount)
+                } else {
+                  obj.item = false;
+                  o.sData.list[idxItem].count = subCount - 1;
+                  o.sData.count = o.sData.count - 1;
+                  subCount = o.sData.list[idxItem].count;
+                  
+                  if(len === subCount) { //
+                    o.sData.list[idxItem].count = subCount - 1;
+                    o.sData.list[idxItem].item = false;
+                    o.sData.count = o.sData.count - 1;
+                    subCount = o.sData.list[idxItem].count;
+                    $item.prop('checked', false);
+                  }
+                  console.log('전체 카운트 : ' + o.sData.count , ' / 부분 카운트 : ' + subCount)
+                }
+              }
+            });
+            o.activeAllFn();
+            console.log(o.sData);
+          },
+          activeAllFn: function() { // 동일 레벨 체크박스 전체 체크시 전체동의 체크
+            var o = this;
+            if(o.sData.count === o.len) {
+              o.sData.all = true;
+              o.gChkAllObj.prop('checked', true);
+            } else {
+              o.sData.all = false;
+              o.gChkAllObj.prop('checked', false);
+            }
+          },
+          init: function(v) {
+            var o = this;
+            o.gTarget = $(v);
+            o.gChkAllObj = o.gTarget.find(o.strAll);
+            o.gChkListObj = o.gTarget.find(o.strList);
+            o.gChkListItemObj = o.gChkListObj.find(o.strListItem);
+            o.gChkListSubObj = o.gChkListObj.find(o.strListSub);
+            o.len = o.gChkListItemObj.length + o.gChkListSubObj.length;
+
+            /*
+              [data-chk-item=all] // 최상위 전체 동의
+              [data-chk-item=list] // 리스트 영역
+              [data-chk-item=list-item] // 리스트 상위 동의 라디오
+              [data-chk-item=list-sub]  // 리스트 하위 동의 라디오
+              // 구조
+              {
+                all: false,
+                count: 0,
+                list: [
+                  {
+                    item: false,
+                    count: 0, // 하위 동의 있을 경우
+                    sub: [ // 하위 동의 있을 경우
+                      {item: false},
+                      {item: false}
+                    ]
+                  },
+                  ...
+                ]
+              }
+            */
+            o.sData.all = o.gChkAllObj.is(':checked');
+            o.sData.count = 0;
+            o.sData.list = [];
+            o.gChkListObj.each(function(i) {
+              var $sub = $(this).find(o.strListSub);
+              if($sub.length) {
+                o.sData.list.push({
+                  'item' : $(this).eq(i).is(':checked'),
+                  'count': 0,
+                  'sub' : []
+                });
+                $sub.each(function(j) {
+                  o.sData.list[i].sub.push({ 'item' : $(this).eq(j).is(':checked') });
+                });
+              } else {
+                o.sData.list.push({ 'item' : $(this).eq(i).is(':checked') });
+              }
+            });
+            // console.log(o.sData);
+
+            // 전체 체크(all), 체크 해제
+            o.gChkAllObj.off('click.allChk').on('click.allChk', function() {
+              o.checkAllFn(this);
+            });
+            
+            // 개별(list-item) 체크
+            o.gChkListItemObj.off('click.itemChk').on('click.itemChk', function() {
+              o.checkListItemFn(this);
+            });
+            
+            // 개별(list-sub) 체크
+            o.gChkListSubObj.off('click.subChk').on('click.subChk', function() {
+              o.checkListSubFn(this);
+            });
+          }
+        }
+        uiCheckAll.init(this);
+      });
+    }
+  </script>
+
+</div>
+</body>
+</html>

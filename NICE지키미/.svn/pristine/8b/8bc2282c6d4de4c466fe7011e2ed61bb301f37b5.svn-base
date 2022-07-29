@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+    <script src="../../../../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../../../../js/bzw/jquery-ui.min.js"></script>    
+    <script src="../../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../../css/bzw/common.css">
+  <link rel="stylesheet" href="../../../../css/bzw/ko.css">
+  <script type="text/javascript">
+    mbHeader = { title: '색상선택', prev: true, menu: true };
+
+    $(function() {        
+      modal.openModal('#modal');
+    });
+</script>
+</head>
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../../html/inc/header.js"></script>
+    <script type="text/javascript" src="../../../../html/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <a href="#modal" class="btn base modalOpen">색상선택</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uiModal full" id="modal">
+    <div class="modalWrap">
+      <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+      <div class="modalHeader">
+        <h1>색상선택</h1>						
+      </div>
+      <div class="modalContent">
+        <div class="inner">
+          <!-- content -->
+          <div class="governing">
+            <h2 class="governingTitle">반려견 색상을 선택하세요</h2>
+          </div>
+
+          <div class="colorSelect">
+            <ul class="colorSelectList">
+              <li class="checked">
+                <div class="brown">
+                  <input type="radio" id="c01" checked="checked">
+                  <label for="c01">갈색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="black">
+                  <input type="radio" id="c02">
+                  <label for="c02">검은색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="yellow">
+                  <input type="radio" id="c03">
+                  <label for="c03">노란색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="beige">
+                  <input type="radio" id="c04">
+                  <label for="c04">베이지색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="blackBullet">
+                  <input type="radio" id="c01">
+                  <label for="c01">블랙탄</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="rainbow">
+                  <input type="radio" id="c01">
+                  <label for="c01">여러색조합</label>
+                </div>
+              </li>
+
+              <li>
+                <div class="orange">
+                  <input type="radio" id="c01">
+                  <label for="c01">주황색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="maroon">
+                  <input type="radio" id="c01">
+                  <label for="c01">적갈색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="blue">
+                  <input type="radio" id="c01">
+                  <label for="c01">파란색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="gray">
+                  <input type="radio" id="c01">
+                  <label for="c01">회색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="brown">
+                  <input type="radio" id="c01">
+                  <label for="c01">갈색</label>
+                </div>
+              </li>
+              
+              <li>
+                <div class="darkBrown">
+                  <input type="radio" id="c01">
+                  <label for="c01">흑갈색</label>
+                </div>
+              </li>
+
+              <li>
+                <div class="partridge">
+                  <input type="radio" id="c01">
+                  <label for="c01">황갈색</label>
+                </div>
+              </li>
+
+              <li>
+                <div class="taupe">
+                  <input type="radio" id="c01">
+                  <label for="c01">회갈색</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--// content -->
+        </div>
+        <div class="modalBottom">
+          <div class="btnConts">
+            <button type="button" class="btn second"><span>취소</span></button>
+            <button type="button" class="btn primary"><span>등록</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

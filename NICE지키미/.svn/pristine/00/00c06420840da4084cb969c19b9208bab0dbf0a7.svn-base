@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>
+  <script src="../../../js/bzw/swiper.min.js"></script> 
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/bzw/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '모으다', home: true, prev: false, menu: true };
+
+    $(function(){
+      // swiper
+      if(!isMobile) {
+        swiper1.destroy();
+        swiper1 = undefined;
+        swiper2.destroy();
+        swiper2 = undefined;
+      } else {
+        var swiper1 = new Swiper('.gatSlider', {
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        var swiper2 = new Swiper('.navSlider', {
+          slidesPerView: "auto",
+          spaceBetween: 10,
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#content">본문내용 바로가기</a>
+  </div>
+  <div class="wrap" id="wrap">
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">
+              나신용님 얼마나 모았을까요?
+            </h2>
+            <div class="governingAmount">
+              <p class="tit"><strong class="robotoB">?</strong>원</p>
+            </div>
+          </div>
+
+          <div class="dRight">
+            금액감추기
+            <div class="btnSwitch">
+              <input type="checkbox" id="switchChk" checked>
+              <label for="switchChk"><span class="hidden">설정해제</span></label>
+            </div>
+          </div>
+
+          <div class="income"> <!-- 소득 -->
+            <div class="ineBox">
+              <div class="fRow">
+                <div>
+                  <h3 class="tit"><strong>소득</strong></h3>
+                  <p class="exp">내 또래보다 <strong class="robotoB">10,000,000</strong>원 <br>더 받네요.</p>
+                  <p class="rank"><strong class="robotoB">?</strong>%</p>
+                </div>
+                <div class="emo"><img src="../../../img/bzw/sub/ico_emo01.png" title="소득 상위"></div>
+              </div>
+              <div class="btnWrap">
+                <a href="#">내 소득 확인</a>
+              </div>
+            </div>
+            <div class="ineBox gray">
+              <div class="fRow">
+                <h3 class="tit">내 직장 <strong class="robotoB">?</strong>건</h3>
+                <a href="#" class="btn sub">등록</a>
+              </div>
+              <div>
+                <div class="noList">
+                  <p>소득 추정에 필요한 직장정보가 필요해요.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gatSlider">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox gat1">
+                    <h3 class="tit"><strong>지키미케어십</strong><i class="tag new">신규</i></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox gat2">
+                    <h3 class="tit"><strong>지키미케어십2</strong></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#" class="bnrBox gat3">
+                    <h3 class="tit"><strong>지키미케어십3</strong><i class="tag new">신규</i></h3>
+                    <p class="exp">우리 <strong>가족소득</strong>을 함께 관리해보세요.</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="comp"> <!-- 금융자산 -->
+            <div class="ineBox gray2">
+              <div class="fRow">
+                <h3 class="tit"><strong>금융자산</strong></h3>
+              </div>
+              <div class="exp">
+                <em>나신용님 금융자산</em>을 연결하면 얼마를 모았는지 한눈에 알 수 있어요.
+              </div>
+              <div class="btnWrap">
+                <a href="#">마이데이터 연결하기</a>
+              </div>
+            </div>
+
+            <div class="sIconList">
+              <ul>
+                <li>
+                  <div class="sIcon">
+                    <i class="bank"></i>
+                    <p><span>은행</span> <b>10</b></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="sIcon">
+                    <i class="invest"></i>
+                    <p><span>투자</span> <b>1</b></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="sIcon">
+                    <i class="pay"></i>
+                    <p><span>페이</span> <b>1</b></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="sIcon">
+                    <i class="insure"></i>
+                    <p><span>보험</span> <b>3</b></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="sIcon">
+                    <i class="pension"></i>
+                    <p><span>연금</span> <b>5</b></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <a href="#" class="bnrBox gat4">
+              <h3 class="tit"><strong>데이터가 맞지 않나요?!</strong></h3>
+              <p class="exp"><strong>주 1회 정기적인</strong>데이터 전송동의로 해결하세요 <i class="iQue">?</i></p>
+            </a>
+          </div>
+
+          <div class="comp"> <!-- 부동산/자동차 -->
+            <div class="ineBoxConnect">
+              <ul>
+                <li>
+                  <div class="ineBox">
+                    <div class="fRow">
+                      <div>
+                        <h3 class="tit"><strong>부동산</strong> <strong class="roboto">?</strong>건</h3>
+                        <p class="exp">우리 동네 집값은 얼마나 올랐을까?</p>
+                      </div>
+                      <a href="#" class="btn sub">등록</a>
+                    </div>
+                    <div class="fRow">
+                      <div class="sIcon bgGraph"></div>
+                      <div>
+                        <div class="sTxt">
+                          <p class="tit"><strong class="robotoB">?</strong>원</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ineBox gray">
+                    <div class="fRow">
+                      <h3 class="tit"><strong>우리집</strong></h3>
+                      <a href="#" class="btn sub">등록</a>
+                    </div>
+                    <p class="exp">우리동네 어디이지?</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="ineBox">
+              <div class="fRow">
+                <div>
+                  <h3 class="tit"><strong>자동차</strong> <strong class="roboto">?</strong>건</h3>
+                  <p class="exp">자동차 생활도 나이스하게!</p>
+                </div>
+                <a href="#" class="btn sub">등록</a>
+              </div>
+              <div class="fRow">
+                <div class="sIcon bgCar"></div>
+                <div>
+                  <div class="sTxt">
+                    <p class="tit"><strong class="robotoB">?</strong>원</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navSlider">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#" class="navBox use">
+                  <p class="tit">쓰고</p>
+                  <p class="exp">얼마나 썼을까?</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="navBox bor">
+                  <p class="tit">빌리고</p>
+                  <p class="exp">얼마나 빌렸을까?</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="navBox rep">
+                  <p class="tit">갚고</p>
+                  <p class="exp">얼마나 밀렸을까?</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn second"><span>마이데이터 연결</span></button>
+              <button type="button" class="btn primary"><span>소득 모아보기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

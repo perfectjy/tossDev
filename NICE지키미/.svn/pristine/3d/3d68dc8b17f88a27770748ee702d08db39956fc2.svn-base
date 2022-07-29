@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+  <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../../../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../../../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+
+  <script type="text/javascript">
+    mbHeader = { title: '신용상담신청', prev: true, menu: true};
+
+    $(function() {        
+      modal.openModal('#modalid5');
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <a href="#modalid5" class="btn base modalOpen">[팝업]주행거리 선택</a>
+        </div> 
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- popup -->
+    <div class="uiModal bottom" id="modalid5">
+      <div class="modalWrap">
+        <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+        <div class="modalHeader">
+          <h1 class="rIcon start"><strong class="pColor">나신용</strong>님 내 차 등급을 선택해주세요</h1>
+        </div>
+        <div class="modalContent">
+          <div class="inner">
+            <!-- content -->
+            <div class="rdoGroup full">
+              <div class="item"><input type="radio" name="type" id="type1"><label for="type1"><span>가솔린 1.6 하이브리드 스마트 A/T</span></label></div>
+              <div class="item"><input type="radio" name="type" id="type2"><label for="type2"><span>가솔린 1.6 하이브리드 모던 A/T</span></label></div>
+              <div class="item"><input type="radio" name="type" id="type2"><label for="type2"><span>가솔린 1.6 하이브리드 모던 인스퍼레이</span></label></div>
+              <div class="item"><input type="radio" name="type" id="type2"><label for="type2"><span>가솔린 1.6 하이브리드 모던 A/T</span></label></div>
+            </div>
+            <!--// content -->
+            <div class="modalBottom">
+              <div class="btns">
+                <button type="button" class="btn primary"><span>확인</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// popup -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '내 또래와 소비비교', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+        <div id="content">
+            <div class="section">
+
+                <div class="mthInfo">
+                    <div class="control">
+                        <div class="intDate">
+                        <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                        <input type="text" id="monthDate" value="6">월
+                        </div>
+                        <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                        <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                    </div>
+                </div>
+                <!--// mthInfo -->
+
+                <div class="outCome">
+                    <h2 class="h2"><span>나신용</span>님은 또래 보다 <p class="ib"><strong class="pColor">100만원</strong> 더 썼어요</p></h2>
+                    <div class="barItem mine">
+                        <span class="name">나신용</span>
+                        <div class="area">
+                            <div class="bar" style="width:48%;"></div>
+                        </div>
+                        <strong><span>400</span>만원</strong>
+                    </div>
+                    <div class="barItem">
+                        <span class="name">30대</span>
+                        <div class="area">
+                            <div class="bar" style="width:65%;"></div>
+                        </div>
+                        <strong><span>300</span>만원</strong>
+                    </div>
+                </div>
+
+                <div class="comp">
+                    <h2 class="h3">내 또래는 <strong class="pColor">외식</strong>에 <p class="ib">가장 많이 써요</p></h2>
+                    <!-- [카테고리 타입명]
+                        ct1 : 교육,
+                        ct2 : 교통, 
+                        ct3 : 쇼핑, 
+                        ct4 : 마트/편의점, 
+                        ct5 : 외식, 
+                        ct6 : 취미/여가, 
+                        ct7 : 생활, 
+                        ct8 : 유흥,
+                        ct9 : 미용,
+                        ct10 : 금융/세금,
+                        ct11 : 기부,
+                        ct12 : 의료/건강 ? 병원,
+                        ct13 : 여행/숙박 
+                    -->
+                    <div class="peerInfo">
+                        <span class="tag ga">30대</span>
+                        <span class="tag ga">나신용</span>
+                    </div>
+                    <ul class="matchList cate">
+                        <li class="ct5">
+                            <span class="mTit">외식</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:50%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">50%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <span class="hidden">나의 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:25%;"><i class="hidden">나의 그래프</i><span class="per">25%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ct3">
+                            <span class="mTit">쇼핑</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:30%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">30%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <span class="hidden">나의 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden">나의 그래프</i><span class="per">5%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ct4">
+                            <span class="mTit">마트/편의점</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:10%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">10%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <span class="hidden">나의 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:30%;"><i class="hidden">나의 그래프</i><span class="per">30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ct13">
+                            <span class="mTit">여행/숙박</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">5%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <span class="hidden">나의 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:45%;"><i class="hidden">나의 그래프</i><span class="per">45%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ct12">
+                            <span class="mTit">의료/건강</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden">30대 그래프</i><span class="per">5%</span></p>                                        
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <span class="hidden">나의 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden">나의 그래프</i><span class="per">5%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--// comp -->
+
+                <!-- 내 데이터가 없는 경우 : 내 또래 데이터만 노출 -->
+                <div class="comp">
+                    <h2 class="h3">내 또래는 <strong class="pColor">외식</strong>에 <p class="ib">가장 많이 써요</p></h2>
+                    <div class="peerInfo">
+                        <span class="tag ga">30대</span>
+                        <span class="tag ga">나신용</span>
+                    </div>
+                     <ul class="matchList cate">
+                        <li class="ct5">
+                            <span class="mTit">외식</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:50%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">50%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont"></div>
+                            </div>
+                        </li>
+                        <li class="ct3">
+                            <span class="mTit">쇼핑</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:30%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">30%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont"></div>
+                            </div>
+                        </li>
+                        <li class="ct4">
+                            <span class="mTit">마트/편의점</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:10%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">10%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont"></div>
+                            </div>
+                        </li>
+                        <li class="ct13">
+                            <span class="mTit">여행/숙박</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden"><i>30대</i> 그래프</i><span class="per">5%</span></p>
+                                    </div>
+                                </div>
+                                <div class="cont"></div>
+                            </div>
+                        </li>
+                        <li class="ct12">
+                            <span class="mTit">의료/건강</span>
+                            <div class="matchBar">
+                                <div class="cont peer">
+                                    <span class="hidden"><i>30대</i> 월평균 비율</span>
+                                    <div class="bar">
+                                        <p class="rate" style="width:5%;"><i class="hidden">30대 그래프</i><span class="per">5%</span></p>                                        
+                                    </div>
+                                </div>
+                                <div class="cont"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--// end -->
+
+                <div class="infoPay comp">
+                    <div class="inItem">
+                        <div class="tit">월 권장 소비액
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>월 권장 소비액은 해당 구매력 구간의 평균 연간 소득과 대출금액을 기반으로 산출된 것입니다.</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <strong class="sum"><span>6,000,000</span>원</strong>
+                        </div>
+                    </div>
+                    <div class="bgBoxLink">
+                        <a href="#none">       
+                          <span class="ib">내 또래보다</span>
+                          <strong><span>500,000</span>만원</strong> 더 벌어요
+                        </a>
+                    </div>
+                </div>
+                <!--// 월 권장 소비액-->
+
+            </div>
+        </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

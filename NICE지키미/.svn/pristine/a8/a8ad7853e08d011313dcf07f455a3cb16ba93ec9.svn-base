@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Board List - Guide</title>
+
+	<script src="../js/bzw/jquery-1.11.3.js"></script>
+  <script src="../js/bzw/jquery-ui.min.js"></script>    
+  <script src="../js/bzw/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/bzw/common.css">
+	<style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}  
+    .guideItem h2 {margin-bottom:15px;}   
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap">
+	<h1 class="guideTit">Board List</h1>
+
+  <div class="guideItem">
+    <h2>div.infoBox</h2>
+    <div class="infoBox">
+      <h4 class="h4">금융회사</h4>
+      <ul class="listDot">
+        <li>
+          <em class="title">활용기관의 예</em>
+          <p class="txt">은행, 카드, 할부금융사, 보험사, 상호 금융(농협, 수협, 신협, 새마을금고),상호저축은행, 등록 대부업체 등</p>
+        </li>
+        <li>
+          <em class="title">활용 사례</em>
+          <p class="txt">대출실행, 카드개설 등의 의사 결정 시 참고지표로 활용</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="guideItem">
+    <h2>dl.infoBox</h2>
+    <dl class="infoBox">
+      <div>
+        <dt>경과일</dt>
+        <dd>1,000일</dd>
+      </div>
+      <div>
+        <dt>연체금액(천원)</dt>
+        <dd>100,000,000</dd>
+      </div>
+      <div>
+        <dt>연체구분</dt>
+        <dd><strong class="sColor">출력값 확인 필요</strong></dd>
+      </div>
+      <div>
+        <dt>발생기관/지점</dt>
+        <dd>나이스평가정보</dd>
+      </div>
+      <div>
+        <dt>업권</dt>
+        <dd>기타</dd>
+      </div>
+    </dl>
+  </div>
+  
+</div>
+</body>
+
+</html>

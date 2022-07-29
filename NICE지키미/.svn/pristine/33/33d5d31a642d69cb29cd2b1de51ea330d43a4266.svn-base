@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/bzw/jquery-1.11.3.js"></script>
+    <script src="../../../js/bzw/jquery-ui.min.js"></script>
+    <script src="../../../js/bzw/ui.common.js"></script>
+  
+    <link rel="stylesheet" href="../../../css/zkm/bzw/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '회원가입', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">약관에 동의해 주세요</h2>
+          </div>          
+
+          <div class="agreement">
+            <div class="agreeTitle">
+              <input type="checkbox" id="agreeAll"><label for="agreeAll"><span>나이스지키미 이용약관 모두 동의</span></label>
+            </div>
+            <div class="agreeSection">
+              <ul class="agreeList">
+                <li>
+                  <div class="uiItem"><input type="checkbox" id="agr01"><label for="agr01">나이스지키미 이용약관 동의 (필수)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+                <li>
+                  <div class="uiItem"><input type="checkbox" id="agr02"><label for="agr02">개인정보수집 및 제공 동의 (필수)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                  <div class="agreeSub">
+                    <a href="#none" class="agrLink">개인정보처리방침 전체보기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="uiItem"><input type="checkbox" id="agr03"><label for="agr03">고유식별정보처리 동의 (필수)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                </li>
+              </ul>
+              <div class="uiAcco">
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr1"><label for="agr1">신용정보 변동 알람 (선택)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <div class="subSelBox">
+                    <p>회원정보, 결제 등 서비스 이용 및 약관변동 소식은 신용정보 변동 알람과 별도로 메일 또는 SMS로 전송해 드려요.</p>
+                    <ul class="agreeItem">
+                      <li>
+                        <input type="checkbox" id="agr11"><label for="agr11">문자/알림톡</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="agr12"><label for="agr12">이메일</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr2"><label for="agr2">마케팅정보 활용동의 (선택)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <div class="subSelBox">
+                    <p>제휴서비스, 마케팅, 이벤트상품 등 프로모션 정보에 대한 알람을 받을 수 있어요.</p>
+                    <div class="agreeSub"><a href="#none" class="agrLink">마케팅정보 활용동의 (선택)</a></div>
+                    <ul class="agreeItem">
+                      <li>
+                        <input type="checkbox" id="agr21"><label for="agr21">문자/알림톡</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="agr22"><label for="agr22">이메일</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr3"><label for="agr3">맞춤형 정보 수신 동의 (선택)</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr31"><label for="agr31">개인(신용)정보 수집 이용동의(맞춤형 정보 수신) (선택)</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr32"><label for="agr32">개인(신용)정보 제공동의(맞춤형 정보 수신) (선택)</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>다음</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

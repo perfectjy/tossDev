@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '나이스지키미', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal1');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal1" class="btn base modalOpen">[팝업]상품가입 이탈방지</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal bottom active" id="modal1">
+			<div class="modalWrap">
+				<button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>지금 그만하면 <span class="pColor">66,000원의 혜택</span>을<br> 받을 수 없어요.</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<div class="iconPara">
+							<p class="isStop">정말로 가입을 중단하시겠어요?</p>
+						</div>
+					</div>
+					<!--// content -->
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn base"><span>나가기</span></button>
+							<button type="button" class="btn primary"><span>이어서 하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

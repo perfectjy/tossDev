@@ -1,0 +1,64 @@
+@charset "euc-kr";
+
+/* skip ********************************************************/
+#skipNavi{position:absolute;width:100%;margin:0 auto;z-index:999}
+#skipNavi a{text-indent:0;background:#000;position:absolute;z-index:1;top:-500px;width:100%;padding:5px 0;text-align:center}
+#skipNavi a:active,
+#skipNavi a:focus{top:0;color:#fff}
+.hidden {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px 1px 1px 1px); font-size:2px; line-height: 0.5; margin:0 !important;}
+
+.mobile #wrap {width:100%;}
+
+/* header -------------------------------------- */
+#header {position:relative; background-color:#fff;}
+.pweb #header {height:120px; border-bottom:1px solid #ddd; z-index:50;}
+.pweb .headerMob {display:none;}
+
+.mobile #header {position:relative;}
+.mobile #header.fixed .headerMob {position:fixed; top:0; left:0; right:0; background-color:#fff; z-index:100;}
+.headerMob {position:relative; height:50px; display:flex; align-items: center; justify-content: center;}
+.headerMob .gnbTitle {font-size:16px; line-height: 22px; font-weight: 700; padding:0 50px;}
+.headerMob .gnbNice {position:absolute; top:18px; left:25px; width:92px; height:15px; background:url(../../img/bzw/common/img_logo.png) no-repeat; background-size: 100%;}
+.headerMob button {position:absolute; top:5px; width:40px; height:40px;}
+.headerMob .btnPrev {left:10px; background:url(../../img/bzw/common/ico/ico_arr_prev.png) no-repeat; background-size: 40px;}
+.headerMob .btnGnb {right:10px; background:url(../../img/bzw/common/ico/ico_menu.png) no-repeat; background-size: 40px;}
+
+/* breadcrumbs (only pc) */
+.breadcrumbsConts {border-bottom:1px solid #000; background-color:#fff;}
+.breadcrumbsConts .breadcrumbsIn {position:relative; width:1180px; margin:0 auto;}
+.breadcrumbsSimple {padding:20px 0;}
+.breadcrumbsSimple ul li {display:inline-flex;}
+
+.breadcrumbsFixed {display:none;}
+#wrap.fixed .breadcrumbsConts {position:fixed; top:0; left:0; right:0; border:0; background-color:#066bfd;}
+#wrap.fixed .breadcrumbsSimple {display:none;}
+#wrap.fixed .breadcrumbsFixed {display:block; padding:15px 0; }
+
+.breadcrumbs>ul:after {display:block; content:''; clear:both;}
+.breadcrumbs>ul>li {float: left;}
+.breadcrumbs>ul>li .sub {display:none;}
+
+/* mobile header (only mobile) */
+.mobile .breadcrumbsWrap {display: none;}
+.mobile .headerHome {display:none;}
+
+/* mobile gnb menu */
+.mbGnbMenu {position:fixed; top:0; right:0; bottom:0; width:100%; background-color: #fff; z-index:110; transform: translate3d(120%,0,0); transition: 0.45s cubic-bezier(0.22,0.61,0.2,1);}
+.mbGnbMenu.show {transform:translate3d(0,0,0); transition-delay:0.15s;}
+.mbGnbMenu .btnGnbClose {position:absolute; top:10px; right:10px; width:30px; height:30px; border:1px solid #000;}
+.gnbBg {position:fixed; top:0; left:0; width:100%; height:100%; opacity: 0; z-index:109; background:rgba(0,0,0,.7); transition: 0.45s cubic-bezier(0.22,0.61,0.2,1) 0.15s;}
+.gnbBg.show {opacity: 1; transition-delay: 0s;}
+
+
+/* content ---------------------------------------*/
+.mobile .content {padding:0 20px;}
+.mobile .content .section {padding:30px 0 70px 0;}
+.pweb .container .section {width:1180px; margin:0 auto;}
+
+
+
+
+
+/* heading */
+.governing {margin-bottom:45px;}
+.governingTitle {font-size:21px; line-height: 30px; font-weight: 700; word-break: keep-all;}

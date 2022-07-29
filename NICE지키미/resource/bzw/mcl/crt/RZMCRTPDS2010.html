@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '주차안심번호 신청', prev: true, menu: true };
+</script>
+</head>
+<body>  
+  <div id="wrap"> 
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div> 
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+    
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">보고서를 받으실 분의 정보를 입력해주세요</h2>
+          </div>
+          
+          <div class="formWrap">
+            <div class="formItem">
+                <label for="inp0" class="titItem">보고서 정보</label>
+                <input type="text" id="inp0" value="2022.06.15일자 개인 신용보고서(영문)" disabled >
+            </div>
+            <div class="comp">
+              <div class="formItem">
+                <label for="inp1" class="titItem">보내는 분 영문명</label>
+                <div class="">
+                  <input type="text" id="inp1" placeholder="영문명을 입력해 주세요">
+                </div>
+                <span class="attExp">영문명을 입력해 주세요.</span>
+              </div>
+              <div class="formItem">
+                <label for="inp2" class="titItem">받는분 이름</label>
+                <div class="">
+                  <input type="text" id="inp2" placeholder="영문명을 입력해 주세요">
+                </div>
+                <span class="attExp">보고서 받는 분을 입력해 주세요</span>
+              </div>
+              <div class="formItem">
+                <label for="email" class="titItem">받는 분  이메일</label>
+                <div class="formEle">
+                    <input type="text" placeholder="이메일 전체 입력" id="email">
+                </div>
+                <span class="attExp">받는 분 이메일을 입력해 주세요.</span>
+                
+              </div>
+              <div class="formItem">
+                <strong class="titItem">주소</strong>
+                <div class="intAddr nosp">
+                  <div class="intPost">
+                      <input type="text" title="우편번호" placeholder="검색으로 입력" disabled>
+                      <div class="intBtn">
+                          <button type="button" class="btn base"><span>주소검색</span></button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <input type="text" title="주소" disabled="disabled">
+                  </div>
+                  <div class="item">
+                      <input type="text" title="상세주소" disabled="disabled">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>주차안심번호 신청</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

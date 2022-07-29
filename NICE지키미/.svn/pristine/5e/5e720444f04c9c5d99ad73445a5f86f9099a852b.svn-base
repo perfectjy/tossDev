@@ -1,0 +1,70 @@
+@charset "euc-kr";
+
+@import './font.css';
+@import './reset.css';
+@import './base.css';
+@import './layout.css';
+@import './popup.css';
+@import './content.css';
+@import './mem.css';
+@import './jy.css';
+@import './ljh.css';
+@import './ko.css';
+
+
+/* common color */
+.pColor{color:#066bfd;}
+.sColor{color:#d50f3c;}
+
+/* munber font */
+.roboto {font-family: 'Roboto'; font-weight: 100; letter-spacing: 0;}
+.robotoB {font-family: 'Roboto'; font-weight: 200; letter-spacing: 0;}
+
+/* 안내 및 완료가이드 */
+.completeWrap {text-align: center;}
+.completeWrap.cert:before {display:block; content:''; height:174px; background:url(../../img/bzw/common/bg/bg_lock_att.png) 50% 0 no-repeat; background-size:150px;}
+.completeWrap.addInfo:before {display:block; content:''; height:174px; background:url(../../img/bzw/common/bg/bg_addinfo.png) 50% 0 no-repeat; background-size:150px;}
+.completeWrap.autoLog:before {display:block; content:''; height:174px; background:url(../../img/bzw/common/bg/bg_autologout.png) 50% 0 no-repeat; background-size:150px;}
+.completeWrap.logOut:before {display:block; content:''; height:174px; background:url(../../img/bzw/common/bg/bg_logout.png) 50% 0 no-repeat; background-size:150px;}
+.completeWrap p {font-size:14px; line-height: 24px;}
+.completeWrap p:not(:first-child) {margin-top:26px;}
+
+/* 자동로그아웃 */
+.autoLogInfo {text-align: center; font-size:14px; line-height: 22px;}
+.autoLogInfo .timeBox .time {display:block; font-size:22px; line-height: 40px; font-weight: 700; padding:7px 0;}
+.autoLogInfo .timeBox .time strong {font-size:30px;}
+.autoLogInfo > strong {display:block; font-size: 19px; line-height: 27px; font-weight: 700; margin-top:40px;}
+
+/* 약관동의 */
+.agreeTitle label {position:relative; display:block; font-size:17px; line-height: 23px; font-weight: 700; padding:16px 20px 19px 52px; border:1px solid #c6cfdb; border-radius: 10px; box-sizing: border-box;}
+.agreeTitle :checked + label {border-color:#066bfd;}
+.agreeTitle :checked + label span:after {content:' 완료'}
+.agreeTitle label:before {position:absolute; content:''; top:17px; left:19px; width:24px; height:24px; border:1px solid #d4d4d4; border-radius: 50%; box-sizing: border-box; -webkit-transition: 0.3s; transition: 0.3s;}
+.agreeTitle :checked + label:before {border-color:#066bfd; background-color:#066bfd}
+.agreeTitle :checked + label:after {position:absolute; content:''; display:block; border-color:#fff; border-style:solid; border-width:0 0 2px 2px; width:10px; height:5px; left:25px; top:24px; transform: rotate(-45deg);}
+
+.agreement .agreeSection {border-top:1px solid #eee; margin-top:20px;}
+.agreement .uiAccoWrap {border:0;}
+.agreement .uiAccoWrap .uiAccoHeader {padding:0 35px 0 5px; margin-top:25px;}
+.agreement .uiAccoWrap .uiAccoHeader .uiBtn {position:absolute; top:-3px; right:0; width:30px; height:30px;}
+.agreement .uiAccoWrap .uiAccoHeader .uiBtn:after {top:4px;}
+.agreement .uiAccoWrap .uiAccoHeader .uiBtn.active:before {display:none;}
+.agreement .uiAccoWrap .uiAccoContent {background-color:#fff; padding:23px 2px 22px 23px; border-color:#eee;}
+
+.agreeItem li {position:relative; padding:7px 0;}
+.agreeItem label {position:relative; display:inline-block;font-size:15px; line-height: 23px; padding:0 40px 0 28px;}
+.agreeItem input[type=checkbox] + label:after {position:absolute; content:''; display:block; border-color:#bababa; border-style:solid; border-width:0 0 2px 2px; width:10px; height:5px; left:1px; top:7px; transform: rotate(-45deg);}
+.agreeItem input[type=checkbox]:checked + label:after {border-color:#066bfd;}
+.agreeItem li .uiBtn {position:absolute; width:24px; height:24px; top:7px; right:0;overflow:hidden;} 
+.agreeItem li .uiBtn:after {position: absolute;left:7px; top:6px; content: '';width: 8px;height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg);}
+
+.agreeList li {position:relative; margin-top:25px; padding:0 35px 0 5px;}
+.agreeList li .uiBtn {position:absolute; width:24px; height:24px; top:0; right:0;overflow:hidden;}
+.agreeList li .uiBtn:after {position: absolute;left:7px; top:6px; content: '';width: 8px;height: 8px; border-top: 2px solid #bababa; border-right: 2px solid #bababa; transform: rotate(45deg);}
+
+.agreement .agreeList .agreeSub {padding:17px 0 0 34px;}
+.agreement .agrLink {display:inline-block; font-size:13px; line-height: 17px; color:#767676; border-bottom:1px solid #767676;}
+.agreement .subSelBox p {line-height: 22px; margin-bottom:13px;}
+.agreement .subSelBox .agreeSub {margin-bottom:24px;}
+.agreement .subSelBox .agreeItem li {display:inline-block;}
+
