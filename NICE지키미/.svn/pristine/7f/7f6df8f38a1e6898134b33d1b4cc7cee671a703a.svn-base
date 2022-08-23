@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script>
+        $(function() {
+            modal.openModal('#modalid2');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="guideWrap">
+
+        <!-- <div class="code">
+            <code>
+                <p>
+
+                </p>
+            </code>
+        </div> -->
+        <div class="guideItem">
+            <a href="#modalid2" class="btn base modalOpen">클릭하면 모달팝업</a>
+        </div>
+
+        <div class="uiModal modal" id="modalid2">
+            <div class="modalWrap">
+                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>마케팅정보 수신동의</h1>
+                </div>
+                <div class="modalContent">
+                    <!-- content -->
+                    <div class="inner">
+                        <div class="termsWrap">
+                            <p class="msg1">
+                                NICE지키미의 마케팅을 위해 아래와 같이 수집된 개인정보의 마케팅 정보 활용동의를 받고자 합니다. 
+                                개인정보보호법 제22조 제4항에 의해 선택정보 사항에 대해서는 동의하지 않으셔도 서비스를 이용하실 수 있습니다.
+                            </p>
+                            <dl class="decimal">
+                                <dt>1. 개인정보 수집 및 이용 목적</dt>
+                                <dd>고객이 동의한 전자적 전송 매체(문자, 이메일, 앱푸시 등)를 통하여 NICE지키미의 상품/서비스/이벤트의 마케팅 및 광고에 활용</dd>
+                                <dt>2. 이용하는 개인정보 항목</dt>
+                                <dd>이름, 생년월일, 휴대폰번호, 이메일 주소</dd>
+                                <dt>3. 개인정보 활용 기간</dt>
+                                <dd>프로모션정보 알람 수신거부 또는 회원 탈퇴 시까지 활용하며, 활용기간 종료 즉시 개인 정보 파기</dd>
+                                <dt>4. 시행일</dt>
+                                <dd>2021년 5월 12일 프로모션정보 알림 수신거부 시 본 동의 또한 철회된 것으로 간주합니다. 회원정보, 결제 등 서비스 이용 및 약관 변동 소식은 본 동의와 무관하게 제공합니다.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--// content -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

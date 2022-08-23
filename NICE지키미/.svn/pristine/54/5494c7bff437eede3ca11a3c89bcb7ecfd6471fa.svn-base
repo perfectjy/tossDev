@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미:고객센터</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid2');
+
+            $('.btns .btn.primary').on('click', function(){
+                modal.hideModal('#modalid2');
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid2" class="btn base modalOpen">[팝업]받는 분 정보</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal modal" id="modalid2">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>받는 분 정보</h1>
+                </div>
+                <div class="modalContent">
+                    <!-- content -->
+                    <div class="inner">
+                        <table class="tblTerm">
+                            <caption>개인신용보고서(한글)</caption>
+                            <colgroup>
+                                <col style="width: 33%" />
+                                <col style="width: 67%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">받는 분</th>
+                                    <td>
+                                        <p class="emp"><em>홍길동</em></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">이메일</th>
+                                    <td>
+                                        <p class="emp"><em>Ke291ss8@naver.com</em></p>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <th scope="col">발송방법</th>
+                                    <td>
+                                        <p class="emp"><em>온라인</em></p>
+                                    </td>
+                                    <td><p class="emp"><em>우편(서울특별시 영등포구 은행로17-여의도동14-33)</em></p></td>
+                                </tr> -->
+                                <tr>
+                                    <th scope="col">발송일</th>
+                                    <td>
+                                        <p class="emp"><em>2018-01-28</em></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">상대방 열람여부</th>
+                                    <td>
+                                        <p class="emp"><em>열람(1)</em></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// content -->
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>확인</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script>
+        $(function () {
+            modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">금융자산 연동 실패</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+
+                <div class="modalHeader">
+                    <h1 class="hidden">금융자산 연동 실패</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="headS">
+                            <h2 class="h2">
+                                나신용님<br> <strong class="pColor">은행명</strong>의 연동정보가 더 이상 유효하지가 않네요.
+                            </h2>
+                        </div>
+                        
+                        <div class="txtPara">
+                            <p>정보갱신을 위해 재연동을 시작합니다.</p>
+                        </div>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>아니오</span></button>
+                            <button type="button" class="btn primary"><span>예</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"><script type="text/javascript" src="../../../bzw/inc/footer.js"></script></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

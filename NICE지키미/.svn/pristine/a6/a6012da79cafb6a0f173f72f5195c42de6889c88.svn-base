@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미:고객센터</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid2');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid2" class="btn base modalOpen">확인 가능한 신용정보</a>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modalid2">
+            <div class="modalWrap">
+                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>확인 가능한 신용정보</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="governing">
+                            <h2 class="governingTitle">
+                                사업자 신용보고서
+                            </h2>
+                        </div>
+                        <dl class="reportc">
+                            <div>
+                                <dt>개인사업자 신용점수/등급</dt>
+                                <dd>개인사업자 신용점수, 등급, 신용평점누적순위, 불량률, 긍정요인, 부정요인</dd>
+                            </div>
+                            <div>
+                                <dt>개설정보(한국신용정보원/NICE평가정보)</dt>
+                                <dd></dd>
+                            </div>
+                            <div>
+                                <dt>채무불이행(한국신용정보원/NICE평가정보)</dt>
+                                <dd></dd>
+                            </div>
+                            <div>
+                                <dt>여신(한국신용정보원 기업여신일보) </dt>
+                                <dd></dd>
+                            </div>
+                        </dl>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

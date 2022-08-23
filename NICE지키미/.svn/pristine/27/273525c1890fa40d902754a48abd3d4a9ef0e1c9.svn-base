@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '대출한도예측', home: false, prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">$나신용$님의 예상 대출한도를 <br class="mob">알아본 결과예요.</h2>
+                    </div>
+                    
+                    <div class="lineChartWrap">
+                        <div class="chartInner">
+                            <div class="item silver">
+                                <div class="account">7,500만원</div>
+                                <div class="lineChart"></div>
+                                <div class="count">은행<span class="num">1</span></div>
+                            </div>
+                            <div class="item gold">
+                                <div class="account">1억 7,000만원</div>
+                                <div class="lineChart"></div>
+                                <div class="count">저축은행<span class="num">4</span></div>
+                            </div>
+                            <div class="item bronze"><!-- acount 가 0일 경우 출력 안함 -->
+                                <div class="account">3,200만원</div>
+                                <div class="lineChart"></div>
+                                <div class="count">캐피탈<span class="num">3</span></div>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            현 직장 3개월 이상 재직한 경우, <strong class="pColor">햇살론/사잇돌2 신청 가능</strong>해요. 
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="comp">
+                        <h3 class="h3">아래 기관의 대출상품을 확인하세요.</h3>
+
+                        <div class="loanPossibleList">
+                            <ul class="bankList">
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kakao.png" alt=""></i>
+                                    <span>카카오<br>뱅크</span>
+                                </li>
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+                                    <span>토스</span>
+                                </li>
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_naver.png" alt=""></i>
+                                    <span>네이버<br>파이낸셜</span>
+                                </li>
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                    <span>국민은행</span>
+                                </li>
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_welcom.png" alt=""></i>
+                                    <span>웰컴<br>저축은행</span>
+                                </li>
+                                <li>
+                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_welcom.png" alt=""></i>
+                                    <span>웰컴<br>저축은행</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btnConts">
+                            <button type="button" class="btn base"><span>맞춤대출 알아보기</span></button>
+                        </div>
+
+                        <div class="uiAcco infoTip">
+                            <div class="uiAccoHeader">
+                                <button type="button" class="uiBtn">
+                                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                </button>
+                            </div>
+                            <div class="uiAccoContent">
+                                <ul class="listDot">
+                                    <li>예상 대출한도는 실제 금융기간이 제공하는 대출한도와 차이가 있을 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>다시 예측하기</span></button>
+						</div>
+					</div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

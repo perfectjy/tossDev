@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터>신용상담신청</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="tabWrap t1">
+                        <ul class="tabList">
+                            <li class="tab active"><a href="#tab01">신용상담신청</a></li>
+                            <li class="tab"><a href="#tab02">상담내역</a></li>
+                        </ul>
+                        <div class="tabConts">
+                            <div class="tabPanel" id="tab01">
+                                <div class="tabWrap t2">
+                                    <ul class="tabList">
+                                        <li class="tab"><a href="#tabIn01">신용정보 정정청구</a></li>
+                                        <li class="tab"><a href="#tabIn02">신용점수 이의신청</a></li>
+                                        <li class="tab active"><a href="#tabIn03">신용상담</a></li>
+                                    </ul>
+                                    <div class="tabConts">
+                                        <h2 class="hidden">신용정보 정정청구</h2>
+                                        <div class="tabPanel" id="tabIn01">
+                                            <div class="formWrap">
+                                                <div class="formItem">
+                                                    <strong class="titItem">정정청구 목적</strong>
+                                                    <div class="uiGroup">
+                                                        <div class="uiItem">
+                                                            <input type="radio" name="period" id="period1" checked="checked">
+                                                            <label for="period1"><span>신용정보 삭제</span></label>
+                                                        </div>
+                                                        <div class="uiItem">
+                                                            <input type="radio" name="period" id="period1_1">
+                                                            <label for="period1_1"><span>신용정보 수정</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="wriTxtarea1" class="titItem">내 신용정보 중 잘못된 내용</label>
+                                                    <div class="formEle">
+                                                        <textarea class="textarea" id="wriTxtarea1" rows="7" placeholder="본인 신용정보 확인 날짜(연, 월, 일)를 포함하여 내용 입력"></textarea>
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 2,000자</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="wriTxtarea2" class="titItem">정정할 내용</label>
+                                                    <div class="formEle">
+                                                        <textarea class="textarea" id="wriTxtarea2" rows="7" placeholder="내용입력"></textarea>
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 2,000자</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="wriTxtarea3" class="titItem">정정 사유</label>
+                                                    <div class="formEle">
+                                                        <textarea class="textarea" id="wriTxtarea3" rows="7" placeholder="내용입력"></textarea>
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 2,000자</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">이메일</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">ni*****@netive.co.kr</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEle">
+                                                        <input type="text" title="변경 이메일" placeholder="변경 이메일 입력">
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">휴대전화번호</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">09012**56**</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                        <p class="guideTxt">개인정보를 변경하면 회원정보도 함께 바뀝니다.</p>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEdit">
+                                                        <div class="formEle">
+                                                            <select title="통신사">
+                                                                <option>SKT</option>
+                                                                <option>KT</option>
+                                                            </select>
+                                                            <div class="intBtnType">
+                                                                <input type="tel" id="hpnum" placeholder="- 없이 숫자만 입력">
+                                                                <div class="intBtn">
+                                                                    <button type="button" class="btn base"><span>인증번호 발송</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="intBtnType">
+                                                            <input type="tel" id="number" placeholder="인증번호 입력">
+                                                            <span class="time">03:00</span>
+                                                            <div class="intBtn">
+                                                                <button type="button" class="btn base"><span>확인</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->                                                    
+                                                </div>	
+                                                
+                                                <ul class="agreeList">
+                                                    <li>
+                                                        <div class="uiItem"><input type="checkbox" id="agr01"><label for="agr01">개인정보 제공 및 활용동의</label></div>
+                                                        <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="uiAcco infoTip">
+                                                    <div class="uiAccoHeader open">
+                                                        <button type="button" class="uiBtn">
+                                                            <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="uiAccoContent">
+                                                        <ul class="listDot">
+                                                            <li>각 입력항목을 작성하고 [상담 신청] 버튼을 누르면 NICE평가정보에 ‘신용정보 정정신청서’가 제출됩니다.</li>
+                                                            <li>정청구를 받은 후 신용정보회사 등에서는 사실여부의 조사 및 확인을 위해 필요한 경우 신용정보 주체(정정청구 신청 고객)에게 관련 확인자료를 요청할 수 있습니다. <br>
+                                                                <em>관련 서류 및 확인자료 제출: (팩스) 02-2122-8060</em>
+                                                            </li>
+                                                            <li>신용정보집중기관 및 신용정보회사는 신용정보 주체의 정정청구에 따른 사실 관계를 확인하기 위해 필요한 경우 해당 신용정보의 근거가 된 정보의 사실 여부를 입증할 수 있는 자료를 요청할 수 있습니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="bottomActiveBtns">
+                                                    <div class="btns">
+                                                        <button type="button"
+                                                            class="btn primary"><span>상담 신청</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabPanel" id="tabIn02">
+                                            <h2 class="hidden">신용정보 이의신청</h2>
+                                            <div class="governing">
+                                                <h2 class="governingTitle">문의하기 전 확인해 보세요.</h2>
+                                            </div>
+                                            <div class="uiAcco info">
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;신용점수&#93; 신용점수가 타사와 달라요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;장기연체&#47;CB연체정보&#93; 연체의 기준이 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;대출&#47;채무보증정보&#93; 내 대출정보가 내가 알고 있는 내용과 달라요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;카드실적정보&#93; 카드 실적은 신용점수에 어떻게 반영되는지 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;공공정보&#93; 공공정보는 어떤 사유로 등록되고 활용되는지 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                            </div>
+
+                                            <div class="formWrap spm">
+                                                <div class="formItem">
+                                                    <label for="inpType1" class="titItem">이의신청 유형</label>
+                                                    <div class="formEle">
+                                                        <select id="inpType1">
+                                                            <option>신용점수 산출 사유</option>
+                                                            <option>신용점수 변경 사유</option>
+                                                            <option>신용점수 상향 방법</option>
+                                                            <option>CB사간 신용점수 차이</option>
+                                                            <option>기타</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="wriTxtarea4" class="titItem">이의신청 내용</label>
+                                                    <div class="formEle">
+                                                        <textarea class="textarea" id="wriTxtarea4" rows="7" placeholder="내용입력"></textarea>
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 2,000</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">이메일</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">ni*****@netive.co.kr</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEle">
+                                                        <input type="text" title="변경 이메일" placeholder="변경 이메일 입력">
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">휴대전화번호</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">09012**56**</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                        <p class="guideTxt">개인정보를 변경하면 회원정보도 함께 바뀝니다.</p>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEdit">
+                                                        <div class="formEle">
+                                                            <select title="통신사">
+                                                                <option>SKT</option>
+                                                                <option>KT</option>
+                                                            </select>
+                                                            <div class="intBtnType">
+                                                                <input type="tel" id="hpnum" placeholder="- 없이 숫자만 입력">
+                                                                <div class="intBtn">
+                                                                    <button type="button" class="btn base"><span>인증번호 발송</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="intBtnType">
+                                                            <input type="tel" id="number" placeholder="인증번호 입력">
+                                                            <span class="time">03:00</span>
+                                                            <div class="intBtn">
+                                                                <button type="button" class="btn base"><span>확인</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->										
+                                                </div>	                                               
+
+                                            </div>
+                                            <ul class="agreeList">
+                                                <li>
+                                                    <div class="uiItem"><input type="checkbox" id="agr02"><label for="agr02">개인정보 제공 및 활용동의</label></div>
+                                                    <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                                </li>
+                                            </ul>
+                                            <div class="uiAcco infoTip">
+                                                <div class="uiAccoHeader open">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    <ul class="listDot">
+                                                        <li>의뢰하신 이의신청 내용이 사실과 다른 것이 확인될 경우, 이의신청이 거부될 수 있으며 이미 정정된 정보는
+                                                            다시 복원 될 수 있습니다.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="bottomActiveBtns">
+                                                <div class="btns">
+                                                    <button type="button" class="btn primary"><span>상담 신청</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabPanel" id="tabIn03">
+                                            <h2 class="hidden">신용상담</h2>
+                                            <div class="governing">
+                                                <h2 class="governingTitle">문의하기 전 확인해 보세요.</h2>
+                                            </div>
+                                            <div class="uiAcco info">
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;신용점수&#93; 신용점수가 타사와 달라요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;장기연체&#47;CB연체정보&#93; 연체의 기준이 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;대출&#47;채무보증정보&#93; 내 대출정보가 내가 알고 있는 내용과 달라요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;카드실적정보&#93; 카드 실적은 신용점수에 어떻게 반영되는지 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                                <div class="uiAccoHeader">
+                                                    <button type="button" class="uiBtn">
+                                                        <span class="accoTitle">&#91;공공정보&#93; 공공정보는 어떤 사유로 등록되고 활용되는지 궁금해요.</span><span class="hidden">펼치기</span>
+                                                    </button>
+                                                </div>
+                                                <div class="uiAccoContent">
+                                                    내용
+                                                </div>
+                                            </div>
+                                            <div class="formWrap spm">
+                                                <div class="formItem">
+                                                    <label for="inpType2" class="titItem">상담 유형</label>
+                                                    <div class="formEle">
+                                                        <select id="inpType2">
+                                                            <option>신용정보관리 및 열람</option>
+                                                            <option>신용점수</option>
+                                                            <option>장기연체정보</option>
+                                                            <option>대출/보증/단기카드대출(현금서비스)</option>
+                                                            <option>신용개설/신용조회기록</option>
+                                                            <option>공공정보</option>
+                                                            <option>신용회복지원제도</option>
+                                                            <option>단기연체정보</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="inpTitle" class="titItem">제목</label>
+                                                    <div class="formEle">
+                                                        <input id="inpTitle" type="text" placeholder="제목 입력">
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 50</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <label for="wriTxtarea5" class="titItem">내용</label>
+                                                    <div class="formEle">
+                                                        <textarea class="textarea" id="wriTxtarea5" rows="7" placeholder="내용입력"></textarea>
+                                                    </div>
+                                                    <div class="byteLimit"><em>0</em>/ 2,000</div>
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">이메일</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">ni*****@netive.co.kr</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEle">
+                                                        <input type="text" title="변경 이메일" placeholder="변경 이메일 입력">
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->
+                                                </div>
+                                                <div class="formItem">
+                                                    <strong class="titItem">휴대전화번호</strong>
+                                                    <div class="formInfo">
+                                                        <p class="value">09012**56**</p>
+                                                        <button type="button" class="btnLine"><span>변경하기</span></button>
+                                                        <p class="guideTxt">개인정보를 변경하면 회원정보도 함께 바뀝니다.</p>
+                                                    </div>
+                                                    <!-- 변경하기 버튼 클릭시 입력영역 -->
+                                                    <div class="formEdit">
+                                                        <div class="formEle">
+                                                            <select title="통신사">
+                                                                <option>SKT</option>
+                                                                <option>KT</option>
+                                                            </select>
+                                                            <div class="intBtnType">
+                                                                <input type="tel" id="hpnum" placeholder="- 없이 숫자만 입력">
+                                                                <div class="intBtn">
+                                                                    <button type="button" class="btn base"><span>인증번호 발송</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="intBtnType">
+                                                            <input type="tel" id="number" placeholder="인증번호 입력">
+                                                            <span class="time">03:00</span>
+                                                            <div class="intBtn">
+                                                                <button type="button" class="btn base"><span>확인</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="formInfoBtn">
+                                                            <button type="button" class="btn base"><span>취소</span></button>
+                                                            <button type="button" class="btn base"><span>수정</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--//-->										
+                                                </div>	                                              
+                                            </div>
+                                            <div class="bottomActiveBtns">
+                                                <div class="btns">
+                                                    <button type="button" class="btn primary"><span>상담 신청</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabPanel" id="tab02">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

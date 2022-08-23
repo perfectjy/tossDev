@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '카드상세', prev: true, menu: true };
+        $(function () {
+            modal.openModal('#accountBank');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <a href="#accountBank" class="btn base modalOpen">개인 신용보고서(한글)</a>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+
+        <div class="uiModal modal" id="accountBank">
+            <div class="modalWrap">
+                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1></h1>
+                </div>
+                <div class="modalContent">
+                    <!-- content -->
+                    <div class="inner">
+                        <div class="txtPara">
+                            <p><strong>현재 이용 중인 지키미케어십으로 개인 신용보고서를 열람할 수 있습니다.</strong></p>
+                            <p>열람 시점부터 30일간 5회 열람할 수 있습니다. <br>
+                                보고서를 열람하시겠어요?</p>
+                        </div>
+                    </div>          
+                    <!--// content -->
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>보고서 열람</span></button>
+                    </div>
+                </div>
+            </div>				
+        </div>
+        
+    </div>
+</body>
+
+</html>

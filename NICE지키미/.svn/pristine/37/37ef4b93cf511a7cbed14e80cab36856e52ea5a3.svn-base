@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="stepList">
+						<div class="stepBar"><span style="width:calc( 100% * (5/8) )"></span></div>
+						<div class="steps">
+							<span class="hidden">현재단계</span><strong class="num">5</strong>
+							<span class="hidden">전체단계</span><strong>8</strong>
+						</div>
+					</div>
+
+					<div class="governing">
+						<h2 class="governingTitle">
+							나신용님의 자산을 연결했어요
+						</h2>
+					</div>
+					<div class="h4"><strong>마이데이터에 등록할 자산을 선택해 주세요.</strong>
+						<div class="tooltipWrap">
+							<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+							<div class="toolTip">
+								<i></i>
+								<p>찾는 자산이 없다면 해당 기관에서 시스템 점검, 일시적 장애로 연결이 안 된 경우일 수 있으니 잠시 후 다시 시도해 주세요.</p>
+								<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="mngAsset">
+						<div class="uiItemTit">
+							<div class="uiItem">
+								<input type="checkbox" name="period" id="bank0">
+								<label for="bank0"><span>은행</span></label>
+							</div>
+						</div>
+						<div class="inList">
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader open">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+										<p>국민은행<span>2</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank" id="bank1" checked="checked">
+                                                <label for="bank1">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>
+											
+										</li>
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank" id="bank2" checked="checked" disabled="disabled">
+                                                <label for="bank2">
+                                                    <strong>AMA+급여 저축예금<em class="status">관리중</em></strong>
+                                                    <span>1002841184273</span>
+                                                </label>
+                                            </div>											
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+										<p>국민은행<span>2</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li class="">
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank0" id="bank01">
+                                                <label for="bank01">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>
+											
+										</li>
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank0" id="bank02">
+                                                <label for="bank02">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                                <span class="status"><em class="hidden">관리중</em></span>
+                                            </div>											
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="uiItemTit">
+							<div class="uiItem">
+								<input type="checkbox" name="period" id="invest0">
+								<label for="invest0"><span>투자</span></label>
+							</div>
+						</div>
+						<div class="inList">
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+										<p>토스<span>1</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="invest" id="invest1">
+                                                <label for="invest1">
+                                                    <strong>위탁</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>											
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>6개 등록하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

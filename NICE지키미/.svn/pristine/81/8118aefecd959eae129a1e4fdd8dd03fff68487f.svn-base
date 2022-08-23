@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '대출현황', home: false, prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="familyTab">
+                        <ul>
+                            <li class="active">
+                                <button type="button">
+                                    <span><img src="../../../img/zkm/rzm/emoji/ico_family01_on.png" alt=""></span>
+                                </button>
+                                <strong>나신용</strong>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <span><img src="../../../img/zkm/rzm/emoji/ico_family01.png" alt=""></span>
+                                </button>
+                                <strong>가족명</strong>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <span><img src="../../../img/zkm/rzm/emoji/ico_family02.png" alt=""></span>
+                                </button>
+                                <strong>가족명</strong>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <span><img src="../../../img/zkm/rzm/emoji/ico_family03.png" alt=""></span>
+                                </button>
+                                <strong>가족명</strong>
+                            </li>
+                            <!-- <li>
+                <button type="button">
+                    <span><img src="../../../img/zkm/rzm/emoji/ico_family02.png" alt=""></span>
+                </button>
+                <strong>가족명</strong>
+              </li> -->
+                        </ul>
+                        <button type="button" class="btnAdd"><span class="hidden">인원추가</span></button>
+                    </div>
+                    <div class="vBarInfoWrap">
+                        <div class="totalInfo">
+                            <strong class="thick">총 대출</strong><span class="cntNum">10</span>
+                            <div class="amount"><strong>24,000,000</strong> 원</div>
+                        </div>
+                        <div class="stackedBar">
+                            <span class="bar1" style="width:38%"></span>
+                            <span class="bar2" style="width:25%"></span>
+                            <span class="bar3" style="width:16%"></span>
+                            <span class="bar4" style="width:12%"></span>
+                            <span class="bar5" style="width:9%"></span>
+                        </div>
+                        <dl class="stackedInfo">
+                            <dt class="bar1">신용/담보/카드장기</dt>
+                            <dd><strong>10,000,000</strong> 원</dd>
+                            <dt class="bar2">카드단기</dt>
+                            <dd><strong>8,000,000</strong> 원</dd>
+                            <dt class="bar3">학자금</dt>
+                            <dd><strong>7,000,000</strong> 원</dd>
+                            <dt class="bar4">대부업</dt>
+                            <dd><strong>4,000,000</strong> 원</dd>
+                            <dt class="bar5">마이데이터</dt>
+                            <dd><strong>1,000,000</strong> 원</dd>
+                        </dl>
+                    </div>
+                    <div class="comp">
+                        <div class="takeWrap">
+                            <h2 class="h2">나신용님의 대출 내역</h2>
+                            <div class="ancTab">
+                                <button type="button"><span>NICE평가정보원</span></button>
+                                <button type="button"><span>신용정보원</span></button>
+                                <button type="button" class="active"><span>마이데이터</span></button>
+                            </div>
+                            <div class="myBefore">
+                                <p>마이데이터 연결 후 확인할 수 있어요.</p>
+                                <button type="button" class="btn base"><span>지금 연결하기</span></button>
+                            </div>
+                            <div class="topListInfo">
+                                <span class="cnt">총 <i>2</i>건</span>
+                            </div>
+                            <ul class="listWrap">
+                                <ul class="paylistWrap">
+                                    <li>
+                                        <a href="#none">
+                                            <div class="payThing">
+                                                <div class="orgCase">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                                    <strong class="thick">국민카드</strong>
+                                                    <p>내집마련장기대출-주택중도금대출(비대면 비과세 대출)</p>
+                                                </div>
+                                                <span class="rate"><strong>2.9</strong>%</span>
+                                                <p class="amount"><strong>3,000,000</strong> 원</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <div class="payThing">
+                                                <div class="orgCase">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_nh.png" alt=""></i>
+                                                    <strong class="thick">농협카드</strong>
+                                                    <p>계속 쭉쭉 쓰는 마이너스 입출금통장</p>
+                                                </div>
+                                                <span class="rate"><strong>2.9</strong>%</span>
+                                                <p class="amount"><strong>6,000,000</strong> 원</p>
+                                            </div> 
+                                        </a>                     
+                                    </li>
+                                </ul>                                
+                            </ul>
+                            <div class="btnMoreBox">
+                                <button type="button" class="btn more"><span>더보기</span></button>
+                            </div>
+
+                            <div class="uiAcco infoWht">
+                                <div class="uiAccoHeader">
+                                    <button type="button" class="uiBtn">
+                                        <span class="accoTitle">대출 없앤 내역 <span class="cntNum">2</span></span><span class="hidden">펼치기</span>
+                                    </button>
+                                </div>
+                                <div class="uiAccoContent">
+                                    <div class="paylistWrap">
+                                        <a href="#none">
+                                            <div class="payThing">
+                                                <div class="orgCase">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                                    <strong class="thick">국민카드</strong>
+                                                    <p>담보대출</p>
+                                                </div>
+                                                <p class="amount"><strong>3,000,000</strong> 원</p>
+                                                <span class="status">2022.01.06 상환완료</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="uiAccoHeader">
+                                    <button type="button" class="uiBtn">
+                                        <span class="accoTitle">채무보증내역 <span class="cntNum">3</span></span><span class="hidden">펼치기</span>
+                                    </button>
+                                </div>
+                                <div class="uiAccoContent">
+                                    <dl class="conList">
+                                        <dt><strong class="bColor">보증금액</strong></dt>
+                                        <dd><strong>100,000,000</strong>원</dd>
+                                        <dt>개설일</dt>
+                                        <dd>2022.01.06</dd>
+                                        <dt>발생기관</dt>
+                                        <dd>한국은행</dd>
+                                        <dt>지점</dt>
+                                        <dd>인천 서구지점</dd>
+                                        <dt>업권</dt>
+                                        <dd>은행</dd>
+                                    </dl>
+                                    <dl class="conList">
+                                        <dt><strong class="bColor">보증금액</strong>
+                                            <div class="tooltipWrap">
+                                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                                <div class="toolTip">
+                                                    <i></i>
+                                                    <p>대부업 채무보증내역의 경우, 총 보증금액만 표시됩니다.</p>
+                                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                                </div>
+                                            </div>
+                                        </dt>
+                                        <dd><strong>100,000,000</strong>원</dd>
+                                        <dt>업권</dt>
+                                        <dd>대부업</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#none" class="h3 link">
+                            <strong class="pColor">나와 비슷한 나이/신용점수</strong>를 가진 <br>
+                            사람들은 얼만큼 대출을 받았을까?
+                        </a>
+                        <div class="verBarGraph ty1">
+                            <ul>
+                                <li class="primary">
+                                    <em>나신용</em>
+                                    <strong class="bar" style="height:43%"></strong>
+                                </li>
+                                <li>
+                                    <em>30대 여자</em>
+                                    <strong class="bar" style="height:60%"><span><strong>3,400</strong>만원</span></strong>
+                                </li>
+                                <li>
+                                    <em>920점</em>
+                                    <strong class="bar" style="height:55%"><span><strong>2,800</strong>만원</span></strong>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="banZip">
+                            <h2 class="h3">대출을 <strong class="pColor">더 잘 빌리는</strong> 노하우</h2>
+                            <div class="verBanBox">
+                                <a href="#none" class="ico1">내 대출한도 <br>얼마일까?</a>
+                                <a href="#none" class="ico2">신용점수를 <br>올려보세요.</a>
+                            </div>
+                            <a href="#none" class="bnrBox take">
+                                <span>모든 대출을 상환하면</span>
+                                <p class="tit">신용점수가 최대 <strong class="wonder">?</strong> 올라가요.</p>
+                                <!-- <p class="tit"><strong>신용점수가 최대 50점 올라가요.</strong></p> -->
+                            </a>
+                        </div>
+
+                        <div class="uiAcco infoTip">
+                            <div class="uiAccoHeader">          
+                                <button type="button" class="uiBtn">
+                                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                </button>
+                            </div>
+                            <div class="uiAccoContent">
+                                <ul class="listDot">
+                                    <!--나이스데이터(IF008) 대출 중 마이데이터에 연결되어 이자상환액이 표현되는 계좌가 있을 경우만 노출  -->
+                                    <li>전월 원금상환액 및 이자상환액은 당월 15일 이후 집계됩니다. 집계 전 데이터는 '-'로 표시됩니다.</li>
+                                    <!-- //-->
+                                    <!-- 마이너스 통장인 경우에만 표시 -->
+                                    <li>마이너스 통장은 평균 잔액이 제공되며, 실제 잔액과 다를 수 있습니다.</li>
+                                    <!-- //-->
+                                    <li>본 정보는 금융기관이 직접 등록한 실적을 기준으로 제공됩니다. 금융기관이 등록하지 않은 정보는 표시되지 않습니다.</li>
+                                    <li>개인회생 및 신용회복절차를 통해 분할상환이 이루어진 경우, 개인회생이 완결된 시점에 대출정보가 해지됩니다.</li>
+                                    <li>면책이 확정된 경우 결정 후 2~3주 이내에 대출정보가 해지됩니다. 만약 처리 시일이 지난 후에도 대출정보가 나타난다면 각 대출기관으로 면책판결문을 보내 대출정보 해지를 요구할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

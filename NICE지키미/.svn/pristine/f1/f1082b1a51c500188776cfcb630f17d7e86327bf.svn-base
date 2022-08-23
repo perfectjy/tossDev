@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '카드찾기', prev: true, menu: true };
+
+        $(function () {
+            $('#slider1').on('change',function(){
+                console.log($(this).val());
+                var valText, 
+                    $vTxt = $('.rangeSlider').find('.setVal');
+
+                if ($(this).val() == '0') {
+                    valText = $(this).next('.scope').find('.start').text();
+                } else if ($(this).val() === '1') {
+                    valText = $(this).next('.scope').find('.middle').text();
+                } else if ($(this).val() == '2') {
+                    valText = $(this).next('.scope').find('.end').text();
+                }
+                console.log(valText)
+
+                $vTxt.html(valText);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="intSearch">
+                        <input type="text" class="inpTxt" placeholder="카드사, 카드명, 사용처, 혜택 검색"
+                            title="드사, 카드명, 사용처, 혜택 검색">
+                        <button type="button" class="btnSearch"><span class="hidden">검색</span></button>
+                    </div>
+
+                    <div class="srcLineBox">
+                        <div class="formWrap">
+                            <div class="formItem">
+                                <span class="titItem">카드 종류</span>
+                                <div class="rdoGroup">
+                                    <div class="item"><input type="radio" name="type" id="type1"
+                                            checked="checked"><label for="type1"><span>신용</span></label></div>
+                                    <div class="item"><input type="radio" name="type" id="type2"><label
+                                            for="type2"><span>체크</span></label></div>
+                                    <div class="item"><input type="radio" name="type" id="type3"><label
+                                                for="type3"><span>하이브리드</span></label></div>
+                                </div>
+                            </div>
+                            <div class="formItem">
+                                <span class="titItem">주요 혜택</span>
+                                <div class="rdoGroup">
+                                    <div class="item"><input type="radio" name="benefit" id="fit1"
+                                            checked="checked"><label for="fit1"><span>할인</span></label></div>
+                                    <div class="item"><input type="radio" name="benefit" id="fit2"><label
+                                            for="fit2"><span>적립</span></label></div>
+                                    <div class="item"><input type="radio" name="benefit" id="fit3"><label
+                                            for="fit3"><span>마일리지</span></label></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="infoToggle">
+                            <div class="tit">
+                                <a href="#info1" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                            </div>
+                            <div id="info1" class="infoTogConts">
+                                <div class="formWrap">
+                                    <div class="formItem">
+                                        <span class="titItem">자주 쓰는 곳</span>
+                                        <div class="rdoGroup col3">
+                                            <div class="item"><input type="checkbox" name="use" id="use1"><label
+                                                    for="use1"><span>외식</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use2"><label
+                                                    for="use2"><span>커피/간식</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use3"><label
+                                                    for="use3"><span>마트/편의점</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use4"><label
+                                                    for="use4"><span>금융/세금</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use5"><label
+                                                    for="use5"><span>의료/건강</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use6"><label
+                                                    for="use6"><span>취미/여가</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use7"><label
+                                                    for="use7"><span>쇼핑</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use8"><label
+                                                    for="use8"><span>교통/자동차</span></label></div>
+                                            <div class="item"><input type="checkbox" name="use" id="use9"><label
+                                                    for="use9"><span>주거/통신</span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="formItem">
+                                        <span class="titItem">카드사</span>
+                                        <div class="rdoGroup col3">
+                                            <div class="item"><input type="checkbox" name="card" id="card1"><label
+                                                    for="card1"><span>신한</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card2"><label
+                                                    for="card2"><span>삼성</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card3"><label
+                                                    for="card3"><span>현대</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card4"><label
+                                                    for="card4"><span>KB국민</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card5"><label
+                                                    for="card5"><span>우리</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card6"><label
+                                                    for="card6"><span>하나</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card7"><label
+                                                    for="card7"><span>롯데</span></label></div>
+                                            <div class="item"><input type="checkbox" name="card" id="card8"><label
+                                                    for="card8"><span>NH농협</span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="formItem">
+                                        <span class="titItem">연회비</span>
+                                        <div class="rangeDoWrap">
+                                            <!-- <div class="rangeDo"> -->
+                                            <div class="rangeSlider">
+                                                <div class="slider" data-min="0" data-max="2" data-step="1" data-value="0" data-unit="만원"
+                                                    aria-hidden="true"></div>
+                                                <input type="hidden" id="slider1" title="선택한 연회비">
+                                                <div class="scope">
+                                                    <span class="start">없음</span>
+                                                    <span class="middle">~ 1만원</span>
+                                                    <span class="end">~ 3만원</span>
+                                                </div>
+                                                <span class="setVal pColor">없음</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="btnConts">
+                            <button type="button" class="btn primary"><span>선택한 조건으로 검색</span></button>
+                        </div>
+                    </div>
+
+                    <div class="comp">
+                        <h2 class="h3"><span class="pColor">2개</span>의 카드를 찾았어요.</h2>
+                        <ul class="cardList">
+                            <li>
+                                <div class="tip">추천</div>
+                                <div class="alignBox">
+                                    <span class="img"><img src="../../../img/zkm/rzm/@tmp/@card.png" alt=""></span>
+                                    <div class="info">
+                                        <strong class="name">현대카드 M BOOST</strong>
+                                        <p>전월 실적 한도 없이 포인트 적립, 주유적립, 택시할인, 수수료 우대</p>
+                                    </div>
+                                </div>
+                                <a href="#none" class="btnArrow" title="새창열림" target="_blank"><span class="hidden">카드상세화면으로
+                                        이동</span></a>
+                            </li>
+                            <li>
+                                <div class="alignBox">
+                                    <span class="img"><img src="../../../img/zkm/rzm/@tmp/@card2.png" alt=""></span>
+                                    <div class="info">
+                                        <strong class="name">신한카드 Deep Dream(모베러웍스)</strong>
+                                        <p>전월 실적 한도 없이 포인트 적립, 주유적립, 택시할인, 수수료 우대</p>
+                                    </div>
+                                </div>
+                                <a href="#none" class="btnArrow" title="새창열림" target="_blank"><span class="hidden">카드상세화면으로
+                                        이동</span></a>
+                            </li>
+                        </ul>
+                        <div class="btnMoreBox">
+                            <button type="button" class="btn more"><span>더보기</span></button>
+                        </div>
+                        <div class="noList">
+                            <p>검색된 결과가 없습니다.</p>
+                            <span>입력한 검색어가 정확한지 확인해 주세요.<br>카드명, 사용차, 혜택 등과 관련된 단어로 검색해 주세요.</span>
+                        </div>
+                    </div>
+
+                    <div class="bgBoxLink">
+                        <a href="#none">
+                            <p class="byCard"><strong>내 신용점수로 발급 가능한</strong> 혜택 많은 카드를 찾아보세요!</p>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

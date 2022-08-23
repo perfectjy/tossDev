@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: 'DSR 계산기', home: false, prev: true, menu: true };
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.accountSelect .item input[type=checkbox]').on('focusin', function() {
+                $(this).parent().addClass('focus');
+            });
+            $('.accountSelect .item input[type=checkbox]').on('focusout', function() {
+                $(this).parent().removeClass('focus');
+            });
+            $('.accountSelect .item input[type=checkbox]').on('change', function() {
+                if($(this).prop('checked')) {
+                    $(this).parent().addClass('active');
+                } else {
+                    $(this).parent().removeClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="governing">
+                        <h2 class="governingTitle">DSR 계산에 필요한 정보를 <br class="mob">입력해 주세요.</h2>
+                    </div>
+
+                    <div class="formWrap">
+                        <div class="formItem">
+                            <label for="money" class="titItem">연 소득</label>
+                            <div class="intPrice">
+                                <input type="text" id="money" placeholder="숫자만 입력">
+                                <span class="unit">만원</span>
+                                <p class="errorTxt">연 소득 금액을 정확하게 입력해 주세요.</p>
+
+                                <div class="formTxt">
+                                    <p class="txtPara gColor">
+                                        나이스지키미에 등록된 나신용님의 연 소득 금액입니다.<br class="mob">
+                                        실제 소득과 다른가요?
+                                    </p>
+                                    <a href="#" class="btnArrow">갱신하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comp">
+                        <h3 class="h3">대출 계좌 선택</h3>
+                        <ul class="chkList accountSelect">
+                            <li class="item">
+                                <input type="checkbox" name="accountSel" id="accountSel1">
+                                <label for="accountSel1">
+                                    <span class="orgCase">
+                                        <i><img src="../../../img/zkm/rzm/common/ico/thumb_nh.png" alt=""></i>
+                                        <strong>농협은행</strong>
+                                        <b>담보대출</b>
+                                    </span>
+                                </label>
+                                <p class="para">
+                                    (주택자금)내집마련장기대출 주택중도금대출(가나다라마바사아자차카타파하)
+                                </p>
+                                <dl>
+                                    <div>
+                                        <dt>대출잔액</dt>
+                                        <dd class="bColor bold">250,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>상환방식</dt>
+                                        <dd class="bColor">만기일시상환</dd>
+                                    </div>
+                                    <div>
+                                        <dt>담보상세</dt>
+                                        <dd class="bColor">주택담보대출</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info1" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info1" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bColor">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bColor">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bColor">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <input type="checkbox" name="accountSel" id="accountSel2">
+                                <label for="accountSel2">
+                                    <span class="orgCase">
+                                        <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                        <strong>국민은행</strong>
+                                        <b>담보대출</b>
+                                    </span>
+                                </label>
+                                <p class="para">
+                                    (주택자금)내집마련장기대출 주택중도금대출(가나다라마바사아자차카타파하)
+                                </p>
+                                <dl>
+                                    <div>
+                                        <dt>대출잔액</dt>
+                                        <dd class="bColor bold">250,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>상환방식</dt>
+                                        <dd class="bColor">만기일시상환</dd>
+                                    </div>
+                                    <div>
+                                        <dt>담보상세</dt>
+                                        <dd>
+                                            <select title="담보상세 선택">
+                                                <option>중도금 이주비</option>
+                                            </select>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info2" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info2" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bColor">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bColor">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bColor">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <input type="checkbox" name="accountSel" id="accountSel3">
+                                <label for="accountSel3">
+                                    <span class="orgCase">
+                                        <i><img src="../../../img/zkm/rzm/common/ico/thumb_lotte.png" alt=""></i>
+                                        <strong>롯데카드</strong>
+                                        <b>담보대출</b>
+                                    </span>
+                                </label>
+                                <p class="para">
+                                    (주택자금)내집마련장기대출 주택중도금대출(가나다라마바사아자차카타파하)
+                                </p>
+                                <dl>
+                                    <div>
+                                        <dt>대출잔액</dt>
+                                        <dd class="bColor bold">250,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>상환방식</dt>
+                                        <dd>
+                                            <select title="상환방식 선택">
+                                                <option>일시상환</option>
+                                            </select>
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <dt>담보상세</dt>
+                                        <dd>
+                                            <select title="담보상세 선택">
+                                                <option>분양잔금</option>
+                                            </select>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info3" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info3" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bColor">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bColor">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bColor">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="txtC sps">
+                            <button type="button" class="btn sub"><span>+ 대출 직접 추가하기</span></button>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>DSR 계산 결과보기</span></button>
+						</div>
+					</div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

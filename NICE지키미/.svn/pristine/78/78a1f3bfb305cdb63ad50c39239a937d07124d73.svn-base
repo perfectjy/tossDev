@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '회원가입', prev: true, menu: true };
+		$(document).ready(function () {
+			$('#agreeAllChk1').uiCheckAll();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle">약관에 동의해 주세요.</h2>
+					</div>
+
+					<div class="agreement" id="agreeAllChk1">
+						<div class="agreeTitle">
+							<div class="uiItem">
+								<input type="checkbox" id="chk-all3" data-chk-item="all"><label for="chk-all3"><span>전체 동의</span></label>
+							</div>
+						</div>
+						<div class="agreeSection">
+							<ul class="agreeList">
+								<li data-chk-item="list">
+									<div class="uiItem"><input type="checkbox" id="chk3-item1" data-chk-item="list-item"><label
+											for="chk3-item1">[필수] 나이스지키미 이용약관</label></div>
+									<a href="#none" class="uiBtn"><span>보기</span></a>
+								</li>
+								<li data-chk-item="list">
+									<div class="uiItem"><input type="checkbox" id="chk3-item2" data-chk-item="list-item"><label
+											for="chk3-item2">[필수] 개인정보 수집 및 제공 동의</label></div>
+									<a href="#none" class="uiBtn"><span>보기</span></a>
+									<div class="agreeSub">
+										<a href="#none" class="agrLink">개인정보처리방침 전체보기</a>
+									</div>
+								</li>
+								<li data-chk-item="list">
+									<div class="uiItem"><input type="checkbox" id="chk3-item3" data-chk-item="list-item"><label
+											for="chk3-item3">[필수] 고유식별정보 처리 동의</label></div>
+											<a href="#none" class="uiBtn"><span>보기</span></a>
+								</li>
+							</ul>
+							<div class="uiAcco">
+								<div data-chk-item="list">
+									<div class="uiAccoHeader">
+										<div class="uiItem"><input type="checkbox" id="chk3-item4"
+												data-chk-item="list-item"><label for="chk3-item4">[선택] 신용정보 변동 알림</label></div>
+										<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+									</div>
+									<div class="uiAccoContent">
+										<div class="subSelBox">
+											<p>회원정보, 결제 등 서비스 이용 및 약관변동 소식은 신용정보 변동 알림과 별도로 이메일 또는 문자로 보내드려요.</p>
+											<ul class="agreeItem">
+												<li>
+													<input type="checkbox" id="chk3-item4-1" data-chk-item="list-sub"><label
+														for="chk3-item4-1">문자/알림톡</label>
+												</li>
+												<li>
+													<input type="checkbox" id="chk3-item4-2" data-chk-item="list-sub"><label
+														for="chk3-item4-2">이메일</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div data-chk-item="list">
+									<div class="uiAccoHeader">
+										<div class="uiItem"><input type="checkbox" id="chk3-item5"
+												data-chk-item="list-item"><label for="chk3-item5">[선택] 마케팅 활용동의</label></div>
+										<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+									</div>
+									<div class="uiAccoContent">
+										<div class="subSelBox">
+											<p>제휴서비스, 마케팅, 이벤트상품 등 프로모션 정보에 대한 알림을 받을 수 있어요.<br>
+												<a href="#none" class="agrLink">[선택] 마케팅정보 활용동의</a></p>
+											<ul class="agreeItem">
+												<li>
+													<input type="checkbox" id="chk3-item5-1" data-chk-item="list-sub"><label
+														for="chk3-item5-1">문자/알림톡</label>
+												</li>
+												<li>
+													<input type="checkbox" id="chk3-item5-2" data-chk-item="list-sub"><label
+														for="chk3-item5-2">이메일</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div data-chk-item="list">
+									<div class="uiAccoHeader">
+										<div class="uiItem"><input type="checkbox" id="chk3-item6"
+												data-chk-item="list-item"><label for="chk3-item6">[선택] 맞춤형정보 수신동의</label>
+										</div>
+										<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+									</div>
+									<div class="uiAccoContent">
+										<ul class="agreeItem">
+											<li>
+												<input type="checkbox" id="chk3-item6-1" data-chk-item="list-sub"><label
+													for="chk3-item6-1">[선택] 개인(신용)정보 수집 이용동의(맞춤형 정보 수신)</label>
+												<a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+											</li>
+											<li>
+												<input type="checkbox" id="chk3-item6-2" data-chk-item="list-sub"><label
+													for="chk3-item6-2">[선택] 개인(신용)정보 제공동의(맞춤형 정보 수신)</label>
+												<a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div data-chk-item="list">
+									<div class="uiAccoHeader">
+										<div class="uiItem"><input type="checkbox" id="chk3-item7"
+												data-chk-item="list-item"><label for="chk3-item7">[선택] 맞춤금융상품 추천동의</label>
+										</div>
+										<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+									</div>
+									<div class="uiAccoContent">
+										<ul class="agreeItem">
+											<li>
+												<input type="checkbox" id="chk3-item7-1" data-chk-item="list-sub"><label
+													for="chk3-item7-1">[선택] 개인(신용정보 수집 및 이용동의(맞춤금융상품)</label>
+												<a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+											</li>
+											<li>
+												<input type="checkbox" id="chk3-item7-2" data-chk-item="list-sub"><label
+													for="chk3-item7-2">[선택] 고유식별정보 이용동의 (맞춤금융상품)</label>
+												<a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<script>
+								$(document).ready(function () {
+									$('#agreeAllChk3').uiCheckAll();
+								});
+							</script>
+						</div>
+		
+					</div>
+
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>다음</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

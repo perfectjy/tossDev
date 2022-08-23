@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {title: '개명신청', prev: true, menu: true };
+
+        $(function() {
+            modal.openModal('#termPop02');
+        });
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    <a href="#termPop02" class="btn base modalOpen">클릭하면 팝업</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uiModal full" id="termPop02">
+        <div class="modalWrap">
+            <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+            <div class="modalHeader">
+                <h1>고유식별정보 처리 동의</h1>
+            </div>
+            <div class="modalContent">
+                <!-- content -->
+                <div class="inner">
+                    <div class="termsWrap">
+                        <p class="termTxt">NICE평가정보㈜에서 실명등록을 위해 아래 목적으로 본인의 고유식별정보인 주민등록번호인 주민등록번호를 수집 이용하는 것에 동의합니다.</p>
+                        
+                        <strong class="termsTit">1. 수집항목</strong>
+                        <ul class="listDash">
+                            <li>주민등록번호</li> 
+                            <li>만 14세 미만의 경우 법정대리인의 주민등록번호</li>
+                        </ul>
+
+                        <strong class="termsTit">2. 이용목적</strong>
+                        <ul class="listDash">
+                            <li>&lsquo;이용자&rsquo;의 식별 목적</li>
+                            <li>&lsquo;이용자&rsquo;에 대한 실명확인, 본인확인 등 ㈜NICE평가정보의 관련 업무에 활용 목적</li>
+                            <li>위탁 처리업체에 업무 위탁 시 &lsquo;이용자&rsquo; 구분 목적</li>
+                        </ul>
+
+                        <strong class="termsTit">3. 보유 및 이용기간</strong>
+                        <p><span class="under">본인확인, 신용조회업무 등 신용정보법에서 정한 업무수행을 위하여 필요한 기간 동안 보유하고, 이용자의 파기 요청이 있는 경우, 민원확인 등의 목적으로 1년간 보관 후 파기</span></p>
+                        
+                        <strong class="termsTit">4. 동의 거부 권리 및 동의 거부 시의 불이익</strong>
+                        <ul class="listDash">
+                            <li>고유식별정보 처리 동의는 거부할 수 있으며, 동의 후에도 철회가 가능합니다.</li>
+                            <li>&lsquo;이용자&rsquo;가 ㈜NICE평가정보의 고유식별정보 처리 동의에 동의하지 않을 경우 해당 실명등록이 불가능할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modalBottom">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>확인</span></button>
+                    </div>
+                </div>
+                <!--// content -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

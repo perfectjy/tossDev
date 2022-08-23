@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '로그인', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+					<a href="#modal" class="btn base modalOpen">본인인증수단 선택</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal bottom" id="modal">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>본인인증 수단을 연결해 주세요.</h1>
+				</div>
+				<div class="modalContent">
+					<div class="inner">
+						<!-- content -->
+						<ul class="certifiWrap">
+							<li><button class="ico phone" type="button">휴대전화</button></li>
+							<li><button class="ico card" type="button">신용카드</button></li>
+							<li><button class="ico lock" type="button">아이핀</button></li>
+							<li><button class="ico shield" type="button">공동인증서</button></li>
+                            <li><button class="ico" type="button">오프라인 인증</button></li>
+						</ul>
+						<!--// content -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+	<script src="../../../js/zkm/rzm/swiper.min.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '이용가이드', prev: true, menu: true };
+		$(function() {
+            var evalSwiper = new Swiper(".useGuideBox", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                a11y: {
+                    paginationBulletMessage: "{{index}}번째 배너",
+                },
+                on: {
+                    sliderMove: function() {
+                        for(var i=0, len=this.slides.length; i<len; i++) {
+                            this.slides[i].children[0].setAttribute('tabindex','-1');
+                            this.slides[i].setAttribute('aria-hidden','true');
+                        }
+                    },
+                    slideChangeTransitionStart: function() {
+                        for(var i=0, len=this.slides.length; i<len; i++) {
+                            if(this.slides[i].classList.contains('swiper-slide-active')) {
+                                this.slides[i].children[0].setAttribute('tabindex','0');
+                                this.slides[i].setAttribute('aria-hidden','false');
+                            } else {
+                                this.slides[i].children[0].setAttribute('tabindex','-1');
+                                this.slides[i].setAttribute('aria-hidden','true');
+                            }
+                        }
+                    },
+                    init: function() {
+                        for(var i=0, len=this.slides.length; i<len; i++) {
+                            if(this.slides[i].classList.contains('swiper-slide-active')) {
+                                this.slides[i].children[0].setAttribute('tabindex','0');
+                                this.slides[i].setAttribute('aria-hidden','false');
+                            } else {
+                                this.slides[i].children[0].setAttribute('tabindex','-1');
+                                this.slides[i].setAttribute('aria-hidden','true');
+                            }
+                        }
+                    }
+                }
+            });
+        });
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="bgBoxLink">
+						<a href="#none">
+							<p class="inCard data">
+								<strong>마이데이터 연결하기</strong><br>
+								신용을 더욱 쉽게 관리하는 습관
+							</p>
+						</a>
+					</div>
+
+					<h2 class="h3 txtC spm">무엇보다 소중한 내 금융자산, <br>이제부터 <span class="pColor">지켜주는 금융생활</span> 하세요.</h2>
+					<div class="useGuideBox">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="userGuideItem">
+									<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide1_1.png" alt="">
+									<p class="useGuideInfo">금융자산, 얼마나 모으셨나요? <br><span class="pColor">1분</span>이면 지금까지 얼마를 모았는지 알 수 있어요.</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="userGuideItem">
+									<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide1_1.png" alt="">
+									<p class="useGuideInfo">대출현황, 체크하고 계신가요? <br><span class="pColor">1분</span>이면 지금까지 얼마를 빌렸는지 알 수 있어요.</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="userGuideItem">
+									<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide1_1.png" alt="">
+									<p class="useGuideInfo">추가대출, 얼마나 가능한지 궁금하다면? <br>DSR 계산기로 보다 정확하게 예측해 보세요.</p>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="drctLink">
+						<strong>서비스 바로가기</strong>
+						<ul>
+							<li><a href="#none"><span>모으다</span></a></li>
+							<li><a href="#none"><span>쓰다</span></a></li>
+							<li><a href="#none"><span>빌리다</span></a></li>
+							<li><a href="#none"><span>갚다</span></a></li>
+							<li><a href="#none"><span>맞춤금융상품</span></a></li>
+						</ul>
+					</div>
+
+					<div class="comp">
+						<h2 class="h3 txtC">신용점수, 얼마나 키우셨나요? <br>이제부터 <span class="pColor">키워주는 신용생활</span> 하세요.</h2>
+						<div class="useGuideBox">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide2_1_.png" alt="">
+										<p class="useGuideInfo">숫자만 알려주는 신용점수는 그만! <br><span class="pColor">평가요소별 상태</span>를 확인하면서 관리해 보세요.</p>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide2_1_.png" alt="">
+										<p class="useGuideInfo">숫자만 알려주는 신용점수는 그만! <br><span class="pColor">평가요소별 상태</span>를 확인하면서 관리해 보세요.</p>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide2_1_.png" alt="">
+										<p class="useGuideInfo">숫자만 알려주는 신용점수는 그만! <br><span class="pColor">평가요소별 상태</span>를 확인하면서 관리해 보세요.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="drctLink">
+							<strong>서비스 바로가기</strong>
+							<ul>
+								<li><a href="#none"><span>지키미케어십</span></a></li>
+								<li><a href="#none"><span>케어십알림</span></a></li>
+								<li><a href="#none"><span>신용점수 확인하기</span></a></li>
+								<li><a href="#none"><span>신용점수 예측하기</span></a></li>
+								<li><a href="#none"><span>신용점수 올리기</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="comp">
+						<h2 class="h3 txtC">데이터로 보다 일상을 재밌게,<br>이제부터 <span class="pColor">미소짓는 데이터생활</span> 하세요.</h2>
+						<div class="useGuideBox">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide3_1_.png" alt="">
+										<p class="useGuideInfo">당신의 이름은 나이스한가요? <br><span class="pColor">[이름어때]</span>에서 분석해 보세요.</p>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide3_1_.png" alt="">
+										<p class="useGuideInfo">당신의 이름은 나이스한가요? <br><span class="pColor">[이름어때]</span>에서 분석해 보세요.</p>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="userGuideItem">
+										<img src="../../../img/zkm/rzm/@tmp/@tmp_use_guide3_1_.png" alt="">
+										<p class="useGuideInfo">당신의 이름은 나이스한가요? <br><span class="pColor">[이름어때]</span>에서 분석해 보세요.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="drctLink">
+							<strong>서비스 바로가기</strong>
+							<ul>
+								<li><a href="#none"><span>이름어때</span></a></li>
+								<li><a href="#none"><span>팻케어</span></a></li>
+								<li><a href="#none"><span>나이스 실험실</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', prev: true, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid5');
+            
+            var val = $(".rangeSlider .setVal");
+            $(".slider").slider({
+                create: function () {
+                    val.text($(this).slider("value"));
+                },
+                slide: function (event, ui) {
+                    if (ui.value === 0) {
+                        valText = ui.value;
+                    } else if (ui.value >= 1 && ui.value <= 19) {
+                        valText = ui.value + '만km 이상 ~ ' + (ui.value + 1) + '만km 미만';
+                    } else if (ui.value === 20) {
+                        valText = ui.value + '만km 이상';
+                    }
+                    val.html(valText);
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid5" class="btn base modalOpen">[팝업]주행거리 선택</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom" id="modalid5">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1><strong class="pColor">나신용</strong>님<br>내 차 주행거리를 선택해주세요</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+
+                        <!-- content -->
+                        <div class="driveRun">
+                            <div class="rangeSlider">
+                                <div class="slider" data-min="0" data-max="20" data-step="1" data-value="1"
+                                    data-unit="km" aria-hidden="true"></div>
+                                <input type="hidden" id="slider1" title="선택한 주행거리">
+                                <div class="scope">
+                                    <span class="start">0</span>
+                                    <span class="middle">10만</span>
+                                    <span class="end">20만</span>
+                                </div>
+                                <p class="setVal">1만km미만</p>
+                            </div>
+                        </div>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

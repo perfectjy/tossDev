@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미:고객센터</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid2');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid2" class="btn base modalOpen">상대방 동의 안내</a>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal modal" id="modalid2">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1 class="hidden">상대방 동의 안내</h1>
+                </div>
+                <div class="modalContent emp">
+                    <!-- content -->
+                    <div class="inner">
+                        <div class="modalGuideInfo">
+                            <p>신용보고서를 보려면 상대방의 동의가 필요합니다. <br>동의를 다시 요청할까요?</p>
+                            <p class="pColor"> 재요청은 한 번만 가능합니다.</p>
+                        </div>
+                    </div>
+                    <!--// content -->
+                    <div class="btns">
+                        <a href="#none" class="btn second"><span>다음에</span></a>
+                        <button type="button" class="btn primary"><span>다시 요청</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+
+    </div>
+</body>
+
+</html>

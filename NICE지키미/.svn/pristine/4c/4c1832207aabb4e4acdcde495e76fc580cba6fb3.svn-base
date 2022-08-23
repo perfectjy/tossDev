@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {
+			title: '공동인증서 관리', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+					<div class="governing">
+						<h2 class="governingTitle">공동인증서 목록</h2>
+					</div>
+
+					<div class="jcInput">
+						<ul>
+							<li class="act">
+								<input type="radio" name="jc" id="jc01" checked="checked">
+								<label for="jc01"><strong>홍길동</strong> (은행개인)<span>yessign | 만료일 2023.01.03</span></label>
+								<button type="button" class="xBtn act"><span class="hidden">삭제</span></button>
+							</li>
+							<li>
+								<input type="radio" name="jc" id="jc02">
+								<label for="jc02"><strong>홍길동</strong> (은행개인)<span>yessign | 만료일 2023.01.03</span></label>
+								<button type="button" class="xBtn"><span class="hidden">삭제</span></button>
+							</li>
+							<li class="dis">
+								<input type="radio" name="jc" id="jc03" disabled="disabled">
+								<label for="jc03"><strong>홍길동</strong> (은행개인)<span>yessign | 만료일 2023.01.03</span></label>
+								<button type="button" class="xBtn"><span class="hidden">삭제</span></button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="noList">
+						<p>보유한 인증서가 없습니다.</p>
+						<a href="#none" class="btnLine">PC에서 인증서 가져오기</a>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

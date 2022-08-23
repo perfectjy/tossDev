@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+  
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '대출받기', prev: true, menu: true };
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">약관에 동의해 주세요.</h2>
+          </div>          
+
+          <div class="agreement">
+            <div class="agreeTitle">
+              <input type="checkbox" id="agreeAll"><label for="agreeAll"><span>전체 동의</span></label>
+            </div>
+            <div class="agreeSection">
+              <div class="uiAcco">
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr1"><label for="agr1">맞춤대출 약관 동의</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr11"><label for="agr11">[필수] 맞춤대출 서비스 이용약관</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr12"><label for="agr12">[필수] 개인(신용)정보 수집&middot;이용 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr2"><label for="agr2">금융기관 개인(신용)정보 수집&middot;이용&middot;제공 동의</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr21"><label for="agr21">[필수] 개인(신용)정보 수집·이용 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr22"><label for="agr22">[필수] 개인(신용)정보 제3자 제공 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr23"><label for="agr23">[선택] 개인(신용)정보 제3자 제공 동의(대안정보이용)</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr24"><label for="agr24">[필수] 고유식별정보 처리 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr3"><label for="agr3">금융기관 신용정보 조회 동의</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr31"><label for="agr31">[필수] 개인(신용)정보 조회 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr32"><label for="agr32">[필수] 고유식별정보 처리 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr4"><label for="agr4">햇살론 개인(신용)정보 수집&middot;이용&middot;제공 동의</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr41"><label for="agr41">[필수] 개인(신용)정보 수집&middot;이용 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr42"><label for="agr42">[필수] 개인(신용)정보 제3자 제공 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr43"><label for="agr43">[필수] 고유식별정보 처리 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uiAccoHeader">
+                  <div class="uiItem"><input type="checkbox" id="agr5"><label for="agr5">햇살론 신용정보 조회 동의</label></div>
+                  <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                </div>
+                <div class="uiAccoContent">
+                  <ul class="agreeItem">
+                    <li>
+                      <input type="checkbox" id="agr51"><label for="agr51">[필수] 개인(신용)정보 조회 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="agr52"><label for="agr52">[필수] 고유식별정보 처리 동의</label>
+                      <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>다음</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

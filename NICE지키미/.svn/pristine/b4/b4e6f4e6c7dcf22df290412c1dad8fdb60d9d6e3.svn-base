@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '사업자신용보고서', prev: true, menu: true };
+
+    $(function() {
+      $('.btnShow').on('click', function() {
+        $(this).parents('.repDetBox').toggleClass('active')
+      })
+
+      //스크롤이벤트
+      $('.rndLink a').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+      })
+    })
+</script>
+</head>
+<body>  
+  <div id="wrap"> 
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div> 
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <h2 class="governingTitle">사업자신용보고서</h2>
+            <p class="governingInfo">2022/04/22 기준</p>
+          </div>
+					<div class="compVisual">
+						<span class="icon letter"></span>
+					</div>
+          <div class="rndLink tD">
+            <ul>
+                <li><a href="#link1"><span>#소호신용점수/등급</span></a></li>
+                <li><a href="#link2"><span>#개설정보</span></a></li>
+                <li><a href="#link3"><span>#채무불이행</span></a></li>
+                <li><a href="#link4"><span>#여신(신정원기업여신일보)</span></a></li>
+            </ul>
+          </div>
+          <!-- <div class="tabmenu rollTab">
+            <ul>
+                <li><a href="#link1"><span>#소호신용점수/등급</span></a></li>
+                <li><a href="#link2"><span>#개설정보</span></a></li>
+                <li><a href="#link3"><span>#채무불이행</span></a></li>
+                <li><a href="#link4"><span>#여신(신정원기업여신일보)</span></a></li>
+            </ul>
+        </div> -->
+          <div class="repDetWrap comp" id="link1">
+            <div class="contMainTit"><strong>소호신용점수/등급</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <dl class="repRating">
+              <div>
+                <dt>신용등급</dt>
+                <dd><strong class="pColor">2</strong>등급</dd>
+              </div>
+              <div>
+                <dt>신용점수</dt>
+                <dd><strong class="pColor">854</strong> 점</dd>
+              </div>
+              <div>
+                <dt>상위</dt>
+                <dd><strong class="pColor">20%</strong></dd>
+              </div>
+            </dl>
+            <div class="repRatingInfo">
+              <strong class="pColor">여의도김밥</strong>의 신용등급은 <strong class="pColor">2</strong>등급입니다.
+              이에 따른 등급 내 불량율은 <strong class="pColor">0.50%</strong>이며, 만약 고객님의 
+              신용평점을 임의의 1000명에 대해 비교한다면 <strong class="pColor">145등</strong> 이내에 
+              위치하는 수준입니다.
+            </div>
+            <dl class="repSubCont">
+              <div class="cont">
+                <dt class="contSubTit2">긍정적요인</dt>
+                <dd>
+                  <p>
+                    단기연체나 장기연체 이력없이 건전한 신용거래 활동을 
+                    하고있습니다.                 
+                  </p>
+                  <p>
+                    현재 대표자의 대출 혹은 보증정보가 없습니다.
+                    최근 기업신용공여정보가 없습니다
+                  </p>
+                </dd>
+              </div>
+              <div class="cont">
+                <dt class="contSubTit2">부정적요인</dt>
+                <dd>
+                  <p>회원님은 신용도에 영향을 주는 부정적 요인이 없습니다.</p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="repDetWrap comp" id="link2">
+            <h3 class="h3">개설정보</h3>
+            <div class="repDetBox">
+              <div class="heading">
+                <span class="tag gr">활동</span>
+                <a class="btnLine" href="#none">자세히보기</a>
+                <p class="contSubTit">1. 카드[리볼빙] <span class="tagSq pr">NICE평가정보</span></p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>총 개설액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>대출잔액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>업계</dt>
+                  <dd>신용카드</dd>
+                </div>
+                <div>
+                  <dt>개설일</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+                <div>
+                  <dt>만기일/유효기간</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">발생기관(발생지점)<span class="tagSq bk">한국신용정보원</span></p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>개설금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+                <div>
+                  <dt>개설금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+                <div>
+                  <dt>개설금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link3">
+            <h3 class="h3">채무불이행</h3>
+            <div class="repDetBox">
+              <div class="heading">
+                <p class="contSubTit">나이스평가정보<span class="tagSq pr">NICE평가정보</span></p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>발생지점</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>연체사유</dt>
+                  <dd>3개월 (4회차) 이상 연체자</dd>
+                </div>
+                <div>
+                  <dt>등록금액</dt>
+                  <dd>신용카드</dd>
+                </div>
+                <div>
+                  <dt>발생일</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+                <div>
+                  <dt>제공일</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+                <div>
+                  <dt>기타</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="repDetBox">
+              <div class="heading">
+                <p class="contSubTit">나이스평가정보<span class="tagSq bk">신용정보원</span></p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>발생지점</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>연체사유</dt>
+                  <dd>3개월 (4회차) 이상 연체자</dd>
+                </div>
+                <div>
+                  <dt>등록금액</dt>
+                  <dd>신용카드</dd>
+                </div>
+                <div>
+                  <dt>발생일</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+                <div>
+                  <dt>제공일</dt>
+                  <dd>2022.01.01</dd>
+                </div>
+                <div>
+                  <dt>기타</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link4">
+            <div class="contMainTit"><strong>여신정보(한국신용정보원 기업여신일보)</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="repDetBox">
+              <div class="heading">
+                <p class="contSubTit">나이스평가정보</p>
+                <span class="subHead">최종업데이트일자  : 2013.09.30</span>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>업권</dt>
+                  <dd>기타</dd>
+                </div>
+                <div>
+                  <dt>여신과목</dt>
+                  <dd>한도계</dd>
+                </div>
+                <div>
+                  <dt>금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="uiAcco infoTip">
+            <div class="uiAccoHeader">          
+                <button type="button" class="uiBtn">
+                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                </button>
+            </div>
+            <div class="uiAccoContent">
+                <ul class="listDot">
+                   <li>
+                      신용보고서는 ‘신용정보의 이용 및 보호에 관한 
+                      법률’에 의거하여 해당 본인이 요청한 일자를 
+                      기준으로 NICE평가정보에 의해 제공되며, 동법에 
+                      의해 보호받는 내용을 담고 있습니다.
+                   </li>
+                   <li>
+                    본 커플신용보고서는 해당 본인이 수신자를 
+                    지정하여 제공한 것으로, 사전 승인 없이 타인에게 
+                    누설(열람, 복사) 하거나 다른 목적으로 사용할 수 
+                    없습니다.
+                   </li>
+                   <li>
+                    지정된 수신자가 아닌 분이 커플신용보고서의 
+                    커플로 연결되었을 경우 아래 연락처로 연락해주시기 
+                    바랍니다.
+                    <ul class="listDash">
+                      <li>전화번호 : 1588-2489 NICE지키미 고객센터</li>
+                      <li>주소 : 서울특별시 영등포구 은행로 30 중소기업 중소기업중앙회신관 6층</li>
+                    </ul>
+                   </li>
+                   <li>
+                    NICE지키미 고객센터 개인신용보고서 담당자
+                   </li>
+                </ul>
+            </div>
+        </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>선택</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

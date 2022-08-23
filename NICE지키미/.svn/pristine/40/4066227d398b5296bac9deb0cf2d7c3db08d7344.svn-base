@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '대출한도예측', home: false, prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">내 대출한도는 얼마일까?</h2>
+                        <p class="governingInfo">예상 대출한도조회를 조회해도 <br class="mob">신용점수에 영향을 주지 않아요.</p>
+                    </div>
+
+                    <div class="formWrap spr">
+                        <div class="formItem">
+                            <label for="money" class="titItem">연 소득</label>
+                            <div class="intPrice">
+                                <input type="text" id="money" placeholder="숫자만 입력">
+                                <span class="unit">만원</span>
+                                <p class="errorTxt">연 소득 금액을 정확하게 입력해 주세요.</p>
+
+                                <div class="formTxt">
+                                    <p class="txtPara gColor">
+                                        나이스지키미에 등록된 나신용님의 연 소득 금액입니다.<br class="mob">
+                                        실제 소득과 다른가요?
+                                    </p>
+                                    <a href="#" class="btnArrow">갱신하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <div class="titItem">직장(사업장)명</div>
+                            <div class="formEle" style="display: none;">
+                                <input type="text" title="직장(사업자)명 입력" disabled>
+							</div>
+							<div class="intBotBtn">
+								<button type="button" class="btn base"><span>직장(사업장) 검색</span></button>
+							</div>
+                        </div>
+                    </div>
+					
+                    <div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>다음</span></button>
+						</div>
+					</div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

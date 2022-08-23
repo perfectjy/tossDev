@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '개인신용보고서(영문)', prev: true, menu: true };
+
+        $(function () {
+            $('.btnShow').on('click', function () {
+                $(this).parents('.repDetBox').toggleClass('active')
+            })
+
+            //스크롤이벤트
+            var bcHeight = $('.breadcrumbsConts').outerHeight()+20;
+            $('.rndLink a').on('click', function (e) {
+                console.log(bcHeight);
+                e.preventDefault();
+                $(this).parent().addClass('active').siblings().removeClass('active');
+                $('html,body').animate({ scrollTop: ($(this.hash).offset().top - bcHeight) }, 500);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">CREDIT REPORT</h2>
+                        <p class="governingInfo">Issue Date 2022/04/22</p>
+                    </div>
+                    <div class="rndLink tD">
+                        <ul>
+                            <li><a href="#loan"><span>#Loan Info</span></a></li>
+                            <li><a href="#guarantee"><span>#Guarantee Info</span></a></li>
+                            <li><a href="#negative"><span>#Negative Info.</span></a></li>
+                            <li><a href="#misconduct"><span>#Misconduct info</span></a></li>
+                            <li><a href="#positive"><span>#Positive Info</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="grySec">
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <dl class="nTitBox">
+                                    <div>
+                                        <dt>Reg. No</dt>
+                                        <dd class="bold">111111-1******</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Name</dt>
+                                        <dd class="bold">나신용</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Issue Date</dt>
+                                        <dd class="bold">2022.06.26</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Issue No</dt>
+                                        <dd class="bold">CR2022062650299</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="repDetWrap sec" id="loan">
+                            <div class="contMainTit">
+                                <strong>Loan Information</strong>
+                                <span class="subInfo">(Korean Won)</span>
+                            </div>
+                            <div class="repDetBox">
+                                <dl class="infoBox">
+                                    <div>
+                                        <dt>Code</dt>
+                                        <dd>0031</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Firm</dt>
+                                        <dd>NongHyup Bank</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Opened</dt>
+                                        <dd>2022.05.17</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Changed</dt>
+                                        <dd>-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Amount</dt>
+                                        <dd>1,538</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Secured</dt>
+                                        <dd>1</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="repDetWrap sec" id="guarantee">
+                            <div class="contMainTit">
+                                <strong>Guarantee Information</strong>
+                                <span class="subInfo">(Korean Won)</span>
+                            </div>
+                            <div class="repDetBox">
+                                <dl class="infoBox">
+                                    <div>
+                                        <dt>Code</dt>
+                                        <dd>0033</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Firm</dt>
+                                        <dd>PEPPER SAVINGS BANK</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Opened</dt>
+                                        <dd>2021.11.18</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Changed</dt>
+                                        <dd>-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Amount</dt>
+                                        <dd>5,000</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="repDetWrap sec" id="negative">
+                            <div class="contMainTit">
+                                <strong>Negative Information</strong>
+                                <span class="subInfo">(Korean Won)</span>
+                            </div>
+                            <div class="repDetBox">
+                                <dl class="infoBox">
+                                    <div>
+                                        <dt>Code</dt>
+                                        <dd>0104</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Firm</dt>
+                                        <dd>피플펀드컴퍼니</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Occurred</dt>
+                                        <dd>2020.09.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Reported</dt>
+                                        <dd>2012.03.06</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Paid</dt>
+                                        <dd>-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Reported Amount</dt>
+                                        <dd>490</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Overdue Amount</dt>
+                                        <dd>1,398</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="repDetWrap sec" id="misconduct">
+                            <div class="contMainTit">
+                                <strong>Misconduct Information Causing Disorder in Financial Transaction</strong>
+                                <span class="subInfo">(Korean Won)</span>
+                            </div>
+                            <div class="repDetBox">
+                                <dl class="infoBox">
+                                    <div>
+                                        <dt>Code</dt>
+                                        <dd>0101</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Firm</dt>
+                                        <dd>BARIUM SUBPRIME</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Occurred</dt>
+                                        <dd>2020.09.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Reported</dt>
+                                        <dd>2012.03.06</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Paid</dt>
+                                        <dd>-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Amount</dt>
+                                        <dd>186</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="repDetWrap sec" id="positive">
+                            <div class="contMainTit">
+                                <strong>Positive Information</strong>
+                                <span class="subInfo">(Korean Won)</span>
+                            </div>
+                            <div class="repDetBox">
+                                <dl class="infoBox">
+                                    <div>
+                                        <dt>Code</dt>
+                                        <dd>0101</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Firm</dt>
+                                        <dd>현대카드</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Occurred</dt>
+                                        <dd>2020.09.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Expired</dt>
+                                        <dd>2012.03.06</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Amount</dt>
+                                        <dd>1,000</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uiAcco infoTip">
+                        <div class="uiAccoHeader">
+                            <button type="button" class="uiBtn">
+                                <span class="accoTitle">Notice</span><span class="hidden">펼치기</span>
+                            </button>
+                        </div>
+                        <div class="uiAccoContent">
+                            <ul class="listDot">
+                                <li>
+                                    The credit information in this Credit Report legally gathered and managed by NICE Information Service guarantees his/ her own credit situation of the date the person has requested.
+                                </li>
+                                <li>
+                                    The credit information in this Credit Report is provided on the basis that readers will be responsible for making their own assessment of the information.
+                                </li>
+                                <li>
+                                    The credit information in the Credit Report is presented exclusively for the named addressee the user has appointed.
+                                </li>
+                                <li>
+                                    No liability will be accepted for any loss or damage incurred as a result of reliance upon any information contained in the Credit Report or an intentional forgery of the Credit Report.
+                                </li>
+                                <li>
+                                    The person who acquires this Credit Report by accident or with any other reason is asked to contact or deliver it to the NICE Credit Report service manager as soon as possible.
+                                    <ul class="listDash">
+                                        <li>Phone Number : <strong class="bld">(02)2122-4000</strong></li>
+                                        <li>E-mail : <strong class="bld">webmaster@credit.co.kr</strong></li>
+                                        <li>Address : <strong class="bld">6F, 30, Eunhaeng-ro, Yeongdeungpo-gu, Seoul, Repulic of Korea</strong> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

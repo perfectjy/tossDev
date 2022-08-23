@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/swiper.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/main.css">
+	<script type="text/javascript">
+		mbHeader = { title: '', prev: false, menu: true, home: true, login: true };
+
+		$(function () {
+			if(isMobile) {
+				var serviceSwiper = new Swiper(".serviceSwiper", {
+					slidesPerView: 'auto',
+					spaceBetween: 15,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+					a11y: {
+						paginationBulletMessage: "{{index}}번째 배너",
+					},
+					on: {
+						sliderMove: function() {
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								this.slides[i].children[0].setAttribute('tabindex','-1');
+								this.slides[i].setAttribute('aria-hidden','true');
+							}
+						},
+						slideChangeTransitionStart: function() {
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								if(this.slides[i].classList.contains('swiper-slide-active')) {
+									this.slides[i].children[0].setAttribute('tabindex','0');
+									this.slides[i].setAttribute('aria-hidden','false');
+								} else {
+									this.slides[i].children[0].setAttribute('tabindex','-1');
+									this.slides[i].setAttribute('aria-hidden','true');
+								}
+							}
+						},
+						init: function() {
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								if(this.slides[i].classList.contains('swiper-slide-active')) {
+									this.slides[i].children[0].setAttribute('tabindex','0');
+									this.slides[i].setAttribute('aria-hidden','false');
+								} else {
+									this.slides[i].children[0].setAttribute('tabindex','-1');
+									this.slides[i].setAttribute('aria-hidden','true');
+								}
+							}
+						}
+					}
+				});
+			} else {
+				var serviceSwiper = new Swiper(".serviceSwiper", {
+					slidesPerView: 3,
+					spaceBetween: 20,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+					a11y: {
+						paginationBulletMessage: "{{index}}번째 배너",
+					},
+					on: {
+						sliderMove: function() {
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								this.slides[i].children[0].setAttribute('tabindex','-1');
+								this.slides[i].setAttribute('aria-hidden','true');
+							}
+						},
+						slideChangeTransitionStart: function() {
+							var num = 0
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								if(this.slides[i].classList.contains('swiper-slide-active')) {
+									for(var j=i, len1=i+3 ; j<len1; j++) {
+										this.slides[j].children[0].setAttribute('tabindex','0');
+										this.slides[j].setAttribute('aria-hidden','false');
+										num = num + 1;
+									}
+								}
+							}
+						},
+						init: function() {
+							var num = 0
+							for(var i=0, len=this.slides.length; i<len; i++) {
+								if(this.slides[i].classList.contains('swiper-slide-active')) {
+									for(var j=i, len1=i+3 ; j<len1; j++) {
+										this.slides[j].children[0].setAttribute('tabindex','0');
+										this.slides[j].setAttribute('aria-hidden','false');
+										num = num + 1;
+									}
+								} else {
+									if(i >= num) {
+										this.slides[i].children[0].setAttribute('tabindex','-1');
+										this.slides[i].setAttribute('aria-hidden','true');
+									}
+								}
+							}
+						}
+					}
+				});
+			}
+			var eventSwiper = new Swiper(".eventSwiper", {
+				loop: true,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+					hasBtn: true
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				a11y: {
+					paginationBulletMessage: "{{index}}번째 배너",
+				},
+				on: {
+					sliderMove: function() {
+						for(var i=0, len=this.slides.length; i<len; i++) {
+							this.slides[i].style.visibility = 'visible';
+						}
+					},
+					slideChangeTransitionStart: function() {
+						for(var i=0, len=this.slides.length; i<len; i++) {
+							if(this.slides[i].classList.contains('swiper-slide-active')) {
+								this.slides[i].style.visibility = 'visible';
+								this.slides[i].setAttribute('aria-hidden','false');
+							} else {
+								this.slides[i].style.visibility = 'hidden';
+								this.slides[i].setAttribute('aria-hidden','true');
+							}
+						}
+
+					},
+					init: function() {
+						for(var i=0, len=this.slides.length; i<len; i++) {
+							if(this.slides[i].classList.contains('swiper-slide-active')) {
+								this.slides[i].style.visibility = 'visible';
+								this.slides[i].setAttribute('aria-hidden','false');
+							} else {
+								this.slides[i].style.visibility = 'hidden';
+								this.slides[i].setAttribute('aria-hidden','true');
+							}
+						}
+					}
+				}
+			});
+
+			var swiperPlayStop = function(v) {
+				var swp = v,
+					wrap = '[data-swiper-autoplay]',
+					$wrap = $(swp.$el.find(wrap)),
+					$val = $wrap.data('swiperAutoplay'),
+					$len = $wrap.length,
+					$btn,
+					text1 = '배너 자동 실행',
+					text2 = '배너 일시 정지',
+					status = $val;
+				
+				if(swp.autoplay.running && $len) {
+					status = swp.autoplay.running
+					if($val) {
+						$wrap.append('<button type="button" class="btnStop"><span class="hidden">'+ text2 +'</span></button>');
+					} else {
+						$wrap.append('<button type="button" class="btnPlay"><span class="hidden">'+ text1 +'</span></button>');
+					}
+				}
+				$btn = $wrap.find('button');
+				$btn.on('click', function() {
+					// console.log(swiper.autoplay.running)
+					if(swp.autoplay.running) {
+						$(this).removeClass().addClass('btnPlay').children('span').text(text1);
+						swp.autoplay.stop();
+						status = false;
+					} else {
+						$(this).removeClass().addClass('btnStop').children('span').text(text2);
+						swp.autoplay.start();
+						status = true;
+					}
+				});
+				var overFn = function() {
+					if(status) {
+						$btn.removeClass().addClass('btnPlay').children('span').text(text1);
+						swp.autoplay.stop();
+					}
+				}
+				var outFn = function() {
+					if(status) {
+						$btn.removeClass().addClass('btnStop').children('span').text(text2);
+						swp.autoplay.start();
+					}
+				}
+				$(swp.$wrapperEl).on('focusin mouseover', function() {
+					overFn(status)
+				});
+				$(swp.$wrapperEl).on('focusout mouseout', function() {
+					outFn(status)
+				});
+			}
+			swiperPlayStop(eventSwiper);
+		}); 
+
+		$(document).on('click','.fixedTab .item a',function(e){
+			e.preventDefault();
+			var $this = $(this),
+				$href = $this.attr('href');
+			// 링크 클릭 시 페이지 스크롤
+			if(isMobile) {
+				pageScroll($this.attr('href'),['.headerMob', '.fixedTab'], function() {
+					$this.parent().addClass('active').siblings('.item').removeClass('active');
+				});
+			}
+		});
+
+	</script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="skipNavi">  
+		<a href="#content">본문내용 바로가기</a> 
+	</div>
+    <!-- header -->
+	<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+	<div id="container" >
+		<div id="content">
+			<!-- <div class="section"> -->
+            <!-- content -->
+
+			<div class="mainPage">
+				
+				<div class="quickMenu">
+					<a href="#" class="item type1">모으다</a>
+					<a href="#" class="item type2">쓰다</a>
+					<a href="#" class="item type3">빌리다</a>
+					<a href="#" class="item type4">맞춤대출</a>
+					<a href="#" class="item type5">맞춤카드</a>
+				</div>
+
+				<div class="alrimi">
+					<div class="inner">
+						<a href="#" class="txt">2일 전,국민은행에서<br class="mob"> 나신용님의 <strong>신용정보</strong>를 조회했어요.</a>
+						<button type="button" class="close" onclick="$('.alrimi').hide();"><span class="hidden">닫기</span></button>
+					</div>
+				</div>
+
+				<article class="privacyCont">
+					<div class="creditStyle loginAfter">
+						<h2 class="title">나신용님의<br>신용스타일은?</h2>
+						<div class="mainGradientBox type1">
+							<!--
+								type1 신용관리가 필요한 스타일
+								type2 연체관리가 필요한 스타일
+								type3 대출관리가 필요한 스타일
+								type4 거래기간이 더 필요한 스타일
+								type5 마이데이터가 필요한 스타일
+								type6 신용생활을 잘하는 스타일
+							-->
+							<p class="title"><strong>720</strong> 점</p>
+							<a href="#none" class="btnArrow">신용관리가 필요한 스타일</a>
+						</div>
+						<div class="tip"><a href="#">지키미케어십과 함께한 지 100일 됐어요</a></div>
+					</div>
+
+					<div class="preventService">
+						<div class="dDay">D-15</div>
+						<div class="title">다가오는 <strong>대출</strong> 상환 잊지 마세요!</div>
+						<div class="txt">상환일은 2022.07.30 입니다.</div>
+					</div>
+
+					<div class="banLink">
+						<a href="#none" class="ico14">
+							<span>연체 걱정이 없는</span>
+							<strong>카드 결제일 알림을 신청해 보세요!</strong>
+						</a>
+						<!-- <a href="#none" class="ico17">
+							<span>다양한 신용생활을 위해</span>
+							<strong>혜택 좋은 카드를 추천해드릴게요!</strong>
+						</a> -->
+					</div>
+				</article>
+
+				<hr class="line">
+
+				<ul class="fixedTab" data-fixed-target="tabBox">
+					<li class="item active"><a href="#links01">마이데이터</a></li>
+					<li class="item"><a href="#links02">맞춤 추천</a></li>
+					<li class="item"><a href="#links03">지키미서비스</a></li>
+				</ul>
+				<article class="tabCont" id="links01">
+					<h1 class="h2">신용관리를 도와주는<br>나이스한 마이데이터</h1>
+					<div class="linksListWrap loginAfter">
+						<a href="#" class="item type1">
+							<strong class="title">모으고</strong>
+							<span class="txt">10,000,000원</span>
+						</a>
+						<a href="#" class="item type2">
+							<strong class="title">쓰고</strong>
+							<span class="txt">10,000,000원</span>
+						</a>
+						<a href="#" class="item type3">
+							<strong class="title">빌리고<span class="num">2</span></strong>
+							<span class="txt">2,510,000,000원</span>
+						</a>
+						<a href="#" class="item type4">
+							<strong class="title">갚고<span class="num">1</span></strong>
+							<span class="txt">300,000원</span>
+						</a>
+						<!-- <a href="#" class="item type4">
+							<strong class="title">갚고<span class="num">1</span></strong>
+							<span class="txt">마이데이터를 연결해 보세요!</span>
+						</a> -->
+					</div>
+				</article>
+				<article class="tabCont" id="links02">
+					<h1 class="h2">내 신용점수에 따라<br>맞춤추천을 받아보세요</h1>
+					<div class="recommandWrap">
+						<a href="#" class="loan"><strong>이만큼 대출</strong>을<br>받을 수 있어요</a>
+						<a href="#" class="card"><strong>이런 카드</strong>를<br>만들 수 있어요</a>
+					</div>
+					<div class="eventSwiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#none" class="eventPageBox">
+									<span>나이스한 대출진단 받고</span>
+									<strong>스타벅스 커피 Dream</strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="eventPageBox">
+									<span>나이스한 대출진단 받고</span>
+									<strong>스타벅스 커피 Dream</strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="eventPageBox">
+									<span>나이스한 대출진단 받고</span>
+									<strong>스타벅스 커피 Dream</strong>
+								</a>
+							</li>
+						</ul>
+						<div class="controlpage">
+							<div class="swiper-pagination"></div>
+							<span data-swiper-autoplay="true"></span><!-- play, stop 버튼 필요한 경우 -->
+						</div>
+					</div>
+				</article>
+				<article class="tabCont" id="links03">
+					<h1 class="h2">이런 서비스는 어떠세요?</h1>
+					<div class="serviceSwiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#none" class="item type1">
+									<span class="txt">중요한 순간, 나를 증명해야 할 때</span>
+									<strong class="title">신용보고서<br><span>(개인/커플/사업자)</span></strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="item type2">
+									<span class="txt">미래의 내 신용점수는 몇 점일까</span>
+									<strong class="title">신용점수 예측하기</strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="item type3">
+									<span class="txt">나도 모르게 내 정보가 새지 않게!</span>
+									<strong class="title">신용조회 차단</strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="item type4">
+									<span class="txt">휴대전화, 아이핀 등 도용을 예방해요</span>
+									<strong class="title">본인인증 차단</strong>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none" class="item type5">
+									<span class="txt">내 사업장 신용관리가 필요할 때</span>
+									<strong class="title">사장님 신용관리</strong>
+								</a>
+							</li>
+						</ul>
+						<div class="controlpage">
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</article>
+
+				<hr class="line">
+
+				<div class="bannerWrap">이벤트 배너 영역</div>
+
+				<article class="noticeWrap">
+					<h1 class="h3">알려드려요</h1>
+					<dl class="list">
+						<div>
+							<dt class="hidden">제목</dt>
+							<dd class="item"><a href="#">신용점수 올리기 국세청,국민연금 이 신용점수 올리기 국세청,국민연금 이 신용점수 올리기 국세청,국민연금</a></dd>
+						</div>
+						<div>
+							<dt class="hidden">등록일</dt>
+							<dd class="date">2022.07.29</dd>
+						</div>
+					</dl>
+					<a href="#" class="more"><span class="hidden">더보기</span></a>
+				</article>
+
+				<div class="bottomNavi">
+					<a href="#" class="item type1">자산</a>
+					<a href="#" class="item type2">신용</a>
+					<a href="#modal1" class="more modalOpen"><span class="hidden">더보기</span></a>
+					<a href="#" class="item type3">대출</a>
+					<a href="#" class="item type4">카드</a>
+				</div>
+			</div>
+
+            <!--// content -->
+			<!-- </div> -->
+		</div>
+	</div>
+    <!--// container -->
+	
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+</div>
+
+<div class="uiModal bottom" id="modal1">
+	<div class="modalWrap onlyMain">
+		<div class="modalHeader">
+			<h1><img src="../../../img/zkm/rzm/main/title_ohnice.png" alt="oh nice"></h1>
+		</div>
+		<div class="modalContent">
+			<div class="inner">
+			<!-- content -->
+				
+				<div class="bnrList">
+					<a href="#" class="bnrBox credit">
+						<span>어디서 얼마나 빌리고 갚았는지,</span>
+						<p class="tit">내 신용 확실하게 지키리!</p>
+					</a>
+				</div>
+
+				<div class="linksList">
+					<a href="#" class="item type1">쓰다</a>
+					<a href="#" class="item type2">빌리다</a>
+					<a href="#" class="item type3">케어십</a>
+					<a href="#" class="item type4">사장님</a>
+					<a href="#" class="item type5">신용올리기</a>
+				</div>
+			<!--// content -->
+			</div>
+			<div class="modalBottom">
+				<button type="button" class="typeModalClose"><span class="hidden">닫기</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

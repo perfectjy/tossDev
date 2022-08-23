@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {title: '내 정보 변경', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+                    <div class="governing">
+						<h2 class="governingTitle">이름변경 신청</h2>
+                        <p class="governingInfo">개명 신청은 주민등록증 정보 확인이 필요해요. 바로 처리할 수 없는 경우, 3일 이내에 처리 결과를 이메일로 보내드립니다.</p>
+                    </div>
+
+                    <div class="agreement" id="agreeAllChk2">
+                        <div class="agreeTitle">
+                            <div class="uiItem">
+                                <input type="checkbox" id="chk-all2" data-chk-item="all">
+                                <label for="chk-all2"><span>전체 동의</span></label>
+                            </div>
+                        </div>
+                        <div class="agreeSection">
+                            <ul class="agreeList">
+                                <li data-chk-item="list">
+                                    <div class="uiItem">
+                                        <input type="checkbox" id="agr01" data-chk-item="list-item">
+                                        <label for="agr01">[필수] 개인정보 수집 및 이용동의</label>
+                                    </div>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <div class="uiItem">
+                                        <input type="checkbox" id="agr02" data-chk-item="list-item">
+                                        <label for="agr02">[필수] 고유식별 정보처리 동의</label>
+                                    </div>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <div class="uiItem">
+                                        <input type="checkbox" id="agr03" data-chk-item="list-item">
+                                        <label for="agr03">[필수] NICE 본인인증 실명변경 연계동의</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="formWrap spm">
+                        <div class="formItem">
+                            <label for="name" class="titItem">개명 후 이름</label>
+                            <div class="formEle">
+                                <input type="text" placeholder="개명하려는 이름" id="name">
+                                <!-- 에러문구 : 입력텍스트 없을 시 -->
+                                <p class="errorTxt">개명하려는 이름을 입력해주세요.</p>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <label for="certiDate" class="titItem">주민등록증 발급일자</label>
+                            <div class="intDate">
+                                <input type="text" id="certiDate" value="2202.01.01">
+                                <a href="#none" class="btnDate"><span class="hidden">날짜 선택</span></a>
+                            </div>
+                            <!-- 에러문구 : 날짜값 오류 및 하나라도 미입력 시, 8/23 삭제 -->
+                            <!-- <p class="errorTxt">주민등록증 발급일자 정보를 모두 입력해 주세요.</p> -->
+                        </div> 
+                    </div>
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>취소</span></button>
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

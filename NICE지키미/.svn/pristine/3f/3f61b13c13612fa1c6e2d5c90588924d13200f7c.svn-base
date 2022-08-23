@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/swiper.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {title: '서비스 소개',prev: true, menu: true};
+
+		$(function () {
+			var swiper = new Swiper(".relySwiper", {
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle">더 새로워진 <br>사장님 신용관리 서비스를 무료로 만나보세요!</h2>
+					</div>
+
+					<div class="catgryBox">
+						<p>사장님 모두 <span class="pColor">무료</span>로 도와드려요</p>
+						<div class="tagList">
+							<span class="tag bl">신용컨설팅</span>
+							<span class="tag bl">신용정보관리</span>
+							<span class="tag bl">매출관리</span>
+						</div>
+					</div>
+
+					<!-- 신용컨설팅 -->
+					<div class="comp">
+						<h3 class="h4 mtN"><span class="pBlock">신용컨설팅</span>우리 가게의 신용점수 몇 점인지 알고 있나요?</h3>
+
+						<div class="relySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="scoreList sl01">
+										<p>
+											나이스지키미 <span class="pColor">SOHO 신용점수</span>에서<br>
+											사업자 신용정보를 조회하고, <br>
+											누구에게든 내 사업장 신용상태를<br>
+											증명할 수 있어요
+										</p>
+										<div class="myScore">
+											<div>?</div>
+											<div>?</div>
+											<div>?</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="scoreList sl02">
+										<p>다른 사업장 vs 내 사업장 <br>신용상태를 비교할 수 있어요.</p>
+										<img src="../../../img/zkm/rzm/common/bg/bg_store_rank.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="scoreList sl03">
+										<p>1년 후 내 사업장의 신용점수를 예측하고<br> 신용컨설팅 자료도 받아보세요.</p>
+										<img src="../../../img/zkm/rzm/common/bg/bg_score_txt.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="btnsubtn">
+							<button type="button" class="btn base"><span>사업장 신용점수 알아보기</span></button>
+						</div>
+					</div>
+					<!-- //신용컨설팅 -->
+
+					<!-- 신용정보 관리 -->
+					<div class="comp">
+						<h3 class="h4 mtN"><span class="pBlock">신용정보 관리</span>똑 부러지게 관리하는 사업장 신용정보</h3>
+						<p class="txtPara">
+							이번달 카드값, 보유대출 잔액, 장/단기 연체금액 등 사업장 신용점수에 영향을 주는 정보를 알려드려요.
+						</p>
+						<div class="cimList">
+							<div class="bg01"><span>카드</span></div>
+							<div class="bg02"><span>대출</span></div>
+							<div class="bg03"><span>연체</span></div>
+						</div>
+					</div>
+					<!-- //신용정보 관리 -->
+
+					<!-- 매출관리 -->
+					<div class="comp">
+						<h3 class="h4 mtN">
+							<span class="pBlock">매출관리</span>
+							내 사업장, 얼마나 성장했을까?
+						</h3>
+						<p class="txtPara">
+							작년과 올해를 비교해 매출 건수와 매출액이 얼마나 증가했는지 한눈에 파악할 수 있어요.
+						</p>
+						<div class="salesImgBox">
+							<div class="bg01">
+								<span>작년 같은 달</span>
+							</div>
+							<div class="bg02">
+								<span class="pop"><em class="hidden">상승</em>25%</span>
+								<span>이번달</span>
+							</div>
+						</div>
+					</div>
+					<!-- //매출관리 -->
+
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>서비스 시작하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

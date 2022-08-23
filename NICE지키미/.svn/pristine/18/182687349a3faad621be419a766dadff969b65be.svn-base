@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', prev: true, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid5');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid5" class="btn base modalOpen">[팝업]소득정보 안내</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom" id="modalid5">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1><strong class="pColor">나신용</strong>님 소득이 다른가요?</h1>
+                    <p class="hSubTxt">아래 방법으로 소득증빙자료를 등록하세요.</p>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="linkBox">
+                            <a href="#none">
+                                <span>쉽고 빠르게</span>
+                                <strong>소득 등록하기</strong>
+                            </a>
+                        </div>
+                        <div class="btnsbot txtC">
+                            <a href="#" class="btnArrow">국세청 소득증명 발급번호 입력</a>
+                        </div>
+                        <!--// content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

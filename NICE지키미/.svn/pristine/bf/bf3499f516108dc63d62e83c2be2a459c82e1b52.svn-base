@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {title: '약관 및 서비스 이용 동의', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+                    
+                    <div class="agreement set" id="agreeAllChk3">
+                        <div class="agreeTitle">
+                            <div class="uiItem">
+                                <span class="uiItemTit">필수 약관</span>
+                            </div>
+                        </div>
+                        <div class="agreeSection">
+                            <ul class="agreeList set">
+                                <li data-chk-item="list">
+                                    <div class="uiItem">개인정보 수집&middot;이용 동의</div>
+                                    <a href="#none" class="uiBtn"><span class="hidden">보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <div class="uiItem">고유식별정보 수집 이용 동의</div>
+                                    <a href="#none" class="uiBtn"><span class="hidden">보기</span></a>
+                                </li>
+                                <!-- 마이데이터 [필수] 약관에 동의한 고객에게만 노출되는 항목 -->
+                                <li data-chk-item="list">
+                                    <div class="uiItem">마이데이터 서비스 이용약관</div>
+                                            <a href="#none" class="uiBtn"><span class="hidden">보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <div class="uiItem">마이데이터 개인(신용)정보 수집 및 이용에 대한 동의</div>
+                                    <a href="#none" class="uiBtn"><span class="hidden">보기</span></a>
+                                </li>
+                                <!--// 동의한 고객에게만 노출되는 항목 -->
+                            </ul>
+                            <script>
+                                $(document).ready(function () {
+                                    $('#agreeAllChk3').uiCheckAll();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!--// 필수약관 -->
+
+                    <div class="agreement set comp" id="agreeAllChk4">
+                        <div class="agreeTitle">
+                            <div class="uiItem">
+                                <span class="uiItemTit">선택 약관</span>
+                            </div>
+                        </div>
+                        <div class="agreeSection">
+                            <ul class="agreeList set">
+                                <li data-chk-item="list">
+                                    <div class="uiItem">마케팅정보&middot;활용 동의</div>
+                                    <span class="agreeTag pColor">동의</span>
+                                    <!-- <button type="button" class="btn sub"><span>동의</span></button> -->
+                                    <a href="#none" class="uiBtn"><span class="hidden">보기</span></a>
+                                </li>
+                            </ul>
+                            <div class="uiAcco">
+                                <div data-chk-item="list">
+                                    <div class="uiAccoHeader">
+                                        <div class="uiItem">맞춤형 정보수신</div>
+                                        <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                                    </div>
+                                    <div class="uiAccoContent">
+                                        <ul class="agreeItem">
+                                            <li>
+                                                <span>개인(신용)정보 수집 및 이용 동의</span>
+                                                <span class="agreeTag pColor">동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                            <li>
+                                                <span>개인(신용)정보 제공 동의</span>
+                                                <span class="agreeTag gColor">미동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div data-chk-item="list">
+                                    <div class="uiAccoHeader">
+                                        <div class="uiItem">맞춤금융상품 추천</div>
+                                        <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                                    </div>
+                                    <div class="uiAccoContent">
+                                        <ul class="agreeItem">
+                                            <li>
+                                                <span>개인(신용)정보 수집 및 이용 동의</span>
+                                                <span class="agreeTag pColor">동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                            <li>
+                                                <span>고유식별정보 이용 동의</span>
+                                                <span class="agreeTag pColor">동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 마이데이터 [필수] 약관에 동의한 고객에게만 노출되는 항목 -->
+                                <div data-chk-item="list">
+                                    <div class="uiAccoHeader">
+                                        <div class="uiItem">마이데이터 동의</div>
+                                        <a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+                                    </div>
+                                    <div class="uiAccoContent">
+                                        <ul class="agreeItem">
+                                            <li>
+                                                <span>개인(신용)정보 수집 및 이용 동의</span>
+                                                <span class="agreeTag pColor">동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                            <li>
+                                                <span>개인(신용)정보 제3자 제공 동의</span>
+                                                <span class="agreeTag gColor">미동의</span>
+                                                <a href="#none" class="uiBtn"><span class="hidden">약관 상세보기</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--// 동의한 고객에게만 노출되는 항목 -->
+                                
+                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $('#agreeAllChk4').uiCheckAll();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!--// 선택약관 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '내가받은 보고서 열람', prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">나신용님에게 도착한 신용보고서를 확인해보세요.</h2>
+                    </div>
+                    <div class="formWrap">
+                        <div class="formItem">
+                            <label for="inp1" class="titItem">보고서 종류</label>
+                            <div>
+                                <select>
+                                    <option>개인 신용보고서(한글)</option>
+                                    <option>개인 신용보고서(영문)</option>
+                                    <option selected>커플 신용보고서</option>
+                                    <option>사업자 신용보고서</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <label for="inp0" class="titItem">보고서 정보</label>
+                            <input type="text" id="inp0" value="김신용" disabled>
+                        </div>
+                        <div class="formItem">
+                            <label for="inp1" class="titItem">이메일</label>
+                            <div class="">
+                                <input type="text" id="inp1" placeholder="이메일 전체입력">
+                            </div>
+                            <span class="attExp">이메일을 입력해 주세요.</span>
+                        </div>
+                        <div class="formItem">
+                            <label for="inp2" class="titItem">커플신용보고서 번호</label>
+                            <div class="">
+                                <input type="text" id="inp2" placeholder="예) CR02480">
+                            </div>
+                            <span class="attExp">코드 번호를 입력해 주세요</span>
+                        </div>
+                    </div>
+                    <div class="guideInfoBox">
+                        <div class="contWrap">
+                            <p class="tit">[신용보고서 서비스 사전 안내]</p>
+                            <p class="subTit">
+                                본 약관은 나이스지키미 회원약관의 부속 약관이며, 본 약관에 정한 내용이 없는 경우에는 나이스지키미 회원약관이 적용됩니다.
+                            </p>
+                            <ul class="guideInfoList">
+                                <li>
+                                    1. 신용보고서에 포함된 신용정보는 <strong>'신용정보의 이용 및 보호에 관한 법률'</strong>을 준수하여 제공되며, 해당 내용은 동 법령에
+                                    의해 보호받습니다.
+                                </li>
+                                <li>
+                                    2. 서비스 이용자의 주민등록번호, 비밀번호, 신용보고서에 대한 관리 소홀 등으로 발생한 손해에 대해서 회사는 책임지지 않습니다.
+                                </li>
+                                <li>
+                                    3. 서비스를 이용하는 과정에서 착오 또는 조작실수로 인해 의사와 무관하게 서비스신청이 이루어졌거나, 신용 보고서가 누출된 경우 즉시 회사로 통보하여
+                                    회사의 안내에 따라야 합니다.
+                                </li>
+                                <li>
+                                    4. 신용보고서 서비스를 통해 이미 이용자의 신용보고서가 제3자에게 송부되어 열람된 경우, 이용자의 신용정보의 누출에 의한 손해는 NICE평가정보에서
+                                    책임지지 않습니다. 단, 온라인 송부에 한해서 제3자 열람 전에 서비스 이용자가 취소를 요청하는 경우, NICE평가정보는 즉각 누출방지에 협조할 의무가
+                                    있습니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uiItem">
+                            <input type="checkbox" name="period" id="per1" checked="checked">
+                            <label for="per1"><span>위 내용에 동의합니다.</span></label>
+                        </div>
+                    </div>
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>보고서 조회</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

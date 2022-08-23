@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미:고객센터</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid2');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid2" class="btn base modalOpen">확인 가능한 신용정보</a>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modalid2">
+            <div class="modalWrap">
+                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>확인 가능한 신용정보</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="governing">
+                            <h2 class="governingTitle">
+                                개인 신용보고서
+                            </h2>
+                        </div>
+                        <dl class="reportc">
+                            <div>
+                                <dt>보고서 기본정보</dt>
+                                <dd>이름, 집주소, 직장주소</dd>
+                            </div>
+                            <div>
+                                <dt>신용점수</dt>
+                                <dd></dd>
+                            </div>
+                            <div>
+                                <dt>카드정보</dt>
+                                <dd>카드개설현황, 카드한도현황</dd>
+                            </div>
+                            <div>
+                                <dt>대출정보</dt>
+                                <dd>대출개설현황(NICE평가정보, 한국신용정보원), 단기카드대출(현금서비스)현황</dd>
+                            </div>
+                            <div>
+                                <dt>연체정보</dt>
+                                <dd>단기연체내역, 장기연체내역(한국신용정보원, NICE평가정보)</dd>
+                            </div>
+                            <div>
+                                <dt>기타정보</dt>
+                                <dd>공공정보, 금융질서문란정보, 채무보증정보, 채무조정정보</dd>
+                            </div>
+                        </dl>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

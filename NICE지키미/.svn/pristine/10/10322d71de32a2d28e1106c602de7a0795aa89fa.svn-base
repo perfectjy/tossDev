@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '연체현황', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+            
+            <div class="familyTab">
+                <ul>
+                    <li class="active">
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam01_on.png" alt=""></span>
+                            <strong>나신용</strong>
+                        </button>                                
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam02.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam03.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li>
+                    <!-- <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam04.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li> -->
+                    <!-- <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam05.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                
+                    </li> -->
+                </ul>
+                <div class="added">
+                    <span class="tip">가족을 초대해 보세요.</span>
+                    <button type="button" class="btnAdd"><strong>가족추가</strong></button>
+                </div>                        
+            </div>
+            <!--// familyTab -->
+            
+            <div class="tabWrap t1">
+                <ul class="tabList">
+                    <li class="tab active"><a href="#tab01">단기연체</a></li>
+                    <li class="tab"><a href="#tab02">장기연체</a></li>
+                </ul>
+                <div class="tabConts">
+                    <div class="tabPanel" id="tab01">
+
+                        <div class="guideBox sm">
+                            <p>단기연체는 10만원 이상의 금액을 5일(영업일 기준) 이상 90일 미만 연체한 경우 등록됩니다. 단기연체는 상환 이후 최대 3년간 신용평가에 활용됩니다.</p>
+                        </div>
+
+                        <div class="repDetWrap sec overdue">
+                            <div class="contMainTit"><strong>진행 중인 단기연체</strong><span class="cntNum">0</span>
+                                <div class="tooltipWrap">
+                                    <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                    <div class="toolTip">
+                                        <i></i>
+                                        <p>연체가 발생한 지 90일이 지나면 통상 장기연체로 넘어갑니다. 장기연체로 넘어가기 전에 빠르게 상환해야 신용도에 미치는 악영향을 최소화할 수 있습니다.</p>
+                                        <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="noList">
+                                <p>연체 내역이 없습니다.</p>
+                            </div>
+                        </div>
+                        <!--// 진행중인 단기연체 -->
+                         
+                        <div class="comp">
+                            <div class="repDetWrap overdue">
+                                <div class="contMainTit"><strong>해제된 단기연체</strong><span class="cntNum">0</span>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p>연체가 발생한 지 90일이 지나면 통상 장기연체로 넘어갑니다. 장기연체로 넘어가기 전에 빠르게 상환해야 신용도에 미치는 악영향을 최소화할 수 있습니다.</p>
+                                            <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="noList">
+                                    <p>연체 내역이 없습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 해제된 단기연체 -->
+                       
+                        <div class="comp bnrZone">
+                            <div class="tipAreaWrap">
+                                <div class="tip"><span class="bold">나신용</span>님의 나이스한 금융생활이 쭉-이어질 수 있도록!</div>
+                                <div class="bgBoxLink">
+                                    <a href="#none" class="ico01">
+                                        <strong> 신용점수 예측하기</strong><span class="hidden">자세히보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="banLink">
+                                <a href="#none" class="ico16">
+                                    <span>카드/대출 대금 연체, 걱정 마세요~</span>
+                                    <strong>알림받고 연체 방지하는 방법!</strong>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="uiAcco infoTip">
+                            <div class="uiAccoHeader open">          
+                                <button type="button" class="uiBtn">
+                                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                </button>
+                            </div>
+                            <div class="uiAccoContent">
+                                <ul class="listDot">
+                                    <li>연체내역은 신용도에 제일 큰 악영향을 미칩니다. 신용도를 평가하는 요소 중 연체 정보가 포함된 '상환이력정보'는 신용도에 30.6%의 활용비중을 차지합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabPanel" id="tab02">장기연체</div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"><script type="text/javascript" src="../../../bzw/inc/footer.js"></script></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

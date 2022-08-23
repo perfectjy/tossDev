@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::데이터놀이</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '이름추천', prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="lineFormSearch">
+                        <div class="itemLine">
+                            <span class="custForm">
+                                <span class="inp"><input type="text" placeholder="희망하는 글자" class="wid3"></span>
+                            </span>
+                            를(을) 포함하는
+                        </div>
+                        <div class="itemLine inline">
+                            <span class="custForm">
+                                <span class="inp">
+                                    <input type="text" placeholder="색상" readonly="readonly" class="wid">
+                                    <a href="#none" class="btnSearch" role="button"><span class="hidden">색상선택 팝업열기</span></a>
+                                </span>
+                            </span>
+                            색
+                            <span class="custForm">
+                                <span class="inp">
+                                    <input type="text" placeholder="품종" readonly="readonly" class="wid2">
+                                    <a href="#none" class="btnSearch" role="button"><span class="hidden">품종선택 팝업열기</span></a>
+                                </span>
+                            </span>
+                            에게
+                        </div>
+                        <div class="itemLine inline">
+                            찰떡같은 이름은?
+                        </div>
+                        <p>
+                            3개 조건 중 1개 이상 입력해 주세요.<br>
+                            우리말이나 영어 이름을 추천받을 수 있어요.
+                        </p>
+                    </div>
+
+                    <div class="btnConts">
+                        <button type="button" class="btn primary"><span>추천받기</span></button>
+                    </div>
+
+                    <!-- 이름추천결과 -->
+                    <div class="nameRecomResult">
+                        <div class="noList">
+                            <p>검색된 결과가 없습니다.</p>
+                        </div>
+                        <div id="capture">
+                            <h2 class="h2">이름추천 결과</h2>
+                            <ul class="nameRecomList">
+                                <li><a href="#none" class="btnArrow"><strong>레오</strong><span>2.5%</span></a></li>
+                                <li><a href="#none" class="btnArrow"><strong>베리</strong><span>2.5%</span></a></li>
+                                <li><a href="#none" class="btnArrow"><strong>도비</strong><span>2.5%</span></a></li>
+                                <li><a href="#none" class="btnArrow"><strong>레오</strong><span>2.5%</span></a></li>
+                                <li><a href="#none" class="btnArrow"><strong>베리</strong><span>2.5%</span></a></li>
+                                <li><a href="#none" class="btnArrow"><strong>도비</strong><span>2.5%</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nameRecomInfo">
+                            <span>추천지수</span>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <strong class="tit">추천지수</strong>
+                                    <p>등록된 모든 이름 중에서 각 이름이 차지하는 비중입니다.</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btnBox">
+                            <button type="button" class="btn round"><span class="capture">캡처</span></button>
+                            <button type="button" class="btn round"><span class="share">공유</span></button>
+                        </div>
+                    </div>
+
+                    <div class="playComMenu scroll">
+                        <ul class="pet">
+                            <li><a href="#none" class="ico04"><span>반려동물<br>등록</span></a></li>
+                            <li><a href="#none" class="ico02"><span>반려동물<br>나이계산기</span></a></li>
+                            <li><a href="#none" class="ico05"><span>반려동물<br>이름랭킹</span></a></li>
+                            <li><a href="#none" class="ico01"><span>반려동물<br>색상랭킹</span></a></li>
+                        </ul>
+                    </div>
+                    <!--// playComMenu.scroll -->
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

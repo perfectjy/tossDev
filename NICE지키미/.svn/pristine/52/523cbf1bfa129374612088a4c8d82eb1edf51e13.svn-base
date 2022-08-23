@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid2');
+			
+			$('.inpCpnBox button').on('click', function(){
+				$('.hideInp').show();
+				$(this).hide();
+			})
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid2" class="btn base modalOpen">[팝업]쿠폰선택</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+
+		<div class="uiModal modal" id="modalid2">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>보유하신 할인쿠폰입니다.</h1>
+					<!-- <h1>보유하신 할인쿠폰이 없습니다. 새로 등록해주세요.</h1> -->
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<div class="selCpnBox">
+							<div class="uiItem">
+								<input type="radio" name="period" id="period1" checked="checked">
+								<label for="period1">
+									<span class="tit">10%할인</span>
+									<span class="minExp">1A2B3CD-56-7E8F9G</span>
+								</label>
+							</div>
+							<div class="uiItem">
+								<input type="radio" name="period" id="period2">
+								<label for="period2">
+									<span class="tit">유료서비스 3,000원 할인</span>
+									<span class="minExp">1A2B3CD-56-7E8F9G</span>
+								</label>
+							</div>
+							<span class="attExp">할인쿠폰을 선택해 주세요</span>
+					  	</div>
+						<div class="inpCpnBox">
+							<div class="cntBtn"><button type="button" class="btnLine">직접등록</button></div>
+							<div class="formItem hideInp">
+								<label for="tt" class="titItem">할인쿠폰 번호</label>
+								<div class="formEle">
+									<input type="text" placeholder="-없이 영문 또는 숫자 입력" class="inpTxt" d="tt">
+								</div>
+								<!-- <span class="attExp">할인쿠폰 번호를 입력해 주세요.</span> -->
+							</div>
+						</div>
+					</div>
+					<!--// content -->
+					<div class="btns">
+						<button type="button" class="btn primary"><span>할인쿠폰 등록</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

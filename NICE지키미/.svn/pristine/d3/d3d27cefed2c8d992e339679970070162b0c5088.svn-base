@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '메뉴명', prev: true, menu: true };
+
+        $(function() {
+            var loadingMsg = $('.txtLoading'),
+				msgObj = loadingMsg.find('.msg'),
+				cnt = 0;
+
+			var rolling = setInterval(function() {
+				cnt ++;
+
+				if (cnt === 30) {
+					msgObj.eq(0).fadeOut(200);
+				} else if (cnt === 32) {
+					msgObj.eq(1).fadeIn(200);
+				} else if (cnt === 62) {
+					msgObj.eq(1).fadeOut(200);
+				} else if (cnt === 64) {
+					msgObj.eq(2).fadeIn(200);
+				} else if (cnt === 134) {
+					msgObj.eq(2).fadeOut(200);
+				} else if (cnt === 136) {
+					msgObj.eq(0).fadeIn(200);
+					cnt = 0;
+				}
+			}, 100);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <!-- progressbar -->
+                    <div class="progressBox top">
+                        <div class="progress">
+                            <p class="bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></p>
+                            <!-- [D] 로딩 시 aria-valuenow(0 ~ 100)와 style width(0 ~ 100%)값 조정 -->
+                        </div>
+                    </div>
+                    <!-- // progressbar -->
+
+                    <div class="compVisual">
+                        <span class="icon loading"></span>
+                    </div>
+                    <div class="governing txtC txtLoading">
+                        <div class="msg">
+                            <h2 class="governingTitle ">
+                                나신용님에게 꼭 맞는 대출상품을 찾고 있어요.
+                            </h2>
+                        </div>
+                        <div class="msg" style="display: none;">
+                            <h2 class="governingTitle ">
+                                최대 3분 정도 걸릴 수 있어요.<br> 조금만 기다려 주세요.
+                            </h2>
+                        </div>
+                        <div class="msg" style="display: none;">
+                            <h2 class="governingTitle ">
+                                심사 중 다른 서비스를 이용해도 한도 조회는 계속 진행돼요.
+                            </h2>
+                            <div class="subTxt">
+                                <p><a href="#" class="btnLine">기다리지 않고 다른 서비스를 이용할래요.</a></p>
+                                <p class="exp">(완료되면 앱푸시/알림톡으로 알려드립니다.)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

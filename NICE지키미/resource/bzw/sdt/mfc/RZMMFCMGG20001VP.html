@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal" class="btn base modalOpen">마이데이터 서비스 이용약관</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal full" id="modal">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>[필수]마이데이터 서비스 약관</h1>
+				</div>
+				<div class="modalContent">
+					<div class="inner">
+						<!-- content -->
+						<!-- 약관코드 AZ159 시작 -->
+						<div class="termsWrap">
+							<h2>나이스지키미 마이데이터 이용약관</h2>
+							<p>회원님의 자산정보를 통합적으로 조회하기 위해 회원님의 전송요구권 행사에 따라 개인(신용)정보를 수집하여 통합 조회 관리 하는 마이데이터 서비스를 제공하고 있습니다.</p>
+							
+                            <strong class="termsTit">용어정의</strong>
+                            <ul class="listDesc">
+                                <li>마이데이터 서비스: 신용정보법에 따라 허가 받은 본인신용정보관리회사로서 제공하는 개인신용정보 통합조회 및 관련 서비스를 의미(나이스지키미 MY자산 등 서비스)</li>
+                                <li>개인신용정보 전송요구: 회원이 자기결정에 따라 해당 회원의 개인신용정보를 보유하고 있는 자(이하 '정보제공자')로부터 해당 회원의 개인신용정보를 받을 자격이 있는 제3자(이하 '정보수신자')에게 전송할 것을 요구하는 행위</li>
+                                <li>정보제공자: 신용정보법 제33조의2에 따라 신용정보를 전송할 의무가 있으며 이에 따라 고객의 개인신용정보를 전송하는 자</li>
+                                <li>정보수신자: 정보제공자가 전송하는 개인신용정보를 수신하는 자</li>
+                                <li>API(Application Programming Interface): 운영체제나 응용프로그램 사이의 통신에 사용되는 언어나 메시지 형식으로 마이데이터 사업자와 정보제공자간 개인신용정보를 송수신하기 위한 전송규격</li>
+                                <li>본인인증: 회원이 정보제공자에게 정보 전송을 요구할 때, 정보제공자가 고객이 해당 정보의 정보주체이며 전송요구를 하였는지 확인하는 방법(통합인증, 개별인증)</li>
+                            </ul> 
+                            
+                            <strong class="termsTit">서비스 종류</strong>
+                            <ul class="listDesc">
+                                <li>나이스지키미에서는 MY자산, MY카드, MY연체관리 서비스를 마이데이터 API를 사용하여 제공합니다.</li>
+                                <li>MY자산: 회원의 금융정보와 비금융정보를 통합하여 자산정보 조회 서비스 이용 및 분석</li>
+                                <li>MY카드: 회원의 카드 사용 내역을 통합하여 조회 하고 분석하는 서비스</li>
+                                <li>MY연체방지: 회원의 금융정보 기반 소비지출에 따른 연체위험을 진단하는 서비스</li>
+                                <li>개인신용정보 통합조회</li>
+                                <li>기타 부가서비스</li>
+                            </ul>      
+
+                            <strong class="termsTit">서비스 이용신청 및 해지</strong>
+                            <ul class="listDesc">
+                                <li>회원이 나이스지키미 채널을 통하여 서비스 이용을 신청 할 수 있으며, 회원이 마이데이터 서비스 가입 필수약관에 동의 한 후 신청 단계를 완료 한 경우 서비스 이용신청이 완료 된 것으로 봅니다.</li>
+                                <li>회원이 서비스 해지를 원하는 경우 마이데이터 서비스 해지 메뉴를 통해 서비스를 해지할 수 있습니다.</li>
+                            </ul>  
+                            
+                            <strong class="termsTit">전송요구권 행사 및 철회</strong>
+                            <ul class="listDesc">
+                                <li>회원은 정보제공자에게 서면&middot;전자문서&middot;개인비밀번호 및 기타 방법의 수단으로 정보 제공동의의 안정성과 신뢰성이 확보될 수 있는 수단을 활용하여 전송요구를 할 수 있습니다.</li>
+                                <li>회원은 다음 사항을 특정하여 정보제공자에게 전송을 요구할 수 있습니다.
+                                    <ul class="listHypen">
+                                        <li>회원은 다음 사항을 특정하여 정보제공자에게 전송을 요구할 수 있습니다.</li>
+                                        <li>신용정보제공&middot;이용자 등으로서 전송요구를 받는 자</li>
+                                        <li>전송을 요구하는 개인신용정보</li>
+                                        <li>전송요구에 따라 개인신용정보를 제공하는 자</li>
+                                        <li>정기적인 전송을 요구하는지 여부 및 요구하는 경우 그 주기</li>
+                                        <li>전송요구의 종료시점</li>
+                                        <li>전송을 요구하는 목적</li>
+                                        <li>전송을 요구하는 개인신용정보의 보유기간</li>
+                                        <li>기타</li>
+                                    </ul>
+                                </li>
+                                <li>회원은 전송요구를 철회할 수 있으며 철회의 방법은 전송요구의 방법과 같습니다.</li>
+                                <li>정보제공자는 다음사항의 경우 전송요구&middot;철회를 거절하거나 전송을 정지&middot;중단하며 회원에게 안내합니다.
+                                    <ul class="listHypen">
+                                        <li>회원 본인이 전송요구를 한 사실이 확인되지 않은 경우</li>
+                                        <li>회원 본인이 전송요구를 했으나 제3자의 기망이나 협박 때문에 전송요구를 한 것을 의심한 경우</li>
+                                        <li>회원의 인증정보 탈취 등 부당한 방법으로 인한 전송요구임을 알게 된 경우</li>
+                                        <li>전송요구에 응하여 개인신용정보를 제공할 경우 제3자의 정당한 권리 또는 이익을 부당하게 침해하는 경우</li>
+                                    </ul>
+                                </li>
+                            </ul>      
+						</div>	
+						<!-- 약관코드 AZ159 종료 -->		
+						<!--// content -->
+					</div>
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>확인</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

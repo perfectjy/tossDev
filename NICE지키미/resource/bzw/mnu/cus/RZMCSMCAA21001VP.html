@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid2');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid2" class="btn base modalOpen">개인정보 제공 및 활용동의</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+
+		<div class="uiModal modal" id="modalid2">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>개인정보 제공 및 활용동의</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<div class="popTermsBox">
+							<p>본인은 본인이 제출한 이의신청의 사실확인을 위하여 필요한 범위 내에서 민원내용 및 본인의 개인정보의 전부나 일부를 위 이의신청과 관련된 해당 금융회사 등에 제공하고 설문조사 등에 활용하는 것에 대하여 동의합니다.</p>
+							<p>만약 귀하가 이에 동의하지 않아 사실확인을 할 수 없는 경우에는 귀하의 이의신청에 대한 처리를 종결할 수 있음을 알려 드립니다.<br>「신용정보의 이용 및 보호에 관한 법률」 제38조 제1항에 따라 위와 같이 신용점수에 대한 이의를 신청합니다.</p>
+						</div>
+					</div>
+					<!--// content -->
+					<div class="btns">
+						<button type="button" class="btn primary"><span>확인</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

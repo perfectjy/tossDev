@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금융소비자보호</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '약관', prev: true, menu: true };
+
+        $(function () {
+            modal.openModal('#modalid');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modalid" class="btn base modalOpen">[팝업]웹접근성 인증마크</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+    </div>
+
+    <div class="uiModal full" id="modalid">
+        <div class="modalWrap">
+            <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+            <div class="modalHeader">
+                <h1>웹접근성 인증마크</h1>
+            </div>
+            <div class="modalContent">
+                <div class="inner">
+                    <!-- content -->
+                    <div class="certificate">
+                        인증서 이미지
+                    </div>
+                    <!--// content -->
+                </div>
+                <div class="modalBottom">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>닫기</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

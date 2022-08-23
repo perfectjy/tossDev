@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '사업자신용보고서', prev: true, menu: true };
+
+        $(function () {
+            //스크롤이벤트
+            $('.rndLink a').on('click', function (e) {
+                e.preventDefault();
+                $(this).parent().addClass('active').siblings().removeClass('active');
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <div class="governingTitle btw">사업자 신용보고서</div>
+                        <p class="governingInfo">2022/04/22 기준</p>
+                    </div>
+                    <div class="rndLink tD">
+                        <ul>
+                            <li><a href="#link1"><span>#개인사업자신용점수/등급</span></a></li>
+                            <li><a href="#link2"><span>#개설정보</span></a></li>
+                            <li><a href="#link3"><span>#채무불이행</span></a></li>
+                            <li><a href="#link4"><span>#여신(신정원기업여신일보)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap sec" id="link1">
+                        <div class="contMainTit"><strong>개인사업자신용점수/등급</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <div>
+                                        <p><strong>개인사업자 신용점수 안내</strong></p>
+                                        <p>개인사업자는 개인(대표자)과 법인의 신용특성을 동시에 가지고 있습니다. 따라서 개인사업자가 여신을 신청했을 때 금융회사가 사업자의 특성을
+                                            참고할 수 있도록 개인의 신용점수와 별개로 개인사업자 신용점수를 제공하고 있습니다.</p>
+                                        <p>*개인사업자: 자영업자(혹은 영세사업자), 소상공인, 개인 사업자 등을 포괄</p>
+                                    </div>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphConts repSp">
+                            <div style="height:200px; background:#f1f1f1">
+                                <p>컬러 : #003bbc #eff2f8<br>
+                                    종류 : Dial</p>
+                            </div>
+                            <p class="expL">
+                                <span>2등급</span>
+                                <span>상위20%</span>
+                            </p>
+                        </div>
+                        <div class="companyInfo">
+                            <p>
+                                <strong>여의도김밥</strong>의 신용등급은 <strong>2등급</strong>입니다. <br>이에 따른 등급 내 불량률은
+                                <strong>0.50%</strong>이며, 만약 회원님의 신용평점을 임의의 1,000명과 비교한다면 <strong>145등</strong> 이내에 위치하는
+                                수준입니다.
+                            </p>
+                            <dl>
+                                <dt>긍정적 요인</dt>
+                                <dd>단기연체나 장기연체 이력 없이 건전한 신용거래 활동을 하고 있습니다.<br>
+                                    현재 대표자의 대출 혹은 보증정보가 없습니다.<br>
+                                    최근 기업신용공여정보가 없습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>부정적 요인</dt>
+                                <dd>회원님은 신용도에 영향을 주는 부정적 요인이 없습니다.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="repDetWrap sec" id="link2">
+                        <div class="contMainTit"><strong>개설정보</strong></div>
+                        <div class="tblItem">
+                            <div class="fRow">
+                                <p class="contSubTit">구분 (계좌상태)
+                                    <span class="tagSq pr">NICE평가정보</span>
+                                </p>
+                                <p>단위:원</p>
+                            </div>
+                            <table class="tblList txtR">
+                                <caption>개설정보</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">총 개설금액/총 한도</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">납입자</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">최초상각금액</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">대출잔액</th>
+                                        <td>
+                                            <p class="emp"><em>130,000</em></p>
+                                        </td>
+                                        <th scope="col">거치기간시작일</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">대상어음종류</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">업계</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">거치기간</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">단기카드대출 한도</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">개설일</th>
+                                        <td>
+                                            <p class="emp"><em>2022.01.21</em></p>
+                                        </td>
+                                        <th scope="col">대출용도</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">리볼빙 최소결제비율</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">만기일/유효기간</th>
+                                        <td>
+                                            <p class="emp"><em>2023.01.21</em></p>
+                                        </td>
+                                        <th scope="col">보증인유무</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">리볼빙 최소결제금액</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">총 개설금액</th>
+                                        <td>
+                                            <p class="emp"><em>120,300</em></p>
+                                        </td>
+                                        <th scope="col">담보유무</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">인별통합한도</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">상환방식</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">주택담보유무</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">업체별통합한도</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">이자상환주기</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">연체정리용 대환대출여부</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col"></th>
+                                        <td>
+                                            <p class="emp"><em></em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">원금상환주기</th>
+                                        <td>
+                                            <p class="emp"><em>-</em></p>
+                                        </td>
+                                        <th scope="col">상각일</th>
+                                        <td>
+                                            <p class="emp"><em></em></p>
+                                        </td>
+                                        <th scope="col"></th>
+                                        <td>
+                                            <p class="emp"><em></em></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tblItem">
+                            <div class="fRow">
+                                <p class="contSubTit">발생기관
+                                    <span class="tagSq gr">한국신용정보원</span>
+                                </p>
+                                <p>단위:원</p>
+                            </div>
+                            <table class="tblList txtC">
+                                <caption>발생기관</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">발생지점</th>
+                                        <th scope="col">개설금액</th>
+                                        <th scope="col">사유</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">우리은행(서여의도센터)</th>
+                                        <td>20,000</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">국민은행(서여의도센터)</th>
+                                        <td>9,000</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="repDetWrap sec" id="link3">
+                        <div class="tblItem">
+                            <div class="fRow">
+                                <p class="contMainTit"><strong>채무불이행</strong>
+                                    <span class="tagSq pr">NICE평가정보</span>
+                                </p>
+                                <p>단위:원</p>
+                            </div>
+                            <table class="tblList txtC">
+                                <caption>채무불이행</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">발생기관(발생지점)</th>
+                                        <th scope="col">연체사유</th>
+                                        <th scope="col">등록금액</th>
+                                        <th scope="col">발생일</th>
+                                        <th scope="col">제공일</th>
+                                        <th scope="col">기타</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">우리은행(서여의도센터)</th>
+                                        <td>본부총괄</td>
+                                        <td>있음</td>
+                                        <td>2017.01.01</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">국민은행(서여의도센터)</th>
+                                        <td>인터넷점</td>
+                                        <td>있음</td>
+                                        <td>2017.01.01</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">우리은행</th>
+                                        <td>상품</td>
+                                        <td>없음</td>
+                                        <td>2017.01.01</td>
+                                        <td>2017.06.09</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tblItem">
+                            <div class="fRow">
+                                <p class="contMainTit"><strong>채무불이행</strong>
+                                    <span class="tagSq gr">한국신용정보원</span>
+                                </p>
+                                <p>단위:원</p>
+                            </div>
+                            <table class="tblList txtC">
+                                <caption>채무불이행</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">발생기관(발생지점)</th>
+                                        <th scope="col">연체사유</th>
+                                        <th scope="col">등록금액</th>
+                                        <th scope="col">발생일</th>
+                                        <th scope="col">제공일</th>
+                                        <th scope="col">기타</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">우리은행(서여의도센터)</th>
+                                        <td>본부총괄</td>
+                                        <td>있음</td>
+                                        <td>2017.01.01</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">국민은행(서여의도센터)</th>
+                                        <td>인터넷점</td>
+                                        <td>있음</td>
+                                        <td>2017.01.01</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">우리은행</th>
+                                        <td>상품</td>
+                                        <td>없음</td>
+                                        <td>2017.01.01</td>
+                                        <td>2017.06.09</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="repDetWrap sec" id="link4">                        
+                        <div class="tblItem">
+                            <div class="fRow">
+                                <div class="contMainTit">
+                                    <strong>여신정보(신용정보원 기업여신일보)</strong>
+                                    <div class="tooltipWrap">
+                                        <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                        <div class="toolTip">
+                                            <i></i>
+                                            <p>한국신용정보원으로부터 실시간 조회하는 기업여신일보입니다. 실제 정보와 2~3일(영업일 기준) 정도 차이가 날 수 있습니다.</p>
+                                            <button type="button" class="btnTooltipClose"><span
+                                                    class="hidden">닫기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>단위:원</p>
+                            </div>
+                            <table class="tblList txtC">
+                                <caption>여신정보(신용정보원 기업여신일보)</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">보고서구분</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">발생기관</th>
+                                        <th scope="col">업권</th>
+                                        <th scope="col">여신과목</th>
+                                        <th scope="col">최종 업데이트 일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>123,000</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>2017.01.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>123,000</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>2017.01.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>123,000</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>2017.01.01</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="niceSeal">
+                        <img src="../../../img/zkm/rzm/sub/com_nice.png" alt="NICE평가정보 주식회사">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

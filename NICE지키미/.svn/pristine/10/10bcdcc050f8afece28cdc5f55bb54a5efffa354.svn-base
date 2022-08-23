@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '금융사 연결관리', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle">
+							연결할 금융자산정보를 선택해 주세요.
+						</h2>
+                        <p class="governingInfo">선택한 자산정보의 연결을 연장하거나, 선택적 정보의 동의 여부를 변경할 수 있습니다.</p>
+					</div>
+					<div class="mngAsset">
+						<div class="uiItemTit">
+							<div class="uiItem">
+								<input type="checkbox" name="period" id="bank0">
+								<label for="bank0"><span>은행</span></label>
+							</div>
+						</div>
+						<div class="inList">
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader open">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+										<p>국민은행<span>2</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank" id="bank1" checked="checked">
+                                                <label for="bank1">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>
+											
+										</li>
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank" id="bank2" checked="checked" disabled="disabled">
+                                                <label for="bank2">
+                                                    <strong>AMA+급여 저축예금</strong>
+                                                    <span>1002841184273</span>
+                                                </label>
+                                            </div>											
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+										<p>국민은행<span>2</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li class="">
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank0" id="bank01">
+                                                <label for="bank01">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>
+											
+										</li>
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="bank0" id="bank02">
+                                                <label for="bank02">
+                                                    <strong>AMA+급여 저축예금</strong><span>1002841184273</span>
+                                                </label>
+                                                <span class="status"><em class="hidden">관리중</em></span>
+                                            </div>											
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="uiItemTit">
+							<div class="uiItem">
+								<input type="checkbox" name="period" id="invest0">
+								<label for="invest0"><span>투자</span></label>
+							</div>
+						</div>
+						<div class="inList">
+							<div class="uiAcco st1">
+								<div class="uiAccoHeader">
+									<div class="orgItem">
+										<i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+										<p>토스<span>1</span></p>
+									</div>
+									<button type="button" class="uiBtn">
+										<span class="hidden">펼치기</span>
+									</button>
+								</div>
+								<div class="uiAccoContent">
+									<ul class="rdoList">
+										<li>
+                                            <div class="uiItem">
+                                                <input type="checkbox" name="invest" id="invest1">
+                                                <label for="invest1">
+                                                    <strong>위탁</strong><span>1002841184273</span>
+                                                </label>
+                                            </div>											
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>6개 등록하기</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

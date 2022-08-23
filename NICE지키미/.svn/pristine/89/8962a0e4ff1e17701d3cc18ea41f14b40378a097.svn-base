@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '마이데이터 연결관리', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal" class="btn base modalOpen">마이데이터 서비스 이용약관</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal full" id="modal">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>개인(신용)정보 수집 및 이용에 대한 동의</h1>
+				</div>
+				<div class="modalContent">
+					<div class="inner">
+						<!-- content -->
+                        <!-- 약관코드 AZ201 시작 -->
+						<div class="termsWrap">
+							<h2>개인(신용)정보 수집 및 이용에 대한 동의(마이데이터 서비스용)</h2>
+                            <p>NICE평가정보가 마이데이터 서비스와 관련하여 본인의 개인정보를 수집/이용하고자 하는 경우에는 신용정보의 이용 및 보호에 관한 법률 제 15조 제2항, 제 34조 및 개인정보보호법 제15조 제1항 제1호에 따라 본인의 동의가 필요합니다.</p>
+
+                            <strong class="termsTit">수집 및 이용목적</strong>
+                            <ul class="listHypen">
+                                <li>마이데이터 MY자산 등의 서비스 (금융)거래관계의 설정 여부 판단</li>
+                                <li>마이데이터 MY자산 등의 서비스 (금융)거래관계의 설정/유지/이행/관리</li>
+                                <li>마이데이터 MY자산 등의 서비스 금융사고 조사, 분쟁 해결, 민원 처리</li>
+                                <li>타 이용기관(금융기관 등) (금융)거래정보를 활용한 상품, 서비스 홍보 및 판매 권유</li>
+                                <li>이용분석 및 통계, 사용자 맞춤형 서비스 제공을 위한 정보활용</li>
+                                <li>신용 관련 통계 분석 정보로 활용, 신용평가 가점 부여 등 개인신용평가회사의 업무* 목적</li>
+                                <li>법령상 의무이행
+                                    <p>* 개인신용평가회사의 업무란 개인의 신용을 판단하는 데 필요한 정보를 수집하고 개인의 신용상태를 평가(이하 "개인신용평가"라 한다)하여 그 결과(개인신용평점을 포함한다)를 제3자에게 제공하는 행위를 말합니다. (신용정보법 제 2 조 제 8 호)</p>
+                                </li>
+                            </ul>
+
+                            <strong class="termsTit">수집 및 이용할 항목</strong>
+                            <ul class="listHypen">
+                                <li>성명, 생년월일, CI</li>
+                                <li>전송요구권 행사를 통해 수집된 금융기관의 상품(서비스)정보, 계좌(증권·계약)정보, 거래정보, 추가정보(잔액, 결제정보, 포인트, 구매정보, 공공정보, 통신정보) 및 전송요구권 행사 이력 정보 등</li>
+                                <li>회원의 전송요구권 행사에 따른 회원의 설정 신규, 변경, 해지, 삭제 등의 이력 정보</li>
+                                <li>서비스 이용기록과 접속빈도 분석, IP주소 등 사용행태정보</li>
+                            </ul>
+
+                            <strong class="termsTit">보유 및 이용기간</strong>
+                            <p><span class="under">위 개인(신용)정보는 정보별로 기재된 보유기간에 따라 이용됩니다. 기재되어있지 않은 정보는 회원 탈퇴 후 아래에 명시된 기간 또는 관련 법령에 따른 보존기간까지 정보가 이용됩니다.</span></p>
+                            <ul class="listHypen">
+                                <li>회원정보: 성명, 생년월일,<br>
+                                CI: <span class="under">1년(민원처리를 위한 내부지침)</span></li>
+                                <li>서비스 이용관련 기록: <span class="under">3개월(통신비밀보호법)</span></li>
+                                <li>소비자의 불만 또는 분쟁처리에 관한 기록: <span class="under">3년(전자상거래 등에서의 소비자보호에 관한 법률)</span></li>
+                                <li>전자금융거래에 관한 기록: <span class="under">5년(전자금융거래법)</span></li>
+                                <li>계약 또는 청약철회 등에 관한 기록: <span class="under">5년(전자상거래 등에서의 소비자보호에 관한 법률)</span></li>
+                                <li>본인신용정보 열람기록: <span class="under">5년(전자상거래 등에서의 소비자보호에 관한 법률)</span></li>
+                            </ul>
+
+                            <strong class="termsTit">동의를 거부할 권리 및 동의를 거부할 경우 불이익</strong>
+                            <p>위 개인(신용)정보 수집 및 이용에 관한 동의는 해당 서비스 계약의 체결 및 이행을 위해 필수적이므로, 위 사항에 동의하셔야만 서비스 이용 및 설정 및 유지가 가능합니다.</p>
+						</div>
+                        <!-- 약관코드 AZ201 종료 -->			
+						<!--// content -->
+					</div>
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>확인</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

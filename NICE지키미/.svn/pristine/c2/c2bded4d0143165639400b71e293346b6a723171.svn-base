@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid2');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid2" class="btn base modalOpen">개인정보 제공 및 활용동의</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+
+		<div class="uiModal modal" id="modalid2">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>개인신용보고서(한글)</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<table class="tblTerm">
+							<caption>개인신용보고서(한글)</caption>
+							<colgroup>
+							  <col style="width: 33%"/>
+							  <col style="width: 67%"/>
+							</colgroup>
+							<tbody>
+							  <tr>
+								<th scope="col">상태</th>
+								<td><p class="emp"><em>준비중</em></p></td>
+							  </tr>
+							  <tr>
+								<th scope="col">결제일</th>
+								<td><p class="emp"><em>2022.03.04</em></p></td>
+							  </tr>
+							  <tr>
+								<th scope="col">받는분</th>
+								<td><p class="emp"><em>김신영</em></p></td>
+							  </tr>
+							  <tr>
+								<th scope="col">주소</th>
+								<td><p class="emp"><em>서울특별시 영등포구</em></p></td>
+							  </tr>
+							</tbody>
+						  </table>
+					</div>
+					<!--// content -->
+					<div class="btns">
+						<button type="button" class="btn primary"><span>확인</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

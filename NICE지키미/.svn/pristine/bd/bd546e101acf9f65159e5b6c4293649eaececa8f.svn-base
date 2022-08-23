@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NICE지키미</title>
+<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>    
+<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+
+<script type="text/javascript">
+	mbHeader = { title: '케어십 알림', prev: true, menu: true};
+
+	$(function() {        
+	modal.openModal('#modalid1');
+	});
+
+    $(document).ready(function() {
+        $('#agreeAllChk1').uiCheckAll();
+      });
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="skipNavi"> 
+	    <a href="#content">본문내용 바로가기</a> 
+	</div>
+	<!-- header -->    
+	<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+	<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+	<!--// header -->
+
+    <div id="container">
+        <div id="content">
+            <div class="section">
+                <a href="#modalid1" class="btn base modalOpen">[팝업] 신용조회 알림 수신/기기등록 동의</a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="uiModal bottom" id="modalid1">
+        <div class="modalWrap">
+            <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+            <div class="modalHeader">
+                <h1>무료 신용조회 알림 수신 및 기기정보 등록에 동의해 주세요.</h1>
+                <!--// CB금사방 테이블 미등록+신규 기기정보 등록일 경우 -->
+                <!-- <h1>무료 신용조회 알림 수신에 동의해 주세요.</h1> -->
+                <!--// CB금사방 테이블 미등록+신규 기기정보 등록일 경우 -->
+                <!-- <h1>기기정보 등록에 동의해 주세요.</h1> -->
+                <!--// CB금사방 테이블 등록+신규 기기정보 등록일 경우 -->
+            </div>
+            <div class="modalContent">
+                <div class="inner">
+                    <!-- content -->
+                    <div class="agreement" id="agreeAllChk1">
+                        <div class="agreeTitle">
+                            <input type="checkbox" id="chk-all1" data-chk-item="all"><label for="chk-all1"><span>약관 전체 동의</span></label>
+                        </div>
+                        <div class="agreeSection">
+                            <ul class="agreeList">
+                                <li data-chk-item="list">
+                                  <div class="uiItem"><input type="checkbox" id="chk1-item1" data-chk-item="list-item"><label for="chk1-item1">[필수] 신용조회 알림 수신 동의</label></div>
+                                </li>
+                                <!--  CB금사방 테이블 등록+신규 기기정보 등록일 경우 -->
+                                <li data-chk-item="list">
+                                    <div class="uiItem"><input type="checkbox" id="chk1-item2" data-chk-item="list-item"><label for="chk1-item2">[필수] 기기정보 등록 동의</label></div>
+                                </li>
+                                <!--// CB금사방 테이블 등록+신규 기기정보 등록일 경우 -->
+                            </ul>    
+                        </div>    
+                    </div>
+                    <div class="txtParaBox">
+                        알림 수신 및 기기정보 등록에 동의하시면 신용조회 알림 및 앱 알림을 보내드려요. 
+                    </div>
+                    <!--// content -->
+                </div>
+                <div class="modalBottom">
+                    <div class="btns">
+                        <button type="button" class="btn primary"><span>모두 동의하고 알림받기</span></button>
+                        <!-- <button type="button" class="btn primary"><span>동의하고 알림받기</span></button> -->
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

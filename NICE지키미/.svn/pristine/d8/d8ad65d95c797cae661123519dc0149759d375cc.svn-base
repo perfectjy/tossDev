@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '소비현황', prev: true, menu: true };
+    $(function () {
+        $('.infoToggle.date').each(function() {
+            var $btn = $(this).find('.infoTogBtn');
+            $btn.on('click', function(){
+                if($btn.html() === '달력접기') {
+                    $(this).html('달력보기');
+                } else {
+                    $(this).html('달력접기');
+                }
+            });
+        });
+
+        var $linkBtn = $('.banTxtLink .arrow');
+        if(!isMobile){
+            $linkBtn.hide();
+            $('.banTxtLink').contents().not('.tip').wrapAll('<a href="#none" class="arrow"></a>');
+        } else {
+            $linkBtn.show();
+            $('.banTxtLink>a').contents().unwrap('<a></a>');
+        }
+    });
+  </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="tabWrap t1">
+                        <ul class="tabList">
+                            <li class="tab active"><a href="#tab01">소비</a></li>
+                            <li class="tab"><a href="#tab02">카드</a></li>
+                        </ul>
+                        <div class="tabConts">
+                            <div class="tabPanel" id="tab01">
+                                <div class="mthInfo">
+                                    <div class="control">
+                                        <div class="intDate">
+                                            <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                                        </div>
+                                        <div class="intDate mth"><input type="text" value="06"></div>
+                                        <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                                        <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                                    </div>
+                                </div>
+                                <div class="amountItem">
+                                    <div class="tit">
+                                        <h2><span>6</span>월에 쓴 돈</h2>
+                                        <div class="dRight">
+                                            금액 숨기기
+                                            <div class="btnSwitch">
+                                                <input type="checkbox" id="switchChk">
+                                                <label for="switchChk"><span class="hidden">설정해제</span></label>
+                                            </div>
+                                        </div>
+                                        <strong>5,000,000</strong>원
+                                    </div>
+                                    <p class="exp">지난달 이맘때보다 <span><i>140,000</i>만원</span> 덜 썼어요.</p>
+                                </div>
+
+                                <div class="mthWrap">
+                                    <div class="infoToggle date">
+                                        <div class="tit">
+                                            <a href="#info1" class="infoTogBtn">달력보기<span class="hidden">내용열기</span></a>
+                                        </div>
+                                        <div id="info1" class="infoTogConts">
+                                            <table class="dateList">
+                                                <caption>달력</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">일</th>
+                                                        <th scope="col">월</th>
+                                                        <th scope="col">화</th>
+                                                        <th scope="col">수</th>
+                                                        <th scope="col">목</th>
+                                                        <th scope="col">금</th>
+                                                        <th scope="col">토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span></span></td>
+                                                        <td><span></span></td>
+                                                        <td><span></span></td>
+                                                        <td><span></span></td>
+                                                        <td><span></span></td>
+                                                        <td class="past">
+                                                            <span>1</span>
+                                                        </td>
+                                                        <td class="past record">
+                                                            <span>2</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="past">
+                                                            <span>3</span>
+                                                        </td>
+                                                        <td class="past record">
+                                                            <span>4</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>5</span>
+                                                            </td>
+                                                            <td class="past record">
+                                                            <span>6</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>7</span>
+                                                        </td>
+                                                        <td class="past record">
+                                                            <span>8</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td> 
+                                                        <td class="past record">
+                                                            <span>9</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="past">
+                                                            <span>10</span>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>11</span>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>12</span>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>13</span>
+                                                        </td>
+                                                        <td class="past">
+                                                            <span>14</span>
+                                                        </td>
+                                                        <td class="today record">
+                                                            <span class="highlight">15</span>
+                                                            <div class="item">
+                                                                <p class="minus">110,000</p>
+                                                                <p><span class="cnt">5</span>건</p>
+                                                            </div>
+                                                            <a href="#none"><span class="hidden">거래내역 상세페이지(팝업)</span></a>
+                                                        </td>
+                                                        <td>
+                                                            <span>16</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>17</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>18</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>19</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>20</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>21</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>22</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>23</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>25</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>26</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>27</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>28</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>29</span>
+                                                        </td>
+                                                        <td>
+                                                            <span>30</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="sideLineArea">
+                                        <ul class="sideLineList t1">
+                                            <li class="active">
+                                                <span class="date"><i>2022.06.21</i> 화</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/bg/bg_consume05.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>(주)나이스베이커리</p>
+                                                        <span>할부 <i class="num">12</i>개월</span>
+                                                    </div>
+                                                    <strong class="minus"><span>6,000,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/bg/bg_consume04.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>식자재마트</p>
+                                                        <span>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="date"><i>2022.06.20</i> 월</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/bg/bg_consume04.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>3,000,000</span>원</strong>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnMoreBox">
+                                        <button type="button" class="btn more"><span>더보기</span></button>
+                                    </div>
+                                </div>
+                                <!--// 기간별 사용액 -->
+
+                                <div class="comp">
+                                    <div class="banTxtLink">
+                                        <span class="tip">최근 현금서비스를 5개월 동안 이용했어요.</span>
+                                        <p>12개월간 현금서비스를 이용하지 않으면</p>
+                                        <span>신용점수가
+                                            <strong class="wonder">1</strong>
+                                            <strong class="wonder">0</strong>
+                                            <strong class="wonder">0</strong>점 올라가요. 
+                                        </span>
+                                        <a href="#none" class="arrow"></a>
+                                    </div>
+                                </div>
+                                <!--// comp -->
+
+                                <div class="comp">
+                                    <h2 class="titS">7월 소비방식</h2>
+                                    <ul class="listWrap">
+                                        <li class="ppItem">
+                                            <p>일시불</p>
+                                            <strong><span>?</span>원</strong>
+                                            <button type="button" class="btn reload"><span class="hidden">새로고침</span></button>
+                                        </li>
+                                        <li class="ppItem">
+                                            <p>할부</p>
+                                            <strong><span>500,000</span>원</strong>
+                                            <a href="#none" class="btnArrow"><span class="hidden">바로가기</span></a>
+                                        </li>
+                                        <li class="ppItem">
+                                            <p>체크</p>
+                                            <strong><span>500,000</span>원</strong>
+                                            <a href="#none" class="btnArrow"><span class="hidden">바로가기</span></a>
+                                        </li>
+                                        <li class="ppItem">
+                                            <p>현금서비스</p>
+                                            <strong><span>500,000</span>원</strong>
+                                            <a href="#none" class="btnArrow"><span class="hidden">바로가기</span></a>
+                                        </li>
+                                        <li class="ppItem">
+                                            <p>카드론</p>
+                                            <strong><span>500,000</span>원</strong>
+                                            <a href="#none" class="btnArrow"><span class="hidden">바로가기</span></a>
+                                        </li>
+                                        <li class="ppItem">
+                                            <p>연체</p>
+                                            <strong><span>500,000</span>원</strong>
+                                            <a href="#none" class="btnArrow"><span class="hidden">바로가기</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--// 월 소비방식 -->
+
+                                
+                                <!-- [카테고리 타입명]
+                                    ct1 : 교육,
+                                    ct2 : 교통, 
+                                    ct3 : 쇼핑, 
+                                    ct4 : 마트/편의점, 
+                                    ct5 : 외식, 
+                                    ct6 : 취미/여가, 
+                                    ct7 : 생활, 
+                                    ct8 : 유흥,
+                                    ct9 : 미용,
+                                    ct10 : 금융/세금,
+                                    ct11 : 기부,
+                                    ct12 : 의료/건강 ? 병원,
+                                    ct13 : 여행/숙박 
+                                -->
+                                <div class="comp">
+                                    <div class="mthInfo">
+                                        <h2 class="h3"><strong class="pColor">외식</strong>에서 가장 많이 썼어요.</h2>
+                                        <p class="opt"><span class="all">전체 카드사용자</span></p>
+                                    </div>
+                                    <ol class="barRankList">
+                                        <li>
+                                            <i class="num">1</i>
+                                            <div class="groupItem ct5">
+                                                <span class="name">외식</span>
+                                                <ul class="barList">
+                                                    <li class="first">
+                                                        <span class="bar" style="width:50.9%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25.1</span>%)</strong>
+                                                    </li>
+                                                    <li class="last">
+                                                        <span class="bar" style="width:40.4%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25</span>%)</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="num">2</i>
+                                            <div class="groupItem ct3">
+                                                <span class="name">쇼핑</span>
+                                                <ul class="barList">
+                                                    <li class="first">
+                                                        <span class="bar" style="width:50.9%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25.1</span>%)</strong>
+                                                    </li>
+                                                    <li class="last">
+                                                        <span class="bar" style="width:40.4%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25</span>%)</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="num">3</i>
+                                            <div class="groupItem ct4">
+                                                <span class="name">마트<br>편의점</span>
+                                                <ul class="barList">
+                                                    <li class="first">
+                                                        <span class="bar" style="width:50.9%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25.1</span>%)</strong>
+                                                    </li>
+                                                    <li class="last">
+                                                        <span class="bar" style="width:40.4%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25</span>%)</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="num">4</i>
+                                            <div class="groupItem ct13">
+                                                <span class="name">여행<br>숙박</span>
+                                                <ul class="barList">
+                                                    <li class="first">
+                                                        <span class="bar" style="width:50.9%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25.1</span>%)</strong>
+                                                    </li>
+                                                    <li class="last">
+                                                        <span class="bar" style="width:40.4%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25</span>%)</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="num">5</i>
+                                            <div class="groupItem ct12">
+                                                <span class="name">의료<br>건강</span>
+                                                <ul class="barList">
+                                                    <li class="first">
+                                                        <span class="bar" style="width:50.9%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25.1</span>%)</strong>
+                                                    </li>
+                                                    <li class="last">
+                                                        <span class="bar" style="width:40.4%;"></span>
+                                                        <strong><span>1,000,000</span>원 (<span>25</span>%)</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!--// userCons -->
+                            </div>
+                            <div class="tabPanel" id="tab02">카드</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

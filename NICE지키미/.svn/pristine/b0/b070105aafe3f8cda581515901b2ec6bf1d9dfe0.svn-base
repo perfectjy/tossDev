@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+
+    <script type="text/javascript">
+        mbHeader = { title: '내가받은 보고서 열람', prev: true, menu: true };
+
+        $(function () {
+            modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">[팝업]신용보고서 유효성 검증_실패</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>유효한 보고서가 아닙니다.</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+						<div class="headS">
+							<p class="exp">본인 이름과 신용보고서 번호를 정확히 입력했는지 확인 후 다시 시도해 주세요.</p>
+							<span class="ico9"></span>
+						</div>
+                        <ul class="listDot minInfo mtadd">
+                            <li>신용보고서 유효성 확인 서비스는 발급된 신용보고서의 유효성 및 위조 여부를 확인할 수 있는 서비스입니다.</li>
+                            <li>나이스지키미에서 발급된 신용보고서는 온라인 보고서가 아닌 인쇄된 보고서의 경우, 신용보고서 전용 용지에 인쇄되지 않았고 NICE평가정보 직인도 없으면 유효한 것으로 인정하지 않습니다.</li>
+                        </ul>
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>신용보고서 유효성 재확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

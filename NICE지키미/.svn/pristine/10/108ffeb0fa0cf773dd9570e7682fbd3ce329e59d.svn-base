@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script> 
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용점수 예측하기', prev: true, menu: true };
+        $(function() {
+            var swiper = new Swiper(".evalSwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle"><span>나신용</span>님의 신용점수 예측결과를 확인해 보세요.</h2>
+                        <p class="governingInfo">예측한 신용점수는 실제 신용점수와 차이가 있을 수 있습니다.</p>
+					</div>
+			
+                    <div class="predictItem">
+                        <div class="circular">   
+                            <div class="txt">
+                                예상점수<strong>920 ~ 945</strong>
+                            </div>
+                        </div>
+                        <p>예측결과 <span>나신용</span>님의 신용점수는<br> 890점에서 <span class="pColor"><i>30~45</i>점 상승</span>할 것으로 예측되요.</p>
+                    </div>
+
+                    <div class="pointList">
+                        <h2 class="h3">신용점수 변경에 영향을 주는 요소</h2>
+                        <ul>
+                            <li class="first good">
+                                <span>장기간의 거래기간으로</span> 신용점수에 <strong>긍정적</strong>이에요.
+                            </li>
+                            <li class="bad">
+                                <span>대출정보 변경으로</span> 신용점수에 <strong>부정적</strong>이에요.
+                            </li>
+                            <li>연체정보가 현재와 <strong>동일</strong>해요.</li>
+                            <li class="bad">
+                                <span>카드 이용금액 변경으로</span> 신용점수에 <strong>부정적</strong>이에요.
+                            </li>
+                            <li class="last good">
+                                <span>마이데이터 정보를 등록하여</span> 신용점수에 <strong>긍정적</strong>이에요.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comp">
+                        <h2 class="h3"><span class="itemTxt emo7">신용점수를 더 올려볼 수 있어요</span></h2>
+                        <ul class="listWrap">
+                            <li class="bgBoxLink">
+                                <a href="#none">       
+                                    <strong>연체를 갚으면 신용점수가 올라가요!</strong>
+                                    연체를 갚는 조건으로 다시 예측해볼까요?                                
+                                </a>
+                            </li>
+                            <li class="bgBoxLink">
+                                <a href="#none">
+                                    <strong>대출을 갚으면 신용점수가 올라가요!</strong>
+                                    대출을 갚는 시나리오로 다시 예측해볼까요?                           
+                                </a>
+                            </li>
+                            <li class="bgBoxLink">
+                                <a href="#none">
+                                    <strong>월평균 카드이용금액은 신용점수 평가에 영향을 미쳐요!</strong>
+                                    카드이용금액을 변경해서 신용점수를 다시 예측해볼까요? 
+                                </a>
+                            </li>
+                            <li class="bgBoxLink">
+                                <a href="#none">  
+                                    <strong>거래기간을 늘리면 신용점수를 올리는데 유리해요!</strong>
+                                    거래기간을 늘려 다시 예측해볼까요?
+                                </a>
+                            </li>
+                            <li class="bgBoxLink">
+                                <a href="#none">
+                                    <strong>마이 데이터 정보를 등록해 보셨네요!</strong>
+                                    실제로 마이데이터 정보를 등록하고 신용점수 올리러 가볼까요?
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comp">
+                        <div class="h3 bold">
+                            신용점수 평가요인
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p><strong>신용점수 평가 요인</strong>
+                                        신용평점의 평가요소별 평균적인 변동(상승·하락)요인입니다.<br>
+                                        변동요인은 긍정적~부정적 6단계가 있으며, [+++] ~ [- - -]으로 표시 됩니다.
+                                    </p>
+                                    <!--// 장기연체 : 9% -->
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="topGuideTxt">아래 평가요인 내역은 신용점수 예측 후 반영된 것이 아니라 <strong>실제 회원님의 현재 신용상태</strong>에 따른 설명입니다.</p>
+
+                        <div class="evalSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="evalItem">
+                                        <div class="impItem">
+                                            <span class="ico"></span>
+                                        </div>
+                                        <strong>신용형태정보</strong>
+                                        <span class="pColor">“최근 6개월 신용카드 매월 사용”</span>
+                                        <p>매월 적정 수준의 카드 사용을 유지할 경우 신용평가 시 긍정적으로 반영하고 있습니다. <br>연체없는 건전한 카드 사용을 생활화해주시기 바랍니다.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="evalItem">
+                                        <div class="impItem">
+                                            <span class="ico"></span>
+                                        </div>
+                                        <strong>신용거래기간</strong>
+                                        <span class="pColor">“신용거래기간 5년 이상”</span>
+                                        <p>신용거래 기간이 길수록 신용점수 평가시 우량요인으로 반영됩니다. <br>앞으로도 건전한 신용거래 기록을 꾸준히 관리하세요.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="evalItem">
+                                        <div class="impItem">
+                                            <span class="ico minus"></span>
+                                            <span class="ico minus"></span>
+                                        </div>
+                                        <strong>상환이력정보</strong>
+                                        <span class="pColor">“단기연체 해제 경험 반영중”</span>
+                                        <p>한 번 발생했던 연체는 상환을 하더라도 연체 발생 이전의 수준으로 신용점수가 바로 상승하지는 않습니다. <br>연체 상환 후에는 신용점수가 시간 경과에 따라 서서히 상승하게 되오니 연체기간이 길어지지 않도록 주의하여 주시기 바랍니다.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="controlpage">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>신용점수 올리기</span></button>
+                            <button type="button" class="btn primary"><span>다시 예측하기</span></button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

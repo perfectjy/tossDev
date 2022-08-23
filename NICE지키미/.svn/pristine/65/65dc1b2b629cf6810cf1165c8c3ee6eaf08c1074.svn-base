@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '케어십알림', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid1');
+		});
+
+		$(document).ready(function () {
+			$('#agreeAllChk').uiCheckAll();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid1" class="btn base modalOpen">[팝업] 기존 알림 재설정</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal bottom" id="modalid1">
+			<div class="modalWrap">
+				<button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1><span>나신용</span>님, 기존 알림을 다시 설정해 주세요.</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<ul class="listDot">
+							<li>수신하실 알림 종류와 채널을 재설정해 주세요.</li>
+							<li>수신채널을 다시 설정하지 않으면 기존 설정이 유지되는 대신 <strong class="bold">케어십알림 서비스를 이용할 수 없으니 반드시 재설정해 주세요.</strong></li>
+						</ul>
+					
+						<div class="agreement sps" id="agreeAllChk">
+							<div class="agreeTitle">
+								<div class="uiItem">
+									<input type="checkbox" id="chk-all" data-chk-item="all"><label for="chk-all"><span>전체 알림 받기</span></label>
+								</div>
+							</div>
+							<div class="agreeSection">
+								<div class="uiAcco">
+									<div data-chk-item="list">
+										<div class="uiAccoHeader">
+											<div class="uiItem"><input type="checkbox" id="chk-item1" data-chk-item="list-item"><label for="chk-item1">모든 알림 받기</label></div>
+											<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+										</div>
+										<div class="uiAccoContent">
+											<div class="subSelBox">
+												<ul class="agreeItem">
+													<li>
+														<input type="checkbox" id="chk-item1-1" data-chk-item="list-sub"><label for="chk-item1-1">신용변동 알림</label>
+													</li>
+													<li>
+														<input type="checkbox" id="chk-item1-2" data-chk-item="list-sub"><label for="chk-item1-2">신용조회 알림</label>
+													</li>
+													<li>
+														<input type="checkbox" id="chk-item1-3" data-chk-item="list-sub"><label for="chk-item1-3">마이데이터 알림</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div data-chk-item="list">
+										<div class="uiAccoHeader">
+											<div class="uiItem"><input type="checkbox" id="chk-item2" data-chk-item="list-item"><label for="chk-item2">모든 채널 받기</label></div>
+											<a href="#none" class="uiBtn"><span class="hidden">펼치기</span></a>
+										</div>
+										<div class="uiAccoContent">
+											<div class="subSelBox">
+												<ul class="agreeItem">
+													<li>
+														<input type="checkbox" id="chk-item2-1" data-chk-item="list-sub"><label for="chk-item2-1">문자/알림톡</label>
+													</li>
+													<li>
+														<input type="checkbox" id="chk-item2-2" data-chk-item="list-sub"><label for="chk-item2-2">이메일</label>
+													</li>
+													<li>
+														<input type="checkbox" id="chk-item2-2" data-chk-item="list-sub"><label for="chk-item2-2">앱푸시</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// content -->
+					<div class="modalBottom">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>설정내용 저장하기</span></button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

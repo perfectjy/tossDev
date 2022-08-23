@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">    
+        $(function() {        
+          modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">[팝업] 자동차 관리 - 저당권정보</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>소유권정보</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <h2 class="h2 sbm"><span class="pBlock">저당권 설정자</span>에이치에스제일차유동화전문유한회사</h2>
+                        <div class="topListInfo">
+                            <p class="opt">출처: 자동차등록원부(갑)</p>
+                        </div>
+                        <table class="tblTerm">
+                            <caption>자동차저당권정보</caption>
+                            <colgroup>
+                                <col style="width:40%">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">저당권 설정일자</th>
+                                    <td>2022.06.29</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">저당권 말소일</th>
+                                    <td>2022.06.29</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">채권가액</th>
+                                    <td>1,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">저당권설정접수번호</th>
+                                    <td>12234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">을부번호</th>
+                                    <td>차량명</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--// content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

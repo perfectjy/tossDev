@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">    
+        $(function() {        
+          modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">우리집 보유 시 내는 세금</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal bottom" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+
+                <div class="modalHeader">
+                    <h1>우리집 보유 시 내는 세금 알려드려요</h1>                    
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="estateInfo">
+                            <p><span class="pColor">예상 납부 세액</span>=재산세+지방교육세+도서지역분</p>
+                            <dl class="specList">
+                                <div>
+                                    <dt>
+                                        <p><strong>재산세</strong></p>
+                                        <p class="exp">57만원+(과세표준 3억원) x 0.4%</p>
+                                    </dt>
+                                    <dd>
+                                        <p><strong>2,298,000원</strong></p>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>
+                                        <p><strong>지방교육세</strong></p>
+                                        <p class="exp">재산세 x 20%</p>
+                                    </dt>
+                                    <dd>
+                                        <p><strong>459,600원</strong></p>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>
+                                        <p><strong>도시지역분</strong></p>
+                                        <p class="exp">과세표준 x 0.14%</p>
+                                    </dt>
+                                    <dd>
+                                        <p><strong>1,024,800원</strong></p>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                        
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

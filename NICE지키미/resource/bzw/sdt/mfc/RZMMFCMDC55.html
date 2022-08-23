@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '마이데이터 동의', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="governing">
+						<h2 class="governingTitle">고객님 휴대폰으로<br>인증 요청 메시지를 발송합니다.</h2>
+						<p class="governingInfo">네이버 앱에서 인증 요청을 해주세요.</p>
+					</div>
+
+					<ul class="agreeList">
+						<li data-chk-item="list">
+							<div class="uiItem"><input type="checkbox" id="chk3-item2" data-chk-item="list-item"><label for="chk3-item2">[필수] 제3자정보제공동의</label></div>
+							<a href="#none" class="uiBtn"><span>보기</span></a>
+						</li>
+					</ul>	
+
+					<div class="formWrap spm">
+						<div class="formItem">
+							<label for="name" class="titItem">이름</label>
+							<div class="formEle">
+								<input type="text" placeholder="예 : 나OO, OO NA" id="name">
+							</div>
+							<!-- 형식에 맞지 않게 입력시 -->
+							<p class="errorTxt">이름을 정확히 입력해 주세요.</p>
+							<!-- 미입력시 -->
+							<p class="errorTxt">이름을 입력해 주세요.</p>
+						</div>
+						<div class="formItem">
+							<label for="birth" class="titItem">생년월일</label>
+							<div class="formEle">
+								<input type="text" placeholder="예 : 19900315" id="birth">
+							</div>
+							<!-- 형식에 맞지 않게 입력시 -->
+							<p class="errorTxt">생년월일을 정확히 입력해 주세요.</p>
+							<!-- 미입력시 -->
+							<p class="errorTxt">생년월일을 입력해 주세요.</p>
+						</div>
+						<div class="formItem">
+							<label for="hpnum" class="titItem">휴대전화번호</label>
+							<div class="formEle">
+								<input type="tel" id="hpnum" placeholder="-없이 숫자만 입력">
+							</div>
+							<!-- 형식에 맞지 않게 입력시 -->
+							<p class="errorTxt">휴대전화번호를 정확히 입력해 주세요.</p>
+							<!-- 미입력시 -->
+							<p class="errorTxt">휴대전화번호를 입력해 주세요.</p>
+						</div>
+					</div>
+
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>인증요청</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

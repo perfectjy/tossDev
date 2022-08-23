@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이스지키미::키워주는신용생활</title>
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '사업장 신용컨설팅', prev: true, menu: true };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+					<div class="governing">
+                    	<h2 class="governingTitle">사업장 신용점수 반영비중</h2>
+					</div>
+					
+                    <div class="scoreInfo">
+                        <!-- <div class="circleGraph">
+							<ul>
+								<li class="cl01">
+								<em>상환이력</em>
+								<strong>27<span>%</span></strong>
+								</li>
+								<li class="cl02">
+								<em>대표자부채</em>
+								<strong>26<span>%</span></strong>
+								</li>
+								<li class="cl03">
+								<em>사업장부채</em>
+								<strong>21<span>%</span></strong>
+								</li>
+								<li class="cl04">
+								<em>카드이용</em>
+								<strong>20<span>%</span></strong>
+								</li>
+								<li class="cl05">
+								<em>기업<br>개요정보</em>
+								<strong class="mtN">6<span>%</span></strong>
+								</li>
+							</ul>
+						</div> -->
+                    </div>
+
+                    <div class="comp">
+                        <div class="tabBox">
+                            <div class="tabmenu rollTab">
+                                <ul>
+                                    <li class="active"><a href="#none"><span>상환이력</span></a></li>
+                                    <li><a href="#none"><span>대표자부채</span></a></li>
+                                    <li><a href="#none"><span>사업장부채</span></a></li>
+                                    <li><a href="#none"><span>카드이용</span></a></li>
+                                </ul>
+                            </div>
+
+							<h3 class="titH">상환이력 <span class="tag re">우려</span></h3>
+							<ul class="listDot">
+								<li>
+									<span class="pColor">장기연체 경험이 있습니다.</span><br>
+									체무불이행과같은 연체는 최대 5년간 신용평가 부정요인으로 반영됩니다.
+								</li>
+							</ul>
+							<div class="crsBox">
+								<span class="crsIcon">
+									<img src="../../../img/zkm/rzm/common/ico/ico_decrs.png" alt="">
+								</span>
+								<div class="crsTxt">
+									<strong>전체 대상자 대비</strong>
+									<dl>
+										<div>
+											<dt>하위</dt>
+											<dd class="pColor num">20%</dd>
+										</div>
+										<div>
+											<dt>여자대비</dt>
+											<dd class="pColor">낮은수준</dd>
+										</div>
+										<div>
+											<dt>30대대비</dt>
+											<dd class="pColor">낮은수준</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">대표자 부채<span class="cntNum">8</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												대표자 부채수준<br>
+												<ul>
+													<li>- 은행권 대출보유건수</li>
+													<li>- 은행 외 대출보유건수</li>
+													<li>- 은행권 대출보유금액</li>
+													<li>- 은행 외 대출보유금액</li>
+													<li>- 보증건수</li>
+													<li>- 보증금액</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>현재 단기연체</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>과거 단기연체</dt>
+										<dd><span class="cntNum">3</span></dd>
+									</div>
+									<div>
+										<dt>현재 한국신용정보원 장기연체</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>과거 한국신용정보원 장기연체</dt>
+										<dd><span class="cntNum">2</span></dd>
+									</div>
+									<div>
+										<dt>현재 NICE평가정보 장기연체</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>과거 NICE평가정보 장기연체</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+								</dl>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">사업장 연체정보 <span class="cntNum">0</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												사업장 연체정보<br>
+												<ul>
+													<li>- 과거(1년내) NICE 단기연체이력</li>
+													<li>- 현재 NICE 단기연체등록</li>
+													<li>- 과거(1년내) 한국신용정보원 단기연체이력 기관</li>
+													<li>- 현재 한국신용정보원 단기연체등록 기관</li>
+													<li>- 과거(3년내) 한국신용정보원 장기연체</li>
+													<li>- 현재 한국신용정보원 장기연체</li>
+													<li>- 과거(3년내) NICE평가정보 장기연체</li>
+													<li>- 현재 NICE평가정보 장기연체</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>과거(1년내내) NICE 단기연체이력</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>현재 NICE 단기연체등록</dt>
+										<dd><span class="cntNum">3</span></dd>
+									</div>
+								</dl>
+							</div>
+							<!-- // 상환이력 -->
+
+							<h3 class="titH">대표자 부채 <span class="tag bl">매우안정</span></h3>
+							<ul class="listDot">
+								<li>
+									현재 보유중인 대출과 채무보증 개설내역이 없습니다.
+								</li>
+							</ul>
+							<div class="crsBox">
+								<span class="crsIcon">
+									<img src="../../../img/zkm/rzm/common/ico/ico_incrs.png" alt="">
+								</span>
+								<div class="crsTxt">
+									<strong>전체 대상자 대비</strong>
+									<dl>
+										<div>
+											<dt>상위</dt>
+											<dd class="pColor num">20%</dd>
+										</div>
+										<div>
+											<dt>여자대비</dt>
+											<dd class="pColor">동일수준</dd>
+										</div>
+										<div>
+											<dt>30대대비</dt>
+											<dd class="pColor">동일수준</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">대표자 부채 <span class="cntNum">3</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												대표자 부채수준<br>
+												<ul>
+													<li>- 은행권 대출보유건수</li>
+													<li>- 은행 외 대출보유건수</li>
+													<li>- 은행권 대출보유금액</li>
+													<li>- 은행 외 대출보유금액</li>
+													<li>- 보증건수</li>
+													<li>- 보증금액</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>은행권 대출보유건수</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>은행권 외 대출보유건수</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>은행권 대출보유건수</dt>
+										<dd><span class="cntNum">n</span></dd>
+									</div>
+								</dl>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">대표자 최근 거래빈도 <span class="cntNum">2</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												대표자 최근 거래빈도<br>
+												<ul>
+													<li>- 최근 1년내 은행권 대출거래 기관</li>
+													<li>- 최근 1년내 은행 외 대출거래 기관</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>최근 1년내 은행권 대출거래 기관</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>최근 1년내 은행 외 대출거래 기관</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //대표자부채 -->
+
+							<h3 class="titH">사업장 부채 <span class="tag br">다소안정</span></h3>
+							<ul class="listDot">
+								<li>
+									<span class="pColor">장기연체 경험이 있습니다.</span><br>
+									체무불이행과같은 연체는 최대 5년간 신용평가 부정요인으로 반영됩니다.
+								</li>
+							</ul>
+							<div class="crsBox">
+								<span class="crsIcon">
+									<img src="../../../img/zkm/rzm/common/ico/ico_incrs.png" alt="">
+								</span>
+								<div class="crsTxt">
+									<strong>전체 대상자 대비</strong>
+									<dl>
+										<div>
+											<dt>상위</dt>
+											<dd class="pColor num">40%</dd>
+										</div>
+										<div>
+											<dt>여자대비</dt>
+											<dd class="pColor">높은수준</dd>
+										</div>
+										<div>
+											<dt>30대대비</dt>
+											<dd class="pColor">높은수준</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">사업장 부채 <span class="cntNum">2</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												사업장 부채수준<br>
+												<ul>
+													<li>- 은행권 신용공여 보유건수</li>
+													<li>- 은행 외 신용공여 보유건수</li>
+													<li>- 은행권 신용공여 보유금액</li>
+													<li>- 은행 외 신용공여 보유금액</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>은행권 신용공여 보유건수</dt>
+										<dd><span class="cntNum">n</span></dd>
+									</div>
+									<div>
+										<dt>은행 외 신용공여 보유건수</dt>
+										<dd><span class="cntNum">3</span></dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //사업장부채 -->
+
+							<h3 class="titH">카드이용 <span class="tag gr">안정</span></h3>
+							<ul class="listDot">
+								<li>대표자 카드의 신용거래기간이 다소 짧습니다. 연체없이 안정적 거래를 유지한다면 향후 신용평가 우량요인으로 반영될 수 있습니다.</li>
+								<li>최근 1년동안 대표자 카드의 매월 신용카드 거래가 있습니다. 정상적인 신용카드 사용은 신용평가 우량요인입니다.</li>
+								<li>최근 1년이내 단기카드대출(현금서비스) 거래가 없습니다.</li>
+							</ul>
+							<div class="crsBox">
+								<span class="crsIcon">
+									<img src="../../../img/zkm/rzm/common/ico/ico_incrs.png" alt="">
+								</span>
+								<div class="crsTxt">
+									<strong>전체 대상자 대비</strong>
+									<dl>
+										<div>
+											<dt>상위</dt>
+											<dd class="pColor num">40%</dd>
+										</div>
+										<div>
+											<dt>여자대비</dt>
+											<dd class="pColor">높은수준</dd>
+										</div>
+										<div>
+											<dt>30대대비</dt>
+											<dd class="pColor">높은수준</dd>
+										</div>
+									</dl>
+								</div>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">대표자 신용거래기간 <span class="cntNum">2</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												대표자 신용거래기간<br>
+												<ul>
+													<li>- 최초 신용카드 개설</li>
+													<li>- 최근 신용카드 개설</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>은행권 신용공여 보유건수</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>은행권 외 신용공여 보유건수</dt>
+										<dd><span class="cntNum">3</span></dd>
+									</div>
+								</dl>
+							</div>
+							<div class="borderWrap">
+								<h4 class="h4">대표자 신용카드 사용패턴 <span class="cntNum">2</span></h4>
+								<div class="guideTxt gColor">
+									데이터가 있는 경우만 표시됩니다.
+									<div class="tooltipWrap">
+										<button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+										<div class="toolTip">
+											<i></i>
+											<p>
+												대표자 신용카드 사용패턴<br>
+												<ul>
+													<li>- 최근 6개월내 신용카드 사용 개월 수</li>
+													<li>- 최근 1년내 신용카드 사용 개월 수</li>
+													<li>- 최근 6개월내 단기카드대출 사용 개월 수</li>
+													<li>- 최근 1년내 단기카드대출 사용 개월 수</li>
+												</ul>
+											</p>
+											<button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+										</div>
+									</div>
+								</div>
+								<dl class="valueList">
+									<div>
+										<dt>최근 6개월내 신용카드 사용 개월 수</dt>
+										<dd><span class="cntNum">1</span></dd>
+									</div>
+									<div>
+										<dt>최근 1년내 신용카드 사용 개월 수</dt>
+										<dd><span class="cntNum">3</span></dd>
+									</div>
+								</dl>
+							</div>
+							<!-- //카드이용 -->
+							
+						</div>
+					</div>
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

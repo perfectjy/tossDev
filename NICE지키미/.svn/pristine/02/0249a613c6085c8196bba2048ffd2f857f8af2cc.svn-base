@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>미소짓는 데이터생활 > 소비자보호</title>
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '개인신용평점', home: false, prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="selectBox">
+						<select title="성능지표 산출원리">
+							<option>성능지표 산출원리</option> <!-- 선택 -->
+							<option>개인신용평점의 의미</option>
+							<option>신용평점모형의 성능지표</option>
+							<option>개인신용평가 관련통계</option>
+							<option>법령 상 기준</option>
+						</select>
+					</div>
+
+					<h3 class="h3">K-S 통계량(Kolmogorov-Smirnov Statistics)</h3>
+					<ul class="listDot">
+						<li>K-S 통계량은 우량집단과 불량집단의 누적분포의 차이를 나타내는 자료로, 개인신용평점모형의 변별력 평가 시 주요 판별 통계량으로 활용됩니다.</li>
+						<li>K-S 통계량이 50 이상이면 우수한 모형으로 판단합니다.</li>
+						<li>신용평점에 따른 우불량 집단의 분포 차이로 누적 우량비율과 누적 불량비율 차이의 최댓값을 K-S 통계량으로 정의합니다.</li>
+					</ul>
+					<div class="graphWrap">
+						<div class="graphbox">
+							<img src="../../../img/zkm/rzm/etc/etc_graph1.png" alt="K-S 통계량을 나나태는 그래프">
+						</div>
+						<p class="des"> &#8251; <strong class="pColor">K - S</strong> = MAX &#124; 누적우량구성비 - 누적불량구성비 &#124; <em> : 우불량 누적분포 사이의 MAXIMUM SEPARATION</em> </p>
+					</div>
+
+					<div class="comp">
+						<h3 class="h3">지니(GINI) 계수</h3>
+						<ul class="listDot">
+							<li>지니 계수는 주로 소득 불평등을 측정하는 지표로 사용되는데, 소득 대신 신용평점에 따른 불량누적분포를 이용하여 신용평점모형의 변별력을 판별하는 지표로 활용합니다.</li>
+							<li>누적불량 구성비를 y축으로, 누적구성비를 x축으로 나타낸 그래프 사이의 면적의 합을 나타내며, 면적이 넓을수록 변별력이 우수한 것으로 판단할 수 있습니다.</li>
+						</ul>
+						<div class="graphWrap">
+							<div class="graphbox">
+								<img src="../../../img/zkm/rzm/etc/etc_graph2.png" alt="지니(GINI) 계수를 나타내는 그래프">
+							</div>
+							<div class="des02">
+								<div class="formula">
+									<span>&#8251;</span> <strong class="pColor"> GINI =</strong><strong class="frac"><span>A</span><span>A + B</span></strong>
+								</div>
+								<em>GINI 계수는 A면적의 크기에 비례하며,<br class="mbHide"> 값이 클수록 변별력이 높음</em>
+							</div>
+							<p class="listDot">모형 변별력 지표로서 활용할 때는 0.6 이상이면 모형의 변별력이 뛰어난 것으로 판단합니다.</p>
+						</div>
+					</div>
+					<div class="comp">
+						<h3 class="h3">PSI(Population Stability Index)</h3>
+						<p class="listDot">PSI는 모집단의 안정성을 나타내는 지수로, 기준시점 대비 현재 분포의 차이를 나타내며 수치가 클수록 모집단의 변화가 크다는 것을
+							의미합니다.</p>
+						<div class="desWrap">
+							<img src="../../../../resource/img/zkm/rzm/etc/etc_graph3.png" alt="">
+							<p class="pColor">(&#37;E: 기준시점 구성비, &#37;O: 현재 구성비)</p>
+						</div>
+
+                        <div class="mbHide">
+                            <h4 class="h4">[예제] PSI계산</h4>
+                            <table class="tblList txtC">
+                                <caption>PSI계산</caption>
+                                <colgroup>
+                                    <col style="width:90px">
+                                    <col style="width:90px">
+                                    <col style="width:90px">
+                                    <col style="width:110px">
+                                    <col style="width:auto">
+                                    <col style="width:90px">
+                                    <col style="width:120px">
+                                    <col style="width:90px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">점수대</th>
+                                        <th scope="col">기준시점<br>고객수</th>
+                                        <th scope="col">현재<br>고객수</th>
+                                        <th scope="col">기준시점<br>구성비(%E)</th>
+                                        <th scope="col">현재 구성비<br>(%E)</th>
+                                        <th scope="col">%O-%E</th>
+                                        <th scope="col">Ln (%O/%E)</th>
+                                        <th scope="col">PSI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>76~100</td>
+                                        <td>600</td>
+                                        <td>700</td>
+                                        <td>20.00%</td>
+                                        <td>21.90%</td>
+                                        <td>1.90%</td>
+                                        <td>0.0896</td>
+                                        <td>0.0017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51~75</td>
+                                        <td>1,000</td>
+                                        <td>900</td>
+                                        <td>33.30%</td>
+                                        <td>28.10%</td>
+                                        <td>-5.20%</td>
+                                        <td>-0.1699</td>
+                                        <td>0.0088</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26~50</td>
+                                        <td>1,000</td>
+                                        <td>11,000</td>
+                                        <td>33.30%</td>
+                                        <td>34.40%</td>
+                                        <td>1.00%</td>
+                                        <td>0.0308</td>
+                                        <td>0.0003</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0~25</td>
+                                        <td>400</td>
+                                        <td>500</td>
+                                        <td>13.30%</td>
+                                        <td>15.60%</td>
+                                        <td>2.30%</td>
+                                        <td>0.1586</td>
+                                        <td>0.0036</td>
+                                    </tr>
+                                    <tr>
+                                        <td>합계</td>
+                                        <td>3,000</td>
+                                        <td>3,200</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>0.0144</td>
+                                    </tr>
+                                </tbody>                                
+                            </table>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

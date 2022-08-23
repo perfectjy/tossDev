@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '아이디/비밀번호 찾기', prev: true, menu: true };
+
+        $(document).ready(function () {
+            $('#agreeAllChk1').uiCheckAll();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">
+                            혹시 본인인증이 어렵다면<br>오프라인 인증으로 회원가입해 보세요.
+                        </h2>
+                    </div>
+                    <div class="logWrap">
+                        <div class="formWrap">
+                            <div class="formItem">
+                                <label for="name" class="titItem">이름</label>
+                                <div class="formEle">
+                                    <input type="text" placeholder="예) 나OO, OO NA" title="이름 입력" id="name">
+                                </div>
+                                <p class="errorTxt">이름을 입력해 주세요.</p>
+                            </div>
+                            <div class="formItem">
+                                <span class="titItem">성별</span>
+                                <div class="rdoGroup">
+                                    <div class="item"><input type="radio" name="type" id="man"><label
+                                            for="man"><span>남자</span></label></div>
+                                    <div class="item"><input type="radio" name="type" id="woman"><label
+                                            for="woman"><span>여자</span></label></div>
+                                </div>
+                                <p class="errorTxt">성별을 선택해 주세요.</p>
+                            </div>
+                            <div class="formItem">
+                                <label for="birth" class="titItem">생년월일</label>
+                                <div class="formEle">
+                                    <input type="text" placeholder="예) 19900315" id="birth" maxlength="8">
+                                </div>
+                                <p class="errorTxt">생년월일을 8자리 숫자로 올바르게 입력해 주세요.</p>
+                            </div>
+                            <div class="formItem inBtn">
+                                <label for="logrrn1" class="titItem">주민등록번호</label>
+                                <div class="intHalf hyphen security">
+                                    <span class="inp">
+                                        <input type="tel" placeholder="앞 6자리" title="주민등록번호 앞6자리" id="logrrn1"
+                                            maxlength="6">
+                                    </span>
+                                    <span class="inp">
+                                        <input type="password" placeholder="뒤 7자리" title="주민등록번호 뒤7자리" maxlength="7">
+                                    </span>
+                                    <span class="inpSecurity">
+                                        <input type="checkbox" class="chkKeyPad" name="Tk_pwd_checkbox"
+                                            id="Tk_pwd_checkbox">
+                                        <label for="Tk_pwd_checkbox"><span class="hidden">보안키패드 열기</span></label>
+                                    </span>
+                                </div>
+                                <button type="button" class="btn base"><span>본인확인</span></button>                                
+                            </div>
+                            <p class="errorTxt">앞자리를 6자리 숫자로 올바르게 입력해 주세요.</p>
+                            <p class="errorTxt">뒷자리를 7자리 숫자로 올바르게 입력해 주세요.</p>
+                        </div>
+                        <div class="uiAcco infoTip">
+                            <div class="uiAccoHeader open">
+                                <button type="button" class="uiBtn">
+                                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                </button>
+                            </div>
+                            <div class="uiAccoContent">
+                                <p class="pColor thick">증빙자료가 확인되어야 회원가입이 처리됩니다.</p>
+                                <ul class="listDot">
+                                    <li><strong class="thick">증빙자료</strong>
+                                        <ul class="listDash">
+                                            <li>본인의 주민등록증 또는 운전면허증 사본</li>
+                                            <li>가족관계증명서, 주민등록번호 뒷자리가 포함된 주민등록등본(초본)</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong class="thick">보내실 곳</strong>
+                                        <ul class="listDash">
+                                            <li>이메일: 대용량 첨부는 확인이 불가능합니다. 일반 첨부파일로 보내주세요.</li>
+                                            <li>우편: 서울특별시 영등포구 은행로 30 중소기업중앙회 신관 6층 &lt;고객센터 신상정보담당자 앞&gt;</li>
+                                            <li>팩스: 02-2122-8050 &lt;고객센터 신상정보담당자 앞&gt;</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong class="thick">주의사항</strong>
+                                        <ul class="listDash">
+                                            <li>모든 서류는 최근 1개월 내 발급된 것으로 제출하셔야 접수됩니다. </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="btnConts">
+                        <button type="button" class="btn primary"><span>다음</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

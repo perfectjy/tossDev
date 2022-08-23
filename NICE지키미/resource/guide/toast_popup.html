@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast Popup - Guide</title>
+
+  <script src="../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../js/zkm/rzm/jquery-ui.min.js"></script>    
+  <script src="../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../css/zkm/rzm/common.css">
+  <style> 
+    .guideWrap {padding:40px;}  
+    .mobile .guideWrap {padding:20px;} 
+    .guideTit {font-size:20px; font-weight: 700; margin-bottom:20px;}
+    .guideItem {margin-top:40px;}     
+    .code { display: block; padding: 25px; overflow: auto; font-size: 14px; font-weight: 500; letter-spacing: 0; background: #e0e0e0; }
+    .mobile .code {padding:15px;}
+    .code code { display: inline-block; }
+    .code code p { display: inline; white-space: nowrap; }
+    p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="guideWrap"> 
+  <h1 class="guideTit">아코디언</h1>
+  <div class="code">
+    <code>
+      <p>
+<pre>
+함수 호출하여 사용
+toastPop(msg) // 메시지만 출력
+toastPop(msg, callback) // 콜백 사용 가능
+</pre>
+      </p>
+    </code>
+  </div>
+
+  <div class="guideItem">
+
+
+	<button type="button" class="btn primary"
+		onclick="toastPop('캡쳐 화면이 갤러리에 저장되었습니다.')"
+	>
+		토스트 팝업 실행
+	</button>
+
+	
+
+	<style>
+		/* .toastPop { display: flex; align-items: flex-end; position: fixed; width: 100%; left: 0; top: 0; bottom: 0; padding: 0 10.55%; opacity: 0; transition: all 0.5s ease-out; }
+		.toastPop.active { opacity: 1 }
+		.toastPop .inner { width: 100%; margin-bottom: 78px; padding: 10px 15px; color: #fff; font-size: 14px; text-align: center; background-color: rgba(0,0,0,0.7); border-radius: 9px; } */
+	</style>
+
+	<script>
+		// var toastPop = function(v, callback) {
+		// 	var html = '<div class="toastPop"><div class="inner">' + v + '</div></div>', $target;
+
+		// 	$('body').append(html);
+		// 	$target = $('.toastPop');
+
+		// 	setTimeout(function() {
+		// 		$target.addClass('active');
+		// 	}, 100);
+		// 	setTimeout(function() {
+		// 		$target.removeClass('active');
+		// 	}, 2500);
+		// 	setTimeout(function() {
+		// 		$target.remove();
+		// 	}, 3000);
+
+		// 	if(typeof callback === 'function') {
+		// 		callback();
+		// 	}
+		// }
+	</script>
+
+  </div>
+
+</div>
+</body>
+</html>

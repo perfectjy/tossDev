@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '케어십알림', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<div class="tabWrap t1">
+						<ul class="tabList">
+							<li class="tab active"><a href="#tab01">$나신용$</a></li>
+							<li class="tab"><a href="#tab02">가족</a></li>
+						</ul>
+						<div class="tabConts">
+							<div class="tabPanel" id="tab01">
+								<!-- 최근 3일 내 신규 대출 개설 시 -->
+								<div class="personal">
+									<span class="tip">최근 새로 받은 대출이 있어요.</span>
+									<a href="#none">
+										<strong class="toptxt">연체방지 서비스로</strong>
+										<p>대출금 연체를 방지해 보세요.</p>
+									</a>
+								</div>
+								<!--// 최근 3일 내 신규 대출 개설 시 -->
+
+								<div class="comp">
+									<div class="alrListWrap">
+										<h2 class="h2">어느 알림을 받으시겠어요?</h2>
+										<div class="alrListSwpier">
+											<ul class="alarmList">
+												<li class='ico01'>
+													<strong class="tit">신용변동</strong>
+													<p class="txt">계좌개설, 카드신청, 대출 등 변동이 생기면 알려드려요!</p>
+													<div class="btnSwitch">
+														<input type="checkbox" id="switchChkToss1" checked="checked">
+														<label for="switchChkToss1"><span class="hidden">설정해제</span></label>
+													</div>
+												</li>
+												<li class="ico02">
+													<strong class="tit">신용조회</strong>
+													<p class="txt">금융기관 등이 내 신용정보를 조회하면 알려드려요!</p>
+													<div class="btnSwitch">
+														<input type="checkbox" id="switchChkToss2" checked="checked">
+														<label for="switchChkToss2"><span class="hidden">설정해제</span></label>
+													</div>
+												</li>
+												<li class="ico03">
+													<strong class="tit">마이데이터</strong>
+													<p class="txt">연동하신 자산 정보가 만료되기 전 알려드려요!</p>
+													<div class="btnSwitch">
+														<input type="checkbox" id="switchChkToss3" checked="checked">
+														<label for="switchChkToss3"><span class="hidden">설정해제</span></label>
+													</div>
+												</li>
+												<li class="ico04">
+													<strong class="tit">연체방지</strong>
+													<p class="txt">카드/대출 결제 전 결제계좌 잔액을 확인해서 알려드려요!</p>
+													<div class="btnSwitch">
+														<input type="checkbox" id="switchChkToss4" checked="checked">
+														<label for="switchChkToss4"><span class="hidden">설정해제</span></label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<h3 class="h3">알림받을 채널을 선택해 주세요.</h3>
+										<div class="receiveChkBox t1">
+											<p class="tit">문자/알림톡</p>
+											<p class="info">010-12**-56**</p>
+											<div class="toggleBox">
+												<span>
+													<input type="radio" name="toggle" id="toggle1" value="1" checked>
+													<label class="btnSwitch2" for="toggle1">수신</label>
+												</span>
+												<span>
+													<input type="radio" name="toggle" id="toggle2" value="2">
+													<label class="btnSwitch2" for="toggle2">미수신</label>
+												</span>
+											</div>
+										</div>
+										<div class="receiveBox">
+											<p class="tit">문자/알림톡</p>
+											<div class="rightBtn">
+												<a href="#none" class="btnArrow">휴대전화번호 등록하기</a>
+											</div>
+										</div>
+										<div class="receiveChkBox t1">
+											<p class="tit">이메일</p>
+											<p class="info">ab*****@naver.com</p>
+											<div class="toggleBox">
+												<span>
+													<input type="radio" name="toggle2" id="toggle3" value="1" checked>
+													<label class="btnSwitch2" for="toggle3">수신</label>
+												</span>
+												<span>
+													<input type="radio" name="toggle2" id="toggle4" value="2">
+													<label class="btnSwitch2" for="toggle4">미수신</label>
+												</span>
+											</div>
+										</div>
+										<div class="receiveBox">
+											<p class="tit">이메일</p>
+											<div class="rightBtn">
+												<a href="#none" class="btnArrow">이메일 등록하기</a>
+											</div>
+										</div>									
+										<div class="receiveChkBox t1">
+											<p class="tit">앱푸시</p>
+											<div class="toggleBox">
+												<span>
+													<input type="radio" name="toggle3" id="toggle5" value="1" checked>
+													<label class="btnSwitch2" for="toggle5">수신</label>
+												</span>
+												<span>
+													<input type="radio" name="toggle3" id="toggle6" value="2">
+													<label class="btnSwitch2" for="toggle6">미수신</label>
+												</span>
+											</div>
+										</div>
+										<div class="btnLineWrap">
+											<a href="#none" class="btnLine">휴대전화번호 및 이메일 변경</a>
+										</div>
+									</div>
+								</div>
+								<div class="comp">
+									<!-- 신용점수 변동이 없는경우 -->
+									<!-- <h3 class="h3">최근 신용점수 변동이 없고,<br> 현재 신용점수는 <strong class="pColor">913점</strong>이에요.</h3> -->
+									<!--// 신용점수 변동이 없는경우 -->
+
+									<!-- 신용점수 상승한 경우 -->
+									<h3 class="h3">한 달 전보다 <strong class="pColor">4점</strong>이 올랐어요!<br>현재 신용점수는 <strong
+											class="pColor">913점</strong>이에요.</h3>
+									<div class="tLinkBtn">
+										<a href="#none" class="btnArrow">신용점수 더 올리러 가기</a>
+									</div>
+									<!--// 신용점수 상승한 경우 -->
+
+									<!-- 신용점수가 하락한 경우 -->
+									<!-- <h3 class="h3">한 달 전보다 <strong class="pColor">4점</strong>이 떨어졌어요.<br>현재 신용점수는 <strong class="pColor">913점</strong>이에요.</h3>
+									<div class="tLinkBtn">
+										<a href="#none" class="btnArrow">신용점수 올리러 가기</a>
+									</div>  -->
+									<!--// 신용점수가 하락한 경우 -->
+
+									<div class="dateInWrap">
+										<span class="date">04.03 ~ 06.02</span>
+										<div class="tooltipWrap">
+											<button type="button" class="btnTooltip"><span
+													class="hidden">설명보기</span></button>
+											<div class="toolTip">
+												<i></i>
+												<p>내용</p>
+												<button type="button" class="btnTooltipClose"><span
+														class="hidden">닫기</span></button>
+											</div>
+										</div>
+									</div>
+									<ul class="lineInfoList t1">
+										<li>
+											<div class="topInfo">
+												<span class="tag bl">신용정보변동</span>
+											</div>
+											<a href="#none" class="btnArrow">새로 받은 대출이 있어요.</a>
+											<dl class="infoList t1">
+												<div>
+													<dt>대출개설일</dt>
+													<dd>2020.04.16</dd>
+												</div>
+												<div>
+													<dt>정보변경일</dt>
+													<dd>2022.06.17</dd>
+												</div>
+												<div>
+													<dt>대출금액</dt>
+													<dd>20,000,000원</dd>
+												</div>
+												<div>
+													<dt>기관/지점</dt>
+													<dd>KB국민은행</dd>
+												</div>
+											</dl>
+											<span class="sTxt">알림수신 : 문자/알림톡, 이메일, 앱푸시</span>
+											<div class="rLinkBtn">
+												<button type="button" class="btnLine2">알림내역 삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="topInfo">
+												<span class="tag br">금융사기방지</span>
+											</div>
+											<a href="#none" class="btnArrow">방금 신용조회가 발생했어요!</a>
+											<span class="sTxt">알림수신 : 이메일, 앱푸시</span>
+											<div class="rLinkBtn">
+												<button type="button" class="btnLine2">알림내역 삭제</button>
+											</div>
+										</li>
+									</ul>
+									<div class="btnMoreBox">
+										<button type="button" class="btn more"><span>더보기</span></button>
+									</div>
+								</div>
+
+								<!-- 신용점수 산출 불가 -->
+								<div class="comp">
+									<h3 class="h3">신용점수를 확인할 수 없습니다</h3>
+									<div class="dateInWrap">
+										<span class="date">04.03 ~ 06.02</span>
+									</div>
+									<div class="noList">
+										<p>조회된 내역이 없습니다.</p>
+									</div>
+								</div>
+								<!--// 신용점수 산출 불가 -->
+
+								<div class="uiAcco infoTip">
+									<div class="uiAccoHeader">
+										<button type="button" class="uiBtn">
+											<span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+										</button>
+									</div>
+									<div class="uiAccoContent">
+										<ul class="listDot">
+											<li>케어십알림은 최근 2개월간의 신용조회내역을 제공합니다. 2개월 이전 신용조회내역은 [키워주는 신용생활 &#8250; 신용조회차단]
+												메뉴에서 확인할 수 있습니다.</li>
+											<li>
+												알림별로 안내하는 정보는 다음과 같습니다.
+												<ul class="listDash">
+													<li>신용변동 알림 : 신용개설정보, 대출변동정보, 신용조회기록, 금융질서문란, 공공정보, 단기/장기연체정보, 소득정보,
+														집주소 변경 등</li>
+													<li>신용조회 알림 : 금융기관 등의 신용조회 일시 및 목적</li>
+													<li>마이데이터 알림 : 비금융정보 등의 등록 만료 안내</li>
+													<li>연체방지 알림 : 대금 결제 전 결제계좌 잔액을 확인하여 연체 방지 안내</li>
+												</ul>
+											</li>
+											<li>알림 수신에 동의하셔야만 신용변동/신용조회/마이데이터/연체방지 내역을 확인할 수 있습니다.</li>
+											<li>조회된 내역은 최근 2개월간 회원님이 수신한 알림별 정보입니다.</li>
+											<li>각 내역을 누르면 상세 정보 페이지로 이동합니다.</li>
+											<li>대부업권 대출변동 내역은 '총 잔액'이 변경된 경우에만 제공됩니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tabPanel" id="tab02">
+								가족
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '결제일 알림 등록', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="governing">
+                        <h2 class="governingTitle">등록할 카드사 또는 대출계좌를 선택해 주세요.</h2>
+                    </div>
+                    
+                    <div class="regItem">
+                        <h3 class="h3">알림 등록 가능한 카드사</h3>
+                        <div class="mydataChk link">
+                            <div class="rdo">
+                                <a href="#none" class="lbBn"><i><img src="../../../img/zkm/rzm/common/ico/ico_kb.png" alt=""></i><span>국민카드</span></a>
+                            </div>
+                            <div class="rdo">
+                                <a href="#none" class="lbBn"><i><img src="../../../img/zkm/rzm/common/ico/ico_bnk.png" alt=""></i><span>경남카드</span></a>
+                            </div>
+                            <div class="rdo">
+                                <a href="#none" class="lbBn complete">
+                                    <i><img src="../../../img/zkm/rzm/common/ico/ico_nh.png" alt=""></i><span>농협카드</span>
+                                    <em class="status">등록완료</em>
+                                </a>
+                            </div>
+                            <div class="rdo">
+                                <a href="#none" class="lbBn"><i><img src="../../../img/zkm/rzm/common/ico/ico_db.png" alt=""></i><span>DB저축카드</span></a>
+                            </div>
+                            <div class="rdo">
+                                <a href="#none" class="lbBn"><i><img src="../../../img/zkm/rzm/common/ico/ico_citi.png" alt=""></i><span>씨티카드</span></a>
+                            </div>
+                            <div class="rdo">
+                                <a href="#none" class="lbBn"><i><img src="../../../img/zkm/rzm/common/ico/ico_hana.png" alt=""></i><span>하나카드</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 알림 등록 가능한 카드사 -->
+
+                    <h3 class="h3">알림 등록 가능한 대출계좌</h3>
+                    <div class="finaTop">
+                        <h4>은행 <span class="cntNum">2</span></h4>
+                    </div>
+                    <ul class="loanBankList">
+                        <li>
+                            <div class="payItem">
+                                <i><img src="../../../img/zkm/rzm/common/ico/thumb_nh.png" alt=""></i>
+                                <div class="cont">
+                                    <p>농협은행</p>
+                                </div>
+                            </div>
+                            <dl class="dlInfo">
+                                <div class="type">
+                                    <dt>주택담보대출</dt>
+                                    <dd>1002123578995</dd>
+                                </div>
+                                <div class="money">
+                                    <dt>잔액</dt>
+                                    <dd><span>1,058,225</span>원</dd>
+                                </div>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="payItem">
+                                <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                <div class="cont fRow">
+                                    <p>국민은행</p>
+                                    <span class="tag bl">등록완료</span>
+                                </div>
+                            </div>
+                            <dl class="dlInfo">
+                                <div class="type">
+                                    <dt>신용대출</dt>
+                                    <dd>1002123578995</dd>
+                                </div>
+                                <div class="money">
+                                    <dt>잔액</dt>
+                                    <dd><span>1,058,225</span>원</dd>
+                                </div>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!--// 은행 -->
+
+                    <div class="finaTop">
+                        <h4>보험 <span class="cntNum">1</span></h4>
+                    </div>
+                    <ul class="loanBankList">
+                        <li>
+                            <div class="payItem">
+                                <i><img src="../../../img/zkm/rzm/common/ico/thumb_hd.png" alt=""></i>
+                                <div class="cont">
+                                    <p>현대해상</p>
+                                </div>
+                            </div>
+                            <dl class="dlInfo">
+                                <div class="type">
+                                    <dt>보험계약대출</dt>
+                                    <dd>1002123578995</dd>
+                                </div>
+                                <div class="money">
+                                    <dt>잔액</dt>
+                                    <dd><span>1,058,225</span>원</dd>
+                                </div>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!--// 보험 -->
+
+                    <div class="finaTop">
+                        <h4>할부/리스 <span class="cntNum">1</span></h4>
+                    </div>
+                    <ul class="loanBankList">
+                        <li>
+                            <div class="payItem">
+                                <i><img src="../../../img/zkm/rzm/common/ico/thumb_jb.png" alt=""></i>
+                                <div class="cont">
+                                    <p>JB우리캐피탈</p>
+                                </div>
+                            </div>
+                            <dl class="dlInfo">
+                                <div class="type">
+                                    <dt>자동차담보대출</dt>
+                                    <dd>1002123578995</dd>
+                                </div>
+                                <div class="money">
+                                    <dt>잔액</dt>
+                                    <dd><span>1,058,225</span>원</dd>
+                                </div>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!--// 할부/리스 -->
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid2');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid2" class="btn base modalOpen">서비스 문의</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+
+		<div class="uiModal modal" id="modalid2">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1 class="hidden">서비스 문의</h1>
+				</div>
+				<div class="modalContent emp">
+					<!-- content -->
+					<div class="inner">
+						<p class="modalGuideInfo">
+							기관명이 한글로 표기될 수 있습니다. 
+							기관명을 영문으로 변경해야 할 경우 <a href="#none" class="ext">[서비스문의]</a> 메뉴를 이용하시거나 
+							나이스지키미 고객센터(<a href="tel:1588-2486" class="pColor">1588-2486</a>)로 연락해 주세요.
+						</p>
+					</div>
+					<!--// content -->
+					<div class="btns col">
+						<a href="#none" class="btn second"><span>서비스문의 바로가기</span></a>
+						<button type="button" class="btn primary"><span>닫기</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

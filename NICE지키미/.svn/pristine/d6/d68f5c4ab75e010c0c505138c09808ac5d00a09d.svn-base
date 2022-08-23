@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>신용점수올리기</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '약관', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid" class="btn base modalOpen">개인(신용)정보 제3자 제공 동의_국세청</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+	</div>
+
+	<div class="uiModal full" id="modalid">
+		<div class="modalWrap">
+			<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+			<div class="modalHeader">
+				<h1>[필수]개인(신용)정보 제3자 제공 동의</h1>
+			</div>
+			<div class="modalContent">
+				<div class="inner">
+					<!-- content -->
+						<!-- 약관코드 AZ170 시작 -->
+						<div class="termsWrap">
+							<p>NICE평가정보주식회사는 공공마이데이터를 활용한 서비스 제공을 위해「개인정보보호법」, 「신용정보의 이용 및 보호에 관한 법률」 등 관련 법령에 따라 아래의 제공 목적을 위하여 아래에 열거된 본인의 개인(신용)정보를 제3자에게 제공하고자 합니다.</p>
+							<p class="impTxt">내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.</p>
+							<p class="impTxt">개인(신용)정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우, 공공 마이데이터를 수집할 수 없어 서비스의 신청 및 결과를 제공 받으실 수 없습니다.</p>
+
+							<h2 class="h2">개인(신용)정보 제3자 제공</h2>
+							<strong class="termsTit">1. 제공 받는 자</strong>
+							<ul class="listDesc">
+								<li>행정안전부</li>
+								<li>한국신용정보원</li>
+								<li>국세청</li>
+							</ul>
+							<strong class="termsTit">2. 제공 항목</strong>
+							<ul class="listDesc">
+								<li>개인(신용)정보 : CI</li>
+								<li>고유식별정보 : 주민등록번호</li>
+								<li>소득금액증명원 : 소득금액</li>
+								<li>건강보험자격득실 확인서
+									<ul class="listDash">
+										<li>발급변호</li>
+										<li>발급년월일</li>
+										<li>현 직장상호명</li>
+										<li>현 직장 가입자구분코드</li>
+										<li>현 직장 자격취득년월일</li>
+										<li>전 직장상호명</li>
+										<li>전 직장 가입자구분코드</li>
+										<li>전 직장 자격취득년월일</li>
+										<li>전 직장 자격상실년월일</li>
+									</ul>
+								</li>
+							</ul>
+							<strong class="termsTit">3. 제공 목적</strong>
+							<ul class="listDesc">
+								<li>공공 마이데이터 수집</li>
+								<li>데이터 영수증 발급</li>
+								<li>개인(신용) 정보조회</li>
+								<li>신용평가 가점 부여</li>
+								<li>기타</li>
+							</ul>
+							<strong class="termsTit">4. 보유 기간</strong>
+							<p class="listDesc">제공일로부터 5년</p>
+							<p class="listStar">단, 관계법령에 따라 보존의무가 있는 경우는 해당 보존기간까지 보관</p>
+							<p class="impTxt">신용정보의 이용 및 보호에 관한 법률』 제32조 제1항 단서에 따라 동일한 목적 또는 이용범위 내에서 개인(신용)정보의 정확성, 최신성을 유지하기 위해 제공하는 경우에는 개인(신용)정보를 제공받을 때 마다 개별적으로 동의를 받지 않아도 됨을 알려드립니다.</p>
+							<ul class="listDesc">
+								<li>위와 같이 개인(신용)정보를 제3자에게 제공하는데 동의하십니까?
+									<div class="agreeBox">
+										<span>동의합니다.</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- 약관코드 AZ170 종료 -->
+
+					<!--// content -->
+				</div>
+				<div class="modalBottom">
+					<div class="btns">
+						<button type="button" class="btn primary"><span>닫기</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

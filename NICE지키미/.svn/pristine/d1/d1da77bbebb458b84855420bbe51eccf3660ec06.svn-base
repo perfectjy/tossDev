@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">    
+        $(function() {        
+          modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">[팝업] 자동차 관리 - 리콜정보</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modal">
+            <div class="modalWrap">
+                <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>리콜정보</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <h2 class="h2 sbm"><span class="pBlock">리콜항목</span>ECU의 제어 로직 관련 리콜 한글 16자 출력될 수 있게 처리</h2>
+          
+                        <table class="tblTerm">
+                            <caption>자동차리콜정보</caption>
+                            <colgroup>
+                                <col style="width:30%">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">시정기간</th>
+                                    <td>2022.06.29부터</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대상수량</th>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제조사</th>
+                                    <td>제조사</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">차량모델</th>
+                                    <td>차량모델</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">장치분류</th>
+                                    <td>원동기(엔진)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">시정방법</th>
+                                    <td>ECU프로그래밍</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">결함내용</th>
+                                    <td>RDU(리어 드라이브 유닛) 제작 시 윤활유가 적게 주입되었을 수 있으며, 이런 경우 윤활유 부족으로 RDU(리어 드라이브 유닛) 장치가 고착될 수 있고, RDU(리어 드라이브 유닛) 장치 고착 시 이동성이 저하되고 차량 제어 기능이 상실되어 충돌 위험이 증가할 수 있는 가능성에 따른 리콜</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--// content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

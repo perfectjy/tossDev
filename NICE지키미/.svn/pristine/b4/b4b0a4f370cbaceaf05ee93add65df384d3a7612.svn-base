@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나이스지키미:고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '신용상담신청', home: true, prev: false, menu: true };
+
+		$(function () {
+			modal.openModal('#modalid2');
+
+            var circlePi = Math.floor(($('.cap').innerWidth() / 2) * 2 * Math.PI);
+            var call;
+            var time = 60;
+
+            $('.circle .bar').attr('stroke-dasharray', circlePi );
+            $('.circle .bar').attr('stroke-dashoffset', circlePi );
+            
+            function count() {
+                $('.circle .bar').animate({'stroke-dashoffset' : 0 }, 70000);
+                call = setInterval(timer, 1000);
+            }
+
+            function timer() {
+                time = --time;
+                $('#second').text(time);
+                if(time === 0) {
+                    clearInterval(call);
+                }
+            }
+
+            count();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modalid2" class="btn base modalOpen">개인정보 제공 및 활용동의</a>
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+
+		<div class="uiModal modal" id="modalid2">
+			<div class="modalWrap">
+				<button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<h1>자동 로그아웃</h1>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+                        <div class="counterSec">
+                            <div class="counter">
+                                <span>남은시간</span>
+                                <div class="circle">
+                                    <svg class="cap">
+                                        <circle class="bg" cx="50%" cy="50%" r="48%"/>                           
+                                        <circle class="bar" cx="50%" cy="50%" r="48%" stroke-dashoffset="0" />                           
+                                   </svg>
+                                    <p class="pColor timeSec"><strong id="second">60</strong>초</p>
+                                </div>
+                            </div>
+                            <div class="txtBox">
+                                <p>
+                                    안전한 나이스지키미 서비스 이용을 위해
+                                    <strong class="bColor">로그인 후 10분 동안</strong> 서비스 이용이
+                                    없으면 자동으로 로그아웃 됩니다.
+                                </p>
+                            </div>
+                        </div>
+					</div>
+					<!--// content -->
+					<div class="btns">
+						<button type="button" class="btn second"><span>로그아웃</span></button>
+						<button type="button" class="btn primary"><span>로그인 연장</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

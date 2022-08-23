@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '연체현황', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+            
+            <div class="familyTab">
+                <ul>
+                    <li class="active">
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam01_on.png" alt=""></span>
+                            <strong>나신용</strong>
+                        </button>                                
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam02.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam03.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li>
+                    <!-- <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam04.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                                
+                    </li> -->
+                    <!-- <li>
+                        <button type="button">
+                            <span><img src="../../../img/zkm/rzm/emoji/ico_fam05.png" alt=""></span>
+                            <strong>가족명</strong>
+                        </button>                
+                    </li> -->
+                </ul>
+                <div class="added">
+                    <span class="tip">가족을 초대해 보세요.</span>
+                    <button type="button" class="btnAdd"><strong>가족추가</strong></button>
+                </div>                        
+            </div>
+            <!--// familyTab -->
+            
+            <div class="tabWrap t1">
+                <ul class="tabList">
+                    <li class="tab"><a href="#tab01">단기연체</a></li>
+                    <li class="tab active"><a href="#tab02">장기연체</a></li>
+                </ul>
+                <div class="tabConts">
+                    <div class="tabPanel" id="tab01">단기연체</div>
+                    <div class="tabPanel" id="tab02">
+                        <div class="tabWrap t2">
+                            <ul class="tabList tr">
+                                <li class="tab"><a href="#tabIn01">한국신용정보원</a></li>
+                                <li class="tab active"><a href="#tabIn02">NICE평가정보</a></li>
+                            </ul>
+                            <div class="tabConts">
+                                <div class="tabPanel" id="tabIn01">한국신용정보원</div>
+                                <div class="tabPanel" id="tabIn02">
+                                    <div class="guideBox sm">
+                                        <p>장기연체는 보통 90일 이상 연체가 발생한 경우 등록됩니다. 장기연체는 오랜 기간 동안 신용평가에 활용되므로 최대한 빨리 연체를 상환해야 합니다.</p>
+                                    </div>
+
+                                    <div class="repDetWrap sec overdue">
+                                        <div class="contMainTit"><strong>진행 중인 장기연체</strong><span class="cntNum">3</span>
+                                            <div class="tooltipWrap">
+                                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                                <div class="toolTip">
+                                                    <i></i>
+                                                    <p>상거래업체·일부 금융기관에서 발생한 장기연체입니다. 상환 시 연체정보는 즉시 해제 및 삭제됩니다.</p>
+                                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="addTxt">(사실조회중 <span>N</span>건 / 정정청구중 <span>N</span>건)</p>
+
+                                        <ul class="chkList nCK accountSelect">
+                                            <li class="item">
+                                                <div class="heading">
+                                                    <span class="tagSq bl">
+                                                        <a href="#none" class="btnArrow">연체된 지 얼마나 지났을까요?</a>
+                                                    </span>
+                                                    <div class="contSubTit ico">
+                                                        <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                                        <p>국민은행</p>
+                                                    </div>
+                                                </div>
+                                                <dl>
+                                                    <div>
+                                                        <dt>연체금액</dt>
+                                                        <dd class="bold"><i>50,000,000</i>원</dd>
+                                                    </div>
+                                                </dl>
+                                                <div class="infoToggle">
+                                                    <a href="#info1" class="infoTogBtn" aria-expanded="false"><span class="hidden">내용열기</span></a>
+                                                    <div id="info1" class="infoTogConts" aria-hidden="true" style="display: none;">
+                                                        <dl>
+                                                            <div>
+                                                                <dt>발생지점</dt>
+                                                                <dd>본점</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체유형</dt>
+                                                                <dd>신용카드대금연체</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체사유</dt>
+                                                                <dd>5만원 이상의 카드론 대금을 3개월 이상 연체한 거래처</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체발생일</dt>
+                                                                <dd>2022.05.26</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>정보등록일</dt>
+                                                                <dd>2022.05.30</dd>
+                                                            </div>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="heading">
+                                                    <span class="tagSq re">연체경과일: 77일</span>
+                                                    <div class="contSubTit ico">
+                                                        <i><img src="../../../img/zkm/rzm/common/ico/thumb_hana.png" alt=""></i>
+                                                        <p>하나은행</p>
+                                                    </div>
+                                                </div>
+                                                <dl>
+                                                    <div>
+                                                        <dt>연체금액</dt>
+                                                        <dd class="bold"><i>3,000,000</i>원</dd>
+                                                    </div>
+                                                </dl>
+                                                <div class="infoToggle">
+                                                    <a href="#info2" class="infoTogBtn" aria-expanded="false"><span class="hidden">내용열기</span></a>
+                                                    <div id="info2" class="infoTogConts" aria-hidden="true" style="display: none;">
+                                                        <dl>
+                                                            <div>
+                                                                <dt>발생지점</dt>
+                                                                <dd>본점</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체유형</dt>
+                                                                <dd>신용카드대금연체</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체사유</dt>
+                                                                <dd>5만원 이상의 카드론 대금을 3개월 이상 연체한 거래처</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>연체발생일</dt>
+                                                                <dd>2022.05.26</dd>
+                                                            </div>
+                                                            <div>
+                                                                <dt>정보등록일</dt>
+                                                                <dd>2022.05.30</dd>
+                                                            </div>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="btnMoreBox">
+                                            <button type="button" class="btn more"><span>더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <!--// 진행중인 장기연체 (NICE평가정보) -->
+                                    
+                                    <div class="comp">
+                                        <div class="repDetWrap overdue">
+                                            <div class="contMainTit"><strong>삭제된 장기연체</strong><span class="cntNum">3</span>
+                                                <div class="tooltipWrap">
+                                                    <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                                    <div class="toolTip">
+                                                        <i></i>
+                                                        <p>NICE평가정보의 삭제된 장기연체 기록은 신용평점에 반영되지 않으나, 최대 3년간 회원사에 제공됩니다.</p>
+                                                        <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <ul class="chkList nCK accountSelect">
+                                                <li class="item">
+                                                    <div class="heading">
+                                                        <div class="contSubTit ico">
+                                                            <i><img src="../../../img/zkm/rzm/common/ico/thumb_hana.png" alt=""></i>
+                                                            <p>하나은행</p>
+                                                        </div>
+                                                    </div>
+                                                    <dl>
+                                                        <div>
+                                                            <dt>최초연체금</dt>
+                                                            <dd class="bold"><i>70,000,000</i>원</dd>
+                                                        </div>
+                                                    </dl>
+                                                    <div class="infoToggle">
+                                                        <a href="#info3" class="infoTogBtn" aria-expanded="false"><span class="hidden">내용열기</span></a>
+                                                        <div id="info3" class="infoTogConts" aria-hidden="true" style="display: none;">
+                                                            <dl>
+                                                                <div>
+                                                                    <dt>발생지점</dt>
+                                                                    <dd>본점</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>연체유형</dt>
+                                                                    <dd>신용카드대금연체</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>연체사유</dt>
+                                                                    <dd>5만원 이상의 카드론 대금을 3개월 이상 연체한 거래처</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>삭제사유</dt>
+                                                                    <dd>강제회수(법적절차 등)</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>연체발생일</dt>
+                                                                    <dd>2022.05.26</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>연체삭제일</dt>
+                                                                    <dd>2022.05.30</dd>
+                                                                </div>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="btnMoreBox">
+                                                <button type="button" class="btn more"><span>더보기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 삭제된 장기연체 (NICE평가정보) -->
+                                    
+                                    <div class="comp bnrZone">
+                                        <div class="personal">
+                                            <a href="#none">
+                                                <strong class="toptxt">모든 연체를 상환하면</strong>
+                                                <p>신용점수가 최대 <strong class="wonder">?</strong><strong class="wonder">?</strong>점 올라가요!</p>
+                                            </a>
+                                        </div>
+                                        <div class="banLink">
+                                            <a href="#none" class="ico16">
+                                                <span>카드/대출 대금 연체, 걱정 마세요~</span>
+                                                <strong>알림받고 연체 방지하는 방법!</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uiAcco infoTip">
+                                        <div class="uiAccoHeader open">          
+                                            <button type="button" class="uiBtn">
+                                                <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                                            </button>
+                                        </div>
+                                        <div class="uiAccoContent">
+                                            <ul class="listDot">
+                                                <li>연체내역은 신용도에 제일 큰 악영향을 미칩니다. 연체 정보가 포함된 '상환이력정보'는 신용도 평가요소 중 가장 큰 비중인 30.6%를 차지합니다.</li>
+                                                <li>연체는 큰 금액, 오래된 것부터 상환해야 부정적인 영향을 최소화할 수 있습니다.</li>
+                                                <li>연체발생일에서 7년이 지난 장기연체는 기간경과해제로 자동 해제됩니다. 하지만 이는 신용정보전산망에서 해제된 것일 뿐, 채무상환의무가 종결된 것은 아닙니다. 채권자는 채무독촉 및 법적 권리행사를 할 수 있습니다.</li>
+                                                <li>신용정보관리규약상 등록금액이 일정금액(대출 1천만원, 신용카드 5백만원)을 초과하는 연체정보는 연체 상환으로 해제되더라도, 연체 기간에 따라 일정기간(최장 1년 내에서 변제를 아니한 기간 이내)동안 보존된 후 삭제될 수 있습니다.</li>
+                                                <li>연체 활용 종료 기간은 NICE평가정보 활용 기준입니다.</li>
+                                                <li>연체정보의 기록보존기간은 「신용정보 이용 및 보호에 관한 법률 시행령」 제15조 및 「신용정보업 감독규정」 제19조에 근거하여 적용됩니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"><script type="text/javascript" src="../../../bzw/inc/footer.js"></script></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

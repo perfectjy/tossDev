@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>고객센터</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '타인알림문자 수신거절', prev: true, menu: true };
+		$(document).ready(function() {
+			$('#agreeAllChk1').uiCheckAll();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi">
+			<a href="#content">본문내용 바로가기</a>
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+					<div class="governing other">
+						<h2 class="governingTitle">다른 사람의 신용알림이 오나요? 수신을 차단할 수 있어요.</h2>
+						<p class="governingInfo">휴대폰인증 후 수신거부를 완료하면 다른 사람의 모든(마케팅 알림 포함) 알림 문자가 차단됩니다.</p>
+					</div>
+					<!--// governing -->
+                    <div class="agreement" id="agreeAllChk1">
+                        <div class="agreeTitle">
+                            <div class="uiItem"><input type="checkbox" id="chk-all2" data-chk-item="all"><label for="chk-all2"><span>전체 동의</span></label></div>
+                        </div>
+                        <div class="agreeSection">
+                            <ul class="agreeItem">
+                                <li data-chk-item="list">
+                                    <input type="checkbox" id="chk2-item1" data-chk-item="list-item">
+                                    <label for="chk2-item1">[필수] 개인정보이용 및 제공 동의</label>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <input type="checkbox" id="chk2-item2" data-chk-item="list-item">
+                                    <label for="chk2-item2">[필수] 고유식별정보처리 동의</label>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <input type="checkbox" id="chk2-item3" data-chk-item="list-item">
+                                    <label for="chk2-item3">[필수] 서비스 이용약관 동의</label>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                                <li data-chk-item="list">
+                                    <input type="checkbox" id="chk2-item4" data-chk-item="list-item">
+                                    <label for="chk2-item4">[필수] 통신사 이용약관 동의</label>
+                                    <a href="#none" class="uiBtn"><span>보기</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// agreement -->
+
+					<div class="formWrap spr">
+						<div class="formItem">
+                            <label for="name" class="titItem">이름</label>
+                            <div class="formEle">
+                                <input type="text" placeholder="이름 입력" title="이름 입력" id="name">
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <label for="logrrn1" class="titItem">주민등록번호</label>
+                            <div class="intHalf hyphen">
+                                <span class="inp">
+                                    <input type="tel" placeholder="910101" title="주민등록번호 앞6자리" id="logrrn1" maxlength="6">
+                                </span>
+                                <span class="inp one">
+                                    <input type="tel" title="주민등록번호 뒤 첫번째자리" maxlength="1">
+                                </span>
+                            </div>
+                        </div>
+						<div class="formItem">
+                            <strong class="titItem">휴대전화번호</strong>
+                            <div class="formEdit">
+                                <div class="formEle">
+                                    <select title="통신사">
+                                        <option>SKT</option>
+                                        <option>KT</option>
+                                    </select>
+                                    <div class="intBtnType">
+                                        <input type="tel" id="hpnum" placeholder="- 없이 숫자만 입력">
+                                        <div class="intBtn">
+                                            <button type="button" class="btn base"><span>인증번호 발송</span></button>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="intBtnType">
+                                    <input type="tel" id="number" placeholder="인증번호 입력">
+                                    <span class="time">03:00</span>
+                                    <div class="intBtn">
+                                        <button type="button" class="btn base"><span>확인</span></button>
+                                    </div>
+                                </div>
+                            </div>									
+                        </div>
+						<!--// end [인증번호] -->
+					</div>
+
+					<div class="bottomActiveBtns">
+						<div class="btns">
+							<button type="button" class="btn primary"><span>인증 완료</span></button>
+						</div>
+					</div>
+					<!--// bottomActiveBtns -->
+
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

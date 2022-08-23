@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '개인신용보고서(한글)', prev: true, menu: true };
+
+        $(function () {
+            $('.btnShow').on('click', function () {
+                $(this).parents('.repDetBox').toggleClass('active')
+            })
+
+            //스크롤이벤트
+            $('.rndLink a').on('click', function (e) {
+                e.preventDefault();
+                $(this).parent().addClass('active').siblings().removeClass('active');
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <div class="governingTitle btw">내 보고서
+                            <a href="#none" class="btnReport">상대방 보고서</a>
+                        </div>
+                        <p class="governingInfo">2022/04/22 기준</p>
+                    </div>
+                    <div class="compVisual">
+                        <span class="icon letter"></span>
+                    </div>
+                    <div class="rndLink tD">
+                        <ul>
+                            <li><a href="#link1"><span>#기본정보</span></a></li>
+                            <li><a href="#link2"><span>#신용점수</span></a></li>
+                            <li><a href="#link3"><span>#카드정보</span></a></li>
+                            <li><a href="#link4"><span>#대출정보</span></a></li>
+                            <li><a href="#link5"><span>#연체정보</span></a></li>
+                            <li><a href="#link6"><span>#기타정보</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap comp" id="link1">
+                        <div class="contMainTit"><strong>보고서 기본정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <dl class="nTitBox">
+                                    <div>
+                                        <dt>이름</dt>
+                                        <dd class="bold">강예진</dd>
+                                    </div>
+                                    <div>
+                                        <dt>주민등록번호</dt>
+                                        <dd class="bold">781010-1******(만 40세)</dd>
+                                    </div>
+                                    <div>
+                                        <dt>집주소</dt>
+                                        <dd class="bold">
+                                            서울 마포구 성암로 47-7 302호
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <dt>직장명/부서</dt>
+                                        <dd class="bold">KB국민카드/마케팅1실</dd>
+                                    </div>
+                                    <div>
+                                        <dt>직장주소</dt>
+                                        <dd class="bold">
+                                            서울시 영등포구 국회대로 70길 22
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <dt>직장정보 등록일</dt>
+                                        <dd class="bold">2020.12.30</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap sec" id="link2">
+                        <div class="contMainTit"><strong>신용점수</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="repVisBox thn">
+                            <p class="impTit"><strong class="pColor">854</strong> 점</p>
+                            <div class="progressBox bld">
+                                <div class="progress">
+                                    <p class="bar" style="width : 20%"></p>
+                                </div>
+                                <div class="rangeProgress">
+                                    <span>낮음</span>
+                                    <span>높음</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="repDetWrap sec" id="link3">
+                        <div class="contMainTit"><strong>카드정보</strong></div>
+                        <div class="contSubTit2">
+                            <strong>개설현황(한도현황)</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민카드</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>종류</dt>
+                                        <dd class="bold">체크카드</dd>
+                                    </div>
+                                    <div>
+                                        <dt>개설일</dt>
+                                        <dd class="bold">2020.12.30</dd>
+                                    </div>
+                                    <div>
+                                        <dt>유효기간</dt>
+                                        <dd class="bold">2020.12.30</dd>
+                                    </div>
+                                    <div>
+                                        <dt>총 한도</dt>
+                                        <dd class="bold">6,000</dd>
+                                    </div>
+                                    <div>
+                                        <dt>총 이용금액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>일시불</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>할부</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>체크카드</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="contSubTit2 exp">
+                            <strong>최근월 카드이용금액</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">기업은행카드</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>종류</dt>
+                                        <dd class="bold">체크카드</dd>
+                                    </div>
+                                    <div>
+                                        <dt>총 이용금액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>일시불</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>할부</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>체크카드</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap sec" id="link4">
+                        <div class="contMainTit"><strong>대출정보</strong></div>
+                        <div class="contSubTit2">
+                            <strong>대출개설현황</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">우리은행 서여의도금융센터
+                                        <span class="tagSq pr">NICE평가정보</span>
+                                    </p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold">100,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>개설일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>변경일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>담보여부</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                            <li class="item und">
+                                <div class="heading">
+                                    <p class="contSubTit">우리은행 서여의도금융센터
+                                        <span class="tagSq bk">신용정보원</span>
+                                    </p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold">100,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>개설일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>변경일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>담보여부</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="contSubTit2 exp">
+                            <strong>단기카드대출(현금서비스)현황</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">우리은행 서여의도금융센터</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>변경일</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+
+                        <div class="contSubTit2 exp">
+                            <strong>연간대출상환정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">우리은행</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>상품유형</dt>
+                                        <dd class="bold">만기일시상환</dd>
+                                    </div>
+                                    <div>
+                                        <dt>특수상품유형</dt>
+                                        <dd class="bold">일반</dd>
+                                    </div>
+                                    <div>
+                                        <dt>계좌상태</dt>
+                                        <dd class="bold">유효</dd>
+                                    </div>
+                                    <div>
+                                        <dt>개설일</dt>
+                                        <dd class="bold">2020.04.16</dd>
+                                    </div>
+                                    <div>
+                                        <dt>총 개설금액</dt>
+                                        <dd class="bold">226,587</dd>
+                                    </div>
+                                    <div>
+                                        <dt>상환금액</dt>
+                                        <dd class="bold">37,475</dd>
+                                    </div>
+                                    <div>
+                                        <dt>대출잔액</dt>
+                                        <dd class="bold">188,823</dd>
+                                    </div>
+                                    <div>
+                                        <dt>연체금액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap sec" id="link5">
+                        <div class="contMainTit"><strong>연체정보</strong></div>
+                        <!--데이터 없을때-->
+                        <!-- <div class="repDetBox noData">
+                            <p>해당 내역이 없습니다.</p>
+                        </div> -->
+                        <!--데이터 없을때-->
+                        <div class="contSubTit2">
+                            <strong>단기연체내역</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민카드
+                                    </p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold">100,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>연체발생일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>연체구분</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                            </li>
+                        </ul>
+
+                        <div class="contSubTit2 exp">
+                            <strong>장기연체내역</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민카드
+                                        <span class="tagSq bk">채무불이행 신정원</span>
+                                    </p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>연체금액</dt>
+                                        <dd class="bold">250,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>해제일</dt>
+                                        <dd class="bold">대출(일반)</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info3" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info3" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민카드
+                                        <span class="tagSq pr">채무불이행 NICE평가정보</span>
+                                    </p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>연체금액</dt>
+                                        <dd class="bold">250,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info4" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info4" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="repDetWrap sec" id="link6">
+                        <div class="contMainTit"><strong>기타정보</strong></div>
+                        <div class="contSubTit2">
+                            <strong>공공정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">우리은행 서여의도금융센터</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold">100,000,000원</dd>
+                                    </div>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>해제일</dt>
+                                        <dd class="bold">2017.01.01</dd>
+                                    </div>
+                                    <div>
+                                        <dt>사유</dt>
+                                        <dd class="bold">"채무자회생 및 파산에 관한 법률"에 의한 개인의 회생절차 진행중인 거래처-”채무자회생 및 파산에 관한 법률”에
+                                            의거한 변제계획인가일</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info5" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info5" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contSubTit2 exp">
+                            <strong>금융질서문란정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민은행</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>해제일</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>해제사유</dt>
+                                        <dd class="bold"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>해제사유</dt>
+                                        <dd class="bold">채무자변제</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info5" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info5" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contSubTit2 exp">
+                            <strong>채무보증정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민은행(지점)</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>금액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>발생일</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>변경일</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info5" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info5" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contSubTit2 exp">
+                            <strong>채무조정정보</strong>
+                            <div class="tooltipWrap">
+                                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                                <div class="toolTip">
+                                    <i></i>
+                                    <p>소호신용점수/등급</p>
+                                    <button type="button" class="btnTooltipClose"><span
+                                            class="hidden">닫기</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="chkList nCK accountSelect">
+                            <li class="item">
+                                <div class="heading">
+                                    <p class="contSubTit">KB국민은행</p>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>계좌유형</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>특수상품유형</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>개설일</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>출금액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                    <div>
+                                        <dt>잔액</dt>
+                                        <dd class="bold">-</dd>
+                                    </div>
+                                </dl>
+                                <div class="infoToggle">
+                                    <a href="#info5" class="infoTogBtn"><span class="hidden">내용열기</span></a>
+                                    <div id="info5" class="infoTogConts">
+                                        <dl>
+                                            <div>
+                                                <dt>대출원금</dt>
+                                                <dd class="bold">250,000,000원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>금리</dt>
+                                                <dd class="bold">2.9%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>만기일</dt>
+                                                <dd class="bold">2019.01.06</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="uiAcco infoTip">
+                        <div class="uiAccoHeader">
+                            <button type="button" class="uiBtn">
+                                <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                            </button>
+                        </div>
+                        <div class="uiAccoContent">
+                            <ul class="listDot">
+                                <li>
+                                    신용보고서는 「신용정보의 이용 및 보호에 관한 법률」에 따라 해당 본인이 요청한 날짜를 기준으로 NICE평가정보에 의해 제공되며, 같은 법에 의해 보호받는 내용을 담고 있습니다.
+                                </li>
+                                <li>
+                                    이 커플 해당 본인이 수신인을 지정하여 제공한 것으로, 사전 승인 없이 타인에게 누설(열람, 복사)하거나 다른 목적으로 사용할 수 없습니다.
+                                </li>
+                                <li>
+                                    지정된 수신인이 아닌 분이 커플 신용보고서의 커플로 연결되었을 경우 아래 연락처로 연락해 주세요.
+                                    <ul class="listDash">
+                                        <li>전화: 나이스지키미 고객센터(1588-2486)</li>
+                                        <li>주소: 서울특별시 영등포구 은행로 30 중소기업중앙회 신관 6층 나이스지키미 고객센터 개인신용보고서 담당자</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>선택</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

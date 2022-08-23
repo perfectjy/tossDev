@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '커플신용보고서', prev: true, menu: true };
+
+    $(function() {
+      $('.btnShow').on('click', function() {
+        $(this).parents('.repDetBox').toggleClass('active')
+      })
+
+      //스크롤이벤트
+      $('.rndLink a').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+      })
+    })
+</script>
+</head>
+<body>  
+  <div id="wrap"> 
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div> 
+    <!-- header -->    
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+          <div class="governing">
+            <div class="governingTitle btw">내 보고서
+              <a href="#none" class="btn file"><span class="">상대방 보고서</span></a>
+            </div>
+            <p class="governingInfo">2022/04/22 기준</p>
+          </div>
+					<div class="compVisual">
+						<span class="icon letter"></span>
+					</div>
+          <div class="rndLink tD">
+            <ul>
+                <li><a href="#link1"><span>#기본정보</span></a></li>
+                <li><a href="#link2"><span>#신용점수</span></a></li>
+                <li><a href="#link3"><span>#카드정보</span></a></li>
+                <li><a href="#link4"><span>#대출정보</span></a></li>
+                <li><a href="#link5"><span>#연체정보</span></a></li>
+                <li><a href="#link6"><span>#기타정보</span></a></li>
+            </ul>
+          </div>
+          <div class="repDetWrap comp" id="link1">
+            <div class="contMainTit"><strong>보고서 기본정보</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="repDetBox">
+              <dl class="infoBox">
+                <div>
+                  <dt>이름</dt>
+                  <dd>강예진</dd>
+                </div>
+                <div>
+                  <dt>주민등록번호</dt>
+                  <dd>781010-1******(만 40세)</dd>
+                </div>
+                <div>
+                  <dt>자택주소</dt>
+                  <dd>
+                    서울 마포구 성암로 47-7
+                    302호
+                  </dd>
+                </div>
+                <div>
+                  <dt>직장명/부서</dt>
+                  <dd>KB국민카드/마케팅1실</dd>
+                </div>
+                <div>
+                  <dt>직장주소</dt>
+                  <dd>
+                    서울시 영등포구 국회대로
+                    70길 22
+                  </dd>
+                </div>
+                <div>
+                  <dt>직장정보기준일</dt>
+                  <dd>2020.12.30</dd>
+                </div>
+
+              </dl>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link2">
+            <div class="contMainTit"><strong>신용점수</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="repVisBox thn">
+              <p class="impTit"><strong class="pColor">854</strong> 점</p>
+              <div class="progressBox bld">
+                <div class="progress">
+                  <p class="bar" style="width : 20%"></p>
+                </div>
+                <div class="rangeProgress">
+                  <span>낮음</span>
+                  <span>높음</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link3">
+            <div class="contMainTit"><strong>카드정보</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <p class="contSubTit2">개설현황(한도현황)</p>
+            <div class="repDetBox">
+              <p class="contSubTit">개설현황(한도현황)</p>
+              <dl class="infoBox">
+                <div>
+                  <dt>종류</dt>
+                  <dd>체크카드</dd>
+                </div>
+                <div>
+                  <dt>개설일자</dt>
+                  <dd>2020.12.30</dd>
+                </div>
+                <div>
+                  <dt>유효기간</dt>
+                  <dd>2020.12.30</dd>
+                </div>
+                <div>
+                  <dt>총 한도</dt>
+                  <dd>6,000</dd>
+                </div>
+                <div>
+                  <dt>총 이용금액</dt>
+                  <dd>-</dd>
+                </div>
+                <div>
+                  <dt>일시불</dt>
+                  <dd>-</dd>
+                </div>
+                <div>
+                  <dt>할부</dt>
+                  <dd>-</dd>
+                </div>
+                <div>
+                  <dt>체크카드</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link4">
+            <div class="contMainTit"><strong>대출정보</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <p class="contSubTit2">대출개설현황</p>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">우리은행 서여의도금융센터
+                  <span class="tagSq pr">NICE평가정보</span>
+                </p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>금액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>개설일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>변경일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>담보여부</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">우리은행 서여의도금융센터
+                  <span class="tagSq bk">한국신용정보원</span>
+                </p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+                <div>
+                  <dt>개설일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>변경일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>담보여부</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+            <p class="contSubTit2">단기카드대출(현금서비스)현황</p>
+            <div class="repDetBox">
+              <div class="heading">
+                <p class="contSubTit">ㅇㅇ현금서비스 서여의도금융센터</p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>발생일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>변경일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>금액</dt>
+                  <dd>3,000천원</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="repDetWrap sec" id="link5">
+            <div class="contMainTit"><strong>연체정보</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <!--데이터 없을때-->
+            <!-- <div class="repDetBox noData">
+              <p>해당 내역이 없습니다.</p>
+            </div> -->
+            <!--데이터 없을때-->
+            <p class="contSubTit2">단기연체</p>
+            <div class="repDetBox">
+              <div class="heading">
+                <p class="contSubTit">KB국민카드</p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>금액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>연체발생일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>연체구분</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+            </div>
+            <p class="contSubTit2 exp">장기연체내역</p>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">KB국민카드
+                  <span class="tagSq bk">채무불이행 신정원</span>
+                </p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>연체금액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>연체발생일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>해제일</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">KB국민카드
+                  <span class="tagSq pr">채무불이행 NICE평가정보</span>
+                </p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>연체금액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>연체발생일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>해제일</dt>
+                  <dd>-</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+          </div>
+          <div class="repDetWrap sec" id="link6">
+            <div class="contMainTit"><strong>기타정보</strong>
+              <div class="tooltipWrap">
+                <button type="button" class="btnTooltip"><span class="hidden">설명 보기</span></button>
+                <div class="toolTip">
+                  <i></i>
+                  <p>소호신용점수/등급</p>
+                  <button type="button" class="btnTooltipClose"><span class="hidden">닫기</span></button>
+                </div>
+              </div>
+            </div>
+            <p class="contSubTit2">공공정보</p>
+            <div class="repDetBox drop">
+              <div class="heading">
+                <p class="contSubTit">우리은행 서여의도금융센터</p>
+              </div>
+              <dl class="infoBox">
+                <div>
+                  <dt>금액</dt>
+                  <dd>100,000,000원</dd>
+                </div>
+                <div>
+                  <dt>개설일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+                <div>
+                  <dt>해제일</dt>
+                  <dd>2017.01.01</dd>
+                </div>
+              </dl>
+              <button class="btnShow"><span class="hidden">더보기</span></button>
+            </div>
+          </div>
+
+          <div class="uiAcco infoTip">
+            <div class="uiAccoHeader">          
+                <button type="button" class="uiBtn">
+                    <span class="accoTitle">꼭 알아두세요!</span><span class="hidden">펼치기</span>
+                </button>
+            </div>
+            <div class="uiAccoContent">
+                <ul class="listDot">
+                   <li>
+                      신용보고서는 ‘신용정보의 이용 및 보호에 관한 
+                      법률’에 의거하여 해당 본인이 요청한 일자를 
+                      기준으로 NICE평가정보에 의해 제공되며, 동법에 
+                      의해 보호받는 내용을 담고 있습니다.
+                   </li>
+                   <li>
+                    본 커플신용보고서는 해당 본인이 수신자를 
+                    지정하여 제공한 것으로, 사전 승인 없이 타인에게 
+                    누설(열람, 복사) 하거나 다른 목적으로 사용할 수 
+                    없습니다.
+                   </li>
+                   <li>
+                    지정된 수신자가 아닌 분이 커플신용보고서의 
+                    커플로 연결되었을 경우 아래 연락처로 연락해주시기 
+                    바랍니다.
+                    <ul class="listDash">
+                      <li>전화번호 : 1588-2489 NICE지키미 고객센터</li>
+                      <li>주소 : 서울특별시 영등포구 은행로 30 중소기업 중소기업중앙회신관 6층</li>
+                    </ul>
+                   </li>
+                   <li>
+                    NICE지키미 고객센터 개인신용보고서 담당자
+                   </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="bottomActiveBtns">
+            <div class="btns">
+              <button type="button" class="btn primary"><span>선택</span></button>
+            </div>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+    <!--// footer -->
+  </div>
+</body>
+</html>

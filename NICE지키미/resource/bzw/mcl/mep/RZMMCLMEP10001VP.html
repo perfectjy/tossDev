@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = { title: '나이스지키미', prev: true, menu: true };
+
+		$(function () {
+			modal.openModal('#modal1');
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+					<a href="#modal1" class="btn base modalOpen">[팝업]할인혜택 상세</a>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+
+		<!-- popup -->
+		<div class="uiModal modal t1" id="modal1">
+			<div class="modalWrap">
+				<button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+				<div class="modalHeader">
+					<div class="popupBg">
+						<h1>원래대로라면,<br><strong class="pColor">1년에 105,000원</strong>이 필요해요.</h1>
+					</div>
+				</div>
+				<div class="modalContent">
+					<!-- content -->
+					<div class="inner">
+						<dl class="valueList">
+							<div>
+								<dt>신용관리</dt>
+								<dd>10,000원</dd>
+							</div>
+							<div>
+								<dt>신용조회 차단, 발생/차단내역 조회</dt>
+								<dd>10,000원</dd>
+							</div>
+							<div>
+								<dt>본인인증 차단, 발생/차단내역 조회</dt>
+								<dd>10,000원</dd>
+							</div>
+							<div>
+								<dt>인터넷활동분석</dt>
+								<dd>10,000원</dd>
+							</div>
+						</dl>
+						<div class="txtBtm">
+							<span class="tip">하지만 지키미케어십 회원은</span>
+							<p><strong class="pColor">1년에 39,000원</strong>으로 이용 가능해요!</p>
+						</div>
+					</div>
+					<!--// content -->
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

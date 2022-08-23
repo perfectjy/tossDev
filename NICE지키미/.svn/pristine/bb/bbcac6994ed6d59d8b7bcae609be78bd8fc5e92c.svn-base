@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NICE지키미</title>
+
+	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+	<script type="text/javascript">
+		mbHeader = {title: '내 정보 변경', prev: true, menu: true };
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="skipNavi"> 
+			<a href="#content">본문내용 바로가기</a> 
+		</div>
+		<!-- header -->
+		<script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+		<script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+		<!--// header -->
+
+		<!-- container -->
+		<div id="container">
+			<div id="content">
+				<div class="section">
+
+                    <div class="governing">
+						<h2 class="governingTitle"><span>나*용</span>님의 회원정보</h2>
+                    </div>
+
+                    <div class="formWrap">
+                        <div class="formItem">
+                            <strong class="titItem">아이디</strong>
+                            <div class="formInfo">
+                                <p class="value">nic****</p>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <strong class="titItem">이름</strong>
+                            <div class="formInfo">
+                                <p class="value">나*용</p>
+                                <button type="button" class="btnLine"><span>이름변경</span></button>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <strong class="titItem">비밀번호</strong>
+                            <div class="formInfo">
+                                <p class="value">********</p>
+                                <button type="button" class="btnLine"><span>변경하기</span></button>
+                            </div>
+                            <!-- 변경 버튼 클릭시 입력영역 -->
+                            <div class="formEdit full">
+                                <div class="intBtnType">
+                                    <div class="security">
+                                        <input type="password" placeholder="현재 비밀번호 입력" title="비밀번호">
+                                        <!-- 에러문구1 -->
+                                        <p class="errorTxt">비밀번호가 일치하지 않습니다.</p>
+                                        <!-- 에러문구2 -->
+                                        <p class="errorTxt">현재 비밀번호와 다르게 설정해 주세요.</p>
+                                        <span class="inpSecurity">
+                                            <input type="checkbox" class="chkKeyPad" name="Tk_pwd_checkbox" id="Tk_pwd_checkbox1-1">
+                                            <label for="Tk_pwd_checkbox1-1"><span class="hidden">보안키패드 열기</span></label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="intBtnType">
+                                    <div class="security">
+                                        <input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상 입력" id="logpw1-2">
+                                        <!-- 에러문구1 -->
+                                        <p class="errorTxt">비밀번호를 입력해 주세요.</p>
+                                        <!-- 에러문구2 -->
+                                        <p class="errorTxt">영문/숫자/특수문자 포함 8자 이상 입력해 주세요.</p>
+                                        <span class="inpSecurity">
+                                            <input type="checkbox" class="chkKeyPad" name="Tk_pwd_checkbox" id="Tk_pwd_checkbox1-2">
+                                            <label for="Tk_pwd_checkbox1-2"><span class="hidden">보안키패드 열기</span></label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="intBtnType">
+                                    <div class="security">
+                                        <input type="password" placeholder="비밀번호 다시 입력" id="logpw1-3">
+                                        <!-- 에러문구1 -->
+                                        <p class="errorTxt">비밀번호를 한번 더 입력해 주세요.</p>
+                                        <!-- 에러문구2 -->
+                                        <p class="errorTxt">위에 입력한 비밀번호와 똑같이 입력해 주세요.</p>
+                                        <span class="inpSecurity">
+                                            <input type="checkbox" class="chkKeyPad" name="Tk_pwd_checkbox" id="Tk_pwd_checkbox1-3">
+                                            <label for="Tk_pwd_checkbox1-3"><span class="hidden">보안키패드 열기</span></label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="formInfoBtn">
+                                    <button type="button" class="btn sub"><span>취소하기</span></button>
+                                    <button type="button" class="btn sub"><span>저장하기</span></button>
+                                </div>
+                            </div>
+                            <!--// end -->
+                        </div>
+                        <div class="formItem">
+                            <strong class="titItem">이메일</strong>
+                            <div class="formInfo">
+                                <p class="value">ni*****@netive.co.kr</p>
+                                <button type="button" class="btnLine"><span>변경하기</span></button>
+                            </div>
+                            <!-- 변경 버튼 클릭시 입력영역 -->
+                            <div class="formEdit full">
+                                <div class="intBtnType">
+                                    <input type="text" title="이메일" placeholder="이메일 전체 입력">
+                                    <p class="errorTxt">이미 사용중인 이메일입니다.</p>
+                                    <div class="formInfoBtn">
+                                        <button type="button" class="btn sub"><span>취소하기</span></button>
+                                        <button type="button" class="btn sub"><span>저장하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// end -->
+                        </div>
+                        <div class="formItem">
+                            <strong class="titItem">휴대전화번호</strong>
+                            <div class="formInfo">
+                                <p class="value">010-12**-34**</p>
+                                <button type="button" class="btnLine"><span>변경하기</span></button>
+                            </div>
+                            <!-- 변경 버튼 클릭시 입력영역 -->
+                            <div class="formEdit">
+                                <div class="intBtnType">
+                                    <input type="tel" placeholder="- 없이 숫자만 입력" title="휴대전화번호">
+                                    <div class="intBtn">
+                                        <button type="button" class="btn base"><span>인증번호 요청</span></button>
+                                        <!-- 인증번호 요청 이후 버튼 상태 변경 -->
+                                        <!-- <button type="button" class="btn base"><span>인증번호 재요청</span></button> -->
+                                    </div>
+                                </div>
+                                <!-- 에러문구 -->
+                                <p class="errorTxt">인증할 휴대전화번호를 올바르게 입력해 주세요.</p>
+                                <div class="intBtnType">
+                                    <input type="tel" id="number" placeholder="인증번호 입력">
+                                    <span class="time">03:00</span>
+                                    <div class="intBtn">
+                                        <button type="button" class="btn base"><span>확인</span></button>
+                                    </div>
+                                </div>
+                                <!-- 에러문구 -->
+                                <p class="errorTxt">인증번호 숫자 6자리를 올바르게 입력해 주세요.</p>
+                                <div class="formInfoBtn">
+                                    <button type="button" class="btn sub"><span>취소하기</span></button>
+                                    <button type="button" class="btn sub"><span>저장하기</span></button>
+                                </div>
+                            </div>
+                            <!--// end -->
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--// container -->
+		<!-- footer -->
+		<script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+		<!--// footer -->
+	</div>
+</body>
+
+</html>

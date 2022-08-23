@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '대출 상세', prev: true, menu: true };
+        $(function () {
+            modal.openModal('#repayCard');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <a href="#repayCard" class="btn base modalOpen">대출상세</a>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+
+        <!-- 대출 상세 팝업 -->
+        <div class="uiModal full" id="repayCard">
+            <div class="modalWrap">
+                <button type="button" class="ui-btn typeModalClose"><span class="hidden">닫기</span></button>
+                <div class="modalHeader">
+                    <h1>대출 상세</h1>
+                </div>
+                <div class="modalContent">
+                    <div class="inner">
+                        <!-- content -->
+                        <div class="dHead repay">
+                            <div class="payItem">
+                                <i><img src="../../../img/zkm/rzm/common/ico/thumb_sd.png" alt=""></i>
+                                <div class="cont fRow">
+                                    <p>스탠다드차타드<br>제일은행 대출</p>
+                                    <span class="tag bl">결제일 알림 ON</span>
+                                </div>
+                            </div>
+                            <div class="mthInfo">
+                                <div class="date year">2022</div>
+                                <div class="date">06</div>
+                            </div>
+                            <!--// mthInfo -->
+                            <dl class="dlInfo">
+                                <div>
+                                    <dt>6월 상환(예정) 금액</dt>
+                                    <dd><span>800,000</span>원</dd>
+                                </div>
+                                <div>
+                                    <dt>이전달 상환 금액</dt>
+                                    <dd><span>800,000</span>원</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <!--// dHead -->
+
+                        <div class="comp guideBox noBg">
+                            <p>돈을 빌리고 갚은 상세내역은 [대출현황]에서 확인해 보세요.</p>
+                            <div class="btnBottom">
+                                <a href="#none" class="btn sub">대출현황 바로가기</a>
+                            </div>
+                        </div>
+                        <!--// guideBox -->
+                        <!--// content -->
+                    </div>
+                    <div class="modalBottom">
+                        <div class="btns">
+                            <button type="button" class="btn primary"><span>확인</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--// 카드 상세 팝업 -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        $(function () {
+            modal.openModal('#modal');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <a href="#modal" class="btn base modalOpen">보험 납입내역 보기</a>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- popup -->
+        <div class="uiModal full" id="modal">
+            <div class="modalWrap">
+            <button type="button" class="uiBtn typeModalClose"><span class="hidden">닫기</span></button>
+            <div class="modalHeader">
+                <h1>보험 납입내역</h1>
+            </div>
+            <div class="modalContent">
+                <div class="inner">
+                <!-- content -->
+                <div class="datePicker mtN">
+                    <button type="button" class="btnCrl prev"><span class="hidden">이전달</span></button>
+                    <button type="button" class="btnDate">
+                        2022
+                        <span class="hidden">날짜 선택</span>
+                    </button>
+                    <button type="button" class="btnCrl next"><span class="hidden">다음달</span></button>
+                </div>
+
+                <div class="bindWrap">
+                    <dl class="bnList">
+                        <dt>납일일자</dt>
+                        <dd>2020.07.20</dd>
+                        <dt>납입유효연월</dt>
+                        <dd>2022.07</dd>
+                        <dt>납입회차</dt>
+                        <dd>30회차</dd>
+                        <dt>실납입보험료</dt>
+                        <dd>300,000원</dd>
+                        <dt>납입방법</dt>
+                        <dd>신용카드</dd>
+                    </dl>
+                    <dl class="bnList">
+                        <dt>납일일자</dt>
+                        <dd>2020.07.20</dd>
+                        <dt>납입유효연월</dt>
+                        <dd>2022.07</dd>
+                        <dt>납입회차</dt>
+                        <dd>30회차</dd>
+                        <dt>실납입보험료</dt>
+                        <dd>300,000원</dd>
+                        <dt>납입방법</dt>
+                        <dd>신용카드</dd>
+                    </dl>
+                </div>
+                
+                <div class="btnConts">
+                    <button type="button" class="btn primary"><span>확인</span></button>
+                </div>
+                
+                <!--// content -->
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--// popup -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

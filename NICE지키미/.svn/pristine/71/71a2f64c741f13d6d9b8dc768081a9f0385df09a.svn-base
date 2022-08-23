@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '거래내역', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi"> 
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+
+                    <div class="tabWrap t1">
+                        <ul class="tabList">
+                            <li class="tab active"><a href="#tab01">전체</a></li>
+                            <li class="tab"><a href="#tab02">카드</a></li>
+                            <li class="tab"><a href="#tab03">페이</a></li>
+                        </ul>
+                        <div class="tabConts">
+                            <div class="tabPanel" id="tab01">
+                                <div class="mthInfo">
+                                    <div class="control">
+                                        <div class="intDate">
+                                            <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                                            <input type="text" value="06">
+                                        </div>
+                                        <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                                        <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                                    </div>
+                                    <div class="opt">
+                                        <div class="listSort">
+                                            <button type="button" class="filterBtn">
+                                                <span>최신순</span>
+                                            </button>
+                                        </div>
+                                        <!--// 기획확인 필요 -->
+                                    </div>
+                                </div>
+                                <!--// mthInfo -->
+                                <div class="sideLineArea">
+                                    <ul class="sideLineList t1">
+                                        <li class="active">
+                                            <span class="date"><i>20</i>일</span>
+                                            <span class="cnt"><i>3</i>건</span>
+                                            <div class="box">
+                                                <span class="time">23:15</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>(주)나이스베이커리</p>
+                                                        <span><i class="payName">국민카드</i>할부</span>
+                                                    </div>
+                                                    <strong class="minus"><span>6,000,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_nh.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>식자재마트</p>
+                                                        <span><i class="payName">농협카드</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <span class="time">15:00</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_lotte.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span><i class="payName">롯데카드</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>100,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="date"><i>19</i>일</span>
+                                            <span class="cnt"><i>2</i>건</span>
+                                            <div class="box">
+                                                <span class="time">23:15</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_naver.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>네이버페이 충전</p>
+                                                        <span><i class="payName">네이버페이</i>적립</span>
+                                                    </div>
+                                                    <strong class="plus"><span>6,000,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span><i class="payName">토스페이</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabPanel" id="tab02">
+                                <div class="mthInfo">
+                                    <div class="control">
+                                        <div class="intDate">
+                                            <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                                            <input type="text" value="06">
+                                        </div>
+                                        <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                                        <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                                    </div>
+                                    <div class="opt">
+                                        <div class="listSort">
+                                            <button type="button" class="filterBtn">
+                                                <span>최신순</span>
+                                            </button>
+                                        </div>
+                                        <!--// 기획확인 필요 -->
+                                    </div>
+                                </div>
+                                <!--// mthInfo -->
+                                <div class="sideLineArea">
+                                    <ul class="sideLineList t1">
+                                        <li class="active">
+                                            <span class="date"><i>20</i>일</span>
+                                            <span class="cnt"><i>3</i>건</span>
+                                            <div class="box">
+                                                <span class="time">23:15</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_kb.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>(주)나이스베이커리</p>
+                                                        <span><i class="payName">국민카드</i>할부 <i class="num">12</i>개월</span>
+                                                    </div>
+                                                    <strong class="minus"><span>6,000,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_nh.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>식자재마트</p>
+                                                        <span><i class="payName">농협카드</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <span class="time">15:00</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_lotte.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span><i class="payName">롯데카드</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>100,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="date"><i>19</i>일</span>
+                                            <span class="cnt"><i>2</i>건</span>
+                                            <div class="box">
+                                                <span class="time">23:15</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_naver.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>네이버페이 충전</p>
+                                                        <span><i class="payName">네이버페이</i>적립</span>
+                                                    </div>
+                                                    <strong class="plus"><span>6,000,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span><i class="payName">토스페이</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabPanel" id="tab03">
+                                <div class="mthInfo">
+                                    <div class="control">
+                                        <div class="intDate">
+                                            <a href="#none" class="btnDate"><span class="hidden">월 선택</span></a>
+                                            <input type="text" value="06">
+                                        </div>
+                                        <a href="#none" class="btnArrow prev"><span class="hidden">이전달 선택</span></a>
+                                        <a href="#none" class="btnArrow next"><span class="hidden">다음달 선택</span></a>
+                                    </div>
+                                    <div class="opt">
+                                        <div class="listSort">
+                                            <button type="button" class="filterBtn">
+                                                <span>최신순</span>
+                                            </button>
+                                            <button type="button" class="filterBtn">
+                                                <span>고액순</span>
+                                            </button>
+                                        </div>
+                                        <!--// 기획확인 필요 -->
+                                    </div>
+                                </div>
+                                <!--// mthInfo -->
+                                <div class="sideLineArea">
+                                    <ul class="sideLineList t1">
+                                        <li class="active">
+                                            <span class="date"><i>20</i>일</span>
+                                            <span class="cnt"><i>3</i>건</span>
+                                            <div class="box">
+                                                <span class="time">23:15</span>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_naver.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>식자재마트</p>
+                                                        <span><i class="payName">네이버페이</i>일시불</span>
+                                                    </div>
+                                                    <strong class="minus"><span>120,000</span>원</strong>
+                                                </div>
+                                                <div class="payItem">
+                                                    <i><img src="../../../img/zkm/rzm/common/ico/thumb_toss.png" alt=""></i>
+                                                    <div class="cont">
+                                                        <p>이마트 신촌점</p>
+                                                        <span><i class="payName">토스페이</i>일시불</span>
+                                                    </div>
+                                                    <strong class="plus"><span>100,000</span>원</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <div class="footer"></div>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

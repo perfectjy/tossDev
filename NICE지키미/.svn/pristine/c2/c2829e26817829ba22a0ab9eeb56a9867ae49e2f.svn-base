@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICE지키미</title>
+
+  <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+  <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+  <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+  <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+  <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+  <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+  <script type="text/javascript">
+    mbHeader = { title: '결제예정 상세', prev: true, menu: true };
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="skipNavi"> 
+      <a href="#content">본문내용 바로가기</a> 
+    </div>
+    <!-- header -->
+    <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+    <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div id="content">
+        <div class="section">
+
+            <div class="governing amountBox">
+                <h2 class="emoTit emo8">계좌잔액이 출금액과 같아요</h2>
+                <span class="addTxt">5월25일(오늘), <br class="mbHide">우리은행 계좌에서<br class="pcHide"> 2,150,730원이 출금될 예정이에요.</span>
+            </div>
+            
+            <div class="uiAcco infoPay">
+                <div class="uiAccoHeader">
+                    <button type="button" class="uiBtn">
+                        <div class="accoTitle">
+                            <span>결제예정액</span>
+                            <span><strong>2,150,730</strong>원</span>
+                        </div>
+                        <span class="hidden">펼치기</span>
+                    </button>
+                </div>
+                <div class="uiAccoContent">
+                    <dl class="dlInfo pay">
+                        <div>
+                            <dt>신한카드</dt>
+                            <dd><span>1,135,690</span>원</dd>
+                        </div>
+                        <div>
+                            <dt>우리카드</dt>
+                            <dd><span>564,720</span>원</dd>
+                        </div>
+                        <div>
+                            <dt>우리은행 대출</dt>
+                            <dd><span>451,520</span>원</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+            <dl class="dlInfo pay">
+                <div>
+                    <dt>결제계좌 잔액</dt>
+                    <dd><span>1,625,010</span>원</dd>
+                </div>
+                <div>
+                    <dt>결제 후 잔액</dt>
+                    <dd><span>-525,720</span>원</dd>
+                </div>
+            </dl>
+
+            <div class="uiAcco ovdInfoBox">
+                <div class="uiAccoHeader">
+                    <button type="button" class="uiBtn">
+                        <span class="accoTitle ok">현재 연체위험 없이 정상적으로 출금 가능해요!</span>
+                        <span class="hidden">펼치기</span>
+                    </button>
+                </div>
+                <div class="uiAccoContent">
+                    <div class="accoInCont">
+                        <p>지금의 잔액을 결제일까지 유지하면 이번달 결제는 문제없어요. 
+                            또 다른 출금예정 건은 없는지 살펴보고 혹시 모를 연체를 방지해 주세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--// ovdInfoBox [연체위험 안내 - 하락신용점수 없는 경우] -->
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <div class="footer"><script type="text/javascript" src="../../../bzw/inc/footer.js"></script></div>
+    <!--// footer -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="euc-kr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE지키미</title>
+
+    <script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
+    <script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+    <script src="../../../js/zkm/rzm/swiper.min.js"></script>
+    <script src="../../../js/zkm/rzm/ui.common.js"></script>
+
+    <link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+    <link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
+    <script type="text/javascript">
+        mbHeader = { title: '이용중인 상품 내역', prev: true, menu: true };
+        $(function () {
+            // toggle spot menu
+            $('.spotMenuWrap .btnSpot').on('click', function () {
+                $(this).parent('.spotMenuWrap').toggleClass('active')
+            })
+
+            // progress bar
+            var bg1 = $('.progress.unreviewed');
+            var bg2 = $('.progress.reviewed');
+            var bar1 = $('.progress.unreviewed .bar')
+            var bar2 = $('.progress.reviewed .bar')
+
+            if(bg1.width() == bar1.width()){
+                $(bar1).children().hide()
+            }else {
+                $(bar2).children().hide()
+                $(bar2).css('width', '0%')
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skipNavi">
+            <a href="#content">본문내용 바로가기</a>
+        </div>
+        <!-- header -->
+        <script type="text/javascript" src="../../../bzw/inc/header.js"></script>
+        <script type="text/javascript" src="../../../bzw/inc/breadcrumbs.js"></script>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            <div id="content">
+                <div class="section">
+                    <div class="governing">
+                        <h2 class="governingTitle">2022.06.26일에<br> 개인신용보고서(영문)를 결제했어요.</h2>
+                        <p class="governingInfo">구매하신 신용보고서는 1년 동안 유효하며, 열람 시 <span class="pColor">30일간 5회 열람 가능</span>합니다.</p>
+                    </div>
+                    <div class="repVisBox">
+                        <div class="rightArea">
+                            <div class="spotMenuWrap">
+                                <button type="button" class="btnSpot"><span class="hidden">옵션보기</span></button>
+                                <div class="spotMenu">
+                                    <ul class="inMenu">
+                                        <li><a href="#">보고서 폐기</a></li>
+                                        <li><a href="#">받는 분 정보</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="repConts">
+                            <span class="tag bl">열람횟수</span>
+                            <p class="repCounter">총 <strong>0</strong> 회</p>
+                            <ul class="repUserList">
+                                <li>나 <span class="cntNum">0</span></li>
+                                <li>상대방 <span class="cntNum">0</span></li>
+                            </ul>
+                            <p class="serialNum"><span>신용보고서 번호</span>CR10001000</p>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <div class="dblBox">
+                            <!--[D]열람전-->
+                            <div class="progress unreviewed">
+                                <p class="bar" style="width : 10%">
+                                    <span class="thumb"></span>
+                                    <span class="rangeAnchor flag">D-80</span>
+                                </p>
+                            </div>
+                             <!--[D]열람후 : 열람전 100% 이후 노출-->
+                            <div class="progress reviewed">
+                                <p class="bar" style="width: 0%">
+                                    <span class="thumb"></span>
+                                    <span class="rangeAnchor flag">D-12</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rangeProgress">
+                            <span class="start">유효기간</span>
+                            <span class="check">열람</span>
+                            <span class="end">폐기</span>
+                        </div>
+                    </div>
+
+                    <div class="guideInfoBox">
+                        <div class="contWrap">
+                            <ul class="listDot">
+                                <li>기관명이 한글로 표기될 수?있습니다. </li>
+                                <li>
+                                    기관명을 영문으로 변경해야 할 경우 [서비스문의] 메뉴를 이용하시거나 나이스지키미 고객센터(1588-2486)로 연락해 주세요.
+                                    <p class="tsp"><a href="#" class="btnArrow">서비스문의 바로가기</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottomActiveBtns">
+                        <div class="btns">
+                            <button type="button" class="btn second"><span>보고서 보내기</span></button>
+                            <button type="button" class="btn primary"><span>보고서 열람</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// container -->
+
+        <!-- footer -->
+        <script type="text/javascript" src="../../../bzw/inc/footer.js"></script>
+        <!--// footer -->
+    </div>
+</body>
+
+</html>

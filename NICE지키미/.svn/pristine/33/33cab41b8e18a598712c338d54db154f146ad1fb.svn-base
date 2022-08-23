@@ -1,0 +1,203 @@
+@charset "euc-kr";
+
+.dimed { position: fixed; left: 0; bottom: 0; top: 0; z-index: 298; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); }
+.lock {height:100%; overflow:hidden;}
+
+/* modal - layer popup */
+.uiModal { position: fixed; left: -300%; top:0; z-index: 300; width: 100%; height:100%; opacity:0; box-sizing: border-box;}
+.uiModal.active {left:0; opacity:1;background-color: rgba(0,0,0,0.8);}
+.uiModal.modal {padding:20px;}
+.uiModal.bottom {padding-top:50px;}
+.uiModal.alert {z-index:301;}
+.mobile .uiModal { transition: left 0s 0.6s, opacity 0s 0.6s, background 0.45s cubic-bezier(0.22,0.61,0.2,1) 0.15s;}
+.mobile .uiModal.active { transition-delay:0s}
+
+.modalWrap {position:relative; width:100%; background:#fff; overflow:hidden; }
+.uiModal.bottom .modalWrap {position:fixed; left:0; bottom:0; max-height:100%; border-radius: 30px 30px 0 0;}
+
+.mobile .uiModal.modal .modalWrap {top:50%;  padding:30px 20px 20px 20px; border-radius: 20px; opacity:0;}
+.mobile .modalWrap {transform:translateY(120%); transition:all 0.45s cubic-bezier(0.22,0.61,0.2,1);}
+.mobile .uiModal.active .modalWrap {transform: translateY(0); transition-delay:0.15s}
+.mobile .uiModal.modal .modalWrap {margin:50px auto 0; transform:translateY(-50%)}
+.mobile .uiModal.modal.active .modalWrap {opacity:1; margin-top:0;}
+
+.uiModal .modalWrap .typeModalClose { position:absolute; right: 13px; top: 7px; display: block; width: 36px; height: 36px; background: url(../../../img/zkm/rzm/common/ico/ico_closex.png) no-repeat center center; background-size: 100%; z-index:6;}
+.uiModal.bottom .modalWrap .typeModalClose {top:38px;}
+.uiModal.modal .modalWrap .typeModalClose {top:23px;}
+.uiModal .modalHeader h1 {font-size:19px; font-weight: 700; line-height: 27px; word-break: keep-all;}
+.mobile .uiModal.modal .modalHeader h1 {padding-bottom:20px;}
+.mobile .uiModal.bottom .modalHeader{position:relative; padding:42px 20px 0 20px;}
+.uiModal.bottom .modalHeader h1 {padding-bottom:25px;}
+/* .uiModal.bottom .modalHeader .expNum{position: absolute; right: 25px; top: 32px; line-height: 1; font-size: 17px;} */
+.uiModal.bottom .modalHeader .expNum span{font-weight:700;}
+.uiModal.bottom .modalHeader .hSubTxt {font-size:14px; line-height: 22px; margin-top:-20px; padding-bottom:30px;}
+.uiModal.bottom .modalHeader .hTopTxt {margin-bottom:9px; font-size:13px; color:#767676;}
+.uiModal.bottom .modalHeader .hTopTxt span {color:#222; font-weight:700;}
+.hSubTxt {font-size:13px; line-height: 20px; color:#444;}
+.uiModal.bottom .modalHeader.subHead .modalSubExp {margin-top: 20px; color: #444;}
+
+.pweb .uiModal.bottom .modalHeader .hTopTxt {font-size:14px;}
+.pweb .uiModal.bottom .modalHeader .hSubTxt {margin: -10px 0 0 0; padding-bottom:30px; font-size: 16px;}
+
+.mobile .uiModal.bottom .modalContent {padding:0 20px 50px 20px; max-height:calc(100% - 206px); overflow-y: auto;}
+.mobile .uiModal.bottom .cookieBox {padding:20px; margin-bottom:-45px;/*margin:-12px 0 30px 0;*/}
+.mobile .uiModal.bottom .inCont{margin-left:15px;}
+.mobile .uiModal.full .cookieBox {margin-top:-15px; padding-bottom:20px;}
+.uiModal .cookieBox .uiItem input[type=checkbox] + label:before {border-radius: 2px;}
+
+.mobile .agreement .uiAcco.terms .uiAccoContent {padding:25px 0 0 40px;}
+.agreement .uiAcco.terms .uiAccoContent {overflow-y:auto; }
+
+.pweb .uiModal.bottom .cookieBox {padding:35px 0 0 40px; margin-bottom:-15px; position:relative; z-index:5;}
+.pweb .uiModal.full .cookieBox {position:absolute; top:-70px; right:100px;}
+.pweb .uiModal .cookieBox .uiItem input[type=checkbox] + label {min-height:20px; padding-left:26px;font-size:14px; line-height: 16px;}
+.pweb .uiModal .cookieBox .uiItem input[type=checkbox] + label:before {width:20px; height:20px;}
+.pweb .uiModal .cookieBox .uiItem input[type=checkbox]:checked + label:after {top:4px; left:4px;}
+
+.uiModal .btns {margin:30px 0 0 0;}
+.mobile .uiModal.modal .btns .btn,
+.mobile .alertWrap .btns .btn {font-size: 16px; line-height: 48px; border-radius: 10px;}
+
+.mobile .uiModal.modal .btns .btn:nth-child(2),
+.mobile .alertWrap .btns .btn:nth-child(2) {width:calc(50% - 10px); margin-left:10px;}
+
+.uiModal.full .modalWrap {transition-timing-function:cubic-bezier(0.2,0.6,0,1)}
+.uiModal.full .modalHeader h1 { font-size:16px; font-weight: 700;}
+
+.mobile .uiModal.full .modalWrap {height:100%;}
+.mobile .uiModal.full .modalHeader { position: absolute; left: 0; top: 0; display:flex; align-items:center; justify-content: center; width: 100%; height: 50px; padding:0 50px; background-color: #fff; text-align:center; z-index:5;}
+.mobile .uiModal.full .modalContent { height: 100%; padding:80px 20px 50px 20px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mobile .uiModal .modalBottom {height:42px;}
+.mobile .uiModal .modalBottom .btns {position:fixed; left:0; right:0; bottom:0; margin:0; z-index:5 /*padding:0 15px 20px 15px;*/}
+.mobile .uiModal .modalBottom .btns .btn {border-radius: 0;}
+.mobile .uiModal .modalBottom .btns .btn.second {border-width:1px 0 0 0;}
+
+/* alert - modal, layer popup */
+.alertWrap {position:relative; width:300px; margin:0 auto; border-radius: 15px; padding:40px 20px 20px; top:50%; background:#fff; transform:translateY(-50%)}  
+.alertWrap .msg { color: #000; font-size: 15px; line-height: 22px; text-align: center; word-break: keep-all; }
+.alertWrap .msg h1 {font-size:17px; line-height: 25px; font-weight: 700; margin-bottom:10px;}
+
+.pweb .alertWrap {width:450px; padding:45px 40px 30px 40px;}
+.pweb .alertWrap .msg {font-size:20px; line-height: 30px;}
+.pweb .alertWrap .btns .btn {min-width:170px;}
+.pweb .uiModal .alertWrap .btnConts {margin-top:44px;}
+
+.pweb .uiModal .modalWrap {width:880px; margin:0 auto; top:50%; padding:0 0 40px 0; border-radius: 20px;transform:translateY(-50%)}
+.pweb .uiModal .modalHeader { padding:30px 80px 10px 40px;}
+.pweb .uiModal .modalHeader h1 {font-size:24px; line-height: 30px; padding-bottom:25px;}
+.pweb .uiModal .modalContent .inner {padding:0 40px;}
+.pweb .uiModal .modalWrap .typeModalClose {width:48px; height:48px; top:20px; right:30px;}
+
+.pweb .uiModal .modalBottom .btns {padding-top:30px; margin:0; background-color: #fff;}
+.pweb .uiModal .btns .btn {height:60px; font-size:18px; line-height: 56px;}
+
+.pweb .uiModal.full .modalWrap {max-height:720px;}
+.pweb .uiModal.full .modalContent {position:relative; height:calc(100% - 120px);}
+.pweb .uiModal.full .modalContent .inner {max-height:550px; overflow-y:auto;}
+
+.pweb .uiModal.modal .modalWrap, .pweb .uiModal.bottom .modalWrap {width:530px;}
+.pweb .uiModal.modal .inner {max-height:350px; overflow-y:auto; padding:0 40px;}
+
+
+.pweb .uiModal.bottom .modalWrap {position:relative; left:auto; bottom:auto; border-radius: 20px;}
+/* .pweb .uiModal.bottom .modalHeader h1 {padding:0;} */
+.pweb .uiModal.bottom .inner {max-height:350px; overflow-y:auto;}
+
+.pweb .uiModal .governing { text-align: left; margin:-6px 0 34px 0;}
+.pweb .uiModal .governing .governingTitle {font-size:26px; line-height: 36px;}
+
+
+.pweb .uiModal.bottom .formWrap .formItem {padding:0;}
+.pweb .uiModal.bottom .formWrap .formItem .titItem {position:static; height:auto; padding-bottom:10px;}
+.pweb .uiModal.bottom .formWrap .formItem:not(:first-child) {margin-top:30px;}
+
+
+/* 공지팝업 */
+.uiModal.modal .modalWrap.notiPop {padding:0; overflow:visible}
+.uiModal.modal .modalWrap.notiPop .modalContent {border-radius: 20px; overflow:hidden;}
+.notiSwiper .contView {height:300px; overflow:hidden;}
+.notiSwiper .btnBox {padding:20px;}
+.mobile .notiSwiper .btnBox .btn {height:50px; line-height: 48px;}
+.uiModal.modal .modalWrap.notiPop .cookieBox {position:absolute; left:0; right:0; top:100%; text-align:center; padding-top:18px;}
+.uiModal.modal .modalWrap.notiPop .cookieBox label {color:#fff; border-bottom:1px solid #fff;}
+
+.pweb .uiModal .modalWrap.notiPop .modalHeader {padding:0;}
+.pweb .notiSwiper .contView {height:435px;}
+.pweb .notiSwiper .btnBox {padding:30px 0 40px 0; }
+.pweb .notiSwiper .btnBox .btn {height:60px; line-height: 60px;}
+.pweb .uiModal.modal .modalWrap.notiPop .cookieBox {padding-top:26px;}
+.pweb .uiModal.modal .modalWrap.notiPop .cookieBox label {font-size:18px;}
+
+/* 약관 */
+.termsWrap {color:#444; font-size:14px; line-height: 22px; }
+.termsWrap h2 {font-size:17px; line-height: 25px; font-weight: 700; margin:45px 0 22px 0; color:#222;}
+.termsWrap .termsTit {display:block; font-size:15px; line-height: 23px; font-weight: 700; margin:30px 0 10px 0; color:#222;}
+.termsWrap .termsTitS {display:block; font-size:14px; line-height: 22px; font-weight: 700; margin:20px 0 10px 0; color:#222; text-indent: 0;}
+.termsWrap .indTit {text-indent: -15px; padding-left:15px; margin:15px 0 10px 0;}
+.termsWrap h2 + .termsTit {margin-top:0 !important;}
+.termsWrap p {margin-top:10px; text-indent:0;}
+.termsWrap p:first-child, .termsWrap h2:first-child {margin-top:0 !important;}
+.termsWrap .impTxt {color:#444}
+.termsWrap .agreeBox {margin-top:15px; padding-bottom:5px;}
+.termsWrap .agreeBox > span {position:relative; display:inline-block; font-size:15px; padding-left:28px; line-height: 20px;}
+.termsWrap .agreeBox > span:before {position:absolute; content:''; top:0; left:0; width:18px; height:18px; border:1px solid #8e8e8e; border-radius: 50%;}
+.termsWrap .agreeBox > span:not(:first-child) {margin-left:40px;}
+.termsWrap .under {font-size:16px; font-weight: 700; line-height: 26px; color:#222; border-bottom:1px solid #222;}
+.termsWrap .btnLine .down {position:relative; display:inline-block; padding-right:20px;}
+.termsWrap .btnLine .down:after {position:absolute; content:''; width:15px; height:15px;top:4px; right:0; background:url(../../../img/zkm/rzm/common/ico/ico_down.png) no-repeat; background-size:100%;}
+.termsWrap table {margin-top:20px;}
+.termsWrap li table {margin-top:10px;}
+.pweb .termsWrap .btnLine .down {padding-right:25px;}
+.pweb .termsWrap .btnLine .down:after {width:18px; height:18px;}
+
+
+.temrsNum > li {position:relative; margin-top:10px; padding-left:17px; text-indent:0;}
+.temrsNum > li .num {position:absolute; left:0; top:0;}
+ol.decimal > li {list-style: decimal; text-indent:0; margin-top:10px; list-style-position: inside; padding-left:15px; text-indent: -15px;}
+li ol.decimal {margin-top:4px;}
+ul.listDesc > li {margin-top:10px;position:relative; padding-left:12px;  text-indent:0;}
+ul.listDesc > li:before {position:absolute; content:''; top:9px; left:0; width:4px; height:4px; background-color:#444; border-radius: 100%;}
+p.listDesc {margin-top:10px;position:relative; padding-left:12px; text-indent:0;}
+p.listDesc:before {position:absolute; content:''; top:9px; left:0; width:4px; height:4px; background-color:#444; border-radius: 100%;}
+.listHypen > li {position:relative; margin-top:2px; padding-left:12px; text-indent:0;}
+.listHypen > li:before {position: absolute; content: ''; border-radius: 0; height: 1px; top: 11px; left: 0; width: 4px; background-color: #444;}
+li .listHypen {margin-top:4px;}
+dl.decimal dt {font-size:15px; line-height: 23px; font-weight: 700; color:#222; margin:30px 0 10px 0;}
+dl.decimal dd {padding-left:15px;}
+.termsWrap > .listHypen > li {margin-top:10px;}
+.termsWrap .normal > li {margin-top:10px;text-indent:-15px; padding-left:15px;}
+.termsWrap .sm > li{margin-top:5px; font-size:13px;}
+
+.listLetter > li {text-indent:-17px; padding-left:17px; margin-top:11px;}
+.agreeTxt {font-size:13px; line-height: 21px; margin-top:25px;}
+.pweb .agreeTxt  {font-size: 15px;}
+
+.pweb .termsWrap {font-size:16px; line-height: 26px;}
+.pweb .termsWrap h2 {font-size:24px; line-height: 36px; margin:60px 0 25px 0;}
+.pweb .termsWrap .termsTit {font-size:18px; line-height: 32px; margin:36px 0 12px 0;}
+.pweb .termsWrap .termsTitS {font-size:16px;}
+.pweb .termsWrap p {margin-top:12px;}
+.pweb .temrsNum > li {margin-top:12px; padding-left:22px;}
+.pweb p.listDesc {margin-top:12px;}
+.pweb ul.listDesc > li:before {top:12px;}
+.pweb .termsWrap .under {font-size:18px; line-height: 30px;}
+.pweb .listLetter > li {text-indent:-22px; padding-left:22px; }
+.pweb ol.decimal > li {margin-top:5px; padding-left:16px; text-indent: -16px;}
+.pweb dl.decimal dt {font-size:18px; line-height: 28px;}
+.pweb dl.decimal dd {padding-left:18px;}
+.pweb .termsWrap .btnLine {font-size:16px;}
+
+.listInText{text-indent:0;}
+.listInText ul, .listInText ol{margin-top:5px;}
+
+/* 마이데이터 연결 공통팝업 */
+.myDataNow {position:relative; font-size:14px; line-height: 22px;}
+.myDataNow strong {font-weight: 700;}
+
+
+
+
+
+
+
+
