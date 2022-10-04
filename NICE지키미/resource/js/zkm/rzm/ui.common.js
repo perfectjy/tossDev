@@ -19,7 +19,9 @@ $(function () {
 	$('.btnTooltip').uiToolTip();
 	$('.ui-check-group .all_chk').allCheck();
 	range();
+	mailAutoList();
 
+	
 	if(isMobile) {   
 		// mobile title set
 		mbCommon.setHeader();
@@ -38,14 +40,24 @@ $(function () {
 
 		// header 검색 돋보기 클릭
 		btnSearchFn.init();
+
+		// 20220905 추가, 대상 고정
+		$('[data-fixed-target=tabBox]').fixedTarget(['.breadcrumbsConts']);
+
+		// 소개페이지 PC 하단버튼 Fixed
+		createFloating()
 	}
 
 	// roll links
 	$('.ui-scrollLinks').scrollLinksUI();
 
 	// scroll 시 rolllinks 활성화
-	setTimeout(function() {
-		$('.ui-scrollLinks').scrollActive(['.headerMob','.ui-scrollLinks']); // 메인 RZMMCLMEP10, RZMMFCMDC20
+	setTimeout(function() { // 20220905 조건 추가
+		if(isMobile) { 
+			$('.ui-scrollLinks').scrollActive(['.headerMob','.ui-scrollLinks']); // 메인 RZMMCLMEP10, RZMMFCMDC20
+		} else {
+			$('.ui-scrollLinks').scrollActive(['.breadcrumbsConts','.ui-scrollLinks']); // RZMMCLMEP10
+		}
 	},300)
 
 	// page loading
@@ -56,6 +68,53 @@ $(function () {
 		pageTopFn.init();
 	},300)
 });
+
+$(document).on('ready', function(){
+	// [added] inview
+	function runInView(){
+		var inView = window.inView || false;
+		if (!document.querySelector('[data-component="inview"]')) { // inview 객체 없을 시
+			return;
+		}
+		if (!inView) { // js load 불가 시, 전체적으로 isIn 클래스 추가
+			$('[data-component="inview"]').addClass('isIn');
+			console.error('inview 객체는 있지만 inview js파일이 없습니다. in-view.min.js 파일을 import해주세요.');
+			return;
+		}
+		inView.offset({
+			top: 0,
+			bottom: window.innerHeight * 0.2,
+		});
+		inView('[data-component="inview"]')
+			.on('enter', function(el){ // inview 시 callback
+				el.classList.add('isIn');
+			})
+			.on('exit', function(el){ // outview 시 callback
+
+		});
+	}
+	runInView();
+})
+
+function createFloating() {
+    var $window = $(window), 
+        $wrap = $('#wrap'), 
+        $footer = $('#footer');
+    
+    if($('.bottomActiveBtns.floating').length){
+        var $floatBtn = $('.bottomActiveBtns.floating').find('.btns');
+        $window.scroll(function() {
+            var y = $(this).scrollTop();
+            if(y > $wrap.height() - $window.height() - $footer.height()){
+                // $floatBtn.css({'position':'absolute', 'bottom':$footer.outerHeight() + 30 });
+                $floatBtn.removeClass('fixed');
+            } else {
+                // $floatBtn.removeAttr('style');
+                $floatBtn.addClass('fixed');
+            }
+        });
+    }
+}
 
 
 var isMobile = false;
@@ -157,6 +216,24 @@ var setHeader = function() {
 			$('.util.loginAfter').hide();
 		}
 	}
+}
+
+var mailAutoList = function() {
+	$('[data-input-focus=scrolltop]').on('keyup focus',function(e){
+        var $val = $(this).val();
+
+        if($val != ''){
+          $('.mailList').show();
+        }else{
+          $('.mailList').hide();
+        }
+  });
+  
+  $(document).on('touchend, mousedown',function(e){
+    $('.mailList').hide();
+  }).on('touchend, mousedown',$('.formItem'),function(e){
+    e.stopPropagation();
+  });
 }
 
 var mbHeader = { title: '', prev: true, menu: true, login: false };
@@ -331,6 +408,7 @@ var GnbNav = {
 	menuSpeed: 200,
 	bgSpeed: 200,
 	// barSpeed: 200,
+	tabTimeout: '',
 	openTimeout: '',
 	closeTimeout: '',  
 	//서브 열림
@@ -342,7 +420,7 @@ var GnbNav = {
 			// $(target).find('.cell').css({'height':$subMenuHeight-80});
 			$('.gnbBg').css({'height':$subMenuHeight}).closest('#header').addClass('show');
 			$(target).siblings().find('.subMenu').removeAttr('style').removeClass('active');
-			setTimeout(function(){
+			GnbNav.tabTimeout = setTimeout(function(){
 				$subMenu.stop(true,false).fadeIn(200).addClass('active');
 			},100);
 			// GnbNav.barActive(target);
@@ -359,6 +437,7 @@ var GnbNav = {
 	//서브 닫힘
 	close: function (time) {
 		clearTimeout(GnbNav.openTimeout);
+		clearTimeout(GnbNav.tabTimeout);
 		var closeInit = function(){
 			$('.gnb>ul>li').children('a').attr('aria-expanded','false').removeClass('active');
 			$('.gnb .subMenu').removeClass('active').removeAttr('style');
@@ -602,26 +681,52 @@ var modal = {
 
 		//팝업 마지막 포커스 버튼 적용
 		$select_id.find('.modalWrap').append($lastCloseBtn);
-		var $bottom =  $select_id.find('.modalBottom');
+		
+
+		//열기
+		$select_id.attr({'aria-hidden':'false'}).fadeIn(100,function(){
+			if(!!callback){
+				callback();
+			}
+			$select_id.find('.modalWrap').attr({'tabindex':'0'});
+		}).addClass('active').find('.modalWrap').focus();
+		$select_id.find('.modalWrap').on('blur', function(){ $(this).removeAttr('tabindex'); });
+
+		var zIndex = 300 + 10 * $('.uiModal.active').length;
+		$select_id.css('z-index', zIndex);
+
+		var $bottom =  $select_id.find('.modalBottom'),
+			$header = $select_id.find('.modalHeader');
 
 		if (!isMobile && $select_id.hasClass('full')) {
-			if ($bottom.length > 0) {
-				if ($(tar).height() > 720) {
-					var $conHeight = 720 - $('.modalHeader').outerHeight() - $bottom.height() - 40; 
-				}        
-				$select_id.find('.inner').css('max-height', $conHeight);
-			}
-		} else if($select_id.hasClass('bottom')) {
+			// console.log($('.modalHeader').outerHeight() + ' / ' + $bottom.height())
+			var $conHeight = 720 - $header.outerHeight() - $bottom.height() - 40; 
+            $select_id.find('.inner').css('max-height', $conHeight);
+			
+			// if ($bottom.length > 0) {
+			// 	if ($(tar).height() > 720) {
+			// 		var $conHeight = 720 - $('.modalHeader').outerHeight() - $bottom.height() - 40; 
+			// 		$select_id.find('.inner').css('max-height', $conHeight);
+			// 	}        
+				
+			// }
+		} else if($select_id.hasClass('bottom') || $select_id.hasClass('modal')) {
 			var $height = $(tar).height(),			
 				$popHeader = $(tar).find('.modalHeader').outerHeight(),
-				$popConts = $(tar).find('.modalContent').outerHeight();
+				$popConts = $(tar).find('.modalContent').outerHeight(),
+				$popBtn = $(tar).find('.btns').outerHeight();
 
 			if(isMobile) {
-				$select_id.find('.modalContent').css('max-height',$height - $popHeader);
+				if($select_id.hasClass('modal')) {
+					$select_id.find('.inner').css('max-height',$height - $popHeader - $popBtn - 110);
+				} else {
+					$select_id.find('.modalContent').css('max-height',$height - $popHeader);
+				}				
 			
 				if($select_id.find('.terms').length) {
 					$select_id.find('.uiAccoContent').css('max-height',$height - $popHeader - $popConts);
 				}
+				
 			} else {
 				var $inCont = $select_id.find('.inner').outerHeight();
 				
@@ -631,17 +736,6 @@ var modal = {
 			}
 			
 		}
-
-		//열기
-		$select_id.attr({'aria-hidden':'false','tabindex':'0'}).fadeIn(100,function(){
-			if(!!callback){
-				callback();
-			}
-		}).addClass('active').focus();
-		$select_id.on('blur', function(){ $(this).removeAttr('tabindex'); });
-
-		var zIndex = 300 + 10 * $('.uiModal.active').length;
-		$select_id.css('z-index', zIndex);
 
 		//팝업 안에서만 포커스 이동
 		modal.focusMove(tar);
@@ -733,8 +827,8 @@ var modal = {
 		}, 50);
 
 		$(tar).find('.last_focus').remove();
-		$(tar).attr({ 'aria-hidden': 'true', 'tabindex': '-1' });
-		$(tar).removeClass('active').removeAttr('style').fadeOut(300);;
+		$(tar).attr({'aria-hidden': 'true'});
+		$(tar).removeClass('active').removeAttr('style');//.fadeOut(300);;
 	},
 	init:function(){
 		$('.uiModal').attr({'aria-hidden':'true','aria-live':'polit','tabindex':-1});
@@ -768,25 +862,39 @@ $.fn.uiCheckAll = function() {
 			strListItem: '[data-chk-item=list-item]',
 			strListSub: '[data-chk-item=list-sub]',
 			len: 0,
-			checkAllFn: function(v) {
+			checkAllFn: function(v) { // 20220905 수정 'checkAllFn'
 				var o = this,
 				$t = $(v),
 				$boolean = $t.is(':checked');
 
-				// sData 적용
-				o.sData.list.forEach(function(obj, index) {
-					obj.item = $boolean;
-
-					if(obj.sub !== undefined) {
-						obj.sub.forEach(function(objSub) {
-							objSub.item = $boolean;
-						});
-					}
-				});
 				if($boolean) {
 					o.sData.count = o.len;
+
+					// sData 적용
+					o.sData.list.forEach(function(obj, index) {
+						obj.item = $boolean;
+
+						if(obj.sub !== undefined) {
+							obj.sub.forEach(function(objSub) {
+								objSub.item = $boolean;
+							});
+							obj.count = obj.sub.length + 1;
+						}
+					});
 				} else {
 					o.sData.count = 0;
+
+					// sData 적용
+					o.sData.list.forEach(function(obj, index) {
+						obj.item = $boolean;
+
+						if(obj.sub !== undefined) {
+							obj.sub.forEach(function(objSub) {
+								objSub.item = $boolean;
+							});
+							obj.count = 0;
+						}
+					});
 				}
 				o.sData.all = $boolean;
 				o.gChkListItemObj.prop('checked', $boolean);
@@ -1079,6 +1187,15 @@ var uiTab = function () {
 		var tabPanId = $(this).attr('href');
 		var tabPanel = $(tabPanId);
 		tabPanel.attr('aria-hidden', 'false').addClass('active').siblings().attr('aria-hidden', 'true').removeClass('active');
+	
+		// 인터렉션
+		var $this = $(this);
+		this.closest('.tabList').dispatchEvent(new CustomEvent('endTabChange', {
+			detail: {
+				currentIdx: $this.closest('.tabList').find('a').index($this),
+				currentPanel: tabPanel[0]
+			}
+		}));
 	});
 }
 
@@ -1342,7 +1459,7 @@ var pageScroll = function(v,exc,scrollTarget) {
 }
 
 // roll links - 링크 클릭시 화면 스크롤(해당 id)
-$.fn.scrollLinksUI = function(){
+$.fn.scrollLinksUI = function(){ // 20220905 수정
 	return this.each(function() {
 		var $t = $(this),
 			$parent = $t.find('li'),
@@ -1357,21 +1474,23 @@ $.fn.scrollLinksUI = function(){
 			}
 		});
 
-		if(isMobile) {
-			$links.off('click.scrollLinks').on('click.scrollLinks', function(e){
-				e.preventDefault();
-				var $this = $(this);
-				// scrollUI.center($(this).parent());
+		$links.off('click.scrollLinks').on('click.scrollLinks', function(e){
+			e.preventDefault();
+			var $this = $(this);
+			// scrollUI.center($(this).parent());
 
+			if(isMobile) {
 				if($t.hasClass('rollLinksMenu')){ // 전체메뉴
 					pageScroll($this.attr('href'), ['.quickLinks .tabBox'],'.mbGnbMenu .innerScroll');
 					// console.log('click====================');
 				} else {
- 					pageScroll($this.attr('href'), ['.headerMob', '.ui-scrollLinks']); // '.ui-scrollLinks' 유니크해야 함
+					pageScroll($this.attr('href'), ['.headerMob', '.ui-scrollLinks']); // '.ui-scrollLinks' 유니크해야 함
 					// console.log('click--------------------');
 				}
-			});
-		}
+			} else {
+				pageScroll($this.attr('href'), ['.breadcrumbsConts', '.ui-scrollLinks']);
+			}
+		});
 	});
 };
 
@@ -1749,6 +1868,44 @@ var swiperPlayStop = function(v) {
 	});
 }
 
+// circle chart
+$.fn.chartCircle = function(opts) {
+	var defaults = $.extend({
+		chart: 'circle',
+		value: 0
+	}, opts);
+	return this.each(function() {
+		var $t = $(this),
+			$tW = $t.innerWidth(),
+			$svg = $t.find('svg circle'),
+			$strokeW = parseInt($svg.css('stroke-width')),
+			$r = ($tW/2) - ($strokeW/2),
+			$pieR2 = $r * 2 * 3.14,
+			$realNum = (($pieR2 * defaults.value) / 100),
+			sum;
+
+		if(defaults.chart == 'circle') {
+			sum = $pieR2 - $realNum;
+		}
+		if(defaults.chart == 'half') {
+			sum = $pieR2 - ($realNum / 2)
+		}
+
+		$svg.attr({
+			'r': $r, // 반지름 값 셋팅
+			'stroke-dasharray': $pieR2,
+			'stroke-dashoffset': $pieR2,
+		});
+		setTimeout(function() {
+			$svg.css({
+				'transition': 'stroke-dashoffset 0.8s ease-in-out',
+				'-ms-transition': 'stroke-dashoffset 0.8s ease-in-out',
+				'stroke-dashoffset': sum
+			});
+		}, 100);
+	});
+}
+
 // loading
 var loadingFn = function() {
 	var html;
@@ -1760,13 +1917,39 @@ var loadingFn = function() {
 	$('body').append(html);
 }
 
+var dotLoading = {
+	start: function() {
+		var loader = '';
+			loader += '<div class="dotLoading">';
+			loader += '<div class="loader">';
+			loader += '<span class="dot"></span>';
+			loader += '<span class="dot"></span>';
+			loader += '<span class="dot"></span>';
+			loader += '</div>';
+			loader += '<p>잠시만 기다려주세요</p>';
+			loader += '</div>';
+
+		$('body').append(loader);
+	},
+	end: function() {
+		if ($('.dotLoading').length > 0) {
+			$('.dotLoading').remove();
+		}
+	}
+}
+
 var loading = {
 	start: function(_srt, _name, _txt) {
 		var sortClass = !!!_srt ? '' : _srt;
 		var loadingTxt = '',
 			loadingObj = '';
 			loadingObj += '<div id="Loading" class="loading2 '+ sortClass +'">';
-			loadingObj += '<div class="loadingImg"><span class="glass"></span></div>';		// loading image
+			// loadingObj += '<div class="loadingImg"><span class="glass"></span></div>';		// loading image
+			loadingObj += '<div class="loader">';
+			loadingObj += '<span class="dot"></span>';
+			loadingObj += '<span class="dot"></span>';
+			loadingObj += '<span class="dot"></span>';
+			loadingObj += '</div>';
 			loadingObj += '<div class="loadingMsg"></div>';
 			loadingObj += '</div>';
 
@@ -1775,7 +1958,11 @@ var loading = {
 			loadingTxt += _name + '님에게 꼭 맞는<br>대출상품을 찾고 있어요.</div>';
 			loadingTxt += '<div class="msg" style="display:none;">최대 3분 정도 걸릴 수 있어요.<br>조금만 기다려 주세요.</div>';
 			loadingTxt += '<div class="msg" style="display:none;">심사 중 다른 서비스를 이용해도<br>한도 조회는 계속 진행돼요.</div>';
-			loadingTxt += '<p><strong>기다리지 않고 다른 서비스 이용할래요.</strong><span>(완료되면 앱 푸시/알림톡으로 알려드립니다.)</span></p>';
+			loadingTxt += '<p><a href="#none"><strong>기다리지 않고 다른 서비스 이용할래요.</strong></a><span>(완료되면 앱 푸시/알림톡으로 알려드립니다.)</span></p>';
+		} else if (_srt === 'credit') {// 신용점수 올리기
+			loadingTxt += '<div class="msg">선택하신 기관의 납부내역을<br>가져오고 있어요.</div>';
+			loadingTxt += '<div class="msg" style="display:none;">거의 다 끝나가요.</div>';
+			loadingTxt += '<p><strong>신용점수 올리기가 진행 중이에요.</strong><span>결과가 올 때까지 잠시만 기다려 주세요.</span></p>';
 		} else if (_srt === 'profit') {// 모으다
 			loadingTxt += '<div class="msg">';
 			loadingTxt += _name + '님의 '+ _txt +'를<br>열심히 모으고 있어요.</div>';
@@ -1816,7 +2003,7 @@ var loading = {
 					cnt = 0;
 				}
 			}, 100);
-		} else if (_srt === 'profit') {
+		} else if (_srt === 'profit' || _srt === 'credit') {
 			var loadingMsg = $('.loadingMsg'),
 				msgObj = loadingMsg.find('.msg'),
 				cnt = 0;
@@ -1877,3 +2064,52 @@ $.fn.pageScrollTop = function(exc,scrollTarget) {
 		});
 	});
 }
+
+
+var niceUI = {};
+
+niceUI.throttle = function(_callback, _limit) {
+	var callback = _callback;
+	var limit = _limit || 100;
+	var waiting = false
+	return function() {
+		if(!waiting) {
+			callback.apply(this, arguments)
+			waiting = true
+			setTimeout(function() {
+				waiting = false
+			}, limit)
+		}
+	}
+}
+
+niceUI.CounterNumber = function(elCounter, _opt){
+	var opt = jQuery.extend({
+		duration: 60,
+		speed: 20,
+		value: elCounter.getAttribute('data-value')
+	}, _opt)
+	elCounter.counter = this;
+
+	this.run = function(value){
+		opt.value = value || opt.value;
+		elCounter.innerText = 0;
+		// animate();
+		
+		$({ val : 0 }).animate({ val : opt.value }, {
+			duration: 1500,
+			step: function() {
+				var num = numberWithCommas(Math.floor(this.val));
+				elCounter.innerText = num;
+			},
+			complete: function() {
+				var num = numberWithCommas(Math.floor(this.val));
+				elCounter.innerText = num;
+			}
+		});
+	}
+	function numberWithCommas(x) {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+}
+

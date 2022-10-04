@@ -8,15 +8,19 @@
 	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
 	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
 	<script src="../../../js/zkm/rzm/swiper.min.js"></script>
+	<script src="../../../js/zkm/rzm/in-view.min.js"></script>
+	<script src="../../../js/zkm/rzm/odometer.js"></script>
 	<script src="../../../js/zkm/rzm/ui.common.js"></script>
 
 	<link rel="stylesheet" href="../../../css/zkm/rzm/swiper.min.css">
+	<link rel="stylesheet" href="../../../css/zkm/rzm/odometer-theme-default.css">
 	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
 	<link rel="stylesheet" href="../../../css/zkm/rzm/main.css">
 	<script type="text/javascript">
 		mbHeader = { title: '', prev: false, menu: true, home: true, login: false };
 
 		$(function () {
+
 			if(isMobile) {
 				var serviceSwiper = new Swiper(".serviceSwiper", {
 					slidesPerView: 'auto',
@@ -59,8 +63,9 @@
 						}
 					}
 				});
-				var mainEventSwiper = new Swiper(".mainEventSwiper", {
+				var mainEventSwiper = new Swiper(".mainEventSwiper", { // 20220905 수정
 					slidesPerView: 'auto',
+					slidesPerGroup: 2,
 					spaceBetween: 15,
 					on: {
 						sliderMove: function() {
@@ -68,8 +73,13 @@
 								this.slides[i].children[0].setAttribute('tabindex','-1');
 								this.slides[i].setAttribute('aria-hidden','true');
 							}
+							clearInterval(mainEventTimer);
+							$('.mainEventSwiper').find('a').removeClass('hover');
 						},
-						slideChangeTransitionStart: function() {
+						reachEnd: function() {
+							mainEventActiveMobile(mainEventSwiper.snapIndex + 1)
+						},
+						slideChangeTransitionEnd: function() {
 							for(var i=0, len=this.slides.length; i<len; i++) {
 								if(this.slides[i].classList.contains('swiper-slide-active')) {
 									this.slides[i].children[0].setAttribute('tabindex','0');
@@ -78,6 +88,9 @@
 									this.slides[i].children[0].setAttribute('tabindex','-1');
 									this.slides[i].setAttribute('aria-hidden','true');
 								}
+							}
+							if(!mainEventSwiper.isEnd) {
+								mainEventActiveMobile(mainEventSwiper.snapIndex)
 							}
 						},
 						init: function() {
@@ -90,6 +103,9 @@
 									this.slides[i].setAttribute('aria-hidden','true');
 								}
 							}
+							setTimeout(function() {
+								mainEventActiveMobile(0)
+							},10)
 						}
 					}
 				});
@@ -146,40 +162,8 @@
 					slidesPerView: 5,
 					spaceBetween: 20,
 					on: {
-						sliderMove: function() {
-							for(var i=0, len=this.slides.length; i<len; i++) {
-								this.slides[i].children[0].setAttribute('tabindex','-1');
-								this.slides[i].setAttribute('aria-hidden','true');
-							}
-						},
-						slideChangeTransitionStart: function() {
-							var num = 0
-							for(var i=0, len=this.slides.length; i<len; i++) {
-								if(this.slides[i].classList.contains('swiper-slide-active')) {
-									for(var j=i, len1=i+3 ; j<len1; j++) {
-										this.slides[j].children[0].setAttribute('tabindex','0');
-										this.slides[j].setAttribute('aria-hidden','false');
-										num = num + 1;
-									}
-								}
-							}
-						},
 						init: function() {
-							var num = 0
-							for(var i=0, len=this.slides.length; i<len; i++) {
-								if(this.slides[i].classList.contains('swiper-slide-active')) {
-									for(var j=i, len1=i+3 ; j<len1; j++) {
-										this.slides[j].children[0].setAttribute('tabindex','0');
-										this.slides[j].setAttribute('aria-hidden','false');
-										num = num + 1;
-									}
-								} else {
-									if(i >= num) {
-										this.slides[i].children[0].setAttribute('tabindex','-1');
-										this.slides[i].setAttribute('aria-hidden','true');
-									}
-								}
-							}
+							mainEventActivePC();
 						}
 					}
 				});
@@ -231,7 +215,92 @@
 			});
 			
 			swiperPlayStop(eventSwiper);
+			// 20220905 추가
+			function mainEventActivePC() {
+				var $win = $(window),
+					$wH = $win.height(),
+					$sT = 0,
+					$target = $('.mainEventSwiper'),
+					$tH = $target.innerHeight(),
+					$oT = $target.positionInfo(),
+					timer,
+					$ele = $target.find('a'),
+					num = 0;
+
+				$win.off('scroll.mainEvent').on('scroll.mainEvent', function() {
+					$sT = $win.scrollTop();
+					if($wH+$sT > $oT+$tH) {
+						clearInterval(timer);
+						timer = setInterval(function() {
+							if(num <= $ele.length) {
+								$ele.eq(num-1).removeClass('hover');
+								setTimeout(function() {
+									$ele.eq(num).addClass('hover');
+									num++;
+								},200);
+							} else {
+								clearInterval(timer);
+								num = 0
+							}
+						},2000);
+					}
+				});
+			}
+			// 20220905 추가
+			var mainEventTimer;
+			function mainEventActiveMobile(v) {
+				var $win = $(window),
+					$wH = $win.height(),
+					$sT = 0,
+					$target = $('.mainEventSwiper'),
+					$tH = $target.innerHeight(),
+					$oT = $target.positionInfo(),
+					$ele = $target.find('a'),
+					num = v;
+
+				$ele.removeClass('hover');
+
+				$win.off('scroll.mainEvent').on('scroll.mainEvent', function() {
+					$sT = $win.scrollTop();
+					if($wH+$sT > $oT+$tH) {
+						clearInterval(mainEventTimer);
+						num = num * mainEventSwiper.params.slidesPerGroup;
+						mainEventTimer = setInterval(function() {
+							$ele.eq(num).addClass('hover');
+							setTimeout(function() {
+								$ele.eq(num).removeClass('hover');
+								num = num + 1;
+								if(parseInt(num / mainEventSwiper.params.slidesPerGroup) !== mainEventSwiper.snapIndex) {
+									clearInterval(mainEventTimer);
+									num = v;
+								}
+							},1800);
+						},2000);
+					} else {
+						clearInterval(mainEventTimer);
+						$ele.removeClass('hover');
+						num = v;
+					}
+				}).trigger('scroll');
+			}
 		}); 
+
+		document.addEventListener('DOMContentLoaded', function(){
+			function setRollingNumber(){
+				if (!!document.querySelector('.mainGradientBox .title .odometer')) {
+					var elOdometer = document.querySelector('.mainGradientBox .title .odometer');
+					moduleOdometer = new Odometer({
+						el: elOdometer,
+						value: 000,
+						format: '(,ddd).dd',
+						duration: 1000,
+					});
+
+					moduleOdometer.update(1000); // 해당 인자에 점수값 삽입 
+				}
+			}
+			setRollingNumber();
+		})
 	</script>
 </head>
 
@@ -270,7 +339,7 @@
 					</div>
 
 					<div class="banLink">
-						<div class="tip">지키미가 드리는 더욱 새로워진 케어 서비스!</div>
+						<div class="tip" data-component="inview">지키미가 드리는 더욱 새로워진 케어 서비스!</div>
 						<a href="#none" class="ico18">
 							<span>나의 소중한 신용정보를</span>
 							<strong>안전하게 케어 받으세요</strong>
@@ -309,7 +378,7 @@
 				</article>
 				<article class="tabCont" id="links02">
 					<h1 class="h2">내 신용점수로 받아보는<br>나이스한 맞춤추천</h1>
-					<div class="recommandWrap">
+					<div class="recommandWrap" data-component="inview">
 						<a href="#" class="loan"><strong>가장 좋은 조건</strong>의<br>대출을 받으세요</a>
 						<a href="#" class="card"><strong>소비습관</strong>에 맞는<br>카드로 바꾸세요</a>
 					</div>
@@ -317,21 +386,27 @@
 						<ul class="swiper-wrapper">
 							<li class="swiper-slide">
 								<a href="#none" class="eventPageBox">
-									<span>나이스한 대출진단 받고</span>
-									<strong>스타벅스 커피 Dream</strong>
-								</a>
+										<strong>신한저축은행 NICE 중금리 대출</strong>
+										<span>연7~8% 온라인 햇살론<br>기존 햇살론 대비1.3%p 할인</span>
+										<div class="img"><img src="../../../img/zkm/rzm/common/bg/bg_event01.png" alt=""></div>
+										<p class="reviewNum">저축은행중앙회 심의필 2022-0001</p>
+									</a>
 							</li>
 							<li class="swiper-slide">
 								<a href="#none" class="eventPageBox">
-									<span>나이스한 대출진단 받고</span>
-									<strong>스타벅스 커피 Dream</strong>
-								</a>
+										<strong>신한저축은행 NICE 중금리 대출</strong>
+										<span>연7~8% 온라인 햇살론<br>기존 햇살론 대비1.3%p 할인</span>
+										<div class="img"><img src="../../../img/zkm/rzm/common/bg/bg_event01.png" alt=""></div>
+										<p class="reviewNum">저축은행중앙회 심의필 2022-0001</p>
+									</a>
 							</li>
 							<li class="swiper-slide">
 								<a href="#none" class="eventPageBox">
-									<span>나이스한 대출진단 받고</span>
-									<strong>스타벅스 커피 Dream</strong>
-								</a>
+										<strong>신한저축은행 NICE 중금리 대출</strong>
+										<span>연7~8% 온라인 햇살론<br>기존 햇살론 대비1.3%p 할인</span>
+										<div class="img"><img src="../../../img/zkm/rzm/common/bg/bg_event01.png" alt=""></div>
+										<p class="reviewNum">저축은행중앙회 심의필 2022-0001</p>
+									</a>
 							</li>
 						</ul>
 						<div class="controlpage">
@@ -342,7 +417,7 @@
 				</article>
 				<article class="tabCont" id="links03">
 					<h1 class="h2">이런 서비스는 어떠세요?</h1>
-					<div class="serviceSwiper">
+					<div class="serviceSwiper" data-component="inview">
 						<ul class="swiper-wrapper">
 							<li class="swiper-slide">
 								<a href="#none" class="item type1">

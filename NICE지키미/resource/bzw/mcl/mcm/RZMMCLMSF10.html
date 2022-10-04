@@ -8,6 +8,7 @@
 
 	<script src="../../../js/zkm/rzm/jquery-1.11.3.js"></script>
 	<script src="../../../js/zkm/rzm/jquery-ui.min.js"></script>
+	<script src="../../../js/zkm/rzm/in-view.min.js"></script>
 	<script src="../../../js/zkm/rzm/ui.common.js"></script>
 
 	<link rel="stylesheet" href="../../../css/zkm/rzm/common.css">
@@ -31,31 +32,34 @@
 			<div id="content">
 				<div class="section">
 					<div class="governing">
-						<h2 class="governingTitle txtC">앞으로 내 신용점수는 얼마나 달라질까요?</h2>
+						<h2 class="governingTitle txtC uiFadeIn" data-component="inview">앞으로 내 신용점수는 얼마나 달라질까요?</h2>
 					</div>
-					<div class="myScore">
-						<div class="handsVisual">
-                        </div>
-                        <div class="score">
-                            <span class="area one">?</span>
-                            <span class="area two">?</span>
-                            <span class="area thr">?</span>점
-                        </div>
+					<div class="myScore uiFadeIn" data-component="inview">
+						<div class="handsVisual typeAni" >
+							<span class="innerPhone"></span>
+							<span class="innerBalloon">
+								<span class="innerSlotScore">
+									<i></i>
+									<i></i>
+									<i></i>
+								</span>
+							</span>
+						</div>
 					</div>
                     <div class="bubbleCont">
-                        <div class="item">
+                        <div class="item uiFadeIn" data-component="inview">
                             <div class="emo1">현재 상태 <span>유지</span>하면서 <span>1년</span>이 지나면?</div>
                         </div>
-                        <div class="item">
+                        <div class="item uiFadeIn" data-component="inview">
                             <div class="emo2">은행에서 <span>1억원</span>을 새로 <span>대출</span> 받는다면?</div>
                         </div>
-                        <div class="item">
+                        <div class="item uiFadeIn" data-component="inview">
                             <div class="emo3">국민연금 납부내역, 이동통신요금 납부내역 등<br> <span>마이데이터</span> 정보를 <span>모두 등록</span> 한다면?</div>
                         </div>
-                        <div class="item">
+                        <div class="item uiFadeIn" data-component="inview">
                             <div class="emo4">이번 달에는 <span>NN명</span>이 신용점수를 <span>예측</span>했어요!</div>
                         </div>
-                        <div class="txt">
+                        <div class="txt uiFadeIn" data-component="inview">
                             <p>신용점수 예측하기는 신용평가에 영향을 주지 않아요.</p>
                             <strong>내 신용정보를 직접 변경해보고 달라질 신용점수를 확인해 보세요!</strong>
                         </div>
