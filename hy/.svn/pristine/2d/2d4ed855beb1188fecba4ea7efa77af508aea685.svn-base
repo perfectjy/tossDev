@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+//=======================================================
+// Util.include
+//=======================================================
+
+@mixin blind() {
+	position:absolute;display:inline-block;font-size:1px;width:1px;height:1px;padding:0;margin:-1px;visibility:hidden;overflow:hidden;border:0;clip:rect(0, 0, 0, 0);
+}
+@mixin clearfix() {
+	&::after {display: block; content: ""; clear: both;}
+}
+@mixin ellipsis($width: 100%) {
+	display: inline-block; max-width: $width; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;
+}
+@mixin line_clamp($lineHeight, $height, $line){
+	overflow:hidden;
+	text-overflow:ellipsis;
+	max-height:$height + px;
+	line-height:$lineHeight;
+	word-wrap:break-word;
+	word-break:keep-all;
+	-webkit-line-clamp:$line; 
+	-webkit-box-orient:vertical;
+	display:-webkit-box;
+}
+
+//SVG icon Align Center
+@mixin bg_center {
+	content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+}
+
+
+
+
+// * Font
+//--------------------
+
+@mixin fz27{font-weight: 500; font-size: 27px; line-height: 37px; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz27_700{font-weight: 700; font-size: 27px; line-height: 37px; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz22{font-weight: 700; font-size: 22px; line-height: 1.5em; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz18{font-weight: 700; font-size: 18px; line-height: 1.5em; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz17{font-weight: 500; font-size: 17px; line-height: 23px; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz17_700{@include fz17(); font-weight: 700; }
+
+//-------------------
+@mixin fz16{font-weight: 500; font-size: 16px; line-height: 24px; letter-spacing: -0.02em; color: #1F1F21; }
+@mixin fz16_700{@include fz16();font-weight: 700; }
+//-------------------
+@mixin fz15{font-weight: 500; font-size: 15px; line-height: 21px; letter-spacing: -0.04em; color: #1F1F21; }
+@mixin fz15_700{@include fz15(); font-weight: 700; }
+@mixin fz15_400{@include fz15(); font-weight: 400; }
+//-------------------
+@mixin fz14{font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: -0.04em; color: #1F1F21; }
+@mixin fz14_700{@include fz14(); font-weight: 700; color: #1F1F21; }
+@mixin fz14_400{@include fz14(); font-weight: 400; color: #555557;}
+//-------------------
+@mixin fz13_400{font-weight: 400; font-size: 13px; line-height: 1.5em; letter-spacing: -0.02em; color: #767678; }
+@mixin fz13{font-weight: 500; font-size: 13px; line-height: 1.5em; letter-spacing: -0.02em; color: #767678; }
+@mixin fz13_700{font-weight: 700; font-size: 13px; line-height: 19px; letter-spacing: -0.04em; color: #1F1F21; }
+//-------------------
+@mixin fz12{font-weight: 500; font-size: 12px; line-height: 1.5em; letter-spacing: -0.04em; color: #767678; }
+@mixin fz12_400{font-weight: 400; font-size: 12px; line-height: 1.5em; letter-spacing: -0.04em; color: #767678; }
+//-------------------
+@mixin fz11{font-weight: 400; font-size: 11px; line-height: 1.5em; letter-spacing: -0.04em; color: #555557; }
+
+@mixin product_tit {font-weight: $fw_medium; font-size: 16px; line-height: 1.5em; letter-spacing: -0.04em; color: $grey_850;}
+
+
+// 디자인: H1, H2 ~> 퍼블: H2, H3 ~ (1++)
+@mixin h2{@include fz22();}//Governing
+@mixin h3{@include fz17_700(); color: #3F3F41;}
+@mixin h4{@include fz15(); color: #3F3F41;}
+@mixin h5{@include fz14(); color: #000;}//[4/5]유의사항만 사용되어지고 있음
+
+
+
+
+
+//=======================================================
+// List Style
+//=======================================================
+@mixin bul_dot(){
+	position: relative;padding-left: 10px; //line-height: 20px; 
+	&:before{content: ""; position: absolute; left: 1px; top: 10px; width:2px; height:2px; background-color: #909090; border-radius: 50%;}
+}
+
+@mixin bul_bar(){
+	position: relative;padding-left: 10px; //line-height: 20px;
+	&:before{
+		position: absolute; content: ''; top: 12px; left: 0; width: 4px; height: 1px;background: #767678; 
+	}
+}
+
+@mixin bul_imp(){
+	position: relative;padding-left:16px;
+	&:before{
+		position: absolute; content: '※'; top: 0; left: 0; font-size:11px;
+	}
+	& small{font-size: 13px;}
+}
+
+@mixin bul_tip(){
+	position: relative;padding-left:20px;
+	@include font_set($grey_850,15px,$fw_medium);
+	&:before{
+		position: absolute; content: ''; top: 2px; left: 0; width: 16px; height: 16px; background: url($svg_icon_notice_red) no-repeat center center;
+	}
+}
+
+
+// EAEBED
+//기본폰트: body inherit: @include fz14_400();
+@mixin uol_list(){
+	table{margin-top: 24px;}
+	table+table, table+p {margin-top: 16px;}
+	table + .bul_imp{margin-top: 12px;}
+
+	p{margin-bottom: 4px;}
+	p + p{margin-top: 12px;}
+	.bul_imp{margin-top: 16px;color: #767678;}
+
+	p, div{text-indent: 0;}
+
+	ul + p,
+	ol + p,
+	p + ul,
+	p + ol{margin-top: 12px;}
+
+	ul + ul,
+	ol + ol,
+	ul + ol,
+	ol + ul{margin-top: 12px;}
+
+	strong{color: #1F1F21; font-weight: 500;}
+
+	//list-type: 
+	// li: fz14 
+	// li > li : fz13
+	ul, ol, &.fz_sm ul, &.fz_sm ol{ 
+		li{position: relative; margin-top: 8px; color: #3F3F41;word-break: break-all;
+			p{@include fz13_400(); margin-top: 6px;}
+			ul, ol{margin-top: 6px; 
+				li{	@include fz13_400();color: #767678;margin-top: 6px;
+					p{@include fz12_400(); margin-top: 6px;}
+				}
+			} 
+		}
+		li:first-child{margin-top: 0; }
+	}
+
+	ol{
+		li{margin-top:8px;padding-left: 19px;text-indent:-19px; 
+			&:first-letter {letter-spacing: 3px;}
+			li{padding-left: 15px;text-indent:-15px; }
+			ul{
+				li{@include bul_bar(); 
+					padding-left: 16px;text-indent:0px; 
+				}
+			}
+			ol{
+				li{padding-left: 12px;text-indent:-12px;
+					&:first-letter {letter-spacing: 0px;}
+				}
+			}
+		}
+	}
+
+	ul > li{@include bul_dot();
+		> ul >li{@include bul_bar();}
+	}
+
+	//page에 따라 bar, dot 가 Change 됨에 따라 개별은 초기화
+	ul.bul_bar > li{@include bul_bar();}
+	.bul_bar{padding-left: 0;
+		&:before{content:''; width: 0;height: 0;}
+	}
+	.bul_dot{padding-left: 0;
+		&:before{content:''; width: 0;height: 0;}
+	}
+
+	
+	ul, ol > li{
+		.bul_imp{font-size: 13px;margin-left: -10px; margin-top: 4px;}
+		> ul, ol >li{
+			.bul_imp{font-size: 12px;}
+		}
+	}
+
+	ol > li{
+		.bul_imp{margin-left: -19px;}
+	}
+
+
+	ul, ol{
+		li{
+			.btn_area{margin-top: 6px; text-align: left;}
+			[class*=btn_]{text-indent:0}
+		}
+	}
+
+	p + [class*='btn_']{margin-top: 8px;}
+	ul + [class*='btn_'],
+	ol + [class*='btn_']{margin-top: 8px;}
+	li{
+		br + [class*='btn_']{margin-top: 8px;}
+	}
+}
+
+
+//약관/안내 페이지 
+//기본폰트: body inherit: @include fz14_400();
+@mixin base_list(){
+	@include uol_list();
+
+	h2{@include h2();}//fz22
+	h3{@include h3();}//fz17_700
+	h4{@include h4();}//fz15 (500)
+
+	// h1
+	h1,h2,h3,h4,h5,h6{
+		margin-top: 40px;
+		&:first-child{margin-top: 32px;}
+		& + ul, & + ol, & + div, & + P{margin-top: 24px;}
+	}
+
+	h4{margin-top: 24px;
+		& + ul, & + ol, & + div, & + P{margin-top: 8px;}//16px;
+	}
+	h3 + h3 {margin-top: 24px;}
+	ul li, ol li {
+		ul li, ol li {
+			font-size: 14px;
+		}
+	}
+	//테이블 보조 및 하단
+	h3.subtit + .table {margin-top: 16px;}
+}
+
+
+@mixin table(){
+	//[Style based]: border-left, border-bottom
+	$table_border_top: 1px solid #EFEFF1;
+	$table_border_bottom: 1px solid #EFEFF1;
+	$table_border_side: none;
+
+	$thead_th_border_bottom: 1px solid #EFEFF1;
+	$thead_th_border_left: 1px solid #EFEFF1;
+	$thead_td_border_bottom: 1px solid #EFEFF1;
+	$thead_last_border_bottom: 1px solid #EFEFF1;
+
+	$tbody_th_border_bottom: 1px solid #EFEFF1;
+	// $tbody_th_border_left: 1px solid #EFEFF1;
+	$tbody_th_border_left: 1px solid #F9F9FB;
+	$tbody_td_border_bottom: 1px solid #EFEFF1;
+	$tbody_td_border_left: 1px solid #EFEFF1;
+
+	$tfoot_border_top: 1px solid #EFEFF1;
+	$tfoot_td_border_left: none;
+
+	//etc: bd_top
+	$tr_bd_strong: 2px solid #EFEFF1; //구분 강조 라인
+
+	//bg
+	$thead_th_bg: #F9F9FB;
+	$tbody_th_bg: #F9F9FB;
+	$tbody_td_bg: #fff;
+	$tfoot_th_bg: #f9f9f9;
+	$tfoot_td_bg: #f9f9f9;
+
+	// style: bd, bg
+	//----------
+	& { 
+		position: relative; border-collapse: collapse;
+		border-top: $table_border_top; border-bottom: $table_border_bottom;
+		border-left:$table_border_side; border-right:$table_border_side;
+
+		th {border-left: $thead_th_border_left; border-bottom: $tbody_th_border_bottom; }
+		td {border-left: $tbody_td_border_left; border-bottom: $tbody_td_border_bottom; }
+		tr > *:first-child {border-left: none;}// Table left-border:none
+		tr:last-child{
+			td, th {border-bottom: none;}
+		}
+		thead{
+			th {border-left: $thead_th_border_left; border-bottom: $thead_th_border_bottom; background: $thead_th_bg;}
+			tr:last-child th{border-bottom: $thead_last_border_bottom;}
+			th[rowspan]{border-bottom: $thead_last_border_bottom;}
+		}
+		tbody{
+			th {border-left: $tbody_th_border_left;border-bottom: $tbody_th_border_bottom;background: $tbody_th_bg;}
+			td {border-left: $tbody_th_border_left;border-bottom: $tbody_th_border_bottom;background: $tbody_td_bg;}
+			th + td{border-left: $tbody_th_border_left;}
+		}
+		tfoot{
+			th{background: $tfoot_th_bg;}
+			td{border-left: $tfoot_td_border_left;background: $tfoot_td_bg;}
+			tr{
+				&:first-child{
+					th, td{border-top: $tfoot_border_top;}
+				}
+			}
+		}
+
+		//Border option
+		tr {
+			th.bd_l{border-left: $tbody_th_border_left;}
+			td.bd_l{border-left: $tbody_td_border_left;}
+			th.bd_r{border-right: $tbody_th_border_left;}
+			&.bd_strong{
+				th, td{border-top: $tr_bd_strong;}
+			}
+		}
+	}
+}
+
+
+@mixin table_style(){
+	& {color: #3F3F41;font-size: 14px; line-height:1.2; font-weight: 400; 
+		strong {font-weight: 500; color: #1F1F21;}
+
+		th,
+		td {height: 50px; padding: 14px;  text-align: left; vertical-align: middle;}
+		td{color: #555557;}
+
+		thead{
+			th{text-align: center;}
+		}
+		tbody{}
+		tfoot{
+			th,
+			td{font-weight:500;}
+			th{color:#000; text-align: left;}
+			td{color:$point_color;text-align:right;}
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="loan">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">보험계약대출 상환</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing ta_l">
+							<div class="progress" aria-label="보험계약대출 상환 신청 총 4단계 중 2단계">
+								<div class="progress_wrap" aria-hidden="true">
+									<span class="progress_num">2</span>
+									<span class="progress_total">4</span>
+								</div>
+							</div>
+							<h2 class="governing_title">출금계좌를 선택해 주세요.</h2>
+						</div>
+						<div class="comp">
+							<div class="amount_accordion">
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="amount_title">
+												<h2 class="title">출금예정금액</h2>
+												<div class="amount icon02">1,500,000<em>원</em></div>
+											</div>
+											<i class="btn toggle">상세</i>
+										</a>
+									</div>
+									<div class="fold_body">
+										<div class="card_item">
+											<div class="card_wrap">
+												<div class="dl_list">
+													<div class="dl_body">
+														<dl>
+															<dt>원금상환금액</dt><dd>1,400,000원</dd>
+															<dt>대출이자</dt><dd>60,800원</dd>
+														</dl>
+													</div>
+													<div class="dl_footer">
+														<dl class="">
+															<dt><strong>상환 후 대출잔액</strong></dt>
+															<dd><strong class="point_color">4,500,000원</strong></dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="comp">
+							<div class="form_area">
+								<div class="form_item">
+									<div class="form_label">
+										<label for="form01">출금계좌</label>
+										<div class="tooltip">
+											<button type="button" class="btn_tooltip" data-pos="bottom" data-icon="true" data-handler="click"><span class="blind">툴팁</span></button>
+											<div class="tooltip_wrap" role="tooltip">
+												<div class="tooltip_con">
+													<div class="tooltip_title">출금계좌</div>
+													<div class="tooltip_contents">본인명의 계좌만 등록할 수 있습니다.</div>
+												</div>
+												<a class="tooltip_close" href="javascript:void(0);" role="button">Close</a>
+											</div>
+										</div>
+									</div>
+									<div class="form_area">
+										<div class="form_item">
+											<div class="form_wrap placeholder">
+												<button type="button" id="btn_select01" class="btn_select"><span>대출금 출금계좌 선택</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- CASE.03: 직접입력 -->
+								<div class="form_item_group">
+									<div class="form_item">
+										<div class="form_label"><label for="form04">은행/계좌번호(본인명의 계좌만 가능)</label></div>
+										<div class="form_wrap placeholder">
+											<button type="button" id="form04" class="btn_select"><span>은행 선택</span></button>
+										</div>
+										<div class="form_wrap">
+											<input type="number" id="" placeholder="- 없이 입력" title="계좌번호 입력">
+											<div class="append">
+												<span class="unit"><button type="button" class="btn_form">계좌확인</button></span>
+											</div>
+										</div>
+									</div>
+									<div class="form_item">
+										<div class="form_label"><label for="form05">예금주</label></div>
+										<div class="form_wrap">
+											<input type="text" id="form05" placeholder="[계좌확인] 눌러 예금주 입력" readonly="readonly">
+										</div>
+									</div>
+								</div>
+								<!-- //CASE.03 -->
+							</div>
+						</div>
+					</div>
+
+					<div class="section bottom_fix">
+						<div class="comp">
+							<div class="accordion notice full">
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="title"><strong>유의사항</strong></div>
+											<i class="icon_angle"><span>내용보기/내용닫기</span></i>
+										</a>
+									</div>
+									<div class="fold_body uol_list">
+										<ul>
+											<li>출금계좌는 계약자 본인명의 계좌만 가능합니다. 단, 출금이 불가능한 계좌(평생계좌, 맞춤계좌 등)는 이용할 수 없으니 유의해 주세요.
+												<div class="btn_area">
+													<a href="javascript:void(0);" class="btn fill03 xs">상환가능은행 확인하기</a>
+												</div>
+											</li>
+											<li>대출신청(상환 및 이자납입 포함) 후 다음달 자동이체까지 이자납입 일수가 1개월을 초과하는 경우, 대출일(상환 및 이자납입 포함) 이후 처음 다가오는 자동이체 청구일(5/10/20/25/30일 중 해당일)에 대출일(상환 및 이자납입 포함)로부터 첫 자동이체 청구일까지의 이자를 정산합니다.</li>
+											<li>첫 자동이체 청구일까지의 이자를 정산합니다.</li>
+											<li>출금가능계좌가 아닌 경우 대출상담 콜센터(1588-5655)에서 가상계좌를 안내받은 후 입금하시면 상환할 수 있습니다.</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+				<!-- content_footer -->
+				<div class="content_footer fix">
+					<div class="btn_area footer">
+						<button type="button" class="btn fill01">다음</button>
+					</div>
+				</div>
+				<!-- //content_footer -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Bar -->
+		<!-- Code Here~!! -->
+		<!-- //Modal Bar -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

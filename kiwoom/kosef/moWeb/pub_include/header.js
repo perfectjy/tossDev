@@ -1,0 +1,54 @@
+(function(){
+	var str='';
+str+='<div class="gnb-inner">';
+str+='    <h1 class="logo"><a href="#"><span class="hide">키움투자산운용</span></a></h1>';
+str+='    <button type="button" class="btn-prev"><span class="hide">이전</span></button>';
+str+='    <div class="util">';
+str+='        <button type="button" class="btn-sch"><span class="hide">검색</span></button>';
+str+='        <button type="button" class="btn-gnb"><span class="hide">전체메뉴 열기</span></button>';
+str+='    </div>';
+str+='    <div class="gnb-nav">';
+str+='        <div class="gnb-header">';
+str+='            <a href="#none" class="btn-home"><span class="hide">홈</span></a>';
+str+='            <button type="button" class="btn-close"><span class="hide">전체 메뉴 닫기</span></button>';         
+str+='        </div>';
+str+='        <div class="gnb">';
+str+='            <ul class="menu">';
+str+='                <li><a href="#">상품정보</a>    ';                       
+str+='                    <ul class="sub">';
+str+='                        <li><a href="#">키움ETF</a></li>';
+str+='                    </ul>     ';                      
+str+='                </li>';
+str+='                <li><a href="#">ETF 자료실</a>';
+str+='                    <ul class="sub">';
+str+='                        <li><a href="#">REPORT</a></li>';
+str+='                        <li><a href="#">상품별 관련 자료</a></li>';
+str+='                    </ul>';
+str+='                </li>';
+str+='                <li><a href="#">투자정보</a>';
+str+='                    <ul class="sub">';
+str+='                        <li><a href="#">ETF 펀드뉴스</a></li>';
+str+='                        <li><a href="#">키자매거진 & TV</a></li>';
+str+='                        <li><a href="#">ETF 투자가이드</a></li>';
+str+='                    </ul>';
+str+='                </li>';
+str+='                <li><a href="#">공시/공지</a>';
+str+='                    <ul class="sub">';
+str+='                        <li><a href="#">공시정보</a></li>';
+str+='                        <li><a href="#">공지/이벤트</a></li>';
+str+='                        <li><a href="#">FAQ</a></li>';
+str+='                        <li><a href="#">About KOSEF & 히어로즈</a></li>';
+str+='                    </ul>';
+str+='                </li>';
+str+='            </ul>    ';
+str+='	      <div class="link-box">';
+str+='            <button type="button" class="btn-icon"><span>키움투자자산운용</span></button>';
+str+='		      <button type="button" class="btn-icon"><span>ENGLISH</span></button>';
+str+='	      </div>';
+str+='    </div>';
+str+='</div>';
+
+document.write(str);
+
+})();
+

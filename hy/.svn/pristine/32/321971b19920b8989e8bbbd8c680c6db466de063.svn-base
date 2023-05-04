@@ -1,0 +1,55 @@
+.swiper{
+  &-pagination{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100% !important;
+    height:6px;
+    font-size:0;
+    text-align:center;
+    &-bullet{
+      display:inline-block;
+      width:6px;
+      height:6px;
+      margin-left:8px;
+      border-radius:50%;
+      vertical-align:top;
+      background-color:#D9D9D9;
+      &-active{
+        width:20px;
+        border-radius:20px;
+        background-color:#212121;
+      }
+      &:first-child{
+        margin-left:0;
+      }
+    }
+  }
+  &[data-slider^=card]{
+    margin-left:-20px;
+    margin-right:-20px;
+    padding-left:20px;
+  }
+
+  &[data-slider=indicator_banner]{
+    .img_area {
+        width: 100%;
+        // height: 72px;
+        >img {width: 100%;height: 100%;}
+    }
+    .swiper-pagination {
+      top: 8px;
+      left: auto;
+      right: 16px;
+      z-index: 10;
+      // display: inline-block;
+      width: 33px !important;
+      height: 18px;
+      @include font_set(#fff,10px,$fw_bold);
+      border-radius: 20px;
+      background: rgba(0,0,0,.6);
+      line-height: 16px;
+      z-index: 10;
+    }
+}
+}

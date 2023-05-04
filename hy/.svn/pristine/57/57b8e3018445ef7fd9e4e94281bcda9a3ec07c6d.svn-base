@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+		/**
+		 * Toast 
+		 * -------------------------------------------------------
+		 * @usage Open:  UI.toast.open(obj, callBackFunc);
+		 * @usage Close: UI.toast.close();
+		 * -------------------------------------------------------
+		 * @param {object} 
+		 * @param {String} obj.msg: 메시지(Default: 잠시만 기다려 주세요.)
+		 * @param {Number} obj.time: Close Time(Default: null, UI.toast.close() 필요)
+		 * @param {Number} obj.top / obj.bottom: 페이지 상하단기준 position
+		 */
+
+		var obj={
+			msg: '최대 6개까지 선택 가능합니다'
+			, time: 1600
+			, bottom: 110 //or , top: 60 
+		}
+		var callBackFunc = function(){
+			console.log('callBackFunc');
+		}
+		UI.toast.open(obj, callBackFunc);
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="true" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">Toast</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">Toast</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples">
+								<a href="javascript:void(0);" class="btn fill01" onclick="javascript:layerPop.open($('#sampleModal_Full'));" >Open Modal Full</a>
+							</div>
+
+							<div class="btn_area">
+								<a href="javascript:void(0);" class="btn line01 block" onclick="javascript:
+									UI.toast.open({
+										msg:'테스트 MSG 입니다.(bottom:110)'
+										, time: 1000
+										, bottom: 110
+									});">
+									UI.toast.open({msg, 1000, bottom})
+								</a>
+								<a href="javascript:void(0);" class="btn line01 block" onclick="javascript:
+									UI.toast.open({
+										msg: 'closeTime 없을 경우 <br> clallBack function 에서 UI.toast.close() 필요합니다.'
+										, tiem: null
+										, top: 60
+									}
+									, function(){
+										$('.btn_toast_close').show()
+									});">
+									UI.toast.open({msg, null, top})
+								</a>
+							</div>
+
+							<div class="btn_area">
+								<a href="javascript:void(0);" class="btn line03 btn_toast_close block" onclick="javascript:UI.toast.close();$(this).hide()" style="display:none;">UI.toast.close()</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<div class="modal full fade" id="sampleModal_Full" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header">
+						<div class="wrapper">
+							<h2 class="modal_title">Modal Full Title</h2>
+						</div>
+					</div>
+					<div class="modal_body">
+						<!-- wrapper: modal_body -->
+						<div class="wrapper">
+							<div class="section">
+								<div class="comp">
+									<div class="btn_area grid2 ">
+										<a href="javascript:void(0);" class="btn line01 block" onclick="javascript:
+											UI.toast.open({
+												msg:'모달 테스트 MSG 입니다.(bottom:110)'
+												, time: 1000
+												, bottom: 110
+											});">
+											UI.toast.open({msg, 1000, bottom})
+										</a>
+										<a href="javascript:void(0);" class="btn line01 block" onclick="javascript:
+											UI.toast.open({
+												msg: '모달 테스트 MSG 입니다.<strong class=\'point_color\'>(top:60)</strong>'
+												, time: 1000
+												, top: 60
+											}
+											, function(){
+												$('.btn_toast_close').show()
+											});">
+											UI.toast.open({msg, 1000, top})
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //wrapper: modal_body -->
+					</div>
+					<div class="modal_footer fix">
+						<div class="btn_area footer">
+							<button type="button" class="btn fill01" onclick="layerPop.close('#sampleModal_Full'); return false;">확인</button>
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#sampleModal_Full'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Full -->
+		
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+
+	<!-- Toast: Sample MarkUP -->
+	<!-- <div class="toast">
+		<div class="toast_wrap" >
+			<span class="msg">최대 6개까지 선택 가능합니다.</span>
+		</div>
+	</div> -->
+	<!-- //Toast : Sample MarkUP -->
+</body>
+</html>

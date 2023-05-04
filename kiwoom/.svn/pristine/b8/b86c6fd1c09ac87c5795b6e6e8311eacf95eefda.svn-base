@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="/kiam/moWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="/pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="/kiam/moWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="/kiam/moWeb/resources/js/ui.global.js"></script>
+	<script src="/kiam/moWeb/resources/js/ui.common.js"></script>
+	<script src="/pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader"></header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Accordion</h2>
+            <div class="g-links">
+                <a href="/pub_guide/pc/accordion.html"><span>PC 화면 보기</span></a>
+            </div>    
+            <article>
+                <h3>Info</h3>
+                <div class="guide-info-box line">
+                    <!-- base accordion -->
+                    <div class="ui-acco info" data-id="exeAcco1">
+                        <div class="ui-acco-wrap">
+                            <div class="ui-acco-tit">
+                                <div class="ui-acco-txt info">투자하기 전, 꼭 확인하세요!</div>
+                                <button type="button" class="ui-acco-btn"><span><span class="hide">열기</span></span></button>
+                            </div>
+                            <div class="ui-acco-pnl">
+                                <div class="ui-acco-pnl-wrap">
+                                    <ul class="ui-list">
+                                        <li>투자자는 본 상품에 대하여 금융상품판매업자로부터 충분한 설명을 받을 권리가 있으며, 투자전 (간이)투자설명서 및 집합투자규약을 반드시 읽어보시기 바랍니다</li>
+                                        <li>본 상품은 자산가격 변동, 환율 변동, 신용등급 하락 등에 따라 투자원금의 손실(0~100%)이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                                        <li>본 상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                
+                     <!-- //base accordion -->
+                    </div>                 
+                </div>               
+            </article>    
+        </div>
+    </div>
+</div>
+<script>
+    (() => {
+        'use strict';
+        KAUI.accordion.init({ id:'exeAcco1', current:[0] });
+    })(); 
+</script>
+</body>
+</html>

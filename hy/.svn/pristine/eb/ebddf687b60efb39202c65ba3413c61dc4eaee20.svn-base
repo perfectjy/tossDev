@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+		$('.btn_samples').find('.btn').click();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="login">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">이메일상담 신청</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">Modal</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#MCUCS0005U'));" class="btn fill01">Open</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<div class="modal full modal_terms fade" id="MCUCS0005U" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"></div>
+					<div class="modal_body">
+						<!-- wrapper: modal_body -->
+						<div class="wrapper">
+							<div class="section">
+								<div class="governing ta_l">
+									<h2 class="governing_title"><strong>[필수]</strong> 개인(신용)정보의<br> 수집&middot;이용에 관한 사항</h2>
+								</div>
+								<div class="comp">
+									<div class="terms base_list">
+										<h3>1. 수집&middot;이용에 관한 사항</h3>
+										<table class="table col2 fz_lg">
+											<caption>수집&middot;이용 목적, 보유 및 이용기간 항목으로 이루어진 테이블입니다.</caption>
+											<colgroup>
+												<col />
+												<col />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">수집&middot;이용 <br>목적</th>
+													<td>
+														<ul>
+															<li>상담문의 접수 및 회신, 계약내용 확인(해당시) 등 관련 업무 수행</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br> 이용기간</th>
+													<td>
+														<ul>
+															<li>
+                                <p class="large">동의일로부터 1년까지</p>
+                                <p>*상담정보는 본인 요청시 삭제됩니다.</p>
+                                <p>[삭제 요청 : 1577-1001, 1899-6782]</p>
+                              </li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<h3>수집&middot;이용 항목</h3>
+										<table class="table col2 fz_lg">
+											<caption>개인(신용)정보 항목으로 이루어진 테이블입니다.</caption>
+											<colgroup>
+												<col />
+												<col />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" rowspan="2">개인(신용)<br> 정보</th>
+													<td>
+														<p class="bold">일반개인정보</p>
+														성명, 이메일 주소, 휴대폰 번호(이메일로 답변 선택시 제외), 생년월일, 성별, 상담 진행을 통해 알게 된 사항
+													</td>
+												</tr>
+											</tbody>
+										</table>
+                    <div class="agree_chk">
+											<p class="agree_chk_txt">위 개인신용정보 <span class="td_u">수집&middot;이용</span>에 동의하십니까?</p>
+											<div class="radio_wrap">
+												<input type="radio" id="agree_rdo1" name="agree_group"><label for="agree_rdo1">동의하지 않음</label>
+												<input type="radio" id="agree_rdo2" name="agree_group" checked><label for="agree_rdo2">동의함</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //wrapper: modal_body -->
+					</div>
+					<div class="modal_footer fix">
+						<div class="btn_area footer">
+							<button type="button" class="btn fill01">확인</button>
+							<!-- <button type="button" class="btn fill01">다음</button> --><!-- 외부링크 유입시 -->
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#MCUCS0005U'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Full -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

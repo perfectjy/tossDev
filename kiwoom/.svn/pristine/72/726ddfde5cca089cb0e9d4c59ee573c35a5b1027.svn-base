@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="../../kiam/pcWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="../../pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="../../kiam/pcWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="../../kiam/pcWeb/resources/js/ui.global.js"></script>
+	<script src="../../kiam/pcWeb/resources/js/ui.common.js"></script>
+	<script src="../../pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Form</h2>
+            <div class="g-links">
+                <a href="/pub_guide/mobile/form.html"><span>Mobile 화면 보기</span></a>
+            </div>    
+            <article>
+                <h3>Basic input</h3>
+                <div class="guide-info-box line">
+                    <!-- default input -->
+                    <div>
+                        <strong class="dot-title">default</strong>                        
+                       <input type="text" class="inp-base" id="" title="검색어 입력">                       
+                    </div>
+                    <!-- //default input -->  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">clear button</strong>
+                        <div class="ui-input-txt" style="width:400px;">
+                            <input type="text" class="inp-base" id="" data-clear="true" title="검색어 입력">     
+                        </div>                 
+                    </div>  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">disabled</strong>
+                        <input type="text" class="inp-base" id="" title="검색어 입력" disabled>
+                    </div> 
+                </div>
+                <h3>Drop + Input</h3>
+                <div class="guide-info-box line">
+                    <!-- default input + select -->
+                    <div>
+                        <strong class="dot-title">default</strong>
+                        <div class="ui-drop-input">
+                            <div class="ui-select">
+                                <select title="제목" id="uiSel1">
+                                    <option value="1">Default</option>
+                                    <option value="2">Hover</option>
+                                    <option value="3">Selected</option>
+                                </select>
+                            </div>  
+                            <div class="ui-input-txt">
+                                <label for="" class="hide">타이틀</label>
+                                <input type="text" class="inp" title="">
+                                <button type="button" class="btn-search" aria-hidden="false"><span class="hide">검색</span></button>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- //default input + select  -->  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">disabled</strong>
+                        <div class="ui-drop-input">
+                            <div class="ui-select">
+                                <select title="제목" id="uiSel2" disabled>
+                                    <option value="1">Default</option>
+                                    <option value="2">Hover</option>
+                                    <option value="3">Selected</option>
+                                </select>
+                            </div>  
+                            <div class="ui-input-txt">
+                                <input type="text" class="inp" title="" disabled>
+                                <button type="button" class="btn-search" aria-hidden="false"><span class="hide">검색</span></button>
+                            </div>
+                        </div>  
+                    </div>  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">error</strong>
+                        <div class="ui-drop-input">
+                            <div class="ui-select error" data-state="error">
+                                <select title="제목" id="uiSel3">
+                                    <option value="1">Default</option>
+                                    <option value="2">Hover</option>
+                                    <option value="3">Selected</option>
+                                </select>
+                            </div>  
+                            <div class="ui-input-txt error">
+                                <input type="text" class="inp" title="">
+                                <button type="button" class="btn-search" aria-hidden="false"><span class="hide">검색</span></button>
+                            </div>
+                        </div>  
+                    </div>    
+                </div>
+                <h3>Drop + button</h3>
+                <div class="guide-info-box line">
+                    <div class="select-group">
+                        <div class="ui-select">
+                            <select title="펀드 타입 선택" id="uiSel4">
+                                <option value="1" selected>2022년 8월 자산운용보고서</option>
+                                <option value="2">2022년 7월 자산운용보고서</option>      
+                            </select>
+                        </div>
+                        <button type="button"><span>다운로드</span></button>
+                    </div>
+                </div>  
+                <h3>Drop down</h3>
+                <div class="guide-info-box line">
+                    <!-- default select -->
+                    <div>
+                        <strong class="dot-title">default</strong>
+                        <div class="ui-select" style="width:400px;">
+                            <select title="펀드 타입 선택" id="uiSel4">
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>
+                    <!-- //default select -->  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">disabled</strong>
+                        <div class="ui-select" style="width:400px;">
+                            <select title="펀드 타입 선택" id="uiSel5" disabled>
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">error</strong>
+                        <div class="ui-select error" style="width:400px;" data-state="error">
+                            <select title="펀드 타입 선택" id="uiSel6">
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>    
+                </div>     
+                <h3>Check Box</h3>      
+                <div class="guide-info-box line">
+                    <style>
+                        .g-lb-group { display:flex; }
+                        .g-lb-group .lb-item { flex:1 1; }
+                    </style>
+                   <div class="g-lb-group">
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks01" name="formChks">
+                            <label for="formChks01" class="lb-checkbox"><span>Default</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks02" name="formChks" checked>
+                            <label for="formChks02" class="lb-checkbox"><span>Checked</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks03" name="formChks" disabled>
+                            <label for="formChks03" class="lb-checkbox"><span>disabled</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks04" name="formChks" checked disabled>
+                            <label for="formChks04" class="lb-checkbox"><span>inactive</span></label>
+                        </div>     
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks05" name="formChks">
+                            <label for="formChks05" class="lb-checkbox no-label"><span class="hide">only chk</span></label>
+                        </div>                   
+                   </div>        
+                </div> 
+                <h3>Radio Box</h3>      
+                <div class="guide-info-box line">
+                    <div class="g-lb-group">
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio01" name="formRadio">
+                            <label for="formRadio01" class="lb-radio"><span>Default</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio02" name="formRadio" checked>
+                            <label for="formRadio02" class="lb-radio"><span>Checked</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio03" name="formRadio2" disabled>
+                            <label for="formRadio03" class="lb-radio"><span>disabled</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio04" name="formRadio2" checked disabled>
+                            <label for="formRadio04" class="lb-radio"><span>inactive</span></label>
+                        </div>                       
+                   </div>                                    
+                </div> 
+                <h3>Toggle</h3>      
+                <div class="guide-info-box line">
+                    <div class="tab-tog">                        
+                        <span class="lb-txts">연금상품만 보기</span>
+                        <span class="lb-item sort-chk">
+                            <input type="checkbox" name="annSort" id="annSort">
+                            <label for="annSort" class="tab-chkbox"><span class="hide">전체</span></label>
+                        </span>                        
+                    </div>
+                </div>      
+                <h3>Date</h3>      
+                <div class="guide-info-box line">
+                    <strong class="dot-title">default</strong>
+                    <div class="ui-date-wrap">
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_1" class="inp-base" value="" min="2020-12-05" max="2025-05-20" title="날짜입력"  required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_1">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                    </div>
+                    <strong class="dot-title">disabled</strong>
+                    <div class="ui-date-wrap disabled">
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_2" class="inp-base" value="2022-04-05" min="2020-12-05" max="2025-05-20" title="시작일"  required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_2">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                    </div>
+                    <strong class="dot-title">dual</strong>
+                    <div class="ui-date-wrap">
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_3" class="inp-base" value="2022-04-05" min="2020-12-05" max="2025-05-20" title="시작일"  required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_3">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                        <div class="form-txt">~</div>
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_4" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="종료일" readonly required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_4">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                    </div>   
+                    <strong class="dot-title">dual disabled</strong>
+                    <div class="ui-date-wrap disabled">
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_3" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="시작일" readonly required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_3">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                        <div class="form-txt">~</div>
+                        <div class="ui-datepicker">
+                            <input type="date" id="uiDate_4" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="종료일" readonly required>
+                            <button type="button" class="ui-datepicker-btn" data-target="uiDate_4">
+                                <span class="a11y-hidden">년월일 선택</span>
+                            </button>
+                        </div>
+                    </div>   
+                    <strong class="dot-title">펀드상세</strong>                 
+                    <div class="ui-datepicker sub">
+                        <input type="date" id="uiDate_5" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="시작일" readonly required>
+                        <span>기준</span>
+                        <button type="button" class="ui-datepicker-btn" data-target="uiDate_5">
+                            <span class="a11y-hidden">년월일 선택</span>
+                        </button>
+                    </div>  
+                </div>                                    
+                 
+                <h3>Fund L</h3>      
+                <div class="guide-info-box line">
+                        
+                                  
+                </div>  
+                <h3>Fund S</h3>      
+                <div class="guide-info-box line">
+                        
+                                  
+                </div> 
+            </article>    
+        </div>
+    </div>
+</div>
+<!-- <script>
+    document.querySelector('#uiDate_1').value = '2023-05-10';
+    KAUI.datepicker.init();
+</script> -->
+<!-- <script>
+    function inpText(){    
+        //----------inp-text 내용삭제
+        var inpTxt = $('.ui-input-txt > .inp');
+        inpTxt.each(function(index){
+            var _this = $(this);
+            _this.bind('keypress', function() {
+                _this.addClass('active')
+            });
+        });        
+        //----------inp-text 버튼display
+        var btnInpDel = $('.btn-del');
+        btnInpDel.each(function(index) {
+            var _this = $(this);
+            _this.click(function() {
+                if(_this.siblings('.inp').val().length > 0) {
+                    _this.siblings('.inp').val('').focus().removeClass('active');
+                }
+            });
+        }); 
+    };
+     inpText();
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kosef/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <div class="kosef-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kosef/pcWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap sub-etf-wrap" id="content">
+            <div class="sub-head-wrap">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li class="home"><a href="#"><span class="hide">HOME</span></a></li>
+                        <li><span>상품정보</span></li>
+                        <li class="current"><span>키움ETF</span></li>
+                    </ul>
+                </nav>
+                <h2>키움ETF</h2> 
+                <div class="find-fund">
+                    <div class="sch-top ui-input-txt">
+                        <input type="text" class="inp-base" data-clear="true" placeholder="상품명을 입력하세요" title="ETF상품명 입력">
+                        <button class="btn-sch"><span class="hide">펀드 검색</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <!-- kosef tab -->
+                <div class="kosef-btn-tab">
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab01">
+                        <label for="btn-tab01" class="tab-ckb">
+                            <!-- 0313수정반영:: 전체적으로 이미지 경로 및 이미지 파일명이 수정되었습니다. -->
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab01.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected01.svg);"></span>
+                            <em>국내주식</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab02">
+                        <label for="btn-tab02" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab02.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected02.svg);"></span>
+                            <em>해외주식</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab03">
+                        <label for="btn-tab03" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab03.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected03.svg);"></span>
+                            <em>통화</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab04">
+                        <label for="btn-tab04" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab04.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected04.svg);"></span>
+                            <em>혼합</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab05">
+                        <label for="btn-tab05" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab05.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected05.svg);"></span>
+                            <em>리츠</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab06">
+                        <label for="btn-tab06" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab06.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected06.svg);"></span>
+                            <em>국내채권</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab07">
+                        <label for="btn-tab07" class="tab-ckb">
+                            <span style="background-image: url(../resources/images/dummy/@icon_tab07.svg);"></span>
+                            <span class="on" style="background-image: url(../resources/images/dummy/@icon_tab_selected07.svg);"></span>
+                            <em>해외채권</em>
+                        </label>
+                    </span>
+                </div>
+                <!--// kosef tab -->
+                <!-- 검색 결과 있는 경우 -->
+                <!-- 수정 0316 mgt95 추가 -->
+                <div class="tbl-info flex mgt95">
+                    <div class="info">
+                        <!-- 수정 0316 날짜 위치 수정 추가 -->
+                        <span class="total">총 <strong class="fc-primary">24</strong>건 <span class="date"><em>2022.10.07</em> 기준</span></span>       
+                    </div>             
+                    <div class="sort tab-tog">                        
+                        <span class="lb-txts">연금투자가능</span>
+                        <span class="lb-item sort-chk">
+                            <input type="checkbox" name="annSort2" id="annSort2">
+                            <label for="annSort2" class="tab-chkbox"><span class="hide">연금투자가능</span></label>
+                        </span>                        
+                    </div>
+                </div>
+                <div class="tbl">
+                    <table>
+                        <caption>키움ETF 결과 테이블입니다.</caption>
+                        <colgroup>
+                            <col style="width:auto;">
+                            <col style="width:104px;">
+                            <col style="width:104px;">
+                            <col style="width:72px;"span="6">
+                            <col style="width:88px;">
+                        </colgroup>
+                        <thead class="is-colgroup">
+                            <tr>
+                                <th scope="col" rowspan="2">상품명(종목코드)</th>
+                                <th scope="col" rowspan="2">기준가<br>(원)</th>
+                                <th scope="col" rowspan="2">순자산<br>(억원)</th>
+                                <!-- 0306수정반영:: class num 추가 -->
+                                <th scope="colgroup" colspan="7" class="num">수익률(%)</th>
+                            </tr>
+                            <tr>
+                                <!-- 0306수정반영:: class num 추가 -->
+                                <th scope="col" class="num">1개월</th>
+                                <th scope="col" class="num">3개월</th>
+                                <th scope="col" class="num">6개월</th>
+                                <th scope="col" class="num">1년</th>
+                                <th scope="col" class="num">3년</th>
+                                <th scope="col" class="num">5년</th>
+                                <th scope="col" class="num">설정일 이후</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="fund-items">
+                                        <div class="item">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">개인/퇴직</em>
+                                                <em class="t-bond">국내주식</em>
+                                            </div>
+                                            <a href="#" class="item-title">키움단기국공채증권자투자신탁제2호[채권]</a>
+                                            <!-- 0418수정사항:: 설정일 -> 종목코드 수정 -->
+                                            <p class="item-date">종목코드 : 069660</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 03.06수정반영:: class txt-bold 삭제 -->
+                                <td><span>9,844.79</span><br><span class="ico-up"><span class="hide">상승포인트</span>0.15</span></td>
+                                <!-- 03.06수정반영:: class txt-bold 삭제 -->
+                                <td><span>154</span></td>
+                                <td><span class="txt-drop">-0.15</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.712</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="fund-items">
+                                        <div class="item">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">채권형</em>
+                                                <em class="t-high">높은위험</em>
+                                            </div>
+                                            <a href="#" class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</a>
+                                            <p class="item-date">설정일 : 2016.04.26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>787.41<br><span class="ico-drop"><span class="hide">하락포인트</span>0.15</span></td>
+                                <td>1,551.49</td>
+                                <td><span class="txt-drop">-0.15</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.712</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="fund-items">
+                                        <div class="item">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">채권형</em>
+                                                <em class="t-high">액티브</em>
+                                                <em class="t-high">자산배분</em>
+                                                <em class="t-high">레버리지/인버스</em>
+                                            </div>
+                                            <a href="#" class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</a>
+                                            <p class="item-date">설정일 : 2016.04.26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>787.41<br><span class="ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                                <td>1,551.49</td>
+                                <td><span class="txt-drop">-0.15</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.712</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="fund-items">
+                                        <div class="item">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">채권형</em>
+                                                <em class="t-high">높은위험</em>
+                                            </div>
+                                            <a href="#" class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</a>
+                                            <p class="item-date">설정일 : 2016.04.26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>787.41<br><span class="ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                                <td>1,551.49</td>
+                                <td><span class="txt-drop">-0.15</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.712</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="fund-items">
+                                        <div class="item">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">채권형</em>
+                                                <em class="t-high">높은위험</em>
+                                            </div>
+                                            <a href="#" class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</a>
+                                            <p class="item-date">설정일 : 2016.04.26</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>787.41<br><span class="ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                                <td>1,551.49</td>
+                                <td><span class="txt-drop">-0.15</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.712</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                                <td><span class="txt-up">0.512</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- .btn-more -->
+                <button type="button" class="btn-more">
+                    <span>더보기 (10/52)</span>
+                </button>
+                <!-- //.btn-more -->
+                <!-- //검색 결과 있는 경우 -->
+                
+                <!-- 02.28 기획반영 수정::no data case 추가 -->
+                <div class="result-wrap">
+                    <!-- 0308수정반영:: 텍스트 수정 -->
+                    <p class="no-data no-line"><strong>검색된 결과가 없습니다.</strong></p>
+                    <!-- <p class="no-data no-line"><strong><em class="search-color">투자</em>에 대한 검색 결과가 없습니다.</strong></p> -->
+                </div>
+                <!-- //no data case -->
+            </div>           
+        </main>
+
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kosef/pcWeb/pub_include/footer.js"></script></footer>
+    </div>
+</body>
+</html>

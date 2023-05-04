@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* mo Tab */
+.ui-tab.scroll-tab.t1 .ui-tab-btns {padding:0 24px; font-size:0; border-bottom:1px solid #DFE0E2; }
+.ui-tab.scroll-tab.t1 .ui-tab-btn {position:relative; padding:0 8px; color:#73737A;}
+.ui-tab.scroll-tab.t1 .ui-tab-btn.selected {color:#222; font-weight:700;}
+.ui-tab.scroll-tab.t1 .ui-tab-pnls {padding:24px 24px 0 24px;}
+.ui-tab.scroll-tab.t1 .ui-tab-btn.selected {background-color:#fff;}
+.ui-tab.scroll-tab.t1 .ui-tab-btn {background-color:#fff;}
+.ui-tab.scroll-tab.t1 .ui-tab-btn.selected {color: #222; font-weight:700; }
+
+.ui-tab.scroll-tab .ui-tab-btns:after { content:''; display:block; clear:both;}
+.ui-tab.scroll-tab .ui-tab-btn { display:inline-block; font-size:14px; height:47px; color:#73737A; }
+/* .ui-tab.scroll-tab .ui-tab-btn.selected:after { content:''; display:block; position:absolute; bottom:0; left:0; width:100%; height:2px; background:#EC008C; } */
+.ui-tab.scroll-tab .ui-tab-pnls { padding:40px 24px; }
+.sub-conts-wrap .ui-tab.scroll-tab .ui-tab-btn.selected {background:#fff ;}
+
+
+.main-tab.search {position:relative;}
+.main-tab.search .ui-tab-btns {font-size:0;}
+.main-tab.search .ui-tab-btn {display:inline-block; height:32px; padding:0 16px; margin-top:8px; margin-right:8px; color:#73737A; font-size:14px; background-color:#fff; border:1px solid #DFE0E2; border-radius:40px; vertical-align:top;}
+.main-tab.search .ui-tab-btn:last-child {margin-right:0;}
+.main-tab.search .ui-tab-btn.selected {color:#fff; background-color:#EC008C; border-color:#EC008C;}
+
+.ui-tab.sub-tab {}
+.ui-tab.sub-tab .ui-tab-btns {display:flex; padding:0 24px; border-bottom:1px solid #DFE0E2;}
+.ui-tab.sub-tab .ui-tab-btn {position: relative; flex:1 1; display:block; height:48px; font-size:14px; color:#B9BBC6;}
+.ui-tab.sub-tab .ui-tab-btn.selected {font-weight:700; color:#222;}
+.ui-tab.sub-tab .ui-tab-btn.selected:after { content:''; display:block; position:absolute; bottom:-1px; left:0; width:100%; height:2px; background:#EC008C; }
+
+
+
+/* 키자매거진 */
+/* 공통 */
+
+
+/* button */
+.btn { display:inline-block; font-size:16px; text-align:center; border-radius:8px; }
+.btn.primary { min-width:240px; font-size:20px; font-weight:600; color:#fff; line-height:64px; background-color:#EC008C; }
+.btn.base { min-width:160px; line-height:46px; font-weight:600; font-size:16px; border:1px solid #222; }
+.btn.base.primary { min-width:160px; background:none; border-color:#EC008C; color:#EC008C; }
+.btn.base.cancel { color:#74757E; border-color:#74757E; }
+
+.btn-group { margin-top:30px; text-align:center; line-height:0; font-size:0; } 
+.btn-group button { margin:0 5px; }
+
+.info-top {margin:40px 0 9px;}
+.info-top .info .total {font-size:14px; line-height:21px;}
+.info-top .sch-top {position:relative; display:flex; align-items:center;}
+.info-top .btn-sch { display:inline-block; position:absolute; right:0; top:45%; width:24px; height:24px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -20px; background-size:500px auto; transform:translateY(-50%);}
+.info-top .sch-top > input {height:48px; padding:8px 12px; margin:0 24px 0 0; border:none; outline:none;}
+
+.info-top {display:flex; align-items:center; justify-content:space-between;}
+.info-top .ui-select-btn {height:30px; padding:0 0 0 4px; border:none;}
+.info-top .ui-select-btn:after{right:0;}
+.info-top .ui-select-btn span {width:100%; font-size:12px;}
+.info-top .ui-select-opt{height:30px; padding:0 8px; font-size:12px;}
+
+.sub-head-wrap .find-fund .sch-top { position:relative;}   
+.sub-head-wrap .find-fund .inp-text { height:48px; border:1px solid #1A399E; border-radius:100px; }
+.sub-head-wrap .find-fund .btn-sch { position:absolute; top:50%; right:15px; width:24px; height:24px; margin-top:-12px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto; }
+.sub-conts-wrap {position: relative; padding:0 24px 0 24px;}
+
+.thumb-list .thumb-item {margin-top: 16px;}
+.thumb-list .thumb-item .thumb-img {position:relative; background:#d7d7d7;}
+.thumb-list .thumb-item {padding:0; border-bottom:0;}
+.thumb-list .thumb-item .thumb-cont {display:block; margin:16px 24px 0; text-align:left;}
+.thumb-list .thumb-item .tit {overflow:hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow:ellipsis; word-break: break-word; margin-bottom:6px; font-size:14px; line-height:21px; color:#222;}
+.thumb-list .thumb-item .stxt {display:block; margin-bottom:6px; font-size:14px; color:#73737A;}
+.thumb-list .thumb-item .stxt.date{font-size:12px;}
+.thumb-list .thumb-item > a {overflow:hidden; display:block; width:100%; min-height:301px; padding:0; border:1px solid #DFE0E2; border-radius:24px 0 24px 24px;}
+.thumb-list .thumb-item > a:hover,
+.thumb-list .thumb-item > a:focus {border:1px solid #1A399E; box-shadow:0 3px 8px rgba(26, 57, 158, 0.16); border-radius:24px 0 24px 24px;}
+.thumb-list .thumb-item .thumb-img {position:relative; display:block; width:100%; height:180px; border-radius:24px 0 24px 24px;}
+.thumb-list .thumb-item .thumb-img img {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%;}
+.thumb-list .thumb-item .thumb-img.video::before {z-index:1; content:''; position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%; background-color:#222; opacity:0.2; }
+.modal-conts .board-cont .imgs.video::after,
+.thumb-list .thumb-item .thumb-img.video::after {z-index:1; content:''; position:absolute; top:50%; left:50%; width:48px; height:48px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -390px -50px; background-size:500px 300px; transform: translate(-50%, -50%);}
+
+
+.sub-conts-wrap { margin:24px auto 0 auto; padding:0 24px; }
+/* .sub-conts-wrap .ui-select.f-right + .info-top::before { content:''; display:block; clear:both; } */
+.sub-conts-wrap .sch-box .sch-top {position:relative;}
+/* .sub-conts-wrap .sch-top { position:relative; margin:0 auto; padding:0 24px; height:48px; text-align:left; border-radius:100px; border:2px solid #113585; box-shadow:0px 2px 4px rgba(57, 53, 210, 0.2); } */
+.sub-conts-wrap .sch-box .inp-txt { height:48px; border:1px solid #1A399E; border-radius:100px; }
+.sub-conts-wrap .sch-box .btn-sch { position:absolute; top:50%; right:15px; width:24px; height:24px; margin-top:-12px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto;}
+
+.board-conts .board-head {position:relative}
+.board-conts .btn-sns {position: absolute; bottom:-5px; right:0; width:30px; height:30px;}
+.board-conts .btn-sns:after {content:''; display:inline-block; position:absolute; top:50%; right:0; width:16px; height:16px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -370px 0; background-size:500px auto; transform:translateY(-10px);}
+.board-conts + .ui-acco.info {margin-top:56px;}
+.board-head .board-tit {margin-bottom:8px; font-size:16px; line-height:24px; color:#222; font-weight:700; text-align:left;}
+.board-sub-tit {display:inline-block; font-size:0;}
+.board-sub-tit .board-date,
+.board-sub-tit .writer {display:inline-block; font-size:14px; line-height:21px; color:#73737A; text-align:left;}
+.board-sub-tit .writer::before {content:''; display:inline-block; width:1px; height:8px; margin-right:9px; background-color:#73737A;}
+.board-sub-tit .writer {margin-left:8px;}
+.board-cont {margin-top:25px; padding:40px 0 0 0; border-top:1px solid #222;}
+.board-cont .imgs {display:block; width:100%; height:180px; margin-bottom:24px; background: #d7d7d7;}
+.board-cont .board-txt {display:block; padding-bottom:24px; font-size:14px; line-height:21px; color:#222;}
+.board-cont .file-box {width:100%; margin-bottom:16px; padding:18px 16px; background-color:#F2F3F5;}
+.board-prev-next {margin-bottom:16px;}
+.board-prev-next > dl {display:flex; align-items:center; height:51px; font-size:12px; color: #222; border-bottom:1px solid #d7d7d7;}
+.board-prev-next > dl dt {width:48px; line-height:18px; color:#73737A; }
+.board-prev-next > dl dd {width:calc(100% - 48px);}
+.board-prev-next > dl dd a {display:block; height:100%; color:#73737A; overflow:hidden; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:1; text-overflow:ellipsis; word-break: break-word; line-height:18px;}
+.board-prev-next > dl dd a:hover,
+.board-prev-next > dl dd a:focus {color:#222;} 
+.file-box * {display:block;}
+.file-box .btn-file {font-size:12px; line-height:18px; color:#222;}
+.file-box .btn-file:focus {color:#1A399E;}
+.file-box .btn-file + .btn-file {margin-top:8px;}
+.file-box .btn-file span {position:relative;}
+.file-box .btn-file span::before {content:''; display:inline-block; width:16px; height:16px; padding-right:24px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -390px 0; background-size:500px auto; vertical-align:middle;}
+
+/* 버튼추가 */
+.btn-right {text-align:right;}
+.btn.sub {display:inline-block; width:auto; min-width:80px; min-height:40px; padding:0 20px; border-radius:8px; font-size:12px; line-height:38px; text-align:center; border:1px solid #222; color:#222;}
+
+
+
+
+/* 키움뉴스 */
+.ui-tab-pnl .info-top {margin-top:0;}
+.tbl-info + .tbl-list-wrap {margin-top: 8px;}
+.tbl-list-wrap {border-top:1px solid #222;}
+.tbl-list-wrap li { border-bottom:1px solid #DFE0E2;}
+.tbl-list-wrap a {display:block; padding:16px 0 17px;}
+.tbl-list-wrap a:hover dl > .tit,
+.tbl-list-wrap a:focus dl > .tit {color:#1A399E;}
+.tbl-list-wrap dl > .tit {margin-bottom:4px; overflow:hidden; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; text-overflow:ellipsis; word-break: break-word; font-size:14px; line-height:21px; font-weight:600; color:#222;}
+.tbl-list-wrap dl > .date {font-size:12px; color:#73737A; line-height:18px; color:#73737A;}
+.tbl-list-wrap + .btn-more {margin-bottom:75px;}
+
+/* 이벤트 */
+.list-area {border-top:1px solid #222;}
+.list-area.flex .list-item{display:flex; align-items:center;}
+.list-area .list-item{position:relative; padding:16px 0; border-bottom:1px solid #DFE0E2;}
+.list-area .list-item .list-cont{margin:-10px 0 0 20px;}
+.list-area .list-item .event-tit {display:block; margin:10px 0 4px; overflow:hidden; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; text-overflow:ellipsis; word-break: break-word; font-size:14px; line-height:21px; color:#222; font-weight:600;}
+.list-area .list-item .event-date {margin-top:8px; font-size:12px; line-height:18px; color:#73737A; font-weight:400;}
+.list-area .list-item .keyword{color:#1A399E;}
+.list-area .list-item .imgs{overflow:hidden; position:relative; min-width:88px; height:64px; border-radius:8px; background:#d7d7d7;}
+.list-area .list-item .imgs.video::before{content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:24px; height:24px; background: url(/kiam/moWeb/resources/images/common/ico_common.png); background-position:-390px -20px; background-size:500px 300px;}
+.list-area .list-item .imgs > img{max-width:100%; max-height:100%;}
+/* .list-area .list-item.event-end .event-dimmed-layer {position:absolute; top:0; left:0; right:0; bottom:0; background-color:rgba(100, 100, 100, .5);} */
+.list-area .list-item .d-day {position:absolute; display:block; top:0px; right:0; min-width:30px; height:16px; padding:0 6px; line-height:16px; font-size:10px; background-color:#1a399e; color:#fff; text-align:center; border-top-right-radius:8px; border-bottom-left-radius:8px;}
+.list-area .list-item.event-end .event-tit {color:#9D9DA5; font-size:12px;}
+.list-area .list-item .btn-link{position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%;}
+
+.board-conts .board-sub-tit {position:relative;}
+.board-sub-tit .d-day {display:inline-block; min-width:30px; height:20px; margin-left:8px; padding:0 8px; line-height:20px; font-size:10px; background-color:#1a399e; color:#fff; text-align:center; border-radius:4px; vertical-align:top;}
+.board-cont .event-win {padding:24px; background-color:#F2F3F5}
+.board-cont .event-win .tit {position:relative; margin-bottom:8px;  font-size:14px; line-height:21px; color:#222; font-weight:700;}
+.board-cont .event-win .tit::before {content:''; display:inline-block; width:24px; height:24px; margin-right:4px; background:url(/kiam/moWeb/resources/images/common/ico_conts.png) no-repeat 0 -60px; background-size:500px 500px; vertical-align:top;}
+.board-cont .event-win .txt > span {display:block; margin-top:8px; color:#73737A;}
+.board-cont.t1 {padding:0; border-top:none;}
+.board-cont .imgs {position:relative;}
+.board-cont .imgs img {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%;}
+.board-txt .s-tit {display:block; color: #000000;}
+
+
+/* 팝업 */
+.banner-link {margin-top:56px;}
+.banner-link a {display:block; position:relative; padding:24px 24px 24px 32px; border-radius:16px; background:#F1F7FE url(/kiam/moWeb/resources/images/dummy/banner1.png) no-repeat right 24px center; background-size:60px auto;}
+.banner-link .ban-tit {display:block; font-size:16px; line-height:24px; font-weight:700; color:#222;}
+.banner-link .ban-des {font-size:14px; line-height:21px;}

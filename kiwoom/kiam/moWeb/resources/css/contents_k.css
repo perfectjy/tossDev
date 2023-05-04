@@ -1,0 +1,87 @@
+.btn-group.flex { display:flex; margin-left:-4px; margin-right:-4px;  }
+.btn-group.flex a { flex:1 1; margin:0 4px;  }
+
+
+/* mo button sticky
+.btn-area{ display: flex; flex-direction: row; flex-wrap: nowrap; }
+.btn-area.sticky{ position: fixed; left: 0; right: 0; bottom: 0; margin: 0; z-index: 99; }
+.btn-area.sticky [class^=btn-mo-] { flex-grow:1; width: 50%; min-width: auto; min-height: 64px; font-size: 16px; font-weight: 600; }
+.btn-area.sticky .btn-mo-agree{ color: #FFF; background-color: #1A399E;}
+.btn-area.sticky .btn-mo-agree:active{ background-color: #1D3480; }
+.btn-area.sticky .btn-mo-cancel{ color: #B9BBC6; border-top: 1px solid #DFE0E2; background-color: #FFF;}
+.btn-area.sticky .btn-mo-cancel:active{ color: #73737A; }
+ */
+/*buttons
+.btn { width: 100%; line-height: inherit !important; }
+.btn { display:inline-flex; justify-content: center; align-items: center; min-width: 100%; min-height: 48px; padding: 0 40px; font-size: 16px; border-radius: 32px; background-color:#FFF; text-align: center;}
+.btn:disabled { color: #B9BBC6 !important; border: 1px solid #DFE0E2 !important; background-color: #DFE0E2 !important; cursor: default; }
+.btn:disabled:active { color: #B9BBC6; border: 1px solid #DFE0E2; background-color: #DFE0E2; }
+.btn.primary { color: #EC008C; font-weight: 600; border: 1px solid #EC008C; background-color: #FFF;}
+.btn.primary:active { color: #FFF; background-color: #EC008C; }
+.btn.secondary { color: #222; border: 1px solid #222; }
+.btn.secondary:active { background-color: #F7F8F8; }
+.btn.tertiary { color: #9D9DA5; border: 1px solid #9D9DA5;}
+.btn.tertiary:active { background-color: #F7F8F8; }
+.btn.fill { color: #FFF; background-color: #EC008C;}
+.btn.fill:active { background-color: #C02882; }
+.btn.lg { min-width: 200px; min-height: 56px; font-size: 20px; }
+*/
+/*more button*/
+/* .btn-more{ width: 100%; background-color: #FFF;}
+.btn-more > span { position:relative; display:inline-block; color: #9D9DA5; font-size: 14px; line-height:18px; padding:16px 20px 16px 0; }
+.btn-more > span:after { content:''; position:absolute; top:50%; right:0; transform:translateY(-50%);  width:16px; height:16px; opacity:0.5; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 0; background-size:500px auto;   }
+.btn-more:active{ background-color: #F7F8F8; }
+.btn-more:active > span { color: #222; opacity: 1;}
+.btn-more:active > span:after { opacity: 1;} */
+
+
+/*icon button*/
+.btn-icon{ display:inline-block; min-height:40px; padding:0 24px; border: 1px solid #222; border-radius:40px;}
+.btn-icon span{ position:relative; display:inline-block; font-size:12px; font-weight:600px; }
+.btn-icon span::after{ content: ''; position:absolute; top:0; right:0; width:16px; height:16px; background: url('../images/common/ico_comm.png') -120px 0 no-repeat; background-size: 500px 500px;}
+.btn-icon.box { border-radius:8px; }
+
+/*no-line button*/
+.btn-noline{padding: 4px;}
+.btn-noline span{ display: inline-flex; align-items: center; color: #222; font-size: 14px; font-weight: 500;}
+.btn-noline.dw span::after{ content: ''; display: inline-block; width: 16px; height: 16px; margin-left: 4px; background: url('../images/common/ico_comm.png') -260px 0 no-repeat; background-size: 500px 500px;}
+
+/*text list
+.txt-list{ text-align:left; word-break:keep-all; display: block; margin-top:24px;}
+.txt-list > li,
+.txt-list:not(ol):not(ul){ position: relative; font-size: 14px; font-weight: 600; margin-top: 8px; padding-left: 12px; line-height: 21px; }
+.txt-list > li:first-child{ margin-top:0 !important; }
+.txt-list > li::before,
+.txt-list:not(ol):not(ul)::before{ position: absolute; } */ 
+/*text dash*/
+/* .txt-list.dash li::before, p.txt-list.dash:not(ol):not(ul)::before{ content:''; top:10px; left: 0; width:4px; height:1px; background-color:#222; } */
+
+/* .txt-list.disc li::before, .txt-list.disc:not(ol):not(ul)::before{ content:''; top:10px; left: 0; width:4px; height:4px; border-radius:100%; background-color:#73737A; } */
+
+/*text star*/
+/* .txt-list.star,
+.txt-list.star:not(ol):not(ul){ color: #73737A; }
+.txt-list.star li{ font-size: 14px;}
+.txt-list.star li::before, .txt-list.star:not(ol):not(ul)::before{ content:'*'; top: 2px; left: 0;}
+
+.txt-lineh{ line-height: 24px; } */
+
+
+
+/* KIM0604010000M */
+.btn-unline span { padding-left:2px; color:#222; font-size:12px; font-weight: 500; }
+.btn-unline.icon-dw::after { content:''; position:relative; top:4px; display:inline-block; width:16px; height:16px; margin-left:2px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) -280px 0; background-size: 500px auto; }
+
+.h3-sub { position:relative; margin:56px 0 16px 0; color:#222; font-size:16px; line-height: 24px; font-weight: 700; }
+.h3-sub.dot { padding-left: 8px; font-size:16px; line-height:24px; font-weight:700;}
+.h3-sub.dot::before {content:''; position: absolute; left:0; top:8px; width: 4px; height:4px; border-radius: 50%; background:#EC008C;}
+.fund-title-box {  }
+.fund-title-box .btns { margin-top: 16px; }
+.fund-notice { border-top:1px solid #222; }
+.fund-notice .title { color:#222; font-size:14px; line-height: 21px; font-weight: 700; margin:24px 0 8px; }
+.fund-notice p { color:#73737A; line-height:21px; }
+.fund-notice .noti-txts { display:block; margin:40px 0; line-height:24px; font-weight:500; color:#222;}
+.fund-notice .txt-list.disc li { color:#73737A; }
+
+.tbl.is-colgroup tbody th, 
+.tbl.is-colgroup tbody td { height: auto; padding:13px 8px;}

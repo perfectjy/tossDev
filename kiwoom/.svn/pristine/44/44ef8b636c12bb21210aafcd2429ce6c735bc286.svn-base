@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+.main-slick-wrap { position:relative; }
+.main-slick-wrap .slick-dotted.slick-slider { margin-bottom:0; }
+.main-visual .item-inner img { width:100%; }
+.main-visual .visual-utils { position:absolute; bottom:35.7%; left:32px; width:200px; }
+.main-visual .visual-utils .btns { display:inline-flex; flex-direction:column; margin-top:50px;  }
+.main-visual .visual-utils .btns a { width:fit-content; position:relative; display:inline-block; height:48px; padding:16px 44px 0 24px; border-radius:80px; border:1px solid #fff; color:#fff; }
+.main-visual .visual-utils .btns a:after,
+.main-visual .visual-utils .btns a.btn-kosef:before { content:''; display:block; position:absolute; top:15px; right:24px; width:16px; height:16px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -300px -50px; background-size: 500px auto;}
+.main-visual .visual-utils .btns a.btn-kosef { padding-left:95px; }
+.main-visual .visual-utils .btns a.btn-kosef:before { top:18px; left:24px; width:64px; height:10px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -230px -120px; background-size: 500px auto; }
+.main-visual .visual-utils .btns a + a { margin-top:16px; }
+.main-visual .visual-utils .slick-info .play { display:none; }
+.main-visual .visual-utils .slick-info .page { display:inline-block; vertical-align:top; }
+.main-visual .visual-utils .slick-info .slick-control { display:inline-block; vertical-align:top;  }
+.main-visual .visual-utils .slick-info .slick-dots { position:static; font-size:0; line-height:0; }
+.main-visual .visual-utils .slick-info .slick-dots .slick-dots li { position: relative; margin: 0 2px; border-radius: 50%; }
+.main-visual .visual-utils .slick-info .slick-dots li button:before { background:#fff; opacity:0.5; }
+.main-visual .visual-utils .slick-info .slick-dots li.slick-active button:before { background:#fff; opacity:0; }
+.main-visual .visual-utils .slick-info .slick-dots {position: relative;  display: flex !important; bottom: inherit;}
+.main-visual .visual-utils .slick-info .slick-dots li{ position: relative; margin: 0 2px; border-radius: 50%;}
+.main-visual .visual-utils .slick-info .slick-dots li::after{ content: ''; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); width: 6px; height: 6px; background-color: #FFF; opacity: 0.4; border-radius: 50%;}
+.main-visual .visual-utils .slick-info .slick-dots .slick-active::after{ opacity: 1 !important; }
+.main-visual .visual-utils .slick-info .slick-dots li button{width: 16px; height: 16px; border-radius: 50%;}
+.main-visual .visual-utils .slick-info .slick-dots li button span{ display: inline-block; text-indent: -9999px;}
+.main-visual .visual-utils .slick-info .slick-active .spinner{position: absolute; left: 1px; top:1px;}
+.main-visual .visual-utils .slick-info .slick-active .spinner .path{ stroke-dasharray: 500; stroke-dashoffset: 0; transform: rotate(-90deg); animation: rotate 19s; stroke: #FFF; transform-origin: center;}
+@keyframes rotate {
+    0% {
+        stroke-dashoffset: 500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.main-wrap .sch-box { margin:0 auto; padding:0 24px; }
+.main-wrap .sch-box .sch-top { position:relative; margin:0 auto; padding:0 80px 0 24px; height:48px; text-align:left; border-radius:100px; border:2px solid #113585; box-shadow:0px 2px 4px rgba(57, 53, 210, 0.2); }
+.main-wrap .sch-box .btn-sch { position: absolute; top: 50%; right: 15px; width: 24px; height: 24px; margin-top: -12px; background: url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size: 500px auto; }
+.main-wrap .sch-box .inp-base{ padding:0; height:initial; font-size:16px; font-weight:600; line-height:44px; border:0;  }
+.main-wrap .sch-box .inp-base::placeholder { color:#113585; }
+.main-wrap .sch-box .btn-clear { position:absolute; right:45px; top:50%; transform:translateY(-50%);  }
+.main-wrap .sch-box .sch-tips { margin:10px -24px 0 -24px; }
+.main-wrap .sch-box .sch-tips .scroll-list { padding:0 24px;  }
+.main-wrap .sch-box .sch-tips a { display:inline-block; padding:10px; color:#222; font-size:12px; }
+
+.main-conts { margin-top:60px; padding:0 24px 55px 24px;  }
+.main-conts { margin-top:0; }
+.main-conts h2 { margin:40px 0 16px 0;  font-size:20px; font-weight:700; line-height:30px;  }
+.main-conts h2 span { display:inline-block; position:relative; padding-left:10px; }
+.main-conts h2 span:after { content:''; display:block; position:absolute; top:0; left:0; width:6px; height:6px; border-radius:50%; background:#ec3690; }
+.main-conts h2 a { position:relative; padding-right:15px; }
+.main-conts h2 a::after { content:''; display:block; position:absolute; top:7px; right:0; width:10px; height:10px; border-top:2px solid #222; border-right:2px solid #222; transform:rotate(45deg); /* 각도 */  }
+
+.noti-list { border:1px solid #DFE0E2; padding:0 24px 24px 24px; border-radius:24px 0px 24px 24px; }
+.noti-list li:first-child { border-top:0;  }
+.noti-list li { border-top:1px solid #DFE0E2; }
+.noti-list li a { display:block; padding:16px 0; }
+.noti-list li span { display:block; line-height:24px;  }
+.noti-list li { padding:24px 0 0 0;  }
+.noti-list li .txts { margin-bottom:8px; font-size:16px;  } 
+.noti-list li .date { font-size:14px; color:#74757E; } 
+.noti-list li a:hover .txts { color:#1A399E; }
+
+.fund-tab .ui-tab { padding:0; }
+.fund-tab .ui-tab .ui-tab-btns { margin:0 -24px; padding:0 24px;  }
+.fund-tab .ui-tab .ui-tab-btns .ui-tab-btn { margin:0 4px; height:40px; border-radius:40px; padding:0 16px; background:#F2F3F5; color:#74757E;  }
+.fund-tab .ui-tab .ui-tab-btns .ui-tab-btn span { line-height:21px; padding:0; height:auto; }
+.fund-tab .ui-tab .ui-tab-btns .ui-tab-btn.selected { background:#1A399E; color:#fff; }
+.fund-tab .ui-tab .ui-tab-btns .ui-tab-btn.selected span { color:#fff; }
+.fund-tab .ui-tab .ui-tab-pnls { padding:18px 0 0 0; }
+.fund-tab .ui-tab-content { margin:24px 0 0 0; }
+
+.fund-list-group { overflow:hidden; margin:0 -24px; }
+.fund-list { padding: 0 0 0 24px; }
+.fund-list:after { content:''; display:block; clear:both; }
+.fund-list .item { margin:0 8px; }
+.fund-list .item { float:left; width:272px;  padding-top:5px; line-height:0; font-size:0; }
+.fund-list .item a { position:relative; display:block; height:302px; padding:40px 32px; border:1px solid #DFE0E2; border-radius:20px 0 20px 20px; box-shadow:0 6px 12px 0 rgb(0 0 0 / 4%) }
+.fund-list .item a:hover { border-color:#1A399E; }
+.fund-list .item a .title { overflow:hidden; margin:16px 0 0 0; font-size:20px; line-height:30px; color:#222;  display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; text-overflow:ellipsis; }
+.fund-list .item a > .txts { overflow:hidden; display:block; margin-top:8px; font-size:14px; line-height:21px; color:#878c91;  text-overflow:ellipsis; white-space:nowrap; }
+.fund-list .item.pick a { background:#F1F7FE; border-color:#113585; }
+.fund-list .item.pick a:after { content:''; display:block; position:absolute; top:-6px; right:24px; width:48px; height:48px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -80px; background-size:500px auto;  }
+.fund-list .item .rate { position:absolute; bottom:40px; right:32px; font-size:20px; text-align:right; }
+.fund-list .item .rate .points { letter-spacing:1px; font-weight:700; font-size:18px; }
+.fund-list .item .rate em { padding-right:5px; font-size:38px; font-family: inherit; } 
+.fund-list .item .rate .txts { display:block; font-size:14px; color:#74757E; line-height:21px; }
+.fund-list .item .rate .txt-up,
+.fund-list .item .rate .txt-drop { font-size:32px; line-height:42px; font-weight:700; }
+.fund-list .tag-wrap { display:block; }
+.fund-tab .slick-dots { left:0; right:24px;  }
+
+.fund-news h2 { margin-top:60px; }
+
+.fund-slider { overflow:hidden; position:relative; margin:0 -24px; padding:5px 24px 0 24px; }
+.fund-slider .swiper-slide { width:75%; }
+.fund-slider .controlpage { position:static;  text-align:center;  line-height:0; }
+
+.main-bnr .bnr-kakao { position:relative; display:flex; align-items: center; background:#FEEE79; height:100px; padding-left:32px; border-radius: 24px 0px 24px 24px; }
+.main-bnr .bnr-kakao span { display:block; font-size:16px; line-height:24px; font-weight:700; }
+.main-bnr .bnr-kakao:before { content:'';  display:block; position:absolute; top:50%; right:24px; transform:translateY(-50%);  width:64px; height:44px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -430px -210px; background-size: 500px auto; }
+
+.main-bnr { margin:56px 0; }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+    $('.button_filter li').eq(0).addClass('on');
+    $('.sub_filter .tab_wrap').eq(0).show().find('li').eq(0).addClass('on');
+    $('.button_filter a').on('click',function(){
+      let idx = $(this).parent().index();
+      $('.button_filter li').removeClass('on');
+      $(this).parent().addClass('on');
+
+      $('.sub_filter .tab_wrap').hide();
+      $('.sub_filter .tab_wrap li').removeClass('on');
+      $('.sub_filter .tab_wrap').eq(idx).show().find('li').eq(0).addClass('on');
+    })
+    $('.sub_filter a').on('click',function(){
+      $('.sub_filter .tab_wrap li').removeClass('on');
+      $(this).parent().addClass('on');
+    })
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="review">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">보험가입 리뷰</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+            <div class="governing ta_l">
+							<h2 class="governing_title">“가입 간편하고 저렴해서 좋았어요”<br>고객들이 들려주는 생생한 가입 리뷰</h2>
+						</div>
+						<!-- tab_line -->
+						<div class="tab tab_line tab_left button_filter">
+							<ul class="tab_wrap">
+								<li><a href="javascript:void(0);"><span>자동차보험</span></a></li>
+								<li><a href="javascript:void(0);"><span>장기보험</span></a></li>
+								<li><a href="javascript:void(0);"><span>일반보험</span></a></li>
+							</ul>
+						</div>
+						<!--// tab_line -->
+						<!-- tab_content -->
+						<div class="sub_filter">
+							<!-- tab_scroll -->
+							<div class="tab tab_scroll">
+								<ul class="tab_wrap">
+									<li><a href="javascript:void(0);"><span>전체</span></a></li>
+									<li><a href="javascript:void(0);"><span>자동차보험(개인)</span></a></li>
+									<li><a href="javascript:void(0);"><span>자동차보험(법인)</span></a></li>
+									<li><a href="javascript:void(0);"><span>이륜차보험</span></a></li>
+								</ul>
+								<ul class="tab_wrap">
+									<li><a href="javascript:void(0);"><span>전체</span></a></li>
+									<li><a href="javascript:void(0);"><span>운전자보험(장기)</span></a></li>
+									<li><a href="javascript:void(0);"><span>주택화재보험(장기)</span></a></li>
+									<li><a href="javascript:void(0);"><span>건강보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>암보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>실손보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>연금보험(유)</span></a></li>
+									<li><a href="javascript:void(0);"><span>어린이보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>사업장 화재보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>전환형실손</span></a></li>
+								</ul>
+								<ul class="tab_wrap">
+									<li><a href="javascript:void(0);"><span>전체</span></a></li>
+									<li><a href="javascript:void(0);"><span>해외여행보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>장기체류보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>국내여행보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>골프보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>하이펫보험</span></a></li>
+									<li><a href="javascript:void(0);"><span>풍수해보험(주택)</span></a></li>
+									<li><a href="javascript:void(0);"><span>풍수해보험(소상공인)</span></a></li>
+								</ul>
+							</div>
+							<!-- //tab_scroll -->
+						</div>
+						<!-- //tab_content -->
+            <div class="comp">
+              <!-- 리뷰 컨텐츠 영역 -->
+              <div class="governing nodata" data-icon="nodata2">
+                <div class="governing_title">내역이 없어요.</div>
+              </div>
+            </div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

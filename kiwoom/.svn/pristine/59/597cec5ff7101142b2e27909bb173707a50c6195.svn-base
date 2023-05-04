@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* 상단 */
+.sub-head-wrap { position:relative; padding:16px 24px 0 24px; text-align:center; }
+
+.sub-wrap.fund-detail-wrap .sub-head-wrap { min-height:277px; padding:40px 0 0 0; background: linear-gradient(142.43deg, #1A399E 35.19%, #4D38CE 103.99%); }
+.sub-wrap.fund-detail-wrap .btn-sns { position:absolute; top:17px; right:24px; }
+.sub-wrap.fund-detail-wrap .head-group { padding:0 12%; }
+.sub-wrap.fund-detail-wrap .head-group h2 { color:#fff; line-height:30px; font-size:20px; font-weight:700  }
+
+.sub-head-wrap .tag-wrap { margin-bottom:10px; text-align:center; }
+.sub-head-wrap .tag-wrap em { margin:2px 2px; }
+
+/* 01. 펀드 */
+.fund-select-wrap {position:relative; margin:0 24px; border-bottom:1px solid #B9BBC6; }
+.fund-select-wrap .ui-select-btn { width:calc(100% - 24px); height:48px; padding:0; text-align:center; background:transparent; border:0; color:#B9BBC6; }
+.fund-select-wrap:after { content:'';  position:absolute; width:24px; height:24px; top:50%; right:0; margin-top:-12px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -50px; background-size:500px auto;  }
+
+/* 상품추천 */
+.subfund-list .subfund-item a { position:relative; display:block; height:100%; padding:30px 32px 0 32px; background:#fff; border:1px solid #B9BBC6; border-radius: 24px 0px 24px 24px; }
+.subfund-list .subfund-item a .title { display: -webkit-box; overflow:hidden; margin:8px 0 0 0; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size:16px; line-height:24px; color:#222; text-overflow:ellipsis; word-break: break-word; }
+.subfund-list .item { padding-bottom:50px; }
+.subfund-list .info { display:block; margin-top:8px; color:#73737A; font-size:14px; line-height:21px; }
+.subfund-list .rate { margin-top:32px; display:flex; justify-content:space-between; }
+.subfund-list .rate .points { color:#EC008C; font-size:24px; line-height:34px; font-weight:700; }
+.subfund-list .rate em { padding-right:5px; font-size:24px; color:#EC008C; } 
+.subfund-list .rate span { display:block; font-size:14px; color:#73737A; margin-top:5px; }
+.subfund-list .rate .txts { font-size:12px; color:#73737A; line-height:34px; }
+.subfund-list .subfund-item.best a { border-color:#1A399E; background:#fff; }
+.subfund-list .subfund-item.best a .title { color:#1A399E; }
+
+
+.fund-info-wrap { position:relative; }
+.fund-info-wrap .note { position:absolute; top:-21px; right:24px; color:#DFE0E2; line-height:16px; }
+.fund-info-wrap .summary-group.on .summary.add { display:flex;  }
+.fund-info-wrap .summary-group { margin:-51px 20px 0; background:#fff; border: 1px solid #1A399E; border-radius:8px; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16); }
+.fund-info-wrap .summary-group .btn-toggle { width:100%; height:30px; display:flex; align-items:center; justify-content:center; }
+.fund-info-wrap .summary-group .btn-toggle:after {content:''; display:inline-block; width:16px; height:16px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 0; background-size:500px auto; }
+.fund-info-wrap .summary-group.on .btn-toggle:after { transform: rotate(-180deg); }
+.fund-info-wrap .summary { position:relative;  display:flex; justify-content:center;  }
+.fund-info-wrap .summary > div { flex:1 1; text-align:center; padding:24px 0;  }
+.fund-info-wrap .summary dt { font-size:12px; line-height:18px; color:#74757E; }
+.fund-info-wrap .summary dd { margin-top:4px; font-size:16px; line-height:24px; }
+.fund-info-wrap .summary dd strong.grade span { display:block; font-size:14px; line-height:21px;   }
+.fund-info-wrap .summary.add { display:none; margin-top:24px; }
+.fund-info-wrap .summary.add:before { content:''; position:absolute; top:0; left:24px; right:24px; border-top:1px dotted #DFE0E2; }
+.fund-info-wrap .summary > div { min-height:40px; padding-bottom:0; }
+.fund-info-wrap .doc-info { margin:24px 0;  }
+.fund-info-wrap .doc-info .btns { display:flex; align-items:center; padding:0 6%; }
+.fund-info-wrap .doc-info .btns > * { position:relative; flex: 1 1; }
+.fund-info-wrap .doc-info .btns .sel .ui-select select { width:100%; }
+.fund-info-wrap .doc-info .btns .sel a { display:block; padding-top:0; margin-top:10px; }
+.fund-info-wrap .doc-info .btns .sel a:before { display:none; }
+.fund-info-wrap .doc-info .btns a { padding-top:50px; font-size:14px; text-align:center; line-height:21px; color:#74757E; }
+.fund-info-wrap .doc-info a:before { content:''; position:absolute; top:0; left:50%; margin-left:-20px; width:40px; height:40px; background:url(/kosef/moWeb/resources/images/common/ico_conts.png) no-repeat 0 0; background-size:500px auto; }
+.fund-info-wrap .doc-info a.doc-invest:before { background-position-x:-50px; }
+.fund-info-wrap .doc-info a.doc-tem:before { background-position-x:-100px; }
+.fund-info-wrap .doc-info a.doc-fact:before { background-position-x:-150px; }
+
+.fund-check { padding:0 6%; margin:55px auto; }
+.fund-check.on .result { display:block; }
+.fund-check .summary > span { margin:16px 0 0 0; display:block; font-weight:600; font-size:16px; }
+.fund-check .summary > span.first { margin:0; font-size:14px; }
+.fund-check .summary > span.first + span { margin-top:8px; }
+.fund-check .summary .ui-select { display:inline-block; height:37px; border-bottom:1px solid #222; }
+.fund-check .summary .ui-select .ui-select-btn { width:120px; font-size:24px; line-height:34px; font-weight:700; padding:0; }
+.fund-check .summary .ipt { display:inline-block; width:160px; padding:0; border-bottom:1px solid #1A399E;}
+.fund-check .summary .ipt .inp-text { padding:0; border:0; height:37px;  background:transparent; color:#1A399E; font-size:24px; line-height:34px; font-weight:700; }
+.fund-check .summary .btn-group { margin-top:24px; }
+.fund-check .summary .btn-group button { margin:0; }
+.fund-check .summary .txt-smile span { position:relative; display:inline-block; padding-right:32px;   }
+.fund-check .summary .txt-smile span:after { content:''; position:absolute; top:-4px; right:0; width:24px; height:24px;  background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -50px -80px; background-size:500px auto;  }
+.fund-check .result { display:none; overflow:hidden; margin-top:24px; background:#F1F7FE; border-radius:24px; }
+.fund-check .result dl { display:flex; flex-wrap:wrap; padding:8px 24px;   }
+.fund-check .result dl div { flex:1 1 40%; background:#F1F7FE; text-align:center; }
+.fund-check .result dl div + div { border-top:1px solid #fff ;  }
+.fund-check .result dl div dt { padding:16px 0 4px 0; }
+.fund-check .result dl div dd { padding:4px 0 16px 0; font-weight:700; font-size:20px; line-height:30px;  }
+
+.fund-info-tab .ui-tab .ui-tab-btn { background:#fff;  }
+.fund-info-tab .ui-tab .ui-tab-btns { display:flex; border-bottom:1px solid #DFE0E2; padding:0 24px;  }
+.fund-info-tab .ui-tab .ui-tab-btns button { flex:1 1;  }
+.fund-info-tab .ui-tab .ui-tab-btns:after { content:''; display:block; clear:both; }
+.fund-info-tab .ui-tab .ui-tab-btn { position:relative; }
+.fund-info-tab .ui-tab .ui-tab-btn { display:inline-block; font-size:14px; height:42px; color:#73737A; }
+.fund-info-tab .ui-tab .ui-tab-btn.selected {color: #222; font-weight:700; }
+.fund-info-tab .ui-tab .ui-tab-btn.selected:after { content:''; display:block; position:absolute; bottom:0;  left:0; width:100%;  height:2px; background:#EC008C; }
+.fund-info-tab .ui-tab .ui-tab-pnls { padding:40px 24px; }
+
+.fund-detail .contents-box strong { display:block; margin-bottom:8px; }
+.hide + .fund-detail { margin-top:0px; }
+.fund-detail { margin-top:56px;}
+.fund-detail .h3 { margin:0 0 16px 0;  font-size: 16px; line-height: 24px; font-weight: 700; }
+.fund-detail .contents-box strong{ display: block; margin-bottom: 8px; color: #1A399E; font-size: 14px; font-weight: 700;}
+.fund-detail .contents-box strong:not(:first-child){ margin-top: 16px; }
+.fund-detail .contents-box strong + p{ color:#73737A; font-size: 14px; font-weight: 500; }
+.fund-detail .info-list { display:flex; position:relative; flex-direction: row; flex-wrap: wrap; border-top: 1px solid #222; }
+.fund-detail .info-list div { width:50%; padding: 16px 16px 16px 0; border-bottom: 1px solid #DFE0E2; }
+.fund-detail .info-list div.full { width:100%; }
+.fund-detail .info-list div dt { margin-bottom: 4px; color:#73737A; font-size:12px; line-height:21px; font-weight: 400; }
+.fund-detail .info-list div dd { color:#222; font-size:14px; line-height: 21px; font-weight: 600; }
+
+.fund-detail .info-list.pay {display:block; border:0; }
+.fund-detail .info-list.pay > div:first-child { margin-top:0; }
+.fund-detail .info-list.pay > div { position:relative; margin-top:40px;  width:auto; border:0; background:#F2F3F5; border-radius:16px; padding:21px 10% 21px calc(10% + 80px); }
+.fund-detail .info-list.pay > div:before { content:''; position:absolute; top:20px; left:10%; width:40px; height:40px; background:url(/kiam/moWeb/resources/images/common/ico_conts.png) no-repeat -200px 0; background-size:500px auto; }
+.fund-detail .info-list.pay > .ico-pay-total:before { background-position-x:-250px; }
+.fund-detail .info-list.pay > .ico-pay-fee:before { background-position-x:-300px; }
+.fund-detail .info-list.pay > div .sum:after { content:'+'; color:#74757E; position:absolute; bottom:-29px; margin-right:-8px; right:50%; font-size:28px; font-weight:300;  }
+.fund-detail .info-list.pay > div .ui-tooltip-btn { margin-left:8px; }
+.fund-detail .btn-group .btn { width:auto; }
+.fund-detail .btn-group .btn { margin-right:8px; }
+.fund-detail .btn-group .btn.primary { min-width:initial; }
+.fund-detail .btn-group .btn.primary:before { min-width:initial; }
+
+.fund-detail .contents-box .btn-group { position:relative; font-size:0; white-space:nowrap; margin:0 -20px 0 -20px; }
+.fund-detail .contents-box .scroll-list {padding:30px 20px 30px 20px;overflow-x:auto;-webkit-overflow-scrolling:touch;vertical-align:top;}
+
+.fund-pic-wrap { padding:40px 0 40px 24px; background:#F1F7FE; }
+.fund-pic-wrap h3.dot { font-size:20px; line-height:30px; }
+.fund-pic-wrap h3.dot:before { width:6px; height:6px; }
+.fund-pic-wrap .subfund-list { margin:16px 0 0 0; }
+.fund-pic-wrap .subfund-item { width:272px; height:206px; margin:0 8px; }
+.fund-pic-wrap + .ui-acco.info { margin-top:55px; }
+.fund-pic-wrap .slick-dots { margin-left:-24px; width:calc(100% + 24px); }
+.fund-pic-wrap .slick-prev, .fund-pic-wrap .slick-next { display:none !important; }
+
+.sub-title { display:flex; justify-content:space-between; align-items:baseline;}
+.sub-title .h4 { margin:0; }
+.sub-title .msg { font-size:10px; line-height:16px; color:#9D9DA5; }
+.sub-title + .sub-opt { margin-top:15px; }
+.sub-opt { text-align:right; }
+.sub-opt select { width:auto;  }

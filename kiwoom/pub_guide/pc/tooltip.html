@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="../../kiam/pcWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="../../pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="../../kiam/pcWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="../../kiam/pcWeb/resources/js/ui.global.js"></script>
+	<script src="../../kiam/pcWeb/resources/js/ui.common.js"></script>
+	<script src="../../pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Tooltip</h2>  
+            <ul class="guide-text-list">
+                <li>툴팁의 내용은 닫는 body 태그 안으로 위치 합니다.</li>
+            </ul>    
+            <div class="guide-info-box line mgt-10">
+                <strong class="dot-title">default</strong>
+                <div style="margin-top:10px;">
+                    <!-- 툴팁 -->
+                    <button type="button" aria-describedby="tooltip1" class="ui-tooltip-btn"><span class="hide">툴팁 설명</span></button>
+                    <!-- //툴팁 -->
+                </div>
+                <div style="margin-top:10px;">
+                    <!-- 툴팁 -->
+                    <button type="button" aria-describedby="tooltip2" class="ui-tooltip-btn primary"><span class="hide">툴팁 설명</span></button>
+                    <!-- //툴팁 -->
+                </div>
+                <div style="margin-top:10px;">
+                    <!-- 툴팁 -->
+                    <button type="button" aria-describedby="tooltip3" class="ui-tooltip-btn second"><span class="hide">툴팁 설명</span></button>
+                    <!-- //툴팁 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 툴팁 내용 -->
+<div class="ui-tooltip" id="tooltip1" role="tooltip">
+    <h3 class="ui-tooltip-tit">베이직 툴팁1</h3>
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+    <button type="button" class="ui-tooltip-close" data-id="tooltip1" aria-label="베이직 툴팁1 닫기"></button>
+</div>
+<div class="ui-tooltip" id="tooltip2" role="tooltip">
+    <h3 class="ui-tooltip-tit">베이직 툴팁2</h3>
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+    <button type="button" class="ui-tooltip-close" data-id="tooltip2" aria-label="베이직 툴팁2 닫기"></button>
+</div>
+<div class="ui-tooltip second" id="tooltip3" role="tooltip">
+    <h3 class="ui-tooltip-tit">베이직 툴팁3</h3>
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+    <button type="button" class="ui-tooltip-close" data-id="tooltip3" aria-label="베이직 툴팁3 닫기"></button>
+</div>
+
+<!-- //툴팁 내용 -->
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kosef/moWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+    <script type="text/javascript">
+        pageInfo = { title:'', main:true };
+    </script>
+</head>
+<body>
+    <div class="kosef-main">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <!-- 상단 띠배너 -->
+        <div class="top-bnr-group">
+            <div class="bnr-item">
+                <div class="bnr-conts">  
+                    <a href="#none"><img src="/kosef/moWeb/resources/images/dummy/@top_bnr_0406.png" alt="연금술사 발간 - 사회초년생이 필요한 연금자산 투자 꿀팁!"></a>       
+                </div>       
+                <div class="bnr-controls">
+                    <div class="lb-item">
+                        <input type="checkbox" id="topBnrTodayChk" name="topBnrTodayChk">
+                        <label for="topBnrTodayChk" class="lb-checkbox"><span>오늘 하루 그만보기</span></label>
+                    </div>
+                    <button class="btn-close"><span class="hide">닫기</span></button>
+                </div>         
+            </div>
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kosef/moWeb/pub_include/header.js"></script></header>
+        <div class="tab-nav">
+            <ul>
+                <li class="home">
+                    <button type="type"  class="on">HOME</button>
+                </li>
+                <li class="media">
+                    <button type="button" class="btn-modal" data-ps="bottom" data-id="KOM01020100P" data-src="/kosef/moWeb/main/KOM01020100P.html" data-gap="0"  data-callback="KOM01020100P_callback">키자미디어</button>
+                </li>
+                <li class="guide">
+                    <button type="button" class="btn-modal" data-ps="bottom" data-id="KOM01030300P" data-src="/kosef/moWeb/main/KOM01030300P.html" data-gap="0" data-callback="KOM01030300P_callback">투자가이드</button>
+                </li>
+                <li class="kosef">
+                    <button type="button" class="btn-modal" data-ps="bottom" data-id="KOM01040400P" data-src="/kosef/moWeb/main/KOM01040400P.html" data-gap="0" data-callback="KOM01040400P_callback">KOSEF</button>
+                </li>
+            </ul>
+        </div>
+        <main class="main-wrap" id="content">
+            <div class="contents">
+                <div class="contents-top">
+                    <div class="tit">
+                        <p>고객의 수익률을 최우선으로 하는 키움 ETF,</p>
+                        <strong>
+                            <span class="hide">KOSEF</span>
+                        </strong>
+                        <span>
+                            저렴한 비용, 실시간 거래, 분산투자를 위한<br>
+                            투자자의 합리적인 선택
+                        </span>
+                        <div class="maia-sch-wrap sch-top">
+                            <input type="text" class="inp-base" data-clear="true" title="검색어를 입력하세요">
+                            <button type="button" class="btn-sch">
+                                <span class="hide">검색</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slide" id="mainSlide">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img alt="" src="https://ksweb.kiwoomam.kr/upload/main/741_202304200111004980.jpg" />
+                                </span>
+                                <span class="slide-con">
+                                    <span>NEW LISTING</span>
+                                    <strong>KOSEF 차이나 A50</strong>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img alt="" src="/kosef/moWeb/resources/images/dummy/slider_img01.jpg" />
+                                </span>
+                                <span class="slide-con">
+                                    <span>NEW LISTING</span>
+                                    <strong>KOSEF 차이나 A50 커넥트레버리지 MSCI (합성H)</strong>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img alt="" src="/kosef/moWeb/resources/images/dummy/slider_img01.jpg" />
+                                </span>
+                                <span class="slide-con"> 
+                                    <span>NEW LISTING</span>
+                                    <strong>KOSEF 차이나 A50 커넥트레버리지 MSCI (합성H)</strong>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="paging"></p>
+                </div>
+                <div class="contents_bottom">
+                    <div class="choice">
+                        <strong class="tit">Rising ETF</strong> 
+                        <div class="btn-select">
+                            <button type="button" onclick="KAUI.modal.show({ 
+                                id:'KOM01010000P',            
+                                src:'/kosef/moWeb/main/KOM01010000P.html',
+                                ps: 'bottom',
+                                callback:() => {
+                                    $('.main-popup.kiza.open').closest('.main').find('.kosef-main .gnb-wrap').removeClass('on');
+                                    $('.main-popup.kiza.open').closest('.main').find('.kosef-main .gnb-wrap').addClass('bgnone');
+                                }  
+                            });">KOSEF</button>
+                            <!-- <button type="button" class="btn-modal" data-ps="bottom" data-id="KOM01010000P" data-focus="KOM01010000P" data-src="/kosef/moWeb/main/KOM01010000P.html" data-callback="KOM01010000P_callback">키자PICK 추천상품</button> -->
+                        </div>
+                    </div>
+                    <div class="result">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="tag-wrap">
+                                        <em class="t-local">개인연금</em>
+                                        <em class="t-bond">퇴직연금</em>
+                                        <em class="t-high">국내주식</em>
+                                    </span>
+                                    <strong class="tit">KOSEF 차이나 A50 커넥트레버리지MSCI(합성H)</strong>
+                                    <p>(180909)</p>
+                                    <span class="info">
+                                        <span>
+                                            수익률(3개월)
+                                            <strong class="sp-txt txt-up">3.86<span>%</span>
+                                            </strong>
+                                        </span>
+                                        <span>
+                                            순자산
+                                            <strong>4.09<span>억</span>
+                                            </strong>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="tag-wrap">
+                                        <em class="t-local">개인연금</em>
+                                        <em class="t-bond">퇴직연금</em>
+                                        <em class="t-high">국내주식</em>
+                                    </span>
+                                    <strong class="tit">KOSEF 차이나 A50 커넥트레버리지MSCI(합성H)</strong>
+                                    <p>(180909)</p>
+                                    <span class="info">
+                                        <span>
+                                            수익률(3개월)
+                                            <strong class="sp-txt txt-up">3.86<span>%</span>
+                                            </strong>
+                                        </span>
+                                        <span>
+                                            순자산
+                                            <strong>4.09<span>억</span>
+                                            </strong>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="tag-wrap">
+                                        <em class="t-local">개인연금</em>
+                                        <em class="t-bond">퇴직연금</em>
+                                        <em class="t-high">국내주식</em>
+                                    </span>
+                                    <strong class="tit">KOSEF 차이나 A50 커넥트레버리지MSCI(합성H)</strong>
+                                    <p>(180909)</p>
+                                    <span class="info">
+                                        <span>
+                                            수익률(3개월)
+                                            <strong class="sp-txt txt-drop">-23.86<span>%</span>
+                                            </strong>
+                                        </span>
+                                        <span>
+                                            순자산
+                                            <strong>4.09<span>억</span>
+                                            </strong>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 0324수정반영 footer 수정 -->
+        <!-- <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kosef/moWeb/pub_include/footer.js"></script></footer> -->
+        <footer class="foot-wrap" id="footer">
+            <div class="foot-inner">
+                <strong class="logo"><span class="hide">키움투자자산운용</span></strong>
+                <ul class="links">
+                    <li><a href="#">회사정보</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집금지</a></li>
+                </ul>
+                <p class="info">
+                    서울특별시 영등포구 여의나루로 4길 18 (우) 07331<br>
+                    <span>사업자 등록번호 : 116-81-22045</span><br>
+                    <span>대표전화 : 02-789-0300</span><span>팩스 : 02-789-0443</span>
+                    <span class="copy">ⓒ 2023 KIWOOM ASSET MANAGEMENT</span>
+                </p>
+                <div class="etc">
+                    <span class="web-mark"><span class="hide">웹 접근성 인증마크</span></span>
+                </div>
+            <!-- 20230428 추가 -->
+            <ul class="add-info">
+                <li>투자자는 금융투자상품에 대하여 금융상품판매업자로부터 충분한 설명을 받을 권리가 있으며, 투자전 (간이)투자설명서 및 집합투자규약을 반드시 읽어보시기 바랍니다.</li>
+                <li>금융투자상품은 자산가격 변동, 환율 변동, 신용등급 하락등에 따라 투자원금의 손실(0~100%)이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                <li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                <li>증권거래비용, 기타비용이 추가로 발생할 수 있습니다.</li>
+                <li>과거의 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.</li>
+                <li>본 페이지에서는 당사가 운용하는 펀드상품에 대해 정형화된 형태의 정보를 제공하고 있습니다.</li>
+                <li>본 웹사이트에서 제공하는 지수 및 수익률 정보는 투자 참고사항이며 오류가 발생하거나 지연될 수 있습니다.<br>제공된 정보에 의한 투자결과에 대해 법적인 책임을 지지 않습니다.</li>
+            </ul>
+            <!-- //20230428 추가 -->
+            </div>
+        </footer>
+    </div>
+    <script>
+        (() => {
+            'use strict';
+            mainSlide();
+            KAUI.common.mainRandom();
+            KAUI.common.loadImg();
+            KAUI.common.topBnr.show();
+            mainNav();
+            
+            
+            
+            KAUI.callback.KOM01020100P_callback = () => { 
+                KAUI.tab.init({ id:'mainsTab1', current:0 });
+                KAUI.common.rollTab1.init();
+                KAUI.common.rollTab2.init();
+                $('.main-popup.open').closest('.main').find('.kosef-main .gnb-wrap').removeClass('bgnone');s
+            }
+            KAUI.callback.KOM01030300P_callback = () => {
+                $('.main-popup.open').closest('.main').find('.kosef-main .gnb-wrap').removeClass('bgnone');
+            }
+            KAUI.callback.KOM01040400P_callback = () => {
+                $('.main-popup.open').closest('.main').find('.kosef-main .gnb-wrap').removeClass('bgnone');
+            }
+            KAUI.callback.KOM01010000P_callback = () => {
+                KAUI.common.fieldsetDisable();
+            }
+
+            
+            // KAUI.modal.show({ 
+            //     id:'KIM0701000000P', 
+            //     ps : 'bottom',                 
+            //     src:'/kosef/moWeb/main/KIM0701000000P.html',
+            //     callback:() => {   
+            //     mainNotiSlide();
+            //     }   
+            // });
+
+        })();
+    </script>
+</body>
+</html>

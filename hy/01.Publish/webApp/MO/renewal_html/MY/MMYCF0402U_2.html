@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+    var tabIdx = 1;
+		var $triggerTarget = $('[data-tab-trigger="MMYCF0401U_tab"]');
+		$triggerTarget.hide().eq(tabIdx).show();
+		UI.tab('MMYCF0401U_tab', tabIdx, function(_this, idx){
+			$triggerTarget.hide().eq(idx).show();
+		});
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="loan">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">보험금지급내역서</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+            <div class="governing ta_l">
+              <h2 class="governing_title">지급내역을 확인해 주세요.</h2>
+            </div>
+						<!-- tab_line -->
+						<div class="tab tab_line tab_left" data-tab="MMYCF0401U_tab">
+							<ul class="tab_wrap">
+								<li><a href="javascript:void(0);"><span>사고접수번호(건별)</span></a></li>
+								<li><a href="javascript:void(0);"><span>피보험자(기간별)</span></a></li>
+							</ul>
+						</div>
+						<!--// tab_line -->
+            <div class="tab_content" data-tab="MMYCF0401U_tab">
+              <div class="search_area">
+                <div class="comp">
+                  <div class="form_area">
+                    <div class="form_item">
+                      <div class="form_label"><label for="rdo05">조회대상</label></div>
+                      <div class="option_area type_radio size01">
+                        <input type="radio" id="rdo01" name="filter01" class="btn_rdo size01" checked><label for="rdo01">계약자</label>
+                        <input type="radio" id="rdo02" name="filter01" class="btn_rdo size01"><label for="rdo02">피보험자</label>
+                        <input type="radio" id="rdo03" name="filter01" class="btn_rdo size01"><label for="rdo03">피해자</label>
+                        <input type="radio" id="rdo04" name="filter01" class="btn_rdo size01"><label for="rdo04">친권자</label>
+                      </div>
+                    </div>
+                    <div class="form_item grid2">
+                      <div class="form_item dash2">
+                        <div class="form_label"><label for="inp_date">조회기간(최대2년)</label></div>
+                        <div class="form_wrap">
+                          <input type="text" id="inp_date" placeholder="" class="inp_date">
+                        </div>
+                      </div>
+                      <div class="form_item">
+                        <div class="form_wrap">
+                          <input type="text" title="조회기간 입력" placeholder="" class="inp_date">
+                        </div>
+                      </div>
+                      <div class="option_area">
+                        <button type="button" class="btn option"><span>1개월</span></button>
+                        <button type="button" class="btn option"><span>3개월</span></button>
+                        <button type="button" class="btn option"><span>6개월</span></button>
+                        <button type="button" class="btn option"><span>1년</span></button>
+                        <button type="button" class="btn option"><span>2년</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <a href="#search_target" class="btn line02 block">조회</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comp" id="search_target">
+                <!-- 내역 없는 경우 -->
+                <div class="governing nodata" data-icon="nodata2">
+                  <div class="governing_title">내역이 없어요.</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content" data-tab="MMYCF0401U_tab">
+              <div class="search_area">
+                <div class="comp">
+                  <div class="form_area">
+                    <div class="form_item">
+                      <div class="form_label"><label for="rdo05">조회대상</label></div>
+                      <div class="form_radio">
+                        <input type="radio" name="rdo06" id="rdo06" checked="checked">
+                        <label for="rdo06">전체</label>
+                        <input type="radio" name="rdo06" id="rdo07">
+                        <label for="rdo07">연말정산용(실손대상)
+                          
+                          <div class="tooltip">
+                            <button type="button" class="btn_tooltip" data-pos="bottom" data-icon="true" data-handler="click"><span class="blind">툴팁</span></button>
+                            <div class="tooltip_wrap" role="tooltip">
+                              <div class="tooltip_con">
+                                <div class="tooltip_title">연말정산용(실손대상)</div>
+                                <div class="tooltip_contents">
+                                  <div class="uol_list fz_sm">
+                                    <ul>
+                                      <li>장기보험 실손의료보험금 외 보험금은 표기되지 않습니다.</li>
+                                      <li>기타 보험금까지 확인하려면 조회대상을 ‘전체’로 설정해 주세요.</li>
+                                      <li>연말정산용 지급내역서는 수익자(보험금 지급받은 분) 기준으로 조회됩니다.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="tooltip_close" href="javascript:void(0);" role="button">Close</a>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form_item grid2">
+                      <div class="form_item dash2">
+                        <div class="form_label"><label for="inp_date2">조회기간(최대2년)</label></div>
+                        <div class="form_wrap">
+                          <input type="text" id="inp_date2" placeholder="" class="inp_date">
+                        </div>
+                      </div>
+                      <div class="form_item">
+                        <div class="form_wrap">
+                          <input type="text" title="조회기간 입력" placeholder="" class="inp_date">
+                        </div>
+                      </div>
+                      <div class="option_area">
+                        <button type="button" class="btn option"><span>1개월</span></button>
+                        <button type="button" class="btn option"><span>3개월</span></button>
+                        <button type="button" class="btn option"><span>6개월</span></button>
+                        <button type="button" class="btn option"><span>1년</span></button>
+                        <button type="button" class="btn option"><span>2년</span></button>
+                      </div>
+                    </div>
+                    <div class="form_item grid2">
+                      <div class="form_item dash2">
+                        <div class="form_label"><label for="inp_month2">조회기간(최대2년)</label></div>
+                        <div class="form_wrap">
+                          <input type="text" id="inp_month2" placeholder="" class="inp_month">
+                        </div>
+                      </div>
+                      <div class="form_item">
+                        <div class="form_wrap">
+                          <input type="text" title="조회기간 입력" placeholder="" class="inp_month">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="btn_area">
+                    <a href="#search_target2" class="btn line02 block">조회</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comp" id="search_target2">
+                <!-- 내역 없는 경우 -->
+                <div class="governing nodata" data-icon="nodata2">
+                  <div class="governing_title">내역이 없어요.</div>
+                </div>
+              </div>
+            </div>
+					</div>
+          <div class="section bottom_fix">
+            <div class="comp">
+              <div class="accordion notice full open">
+                <div class="item">
+                  <div class="fold_header">
+                    <a href="javascript:void(0);" role="button" title="내용보기">
+                      <div class="title"><strong>유의사항</strong></div>
+                      <i class="icon_angle"><span>내용보기/내용닫기</span></i>
+                    </a>
+                  </div>
+                  <div class="fold_body uol_list">
+                    <ul>
+                      <li>팝업이 차단되어 있을 경우 증명서가 보이지 않을 수 있습니다. 팝업 차단을 해제하고 다시 발급해 주세요.</li>
+                      <li>자세한 내용은 대표콜센터(1588-5656, 평일 09:00~18:00)로 문의해 주세요.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion notice full">
+                <div class="item">
+                  <div class="fold_header">
+                    <a href="javascript:void(0);" role="button" title="내용보기">
+                      <div class="title"><strong>이용안내</strong></div>
+                      <i class="icon_angle"><span>내용보기/내용닫기</span></i>
+                    </a>
+                  </div>
+                  <div class="fold_body uol_list use_info">
+                    <p class="h5">이용대상</p>
+                    <ul>
+                      <li>인터넷 가입 장기보험, 일반보험(국내/해외여행보험)으로 보험금을 지급받은 계약자, 피보험자, 친권자</li>
+                    </ul>
+                    <p class="h5">이용조건</p>
+                    <ul>
+                      <li>사고접수번호 기준 건별 지급내역 발급 가능</li>
+                      <li>피보험자 기준 기간별 누적 지급내역 발급 가능</li>
+                      <li>피보험자 연말정산용 지급내역 발급 가능<br>(장기보험 실손의료보험금 기준)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+				<!-- //content_wrap -->
+        <!-- content_footer -->
+        <div class="content_footer fix">
+          <div class="btn_area footer" data-tab-trigger="MMYCF0401U_tab">
+            <button type="button" class="btn fill01">홈으로</button>
+            <!-- <button type="button" class="btn fill01">발급방법 선택</button> -->
+          </div>
+          <div class="btn_area footer" data-tab-trigger="MMYCF0401U_tab">
+            <button type="button" class="btn fill01">홈으로</button>
+            <!-- <button type="button" class="btn fill01">발급방법 선택</button> -->
+          </div>
+        </div>
+        <!-- //content_footer -->
+        
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

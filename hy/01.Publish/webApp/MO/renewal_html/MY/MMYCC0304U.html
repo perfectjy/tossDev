@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+		$('.btn_samples').find('.btn').click();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">자동차사고 처리현황 조회</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">사고조사내용</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#MMYCC0304U'));" class="btn fill01">Open</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<div class="modal full fade" id="MMYCC0304U" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header">
+						<div class="wrapper">
+							<h2 class="modal_title">사고조사내용</h2>
+						</div>
+					</div>
+					<div class="modal_body">
+						<!-- wrapper: modal_body -->
+						<div class="wrapper">
+							<div class="section">
+								<div class="governing ta_l">
+									<h2 class="governing_title">차대차</h2>
+								</div>
+								<div class="comp">
+                  <div class="dl_list">
+                    <dl>
+                      <dt>과실유무</dt>
+                      <dd>무</dd>
+                      <dt>현장출동</dt>
+                      <dd>출동</dd>
+                      <dt>경찰서신고 유무</dt>
+                      <dd>미신고</dd>
+                      <dt>적용과실도표</dt>
+                      <dd>253</dd>
+                    </dl>
+                  </div>
+                  <div class="btn_area ta_c">
+                    <a href="https://accident.knia.or.kr" target="_blank" class="btn text blue arrow">손해보험협회 과실비율정보포털 바로가기</a>
+                  </div>
+								</div>
+							</div>
+							<div class="section">
+								<div class="comp">
+									<div class="accordion notice full open">
+										<div class="item">
+											<div class="fold_header">
+												<a href="javascript:void(0);" role="button" title="내용보기">
+													<div class="title"><strong>유의사항</strong></div>
+													<i class="icon_angle"><span>내용보기/내용닫기</span></i>
+												</a>
+											</div>
+											<div class="fold_body uol_list">
+												<ul>
+													<li>위 내용은 현재까지 조사된 내용으로 확정된 과실이 아닙니다.</li>
+													<li>과실도표와 실제 적용되는 과실은 사고현장, 사고형태, 차량파손상태, 경찰조사내용, 판례 등에 따라 변경될 수 있습니다.</li>
+													<li>과실 관련 내용은 보상담당자에게 문의해 주세요.</li>
+                          <li>과실비율정보포털에서 챗봇을 이용해 사고 세부 유형별 과실비율을 검색할 수 있습니다.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //wrapper: modal_body -->
+					</div>
+					<div class="modal_footer fix">
+						<div class="btn_area footer">
+							<button type="button" class="btn fill01">확인</button>
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#MMYCC0304U'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Full -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

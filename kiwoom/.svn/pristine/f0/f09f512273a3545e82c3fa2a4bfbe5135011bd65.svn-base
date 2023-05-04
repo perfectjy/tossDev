@@ -1,0 +1,74 @@
+var lastSTeop = 0;
+
+$(window).scroll(function(event) {
+    
+    if($('.etf-point-wrap').length > 0){
+        $('.etf-point-wrap').removeClass('on');
+    
+        var st = $(this).scrollTop();
+        
+        var gnbHeight = $(".gnb").height(),
+            height = $(".invest-top-wrap").height();
+    
+        console.log("st", st);
+        if (st >= lastSTeop) {
+            if(st >= 760){
+                $('.etf-point-wrap').addClass('on');
+                // $('.etf-point-wrap').css('height', 700);
+            }
+            if(st >= 800 && st <= 1100){
+                $('.etf-point-wrap').addClass('on');
+                $('.etf-point-wrap').css('height', 2400);
+            }else if(st >= 1101 && st <= 1700){
+                $('.etf-point-wrap').addClass('on');
+                $('.etf-card-list .list_01').addClass('ing');
+                $('.etf-point-wrap.on').css('height', 2400);
+            }else if(st >= 1701 && st <= 2300){
+                $('.etf-point-wrap').addClass('on');
+                $('.etf-card-list .list_02').addClass('ing');
+                $('.etf-point-wrap.on').css('height', 2600)
+            }else if(st >= 2301 && st <= 2900){
+                $('.etf-point-wrap').addClass('on');
+                $('.etf-card-list .list_03').addClass('ing');
+                $('.etf-point-wrap.on').css('height', 2800)
+            }else if(st >= 2901 && st <= 3100){
+                $('.etf-point-wrap').addClass('on');
+                $('.etf-card-list .list_04').addClass('ing');
+                $('.etf-point-wrap.on').css('height', 2800)
+            }else{
+                $('.etf-point-wrap').removeClass('on');    
+            }
+        }else{
+                $('.etf-point-wrap').removeClass('on');
+                $('.etf-card-list .card-item').removeClass('ing');
+                $('.etf-point-wrap').css('height', 700)
+        }
+        lastSTeop = st
+    }
+    
+    if($('.kosef-main').length > 0){
+        var st = $(this).scrollTop(),
+            gH = $('.gnb-wrap').height(),
+            hh = $(window).height() - $('.foot-wrap').height() - $('.gnb-wrap').height() - $('.tab-nav').height();
+
+        if(gH <=  st){
+            $('.gnb-wrap').addClass('on')
+        }else{
+            $('.gnb-wrap').removeClass('on')
+        }
+
+        if (st > lastSTeop) {
+            $('.tab-nav').stop().animate({bottom: '0'}, 100)
+        }else{
+            $('.tab-nav').stop().animate({bottom: '-77px'}, 100, "linear");
+        }
+        lastSTeop = st
+        
+
+        if(st >= hh){
+            $('.tab-nav').addClass('pb');
+        }else{
+            $('.tab-nav').removeClass('pb');
+        }
+    }
+});

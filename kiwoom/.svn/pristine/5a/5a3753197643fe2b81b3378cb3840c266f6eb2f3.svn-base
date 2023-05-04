@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* layout */
+.kiam-wrap { }
+.gnb-wrap { display:flex; align-items:center; justify-content:center; height:56px; padding:0 24px; }
+.gnb-wrap .logo { position:absolute; top:18px; left:24px; width:120px; height:20px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -140px; background-size:500px auto; }
+.gnb-wrap .util { position:absolute; top:10px; right:10px; }
+.gnb-wrap .btn-prev { position:absolute; top:10px; left:10px; display:inline-block; width:40px; height:40px;   }
+.gnb-wrap .util .btn-sch,
+.gnb-wrap .util .btn-gnb { position:relative; display:inline-block; width:40px; height:40px;   }
+.gnb-wrap .btn-prev:after,
+.gnb-wrap .util .btn-sch:after,
+.gnb-wrap .util .btn-gnb:after { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:24px; height:24px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -60px -20px; background-size:500px auto;}
+.gnb-wrap .util .btn-sch:after { background-position-x:0; }
+.gnb-wrap .btn-prev:after { background-position-x:-90px; }
+.gnb-wrap .util .btn-gnb { background-position:-40px 0; }
+.gnb-wrap .title { font-size:16px; line-height:24px; font-weight:600; }
+
+.foot-wrap { padding:40px 24px; background:#2F3135; }
+.foot-wrap .logo { display:block; width:148px; height:25px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -140px -140px; background-size:500px auto; }
+.foot-wrap .links { margin:30px 0 0 -5px; }
+.foot-wrap .links a { position:relative; display:inline-block; color:#DFE0E2; line-height:18px; margin:4px 5px;  }
+.foot-wrap .links a + a:after { content:''; display:block; position:absolute; top:8px; left:-6px; width:2px; height:2px; border-radius:50%; background:#fff; }
+.foot-wrap .info { margin-top:24px; color:#9D9DA5; line-height:18px; }
+.foot-wrap .copy { display:block; margin-top:10px; }
+ 
+.gnb-nav { position:fixed; top:0; right:-100%; width:100%; height:100%; padding:20px; text-align:left; background:#fff; transition:right 0.3s ease-out; z-index:10; }
+.gnb-nav.on { right:0; }
+.gnb-nav > ul { position:relative; display:block; height:calc(100% - 50px); padding:25px; overflow:auto; }
+.gnb-nav .btn-close { position:absolute; top:9px; right:15px; z-index:10; width:32px; height:32px;background:url(/kiam/moWeb/resources/images/common/btn_menu_close.png) no-repeat center center; background-size:22px; }

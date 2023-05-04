@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<link type="text/css" rel="stylesheet" href="../../css/new_overseastrip.css">
+<script>
+	$(function() {
+		UI.init();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="overseastrip">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">해외여행보험</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+            <div class="progress_bar" aria-label="계약자 정보 입력 총 8단계 중 4단계">
+              <div class="bar_wrap">
+                <div class="bar" style="width:50%"></div>
+              </div>
+            </div>
+            <div class="governing ta_l">
+							<h2 class="governing_title">피보험자(자녀)의<br> 정보를 입력해 주세요.</h2>
+						</div>
+            <div class="comp">
+              <div class="form_area">
+                <div class="form_item">
+									<div class="form_label"><label for="inp01">이름</label></div>
+									<div class="form_wrap">
+										<input type="text" id="inp01" placeholder="">
+									</div>
+									<div class="form_msg error">이름을 꼭 입력해 주세요.</div>
+								</div>
+                <div class="form_item">
+                  <div class="form_label">
+										<label for="inp02">영문이름</label>
+										<div class="tooltip">
+											<button type="button" class="btn_tooltip" data-pos="bottom" data-icon="true" data-handler="click"><span class="blind">툴팁</span></button>
+											<div class="tooltip_wrap" role="tooltip">
+												<div class="tooltip_con">
+													<div class="tooltip_title">영문이름</div>
+													<div class="tooltip_contents">
+														영문이름은 여권 영문이름과 일치하지 않아도 되며,<br> 보상 여부와 관계없습니다.
+													</div>
+												</div>
+												<a class="tooltip_close" href="javascript:void(0);" role="button">Close</a>
+											</div>
+										</div>
+									</div>
+									<div class="form_wrap">
+										<input type="text" id="inp02" placeholder="여권 영문이름 입력(예: KIM HYUN DAI)">
+									</div>
+								</div>
+                <div class="form_item col2">
+									<div class="form_label"><label for="inp03">주민등록번호</label></div>
+									<div class="form_wrap">
+										<input type="text" id="inp03" placeholder="앞 6자리" value="960116" readonly>
+									</div>
+									<div class="form_wrap form_key">
+										<div class="pin_area">
+											<strong><span class="blind">1번째 번호</span></strong>
+											<strong><span class="blind">2번째 번호</span></strong>
+											<strong><span class="blind">3번째 번호</span></strong>
+											<strong><span class="blind">4번째 번호</span></strong>
+											<strong><span class="blind">5번째 번호</span></strong>
+											<strong><span class="blind">6번째 번호</span></strong>
+											<strong><span class="blind">7번째 번호</span></strong>
+										</div>
+									</div>
+									<div class="form_msg error">주민등록번호 앞 6자리를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 앞 6자리를 정확히 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 뒤 7자리를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 뒤 7자리를 정확히 입력해 주세요.</div>
+								</div>
+              </div>
+            </div>
+            <div class="comp hr">
+              <div class="box gray chkbox">
+                <input type="checkbox" id="chk01" class="box_chk"><label for="chk01">개인(신용)정보 처리에 동의합니다.(친권자)</label>
+              </div>
+              <div class="form_area">
+                <div class="form_item">
+                  <div class="form_label"><label for="inp04">피보험자의 공동친권자 정보</label></div>
+                  <div class="form_wrap">
+										<input type="text" id="inp04" placeholder="공동친권자 이름 입력">
+									</div>
+                  <div class="chk_wrap">
+                    <input type="checkbox" id="chk02"><label for="chk02">공동친권자가 없어요.(이혼, 사별 등)</label>
+                  </div>
+                </div>
+              </div>
+              <div class="box gray">
+                <div class="desc">
+                  <p class="tit">공동친권자 동의 여부</p>
+                  <p>자녀가 피보험자로 가입하는 보험에 대해
+                    공동친권자의 합의를 받으셨나요?</p>
+                </div>
+								<div class="btn_area grid2">
+									<input type="radio" id="rdoY" class="btn_rdo" name="rdoYN"><label for="rdoY">예</label>
+									<input type="radio" id="rdoN" class="btn_rdo" name="rdoYN"><label for="rdoN">아니오</label>
+								</div>
+              </div>
+            </div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+				<!-- content_footer -->
+				<div class="content_footer fix">
+					<div class="btn_area footer">
+						<button type="button" class="btn fill01">다음</button>
+					</div>
+				</div>
+				<!-- //content_footer -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

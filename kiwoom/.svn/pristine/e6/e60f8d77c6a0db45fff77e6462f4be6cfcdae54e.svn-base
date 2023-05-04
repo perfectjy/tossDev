@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <link rel="stylesheet" href="/admin/resource/css/admin.css" type="text/css">
+    <script type="text/javascript" src="/admin/resource/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.global.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.common.js"></script>
+    <script type="text/javascript">
+        pageInfo = { mid: '2', sid: '2' }; 
+    </script>
+</head>
+
+<body>
+<div class="kiam-amin-wrap">
+    <header class="gnb-wrap">
+        <div>
+            <h1><a href="#"><span class="hide">키움자산운용</span></a></h1>
+            <div class="links">
+                <a href="#"><span>홈페이지 바로가기</span></a>
+                <a href="#"><span>KOSEF 바로가기</span></a>
+                <button type="button" class="logout">로그아웃</button>
+            </div> 
+        </div>
+    </header>
+    <main class="main-wrap" id="content">
+        <div class="sub-nav"></div>
+        <section class="main-conts">
+            <h2>모펀드상품</h2>
+            <ul class="page-nav">
+                <li><a href="#">상품정보 관리</a></li>
+                <li class="current"><a href="#">모펀드상품</a></li>
+            </ul>
+            <div class="sub-title">
+                <h3>기본정보</h3>
+            </div>
+            <div class="tbl-base mgt10">   
+                <table>                   
+                    <colgroup>
+                        <col style="width:16.66%;">
+                        <col style="width:16.66%;">     
+                        <col style="width:16.66%;">
+                        <col style="width:16.66%">                      
+                        <col style="width:16.66%">                      
+                        <col style="width:16.66%">                      
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">펀드구분</th>
+                            <td>국내</td>
+                            <th scope="row">펀드유형</th>
+                            <td>주식형</td>
+                            <th scope="row">위험등급<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <select name="" id="" title="위험등급 선택">
+                                    <option value="">1</option>                                    
+                                </select>
+                            </td>
+                        </tr>      
+                        <tr>
+                            <th scope="row">펀드명</th>
+                            <td colspan="5">키움장기코어밸류증권자투자신탁제1호[주식]</td>
+                        </tr>         
+                        <tr>
+                            <th scope="row">펀드코드</th>
+                            <td colspan="2">2561</td>
+                            <th scope="row">게시여부</th>
+                            <td colspan="2">
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="yon01" name="yonBtn" checked>
+                                        <label for="yon01" class="lb-radio"><span>Y</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="yon02" name="yonBtn">
+                                        <label for="yon02" class="lb-radio"><span>N</span></label>
+                                    </span>
+                                </div> 
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">환매방법</th>
+                            <td colspan="5">
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea" style="height:120px;" title="환매방법 입력"></textarea>
+                                </div>
+                            </td>
+                        </tr>                                   
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>펀드맵 정보</h3>
+                <p class="msg">* 최대 5개까지 게시 가능</p>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:200px;">
+                        <col style="width:auto;">                      
+                        <col style="width:200px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">국가</th>
+                            <td colspan="3">
+                                <div class="frm-area">
+                                    <span class="lb-item type2">
+                                        <input type="radio" id="country01" name="countryBtn" checked>
+                                        <label for="country01" class="lb-radio"><span>국내</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="country02" name="countryBtn">
+                                        <label for="country02" class="lb-radio"><span>글로벌/선진국</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="country03" name="countryBtn">
+                                        <label for="country03" class="lb-radio"><span>신흥국</span></label>
+                                    </span>
+                                </div> 
+                            </td>
+                        </tr>  
+                        <tr>
+                            <th>자산</th>
+                            <td>
+                                <select name="" id="" title="자산 선택">
+                                    <option value="">주식형</option>                                    
+                                </select>
+                            </td>
+                            <th>스타일</th>
+                            <td> 
+                                <select name="" id="" title="스타일 선택">
+                                    <option value="">일반</option>                                    
+                                </select>
+                            </td>
+                        </tr>                                          
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>상품특징</h3>
+                <div class="sub-title-util">
+                    <p class="msg">* 최대 3개까지 게시 가능</p>
+                    <span class="lb-item">
+                        <input type="checkbox" id="formChks01" name="formChks">
+                        <label for="formChks01" class="lb-checkbox"><span>해당 없음</span></label>
+                    </span>
+                </div>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:200px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>  
+                        <tr>
+                            <th scope="row">타이틀<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea" title="타이틀 입력"></textarea>
+                                    <p class="note">0 / 60자</p>
+                                </div>          
+                            </td>
+                        </tr>  
+                        <tr>
+                            <th scope="row">특징 1<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-wrap iod">
+                                    <div class="frm-area">
+                                        <textarea class="inp-textarea" title="특징 1 입력"></textarea>
+                                        <p class="note">0 / 150자</p>
+                                    </div>
+                                    <div class="iod-wrap type2">
+                                        <button class="btn plus"><span class="hide">추가</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row">특징 2</th>
+                            <td>
+                                <div class="frm-wrap iod">
+                                    <div class="frm-area">
+                                        <textarea class="inp-textarea" title="특징 2 입력"></textarea>
+                                        <p class="note">0 / 150자</p>
+                                    </div>
+                                    <div class="iod-wrap type2"> 
+                                        <button class="btn plus"><span class="hide">추가</span></button>
+                                        <button class="btn minus"><span class="hide">삭제</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">특징 3</th>
+                            <td>
+                                <div class="frm-wrap iod">
+                                    <div class="frm-area">
+                                        <textarea class="inp-textarea" title="특징 3 입력"></textarea>
+                                        <p class="note">0 / 150자</p>
+                                    </div>
+                                    <div class="iod-wrap type2">
+                                        <button class="btn minus"><span class="hide">삭제</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>                                         
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>파일 첨부</h3>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:200px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>   
+                        <tr>
+                            <th scope="row">약관</th>
+                            <td>                                
+                                <div class="file-wrap">
+                                    <div class="input-item">   
+                                        <input type="text" id="inpUpload" name="inpUpload" class="inp-text" value="" placeholder="" readonly>
+                                        <span class="btn base tbl">
+                                            <input type="file" title="첨부파일 선택">
+                                            <span>파일추가</span>
+                                        </span>
+                                    </div>
+                                    <div class="file-list">
+                                        <div class="file">
+                                            <p class="file-name">filename1.doc</p>
+                                            <button type="button" class="btn-del"><span>삭제</span></button>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </td> 
+                        </tr> 
+                        <tr>
+                            <th scope="row">투자설명서</th>
+                            <td>       
+                                <div class="file-wrap">
+                                    <div class="input-item">   
+                                        <input type="text" id="inpUpload" name="inpUpload" class="inp-text" value="" placeholder="" readonly>
+                                        <span class="btn base tbl">
+                                            <input type="file" title="첨부파일 선택">
+                                            <span>파일추가</span>
+                                        </span>
+                                    </div>
+                                    <div class="file-list">
+                                        <div class="file">
+                                            <p class="file-name">filename1.doc</p>
+                                            <button type="button" class="btn-del"><span>삭제</span></button>
+                                        </div>
+                                    </div>      
+                                </div>                 
+                            </td> 
+                        </tr>                                         
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>추천 검색어</h3>
+                <p class="msg error-info">! 추천 검색어를 선택해 주세요.</p>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="frm-area multi">
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0201" name="">
+                                        <label for="flag0201" class="lb-checkbox"><span>검색어 1</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0202" name="" >
+                                        <label for="flag0202" class="lb-checkbox"><span>검색어 2</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0203" name="" checked>
+                                        <label for="flag0203" class="lb-checkbox"><span>검색어 3</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0204" name="" checked>
+                                        <label for="flag0204" class="lb-checkbox"><span>검색어 4</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0205" name="">
+                                        <label for="flag0205" class="lb-checkbox"><span>검색어 4</span></label>
+                                    </span>
+                                </div>
+                            </th>
+                        </tr>                                              
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>관련 콘텐츠 맵핑</h3>
+            </div>
+            <div class="tbl-base type2 mgt10">
+                <table>
+                    <colgroup>
+                        <col style="width:200px;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">키자 TV</th>
+                            <td>                                
+                                <div class="frm-area add-conts">
+                                    <div><button class="btn base tbl"><span>콘텐츠 추가</span></button></div>
+                                    <div><span class="btn-text">채권은 뭔가요? 주식이랑 뭐가 다른가요? 채권은 뭔가요? <button type="button" class="btn-del"><span>삭제</span></button></span></div>
+                                </div>                        
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl-btns">
+                <button class="btn base tertiary"><span>삭제</span></button>
+                <div>
+                    <button class="btn base secondary"><span>취소(목록)</span></button>
+                    <button class="btn base primary"><span>저장</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright©2023 KiwoomAM. All rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>

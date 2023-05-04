@@ -1,0 +1,1001 @@
+@charset "utf-8";
+
+html {
+    font-size: $font-default-size;
+}
+
+/* See https://hankchizljaw.com/wrote/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* html5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+    font-family: 'Base', sans-serif;
+    color: $gray800;
+    font-size: $fs-body-l;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    /* -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs */
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+select[class],
+textarea[class],
+input[class] {
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select[class]::-ms-expand {
+    display: none;
+}
+
+/* Inherit fonts for buttons */
+button {
+	padding: 0;
+	border: 0;
+    font: inherit;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* label */
+label {
+    cursor: pointer;
+}
+
+/* table */
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption {
+    position: relative !important;
+    width: 1px !important;
+    height: 1px !important;
+    color: transparent !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    margin: -1px 0 0;
+}
+
+th,
+td {
+    border-collapse: collapse;
+}
+
+.a11y-hidden,
+legend,
+.hidden,
+.hide {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    color: transparent !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ellp {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+
+*.disabled,
+*:disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+    opacity: 0.2 !important;
+    box-shadow: none !important;
+}
+
+guide {
+    opacity: .3;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed tomato;
+    pointer-events: none;
+    z-index: 1000;
+    
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+    }
+    &::after {
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed tomato;
+        top: 50%;
+        left: 0;
+    }
+    &::before {
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed tomato;
+        left: 50%;
+        top: 0;
+    }
+}
+guide2 {
+    opacity: .8;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dotted rgb(57, 248, 98);
+    background-color: rgba(77, 255, 71, 0.1);
+    pointer-events: none;
+    z-index: 999;
+
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+    }
+    &::after {
+        width: 100%;
+        height: 1px;
+        border-top: 1px dotted rgb(57, 248, 98);
+        top: 50%;
+        left: 0;
+    }
+    &::before {
+        width: 1px;
+        height: 100%;
+        border-left: 1px dotted rgb(57, 248, 98);
+        left: 50%;
+        top: 0;
+    }
+}
+tag-class{color:$success}
+tag-input{color: orangered}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+    /* We are relaxing the `declaration-no-important` here
+     because we want to ensure that code further down the
+     cascade will adhere to this accessibility enhancement */
+    /* stylelint-disable declaration-no-important */
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+//margin, padding
+@for $i from 0 through 20 {
+    .mg {
+        &b-x#{$i} {margin-bottom: calc($gap * $i) !important;}
+        &t-x#{$i} {margin-top: calc($gap * $i) !important;}
+        &l-x#{$i} {margin-left: calc($gap * $i) !important;}
+        &r-x#{$i} {margin-right: calc($gap * $i) !important;}
+    }
+    .pd {
+        &b-x#{$i} {padding-bottom: calc($gap * $i) !important;}
+        &t-x#{$i} {padding-top: calc($gap * $i) !important;}
+        &l-x#{$i} {padding-left: calc($gap * $i) !important;}
+        &r-x#{$i} {padding-right: calc($gap * $i) !important;}
+    }
+}
+
+/* align */
+.ta {
+    &-c {text-align: center !important;}
+    &-l { text-align: left !important;}
+    &-r {text-align: right !important;}
+}
+
+
+
+
+/* font */
+[class*="typo-display-"] {
+	letter-spacing: -0.04rem;
+}
+[class*="typo-headline-"] {
+	letter-spacing: -0.04rem;
+	line-height: 1.2;
+	margin: 0;
+}
+[class*="typo-title-"] {
+	letter-spacing: -0.04rem;
+}
+[class*="typo-label-"] {
+	letter-spacing: -0.04rem;
+}
+[class*="typo-body-"] {
+	letter-spacing: -0.04rem;
+}
+
+.dsp-l {
+	font-size: 10rem !important;
+	font-weight: 400 !important;
+    line-height: 1.2;
+}
+.dsp-m {
+	font-size: 8rem !important;
+	font-weight: 700 !important;
+    line-height: 1.2;
+}
+.dsp-s {
+	font-size: 6rem !important;
+	font-weight: 900 !important;
+    line-height: 1.2;
+}
+
+.tit-l {
+	font-size: 7.2rem !important;
+	font-weight: 500 !important;
+    line-height: 1.2;
+}
+.tit-m {
+	font-size: 3.2rem !important;
+	font-weight: 200 !important;
+    line-height: 1.2;
+}
+.tit-s {
+	font-size: 2.4rem !important;
+	font-weight: 700 !important;
+    line-height: 1.2;
+}
+.tit-xs {
+	font-size: 1.8rem !important;
+	font-weight: 700 !important;
+    line-height: 1.2;
+} 
+// .tit-s {
+// 	font-size: 2rem;
+// 	font-weight: 700;
+// }
+// .tit-s {
+// 	font-size: 1.8rem;
+// 	font-weight: 700;
+// }
+// .tit-xxs {
+// 	font-size: 1.6rem;
+// 	font-weight: 700;
+// }
+
+// .txt-lb-l {
+// 	font-size: 1.7rem;
+// 	font-weight: 700;
+// }
+// .txt-lb-m {
+// 	font-size: 1.4rem;
+// 	font-weight: 500;
+// }
+// .txt-lb-s {
+// 	font-size: 1.1rem;
+// 	font-weight: 400;
+// }
+
+.txt-l {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+.txt-m {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+.txt-s {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+
+/* LAYOUT */
+.base-skip {
+    position: fixed;
+    z-index: 500;
+}
+
+.base-skip .skip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #616161;
+    color: #FAFAFA;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: -5rem;
+}
+
+.base-skip .skip:focus {
+    top: 0;
+}
+
+.base-wrap {
+    position: relative;
+    z-index: 0;
+}
+
+
+
+/* PARAGRAPH */
+em,
+u,
+cite,
+i,
+abbr {
+    text-decoration: none;
+}
+
+a {
+    color: #6296df;
+}
+
+
+
+
+
+
+/* HR */
+hr {
+    border: 0;
+    border-top: 1px solid #EEEEEE;
+    margin: 4rem 0;
+}
+
+.hr-sec {
+    width: 100%;
+    height: 1rem;
+    background-color: #EEEEEE;
+    border: 0;
+    margin: 0.5rem 0;
+}
+
+.hr-cont {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #EEEEEE;
+    border: 0;
+    margin: 2rem 0;
+}
+
+
+
+/* FORM */
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    vertical-align: top;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.lb-radio,
+.lb-checkbox {
+    position: relative;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    min-height: 4rem;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lb-radio:before,
+.lb-checkbox:before {
+    content: "";
+    display: block;
+    flex: 0;
+    min-width: 2rem;
+    min-height: 2rem;
+    margin-right: .5rem;
+    border: 2px solid $gray900;
+    transition: box-shadow 0.5s, border 0.3s;
+}
+
+.lb-radio:before {
+    border-radius: 50%;
+}
+
+.lb-checkbox:before {
+    border-radius: .3rem;
+}
+
+
+:checked+.lb-radio:before,
+:checked+.lb-checkbox:before,
+.lb-radio.checked:before,
+.lb-checkbox.checked:before {
+    border: .6rem solid $gray900;
+}
+
+
+.press .lb-checkbox:before,
+.press .lb-radio:before,
+.lb-radio.pressed:before,
+.lb-checkbox.pressed:before{
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.9);
+}
+
+.hover .lb-checkbox:before,
+.hover .lb-radio:before,
+.lb-radio:hover:before,
+.lb-checkbox:hover:before{
+    box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
+}
+
+.focus .lb-checkbox:before,
+.focus .lb-radio:before,
+.lb-radio:focus:before,
+.lb-checkbox:focus:before {
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.7);
+}
+
+:checked+.lb-radio,
+:checked+.lb-checkbox,
+.lb-radio.checked,
+.lb-checkbox.checked {
+    color:$gray900;
+}
+
+.focus .lb-radio,
+.focus .lb-checkbox,
+:focus+.lb-radio,
+:focus+.lb-checkbox {
+    text-decoration: underline;
+}
+
+:disabled+.lb-radio,
+:disabled+.lb-checkbox,
+.lb-radio.disabled,
+.lb-checkbox.disabled {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    cursor: not-allowed;
+}
+
+.lb-switch span,
+.lb-radio span,
+.lb-checkbox span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    border-bottom: 1px solid transparent;
+}
+
+.lb-checkbox.all {
+    font-size: 1.6rem;
+    color: #616161;
+}
+
+.lb-checkbox.all span {
+    padding-top: 1px;
+}
+
+.lb-switch{
+    position: relative;
+    padding-left:4.4rem;
+    font-size: 1.4rem;
+}
+.lb-switch::before {
+    content:"";
+    display: block;
+    width:4rem;
+    height:1rem;
+    border-radius:1rem;
+    background-color: #BDBDBD;
+
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    transition: all .2s ease-in;
+}
+.lb-switch::after {
+    content:"";
+    display: block;
+    width:2rem;
+    height:2rem;
+    border-radius:2rem;
+    background-color:$white;
+    
+    box-shadow: 0.1rem .1rem .4rem rgba(0,0,0,0.1);
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    transition: all .2s ease-in;
+    opacity: 1;
+}
+:checked + .lb-switch::before{
+    background-color: hsl(265deg 100% 47% / 100%);
+    opacity: .5;
+}
+:checked + .lb-switch::after{
+    box-shadow: -0.1rem .1rem .4rem rgba(0,0,0,0.1);
+    transform: translate(2rem,-50%);
+    background-color: hsl(265deg 100% 47% / 100%);
+}
+:disabled + .lb-switch{
+    opacity: 0.3;
+}
+
+.lb-tit {
+    display: inline-block;
+    height: 4rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+/* input text */
+select,
+.ui-select-btn,
+.inp-base {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    background-color: $white;
+    border-radius: 0;
+    height: 4rem;
+    padding: 0 1rem;
+    outline: 0;
+    margin: 0;
+    color: #424242;
+    font-size: 1.6rem;
+}
+
+.inp-base:focus {
+    border-color: #FAFAFA;
+}
+
+.inp-base::-webkit-search-cancel-button {
+    display: none;
+}
+
+textarea.inp-base {
+    padding: 1rem;
+    height: 10rem;
+}
+
+select[class] {
+    position: relative;
+    cursor: pointer;
+}
+
+select.inp-base {
+    padding: 0 1rem;
+}
+
+
+
+
+// /* FORM LAYOUT */
+// .form-wrap .fx-item+.fx-item {
+//     margin-left: .8rem;
+// }
+
+// .form-item {
+//     width: 100%;
+//     position: relative;
+//     padding: 0;
+//     display: inline-flex;
+//     vertical-align: top;
+// }
+
+// .form-item>* {
+//     vertical-align: top;
+// }
+
+// .form-label .form-label-util [class*="bul-"] {
+//     margin-top: 0 !important;
+// }
+
+// .form-label {
+//     position: relative;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//     margin-bottom: .4rem;
+//     min-height: 2.6rem;
+// }
+
+// .form-item-label {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     transform: translate(0, 0);
+//     font-size: 1.4rem;
+//     color: #616161;
+//     cursor: text;
+// }
+
+// .ui-form-inner .form-label {
+//     min-height: 0;
+// }
+
+// .ui-form-inner .form-item-label {
+//     transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), font-size 150ms;
+//     z-index: 1;
+//     padding: 0 .4rem;
+//     position: absolute;
+//     top: 0;
+//     left: 0.6rem;
+//     transform: translate(0, 1.2rem);
+//     font-size: 1.6rem;
+// }
+
+// .ui-form-inner.is-value .form-item-label {
+//     transform: translate(0, -0.6rem);
+//     font-size: 1.2rem;
+//     background-color: $white;
+//     margin-left: 0 !important;
+// }
+
+// .ui-form-inner.is-value .ui-select .ui-select-btn {
+//     color: #616161;
+// }
+
+// .ui-form-inner .ui-select .ui-select-btn {
+//     color: transparent;
+// }
+
+// .form-item .unit {
+//     position: absolute;
+//     right: 1rem;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     z-index: 1;
+// }
+
+// .form-item .prefix {
+//     position: absolute;
+//     left: 1rem;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     z-index: 1;
+// }
+
+// .form-item .inp-base::-webkit-input-placeholder {
+//     color: transparent;
+// }
+
+// .form-item .inp-base:-ms-input-placeholder {
+//     color: transparent;
+// }
+
+// .form-item .inp-base::placeholder {
+//     color: transparent;
+//     text-align: left;
+// }
+
+// .form-item .inp-base:focus::-webkit-input-placeholder {
+//     color: #757575;
+// }
+
+// .form-item .inp-base:focus:-ms-input-placeholder {
+//     color: #757575;
+// }
+
+// .form-item .inp-base:focus::placeholder {
+//     color: #757575;
+// }
+
+// .form-item .info {
+//     font-size: 1.2rem;
+// }
+
+// .form-sc {
+//     display: flex;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0 .8rem;
+// }
+
+
+/* sheet */
+.sheet-bottom.datepicker .datepicker-wrap {
+    padding: 1rem;
+    background: #FAFAFA;
+    
+    border: 1px solid #FAFAFA;
+    
+    box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.sheet-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 301;
+    transition: opacity .2s ease-in-out;
+}
+
+.sheet-bottom.on {
+    opacity: 1;
+}
+
+.size-mobile .datepicker.sheet-bottom {
+    max-width: 100%;
+    top: auto !important;
+    left: 0 !important;
+    bottom: 0;
+    position: fixed;
+}
+
+.size-mobile .datepicker-body {
+    max-width: 23rem;
+    margin: 1rem auto;
+}
+
+.size-mobile .datepicker.sheet-bottom {
+    bottom: -50vh;
+}
+
+.size-mobile .datepicker.sheet-bottom.on {
+    top: auto;
+    animation-name: slideUpIn;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.size-mobile .datepicker.sheet-bottom.off {
+    top: auto;
+    animation-name: slideUpOut;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.sheet-dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.3);
+    
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.sheet-dim.on {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+
+
+
+/* box */
+.box-base {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    background: #fff;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+
+
+
+
+
+
+
+
+/* GRID guide */
+.base-grid.on {
+    display: flex;
+}
+
+.base-grid {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 119rem;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.base-grid div {
+    flex: 1;
+    height: 100%;
+    background: rgba(247, 89, 181, 0.096);
+}
+
+.base-grid div+div {
+    margin-left: 2.4rem;
+}
+
+
+
+/*
+내부 스크롤에 관성 및 바운스 적용하기
+overflow:auto;
+-webkit-overflow-scrolling: touch;
+
+*/
+
+
+@media (prefers-color-scheme: light) {
+    /* light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+    /* dark mode */
+}
+
+
+/* dark mode ----------------------------------------------------------- */
+.base-wrap,
+body {
+    background-color: $white;
+    
+}
+
+.dark .header-wrap .logo g {
+    fill:$gray50;
+}
+
+/* .dark .fab-mode{
+	background:#f1f1f1;
+	color:#1f1f1f;
+	font-weight: 700;
+}
+.dark .fab-menu {
+	background:#fff;
+	font-weight: 700;
+} */
+

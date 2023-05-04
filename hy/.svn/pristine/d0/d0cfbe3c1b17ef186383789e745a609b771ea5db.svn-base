@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/**
+* Module.Toast
+* ------------------
+*/
+
+.toast{z-index: 8000;position: fixed; left:20px; right: 20px; display: flex; flex-direction: column; align-items: center; gap: 6px 6px;
+	.toast_wrap{position: relative; margin: 0 auto; min-height: 44px; padding: 12px 16px 12px 40px; border-radius: 100px; background: rgba(34, 34, 34, 0.7);
+		&:after{content:'';position: absolute; left: 16px; top: 14px; width: 18px; height: 18px; background: url($svg_icon_toast) 0 0 no-repeat;
+		}
+		.msg{@include fz13(); color:#fff;}
+	}
+}
+
+.toast{transition: all 0.3s ease-in-out 0s;}
+.toast.init{opacity: 0;}
+.toast.animate{opacity: 1;}
+.toast.end{opacity: 0;}
+

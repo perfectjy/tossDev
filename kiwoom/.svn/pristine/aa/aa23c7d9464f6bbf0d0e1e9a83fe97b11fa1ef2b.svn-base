@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="/kiam/moWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="/pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="/kiam/moWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="/kiam/moWeb/resources/js/ui.global.js"></script>
+	<script src="/kiam/moWeb/resources/js/ui.common.js"></script>
+	<script src="/pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Form</h2>      
+            <article>
+                <h3>Basic input</h3>
+                <div class="guide-info-box line">                    
+                </div>
+            </article>
+            <article>
+                <h3>Select</h3>
+                <strong class="dot-title">기본</strong>
+                <div class="guide-info-box line">   
+                    <select title="수익률 날짜 선택">
+                        <option>1개월</option>
+                        <option selected>3개월</option>
+                    </select>  
+                    
+                    <div class="ui-select" style="margin-top:20px;">
+                        <select title="수익률 날짜 선택">
+                            <option>1개월</option>
+                            <option selected>3개월</option>
+                        </select> 
+                    </div>
+                </div>                
+            </article>
+            <article>
+                <h3>Toggle</h3>
+                <div class="guide-info-box line">   
+                    <div class="tab-tog">                        
+                        <span class="lb-txts">연금상품만 보기</span>
+                        <span class="lb-item sort-chk">
+                            <input type="checkbox" name="annSort" id="annSort">
+                            <label for="annSort" class="tab-chkbox"><span class="hide">전체</span></label>
+                        </span>                        
+                    </div>         
+                </div>
+                
+            </article>
+            <article>
+                <h3>달력</h3>
+                <strong class="dot-title">펀드상세</strong>
+                <div class="guide-info-box line">   
+                    <div class="ui-datepicker sub">
+                        <input type="date" id="uiDate_1" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="날짜입력" readonly required>
+                        <span>기준</span>
+                        <button type="button" class="ui-datepicker-btn" data-target="uiDate_1">
+                            <span class="a11y-hidden">기준가 날짜 선택</span>
+                        </button>
+                    </div>         
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</div>
+<script>
+    KAUI.tab.init({ id:'Tab1', current:0 });     
+    KAUI.tab.init({ id:'searchTab', current:0 });     
+    KAUI.tab.init({ id:'exeTab1', current:0 });     
+</script>
+
+</body>
+</html>

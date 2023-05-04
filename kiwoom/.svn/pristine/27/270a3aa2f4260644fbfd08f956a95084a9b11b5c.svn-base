@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="../../kiam/pcWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="../../pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="../../kiam/pcWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="../../kiam/pcWeb/resources/js/ui.global.js"></script>
+	<script src="../../kiam/pcWeb/resources/js/ui.common.js"></script>
+	<script src="../../pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Modal</h2>   
+            <div class="g-links">
+                <a href="/pub_guide/mobile/modal.html"><span>Mobile 화면 보기</span></a>
+            </div>   
+            <article>
+                <h3>Default</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn base btn-modal" data-id="sampleModal" data-src="/pub_guide/pc/html/sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article> 
+            <article>
+                <h3>링크 기능없이 확인이 필요한 경우</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn base btn-modal" data-id="sampleModal" data-src="sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article>   
+            <article> 
+                <h3>메인 롤링 팝업</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn base" data-id="sampleModal" data-src="sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article>                     
+            <article>
+                <h3>시스템 alert</h3>
+                <div class="guide-info-box line">
+                    <strong class="dot-title">확인 480 * auto</strong>
+                    <button type="button" class="btn base" onclick="
+				    KAUI.modal.show({ 
+                    type : 'alert', 
+                    sMessage: '<p class='+ 'alert-msg' + '><span class=' + 'info' +'>삭제 시 데이터 복구가 되지 않습니다.</span><strong class=' + 'txts' +'>정말로 삭제하시겠습니까?</strong></p>', 
+                    sBtnConfirmTxt: '확인',
+					sClass: 'type-alert',
+					sConfirmCallback: function(){
+						KAUI.modal.hideSystem();
+						//document.querySelector('#testEndFocus').focus();
+					}
+			        });"><span>alert system</span></button> 
+
+                    <strong class="dot-title">확인 480 * auto</strong>                    
+                    <button type="button" class="btn base" onclick="
+                        KAUI.modal.show({
+                            type : 'confirm',
+                            sMessage: '<p class='+ 'alert-msg' + '><span class=' + 'info' +'>정렬 순서 중복입니다. </span><strong class=' + 'txts' +'>수정 후 저장하세요.</strong></p>', 
+                            sBtnConfirmTxt: '확인',
+                            sBtnCancelTxt: '취소',
+                            sClass: 'type-confirm',
+                            sConfirmCallback: function(){
+                                //console.log('confirm ok');
+                                KAUI.modal.hideSystem();
+                            },
+                            sCancelCallback: function(){
+                                //console.log('confirm cancel');
+                                KAUI.modal.hideSystem();
+                                //document.querySelector('#testEndFocus').focus();
+                            }
+                    });"><span>confirm system</span></button>
+
+                    <strong class="dot-title">확인 480 * auto (info)</strong>                    
+                    <button type="button" class="btn base" onclick="
+                        KAUI.modal.show({
+                            type : 'confirm',
+                            sMessage: '<p class='+ 'alert-msg' + '><strong class=' + 'txts' +'><em>필수값</em>을 입력 해 주세요.</strong></p>', 
+                            sBtnConfirmTxt: '확인',
+                            sBtnCancelTxt: '취소',
+                            sClass: 'type-confirm',
+                            sConfirmCallback: function(){
+                                //console.log('confirm ok');
+                                KAUI.modal.hideSystem();
+                            },
+                            sCancelCallback: function(){
+                                //console.log('confirm cancel');
+                                KAUI.modal.hideSystem();
+                                //document.querySelector('#testEndFocus').focus();
+                            }
+                    });"><span>confirm system</span></button>
+                </div>                 
+            </article> 
+            <article>
+                <h3>툴팁</h3>
+                <div class="guide-info-box line mgt-10">
+                    <strong class="dot-title">default</strong>
+                    <div style="margin-top:10px;">
+                        <!-- 툴팁 -->
+                        <button type="button" aria-describedby="tooltip1" class="ui-tooltip-btn"><span class="hide">툴팁 설명</span></button>
+                        <!-- //툴팁 -->
+                    </div>
+                    <div style="margin-top:10px;">
+                        <!-- 툴팁 -->
+                        <button type="button" aria-describedby="tooltip2" class="ui-tooltip-btn primary"><span class="hide">툴팁 설명</span></button>
+                        <!-- //툴팁 -->
+                    </div>
+                    <div style="margin-top:10px;">
+                        <!-- 툴팁 -->
+                        <button type="button" aria-describedby="tooltip2" class="ui-tooltip-btn second"><span class="hide">툴팁 설명</span></button>
+                        <!-- //툴팁 -->
+                    </div>
+            </article>
+           
+        </div>
+    </div>
+</div>
+<script>
+        
+</script>
+
+<!-- 툴팁 내용 -->
+<div class="ui-tooltip" id="tooltip1" role="tooltip">
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+</div>
+<div class="ui-tooltip" id="tooltip2" role="tooltip">
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+</div>
+<div class="ui-tooltip second" id="tooltip2" role="tooltip">
+    <div class="ui-tooltip-arrow"></div>
+    <p>베이직 툴팁 내용이 들어갑니다.</p>
+</div>
+
+<!-- //툴팁 내용 -->
+
+</body>
+</html>

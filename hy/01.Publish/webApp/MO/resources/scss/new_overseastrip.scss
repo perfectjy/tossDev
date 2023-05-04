@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+//------------------------------------
+// Util
+//------------------------------------
+@import "util/variables";
+@import "util/function";
+@import "util/mixins";
+@import "util/mixins.button";
+@import "util/include";
+
+//------------------------------------
+// svg
+//------------------------------------
+@import "svg/svg.common";
+@import "svg/svg.login";
+
+// * 해외여행보험
+//-----------------------
+
+//common
+.btn_toggle {
+  span:after {
+    transform : rotate(0deg);
+  }
+  &.on {
+    span:after {
+      top: 2px;
+      transform : rotate(-180deg);
+    }
+  }
+}
+.btn_summary_change{position:relative;width:28px;height:28px;padding:0;
+  &:after{@include bg_center; width:100%;height:100%;background:url($svg_btn_summary_change) 0 0 no-repeat;}
+  &:before{@include bg_center;width:36px;height:36px;}
+}
+.img_link > img {width: 100%;}
+
+//챗봇
+.chartbot_area {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  z-index: 1;
+  .chatbot {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url($svg_icon_chatbot) 0 0 no-repeat;
+    background-size: 100%;
+  }
+}
+
+.accordion.noline {
+  border: 0;
+  .item {
+    border: 0;
+    .fold_header a {padding: 32px 20px;}
+  }
+}
+
+.section[data-bg=gray]{
+  padding: 50px 0;
+  .title_area {margin-top: 0;}
+}
+[data-bg=bg_overseastrip]{
+  &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 16px;
+      background: url($path+'/overseastrip/bg_overseastrip.png') 50% 50% no-repeat;
+      background-size: contain;
+  }
+}
+
+[data-icon-id=icon_recommend]{
+  [data-icon=icon01]{background-image: url($svg_icon_recommend_01);}
+  [data-icon=icon02]{background-image: url($svg_icon_recommend_02);}
+  [data-icon=icon03]{background-image: url($svg_icon_recommend_03);}
+}
+
+[data-icon-id=overseastrip_benefit]{
+  [data-icon=icon01]{background: url($path+'/overseastrip/icon_overseastrip_benefit_1.png') 50% 50% no-repeat;}
+  [data-icon=icon02]{background: url($path+'/overseastrip/icon_overseastrip_benefit_2.png') 50% 50% no-repeat;}
+}
+
+[data-slider=card]{
+  [data-icon=icon01]{background: url($path+'/overseastrip/img_overseastrip_slide_1.png') 50% 50% no-repeat;}
+  [data-icon=icon02]{background: url($path+'/overseastrip/img_overseastrip_slide_2.png') 50% 50% no-repeat;}
+  [data-icon=icon03]{background: url($path+'/overseastrip/img_overseastrip_slide_3.png') 50% 50% no-repeat;}
+  [data-icon=icon04]{background: url($path+'/overseastrip/img_overseastrip_slide_4.png') 50% 50% no-repeat;}
+}
+
+[data-icon=num01]{background-image: url($svg_icon_num_01);}
+[data-icon=num02]{background-image: url($svg_icon_num_02);}
+[data-icon=num03]{background-image: url($svg_icon_num_03);}
+[data-icon=num04]{background-image: url($svg_icon_num_04);}
+[data-icon=num05]{background-image: url($svg_icon_num_05);}
+[data-icon=num06]{background-image: url($svg_icon_num_06);}
+[data-icon=num07]{background-image: url($svg_icon_num_07);}
+
+[data-icon=icon_airplane]{
+  @include icon_set(28px,28px);
+  background-image: url($svg_icon_airplane);
+  position: static;
+  margin: 0 36px;
+}
+
+[data-icon=icon_audit]{ 
+  @include icon_set(72px,72px);
+  @include icon_center();
+  top: 0;
+  background-image: url($svg_icon_audit);
+  background-position: 0 0;
+}
+.icon.num {
+  @include icon_set(20px, 20px);
+  background-color: $grey_700;
+  border-radius: 50%;
+}
+
+[data-category=overseastrip]{ 
+  .comp.faq_wrap {margin-top: 60px}
+  &[data-bg=gray] {
+    .navbar, .section {background: $grey_130;}
+    .section > .comp:first-child {padding-top: 40px;}
+  }
+  .governing.gap {padding-top: 24px;margin-bottom: 32px;}
+  .title_area {
+      .title {
+        @include font_set($grey_850,19px,$fw_bold);
+          letter-spacing: -0.02em;
+          line-height: 1.4em;
+      }
+  }
+  .img_link_list {
+    border-bottom: 0;
+    .list_item {
+      padding: 18px 0;
+      border-bottom: 1px solid $grey_200;
+      &:last-child {border-bottom: 0;}
+    }
+  }
+  .card_list_more {
+      display: none;
+      margin-top: 16px;
+      &.view {
+          display: block;
+      }
+  }
+  .card_list.overseastrip_list {
+    .card_wrap {
+      display: flex;
+      align-items: center;
+      padding: 24px;
+      border: 1px solid $grey_200;
+      border-radius: 16px;
+      box-shadow: none;
+    }
+    .card_list_default {
+      .card_item {
+        display: none;
+        &:nth-child(n+1):nth-child(-n+3) {display: block;}
+      }
+      &.view {
+        .card_item {display: block;}
+      }
+    }
+  }
+  .card_list.icon_type_large {
+    .card_link  {
+      .txt:before {left: -8px;}
+    }
+  }
+  .card_list:not(.icon_type) {
+      .card_item {
+          .card_desc {
+              width: calc(100% - 78px);
+              margin-right: 8px;
+              font-weight: $fw_regular;
+              .card_tit {
+                  color: $grey_850;font-size: 15px;line-height: 1.5em;word-break: keep-all;
+                  +.card_subtxt {margin-top: 10px;}
+              }
+              .card_subtxt {color: $grey_650;font-size: 13px;}
+          }
+          .card_img > img {width: 78px;height: 78px;}
+          +.card_item {margin-top: 16px;}
+      }
+  }
+  .card_list.box_gray {
+    .card_wrap {
+      padding: 20px 20px 20px 71px;
+      background: $grey_130;
+      box-shadow: none;
+    }
+    .icon {left: 10px;@include icon_set(46px,46px);}
+    .tit {margin-bottom: 4px;@include font_set($grey_750,15px,$fw_bold);}
+    .txt {font-weight: $fw_regular;}
+  }
+  .accordion.qna {margin-bottom: 50px;}
+  .offset_target {padding-top: 20px;}
+  .law {margin-top: 40px;}
+  .btn_area.more {
+      margin-top: 26px;
+      .btn.more {margin-top: 0;}
+  }
+  .colorbox_slide {
+    padding-left: 40px;
+      .swiper-slide {width: 232px;}
+      .colorbox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 256px;
+          padding: 40px 0;
+          text-align: center;
+          border-radius: 40px;
+          &.c1 {background: #DAFFDD;}
+          &.c2 {background: #FFF1C1;}
+          &.c3 {background: #FFEAE6;}
+          &.c4 {background: #DFF4FF;}
+          p {padding: 0 20px;@include font_set($grey_850,15px,$fw_medium);}
+          .icon.large {top: 45px;@include icon_set(232px,100px);}
+      }
+  }
+  .box {
+    .tit {
+      @include font_set($grey_850,15px,$fw_medium);
+      + p, + div {margin-top: 8px;}
+    }
+  }
+  .box.chkbox {
+    margin: 32px 0;
+    input[type=checkbox] + label {color: $grey_850;font-size: 15px;}
+    input[type=checkbox].box_chk:disabled + label {color: $grey_650;}
+    .item {
+      position: relative;
+      padding-right: 34px;
+      .chk_anchor{
+        position:absolute;
+        top:0;
+        right:0;
+        width:24px;
+        height:24px;
+        background: url($svg_arrow_link24) 50% 50% no-repeat;
+        &:after{
+          @include bg_center;
+          width:36px;
+          height:36px;
+        }
+      }
+    }
+  }
+  .box.gray {
+    .desc {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $grey_200;
+      .tit + p {margin-top: 16px;}
+    }
+  }
+  .box.gray.chkbox {margin: 10px 0;}
+  .form_area + .box.gray {margin-top: 32px;}
+  .form_wrap + .chk_wrap {margin-top: 18px;}
+  .btn_area.grid2 {margin-top: 20px}
+
+  //해외여행보험 상세 정보
+  .list_detail_info {
+    .box {
+      padding: 20px 24px 20px 54px;
+      border: 0;
+      background: $grey_170;
+
+      .item_top {display: flex;justify-content: space-between;}
+      .icon.num {
+        left: 20px;
+        @include icon_set(20px, 20px);
+        background-color: $grey_350;
+        border-radius: 50%;
+      }
+      .tit {color: $grey_700;font-weight: $fw_regular;}
+      .item_txt, .ing_txt, .btn.text {display: none;}
+      .ing_txt {color: $quarernary_color;text-decoration: none;}
+
+      &.complete,
+      &.ing {
+        background: #fff;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        .tit {@include font_set($grey_850,15px,$fw_medium);line-height: 22px;}
+        .item_txt {
+          display: block;
+          padding-right: 40px;
+          margin-top: 6px;
+          font-size: 0;
+          span{
+            position: relative;
+            display: inline-block;
+            margin-right: 6px;
+            padding-right: 9px;
+            font-size: 13px;
+            &:after {
+              @include afterBul();
+            }
+            &:last-child{
+              margin-right: 0;
+              padding-right: 0;
+              &:after {display: none;}
+            }
+          }
+        }
+        .icon.num {background-color: $grey_700;}
+      }
+      &.ing {
+        .item_txt {display: none;}
+        .ing_txt {display: block;}
+        .icon.num {background-color: $point_color;}
+      }
+      &.complete {.btn.text {display: block;}}
+      +.box {margin-top: 10px;}
+    }
+  }
+  .chk_wrap {
+    margin-bottom: 16px;
+    input[type=checkbox] + label {
+      @include font_set($grey_850,15px,$fw_medium);
+    }
+    &.tc_gray input[type=checkbox] + label {@include font_set($grey_650,13px,$fw_regular);}
+  }
+
+  [data-slider=indicator_banner]{
+    margin-top: 16px;
+  }
+  .payment_top {
+    [data-slider=indicator_banner]{
+      margin-top: 24px;
+    }
+  }
+  .payment_comp {
+    .comp.border_top {
+      width: 100%;
+      margin: 24px 0;
+      .title_area {
+        p + p {margin-top: 6px;}
+      }
+      .chk_wrap {
+        margin-top: 40px;
+        input[type=checkbox] + label {color: $grey_650;}
+      }
+    }
+  }
+  //아코디언 card type
+  .card_accordion {
+    .card_item {
+      .fold_header {
+        .title {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .small {
+            @include font_set($grey_700,13px,$fw_regular);
+            .date {
+              position: relative;
+              &:after {@include afterBul();}
+              
+            }
+          }
+          .before {display: none;}
+        }
+      }
+      &.on {
+        .fold_header {
+          .title {
+            .before {display: block;}
+            .after {display: none;}
+          }
+        }
+      }
+    }
+    .nation_select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nation {display: block;@include font_set($grey_850,27px,$fw_medium);line-height: 1.4em;}
+      .nation + span {margin-top: 1px;@include font_set($grey_650,14px,$fw_medium);line-height: 1.5em;}
+
+      .nation_item {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        &.destination {
+          padding-right: 24px;
+          .nation {color: $grey_400;}
+        }
+      }
+      .item_link {
+        &:after {
+          top: 8px;
+          right: 0;
+          @include icon_set(24px,24px);
+          background: url($svg_arrow_link24) 100% 50% no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  input[type=radio].btn_rdo + label:before {margin-left: -8px;}
+}
+
+// 해외여행보험 팝업
+[data-category=overseastrip_modal]{ 
+  .comp {margin: 24px auto 0;}
+  .h3 {color: $grey_850;}
+  .h4 {color: $grey_750;}
+  .governing {padding-top: 8px;margin-bottom: 24px;}
+  .uol_list {
+      .h4 + ul {margin-top: 8px;}
+      ul + .h4 {margin-top: 24px;}
+  }
+  .modal_audit {
+    .comp.ta_c {padding-top: 72px;}
+    .title_area {
+      display: block;
+      .h3 + p {margin-top: 24px;}
+    }
+  }
+  .tab_content {
+    .dl_list .title_area {margin-top: 32px;}
+  }
+  //뷰어 영역
+  .viewer_step {
+    margin: 10px 0 20px;
+    .icon.num {left: 0;}
+    ol {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      position: relative;
+      padding-left: 28px;
+      color: $grey_850;
+      &.on {
+        .icon.num {background-color: $point_color;}
+      }
+      &.disabled {
+        color: $grey_650;
+        .icon.num {background-color: $grey_350;}
+      }
+      + li {
+        margin-left: 37px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -27px;
+          top: 50%;
+          display: inline-block;
+          width: 17px;
+          height: 3px;
+          background: url("data:image/svg+xml,%3Csvg width='17' height='4' viewBox='0 0 17 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3Ccircle cx='8.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3Ccircle cx='15.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3C/svg%3E%0A") no-repeat;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+// 해외여행보험 상세 정보 sidebar
+.detail_sidebar {
+  background: $grey_130;
+  .sidebar_top {
+    justify-content: space-between;
+    align-items: center;
+    .header-title {@include font_set($grey_850,14px,$fw_medium);line-height: 21px;}
+    .btn_sidebar_close.prev:after {background-image:url($svg_btn_page_prev);}
+  }
+  .content_wrap {
+    position: relative;
+    min-height: 400px;
+    padding-bottom: calc(90px + 64px);
+  }
+  .sidebar_content {
+    min-height: 100%;
+    padding-top: 40px;
+    overflow-x: hidden;
+  }
+  .content_footer.fix {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px 34px 20px;
+    z-index: 209;
+  }
+}
+
+ //MISTV0034U_보험료 확인
+ .sticky_area {
+  position: relative;
+  .plan_menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+
+    .plan_menu_option {
+      display: flex;
+      flex: 1;
+      position: relative;
+      text-align: center;
+      background-color: $grey_130;
+      a {
+        width: 100%;
+        height: 85px;
+        padding: 22px 4px;
+        @include font_set($grey_650,12px,$fw_medium);
+        strong {display: block;}
+        .price {@include font_set($grey_850,17px,$fw_bold);line-height: 1.4em;word-break: break-word;}
+      }
+      .recommend_txt {
+        display: none;
+        position: absolute;
+        width: 135px;
+        height: 34px;
+        left: auto;
+        right: 0;
+        top: -60px;
+        padding: 8px;
+        @include font_set(#fff,12px,$fw_medium);
+        line-height: 18px;
+        background: $grey_750;
+        border-radius: 6px;
+        text-align: center;
+        transform: translateX(-10px);
+            
+        &:after {
+          content: "";
+          position: absolute;
+          top: 33px;
+          right: 20px;
+          border-top: 10px solid $grey_750;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 0px solid transparent;
+        }
+      }
+      &.on {
+        a {
+          position: relative;
+          color: #fff;
+          background: $point_color;
+          border: 1px solid $point_color;
+          border-radius: 16px;
+          box-shadow: 0px 7px 20px rgba(248, 41, 13, 0.18);
+          &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -22px;
+            display: inline-block;
+            width: 45px;
+            height: 42px;
+            background: url($path+"/overseastrip/icon_crown.png") 50% 50% no-repeat;
+            background-size: 100%;
+            transform: translateX(-50%);
+          }
+        }
+        .price {color: #fff;}
+        .recommend_txt {
+          display: block;
+          z-index: 1;
+        }
+        &.standard .recommend_txt {right: -100%;}
+        &.smart .recommend_txt {right: -200%;}
+      }
+      &:first-child {
+        border-radius: 16px 0 0 16px;
+      }
+    }
+
+    &.fixed_item {
+      &.fixed {
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        padding: 40px 20px 20px;
+        background: #fff;
+        border-radius: 0;
+        z-index: 1;
+        .recommend_txt {
+          display: none;
+        }
+      }
+    }
+  }
+  .plan_list {
+    margin-top: 12px;
+    .red {color: $error_color;}
+
+    .plan_list_item {
+      .plan_list_tit {
+        position: relative;
+        padding: 16px 34px 16px 0;
+        @include font_set($grey_850,14px,$fw_medium);
+        input[type=checkbox] + label {@include font_set($grey_850,14px,$fw_medium)}
+        .plan_list_anchor {
+          position:absolute;
+          top:15px;
+          right:0px;
+          width:24px;
+          height:24px;
+          background:url(svg_color($svg_arrow_right_24, '#C8C8CA', '%23C8C8CA')) 50% 50% no-repeat;
+          background-size: 100%;
+          &:after{
+              content:'';
+              position:absolute;
+              top:50%;
+              left:50%;
+              width:36px;
+              height:36px;
+              transform: translate(-50%, -50%);
+            }
+        }
+        .link_desc {
+          display: block;
+          padding-left: 34px;
+          @include font_set($grey_700,12px,$fw_regular)
+        }
+      }
+      .form_area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .form_wrap {
+          flex: 1;
+          justify-content: center;
+          padding: 10px 8px;
+          color: $grey_650;
+          font-weight: $fw_regular;
+          text-align: center;
+          border-bottom: 1px solid $grey_200;
+          select {
+            height: auto;
+            @include font_set($grey_650,15px,$fw_regular);
+            text-align: center;
+            background: url($svg_arrow_down) no-repeat 100% 50%;
+            padding-right: 0;
+          }
+          +.form_wrap {
+            margin-top: 0;
+          }
+          &::after {display: none;}
+        }
+        .on {
+          @include font_set($grey_850,15px,$fw_medium);
+          border-bottom-color: #FFF4EB;
+          background-color: #FFF4EB;
+          
+          select {
+            @include font_set($grey_850,15px,$fw_medium);
+            background: url($svg_arrow_down_24) no-repeat 100% 50%;
+            background-size: 17px 16px;
+          }
+        }
+      }
+      margin-top: 4px;
+      &:first-child {margin-top: 0;}
+    }
+  }
+  }

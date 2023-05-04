@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/**
+* Layout
+* ------------------
+*/
+
+// * height100
+//-----------------
+html,body{min-height:100%;height:100%;}
+#wrap{position:relative;min-height:100%; min-width: $screen_width;}
+
+
+// * Basic
+//-----------------
+#header{z-index:$zindex_header;}
+#quick{z-index:$zindex_quick;}
+#content{min-height:100%;padding-top:$header_height;overflow-x:hidden;
+	.content_wrap{position: relative;min-height: 400px; 
+		// padding-top:$content_top_space;
+		padding-bottom:calc(#{$content_footer_height} + #{ $content_bottom_space});
+		&.no_footer{padding-bottom: #{$content_bottom_space};}
+	}
+	.content_footer{z-index:$zindex_content_footer;position: absolute;left: 0;right: 0;bottom: 0;
+		&.fix{position: fixed;}
+	}
+}
+
+.content_footer.fix,
+.modal_footer.fix{padding:0 20px 34px 20px;
+	&:before{content:''; position:absolute; top:-16px; right:0; bottom:0; left:0; z-index:-1; background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, #FFFFFF 19.79%); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+	}
+}
+
+#footer{z-index:$zindex_footer;} //.main_footer
+
+
+
+// 모바일 가로 스크롤 안보이게
+html.mobile{
+	.tag_scroll,
+	.tab_scroll{
+		&::-webkit-scrollbar{display: none;}
+		-ms-overflow-style:none;
+		scrollbar-width:none;
+		scrollbar-height:none;
+	}
+}
+
+
+// * Case 
+//-----------------
+// Case: main
+[data-category="main"]{
+
+}
+
+
+// * Case: gray bg
+[data-bg=gray]{
+	background-color:#F9F9FB;
+	.tab_content,.content_wrap{
+		background-color:#F9F9FB;
+	}
+	.section{
+		background-color:#FFFFFF;
+	}
+
+	.tab_content > .comp .title_area:first-child{
+		margin-top:0;
+		padding-top:32px;
+	}
+}
+
+
+
+// * Case: 유의사항 등 컨테트 bottom fix
+.modal .modal_body .wrapper.bottom_fix, 
+#content .content_wrap.bottom_fix{
+	display: flex; flex-wrap:wrap; padding-bottom: 0;
+	// min-height: calc(100vh - 200px); //스크립트 계산
+	.section.bottom_fix{display: flex; flex-direction: column;align-items: center; justify-content: flex-end; padding-bottom: 24px;}
+	&.no_footer .section.bottom_fix{padding-bottom: 64px;}
+}
+
+
+.tab_content.bottom_fix{
+	min-height: 100%;display: flex; flex-wrap:wrap; padding-bottom: 0;
+	// min-height: calc(100vh - 200px); //스크립트 계산
+	.section.bottom_fix{display: flex; flex-direction: column;align-items: center; justify-content: flex-end; padding-bottom: 24px;}
+	&.no_footer .section.bottom_fix{padding-bottom: 64px;}
+}
+
+.main_footer{
+	height:72px;
+	padding:0 29px 0 !important;
+	border-top:1px solid #EFEFF1;
+	background-color:#fff;
+	&:before{
+		display:none;
+	}
+}
+.main_menu{
+	display:flex;
+	width:100%;
+	margin:0 auto;
+	justify-content:space-between;
+	li{
+		min-width:50px;
+		width:50px;
+		text-align:center;
+		a,button{
+			display:block;
+			position:relative;
+			padding-top:35px;
+			height:50px;
+			span{
+				display:block;
+				font-size:11px;
+				line-height:1em;
+				letter-spacing:-1px;
+				color:#767678;
+			}
+			&:after{
+				content:'';
+				position:absolute;
+				top:5px;
+				left:50%;
+				width:28px;
+				height:28px;
+				margin-left:-14px;
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+			}
+			&.menu_tip{
+				&:after{background-image:url($svg_icon_main_menu01);}
+			}
+			&.menu_benefits{
+				&:after{background-image:url($svg_icon_main_menu02);}
+			}
+			&.menu_product{
+				&:after{background-image:url($svg_icon_main_menu03);}
+			}
+			&.menu_alarm{
+				&:after{background-image:url($svg_icon_main_menu04);}
+			}
+			&.menu_my{
+				&:after{background-image:url($svg_icon_main_menu05);}
+			}
+		}
+		&.on{
+			a,button{
+				span{
+					color:#1F1F21;
+				}
+				&.menu_tip{
+					&:after{background-image:url($svg_icon_main_menu01_on);}
+				}
+				&.menu_benefits{
+					&:after{background-image:url($svg_icon_main_menu02_on);}
+				}
+				&.menu_product{
+					span{display:none;}
+					&:after{top:0;width:40px;height:40px;margin-left:-20px;background-image:url($svg_icon_main_menu03_on);}
+					&:before{content:'';position:absolute;top:-1px;left:50%;width:48px;height:44px;margin-left:-24px;background:url($svg_icon_main_menu03_on_back) 50% 50% no-repeat;background-size:100% 100%;}
+				}
+				&.menu_alarm{
+					&:after{background-image:url($svg_icon_main_menu04_on);}
+					&:before{display:none;}
+				}
+				&.menu_my{
+					&:after{background-image:url($svg_icon_main_menu05_on);}
+				}
+			}
+		}
+		&.new{
+			a,button{
+				&.menu_alarm{
+					&:before{content:'';position:absolute;top:7px;left:50%;width:5px;height:5px;margin-left:7px;border-radius:50%;background-color:#F8670D;}
+				}
+			}
+		}
+	}
+}
+
+#content .content_wrap.main_wrap{
+  padding-bottom:136px;
+}

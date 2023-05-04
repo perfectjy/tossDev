@@ -1,0 +1,228 @@
+;(function(win, doc, undefined) {
+
+	'use strict';	
+	
+	var $WIN = $(window);		
+	var $DOC = $(document);		
+	
+	
+	KAUI.common = {
+		init : function(){				
+			KAUI.common.gnbNav.init();
+			KAUI.select.init();			
+			KAUI.form.init();
+			KAUI.tooltip.init();			
+			KAUI.datepicker.init({
+				id: 'input id name',
+				date: 'YYYY.MM.DD',
+				min: 'YYYY.MM.DD',
+				max: 'YYYY.MM.DD',
+				title: 'title name',
+				//period: 'start' or 'end',
+				// callback: function(){
+				// 	console.log('callback init');
+				// }
+			});
+			KAUI.common.findFund();
+			KAUI.common.fundCompare();
+			KAUI.common.fundCompareToggle();
+			KAUI.common.windowScroll();			
+
+			// 모달 호출
+			const btns = document.querySelectorAll('.btn-modal');
+
+			for (const btn of btns) {
+				btn.addEventListener('click', (e) => {
+					const el = e.currentTarget;
+					const id = el.dataset.id;
+					const src = el.dataset.src;
+
+					// callback 함수 필요할경우
+					if (id === 'sampleModal') {
+						KAUI.modal.show({ 
+							id:id, 
+							src: src,
+							callback: () => {
+								//alert(111);
+							}
+						});
+					} else {
+						KAUI.modal.show({ 
+							id:id, 
+							src: src
+						});
+					}
+				});
+			}	
+		},
+		pageDefault : {				
+			header : function() { 
+				if ($('.gnb-wrap').length > 0) { 
+					$('.gnb-wrap').load('/kiam/pcWeb/pub_include/header.html', function() {
+						KAUI.common.gnbNav.init();
+					});
+				}
+			},
+			footer : function() { 
+				if ($('.foot-wrap').length > 0) $('.foot-wrap').load('/kiam/pcWeb/pub_include/footer.html');			
+			}
+		},
+		gnbNav : {
+			gnb : $('.gnb'),
+			gnbMenu : $('.gnb nav > ul.menu'),
+			gnbMenuLi : $('.gnb nav > ul > li'),		
+			menuSpeed: 200,
+			bgSpeed: 200,
+			tabTimeout: '',
+			openTimeout: '',
+			closeTimeout: '',  
+			// 서브 열림
+			open : function(target,time){
+				clearTimeout(KAUI.common.gnbNav.closeTimeout);
+				var openInit = function(){
+					var $subMenu = $('.gnb .sub');
+					$('.gnb-wrap').addClass('show');	
+					$('.gnb nav > ul > li').children('a').attr('aria-expanded','false');
+					$('.gnb nav > ul > li').removeClass('hover');
+					$(target).children('a').attr('aria-expanded','true');
+					$(target).addClass('hover');
+					KAUI.common.gnbNav.tabTimeout = setTimeout(function(){
+						$subMenu.stop(true,false).fadeIn(200).addClass('active');
+					},100);				
+				};
+
+				if(!!time){
+					KAUI.common.gnbNav.openTimeout = setTimeout(function() {
+						openInit();
+					}, time);
+				}else{
+					openInit();
+				}
+			},
+			// 서브 닫힘
+			close: function (time) {
+				clearTimeout(KAUI.common.gnbNav.openTimeout);
+				clearTimeout(KAUI.common.gnbNav.tabTimeout);
+				var closeInit = function(){
+					$('.gnb-wrap').removeClass('show');	
+					$('.gnb nav > ul > li').children('a').attr('aria-expanded','false');
+					$('.gnb nav > ul > li').removeClass('hover');
+					$('.gnb .sub').removeClass('active').removeAttr('style');
+				};
+				if(!!time){
+					KAUI.common.gnbNav.closeTimeout = setTimeout(function(){
+						closeInit();
+					},time)
+				}else{
+					closeInit();
+				}
+			},	
+			// 실행
+			init : function () {
+				
+				var menu = $('.gnb nav > ul > li');		
+				menu.children('a').attr('aria-expanded','false');
+				//var $current = KAUI.common.gnbNav.find('.current');
+				var $openDep1 = '';
+				// if ($current.length){
+				// 	// 
+				// }
+				menu.on('mouseover focusin', function (e){
+					var $this = $(this);
+					if(e.type == 'mouseover'){
+						KAUI.common.gnbNav.open($this,100);
+					}else{
+						KAUI.common.gnbNav.open($this);
+					}
+					$openDep1 = $this;
+				}).on('mouseout focusout', function (e){
+					if(e.type == 'mouseout'){
+						KAUI.common.gnbNav.close(100);
+					}else{
+						KAUI.common.gnbNav.close(10);
+					}
+				});
+			}
+
+		},
+		dropMenu : function(opt) { 
+			var el = $('#' + opt.id).find('.ui-drop-btn');
+
+			el.on('click', function(e) {
+				e.preventDefault();	
+				var gTarget = $('.ui-drop-wrap');
+				var $this = $(this);
+				if(!$this.closest('.ui-drop-wrap').hasClass('on')){
+					$this.closest('.ui-drop-wrap').addClass('on');
+				} else {
+					$this.closest('.ui-drop-wrap').removeClass('on');
+				}
+			});
+
+			$(document).on('click', function(e) {
+				if ($(e.target).closest('.ui-drop-wrap').length == 0) $('.ui-drop-wrap').removeClass('on');
+			});
+		},
+		findFund : function() {
+			if ($('.fund-find-wrap').length > 0) { 
+				var gTarget = $('.fund-find-wrap');				
+				var el = $('.find-bar').find('.btn-option');			
+				var fundMore = false; 
+
+				el.off('click.findFund').on('click.findFund', function (e) {					
+					e.preventDefault();	
+					var $this = $(this);	
+					var el_pnl = $this.closest(gTarget).find('.find-more');
+					var el_pnl_height = $this.closest(gTarget).find('.find-more').height();	
+
+					if(!!!fundMore){						
+						$this.find('span').text('검색옵션 닫기').closest(gTarget).addClass('on');	
+						//el_pnl.css({'height':el_pnl_height});					
+						fundMore = true; 
+					} else {
+						$this.find('span').text('검색옵션 열기').closest(gTarget).removeClass('on');	
+						//el_pnl.css({'height':0});	
+						fundMore = false; 
+					}
+				});
+			}
+		},	
+		windowScroll : function() {
+			$WIN.scroll(function() { 
+				KAUI.common.fundCompare(); 
+		   });
+		},	
+		fundCompare : function () {
+			if (!$('.fund-find-wrap').length > 0) return;
+
+			var $fundcp = $('.fund-compare'),
+				$container = $('.sub-wrap'),
+				winH = $WIN.height(),
+				winScrollTop = $WIN.scrollTop(),
+				containerTop = $container.offset().top,
+				footTop = $('.foot-wrap').offset().top;
+			
+			var topMg = Math.max(((winScrollTop + winH) - footTop), 0);	
+			var isCpFix = containerTop+topMg < winScrollTop && footTop-winH > winScrollTop;	
+			if(isCpFix) !$fundcp.is(".fixed") && $fundcp.addClass("fixed");
+			else $fundcp.is(".fixed") && $fundcp.removeClass("fixed");				
+		},
+		fundCompareToggle : function(e) {
+			var $fundcp = $('.fund-compare'),
+				el = $('.fund-compare').find('.btn-compare');
+
+			el.off('click.findCompareDetail').on('click.findCompareDetail', function (e) {
+				console.log('click');
+			});
+		}
+
+	}
+
+	//기본실행
+	doc.addEventListener("DOMContentLoaded", function(){
+		KAUI.common.init();
+	});	
+	
+})(window, document);
+
+

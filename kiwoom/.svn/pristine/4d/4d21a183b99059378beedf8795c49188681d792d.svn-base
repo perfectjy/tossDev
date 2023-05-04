@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <link rel="stylesheet" href="/admin/resource/css/admin.css" type="text/css">
+    <script type="text/javascript" src="/admin/resource/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.global.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.common.js"></script>
+    <script type="text/javascript">
+        pageInfo = { mid: '2', sid: '2' }; 
+    </script>
+</head>
+
+<body>
+<div class="kiam-amin-wrap">
+    <header class="gnb-wrap">
+        <div>
+            <h1><a href="#"><span class="hide">키움자산운용</span></a></h1>
+            <div class="links">
+                <a href="#"><span>홈페이지 바로가기</span></a>
+                <a href="#"><span>KOSEF 바로가기</span></a>
+            </div> 
+        </div>
+    </header>
+    <main class="main-wrap" id="content">
+        <div class="sub-nav"></div>
+        <section class="main-conts">
+            <h2>팝업 관리</h2>
+            <ul class="page-nav">
+                <li><a href="#">자사 메인 관리</a></li>
+                <li class="current"><a href="#">대표 펀드 관리</a></li>
+            </ul>
+            <div class="tbl-base mgt25">
+                <table>                   
+                    <colgroup>
+                        <col style="width:300px;">
+                        <col style="width:auto;">     
+                        <col style="width:300px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">등록일</th>
+                            <td>2022.12.19</td>
+                            <th scope="row">게시여부</th>
+                            <td>                              
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr01" name="bnrLink" checked>
+                                        <label for="bnr01" class="lb-radio"><span>Y</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>N</span></label>
+                                    </span>
+                                </div>   
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row">유형</th>
+                            <td colspan="3">
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr01" name="bnrLink" checked>
+                                        <label for="bnr01" class="lb-radio"><span>레이어 팝업</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>띠 배너 팝업</span></label>
+                                    </span>
+                                </div> 
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">제목<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td colspan="3">
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea"></textarea>
+                                    <p class="note">0 / 30자</p>
+                                </div>
+                            </td>
+                        </tr>     
+                        <tr>
+                            <th scope="row">이미지<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td colspan="3">                                
+                               <div class="file-wrap">          
+                                    <strong class="file-title">PC</strong>
+                                    <label for="file-upload" class="btn-file">파일추가</label>
+                                    <input id="file-upload" type="file"/>
+                                </div> 
+                                <div class="file-wrap">
+                                    <strong class="file-title">모바일</strong>
+                                    <label for="file-upload2" class="btn-file">파일추가</label>
+                                    <input id="file-upload2" type="file"/>
+                                </div>                         
+                            </td> 
+                        </tr>       
+                        <tr>
+                            <th scope="row">대체 텍스트<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td colspan="3">
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea"></textarea>
+                                    <p class="note">0 / 50자</p>
+                                </div>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">팝업 링크<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td colspan="3">                                
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr01" name="bnrLink" checked>
+                                        <label for="bnr01" class="lb-radio"><span>URL</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>미적용</span></label>
+                                    </span>
+                                </div>   
+                                <div class="frm-area mgt10">
+                                    <input type="text" class="inp-text">
+                                    <div class="frm-area multi">
+                                        <span class="lb-item">
+                                            <input type="checkbox" id="flag0201" name="" checked>
+                                            <label for="flag0201" class="lb-checkbox"><span>TDB</span></label>
+                                        </span>
+                                    </div>
+                                </div>                                                    
+                                <div class="frm-area mgt10">
+                                    <input type="text" class="inp-text">
+                                    <div class="frm-area multi">
+                                        <span class="lb-item">
+                                            <input type="checkbox" id="flag0201" name="" checked>
+                                            <label for="flag0201" class="lb-checkbox"><span>TDB</span></label>
+                                        </span>
+                                    </div>
+                                </div>                                  
+                            </td> 
+                        </tr>                                 
+
+                    </thead>
+                </table>
+            </div>
+
+            <div class="tbl-btns">
+                <button class="btn base cancel"><span>삭제</span></button>
+                <div>
+                    <button class="btn base"><span>취소(목록)</span></button>
+                    <button class="btn base primary"><span>저장</span></button>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn primary"><span>등록</span></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright©2023 KiwoomAM. All rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>

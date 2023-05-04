@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+		//Guide
+		guideTab();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="true" data-category="guide">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">Module</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">validation</h2>
+							<span class="info_txt">UI/UX validation 가이드 입니다.</span>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="comp">
+							<div class="form_area grid2">
+								<div class="form_item">
+									<div class="form_label"><label for="">이름</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="">
+									</div>
+									<div class="form_msg error">이름을 꼭 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">한글이름</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="">
+									</div>
+									<div class="form_msg error">한글이름을 꼭 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">영문이름</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="여권 영문이름 입력(예: KIM HYUN DAI)">
+									</div>
+									<div class="form_msg error">여권 영문이름을 꼭 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">생년월일</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="숫자 6자리 입력(예: 870701)">
+									</div>
+									<div class="form_msg error">생년월일을 꼭 입력해 주세요.</div>
+									<div class="form_msg error">생년월일을 6자리로 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item col2">
+									<div class="form_label"><label for="">주민등록번호/외국인등록번호</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="앞 6자리">
+									</div>
+									<div class="form_wrap form_key">
+										<div class="pin_area">
+											<strong class="active"><span class="blind">1번째 번호</span></strong>
+											<strong><span class="blind">2번째 번호</span></strong>
+											<strong><span class="blind">3번째 번호</span></strong>
+											<strong><span class="blind">4번째 번호</span></strong>
+											<strong><span class="blind">5번째 번호</span></strong>
+											<strong><span class="blind">6번째 번호</span></strong>
+											<strong><span class="blind">7번째 번호</span></strong>
+										</div>
+									</div>
+									<div class="form_msg error">주민등록번호 앞 6자리를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 앞 6자리를 정확히 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 뒤 7자리를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">주민등록번호 뒤 7자리를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_phone">
+										<div class="form_label"><label for="">연락처</label></div>
+										<div class="form_wrap">
+											<select id="">
+												<option>010</option>
+											</select>
+										</div>
+										<div class="form_wrap">
+											<input type="number" placeholder="-없이 입력" title="연락처 입력">
+										</div>
+									</div>
+									<div class="form_msg error">연락처를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">연락처를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_phone">
+										<div class="form_label"><label for="">휴대폰번호</label></div>
+										<div class="form_wrap">
+											<select id="">
+												<option>010</option>
+											</select>
+										</div>
+										<div class="form_wrap">
+											<input type="number" placeholder="-없이 입력" title="휴대폰번호 입력">
+										</div>
+									</div>
+									<div class="form_msg error">휴대폰번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">휴대폰번호를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">팩스</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="-없이 입력">
+									</div>
+									<div class="form_msg error">팩스번호를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="inp08">인증번호 입력</label></div>
+									<div class="form_wrap">
+										<input type="number" id="inp08" placeholder="6자리 입력" maxlength="6">
+										<div class="append">
+											<span class="unit"><button type="button" class="btn_form">인증번호 재요청</button></span>
+										</div>
+									</div>
+									<div class="form_msg error">인증번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">인증번호를 정확히 입력해 주세요.</div>
+									<div class="time_msg">
+										<span>남은시간 <em>02:59</em></span>
+										<button type="button" class="btn_text">시간 연장</button>
+									</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="email">이메일</label></div>
+									<div class="form_wrap form_email">
+										<input type="text">
+										<div class="email_autocomplete" style="display: block;">
+											<ul>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">naver.com</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">hanmail.net</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">daum.net</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">kakao.com</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">korea.kr</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">korea.com</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">dreamwiz.com</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">yahoo.co.kr</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">hi.co.kr</span>
+													</button>
+												</li>
+												<li>
+													<button type="button">
+														<span class="input_mail">test</span>
+														<span>@</span>
+														<span class="domain">직접입력</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="form_msg error">이메일을 꼭 입력해 주세요</div>
+									<div class="form_msg error">이메일을 정확히 입력해 주세요</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">자동차번호</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="7~9자리 입력(11가1234 또는 123가1234)">
+									</div>
+									<div class="form_msg error">자동차번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">자동차번호를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">차대번호</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="17자리 입력(AAABBCCDD1111CCDD)">
+									</div>
+									<div class="form_msg error">차대번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">차대번호를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="card">카드번호</label></div>
+									<div class="form_card">
+										<div class="form_wrap">
+											<input type="text" id="card" placeholder="4자리" title="카드번호 첫번째 4자리 입력">
+										</div>
+										<div class="form_wrap">
+											<input type="text" placeholder="4자리" title="카드번호 두번째 4자리 입력">
+										</div>
+										<div class="form_wrap">
+											<input type="text" placeholder="4자리" title="카드번호 세번째 4자리 입력">
+										</div>
+										<div class="form_wrap form_key">
+											<div class="pin_area">
+												<strong class="active"><span class="blind">1번째 번호</span></strong>
+												<strong><span class="blind">2번째 번호</span></strong>
+												<strong><span class="blind">3번째 번호</span></strong>
+											</div>
+										</div>
+									</div>
+									<div class="form_msg error">첫번째 카드번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">첫번째 카드번호를 정확히 입력해 주세요.</div>
+									<div class="form_msg error">두번째 카드번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">두번째 카드번호를 정확히 입력해 주세요.</div>
+									<div class="form_msg error">세번째 카드번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">세번째 카드번호를 정확히 입력해 주세요.</div>
+									<div class="form_msg error">네번째 카드번호를 꼭 입력해 주세요.</div>
+									<div class="form_msg error">네번째 카드번호를 정확히 입력해 주세요.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">유효기간</label></div>
+									<div class="form_wrap">
+										<input type="text" id="" placeholder="MM/YY">
+									</div>
+									<div class="form_msg error">카드 유효기간 4자리를 월/년 형식에 맞게 정확히 입력해 주세요.</div>
+									<div class="form_msg error">카드 유효기간은 이번 달과 같거나 그 이후여야 합니다.</div>
+								</div>
+								<div class="form_item">
+									<div class="form_label"><label for="">카드</label></div>
+									<div class="form_wrap placeholder">
+										<button type="button" id="" class="btn_select"><span>선택</span></button>
+									</div>
+									<div class="form_msg error">결제 카드를 꼭 선택해 주세요.</div>
+								</div>
+								<div class="form_item select_box">
+									<div class="form_label"><label for="">카드</label></div>
+									<div class="form_wrap placeholder">
+										<button type="button" id="" class="btn_select"><span>선택</span></button>
+									</div>
+									<div class="form_msg error">결제 카드를 꼭 선택해 주세요.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+				<!-- content_footer -->
+				<!-- <div class="content_footer">
+					<div style="height: 58px;background-color:orange;"></div>
+				</div> -->
+				<!-- //content_footer -->
+				<!-- <script type="text/javascript" src="../_ui_include/quick.js"></script>Include: quick -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+	</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

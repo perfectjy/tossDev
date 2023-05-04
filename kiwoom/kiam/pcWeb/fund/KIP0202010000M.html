@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <div class="kiam-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kiam/pcWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap fund-find-wrap" id="content">
+            <div class="sub-head-wrap">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li class="home"><a href="#"><span class="hide">HOME</span></a></li>
+                        <li><span>펀드상품</span></li>
+                        <li class="current"><span>펀드상품 찾기</span></li>
+                    </ul>
+                </nav>
+                <h2>펀드찾기</h2> 
+                <div class="find-fund">
+                    <div class="sch-top">
+                        <input type="text" class="inp-base" data-clear="true" placeholder="상품명을 입력하세요." title="상품명 입력"> <!-- 20230213 수정 -->
+                        <button class="btn-sch"><span class="hide">펀드 검색</span></button>
+                    </div>
+                    <dl class="sch-tips">
+                        <dt>추천검색어</dt>
+                        <dd>
+                            <button type="button" class="active">#ESG<span class="hide">선택됨</span></a> <!-- 20230502 선택됨 추가 -->
+                            <button type="button">#미국</a>
+                            <button type="button">#원자재</a>
+                            <button type="button">#신흥국</a>
+                            <button type="button">#인플레이션</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="fund-sch-wrap">
+                    <div class="find-items">
+                        <strong>지역구분</strong>
+                        <div>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea1" value="0" checked>
+                                <label for="fundArea1" class="lb-radio"><span>전체</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea2" value="1">
+                                <label for="fundArea2" class="lb-radio"><span>국내</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea3" value="2">
+                                <label for="fundArea3" class="lb-radio"><span>해외</span></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="find-items">
+                        <strong>펀드유형</strong>
+                        <div class="full">
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType1" value="0" checked>
+                                <label for="fundType1" class="lb-checkbox"><span>전체</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType2" value="1">
+                                <label for="fundType2" class="lb-checkbox"><span>주식형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType3" value="2">
+                                <label for="fundType3" class="lb-checkbox"><span>채권형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType4" value="3">
+                                <label for="fundType4" class="lb-checkbox"><span>혼합형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType5" value="4">
+                                <label for="fundType5" class="lb-checkbox"><span>MMF</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType6" value="5">
+                                <label for="fundType6" class="lb-checkbox"><span>ETF</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType7" value="6">
+                                <label for="fundType7" class="lb-checkbox"><span>파생상품</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType8" value="7">
+                                <label for="fundType8" class="lb-checkbox"><span>재간접</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType9" value="8">
+                                <label for="fundType9" class="lb-checkbox"><span>기타</span></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="find-more">
+                        <div>
+                            <div class="find-items range">
+                                <strong>위험등급</strong>
+                                <div class="range-risk">
+                                    <div class="ui-range" data-id="rangeRisk">
+                                        <input class="ui-range-inp" data-range="from" type="range" />
+                                        <input class="ui-range-inp" data-range="to" type="range" />                                                                            
+                                    </div>                   
+                                </div>
+                            </div>
+                            <div class="find-items">
+                                <strong>수익률기간</strong>
+                                <div class="full">
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod1" value="0" checked>
+                                        <label for="fundPeriod1" class="lb-radio"><span>전체</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod2" value="1">
+                                        <label for="fundPeriod2" class="lb-radio"><span>1개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod3" value="2">
+                                        <label for="fundPeriod3" class="lb-radio"><span>3개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod4" value="3">
+                                        <label for="fundPeriod4" class="lb-radio"><span>6개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod5" value="4">
+                                        <label for="fundPeriod5" class="lb-radio"><span>1년</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod6" value="5">
+                                        <label for="fundPeriod6" class="lb-radio"><span>3년</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod7" value="5">
+                                        <label for="fundPeriod7" class="lb-radio"><span>3년</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" name="searchType3" id="fundPeriod8" value="6">
+                                        <label for="fundPeriod8" class="lb-radio"><span>설정일이후</span></label>
+                                    </span>                               
+                                </div>
+                            </div>
+                        
+                            <div class="find-items range">
+                                <strong>수익률</strong>
+                                <div class="range-return">
+                                    <div class="ui-range" data-id="rangeRetrun">
+                                        <input class="ui-range-inp" data-range="from" type="range"   />
+                                        <input class="ui-range-inp" data-range="to" type="range"  />
+                                    </div>                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="find-bar">
+                        <button type="button" class="btn-option"><span>검색옵션 열기</span></button>
+                        <div>
+                            <button class="btn-reset"><span>초기화</span></button>
+                            <button type="button" class="btn primary"><span>검색하기</span></button> <!-- 20230308 버튼 클래스 수정 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tbl-info flex">
+                    <div class="info">
+                        <span class="total">총 <strong class="fc-primary">24</strong>건 <span class="date">기준 : <em>2022.10.07</em></span></span>       <!-- 20230213 개, 건으로 수정, 20230308 기준 텍스트 이동 --> 
+                    </div>   
+                <!-- 20230308 수익률 개월별 선택 셀렉트 추가 및 수정 -->          
+                    <div class="return-opt">
+                        <div class="ui-select" data-style="rate-return-type">
+                            <select title="수익률순 선택" id="rateReturnSel">
+                                <option value="1" selected>3개월 수익률순</option>
+                            </select>
+                        </div>
+                        <div class="tab-tog">                        
+                            <span class="lb-txts">연금상품만 보기</span> <!-- 20230213 수정 -->
+                            <span class="lb-item sort-chk">
+                                <input type="checkbox" name="annSort2" id="annSort2">
+                                <label for="annSort2" class="tab-chkbox"><span class="hide">연금투자가능</span></label>
+                            </span>                        
+                        </div>
+                    </div>
+                 <!-- //20230308 수익률 개월별 선택 셀렉트 추가 및 수정 -->  
+                </div>
+              
+                <table class="tbl">
+                    <caption>펀드찾기 결과 테이블입니다.</caption>
+                    <colgroup>
+                        <col style="width:auto;">
+                        <col style="width:104px;">
+                        <col style="width:104px;">
+                        <col style="width:72px;" span="4">
+                        <col style="width:85px;">
+                        <col style="width:85px;">
+                        <col style="width:85px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">상품명</th> <!-- 20230213 종목코드 삭제 -->
+                            <th scope="col" rowspan="2">기준가<br>(원)</th>
+                            <th scope="col" rowspan="2">순자산<br>(원)</th>
+                            <th scope="colgroup" colspan="7" class="txt-s">수익률(%)</th>  <!-- 20230308 클래스 추가 -->
+                        </tr>
+                        <tr>
+                            <th scope="col" class="txt-s">1개월</th> <!-- 20230308 클래스 추가 -->
+                            <th scope="col" class="txt-s">3개월</th>
+                            <th scope="col" class="txt-s">6개월</th>
+                            <th scope="col" class="txt-s">1년</th>
+                            <th scope="col" class="txt-s">3년</th>
+                            <th scope="col" class="txt-s">5년</th>
+                            <th scope="col" class="txt-s">설정일<br>이후</th> <!-- 20230308 br 추가 -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks1" name="formChks">
+                                        <label for="formChks1" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움KOSEF미국나스닥100증권상장지수투자신탁[주식](H)</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span>9,844.79</span><br><span class="fund-points">0.00</span></td> <!-- 20230308 span bold 클래스 삭제-->
+                            <td><span>154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">455190.16</span></td>
+                            <td><span class="txt-up">455190.16</span></td>
+                            <td><span class="txt-up">455190.16</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks2" name="formChks">
+                                        <label for="formChks2" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>787.41<br><span class="fund-points ico-drop"><span class="hide">하락포인트</span>0.15</span></td>
+                            <td>1,551.49억</td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks2" name="formChks">
+                                        <label for="formChks2" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">국내</em>
+                                            <em class="t-bond">채권형</em>
+                                            <em class="t-high">높은위험</em>
+                                        </div>
+                                        <strong class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>787.41<br><span class="fund-points ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                            <td>1,551.49억</td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks3" name="formChks">
+                                        <label for="formChks3" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">국내</em>
+                                            <em class="t-bond">채권형</em>
+                                            <em class="t-high">높은위험</em>
+                                        </div>
+                                        <strong class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>787.41<br><span class="fund-points ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                            <td>1,551.49억</td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks4" name="formChks">
+                                        <label for="formChks4" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">국내</em>
+                                            <em class="t-bond">채권형</em>
+                                            <em class="t-high">높은위험</em>
+                                        </div>
+                                        <strong class="item-title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>787.41<br><span class="fund-points ico-up"><span class="hide">상승포인트</span>1.27</span></td>
+                            <td>1,551.49억</td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks6" name="formChks">
+                                        <label for="formChks6" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="txt-bold">9,844.79</span><br><span class="fund-points ico-up"><span class="hide">하락포인트</span>0.15</span></td>
+                            <td><span class="txt-bold">154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks7" name="formChks">
+                                        <label for="formChks7" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="txt-bold">9,844.79</span><br><span class="fund-points ico-up"><span class="hide">하락포인트</span>0.15</span></td>
+                            <td><span class="txt-bold">154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks8" name="formChks">
+                                        <label for="formChks8" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="txt-bold">9,844.79</span><br><span class="fund-points ico-up"><span class="hide">하락포인트</span>0.15</span></td>
+                            <td><span class="txt-bold">154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks9" name="formChks">
+                                        <label for="formChks9" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="txt-bold">9,844.79</span><br><span class="fund-points ico-up">0.00</span></td>
+                            <td><span class="txt-bold">154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fund-items">
+                                    <div class="lb-item">
+                                        <input type="checkbox" id="formChks10" name="formChks">
+                                        <label for="formChks10" class="lb-checkbox no-label"><span class="hide">키움단기국공채증권자투자신탁제2호[채권] 선택</span></label> 
+                                    </div>
+                                    <div class="item">
+                                        <div class="tag-wrap">
+                                            <em class="t-local">개인/퇴직</em>
+                                            <em class="t-bond">국내주식</em>
+                                        </div>
+                                        <strong class="item-title">키움단기국공채증권자투자신탁제2호[채권]</strong>
+                                        <p class="item-date">설정일 : 2016-04-26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="txt-bold">9,844.79</span><br><span class="fund-points ico-up"><span class="hide">하락포인트</span>0.15</span></td>
+                            <td><span class="txt-bold">154</span></td>
+                            <td><span class="txt-drop">-0.15</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.712</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                            <td><span class="txt-up">0.512</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--
+                <p class="no-data"><strong>검색된 결과가 없습니다.</strong></p> -->
+                <!-- 20230216 검색결과 없을 경우 추가 -->
+                <!-- .btn-more -->
+                <button type="button" class="btn-more"><span>더보기 (10/52)</span></button>
+                <!-- //.btn-more -->
+            </div>
+            <div class="fund-compare">
+                <div class="summary">
+                    <strong class="title">선택한 상품비교</strong>            
+                    <p>최대 3개까지 상품 비교가 가능합니다.</p>
+                    <div class="nav">
+                        <span><em>3</em>/3</span>
+                        <button class="btn-toggle" onclick="KAUI.common.fundComp.open(this);"><span class="hide">선택한 상품비교 열기</span></button>
+                    </div>            
+                </div>  
+                <div class="result">
+                    <div class="fund-comp-result">
+                        <div class="fund-comp-conts">
+                            <div>
+                                <h3 class="h3" onclick="KAUI.common.fundComp.hide();" >선택한 상품</h3>
+                                <ul class="subfund-list comp">
+                                    <li class="subfund-item">
+                                        <div class="subfund-cont">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">주식형</em>
+                                            </div>
+                                            <strong class="title">키움차세대모빌리티증권자투자 </strong>
+                                            <div class="ui-select">
+                                                <select title="펀드 타입 선택" id="selFund1">
+                                                    <option value="1" selected>Class A-e (수수료선취-온라인)</option>
+                                                    <option value="2">Class B-e (수수료선취-온라인)</option>      
+                                                </select>
+                                            </div>                            
+                                            <a href="#none" class="more-btn">
+                                                <span class="hide">펀드 상세보기</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="subfund-item">
+                                        <div class="subfund-cont">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">주식형</em>
+                                            </div>
+                                            <strong class="title">키움차세대모빌리티증권자투자 신탁제1호[주식]</strong>                                   
+                                            <div class="ui-select">
+                                                <select title="펀드 타입 선택" id="selFund2">
+                                                    <option value="1" selected>Class A-e (수수료선취-온라인)</option>
+                                                    <option value="2">Class B-e (수수료선취-온라인)</option>      
+                                                </select>
+                                            </div>                                    
+                                            <a href="#none" class="more-btn">
+                                                <span class="hide">펀드 상세보기</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="subfund-item empty">
+                                        <div class="subfund-cont">
+                                            <a href="#none" class="compare-btn" onclick="KAUI.common.fundComp.hide({
+                                                callback:() => {  
+                                                   console.log('callback'); 
+                                                }
+                                            });"><span class="txt">펀드 선택하기</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h4 class="h4">기본정보</h4>
+                                <div class="comp-tbl">
+                                    <table class="tbl-row">
+                                        <caption>선택한 상품 기본정보 테이블 입니다</caption>
+                                        <colgroup>
+                                            <col style="width:auto;">
+                                            <col style="width:320px;">
+                                            <col span="2" style="width:380px;">
+                                        </colgroup>
+                                        <thead class="hide">
+                                            <tr>
+                                                <th></th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">세번째 펀드명</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">순자산</th>
+                                                <td>1,551.49억원</td>
+                                                <td>1,551.49억원</td>
+                                                <td>1,551.49억원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">기준가</th>
+                                                <td>787.32원<span class="fund-points">0.00</td>
+                                                <td>787.32원<span class="fund-points ico-up"><span class="hide">상승포인트</span>0.15</span></td>
+                                                <td>787.32원<span class="fund-points ico-drop"><span class="hide">하락포인트</span>0.15</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">설정일</th>
+                                                <td>2014-07-28</td>
+                                                <td>2014-07-28</td>
+                                                <td>2014-07-28</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">위험등급</th>
+                                                <td>2등급(높은 위험)</td>
+                                                <td>2등급(높은 위험)</td>
+                                                <td>2등급(높은 위험)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    
+                                </div>   
+                                <h4 class="h4">보수</h4>
+                                <div class="comp-tbl">
+                                    <table class="tbl-row">
+                                        <caption>선택한 상품 보수 테이블 입니다</caption>
+                                        <colgroup>
+                                            <col style="width:auto;">
+                                            <col style="width:320px;">
+                                            <col span="2" style="width:380px;">
+                                        </colgroup>
+                                        <thead class="hide">
+                                            <tr>
+                                                <th></th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">세번째 펀드명</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">총 보수(연)</th>
+                                                <td>0.07%</td>
+                                                <td>0.01%</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">선취판매<br>수수료</th>
+                                                <td>없음</td>
+                                                <td>납입금액의 0.05% 이내</td>
+                                                <td>없음</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">환매수수료</th>
+                                                <td>없음</td>
+                                                <td>없음</td>
+                                                <td>없음</td>
+                                            </tr>                                       
+                                        </tbody>
+                                    </table>    
+                                </div>        
+                                <h4 class="h4">수익률</h4>
+                                <div class="comp-tbl">
+                                    <table class="tbl-row">
+                                        <caption>선택한 상품 수익률 테이블 입니다</caption>
+                                        <colgroup>
+                                            <col style="width:auto;">
+                                            <col style="width:320px;">
+                                            <col span="2" style="width:380px;">
+                                        </colgroup>
+                                        <thead class="hide">
+                                            <tr>
+                                                <th></th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">첫번째 펀드명</th>
+                                                <th scope="col">세번째 펀드명</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1개월</th>
+                                                <td><span class="">0.00</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3개월</th>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6개월</th>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1년</th>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3년</th>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5년</th>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                                <td><span class="txt-up">0.15%</span></td>
+                                                <td><span class="txt-drop">-0.89%</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">설정일 이후</th>
+                                                <td><span class="txt-drop">-32.42%</span></td>
+                                                <td><span class="txt-drop">-32.42%</span></td>
+                                                <td><span class="txt-drop">-32.42%</span></td>
+                                            </tr>                                        
+                                        </tbody>
+                                    </table>    
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="fund-comp-conts bg">
+                            <div>
+                                <h4 class="dot">추천 키움 PICK</h4>
+                                <ul class="subfund-list v1">
+                                    <li class="subfund-item">
+                                        <a href="#">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">주식형</em>
+                                                <em class="t-high">다소높은위험</em>
+                                            </div>
+                                            <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                            <span class="rate">
+                                                <span class="txts">3개월 수익률(%)</span>
+                                                <span class="fund-points">-10.8</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="subfund-item">
+                                        <a href="#">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">주식형</em>
+                                                <em class="t-high">다소높은위험</em>
+                                            </div>
+                                            <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                            <span class="rate">
+                                                <span class="txts">3개월 수익률(%)</span>
+                                                <span class="fund-points txt-drop">-10.8</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="subfund-item">
+                                        <a href="#">
+                                            <div class="tag-wrap">
+                                                <em class="t-local">국내</em>
+                                                <em class="t-bond">주식형</em>
+                                                <em class="t-high">다소높은위험</em>
+                                            </div>
+                                            <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                            <span class="rate">
+                                                <span class="txts">3개월 수익률(%)</span>
+                                                <span class="fund-points txt-up"><em>10.86</em><i class="hide">%</i></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>        
+                </div>  
+            </div>
+        </main>
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kiam/pcWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <script>      
+        KAUI.rangeSlider.init({ 
+            id : 'rangeRisk' ,
+            step: 1,
+            min: 0,
+            max: 5,
+            value: [0,3],
+            title: '위험등급 범위 설정',
+            text: ['매우 높은 위험', '높은 위험', '다소 높은 위험', '보통 위험', '낮은 위험', '매우 낮은 위험'],
+            tickmark: ['매우 높은 위험', '높은 위험', '다소 높은 위험', '보통 위험', '낮은 위험', '매우 낮은 위험']
+        });   
+        KAUI.rangeSlider.init({ 
+            id : 'rangeRetrun' ,
+            step: 1,
+            min: 0,
+            max: 6,
+            value: [2,5],
+            title: '수익률 범위 설정',
+            text: ['-15이하', '-10', '-5', '0', '+5', '+10', '+15이상'],
+            tickmark: ['-15이하', '-10', '-5', '0', '+5', '+10', '+15이상']
+        });   
+    </script>
+</body>
+</html>

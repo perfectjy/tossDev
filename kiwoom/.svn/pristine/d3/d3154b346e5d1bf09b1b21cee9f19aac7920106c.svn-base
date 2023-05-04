@@ -1,0 +1,1245 @@
+@charset "utf-8";
+
+/*main*/
+.main{height: 100vh;}
+.main.is-modal{overflow: hidden;}
+.kosef-main{position: relative; height: 100vh; background-size: 100% auto; }
+/* .kosef-main{position: relative; height: 100vh; background-size: 100% auto; animation: zoom 10s infinite ease-out; background-color: #101d28 !important; background: url(/kosef/moWeb/resources/images/main/main_01.png) center center no-repeat fixed; opacity: 1;} */
+/* .kosef-main.main-bg01{background: url(/kosef/moWeb/resources/images/main/main_01.png) center center no-repeat;}
+.kosef-main.main-bg02{background: url(/kosef/moWeb/resources/images/main/main_02.png) center center no-repeat;}
+.kosef-main.main-bg03{background: url(/kosef/moWeb/resources/images/main/main_03.png) center center no-repeat;}
+.kosef-main.main-bg04{background: url(/kosef/moWeb/resources/images/main/main_02.png) center center no-repeat;} */
+.kosef-main.main-bg02 .contents_bottom::after { background-color: #20507C }
+
+/* @keyframes zoom{
+    0%{
+        background-size: 100% auto;
+    }
+    90%{
+        background-size: 120% auto;
+    }
+    100%{
+        background-size: 120% auto;
+    }
+} */
+
+.kosef-main .main-wrap{position: relative; overflow: hidden;}
+
+.kosef-main .main-wrap::before{ content: ''; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; background: url(/kosef/moWeb/resources/images/main/main_02.png) center center no-repeat; animation: zoom 10s linear infinite alternate; background-size: cover;}
+.kosef-main.main-bg01 .main-wrap::before{ background: url(/kosef/moWeb/resources/images/main/main_01.png) center center no-repeat; animation: zoom 10s linear infinite; background-size: cover;}
+.kosef-main.main-bg02 .main-wrap::before{ background: url(/kosef/moWeb/resources/images/main/main_02.png) center center no-repeat; animation: zoom 10s linear infinite; background-size: cover;}
+.kosef-main.main-bg03 .main-wrap::before{ background: url(/kosef/moWeb/resources/images/main/main_03.png) center center no-repeat; animation: zoom 10s linear infinite; background-size: cover;}
+.kosef-main.main-bg04 .main-wrap::before{ background: url(/kosef/moWeb/resources/images/main/main_02.png) center center no-repeat; animation: zoom 10s linear infinite; background-size: cover;}
+
+@keyframes zoom{
+    0%{
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1) translateZ(1px);
+    }
+    100%{
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2) translateZ(1px);
+    }
+}    
+.kosef-main .contents-top{ position: relative; z-index: 1; }
+
+.kosef-main .gnb-wrap .util .btn-sch:after{background: url(/kosef/moWeb/resources/images/main/search.svg) 0 0 no-repeat;}
+.kosef-main .gnb-wrap .util .btn-gnb:after{background: url(/kosef/moWeb/resources/images/main/menu.svg) 0 0 no-repeat;}
+.kosef-main .tab-nav{ position: fixed; bottom: 0; width: 100%; background: rgba(34, 34, 34, 0.95); z-index: 50;}
+.kosef-main .tab-nav.on{ bottom: -77px;}
+.kosef-main .tab-nav ul{ display: flex; align-items: center; justify-content: center; width: 100%; height: 72px;}
+.kosef-main .tab-nav ul li{ display: flex; flex-grow: 1; justify-content: center;}
+.kosef-main .tab-nav ul li button{ display: flex; flex-direction: column; align-items: center; width: 100%; color:#DFE0E2; font-size: 10px; font-weight: 400; }
+.kosef-main .tab-nav.pb ul li button{ padding-bottom: 8px; }
+.kosef-main .tab-nav ul li button.on{ color: #FFF; }
+.kosef-main .tab-nav ul li button::before{ content: ''; display: block; width: 24px; height: 24px; margin-bottom: 7px;}
+.kosef-main .tab-nav ul li.home button::before{ background: url(/kosef/moWeb/resources/images/main/home.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.home button.on::before{background: url(/kosef/moWeb/resources/images/main/home_on.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.media button::before{ background: url(/kosef/moWeb/resources/images/main/media.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.media button.on::before{ background: url(/kosef/moWeb/resources/images/main/media_on.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.guide button::before{ background: url(/kosef/moWeb/resources/images/main/guide.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.guide button.on::before{ background: url(/kosef/moWeb/resources/images/main/guide_on.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.kosef button::before{ background: url(/kosef/moWeb/resources/images/main/mkosef.svg) center center no-repeat;}
+.kosef-main .tab-nav ul li.kosef button.on::before{ background: url(/kosef/moWeb/resources/images/main/kosef_on.svg) center center no-repeat;}
+.kosef-main .main-wrap{ padding-top: 96px; }
+
+.kosef-main .contents-top{ padding: 0 24px;}
+.kosef-main .contents-top .tit p{ color: #FFF; font-weight: 600; font-size: 16px}
+.kosef-main .contents-top .tit strong{ display: block; width: 272px; height: 45px;  background: url(/kosef/moWeb/resources/images/main/kosef.svg) center center no-repeat; background-size: 272px auto; margin-top: 12px;}
+.kosef-main .contents-top .tit > span{ display: block; color: rgba(255, 255, 255, 0.8); font-size: 14px; font-weight: 500; line-height: 21px; margin-top: 24px;}
+
+.maia-sch-wrap{ position: relative; width: 100%; height: 48px; border-bottom: 1px solid #fff; margin-top: 48px;}
+.maia-sch-wrap input[type="text"]{ width: 100%; color: #FFF; font-size: 16px; font-weight: 600; padding: 16px 78px 16px 0 !important; background-color:transparent; }
+.maia-sch-wrap .btn-sch{ position: absolute; top: 50%; right: 0; width: 40px; height: 40px; transform: translateY(-50%); background: url(/kosef/moWeb/resources/images/main/circle_Search.svg) center center no-repeat;}
+.maia-sch-wrap .btn-clear { position: absolute; top: 50%; right: 50px; transform: translateY(-50%);}
+.sch-total .search-area .sch-top { position: relative; }
+.sch-total .search-area .ui-input-txt { display: block; height: 48px; border: 1px solid #1A399E; border-radius: 100px; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16);}
+.sch-total .search-area .ui-input-txt .inp-base { border: 0; height: 46px; background: transparent; padding: 0 78px 0 24px !important; font-weight: 600; color: #1A399E;}
+.sch-total .search-area .ui-input-txt .inp-base::placeholder { color: #74757e ; font-weight: 600;}
+.sch-total .search-area .ui-input-txt .btn-clear { right: 45px;}
+.search-area .btn-sch { position: absolute; top: 50%; right: 15px; width: 24px; height: 24px; margin-top: -12px; background: url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size: 500px auto;}
+
+.main-slide{ position: relative; margin: 60px 0 24px 24px; }
+.main-slide > ul{ display: flex; flex-direction: row; overflow: hidden;}
+.main-slide > ul li{margin-right: 8px;}
+.main-slide > ul li a{ display:block; position:relative; width:100%; margin-right: 8px; padding-left:96px; }
+.main-slide .slide-con { display:block; }
+.main-slide span:not(.slide-con) { position:absolute; width:96px; left:0; top:0; bottom:0; } 
+.main-slide span:not(.slide-con) > img{ margin: auto; position: absolute; inset: 0px;width: 100%; height: 100%; object-fit: cover; } 
+.main-slide .slide-con{ position: relative; background: rgba(146, 176, 255, 0.16); padding: 24px; }
+.main-slide .slide-con span{ position: relative; display: inline-block; color: #FFF; font-size: 10px; font-weight: 400; }
+.main-slide .slide-con strong{ overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; height:42px; text-overflow: ellipsis; color: #FFF; font-size: 14px; line-height: 21px; margin-top: 8px; }
+.main-slide .slick-arrow{ display: none !important; }
+.main-slide .paging{color: #FFF; font-size: 10px;}
+.main-slide .slick-slider .slick-track, 
+.main-slide .slick-slider .slick-list{padding: 0 15px 0 0 !important;}
+.paging{position: absolute; top:-20px; right: 24px; color:rgba(14, 10, 10, 0.8); font-size: 10px; font-weight: 400; letter-spacing: 3px;}
+
+.kosef-main .contents_bottom{ position: relative; padding: 0 0 80px 24px; margin-top: 72px    ;}
+.kosef-main .contents_bottom::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background-color: #070911; z-index: -1;}
+.contents_bottom .choice{ position: relative; z-index: 1;}
+.contents_bottom .choice .tit{ color: rgba(255, 255, 255, 0.8); font-weight: 700; font-size: 12px; line-height: 18px; }
+
+.contents_bottom .choice .btn-select{margin-top: 4px;}
+.contents_bottom .choice .btn-select button{color: #FFF; font-size: 20px; font-weight: 700; padding-right: 20px; background: url(/kosef/moWeb/resources/images/main/sel_bar.svg) 100% center no-repeat;}
+.contents_bottom .result{ position: relative; margin-top: 16px; overflow-x: scroll; z-index: 1;}
+.contents_bottom .result ul{display: flex;}
+.contents_bottom .result ul li{margin-right: 16px;}
+.contents_bottom .result a{ display: inline-flex; flex-direction: column; position: relative; width: 270px; height: 320px; padding: 40px 32px; background-color: #FFF;}
+.contents_bottom .result a .tit{ color: #222; font-weight: 700; font-size: 20px; line-height: 30px; margin-top: 12px;}
+.contents_bottom .result a p{ color:#222; font-weight: 400; font-size: 16px; line-height: 24px; margin-top: 8px;}
+.contents_bottom .result .info{ display: flex; flex-direction: column; position: absolute; bottom: 40px; width: calc(100% - 32px * 2); color: #74757E; font-size: 12px; font-weight: 500;}
+.contents_bottom .result .info > span{ display: flex; justify-content: space-between; align-items: center; }
+.contents_bottom .result .info > span:not(:first-child){ margin-top: 8px; }
+.contents_bottom .result .info > span:not(:first-child){ margin-top: 16px; }
+.contents_bottom .result .info > span .sp-txt span{ font-size: 16px; line-height: 30px; margin-left: 2px;}
+.contents_bottom .result .info > span strong{ display: flex; align-items: center; color: #222; font-size: 20px; }
+.contents_bottom .result .info > span strong span{font-size: 14px; margin-left: 2px;}
+.contents_bottom .result .info .txt-up{ color: #EC008C; font-size: 24px;}
+.contents_bottom .result .info .txt-drop{ color: #1E66F2; font-size: 24px;}
+.contents_bottom .result ul li a:active{ background: linear-gradient(114.62deg, #394DE4 6.07%, #953DEE 96.44%); }
+.contents_bottom .result a:active .tag-wrap .t-local{ color: #FFF; border-color: #FFF;}
+.contents_bottom .result a:active .tag-wrap .t-bond{ color: #B9BBC6; border-color: #B9BBC6;}
+.contents_bottom .result a:active .tag-wrap .t-high{ color: #F083C7; border-color: #F083C7;}
+.contents_bottom .result a:active .tit{ color: #FFF; }
+.contents_bottom .result a:active p{ color: #FFF; }
+.contents_bottom .result a:active span strong{ color: #FFF; }
+.contents_bottom .result a:active span .sp-txt{ color: #FFF; }
+.contents_bottom .result a:active .info > span{ color: #B9BBC6;}
+
+/*공통 메인 팝업*/
+.kosef-main.main-bg01 .gnb-wrap.on{background-color:rgb(15 18 43 / 94%) !important; }
+.kosef-main.main-bg02 .gnb-wrap.on{background-color:rgb(29 38 49 / 94%) !important;}
+.kosef-main.main-bg03 .gnb-wrap.on{background-color:rgb(15 18 43 / 94%) !important;}
+.kosef-main.on .gnb-wrap{background-color: #2F3135;}
+.is-modal .kosef-main .gnb-wrap{ height: 56px; background-color: #2F3135; z-index: 110;}
+.is-modal .kosef-main .gnb-wrap.bgnone{ background-color: transparent; }
+.main-popup.ps-bottom{ background-color: transparent; }
+
+/*키자미디어 팝업*/
+.main-popup{position: fixed; top:0; width: 100%; background-color: #FFF; z-index: 101;}
+.main-popup > .tit{ color: #222; font-size: 24px !important; font-weight: 700;}
+.main-popup .pop-close{ position: absolute; top:26px; left: 50%; width: 56px; height: 4px; transform: translate(-50%, -50%); padding: 10px 0; z-index: 300;}
+.main-popup .pop-close::before{ content: ''; position: absolute; width: 56px; height: 4px; top:8px; background: #DDD; transform: translateX(-50%); border-radius: 3px;}
+.main-popup .ui-modal-drag{ width: 100%; height: 50px; background: transparent;}
+.main-popup .ui-tab-wrap{ margin-top: 8px; }
+.main-popup .ui-tab.scroll .ui-tab-list.sub{margin-bottom: 24px;} 
+.main-popup .ui-tab.scroll .ui-tab-list.sub li button{ margin: 0;}
+
+.main-popup .mlink{ display: flex; align-items:center; position: fixed; bottom: 24px; right: 24px; height: 40px; background: linear-gradient(114.62deg, #394DE4 6.07%, #953DEE 96.44%); border-radius: 20px; padding: 5px 16px 5px 16px; z-index: 10; animation: wbtnl 1s forwards;}
+.main-popup .mlink.mg::before{ content: ''; position: absolute; left: 14px; width: 24px; height: 24px; background: url(/kosef/moWeb/resources/images/main/money_bag.svg) 0 0 no-repeat; margin-right: 8px; animation: wbtni 0.3s forwards; z-index: 10;}
+.main-popup .mlink.tv::before{ content: ''; position: absolute; left: 18px; width: 24px; height: 24px; background: url(/kosef/moWeb/resources/images/main/cash.svg) 0 0 no-repeat; margin-right: 8px; animation: wbtni 0.3s forwards; z-index: 10;}
+.main-popup .mlink span{ color: #DFE0E2; font-size: 14px; font-weight: 500; }
+.main-popup .mlink .ctxt{ position: relative; animation: wbtn .25s forwards; height: 14px; overflow: hidden; opacity: 0; margin-left: 26px; padding-right: 70px;}
+.main-popup .mlink .txt{ position: absolute; right: 0; color:#FFF; font-size: 12px; font-weight: 700; padding-right: 40px; }
+.main-popup .mlink .txt::after{ content: ''; position: absolute; top: -2px; right: 24px; width: 16px; height: 16px; background: url(/kosef/moWeb/resources/images/main/ch_right.svg) 0 0 no-repeat;}
+
+
+
+/* .main-popup .mlink{ width: 138px; } */
+/* .main-popup .mlink .ctxt{ margin-left: 32px;} */
+
+@keyframes wbtnl {
+    0%{
+        width: 140px;
+    }
+    100%{
+        width: 278px;
+    }
+}
+
+@keyframes wbtn {
+    0%{
+        width: 0px;
+        opacity: 0;
+    }
+    90%{
+        width: 0px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 238px;
+    }
+}
+
+@keyframes wbtni {
+    0%{
+        left: 70px;
+    }
+    100%{
+        left: 12px;
+    }
+}
+
+/* @keyframes wbtnl {
+    0%{
+        width: 140px;
+    }
+    100%{
+        width: 298px;
+    }
+}
+
+@keyframes wbtn {
+    0%{
+        width: 0px;
+        opacity: 0;
+    }
+    90%{
+        width: 0px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 238px;
+    }
+}
+
+@keyframes wbtni {
+    0%{
+        left: 70px;
+    }
+    100%{
+        left: 12px;
+    }
+} */
+.main .main-popup .ui-modal-wrap{ border-radius: 0; padding: 0;}
+
+.main .main-popup .ui-modal-header{ padding: 76px 24px 0 24px;}
+.main-popup .ui-modal-drag {top:81px}
+
+/* .main .main-popup .ui-modal-header{ padding: 36px 0 0 0;} */
+.main .main-popup .ui-modal-header .tit{ font-size: 24px; font-weight: 700; line-height: 36px; margin-top: 12px; padding-bottom: 0;}
+.main .main-popup .ui-modal-body{ padding: 0; overflow-x: hidden; padding: 0 24px 84px 24px; }
+/* .main .main-popup .ui-modal-body.min-body{min-height: 730px;} */
+.main .main-popup.kiza .ui-modal-body { padding-bottom: 32px; }
+
+.main-bottom .ui-modal{ align-items: flex-end;  }
+.main-bottom .ui-modal .ui-modal-wrap{border-radius: 0;}
+.main-bottom .gnb-wrap{background: none;}
+.main-bottom .ui-modal-body{padding-top: 36px;}
+.main-bottom .pop-close{ position: absolute; top:10px; left: 50%; width: 56px; height: 4px; transform: translate(-50%, -50%); padding: 10px 0; z-index: 300;}
+.main-bottom .pop-close::before{ content: ''; position: absolute; width: 56px; height: 4px; top:8px; background: #DDD; transform: translateX(-50%); border-radius: 3px;}
+
+
+
+.sub-head-wrap { position:relative; padding:16px 24px 0 24px; text-align:center; }
+.sub-head-wrap h2 { color:#fff; font-size:20px; line-height:30px; font-weight:700; text-align:center; word-break:keep-all; }
+.sub-head-wrap .title { display:block; text-align:left; font-size:20px; line-height:30px; font-weight:700; }
+
+.sub-wrap.fund-detail-wrap .sub-head-wrap { /*min-height:270px;*/ padding:16px 12% 86px; background: linear-gradient(165deg, #1A399E 35.19%, #4D38CE 103.99%); }
+.sub-wrap.fund-detail-wrap .btn-sns { position:absolute; top:17px; right:20px; }
+.sub-wrap.fund-detail-wrap .fund-code { color:#B9BBC6; font-size:12px; line-height:18px; margin-top:4px; }
+.sub-head-wrap .tag-wrap { text-align:center; margin:0 auto 8px}
+.sub-head-wrap .tag-wrap em { margin:2px 2px; }
+.tag-wrap em{height:20px; margin-bottom: 4px; padding:0 8px; line-height:18px; font-size:10px;}
+
+.find-fund .sch-top { position:relative; }
+.find-fund .ui-input-txt { display:block; height:48px; border:1px solid #1A399E; border-radius:100px; } 
+.find-fund .ui-input-txt .inp-base { border:0; height:46px; background:transparent; padding:0 82px 0 24px !important; color:#1A399E; font-weight: 600; } 
+.find-fund .ui-input-txt .inp-base::placeholder { color:#74757e;}
+.find-fund .ui-input-txt .btn-clear { right:45px; }
+.find-fund .btn-sch { position:absolute; top:50%; right:15px; width:24px; height:24px; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto; }
+.find-fund .sch-tips { margin-top:24px; text-align:left; }
+.find-fund .sch-tips .title { display:block; margin-top:0; font-size:12px; line-height:18px; color:#74757e; }
+.find-fund .sch-tips .title:before { display:none; }
+.find-fund .sch-tips a { display:inline-block; margin-top:8px; padding:6px 18px; line-height:18px; font-size:12px; border:1px solid #DFE0E2; border-radius:100px; }
+
+.fund-info-wrap { position:relative; }
+.fund-info-wrap .note { position:absolute; top:-21px; right:24px; color:#DFE0E2; font-size:12px; font-weight: 500; line-height:16px; }
+.fund-info-wrap .summary { display:flex; height:102px; align-items:center; justify-content:center; margin:-51px 20px 0; background:#fff; border: 1px solid #1A399E; border-radius:8px; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16); }
+.fund-info-wrap .summary > div { flex:1 1; text-align:center; }
+.fund-info-wrap .summary dt { font-size:12px; line-height:18px; color:#74757E;  }
+.fund-info-wrap .summary dd { margin-top:4px; font-weight: 600; font-size:16px; line-height:24px; }
+.fund-info-wrap .doc-info { padding-bottom:24px; }
+.fund-info-wrap .doc-info .btns { display:flex; flex-wrap:wrap; margin:0 auto; max-width:375px; padding-left:24px;}
+.fund-info-wrap .doc-info a { position:relative; /*flex: 1 1 40%;*/ width:50%; margin-top:24px; padding-left:50px; font-size:14px; text-align:left; line-height:40px; color:#74757E; }
+.fund-info-wrap .doc-info a:before { content:''; position:absolute; top:0; left:0; width:40px; height:40px; background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -50px 0; background-size:500px auto; }
+.fund-info-wrap .doc-info a.doc-invest:before { background-position-x:0px; }
+.fund-info-wrap .doc-info a.doc-tem:before { background-position-x:-400px; }
+.fund-info-wrap .doc-info a.doc-fact:before { background-position-x:-450px; }
+
+.sub-head-wrap .find-fund { margin-top: 24px; }
+.sub-head-wrap .find-fund .sch-top { position:relative; }
+.sub-head-wrap .find-fund .inp-text { height:48px; border:1px solid #1A399E; border-radius:100px; }
+.sub-head-wrap .find-fund .btn-sch { position:absolute; top:50%; right:15px; width:24px; height:24px; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto; }
+
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn { background:#fff;  }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btns { border-bottom:1px solid #DFE0E2; margin-left:8px; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btns:after { content:''; display:block; clear:both; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn { position:relative; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn { display:inline-block; font-size:14px; color:#74757e; font-weight: 600;}
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn span { position:relative; display:block; height:100%; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn.selected {color: #222; font-weight:700; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-btn.selected span:after { content:''; display:block; position:absolute; bottom:0; left:0; width:100%; height:2px; background:#EC008C; }
+.fund-info-tab .ui-tab.scroll-tab .ui-tab-pnls { padding:40px 24px 0 ; }
+
+.fund-select-wrap {position:relative; margin:0 24px; border-bottom:1px solid #B9BBC6; }
+.fund-select-wrap .ui-select { margin-top:24px; }
+.fund-select-wrap .ui-select-btn { width:100%; height:48px; font-size:14px; padding:0 35px 0 0; text-align:center; background:transparent; border:0; color:#B9BBC6; }
+.fund-select-wrap:after { content:'';  position:absolute; width:24px; height:24px; top:50%; right:0; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -50px; background-size:500px auto;  }
+
+.subfund-list .subfund-item a { position:relative; display:block; height:100%; padding:30px 32px 0 32px; background:#fff; border:1px solid #B9BBC6; border-radius: 24px 0px 24px 24px; }
+.subfund-list .subfund-item a .title { display: -webkit-box; overflow:hidden; margin:8px 0 0 0; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size:16px; line-height:24px; color:#222; text-overflow:ellipsis; word-break: break-word; }
+.subfund-list .item { padding-bottom:50px; }
+.subfund-list .info { display:block; margin-top:8px; color:#74757e; font-size:14px; line-height:21px; }
+.subfund-list .rate { margin-top:32px; display:flex; justify-content:space-between; }
+.subfund-list .rate .points { color:#EC008C; font-size:24px; line-height:34px; font-weight:700; }
+.subfund-list .rate em { padding-right:5px; font-size:24px; color:#EC008C; } 
+.subfund-list .rate span { display:block; font-size:14px; color:#74757e; margin-top:5px; }
+.subfund-list .rate .txts { font-size:12px; color:#74757e; line-height:34px; }
+.subfund-list .subfund-item.best a { border-color:#1A399E; background:#fff; }
+.subfund-list .subfund-item.best a .title { color:#1A399E; }
+
+/* 키움ETF */
+.goods-sch-list{ margin: 40px 24px 24px; }
+.goods-sch-list .list-tit{display:flex; align-items:center; justify-content:space-between; margin-top:16px; font-size:14px;}
+.goods-sch-list .list-tit strong{color:#74757e; font-weight: 500;}
+.goods-sch-list .list-tit strong span { font-weight: 600;}
+.goods-sch-list .list-tit p{color:#74757e; font-size:12px;}
+.goods-sch-list .list-item{position:relative; margin-top:16px;}
+.list-tit + .list-item { margin-top:8px; }
+.goods-sch-list .list-item {display:block; padding:24px; background:#fff; border:1px solid #DFE0E2;}
+/* .goods-sch-list .list-item a{display:block; padding:24px; background:#fff; border:1px solid #DFE0E2;} */
+/* .goods-sch-list .list-item a:hover{background:#F1F7FE; border:1px solid #1A399E;} */
+/* .goods-sch-list .list-item a:hover .tit{color: #1A399E;} */
+.goods-sch-list .list-item .tit{display:block; margin-top:8px; font-size:16px; font-weight: 600;}
+.goods-sch-list .list-item .info{display:block; margin-top:16px;}
+.goods-sch-list .list-item .info em{display:flex; align-items: center; color:#74757e; font-size:12px; font-weight:500; line-height:18px;}
+.goods-sch-list .list-item .info em > b{padding-left:5px; color:#74757e; font-weight:500;}
+.goods-sch-list .list-item .rate{position:absolute; right:24px; bottom:28px; display:flex; flex-direction:column; text-align:right;}
+.goods-sch-list .list-item .rate .txts{ color: #74757e; font-size:12px; line-height: 1.5;}
+.list-item .rate .points{font-size:24px; font-weight:700; line-height:34px;}
+.list-item .rate .points.txt-drop::before{content:''; display:inline-block; vertical-align:middle; width:9px; height:3px; margin-right:2px; background:#1E66F2; }
+
+.list-option { display:flex; align-items:center; justify-content:space-between; align-items:baseline; margin:12px 0 8px ; }
+.list-option select { width:auto; text-align: right; }
+.list-option .tab-tog { flex:1;}
+.list-option .ui-select-opt { height:30px; padding:0; font-size:12px; }
+.list-option .num { color:#9D9DA4; }
+.list-option .note { color:#9D9DA4; font-size:12px; line-height:16px; }
+.list-option .btn-sort { margin-left:15px; }
+
+.fund-detail { position:relative; }
+.hide + .fund-detail { margin-top:0px; }
+.fund-detail .h3 { margin: 56px 0 16px; color:#222; font-size: 16px; line-height: 24px; font-weight: 700; }
+.fund-detail .contents-box strong{ display: block; margin-bottom: 8px; color: #1A399E; font-size: 14px; line-height: 21px; font-weight: 700;}
+.fund-detail .contents-box strong:not(:first-child){ margin-top: 16px; }
+.fund-detail .contents-box strong + p{ color:#74757e; font-size: 14px; font-weight: 500; }
+.fund-detail .contents-box .info-list { display:flex; position:relative; flex-direction: row; flex-wrap: wrap; border-top: 1px solid #222; }
+.fund-detail .contents-box .info-list div { width:50%; padding: 16px 24px 16px 0; border-bottom: 1px solid #DFE0E2; }
+.fund-detail .contents-box .info-list div.full { width:100%; }
+.fund-detail .contents-box .info-list div dt { margin-bottom: 4px; color:#74757e; font-size:12px; line-height: 18px; font-weight: 500; }
+.fund-detail .contents-box .info-list div dd { color:#222; font-size:14px; line-height: 21px; font-weight: 600; }
+
+.sub-tit-box { position:absolute; right:0; top:3px; display:flex; justify-content: flex-start; align-items: center; flex-direction: row-reverse; }
+.sub-tit-box .sub-txt { font-size:14px; font-weight: 500; color:#74757E; line-height: 21px; }
+.sub-tit-box .tooltip {margin-right: 8px; }
+.hide + .sub-title { margin-top:0; }
+.sub-title { position:relative; margin:56px 0 16px; }
+.sub-title .h3 { font-size:16px; line-height: 24px; font-weight: 700; margin: 0 ; }
+.sub-title .ui-select { position:absolute; top:0; right:0;}
+.sub-title .btn-noline.dw{ position: absolute; top:5px; right: 105px;}
+.sub-title .msg { font-size:12px; color:#9D9DA4; }
+.sub-title > .msg { position:absolute; top:8px; right:0; }
+
+.symbol { content: ''; display:block; width:16px; height:16px; margin:0 auto; background-position-y: -480px; background-size:500px auto; }
+.symbol[data-num="1"] { background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: 0; }
+.symbol[data-num="2"] { background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: -20px; }
+.symbol[data-num="3"] { background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: -40px; }
+.symbol[data-num="3/2"] { width:41px; background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: -60px; }
+.symbol[data-num="4=2-3"] { width:74px; background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: -110px; }
+.symbol[data-num="4/1"] { width:42px; background-image:url(/kosef/moWeb/resources/images/common/ico_conts.png); background-position-x: -190px; }
+
+/* KOM03020000M */
+.etf-list { border-top:1px solid #222; }
+.etf-list .etf-item { position: relative; display:block; padding: 52px 0 24px; }
+.etf-list .etf-item:last-child { padding-bottom:16px; }
+.etf-list .etf-item .etf-title { position:relative; display:block; color:#222; font-size:16px; line-height: 24px; font-weight: 600; }
+.etf-list .etf-item .etf-title .etf-title-sub { display:block; width:100%; position:absolute; left:0; top:-26px; }
+.etf-list .etf-item .etf-title .etf-title-sub .tag-wrap { float:left; margin-right: 8px; }
+.etf-list .etf-item .etf-title .etf-title-sub .tag-wrap em { margin:0;}
+.etf-code { color:#9D9DA4; font-size:12px; line-height: 18px; font-weight: 500; }
+
+.btn-noline-wrap { display:flex; justify-content: space-between; align-items: center; margin-top:8px; padding:0 16px; background:#F2F3F5; border-radius: 8px; }
+.btn-noline-wrap button { padding:16px 0; } 
+.btn-noline.more span { padding-right: 20px; color:#222; font-size:12px; line-height: 18px; font-weight: 500; }
+.btn-noline.more span::after { content: ''; position:absolute; right:0; width: 16px; height: 16px; background: url(/kosef/moWeb/resources/images/common/ico_comm.png) -280px 0 ; background-size:500px auto; }
+
+/* modal */
+.popup-top { position:relative; margin-bottom:40px; }
+.popup-top .h3,
+.popup-top + .h4 { margin:0 0 8px 0;  color:#222;}
+.popup-top .etf-code { color:#222; font-size:14px; line-height: 21px; font-weight: 500;} 
+.popup-top .popup-txt { color:#74757e; font-size:14px; line-height: 21px; font-weight: 500; word-break: keep-all; }
+.popup-top .date { margin-right:8px; color:#74757e; font-size:12px; line-height: 18px; font-weight: 500;}
+.popup-top .top-item { display:flex; justify-content: flex-start; align-items: center; position:relative;}
+.popup-acco-wrap { position:absolute; bottom:64px; left:0; width:100%; padding:24px; background:#F2F3F5; }
+.popup-acco-wrap .txt-list { margin-top:0 ; color:#74757E; }
+.box-right { text-align: right;}
+
+.dw-item:not(:last-child) {margin-bottom: 16px; }
+.dw-item { display:flex; justify-content: space-between; align-items: center; position:relative; padding:16px 24px 16px 64px; background: #F1F7FE; border-radius: 8px; }
+.dw-item::before { content:''; position:absolute; left:16px; top:50%; transform: translateY(-50%); width:40px; height:40px; }
+.dw-item.icon-1::before { background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -300px -190px; }
+.dw-item.icon-2::before { background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -350px -190px; }
+.dw-item.icon-3::before { background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -400px -190px; }
+.dw-item.icon-3-invest::before { background-position: -250px 0; }
+.dw-item .dw-txt { color:#222; font-size:14px; font-weight: 500; }
+.dw-item button.only-icon { position:relative; width:40px; height:40px; }
+.dw-item button.only-icon::before {content:''; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width:16px; height:16px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) -260px 0 ; background-size:500px auto;}
+
+.sub-head-wrap { padding-top:8px; padding-bottom:24px;}
+.sub-head-wrap .title {display:block; text-align:left; font-size:20px; line-height:30px; font-weight:700}
+.sub-head-wrap .title.nobg { text-align: center; }
+.sub-head-wrap .title.no-icon{margin-bottom: 0;}
+.sub-head-wrap .title.no-icon::before{background: none; margin: 0; display: none;}
+.sub-wrap.fund-detail-wrap .ui-acco.info { margin:55px 0 0 0; }
+.sub-wrap .contents { padding:0 24px 56px 24px;}
+.sub-wrap .contents .tbl-scroll { margin-right:-24px; }
+.sub-wrap .contents .ui-acco.info { margin:55px -24px 0 -24px; }
+.sub-wrap .contents.fixed-btn { padding-bottom:105px; }
+.sub-wrap .contents.no-btm { padding-bottom:0; }
+.sub-wrap .contents .board-cont .imgs{background: none;}
+.sub-wrap .contents .board-cont .imgs img{position: relative; }
+.news-detail-wrap .sub-head-wrap {background-color:#F1F7FE;}
+.magazine-detail-wrap .sub-head-wrap {background-color:#ECF8FB;}
+.tv-detail-wrap .sub-head-wrap {background-color:#ECF8FB;}
+.event-wrap .sub-head-wrap { background:#F9F5FF; }
+.event-detail-wrap .sub-head-wrap {background-color:#ECF8FB;}
+
+.sub-head-wrap .title::before {content: ''; display: block; width:40px; height:40px; margin-bottom:16px; background: url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat; background-size: 500px auto;}
+.news-detail-wrap .sub-head-wrap .title::before { background-position: -60px -340px;}
+.magazine-detail-wrap .sub-head-wrap .title::before,
+.tv-detail-wrap .sub-head-wrap .title::before { background-position: -120px -340px; }
+.event-wrap .sub-head-wrap .title::before { background-position: -180px -340px; }
+.sub-head-wrap .title.nobg::before {content: none; }
+
+.bg-news {background-color:#F1F7FE;}
+.bg-magazine {background-color:#ECF8FB;}
+.bg-tv {background-color:#ECF8FB;}
+.bg-event {background-color:#ECF8FB;}
+
+
+.ui-tab-list {overflow-y:hidden; overflow-x:auto; display:flex; margin: 0 -24px; flex-wrap:nowrap; white-space:nowrap; border-bottom:1px solid #DFE0E2; -ms-overflow-style: none; scrollbar-width: none;}
+.ui-tab-list li {position:relative;  min-width:auto; padding:0 12px;}
+.ui-tab-list li .ui-tab-btn {height:47px;  text-align:center;}
+.ui-tab .ui-tab-list li .ui-tab-btn.selected {color: #222; font-weight:700; }
+.ui-tab .ui-tab-list li .ui-tab-btn.selected:after { content:''; display:block; position:absolute; bottom:0;  left:0; width:100%;  height:2px; background:#EC008C; } */
+.ui-tab-content {margin:24px auto 0;}
+.ui-tab-list.sub {padding:0; flex-shrink:0; flex-grow:0; border-bottom:0;}
+.ui-tab-list.sub li {display:inline-block; margin-right:8px;}
+.ui-tab-list.sub li .ui-tab-btn {display:block; height:32px; padding:0 16px; line-height:30px; font-size:14px; color:#222; border:1px solid #B9BBC6; background-color:#fff; border-radius:20px;}
+.ui-tab-list.sub li .ui-tab-btn::after {display:none;}
+.ui-tab-list.sub li .ui-tab-btn.selected {color:#fff; background-color:#EC008C; border:transparent; font-weight:600;}
+.ui-tab.scroll .ui-tab-list.sub { padding:0; }
+.ui-tab.scroll .ui-tab-list.sub li:first-child .ui-tab-btn {margin-left:0;}
+.ui-tab.scroll .ui-tab-list.sub li:first-child .ui-hash-btn {margin-left:0;}
+.ui-tab.scroll.half .ui-tab-list li {flex:1;}
+.ui-tab.scroll.half .ui-tab-list li .ui-tab-btn {width:100%;}
+.ui-search .selected button::after{display: none !important;}
+
+
+.info-top {height:40px; margin:8px 0 8px; display:flex; align-items:center; justify-content:space-between;}
+.info-top .info .total {line-height:21px; color:#74757e; font-weight: 600;}
+.info-top .info .total strong { font-weight: 600;}
+.info-top .sch-top {position:relative; display:flex; align-items:center;}
+.info-top .sch-top .btn-sch {display: none; position:absolute; right:8px; width:24px; height:24px; top:50%; transform: translateY(-50%);  opacity:1; transition:all 0.5s;}
+.info-top .sch-top .btn-sch::after {content:''; position:absolute; top:50%; right:0; width:16px; height:16px; margin-top:-8px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -240px 0; background-size:500px auto;}
+.info-top .sch-top .btn-sch-con {position:absolute; right:8px; width:24px; height:24px; top:50%; transform: translateY(-50%);  opacity:1; transition:all 0.5s;}
+.info-top .sch-top .btn-sch-con:focus{outline: 0;}
+.info-top .sch-top .btn-sch-con::after {content:''; position:absolute; top:50%; right:0; width:16px; height:16px; margin-top:-8px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -240px 0; background-size:500px auto;}
+.info-top .sch-top.ui-input-txt .inp-base {display:none;}
+.info-top.active .info {display:none;}
+.info-top.active .sch-top.ui-input-txt {display:block; width:100%; border: 1px solid #1A399E; border-radius:100px; box-shadow:0px 3px 8px rgba(26, 57, 158, 0.16); }
+.info-top.active .sch-top.ui-input-txt .inp-base {display: block; font-weight: 600; height:38px; padding: 0 82px 0 24px !important; background: transparent; border:none; outline:none;}
+.info-top.active .sch-top.ui-input-txt .inp-base::placeholder {color: #74757e ; font-weight: 400;}
+.info-top.active .sch-top .btn-sch {right:16px; display: block;}
+.info-top.active .sch-top .btn-sch:focus{outline: 0;}
+.info-top.active .sch-top .btn-sch::after {content:''; position:absolute; top:50%; width:24px; height:24px; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto; }
+.info-top.active .sch-top .btn-sch-con {right:16px; display: none;}
+.info-top.active .sch-top .btn-sch-con::after {content:''; position:absolute; top:50%; width:24px; height:24px; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto; }
+.info-top .ui-input-txt .btn-clear {display: none;}
+.info-top.active .ui-input-txt .btn-clear {position:absolute; top:50%; right:45px; margin-top:-12px; display: block;}
+
+
+.info-top .ui-select-btn {height:30px; padding:0 0 0 4px; border:none;}
+.info-top .ui-select-btn:after{right:0;}
+.info-top .ui-select-btn span {width:100%; font-size:12px;}
+.info-top .ui-select-opt{height:30px; padding:0 8px; font-size:12px;}
+
+.sub-head-wrap .find-fund .inp-text { height:48px; border:1px solid #1A399E; border-radius:100px; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16);}
+.list-thumb .thumb-item + .thumb-item {margin-top: 16px;}
+.list-thumb .thumb-item .thumb-img {position:relative; background:#d7d7d7;}
+.list-thumb .thumb-item {position:relative;}
+.list-thumb .thumb-item .thumb-cont {display:block; padding:16px 24px 24px; text-align:left;}
+.list-thumb .thumb-item .tit {overflow:hidden;  margin-bottom:4px; font-size:16px; font-weight: 600; color:#222; line-height:24px; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow:ellipsis; word-break: break-word;}
+.list-thumb .thumb-item .stxt {display:block; margin-bottom:4px; line-height:21px; color:#74757e; font-weight: 500; }
+.list-thumb .thumb-item .stxt .sstxt { position: relative; padding-left:16px; }
+.list-thumb .thumb-item .stxt .sstxt::before { content:''; position: absolute; left:8px; top:4px; width:1px; height:8px; background: #74757E; }
+.list-thumb .thumb-item .date{font-size:12px; line-height:18px; color:#74757e; font-weight: 400; }
+.list-thumb .thumb-item > a {overflow:hidden; display:block; width:100%; height:100%;  border:1px solid #DFE0E2; box-shadow:0px 2px 4px rgba(34, 34, 34, 0.04); }
+.list-thumb .thumb-item > a:focus {border:1px solid #1A399E; box-shadow:0 3px 8px rgba(26, 57, 158, 0.16);}
+.list-thumb .thumb-item > a:focus .tit {color:#1A399E; font-weight: 600;}
+.list-thumb .thumb-item .thumb-img {position:relative; display:block; width:100%; padding-bottom:55.045872%; }
+.list-thumb .thumb-item .thumb-img img {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%;}
+.list-thumb .thumb-item .thumb-img.video::before {z-index:1; content:''; position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%; background-color:#222; opacity:0.2; }
+.modal-conts .board-cont .imgs.video::after,
+.list-thumb .thumb-item .thumb-img.video::after {z-index:10; content:''; position:absolute; top:50%; left:50%; width:48px; height:48px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -390px -50px; background-size:500px auto; transform: translate(-50%, -50%);}
+.list-thumb .thumb-item .thumb-img.no-img{transition: all .15s ease-out; z-index: 1;}
+.list-thumb .thumb-item .thumb-img.no-img::before{ content: ''; position: absolute; width: 100%; height: 100%; background:#F7F8F8 url(/kosef/moWeb/resources/images/img_logo_off.png) no-repeat center center; }
+.list-thumb .thumb-item .thumb-img.no-img img{ display: none; }
+.list-thumb{min-height: 628px;}
+
+.sub-conts-wrap {position:relative; margin:0 auto; }
+.sub-conts-wrap .sch-box .sch-top {position:relative;}
+.sub-conts-wrap .sch-box .inp-txt { height:48px; border:1px solid #1A399E; border-radius:100px; }
+.sub-conts-wrap .sch-box .btn-sch { position:absolute; top:50%; right:15px; width:24px; height:24px; margin-top:-12px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -30px -20px; background-size:500px auto;}
+
+.ui-acco.info .acco-note { font-size: 14px; line-height: 21px; color: #74757E; font-weight:500;  }
+
+.board-conts {margin:8px 0 0;}
+.board-conts .board-head {position:relative}
+.board-conts .btn-sns {position: absolute; bottom:-5px; right:0; width:30px; height:30px;}
+.board-conts .btn-sns:after {content:''; display:inline-block; position:absolute; top:50%; right:0; width:16px; height:16px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -370px 0; background-size:500px auto; transform:translateY(-10px);}
+.board-conts + .ui-acco.info {margin-top:56px;}
+.board-conts .board-sub-tit {position:relative;}
+.board-head .board-tit {margin-bottom:8px; padding:0; font-size:20px; line-height:30px; color:#222; font-weight:700; text-align:left; /*word-break:keep-all;*/}
+.board-sub-tit {display:inline-block; font-size:0; vertical-align:top;}
+.board-sub-tit .board-date,
+.board-sub-tit .writer {display:inline-block; font-weight: 600; text-align:left; vertical-align:top; font-size:14px; line-height:21px; }
+.board-sub-tit .writer { margin-left:8px; }
+.board-sub-tit .writer .sstxt {position: relative; }
+.board-sub-tit .writer .sstxt::before { content:'/'; }
+.board-sub-tit .board-date {color:#74757e; font-weight:500;}
+.board-sub-tit .board-date.end { margin-left: 0; }
+.board-cont {margin-bottom:24px; padding:40px 0 0;}
+.board-cont .board-txt + .file-box {margin-top:40px;}
+.board-cont .board-txt {display:block; font-size:16px; line-height:24px; color:#222;}
+.board-cont .board-txt.board-scr{ height: 120px; overflow-y: scroll; }
+.board-cont .board-txt table{ width: 100% !important; }
+.board-cont .board-txt tr td{ width: 100% !important; }
+.board-cont .board-txt img{max-width: 100%; height: auto;}
+.board-cont .board-txt iframe{ width: 100% !important;}
+.board-cont .file-box {width:100%; padding:24px; background-color:#F2F3F5;}
+.board-cont .event-win {padding:24px; background-color:#F2F3F5}
+.board-cont .board-txt + .event-win {margin-top:40px;}
+.event-detail-wrap .board-date {font-size:14px; line-height:21px;}
+.file-box * {display:block;}
+.file-box .btn-file {font-size:14px; line-height:21px; color:#222;}
+.file-box .btn-file:focus {color:#1A399E;}
+.file-box .btn-file + .btn-file {margin-top:16px;}
+.file-box .btn-file span {position:relative;}
+.file-box .btn-file span::before {content:''; display:inline-block; width:16px; height:16px; margin-right:8px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -390px 0; background-size:500px auto; vertical-align:middle;}
+.board-prev-next {margin-bottom:16px;}
+.board-prev-next > dl {display:flex; align-items:center; height:51px; font-size:14px;}
+.board-prev-next > dl:first-child {border-bottom:1px solid #d7d7d7;}
+.board-prev-next > dl dt {width:48px; line-height:51px; color:#74757e; }
+.board-prev-next > dl dd {width:calc(100% - 48px);}
+.board-prev-next > dl dd a {display:block; height:100%; color:#74757e; overflow:hidden; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:1; text-overflow:ellipsis; word-break: break-word; line-height:54px;}
+.board-prev-next > dl.next dd a {color:#222;}
+.board-sub-tit .d-day {display:inline-block; min-width:30px; height:20px; margin-left:8px; padding:0 8px; line-height:20px; font-size:10px; background-color:#1a399e; color:#fff; text-align:center; border-radius:4px; vertical-align:top;}
+
+.board-cont .event-win .tit {position:relative; display:block; margin-bottom:16px;  font-size:16px; line-height:24px; color:#222; font-weight:700;}
+.board-cont .event-win .tit::before {content:''; display:inline-block; width:24px; height:24px; margin-right:4px; background:url(/kosef/moWeb/resources/images/common/ico_conts.png) no-repeat 0 -60px; background-size:500px auto; vertical-align:top;}
+.board-cont .event-win .txt { font-size: 16px; }
+.board-cont .event-win .txt > span {display:block; font-size:14px; margin-top:16px; color:#74757e;}
+.board-cont .imgs {position:relative; display:block; width:100%; margin-bottom:40px; background:#d7d7d7;} 
+.board-cont .imgs.video{ overflow: hidden; position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin-bottom: 40px;}
+.board-cont .imgs.video .video-inner{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.board-cont .imgs iframe{width: 100%; height: 100%;}
+.board-cont .imgs.video::after{display: none;}
+.board-cont .imgs img {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%;}
+.board-txt .s-tit {display:block; color: #000000;}
+
+.board-conts.dim .board-head .board-tit,
+.board-conts.dim .board-cont .board-txt,
+.board-conts.dim .board-sub-tit { color:#B9BBC6; }
+.board-conts.dim .board-cont .imgs::before { content: ''; position:absolute; left:0; top:0; bottom:0; right:0; background: #9D9DA4; opacity: .8; z-index: 9;}
+
+.sub-opt + .info-top {margin-top:24px;}
+.tbl-info + .tbl-list-wrap {margin-top: 8px;}
+.tbl-list-wrap {border-top:1px solid #222;}
+.tbl-list-wrap li { border-bottom:1px solid #DFE0E2; padding:16px 0 17px; }
+.tbl-list-wrap li a {display:block; margin-bottom:8px;  color:#222; font-size:16px; line-height:24px; font-weight:600; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:1; text-overflow:ellipsis; word-break: break-word; overflow:hidden;}
+.tbl-list-wrap li a:focus {color:#1A399E;}
+.tbl-list-wrap li .date { font-weight: 500; font-size:14px; line-height:18px; color:#74757e; }
+
+/* 이벤트 */
+.list-area {border-top:1px solid #222;}
+.list-area.flex .list-item{display:flex; align-items:center;}
+.list-area .list-item{position:relative; padding:16px 0; border-bottom:1px solid #DFE0E2;}
+.list-area .list-item .list-cont{margin:0 0 0 16px;}
+.list-area .list-item .event-tit {overflow:hidden; display:block; margin-bottom:4px; font-size:16px; line-height:24px; font-weight:600; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; text-overflow:ellipsis; word-break: break-word;}
+.list-area .list-item .event-date { /*margin-top:8px;*/ line-height:21px; color:#74757e; font-weight:500;}
+.list-area .list-item .keyword{color:#1A399E;}
+.list-area .list-item .imgs {overflow:hidden;position:relative;min-width: 96px; height: 68px;border-radius:8px;/*background:#d7d7d7;*/}
+.list-area .list-item .imgs.video::before{content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:24px; height:24px; background: url(/kosef/moWeb/resources/images/common/ico_common.png); background-position:-390px -20px; background-size:500px 300px;}
+.list-area .list-item .imgs > img{position:relative;width:100%;height:100%;object-fit: cover;}
+.list-area .list-item .d-day {position:absolute; display:block; top:0px; right:0; min-width:30px; height:20px; padding:0 6px; line-height:20px; font-size:10px; background-color:#1a399e; color:#fff; text-align:center; border-radius:0px 4px 0px 4px; z-index: 9;}
+.list-area .list-item.event-end .event-tit, 
+.list-area .list-item.event-end .event-date {color:#B9BBC6;}
+.list-area .list-item.event-end .imgs::after {content:''; position:absolute; left:0; top:0; bottom:0; right:0; background:#9D9DA4; opacity: 1; opacity: .8; }
+.list-area .list-item .btn-link{position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%;}
+.list-area .list-item:active .event-tit{ color: #1A399E; }
+
+.banner-link { width:100%; margin:56px 0 16px; }
+.banner-link a {display:block; position:relative; padding:24px 24px 24px 32px; border-radius:16px; background:#F2F3F5 url(/kosef/moWeb/resources/images/dummy/banner1.png) no-repeat right 36px center; background-size:60px auto;}
+.banner-link .ban-tit {display:block; font-size:16px; line-height:24px; font-weight:700; color:#1A399E; }
+.banner-link .ban-des { margin-top:4px; font-size:14px; line-height:21px; }
+
+.contents.mg {padding:0 0 40px 0}
+.pre-txt { font-family:"Pretendard", Sans-serif; color:#222; font-size:14px; font-weight: 600; line-height: 1.5; white-space: pre-wrap; }
+
+/* faq */
+.ui-acco.faq { border-top:1px solid #222; margin:0 -24px; }
+.ui-acco.faq .ui-acco-tit { min-height:56px; margin: 0; }
+.ui-acco.faq .ui-acco-txt { position:relative; padding:0 20px 0 20px; color:#222; font-size:16px; font-weight:600; line-height:24px; }
+.ui-acco.faq .ui-acco-txt:before { content:'Q'; position:absolute; top:0; left:0; width:24px; height:24px; color:#1A399E; font-weight: 500; }
+.ui-acco.faq .ui-acco-pnl { background:#F2F3F5; border-bottom: 1px solid #DFE0E2;} 
+.ui-acco.faq .ui-acco-pnl img { width:100% !important; max-width:375px !important; height:auto !important;  margin:10px auto;   }
+.ui-acco.faq .ui-acco-pnl-wrap { position:relative; padding:24px 24px 24px 43px; line-height:21px; color:#74757E; font-weight:500; background:#F2F3F5; }
+.ui-acco.faq .ui-acco-pnl-wrap::before { content:'A'; position:absolute; top:24px; left:24px; width:24px; height:24px; color:#EC008C; font-weight: 700;}
+.ui-acco.faq .ui-acco-btn { padding:0 24px; }
+.ui-acco.faq .ui-acco-btn span { display:block; }
+.ui-acco.faq .ui-acco-btn > span::after { content:""; display:block; position:absolute; top:0; right:0; width:24px; height:24px; opacity:0.5; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -150px -20px; background-size:500px auto; }
+.ui-acco.faq .ui-acco-btn[aria-expanded=true] .ui-acco-txt { color:#222; font-size: 16px; font-weight: 700;  }
+.ui-acco.faq .ui-acco-btn[aria-expanded=true] .ui-acco-txt:before { color: #1A399E; font-weight: 700; }
+.ui-acco.faq .ui-acco-btn[aria-expanded=true] .ui-acco-txt:after { transform:rotate(-180deg); opacity:0.8; }
+
+
+/* 히어로즈 KOM05040000M */
+.ui-modal-wrap.heroes {width: 100% !important; padding: 0 !important;}
+.sub-head-wrap.heroes { padding:8px 24px 32px ; }
+.sub-head-wrap.heroes .h2 { color:#222; font-size:24px; line-height: 34px; font-weight: 700; text-align:left; }
+.sub-head-wrap.heroes .h2 .head-txt { font-size:16px; line-height: 24px; font-weight: 700; }
+.sub-head-wrap.heroes .h2 .logo-txt { display:block; width:233px; height:38px; margin:16px 0 12px; background:url(/kosef/moWeb/resources/images/kosef.svg)no-repeat; background-size:100%; }
+
+.heroes-card-wrap { position:relative; padding:32px 0 56px 0; z-index:11; }
+.heroes-card-wrap .scroll-list{ position: relative;  display: flex; margin: -1px -24px 0 -24px; height: 353px; padding: 0 24px 4px; overflow: hidden; overflow-x: auto; webkit-overflow-scrolling: touch; white-space: nowrap;  scrollbar-width: none;}
+.heroes-card-wrap .scroll-list::-webkit-scrollbar { display: none; }
+.heroes-card-wrap.bg::before {content:''; position:absolute; left:0; top:0; right:0; width:calc(100% + 48px); margin-left:-24px; height:216px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); z-index:-1;}
+.heroes-card-item { display:flex; flex-direction: column; width:240px; border: 1px solid #DFE0E2; box-shadow: 4px 4px 4px rgba(34, 34, 34, 0.04); overflow: hidden; min-width:240px;}
+.heroes-card-item:not(:first-child) { margin-left:16px; }
+.heroes-card-wrap .heroes-card-item.kosef { position: absolute; top:0; animation: card-kosef 1S forwards; opacity: 0;}
+.heroes-card-wrap .heroes-card-item.kiam { position: absolute; top:0; left: 264px; animation: card-kiam 1S forwards; animation-delay: 0.2s; opacity: 0;}
+@keyframes card-kosef {
+    0%{
+        top:345px;
+        opacity: 0;
+    }
+    100%{
+        top:0;
+        opacity: 1;
+    }
+}
+
+@keyframes card-kiam {
+    0%{
+        top: 345px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.heroes-card-item .card-img { width:100%; height:184px; }
+.heroes-card-item .card-img img{ width:auto; height:100%; }
+/* .heroes-card-item .card-img img{ object-fit: contain; } */
+.heroes-card-item .card-info-box { padding: 24px 24px 32px ; background:#fff; }
+.heroes-card-item .card-info-box .card-title { display:block; color:#1A399E; font-size:20px; line-height: 30px; font-weight: 700; }
+.heroes-card-item .card-info-box .card-txt { margin-top:12px; color:#222; font-size:14px; line-height: 21px; font-weight: 500; white-space: pre-wrap;}
+.heroes-card-item .card-info-box .card-txt span { font-weight: 700; }
+.heroes-card-wrap .txt { margin:32px 0 24px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; }
+.heroes-card-wrap .btn.arrow { position:relative; color:#222; height:48px; font-size:14px; line-height: 48px; font-weight: 600; border-radius: 40px; }
+.heroes-card-wrap .btn.arrow::after {content:''; display:block; margin-left:5px; width:16px; height: 16px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) -180px 0; background-size: 500px auto; }
+
+.history-wrap { margin:0 -24px; padding: 56px 38px 56px 24px; background:#F2F3F5; }
+.history-wrap .h3 { color:#222; font-size:20px; line-height: 30px; font-weight: 700; word-break: keep-all; }
+.history-contents { margin-top:40px; }
+.history-contents .history-item { position:relative; padding:0 0 24px 24px; }
+.history-contents .history-item:last-child { padding-bottom: 0; }
+.history-contents .history-item:last-child::before { background:transparent; }
+.history-contents .history-item::before {content:''; position:absolute; left:0; top:12px; width:1px; height:100%; background:#1A399E; }
+.history-contents .history-item::after {content:''; position:absolute; left:-3px; top:12px ; width:8px; height:8px; border-radius: 50%; background:#1A399E; }
+.history-contents .history-item .year { display:block; color: #1A399E; font-size:24px; line-height: 34px; font-weight: 700; }
+.history-contents .history-item .title { display:block; margin-top:8px; color:#222; font-size:14px; line-height: 21px; font-weight: 600; }
+.history-contents .history-item .txt { margin-top:4px; color:#74757E; font-size:12px; line-height: 18px; font-weight: 500; }
+
+
+
+.contact-wrap { margin:56px 0 16px 0; }
+.contact-wrap .h3 { margin:0 0 24px 0;  }
+.contact-wrap .map-area { display:flex; justify-content: center;}
+.contact-wrap .map-area img{ width: 100%;}
+.contact-wrap .address-box { margin-top:16px; color:#222; font-size:14px; line-height: 21px; font-weight: 700;}
+.contact-wrap .address-box .address-info { margin-top:8px; font-weight: 500; }
+.contact-info { display:flex;  margin-top:16px; }
+.contact-info .contact-info-item { display:flex; color:#222; font-size:12px; line-height: 18px; font-weight: 500;  }
+.contact-info .contact-info-item:last-child { margin-left:24px; }
+.contact-info .contact-info-item dt { margin-right:8px; color:#74757E; }
+
+
+/* KOM01040400P */
+.main-popup .pop-close { z-index: 1; }
+.main-popup.bg { background: transparent; }
+/* .main-popup.bg .ui-modal-body { padding: 0; } */
+.ui-modal-wrap.heroes{ background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), linear-gradient(149.87deg, #394DE4 12.48%, #953DEE 98.25%);}
+.popup-wrap { position:relative; padding:43px 24px 0; margin:-36px -24px; }
+/* .popup-wrap.bg { margin:-96px 0;  } */
+.popup-wrap.bg .icon_bg01 { position:absolute; right:47px; top:74px; width:33px; height:33px; background:url(/kosef/moWeb/resources/images/icon_bg01.png)no-repeat; background-size: 33px; animation: heroes-cloud  7.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both; }
+.popup-wrap.bg .icon_bg02 { position:absolute; right:0; top:187px; width:42px; height:42px; background:url(/kosef/moWeb/resources/images/icon_bg02.png)no-repeat; background-size: 42px 42px; animation: heroes-cloud  4.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.4s; animation-fill-mode: both; }
+.popup-wrap.bg .icon_bg03 { position:absolute; right:55px; bottom:91px; top: inherit; left: inherit; width:32px; height:32px; background:url(/kosef/moWeb/resources/images/icon_bg03.png) no-repeat; background-size: 32px 32px; z-index: 11; animation: heroes-cloud  5.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.5s; animation-fill-mode: both;}
+
+@keyframes heroes-cloud {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+.popup-wrap .h2 { display:block; color:#fff; font-size:24px; line-height: 34px; font-weight: 700; }
+.popup-wrap .h2 .head-txt { position:relative; font-size:16px; line-height: 24px; font-weight: 600; }
+.popup-wrap .h2 .head-txt::before { content:''; position:absolute; left:0; bottom:-2px; width:100%; height:1px; background:#fff; }
+.popup-wrap .h2 .logo-txt { display:block; width:272px; height:45px; margin:32px 0 12px; background:url(/kosef/moWeb/resources/images/main/kosef.svg)no-repeat; background-size:100%; }
+
+.heroes-card-wrap.type2 { padding:56px 0; }
+.heroes-card-wrap.type2 .heroes-card-item  { border: none; }
+.heroes-card-wrap.type2 .txt { margin:40px 0 48px 0; color:#fff; }
+.heroes-card-wrap.type2 .btn.secondary { background:transparent; border: 1px solid #fff; color:#fff; }
+.heroes-card-wrap.type2 .btn.arrow::after { background-position: -300px -50px; }
+
+/* KOM01030300P */
+.main-popup .etf-title { position:relative; display:block; margin-top:24px; padding-left:8px; color:#222; font-size:16px; line-height: 24px; font-weight: 700; }
+.main-popup .etf-title::before { content:''; position:absolute; left:0; top:4px; width: 4px; height: 4px; border-radius: 50%; background:#EC008C; }
+.main-popup .etf-title .etf-name { display:block; margin: 8px 0 2px -8px; color: #1A399E; font-size:32px; line-height: 42px; }
+.main-popup .etf-title .eng-txt { margin-left:-4px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; }
+.etf-bg-wrap { position: relative; width:327px; height:276px; margin: 24px auto 0; }
+.etf-bg-wrap .ani-box { position: absolute; top:0; left: 50%; width: 100%; transform: translateX(-50%);}
+.etf-bg-wrap .ani-box .obj-01 { position: absolute; right: 0; top: 0px; width:321px; height: 274px; background:url(/kosef/moWeb/resources/images/etf_bg.svg )no-repeat; animation: etf-main-cloud1  3s infinite cubic-bezier(0.42, 0, 0.58, 1.0); animation-fill-mode: both; }  
+.etf-bg-wrap .ani-box .txt{ font-size: 12px; font-weight: 400; color: #DFE0E2; text-align: center;}
+.etf-bg-wrap .ani-box .txt:nth-of-type(1){ position: absolute; top: 146px; left: 80px;}
+.etf-bg-wrap .ani-box .txt:nth-of-type(2){ position: absolute; top: 64px; right: 67px;}
+.etf-bg-wrap .ani-box .txt em{ display: block; font-size: 24px; font-weight: 600; color: #FFF; margin-bottom: 4px;}
+
+.etf-bg-wrap .ani-box .obj-02 { position: absolute; left: 67px; top: 42px; width: 18px; height: 18px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); border-radius: 50%; animation: etf-main-cloud2  2.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 1s; animation-fill-mode: both;}
+.etf-bg-wrap .ani-box .obj-03 { position: absolute; left: 89px; top: 29px; width: 8px; height: 8px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); border-radius: 50%; animation: etf-main-cloud2  2.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 1s; animation-fill-mode: both;}
+
+@keyframes etf-main-cloud1 {
+    0%{
+        top: 0;
+    }
+    60%{
+        top: 10px;
+    }
+    80%{
+        top: 5px;
+    }
+    100%{
+        top: 0;   
+    }
+}
+@keyframes etf-main-cloud2 {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+.etf-bg-wrap img { width:100%; }
+.etf-txt { margin-top: 24px; color:#222; font-size:14px; line-height: 21px; font-weight: 600; }
+.etf-txt + .btn { margin-top:24px; border-radius: 32px; }
+.etf-item-wrap { margin-top:40px; }
+.etf-item-wrap .etf-item { position:relative; width:100%; padding:20px 0 20px 104px; font-size:14px; line-height: 21px;  background:#F2F3F5;}
+.etf-item-wrap .etf-item:not(:first-child) { margin-top:16px; }
+.etf-item-wrap .etf-item::before { content: ''; position: absolute; left:24px; top:50%; transform: translateY(-50%); width:56px; height: 56px; background-size: 100%;}
+.etf-item-wrap .etf-item.icon_01::before { background-image:url(/kosef/moWeb/resources/images/etf_icon_01.png); }
+.etf-item-wrap .etf-item.icon_02::before { background-image:url(/kosef/moWeb/resources/images/etf_icon_02.png); }
+.etf-item-wrap .etf-item.icon_03::before { background-image:url(/kosef/moWeb/resources/images/etf_icon_03.png); }
+.etf-item-wrap .etf-item.icon_04::before { background-image:url(/kosef/moWeb/resources/images/etf_icon_04.png); }
+.etf-item-wrap .etf-item .title { color:#222; font-weight: 700; }
+.etf-item-wrap .etf-item .txt { margin-top:4px; color:#74757E; font-weight: 500; }
+.video-guideo { display:block; width:100%; margin-top:40px; border: 1px solid #DFE0E2; box-shadow: 0px 2px 4px rgba(34, 34, 34, 0.04); }
+.video-guideo .video-img { position:relative; display:block; width:100%; height:180px;  }
+.video-guideo .video-img::after { z-index: 10; content: ''; position: absolute; top: 50%; left: 50%; width: 48px; height: 48px; background: url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -390px -50px; background-size: 500px auto; transform: translate(-50%, -50%); }
+.video-guideo .video-img span { position:absolute; right:0; top:0; padding: 8px 12px; color:#fff; font-size:10px; line-height: 16px; font-weight: 600; background: rgba(34, 34, 34, 0.8); z-index: 11; }
+.video-guideo .video-img img { width:100%; height:100%;}
+.video-guideo .video-title { display:block; padding: 16px 24px 24px;  background:#fff;}
+.video-guideo .video-title p { display:-webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-word; overflow:hidden; text-overflow:ellipsis ; color:#222; font-size:14px; line-height: 21px; font-weight: 600; }
+
+/* KOM04030000T */
+.invest-top-wrap { position:relative; padding-bottom: 56px;}
+.invest-top-wrap .top-title { position:relative; display:inline-block; margin-top:8px; color:#222; font-size: 32px; line-height: 42px; font-weight: 700; }
+.invest-top-wrap .top-title::before { content: ''; position: absolute; right:0; bottom:10px; width:24px; height:24px; background: url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -380px -90px ;}
+
+.is-etf-wrap { position:relative; max-width:327px; height:327px; margin:40px auto 0;}
+.is-etf-wrap::before { content:''; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); width:265px; height:268px; }
+.is-etf-wrap .txt{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 48px; color: #F2F3F5; font-weight: 700;  background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; }
+.is-etf-item { position: absolute; display:flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 50%; color:#fff;}
+.is-etf-item.fund {  right:0; top:-18px; width:176px; height:176px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); box-shadow: 6px 4px 15px -25px rgba(80, 66, 244, 0.2);}
+.is-etf-item.stock { left:0; bottom:0; width:160px; height:160px; background: linear-gradient(98.43deg, #DC0F96 10.82%, #E5166D 102.61%); box-shadow: 6px 4px 15px -25px rgba(245, 28, 139, 0.16);}
+.is-etf-item .title { margin-bottom:4px; font-size: 20px; line-height: 30px; font-weight: 700; }
+.is-etf-item ul li { font-size: 14px; line-height: 21px; font-weight: 600; text-align: center; }
+
+.invest-top-wrap .top-txt { margin-top:40px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; }
+
+.icon_bg01 { position:absolute; top:98px; right:-49px; width:38px; height: 38px; border-radius: 50%; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); opacity: 0.9; animation: cloud 5.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both;}
+.icon_bg02 { position:absolute; top:165px; right:-5px; width:12px; height: 12px; border-radius: 50%; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); opacity: 0.9; animation: cloud 5.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both;}
+.icon_bg03 { position:absolute; top:334px; left:-13px;  width:16px; height: 16px; border-radius: 50%; background: linear-gradient(137.44deg, #E9109F 10.82%, #FC237E 102.61%); opacity: 0.9; animation: cloud 5.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both;}
+.icon_bg04 { position: absolute; top: -22px; right: 91px; width: 56px; height: 56px; background: url(/kosef/moWeb/resources/images/icon_bg05.png) 0 0 no-repeat; background-size: 56px 56px; animation: cloud 3.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.4s; animation-fill-mode: both; }
+.icon_bg05 { position: absolute; top: 103px; right: 32px; width: 38px; height: 38px; background: url(/kosef/moWeb/resources/images/icon_bg04.png) 0 0 no-repeat; background-size: 38px 38px; animation: cloud 5.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.10s; animation-fill-mode: both; }
+@keyframes cloud {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+.invest-top-wrap .icon_bg01{ animation: cloud 1.0s infinite alternate cubic-bezier(0.51, 0.29, 0.68, 0.46); animation-delay: 0.3s; animation-fill-mode: both; }
+.invest-top-wrap .icon_bg02{ animation: cloud 2.0s infinite alternate cubic-bezier(0.51, 0.29, 0.68, 0.46); animation-delay: 0.6s; animation-fill-mode: both; }
+.invest-top-wrap .icon_bg03{ animation: cloud 3.0s infinite alternate cubic-bezier(0.51, 0.29, 0.68, 0.46); animation-delay: 0.6s; animation-fill-mode: both; }
+
+
+.etf-point-wrap { position:relative; padding:56px 0; }
+.etf-point-wrap::before { content: ''; position:absolute; left:0; top:0; bottom:0; right:0; margin:0 -24px; background: linear-gradient(100.59deg, #1A399E 62.77%, #4D38CE 103.34%); }
+.etf-point-wrap .point-title { position:relative; display:inline-block; margin-bottom: 24px; color:#fff; font-size:32px; line-height: 42px; font-weight: 700; }
+.etf-point-wrap .point-title::before {content:''; position:absolute; right:5px; bottom:8px; width:24px; height:24px; background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -350px -90px; }
+
+.etf-card-list { position:relative; width:100%; max-width:327px; margin:0 auto; }
+.etf-card-list .card-item { display:block; position: relative; margin-bottom:24px; width:100%; max-width:327px; height:384px; text-align:center; }
+.etf-card-list .card-item.list_01 { background:#6D3BCC; z-index: 41;}
+.etf-card-list .card-item.list_02 { background:#00799F; z-index: 31;}
+.etf-card-list .card-item.list_03 { background:#258086; z-index: 21;}
+.etf-card-list .card-item.list_04 { background:#2C6FE4; z-index: 11;}
+
+.etf-card-list .card-item strong { display:block; padding-top:92px; color:#fff; font-size:24px; line-height: 36px; font-weight: 700; }
+.etf-card-list .card-item p { margin-top:145px; color:#fff; font-size:14px; line-height: 21px; font-weight: 600; }
+
+.etf-card-list li::after {content:'01'; position:absolute; top:40px; left:50%; transform:translateX(-50%); width:40px; height:40px; color:#fff; font-size:14px; line-height: 40px; font-weight: 700; border-radius: 50%; }
+.etf-card-list .list_01::after { content:'01'; background: #8450E8; }
+.etf-card-list .list_02::after { content:'02'; background: #009FD1; }
+.etf-card-list .list_03::after { content:'03'; background: #0D6660; }
+.etf-card-list .list_04::after { content:'04'; background: #4488FF; }
+
+.etf-card-list li::before { content:''; position:absolute; left:50%; top:152px; transform:translateX(-50%); width:97px; height:97px;   background-size: 96px 96px !important; }
+.etf-card-list .list_01::before { background:url(/kosef/moWeb/resources/images/icon_point_01.png); }
+.etf-card-list .list_02::before { background:url(/kosef/moWeb/resources/images/icon_point_02.png); }
+.etf-card-list .list_03::before { background:url(/kosef/moWeb/resources/images/icon_point_03.png); }
+.etf-card-list .list_04::before { background:url(/kosef/moWeb/resources/images/icon_point_04.png); }
+
+.market-base-wrap { position: relative; padding:56px 0; background: #FFF; z-index: 1;}
+.market-base-wrap .market-title { margin-bottom:24px; color:#222; font-size:32px; line-height: 42px; font-weight: 700; }
+.market-base-wrap .market-img { display:block; max-width:328px; height:658px; margin:0 auto; }
+.market-base-wrap .market-img img { width:100%; }
+
+.video-guide-wrap { position:relative; padding: 56px 0; margin:0 -24px; background:#2F3135; z-index: 10;}
+.video-guide-wrap .h2 { margin:0 0 24px 24px;; color:#fff; font-size:32px; line-height: 42px; font-weight: 700; }
+
+.video-list { display:flex; justify-content: space-between; flex-direction: column; margin:0 24px; }
+.video-list .video-item { margin-bottom:24px; }
+.video-list .video-item .txt-area { display:block; padding: 16px 24px 24px;  background:#fff;}
+.video-list .video-item .txt-area p { display:-webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-word; overflow:hidden; text-overflow:ellipsis ; color:#222; font-size:16px; line-height: 24px; font-weight: 600; }
+.video-list li:last-child{ margin-bottom: 0; }
+.video-guide-wrap .btn-box { margin:0 24px;}
+.video-guide-wrap .btn.arrow { background: transparent; border: 1px solid #fff; color: #fff; }
+.video-guide-wrap .btn.arrow::after { background-position: -300px -50px; }
+
+.key-word-wrap { padding:56px 0 0; }
+.key-word-wrap h2 { margin-bottom:24px;; color:#222; font-size:32px; line-height: 42px; font-weight: 700; }
+.key-word-wrap .txt-list { margin-top: 0;}
+.key-word-wrap .eng-txt { display:block; margin-bottom:8px; color:#1A399E; font-size:14px; line-height: 21px; font-weight: 600; }
+
+.ui-acco.line { border-top:1px solid #222; }
+.ui-acco.line .ui-acco-tit { min-height:56px; margin: 0; }
+.ui-acco.line .ui-acco-txt { position:relative; padding:0 ; color:#222; font-size:14px; font-weight:500; line-height:24px; }
+.ui-acco.line .ui-acco-pnl { background:#F2F3F5; border-bottom: 1px solid #DFE0E2;} 
+.ui-acco.line .ui-acco-pnl-wrap { position:relative; padding:24px ; line-height:21px; color:#74757E; font-weight:500; background:#F2F3F5; }
+.ui-acco.line .ui-acco-btn { padding:0 24px; }
+.ui-acco.line .ui-acco-btn span { display:block; }
+.ui-acco.line .ui-acco-btn > span::after { content:""; display:block; position:absolute; top:0; right:0; width:24px; height:24px; opacity:0.5; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -150px -20px; background-size:500px auto; }
+.ui-acco.line .ui-acco-btn[aria-expanded=true] .ui-acco-txt { color:#222; font-weight: 700; }
+.ui-acco.line .ui-acco-btn[aria-expanded=true] .ui-acco-txt:before { color: #1A399E; font-weight: 700; }
+.ui-acco.line .ui-acco-btn[aria-expanded=true] .ui-acco-txt:after { transform:rotate(-180deg); opacity:0.8; }
+
+.title-dot { position:relative; display:block; margin-bottom:16px; padding-left:8px; color:#222; font-size:16px; line-height: 24px; font-weight: 700; }
+.title-dot::before { content:''; position:absolute; left:0; top:4px; width:4px; height:4px; background:#EC008C; border-radius: 50%; }
+.chkbox-area { display:flex; justify-content: space-between; }
+.chkbox-item { position:relative; width:50%; height:101px; }
+.chkbox-item:not(:first-child) { margin-left:8px;}
+.chkbox-item input[type=radio] + label { position:relative; width:100%; height:100%; border: 1px solid #DFE0E2; background: #FFF; border-radius: 8px; box-shadow: 0px 2px 4px rgba(34, 34, 34, 0.04); }
+.chkbox-item input[type=radio]:checked + label { border: 1.4px solid #1A399E; background: #EFF4FB; box-shadow: 0px 2px 4px rgba(26, 57, 158, 0.16); }
+.chkbox-item input[type=radio]:checked + label span { color:#1a399e; text-decoration: underline;}
+.chkbox-item .lb-txt { position: absolute; width:100%; bottom:20px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 700;  text-align: center;}
+.chkbox-item .lb-txt .txt-s { font-size: 12px; line-height: 18px; font-weight: 500; }
+.chkbox-item input { position: absolute; left:0; top:0; bottom:0; right:0; width:100%; height:100%; border: 1px solid #000; z-index: 111;}
+.chkbox-item[data-icon=star]::after { content:''; position:absolute; left:50%; top:20px; width:32px; height:32px; transform: translateX(-50%); background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -420px -130px; }
+.chkbox-item[data-icon=dart]::after { content:''; position:absolute; left:50%; top:20px; width:32px; height:32px; transform: translateX(-50%); background:url(/kosef/moWeb/resources/images/common/ico_conts.svg)no-repeat -460px -130px;  }
+
+.slect-wrap fieldset { display:flex; justify-content: space-between; flex-direction: row; flex-wrap: wrap; border:0;}
+.date-item { position:relative; width:calc(25% - 8px); height:40px; margin-bottom:8px; }
+.date-item.double { width:calc(50% - 5px);}
+.date-item input[type=radio] + label { position:absolute; width:100%; height:100%; text-align:  center;  color:#74757E; line-height: 38px; border:1px solid #74757E; background:#fff; border-radius: 8px; }
+.date-item input[type=radio]:checked + label { background: #EFF4FB; border: 1.4px solid #1A399E; }
+.date-item input[type=radio]:checked + label span { color:#1A399E; text-decoration: underline;}
+.date-item input[type=radio] + label span { color:#74757E; font-size:14px; font-weight: 600; }
+fieldset:disabled label,
+.date-item input[type=radio]:disabled + label{ background:#DFE0E2; color:#F2F3F5; border: 1px solid #DFE0E2; }
+fieldset:disabled label, .date-item input[type=radio]:disabled + label span { color: #F2F3F5;}
+
+.ui-select.line {width:100%; padding-right:16px; border:1px solid #DFE0E2; border-radius: 8px; }
+.ui-select.line select { width:100%; height:48px; padding:0 16px; font-weight: 500;}
+.ui-select.line select option { font-weight: 500;}
+
+.date-btn-box { display:flex; justify-content: space-between; align-items: center; }
+.date-btn-box .ui-date-wrap { width:100%; margin-right:8px; }
+.date-btn-box .btn.sub { max-height: 40px; }
+
+.contents.side-bg { overflow:hidden; }
+
+/*KOM02010100M*/
+.kosef-btn-tab{ margin: 0 24px;}
+.kosef-btn-tab .scroll-list{ display: flex;  margin: 0 -24px 0 -24px; padding: 0 24px; overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+.kosef-btn-tab .scroll-list::-webkit-scrollbar {display:none;}
+.kosef-tab-item{ display: inline-flex; position:relative; }
+.kosef-tab-item:not(:first-child){ margin-left: 10px; }
+.kosef-tab-item .tab-ckb{ display: flex; justify-content: center; align-items: center; flex-direction: column; word-break: keep-all; white-space: initial; text-align: center; width: 80px; height: 80px; border-radius: 8px; border: 1px solid #DFE0E2; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04); box-sizing: border-box; background-color: #FFF; cursor: pointer;}
+.kosef-tab-item .tab-ckb em{ display: flex; font-size: 12px; font-weight: 600; margin-top: 6px; color:#74757E;}
+.kosef-tab-item .tab-ckb span{ width: 24px; height: 24px; background-position-x: center; background-repeat: no-repeat; background-size: 100%;}
+.kosef-tab-item .tab-ckb .on{ display: none; }
+.kosef-tab-item .tab-ckb:hover{ color: #1A399E; border: 1px solid #1A399E; box-sizing: border-box;}
+.kosef-tab-item input:checked + label{ color: #FFF; background: linear-gradient(114.62deg, #394DE4 6.07%, #953DEE 96.44%); box-shadow: 0px 2px 4px rgba(26, 57, 158, 0.16); }
+.kosef-tab-item input:checked + label span{ display: none; }
+.kosef-tab-item input:checked + label span.on{ display: block; }
+.kosef-tab-item input:checked:hover + label{ border: 1px solid #394DE4; box-sizing: border-box; }
+.kosef-tab-item input:checked + label em { position: relative; color:#fff; }
+.kosef-tab-item input:checked + label em::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 1px; background-color: #FFF;}
+.kosef-tab-item input:focus + label{ outline: 1px solid #000;}
+
+/*KOP02010200M*/
+.head-group .dline{ max-height:112px }
+.tbl-nodate{ font-size: 14px; font-weight: 500; padding: 152px 0; text-align: center;}
+.sub-graph .sub-graph-info{ margin-bottom: 16px; }
+.sub-graph .sub-graph-info ul{ display: flex; justify-content: flex-end;}
+.sub-graph .sub-graph-info ul li{ margin-left: 12px; }
+.sub-graph .sub-graph-info ul li:first-child{ margin-left: 0;}
+.sub-graph .sub-graph-info span{ position: relative; padding-left: 12px; color: #74757e; font-size: 12px; font-weight: 400;}
+.sub-graph .sub-graph-info span::before{content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; }
+.sub-graph .sub-graph-info .blue::before{ background-color: #1A399E; }
+.sub-graph .sub-graph-info .pink::before{ background-color: #EC008C; }
+.sub-graph .sub-graph-info .green::before{ background-color: #58B84A; } 
+
+
+/*KOM03010000M*/
+.report-detail-wrap .sub-head-wrap{ background-color:#ECF1FF; padding-top: 8px; padding-bottom: 24px;}
+.report-detail-wrap .sub-head-wrap .title::before{ content: ''; display: block; width: 40px; height: 40px; background:url(/kosef/moWeb/resources/images/common/ico_conts.svg) no-repeat -240px -340px;  background-size: 500px; margin-bottom: 16px;}
+/* .report-detail-wrap .sub-head-wrap .title::before{ width: 40px; height: 40px; background:url(/kosef/moWeb/resources/images/common/ico_conts.png) no-repeat -350px 0; } */
+.sub-head-wrap .txt{ margin-top:16px; color: #74757e; font-size: 14px; font-weight: 500; text-align: left; }
+.room-wrap{ padding: 40px 20px 56px 20px;}
+.room-wrap .title{ display: flex; align-items: center; margin-bottom:8px; }
+.room-wrap .title strong{ margin-right: 10px; }
+.room-wrap .download{ display: flex; align-items: center; margin-top: 16px;}
+.room-wrap .download button{ min-width: 94px; margin-left:8px; }
+.room-wrap .download .btn-icon span { padding: 0 !important;}
+.room-wrap .download .btn-icon.icon-dw span:after { position:static; margin-left:2px; }
+
+.result-wrap .search-color{ color: #1A399E; font-weight: 600;}
+
+/*KOM01040000M*/
+.find-fund .ui-input-txt{ box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16); }
+.search-info{ font-size: 14px; margin-top: 16px; }
+.search-info .search-word{ color: #1A399E; font-size: 14px; font-weight: 600; }
+.search-info strong{ font-size: 14px; font-weight: 600; }
+.result-wrap{margin: 0 24px 56px 24px;}
+.result-wrap .result-header:first-child{ margin-top: 40px; }
+.result-wrap .result-header{ display: flex; justify-content: space-between; align-items: center; margin:50px 0 16px;}
+.result-wrap .result-header strong{ position: relative; font-size: 16px; padding-left: 8px; }
+.result-wrap .result-header strong::before{ content: ''; display: block; position: absolute; top: 3px; left: 0; width: 4px; height: 4px; border-radius: 50%; background: #EC008C; }
+.result-wrap .result-header strong span{ color: #EC008C; font-size: 14px; font-weight: 700; margin-left: 4px; }
+.result-wrap .result-mlist{ border-top: 1px solid #222; }
+.result-wrap .mlist-item a { display:flex; padding:16px 0; border-bottom:1px solid #DFE0E2; justify-content:center; align-items:center; }
+.result-wrap .mlist-item .imgs {overflow:hidden;position:relative;width:96px;height:68px;border-radius:8px;}
+.result-wrap .mlist-item .imgs img {position:absolute;width:auto;height:100%;left:50%;top:50%;transform: translate(-50%,-50%);}
+.result-wrap .mlist-item .play{ position:relative; }
+.result-wrap .mlist-item .play::after{ content: ''; position: absolute; top: 50%; left: 50%; width: 24px; height: 24px; transform: translate(-50%,-50%); background:url(/resource/mobile/images/common/ico_comm.png) no-repeat -390px -20px; background-size: 500px 500px;}
+.result-wrap .mlist-cont{ padding-left:16px; width:calc(100% - 96px); }
+.result-wrap .mlist-cont .tit{ line-height:24px; min-height:48px; font-size:16px; text-overflow:ellipsis; overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
+.result-wrap .mlist-cont .date{ display:block; line-height:21px; color:#74757E; font-size:14px; font-weight:400; margin-top:4px; }
+.result-wrap .result-etflist{ border-top:1px solid #222; }
+.result-wrap .result-etflist li a{ display:flex; flex-direction:column; position:relative; padding:16px 0; border-bottom:1px solid #DFE0E2;}
+.result-wrap .result-etflist li a strong{ color:#222; font-size:16px; font-weight:600; margin-top:8px; line-height:21px;}
+.result-wrap .result-etflist li a .text-use{ color:#74757E; font-size:12px; font-weight:500; margin-top:6px; }
+.result-wrap .result-etflist li a > em{position:absolute; right:0; bottom:13px; font-size:20px; font-weight:700;}
+.result-wrap .search-color { color:#1A399E; font-weight:700; }
+.result-wrap .tbl-list-wrap .tit { overflow:hidden; display:block; text-overflow:ellipsis; white-space:nowrap; -webkit-line-clamp:inherit;   }
+.result-wrap .no-data { border-bottom:1px solid #DFE0E2; }
+
+.txt-list{ text-align: left; word-break: keep-all; display: block; }
+
+/*KOM04030000T*/
+.etf-point-wrap{ z-index: 1;}
+.etf-point-wrap.on{ height: 2300px; }
+.etf-point-wrap.on .point-box{ position: fixed; top:74px; }
+.etf-point-wrap.on .etf-card-list{ position: fixed; margin-top: 170px; left: calc(50% - 204px);}
+.etf-point-wrap.on .etf-card-list .card-item{position: inherit; left: calc(50% - 163.5px); margin-top: 180px;}
+.etf-point-wrap.on .etf-card-list .card-item{ translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; }
+.etf-point-wrap .etf-card-list .card-item.ing{ animation:card_on 1s forwards;}
+@keyframes card_on{
+    0%{
+        translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;
+    }
+    100%{
+        translate: none; rotate: none; scale: none; transform: translate3d(397.766px, -198.883px, 0px) rotate(34.8045deg) scale(0.8011, 0.8011); opacity: 0.0056;
+    }
+}
+.etf-point-wrap.end .etf-card-list .card-item{ opacity: 0;}
+
+.etf-point-wrap.end .etf-card-list .card-item.bak{ animation:card_off 1s forwards;}
+@keyframes card_off{
+    0%{
+        translate: none; rotate: none; scale: none; transform: translate3d(397.766px, -198.883px, 0px) rotate(34.8045deg) scale(0.8011, 0.8011); opacity: 0.0056;
+    }
+    100%{
+        translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;
+    }
+}
+
+.is-eft-wrap{ position: relative; }
+.is-eft-circle .txt{ position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); color: #F2F3F5; font-weight: 700; font-size: 64px; line-height: 76px; z-index: -1;}
+.is-eft-origin{width: 327px; height: 327px; position: absolute;}
+.is-eft-origin.lt{ animation: rotatelt01 18s ease-in-out infinite; z-index: 2; animation-delay: 1s;}
+.is-etf-item.stock{ transform: rotate(0deg); animation: rotatelt02 18s ease-in-out infinite; animation-delay: 1s;}
+@keyframes rotatelt01 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    15%{
+        transform: rotate(-40deg); 
+    }
+    24%{
+        transform: rotate(-40deg); 
+    }
+    45%{
+        transform: rotate(0deg); 
+    }
+    60%{
+        transform: rotate(5deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+@keyframes rotatelt02 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    15%{
+        transform: rotate(40deg); 
+    }
+    24%{
+        transform: rotate(40deg); 
+    }
+    45%{
+        transform: rotate(0deg); 
+    }
+    60%{
+        transform: rotate(-5deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+.is-eft-origin.rt{ animation: rotatert01 22s ease-in-out infinite; z-index: 2;}
+.is-etf-item.fund{ animation: rotatert02 22s ease-in-out infinite; }
+@keyframes rotatert01 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    15%{
+        transform: rotate(42deg); 
+    }
+    22%{
+        transform: rotate(42deg); 
+    }
+    45%{
+        transform: rotate(0deg); 
+    }
+    60%{
+        transform: rotate(10deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+} 
+@keyframes rotatert02 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    15%{
+        transform: rotate(-42deg); 
+    }
+    22%{
+        transform: rotate(-42deg); 
+    }
+    45%{
+        transform: rotate(0deg); 
+    }
+    60%{
+        transform: rotate(-10deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+.is-eft-circle .b-circle{ position: absolute; top:30px; left: 30px; width: 265px; height: 268px; background: url(/kosef/moWeb/resources/images/main/b_circle.png) 0 0 no-repeat; background-size: 265px 268px; animation: b-circle 15s infinite; transform: rotate(0deg);}
+.is-eft-circle .r-circle{ position: absolute; top:30px; left: 30px; width: 265px; height: 265px; background: url(/kosef/moWeb/resources/images/main/r_circle.png) 0 0 no-repeat; background-size: 265px 265px; animation: r-circle 30s infinite;}
+@keyframes r-circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes b-circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    90%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.is-eft-circle .s-circle{position: absolute; bottom: 0; right: 13px;  width: 72px; height: 72px; background: url(/kosef/moWeb/resources/images/main/s_circle.png) 0 0 no-repeat; background-size: 72px 72px; animation: s-circle 15s infinite; transform: rotate(0deg);}
+@keyframes s-circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(10deg);
+    }
+    70%{
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+/* KOM06000000M */
+.goods-sch-list .list-item.eng .info em span{width: 76px; vertical-align: middle; }
+:lang(en) .foot-wrap {padding: 40px 24px 56px; display: block;}
+:lang(en) .foot-wrap .logo { width:284px; height:24px; background: url(/kosef/moWeb/resources/images/foot_logo_eng.png); background-size: 100%;}
+:lang(en) .foot-wrap .etc { justify-content: space-between;  align-items: flex-end; }
+:lang(en) .foot-wrap .kor-link { position:relative; color:#9D9DA4; font-size:12px; line-height: 18px; font-weight: 500; }
+:lang(en) .foot-wrap .kor-link::before { content: ''; position:absolute; right:-14px; top:3px; width:12px; height:12px; background: url(/kosef/moWeb/resources/images/common/ico_comm.png) -480px -20px; background-size: 500px auto; opacity: 0.6; }
+:lang(en) .goods-sch-list{ margin: 40px 24px 56px 24px; }
+
+.eng-head-wrap { position: relative; padding: 8px 24px 0; overflow: hidden; z-index: 11;}
+.eng-head-wrap::before {content:''; position:absolute; right:0; top:88px; width:160px; height:306px; background:url(/kosef/moWeb/resources/images/eng_head_bg_m.svg)no-repeat; ; z-index:-1; }
+.eng-head-wrap .h2 { color:#222; font-size:20px; line-height: 30px; font-weight: 700; margin-top: 32px; }
+.eng-head-wrap .h2 .head-txt { font-size:16px; line-height: 24px; font-weight: 600; }
+.eng-head-wrap .h2 .logo-txt { display:block; width:220px; height:36px; margin:16px 0 8px; background:url(/kosef/moWeb/resources/images/kosef.svg)no-repeat; background-size:100%; }
+
+.eng-head-wrap .scroll-list { display: flex; margin: 0 -24px 0 -24px; padding: 0 24px; overflow: hidden; overflow-x: auto; webkit-overflow-scrolling: touch; }
+.eng-head-wrap .scroll-list::-webkit-scrollbar { display:none;}
+.eng-card-contents { display: flex; margin-top:56px; z-index:11; padding-bottom:24px;}
+.eng-card-contents .card-item { width:280px; height:175px; padding: 24px; background:#fff; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16); text-align:left; border-radius: 16px 0 16px 16px; }
+.eng-card-contents .card-item:first-child { margin-right:16px; }
+.eng-card-contents .card-item .eng-card-title { font-size:20px; line-height: 30px; font-weight: 700; }
+.eng-card-contents .card-item.kosef .eng-card-title { color: #1A399E; }
+.eng-card-contents .card-item.kiwoom .eng-card-title { color: #EC008C; }
+.eng-card-contents .card-item .eng-card-title .title-sub-txt { display:block; font-size:12px; line-height: 18px; font-weight: 600; }
+.eng-card-contents .card-item .eng-card-txt { margin-top:12px; color:#222; font-size:14px; line-height: 21px; font-weight: 500;}
+.eng-head-wrap .txt { margin-bottom:32px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; padding-right:18px; word-break: keep-all;}
+
+.kosef-btn-tab.eng .kosef-tab-item .tab-ckb {width:88px; height:96px; padding:16px 8px 16px 8px; }
+/* .kosef-btn-tab.eng .kosef-tab-item .tab-ckb { display:flex; justify-content: space-between; align-items: start; width:88px; height:96px; padding:16px 8px 16px 8px; } */
+/* .kosef-btn-tab.eng .kosef-tab-item .tab-ckb span { width: 24px; height:24px; background-size:100%; } */
+/* .kosef-btn-tab.eng .kosef-tab-item .tab-ckb em {text-align: left; margin-top:0; line-height: 18px; } */
+
+.goods-sch-list .list-item.eng .tit { margin-top:0; }
+.goods-sch-list .list-item.eng .info { margin-top: 16px; }
+.goods-sch-list .list-item.eng .info em { font-size: 10px; }
+.goods-sch-list .list-item.eng .info em span { display:inline-block; width: 76px; vertical-align: middle; }
+.goods-sch-list .list-item.eng .info em b { font-size: 12px; }
+.goods-sch-list .list-item.eng .info em:not(:first-child) { margin-top: 4px; }
+.goods-sch-list .list-item.eng .rate .txts { padding-top: 0; }
+
+
+.ui-acco.terms {margin:25px -24px 0 -24px;}
+.ui-acco.terms .ui-acco-tit {margin:0;}
+.ui-acco.terms .ui-acco-txt { position:relative; padding:16px 40px 16px 0; color:#222; font-size:14px; line-height:21px;  word-break:keep-all; font-weight:600;}
+.ui-acco.terms .ui-acco-txt .terms-s-tit {display:block; font-size:12px; line-height:18px; font-weight:700; color:#1A399E; vertical-align:initial;}
+.ui-acco.terms .ui-acco-txt .terms-tit {display:inline-block; font-size:14px; line-height:21px; font-weight:600;}
+.ui-acco.terms .ui-acco-txt .terms-tit > em {margin-right:8px; font-size:12px; line-height:18px; color:#1A399E; font-weight:700;}
+.ui-acco.terms .ui-acco-pnl-wrap { padding:24px; line-height:21px; color:#74757E; font-weight:500;}
+.ui-acco.terms .ui-acco-wrap {border-bottom:1px solid #DFE0E2;}
+.ui-acco.terms .ui-acco-wrap:first-child {border-top:1px solid #DFE0E2;}
+.ui-acco.terms .ui-acco-pnl-wrap p:not(:first-child) {margin-top:8px;}
+.ui-acco.terms .ui-acco-pnl-wrap dl dt {line-height:21px;}
+.ui-acco.terms .ui-acco-pnl-wrap dl li {margin-top:0;}
+.ui-acco.terms .ui-acco-pnl { background:#F2F3F5;} 
+.ui-acco.terms .ui-acco-pnl .terms-tit-s {line-height:21px; font-weight:500;} 
+.ui-acco.terms .ui-acco-pnl h5 {margin:8px 0 4px; font-size:14px;}
+.ui-acco.terms .ui-acco-pnl .terms-tit-s + p {margin-bottom:8px;}
+.ui-acco.terms .ui-acco-pnl p:last-child {margin-bottom:0;}
+.ui-acco.terms .ui-acco-btn { padding:0 24px;}
+.ui-acco.terms .ui-acco-btn .ui-acco-txt { display:block; }
+.ui-acco.terms .ui-acco-btn > .ui-acco-txt::after {content:""; display:block; position:absolute; top:16px; right:0; width:24px; height:24px; opacity:0.5; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -150px -20px; background-size:500px auto;   }
+.ui-acco.terms .ui-acco-btn[aria-expanded=true] .ui-acco-txt:after { transform:rotate(-180deg); opacity:0.8;}
+.ui-acco.terms .ui-acco-btn[aria-expanded=true] span:after {opacity: 1;transform: rotate(180deg);}
+.ui-acco.terms .ui-acco-btn[aria-expanded=true] .ui-acco-txt { color:#222; font-weight:700;}
+.ui-acco.terms .ui-acco-pnl-wrap .terms-tit-s {margin-top:8px;}
+.ui-acco.terms .ui-acco-pnl-wrap .terms-tit-s:first-child {margin-top:0;}
+.ui-acco.terms .tbl-manager {margin:0 24px 56px;}
+.ui-acco.terms .tbl-manager .title {position:relative; display:block; margin:56px 0 16px; font-size:16px; line-height:24px; color:#222; font-weight:700;}
+.ui-acco.terms .tbl-manager .title:before {content:''; display:inline-block; width:24px; height:24px; margin-right:8px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -80px -80px ; background-size:500px auto; vertical-align:top;}
+.ui-acco.terms .tbl-manager .tbl tbody td, 
+.ui-acco.terms .tbl-manager .tbl tbody th {padding:8px 0;}
+.ui-acco.terms .tbl-manager .tbl thead th {padding:14px 0;}
+.ui-acco.terms .temrs-num-circle li,
+.ui-acco.terms .temrs-num li {font-size:14px; line-height:21px; margin-top:4px;}
+.ui-acco.terms .terms-info div {margin-top:8px;} 
+.terms-add-wrap {position:relative; margin:0 -24px; padding:32px 37px 32px 24px; background-color:#F7F8F8; font-weight:500;}
+.terms-add-wrap .terms-add-inner {overflow:hidden; height:250px; overflow-y:auto;}
+.terms-add-wrap .terms-tit {display:block; margin-bottom:8px; font-size:14px; font-weight:500; line-height:21px; color:#222} 
+.terms-add-wrap .terms-tit-s {margin-bottom:8px; font-size:14px; line-height:21px; font-weight:500;}
+.terms-add-wrap .list-items {font-size:14px; line-height:21px;} 
+.terms-add-wrap .list-items dt,
+.terms-add-wrap .list-items .roman-num > li {margin-bottom:8px; line-height:21px;}
+.terms-add-wrap .list-items .roman-num > li > strong {display:block; margin:8px 0; font-weight:500; line-height:21px;}
+.terms-add-wrap .list-items .temrs-num li {color:#74757E; line-height:21px;}
+.terms-add-wrap .list-items .temrs-num-s {margin:8px 0;}
+.ui-tab-pnls .terms-wrap {margin:40px 0 0;}

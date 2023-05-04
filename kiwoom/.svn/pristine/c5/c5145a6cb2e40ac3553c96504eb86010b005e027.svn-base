@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* layout */
+.kosef-main .gnb-wrap{ position: fixed; top:0; width: 100%; z-index: 100;}
+
+.gnb-wrap { display:flex; align-items:center; justify-content:center; height:56px; padding:0 24px; }
+.gnb-wrap .logo { position:absolute; top:18px; left:24px; width:120px; height:20px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat 0 -140px; background-size:500px auto; }
+.gnb-wrap .util { position:absolute; top:10px; right:10px; }
+.gnb-wrap .btn-prev { position:absolute; top:10px; left:10px; display:inline-block; width:40px; height:40px;   }
+.gnb-wrap .util .btn-sch,
+.gnb-wrap .util .btn-gnb { position:relative; display:inline-block; width:40px; height:40px;   }
+.gnb-wrap .btn-prev:after,
+.gnb-wrap .util .btn-sch:after,
+.gnb-wrap .util .btn-gnb:after { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:24px; height:24px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -60px -20px; background-size:500px auto;}
+.gnb-wrap .util .btn-sch:after { background-position-x:0; }
+.gnb-wrap .btn-prev:after { background-position-x:-90px; }
+.gnb-wrap .util .btn-gnb { background-position:-40px 0; }
+.gnb-wrap .title { font-size:16px; line-height:24px; font-weight:600; }
+.gnb-wrap.bg-fund { background:#1A399E; }
+.gnb-wrap.bg-fund .btn-prev:after { background-position:-210px -50px; }
+.gnb-wrap.bg-fund .util .btn-sch:after { background-position:-240px -50px; }
+.gnb-wrap.bg-fund .util .btn-gnb:after { background-position:-270px -50px; }
+.gnb-wrap.bg-report { background:#ECF1FF; }
+.gnb-wrap.bg-new { background: #ECF8FB; }
+.gnb-wrap.bg-event { background:#F9F5FF; }
+
+
+.gnb-nav { position:fixed; top:0; right:-100%; width:100%; height:100%; padding:0 24px; text-align:left; background:#fff; transition:right 0.3s ease-out; z-index:200; }
+.gnb-nav.on { right:0; }
+.gnb-nav > ul { position:relative; display:block; height:calc(100% - 50px); padding:25px; overflow:auto; }
+
+.gnb-nav .gnb-header { position:absolute; top:0; right:24px; left:24px; display:flex; align-items:center; justify-content:space-between; height:48px; background:#fff; z-index:5; }
+.gnb-nav .gnb-header [class*="btn-"] { display:inline-block; width:24px; height:24px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -240px -80px; background-size:500px auto;   }
+.gnb-nav .gnb-header .btn-global { background-position-x:-270px; margin-left:10px; }
+.gnb-nav .gnb-header .btn-close { background-position:-240px -20px; }
+.gnb-nav .gnb { height:calc(100% - 176px); padding:65px 0 10px 0; overflow-x: hidden; overflow-y: auto }
+.gnb-nav .gnb .menu > li { margin-top:48px; }
+.gnb-nav .gnb .menu > li:first-child { margin-top:0; }
+.gnb-nav .gnb .menu > li > a { position:relative; display:block; font-weight:700; font-size:24px; line-height:30px;  }
+.gnb-nav .gnb .menu > li > a::after { content:''; display:block; position:absolute; width:24px; height:24px; top:50%; right:0; margin-top:-12px;   background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -150px -20px; background-size:500px auto; opacity:0.5; }
+.gnb-nav .gnb .menu > li.on > a::after { transform:rotate(-180deg); opacity:1; }
+.gnb-nav .gnb .menu .sub { display:none; }
+.gnb-nav .gnb .menu .sub > li { margin-top:16px; }
+.gnb-nav .gnb .menu .sub > li > a { display:block; line-height:21px; font-size:14px; color:#74757e; }
+.gnb-nav .gnb .menu .sub > li > ul { margin-left:10px; }
+.gnb-nav .gnb .menu .sub > li > ul > li { margin-top:12px; }
+.gnb-nav .gnb .menu .sub > li > ul > li > a { display:block; position:relative; padding-left:8px; line-height:21px; font-size:14px; color:#222; }
+.gnb-nav .gnb .menu .sub > li > ul > li > a:before { content:''; position:absolute; display:block; top:4px; left:0; width:4px; height:4px; background:#EC008C; }
+.gnb-nav .gnb-links { display:flex; align-items:center; margin:50px -4px 0 ;  }
+.gnb-nav .gnb-links [class*="btn-"] { display:inline-block; flex:1 1; margin:0 4px; height:40px; border:1px solid #222; border-radius:40px; text-align:center; }
+.gnb-nav .gnb-links [class*="btn-"] span { position:relative; display:inline-block; padding:12px 0 0 22px; }
+.gnb-nav .gnb-links [class*="btn-"] span:before { content:''; display:block; position:absolute; top:11px; left:0; width:14px; height:14px; background:url(/kiam/moWeb/resources/images/common/ico_comm.png) no-repeat -300px -80px; background-size:500px auto;  }
+.gnb-nav .gnb-links .btn-invest span:before { background-position-x:-320px; }
+.gnb-nav .gnb-links .btn-kosef span { padding:12px 22px 0 0; }
+.gnb-nav .gnb-links .btn-kosef span:before { top:10px; left:initial; right:0; width:16px; height:16px; background-position:-120px 0; }
+
+.link-box { position:absolute; left:0; bottom:56px; width:100%; display:flex; justify-content: center; }
+.link-box button { margin:0 4px;}
+
+.foot-wrap { display:none; padding:40px 24px 128px; background:#2F3135; }
+.foot-wrap .foot-inner { position:relative; }
+.foot-wrap .logo { display:block; width:150px; height:25px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -140px -140px; background-size:500px auto; }
+.foot-wrap .links { position:relative; margin:30px 0 0 -5px; font-size:0; line-height:0; }
+.foot-wrap .links:after { content:''; position:absolute; top:0; left:-2px; bottom:0; width:5px; background:#2F3135;  }
+.foot-wrap .links li { position:relative; display:inline-block; font-size:12px; color:#DFE0E2; line-height:18px; margin:4px 5px;  }
+.foot-wrap .links li:after { content:''; display:block; position:absolute; top:8px; left:-6px; width:2px; height:2px; border-radius:50%; background:#fff; }
+.foot-wrap .links li a.privacy { color:#fff; }
+.foot-wrap .info { margin-top:24px; font-size:12px; font-weight:400; color:#9D9DA5; line-height:18px; }
+.foot-wrap .info span { display:inline-block; margin-right:10px; }
+.foot-wrap span.copy { display:block; margin-top:10px; line-height: 18px; }
+.foot-wrap .etc { display:flex; justify-content:flex-end; margin-top:24px; }
+/* .foot-wrap .etc .sns li { display:inline-block; }
+.foot-wrap .etc .sns li + li { margin-left:8px; }
+.foot-wrap .etc .sns li a { display:inline-block; width:32px; height:32px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -40px -170px; background-size:500px auto; }
+.foot-wrap .etc .sns li a.sns-magazine { background-position-x:-410px; }
+.foot-wrap .etc .sns li a.sns-face { background-position-x:-160px; }
+.foot-wrap .etc .sns li a.sns-kakao { background-position-x:-290px; } */
+.foot-wrap .etc .web-mark { width:46px; height:32px; background:url(/kosef/moWeb/resources/images/common/ico_comm.png) no-repeat -400px -300px; background-size:500px auto; }
+
+/* .foot-wrap { display:none; padding:40px 24px 112px 24px; background:#2F3135; }
+.foot-wrap .logo { display:block; width:148px; height:24px; background:url(/kosef/moWeb/resources/images/main/foot_logo.svg) no-repeat center center; }
+.foot-wrap .links { margin:32px 0 0 -5px; }
+.foot-wrap .links a { position:relative; display:inline-block; color:#DFE0E2; line-height:18px; margin:4px 5px;  }
+.foot-wrap .links a:active{ color: #FFF; }
+.foot-wrap .links a + a:after { content:''; display:block; position:absolute; top:8px; left:-6px; width:2px; height:2px; border-radius:50%; background:#fff; }
+.foot-wrap .info { margin-top:24px; color:#9D9DA4; font-size: 12px; line-height:18px; }
+.foot-wrap .copy { display:block; margin-top:10px; line-height:18px;}
+.foot-wrap .info .fax { margin-left: 12px; } */
+
+/* .gnb-nav { position:fixed; top:0; right:-100%; width:100%; height:100%; padding:20px; text-align:left; background:#fff; transition:right 0.3s ease-out; z-index:10; } */
+/* .is-modal .gnb-nav { right:0; } */
+/* .gnb-nav > ul { position:relative; display:block; height:calc(100% - 50px); padding:25px; overflow:auto; } */
+/* .gnb-nav .btn-close { position:absolute; top:9px; right:15px; z-index:10; width:32px; height:32px;background:url(/kosef/moWeb/resources/images/common/btn_menu_close.png) no-repeat center center; background-size:22px; } */

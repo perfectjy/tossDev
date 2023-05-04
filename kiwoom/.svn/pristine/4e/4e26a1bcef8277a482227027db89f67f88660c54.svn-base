@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <link rel="stylesheet" href="/admin/resource/css/admin.css" type="text/css">
+    <script type="text/javascript" src="/admin/resource/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.global.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.common.js"></script>
+    <script type="text/javascript">
+        pageInfo = { mid: '2', sid: '2' }; 
+    </script>
+</head>
+
+<body>
+<div class="kiam-amin-wrap">
+    <header class="gnb-wrap">
+        <div>
+            <h1><a href="#"><span class="hide">키움자산운용</span></a></h1>
+            <div class="links">
+                <a href="#"><span>홈페이지 바로가기</span></a>
+                <a href="#"><span>KOSEF 바로가기</span></a>
+            </div> 
+        </div>
+    </header>
+    <main class="main-wrap" id="content">
+        <div class="sub-nav">
+            <ul class="nav">
+                <li><a href="#" id="menu1" class="mMenu">자사메인관리</a>
+                    <ul class="sub">
+                        <li><a href="#">대표펀드관리</a></li>
+                        <li><a href="#">배너관리</a></li>
+                        <li><a href="#">팝업관리</a></li>
+                        <li><a href="#">추천검색어관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="menu2" class="mMenu">KOSEF 메인 관리</a>
+                    <ul class="sub">
+                        <li><a href="#">대표펀드관리</a></li>
+                        <li><a href="#">배너관리</a></li>
+                        <li><a href="#">팝업관리</a></li>
+                        <li><a href="#">추천검색어관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="menu3" class="mMenu">상품정보 관리</a>
+                    <ul class="sub">
+                        <li><a href="#">대표펀드관리</a></li>
+                        <li><a href="#">배너관리</a></li>
+                        <li><a href="#">팝업관리</a></li>
+                        <li><a href="#">추천검색어관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <section class="main-conts">
+            <h2>배너 관리</h2>
+            <ul class="page-nav">
+                <li><a href="#">자사 메인 관리</a></li>
+                <li class="current"><a href="#">대표 펀드 관리</a></li>
+            </ul>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:300px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">타이틀</th>
+                            <td>
+                                <div class="frm-area">
+                                    <input type="text" class="inp-text" style="width:100%;">
+                                </div>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <th scope="row">등록일(기간)</th>
+                            <td>                                
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr01" name="bnrLink" checked>
+                                        <label for="bnr01" class="lb-radio"><span>전체</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>최근</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>1개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>3개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>6개월</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>1년</span></label>
+                                    </span>
+                                </div>                                                     
+                            </td> 
+                        </tr>     
+                        <tr>
+                            <th scope="row">게시여부</th>
+                            <td>                                
+                                <div class="frm-area">
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr01" name="bnrLink" checked>
+                                        <label for="bnr01" class="lb-radio"><span>전체</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>Y</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="radio" id="bnr02" name="bnrLink">
+                                        <label for="bnr02" class="lb-radio"><span>N</span></label>
+                                    </span>
+                                </div>                                                     
+                            </td> 
+                        </tr>                                           
+                    </thead>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn base"><span>조회</span></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright©2023 KiwoomAM. All rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>

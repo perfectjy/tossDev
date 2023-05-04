@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+		//=================================
+		//Modal Sample TEST Btn Handler
+		$('.btn_samples').find('.btn').each(function(){
+			$(this).on('click', function(){
+				$('.btn_samples').find('.btn').removeClass('fill01').addClass('fill02')
+				$(this).addClass('fill01').removeClass('fill02')
+			});
+		});
+		// $('.btn_samples').find('.btn').eq(1).click();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="true" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">Template</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>수서
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing ">
+							<h2 class="governing_title">Alert & Confirm & Alarm</h2>
+						</div>
+						<div class="comp">
+							<p class="textL"></p>
+							<ul>
+								<li>- 기존 모달 레이어에서 alert 사용 시 modal영역에 클래스 .alert 추가</li>
+								<li>- 알럿 창 사이즈는 가로 300px 기준, 사이즈 변경 시 modal영역에 클래스 .alert_md(320px) 혹은 .wide_left(100%) 추가
+									<ul class="ml10">
+										<li>- 기본 width (클래스 X) = max-width: 300px</li>
+										<li>- .alert_md = max-width : 320px</li>
+										<li>- .wide_left =  max-width : calc(100% - 40px)</li>
+									</ul>	
+								</li>
+								<li>- class="modal_footer" 에 클래스 .fix 제거</li>
+								<li>- 알럿에 사용하는 버튼 디자인 다르므로 버튼 클래스 확인 후 사용</li>
+								<li>- 알림으로 사용할 때: 클래스 .alert 와 함께 클래스 .alarm 도 추가 </li>
+							</ul>
+						</div>
+						<div class="comp">						
+							<div class="btn_area cta btn_samples grid_sm2">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlert1'));" class="btn fill02 sm">Center/Title/Btn1</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlert2'));" class="btn fill02 sm">Center/Title/Btn2</a>
+							</div>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples grid_sm3">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlert3'));" class="btn fill02 sm">Left/100%-40</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlert4'));" class="btn fill02 sm">Left/CloseBtn/320</a>
+							</div>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples grid_sm3">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertSuccess'));" class="btn fill02 sm">Success</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertInfo'));" class="btn fill02 sm">Info</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertFail'));" class="btn fill02 sm">Fail</a>
+							</div>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples grid_sm3">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertAlarm1'));" class="btn fill02 sm">Alarm01</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertAlarm2'));" class="btn fill02 sm">Alarm02</a>
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#UIAlertAlarm3'));" class="btn fill02 sm">Alarm03</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+		
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Center/Title/Btn1 Alert -->
+		<div class="modal alert fade" id="UIAlert1" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">Alert Title</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="alert_msg">
+										PIN인증이 일치하지 않습니다. <br> <strong>(1/5회)</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlert1');">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlert1');"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Center/Title/Btn1 Alert -->
+		
+		<!-- Center/Title/Btn2 Alert -->
+		<div class="modal alert fade" id="UIAlert2" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title"></h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="alert_msg">
+										PIN인증이 일치하지 않습니다. <br> <strong>(1/5회)</strong>
+									</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_cancel" onclick="layerPop.close('#UIAlert2'); return false;">취소</button>
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlert2'); return false;">PIN인증 재설정</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlert2'); return false;" style="display: none;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Center/Title/Btn1 Alert -->
+		
+		<!-- Left/100%-40 Alert / 가로 100% 팝업 / 클래스 wide_left 추가 -->
+		<div class="modal alert fade alert_md wide_left" id="UIAlert3" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+					<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">로그인 종료 안내</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp"><div class="alert_msg">상단 Close 버튼이 없는 경우 입니다. <br> 컨텐츠 영역의 간격 및 정렬은 동일합니다.</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_cancel" onclick="layerPop.close('#UIAlert3'); return false;">취소</button>
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlert3'); return false;">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlert3'); return false;" style="display: none;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Left/100%-40 Alert -->
+		
+		<!-- Left/CloseBtn/320 Alert  -->
+		<div class="modal alert fade alert_md" id="UIAlert4" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">로그인 종료 안내</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp"><div class="alert_msg">컨텐츠 영역에 문구만 노출되는 경우 <br> 좌측 정렬입니다. <br> 고객님의 안전한 금융거래를 위하여 <strong>자동으로 로그아웃</strong> 되었습니다. <br><br>서비스를 계속 이용하시려면  다시 로그인해 주세요.</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_cancel"  onclick="layerPop.close('#UIAlert4'); return false;">홈으로</button>
+						<button type="button" class="alert_btn btn btn_ok"  onclick="layerPop.close('#UIAlert4'); return false;">로그인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlert4'); return false;" style="display: inline-block;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Left/CloseBtn/320 Alert -->
+		
+		<!-- Success Info Fail Alert -->
+		<div class="modal alert fade" id="UIAlertSuccess" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title"></h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="icon success"></div>
+									<div class="alert_msg">예금주 조회가 성공하였습니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlertSuccess'); return false;">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertSuccess'); return false;" style="display: none;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Success Info Fail Alert -->
+		
+		<!-- Success Info Fail Alert -->
+		<div class="modal alert fade" id="UIAlertInfo" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title"></h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="icon info"></div>
+									<div class="alert_msg">예금주 조회가 성공하였습니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlertInfo'); return false;">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertInfo'); return false;" style="display: none;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Success Info Fail Alert -->
+			
+		<!-- Success Info Fail Alert -->
+		<div class="modal alert fade" id="UIAlertFail" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title"></h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="icon fail"></div>
+									<div class="alert_msg">예금주 조회가 실패하였습니다.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alert_btn btn btn_ok" onclick="layerPop.close('#UIAlertFail'); return false;">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertFail'); return false;" style="display: none;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Success Info Fail Alert -->
+			
+		<!-- Alarm01 Alert -->
+		<div class="modal alert fade alarm alert_md" id="UIAlertAlarm1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">알림</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="alert_msg">
+										잠금장치 해제 서비스는 모바일로 접수할 수 없습니다. <br> 대표콜센터(1588-5656)로 접수해 주세요.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alarm_btn btn line02 btn_ok md" onclick="location.href='tel:1588-5656'">대표콜센터 연결</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertAlarm1'); return false;" style="display: inline-block;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Alarm01 Alert -->
+		
+		<!-- Alarm02 Alert -->
+		<div class="modal alert fade alarm alert_md" id="UIAlertAlarm2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">알림</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="alert_msg">
+										신청 가능한 계약이 없습니다. <br> 계약을 확인하시려면 대표콜센터(1588-5656)로 문의해 주세요.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alarm_btn btn line02 btn_ok md" onclick="location.href='tel:1588-5656'">대표콜센터 연결</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertAlarm2'); return false;" style="display: inline-block;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Alarm02 Alert -->
+		
+		<!-- Alarm03 Alert -->
+		<div class="modal alert fade alarm alert_md" id="UIAlertAlarm3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"><div class="wrapper"><h2 class="modal_title">$고장출동 서비스명$</h2></div></div>
+					<div class="modal_body">
+						<div class="wrapper " style="max-height: 742px;">
+							<div class="section">
+								<div class="sc_comp">
+									<div class="alert_msg">
+										<p>입력하신 정보로 고장출동을 신청합니다.</p> 
+											<div class="box gray_line mt20">
+												<div class="dl_list">
+													<dl class="dl_w100">
+														<dt><strong>휴대폰 번호</strong></dt><dd>$010-1234-1234$</dd>
+														<dt><strong>신청서비스</strong></dt><dd>$배터리 충전$</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						<button type="button" class="alarm_btn btn line02 btn_ok md">확인</button></div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlertAlarm3'); return false;" style="display: inline-block;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Alarm03 Alert -->
+		<!-- [End of Modal] ======================================== -->
+		
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
+
+
+

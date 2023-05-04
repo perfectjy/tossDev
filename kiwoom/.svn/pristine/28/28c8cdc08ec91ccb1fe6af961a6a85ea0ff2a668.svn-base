@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* 상품추천 */
+.subfund-list .subfund-item { }
+.subfund-list .subfund-item a { position:relative; display:block; height:302px; padding:40px 32px;  border:1px solid #B9BBC6; background:#fff; border-radius: 24px 0px 24px 24px; }
+.subfund-list .subfund-item a .title { display: -webkit-box; overflow:hidden; margin:16px 0 0 0; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size:20px; line-height:30px; color:#222; text-overflow:ellipsis; word-break: break-word; }
+.subfund-list .info { display:block; margin-top:8px; color:#73737A; font-size:14px; line-height:21px; }
+.subfund-list .rate { position:absolute; display:block; width:calc(100% - 64px); bottom:40px; text-align:right; }
+.subfund-list .rate .points { color:#EC008C; font-size:32px; line-height:42px; font-weight:700; }
+.subfund-list .rate em { padding-right:5px; font-size:32px; font-family: inherit; color:#EC008C; } 
+.subfund-list .rate span { display:block; font-size:14px; color:#73737A; margin-top:5px; }
+.subfund-list .rate .txts { font-size:12px; color:#73737A; }
+
+.subfund-list .subfund-item.best a { border-color:#1A399E; background:#EFF4FB; }
+.subfund-list .subfund-item.best a .title { color:#1A399E; }
+.subfund-list .subfund-item.best a:after { content:''; position:absolute; top:-5px; right:24px; width:40px; height:44px; background:url(/kiam/moWeb/resources/images/common/ico_best.png) no-repeat 0 0; background-size:40px auto; }
+
+.fund-info-wrap { position:relative; }
+.fund-info-wrap .note { position:absolute; top:-21px; right:24px; color:#DFE0E2; line-height:16px; }
+.fund-info-wrap .summary { display:flex; height:102px; align-items:center; justify-content:center; margin:-51px 20px 0; background:#fff; border: 1px solid #1A399E; border-radius:8px; box-shadow: 0px 3px 8px rgba(26, 57, 158, 0.16); }
+.fund-info-wrap .summary > div { flex:1 1; text-align:center; }
+.fund-info-wrap .summary dt { font-size:12px; line-height:18px; color:#74757E;  }
+.fund-info-wrap .summary dd { margin-top:4px; font-size:16px; line-height:24px; }
+.fund-info-wrap .doc-info { padding-bottom:24px; }
+.fund-info-wrap .doc-info .btns { display:flex; flex-wrap:wrap; max-width:375px; margin:0 auto; padding:0 40px; }
+.fund-info-wrap .doc-info a { position:relative; flex: 1 1 40%; margin-top:24px; padding-left:50px; font-size:14px; text-align:left; line-height:40px; color:#74757E; }
+.fund-info-wrap .doc-info a:before { content:''; position:absolute; top:0; left:0; width:40px; height:40px; background:url(/kosef/moWeb/resources/images/common/ico_conts.png) no-repeat 0 0; background-size:500px auto; }
+.fund-info-wrap .doc-info a.doc-invest:before { background-position-x:-50px; }
+.fund-info-wrap .doc-info a.doc-tem:before { background-position-x:-100px; }
+.fund-info-wrap .doc-info a.doc-fact:before { background-position-x:-150px; }

@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/**
+* Layout.content
+* ------------------
+* section & comp
+* PC/MO 공통
+*/
+
+
+// * HR
+//-----------------
+hr{border: none;}
+.hr{
+	@include hr(12px, 32px);// _mixins.scss
+}
+
+.hr2{
+	@include hr(2px, 32px);
+}
+
+
+
+// * Section & Comp
+//-----------------
+.section_group{& + &{margin-top: 100px;}}//사용안함
+
+.section{@include clearfix(); box-sizing: border-box; position: relative;
+	width: $screen_width; 
+	margin: 0 auto;
+	padding-top: 0;
+	&.sm {width: 550px;}
+	&.full {width: auto;}
+	& + &{padding-top: 0;margin-top: 32px;}
+}
+
+.comp{@include clearfix(); box-sizing: border-box; position: relative;
+	width: calc($screen_width - ($screen_margin * 2));
+	margin: $comp_space_h auto 0; 
+	&:first-child{margin-top: 0;}
+
+	&.full {width: auto;}
+	&.border_top{margin-top:32px; border-top:1px solid #EFEFF1;}
+	&.border_bottom{border-bottom:1px solid #EFEFF1;}
+}
+
+.section.full{
+	.comp.grid1{width: auto; 
+		min-width:calc($screen_width - ($screen_margin * 2));//1200px
+		max-width:calc($screen_max_width - ($screen_margin * 2));//1200px
+		margin-left: auto; margin-right: auto;
+	}
+}
+
+.section > .comp:first-child{margin-top: 0;}
+
+
+//예외 케이스
+.modal.bottom{
+	.comp{width: calc(100% - 48px);} 
+}
+
+.tab + .section{padding-top: 0;}
+.section > .tab_content{margin-top: 0;}
+.modal .section{padding-top: 0;}
+
+
+// * Grid
+//-----------------
+// * Flex Grid
+
+.grid1{width: 100%;}
+
+//grid1~12
+@for $c from 2 through $grid_column{
+	.grid#{$c}{ @include grid($c, 20px, $grid_hgap);}
+	.grid_sm#{$c}{ @include grid($c, 4px, 8px);}
+	.fl_grid#{$c}{ @include float_grid($c, 24px, $grid_hgap);}
+}
+
+//div1_11
+@for $c from 1 through $grid_column{
+	.div#{$c}_#{$grid_column - $c} {
+		@include div($c, 2%, 20px);
+	}
+}
+
+
+// * 모듈 간격 조정
+//-----------------
+

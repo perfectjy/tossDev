@@ -1,0 +1,74 @@
+;(function(win, doc, undefined) {
+
+	'use strict';	
+	
+	var $WIN = $(window);		
+	var $DOC = $(document);		
+	
+	KAUI.common = {
+		init : function(){		
+			KAUI.common.subNav();
+			
+			// 모달 호출
+			const btns = document.querySelectorAll('.btn-modal');
+
+			for (const btn of btns) {
+				btn.addEventListener('click', (e) => {
+					const el = e.currentTarget;
+					const id = el.dataset.id;
+					const src = el.dataset.src;
+
+					// callback 함수 필요할경우
+					if (id === 'sampleModal') {
+						KAUI.modal.show({ 
+							id:id, 
+							src: src,
+							callback: () => {
+								//alert(111);
+							}
+						});
+					} else {
+						KAUI.modal.show({ 
+							id:id, 
+							src: src
+						});
+					}
+				});
+			}		
+		},		
+		subNav : function() {
+			var lnbObj = $('.sub-nav');			
+			
+			var mid = pageInfo.mid
+				, sid = !!pageInfo.sid ? pageInfo.sid : ''
+				, mMenuObj = $('#menu' + mid)
+				, sMenuObj = mMenuObj.next('.sub').find('li').eq(sid - 1);
+				
+				mMenuObj.next('.sub').addClass('on');
+				sMenuObj.addClass('current');		
+
+			$('.sub-nav').find('.mMenu').on('click', function(e) {
+				e.preventDefault();
+				console.log('click..');
+				var subMenu = $(this).closest('li').find('.sub');
+				if (subMenu.length > 0 && !!!subMenu.hasClass('on')) {
+					$('.nav > ul').find('li').removeClass('on');
+					$('.sub').removeClass('on').slideUp(200);
+
+					if (!!!$(this).closest('li').find('.sub').hasClass('on')) {
+						subMenu.addClass('on').slideDown(200);
+					}
+				}
+			});
+			
+		}
+	}
+
+	//기본실행
+	doc.addEventListener("DOMContentLoaded", function(){
+		KAUI.common.init();
+	});	
+	
+})(window, document);
+
+

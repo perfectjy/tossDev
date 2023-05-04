@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/moWeb/resources/pub_include/head.js"></script><!-- // Pub Include : head-->
+
+    <script type="text/javascript">
+       pageInfo = { title:'포트폴리오', prev:true };
+    </script>
+</head>
+<body>
+    <div class="kiam-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kiam/moWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap port-wrap" id="content">
+            <div class="sub-head-wrap">                
+                <div class="invest-visual">                   
+                    <h2>
+                        <span>고객과의 신뢰가 최우선</span>
+                        키움투자자산운용<br>대체투자
+                    </h2>
+                    <p class="head-info">전통투자로부터 다각화된 투자<br>그리고 투자 목표달성까지<br> 고객의 니즈에 부합한<br>전문적 서비스를 제공합니다.</p> <!-- 20230322 텍스트 수정 -->
+                    <div class="head-summary invest-slide-bnr">                       
+                        <div class="item">
+                            <a href="#"><strong class="title">부동산<span>Real estate</span></strong></a>
+                        </div>
+                        <div class="item infra">
+                            <a href="#"><strong class="title">인프라&amp;에너지<span>Infra & Energy</strong></a>
+                        </div>
+                    </div>                
+                </div>
+            </div>    
+            <div class="contents invest-conts">
+                <h3>대체투자 수탁고 현황</h3>
+                <div class="ui-tab switch-tab" data-id="investStateTab">
+                    <div class="ui-tab-btns">
+                        <button type="button" data-tab="0" class="ui-tab-btn"><span>연도</span></button>
+                        <button type="button" data-tab="1" class="ui-tab-btn"><span>유형</span></button>
+                    </div>
+                    <div class="ui-tab-pnls">
+                        <section class="ui-tab-pnl" data-tab="0">  
+                            <div class="tbl-info head">
+                                <h4 class="h3-sub">연도별 운용자산구성</h4>
+                                <p class="note">기준 : 2022년 12월말, 단위 : 억원</p>  
+                            </div>                          
+                            <div class="sub-img-wrap">
+                                <img src="/kiam/moWeb/resources/images/img_port01.svg" alt="대체투자 수탁고 연도별 운용자산구성">
+                                <div class="hide">
+                                    키움투자자산운용 전체 수탁고는 총 80,575억원으로, 전년 말 대비 4,813억원 늘었다. 종류별로 보면 특별자산은 31,479억원을 차지하며 전년보다 1,386억원 증가했고, 부동산은 49,096억원을 차지하며 3,427억원 증가했다.
+                                </div>
+                            </div>
+                        </section>
+                        <section class="ui-tab-pnl" data-tab="1"> 
+                            <div class="tbl-info head">
+                                <h4 class="h3-sub">유형별 운용자산구성</h4>
+                                <p class="note">기준 : 2022.12월말</p>  
+                            </div> 
+                            <div class="type-invest-wrap">
+                                <select title="유형별 운용자산구성 선택" class="sel-sub">
+                                    <option value="0" selected>부동산</option>
+                                    <option value="1">인프라</option>
+                                </select>
+                                <div class="select-pnls">
+                                    <div class="sub-img-wrap">
+                                        <strong class="hide">부동산 운용자산구성</strong>
+                                        <img src="/kiam/moWeb/resources/images/img_port_chart01.svg" alt="부동산 대체 투자 수탁고 현황, 임대형 : 23.37%, 개발형 : 6.98%, 대출형 : 36.80%, PF대출/브릿지론 : 19.42%, 재간접 : 13.44%">
+                                    </div> 
+                                    <div class="sub-img-wrap">
+                                        <strong class="hide">인프라 운용자산구성</strong>
+                                        <img src="/kiam/moWeb/resources/images/img_port_chart02.svg" alt="인프라 대체 투자 수탁고 현황, 민간투자사업 : 38.25%, 일반사업(Debt) : 41.24%, 일반사업(혼합) : 7.76%, 재간접 : 12.65%">
+                                    </div> 
+                                </div>
+                            </div>   
+                        </section>
+                    </div>
+                </div>
+                <h3>글로벌 투자현황</h3>
+                <div class="tbl-info head">
+                    <h4 class="h3-sub">지역별 운용자산구성</h4>
+                    <p class="note">기준 : 2022년 12월말</p>  
+                </div>               
+                <div class="sub-img-wrap">
+                    <img src="/kiam/moWeb/resources/images/img_port_map.svg" alt="유럽 14.0%, 한국 51.63%, 아시아 8.59%, 북아메리카 25.78%"> <!-- 20230322 이미지 수정 -->
+                </div> 
+                
+            </div>    
+        </main>
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kiam/moWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <script>
+        (() => {
+            'use strict';	
+
+            $('.invest-visual').attr('data-area', '0');
+
+            var $slideBanner = $('.invest-slide-bnr');
+            $slideBanner.slick({     
+                infinite: false,                    
+                slidesToShow: 1,
+                variableWidth:true,
+                slidesToScroll:1,
+                arrows:false
+            });
+
+            $slideBanner.on("afterChange", function (event, slick, currentSlide) { 
+                $('.invest-visual').attr('data-area', currentSlide);
+           
+            });       
+            
+            KAUI.tab.init({ 
+                id:'investStateTab', 
+                current:0 
+            });  
+
+            KAUI.common.selectSubTab();
+
+        })();
+    </script>
+    
+</body>
+</html>

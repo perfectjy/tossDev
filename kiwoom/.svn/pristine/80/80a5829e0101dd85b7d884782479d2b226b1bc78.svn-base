@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <div class="kiam-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kiam/pcWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap fund-detail-wrap" id="content">
+            <div class="sub-head-wrap bg">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li class="home"><a href="#"><span class="hide">HOME</span></a></li>
+                        <li><a href="#"><span>펀드상품</span></a></li>
+                        <li class="current"><a href="#"><span>펀드상품 찾기</span></a></li>
+                    </ul>
+                </nav>
+                <div class="tag-wrap bg">
+                    <em>개인연금</em>
+                    <em>퇴직연금</em>
+                    <em class="t-bond">국내주식</em>
+                    <em class="t-high">액티브</em>
+                    <em class="t-high">자산배분</em>
+                    <em class="t-high">레버리지/인버스</em>
+                </div>
+                <div class="head-group">
+                    <h2>키움쿼터백그로벌EMP로보어드바이저증권투자신탁 [채권혼합-재간접형]S-P
+                        <div class="share-sns">
+                            <button type="button" class="btn-shareSns btn-share"><span class="hide">공유하기</span></button>
+                            <div class="tip-sns" tabIndex="-1">
+                                <strong class="title">공유하기</strong>
+                                <div class="sns-group">
+                                    <a href="#" class="sns-kakao"><span>카카오톡</span></a>
+                                    <a href="#" class="sns-face"><span>페이스북</span></a>
+                                    <a href="#" class="sns-url"><span>URL</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </h2>   
+                </div>         
+                <div class="fund-select-wrap">
+                    <div class="ui-select" data-style="sel-fund-type">
+                        <select title="펀드 타입 선택" id="uiSel1">
+                            <option value="1" selected>Class A-e (수수료선취-온라인)</option>
+                            <option value="2">Class B-e (수수료선취-온라인)</option>      
+                        </select>
+                    </div>
+                </div>   
+            </div>
+            <div class="contents"> 
+                <div class="fund-info-wrap kiam">
+                    <dl class="summary">
+                        <div>
+                            <dt>기준가(원)</dt>
+                            <dd>787.32 <span class="ico-drop"><span class="hide">하락포인트</span>0.15</span></dd>
+                        </div>
+                        <div>
+                            <dt>3개월 수익률(%)</dt>
+                            <dd><strong class="fc-primary">13.38</strong> </dd>
+                        </div>
+                        <div>
+                            <dt>운용펀드기준 순자산(억원)</dt>
+                            <dd>1551.49</dd>
+                        </div>
+                        <div>
+                            <dt>연 총보수(%)</dt>
+                            <dd>1.10</dd>
+                        </div>
+                        <div>
+                            <dt>설정일</dt>
+                            <dd>2014-07-28</dd>
+                        </div>
+                    </dl>      
+                    <div class="fund-grade">
+                        <div class="grade-group">
+                            <div class="grade">
+                                <span class="g-1">1등급<br>매우 높은 위험</span>
+                                <span class="g-2 on">2등급<br>높은 위험<span class="hide">키움쿼터백그로벌EMP로보어드바이저증권투자신탁 [채권혼합-재간접형]S-P의 현재 단계입니다.</span></span>
+                                <span class="g-3">3등급<br>다소 높은 위험</span>
+                                <span class="g-4">4등급<br>보통 위험</span>
+                                <span class="g-5">5등급<br>낮은 위험</span>
+                                <span class="g-6">6등급<br>매우 낮은 위험</span>
+                            </div>
+                        </div>
+                    </div>              
+                    <div class="doc-info">
+                        <strong class="hide">상품별 관련 자료</strong>
+                        <div class="select-group">
+                            <div class="ui-select">
+                                <select title="월 자산운용보고서 선택" id="uiSel2">
+                                    <option value="1" selected>2022년 8월 자산운용보고서</option>
+                                    <option value="2">2022년 7월 자산운용보고서</option>      
+                                </select>
+                            </div>
+                            <button type="button"><span>다운로드</span></button>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn-txt down"><span>집합투자규약</span></a>
+                            <a href="#" class="btn-txt down"><span>투자설명서</span></a>
+                        </div>                       
+                    </div>
+                </div>                
+                <div class="fund-check ui-toggle-wrap" id="fundChkCal">
+                    <div class="summary">
+                        <span>이 펀드에</span> 
+                        <span class="type-chk">
+                            <div class="lb-item">
+                                <input type="radio" id="typeChk1" name="typeChk" checked>
+                                <label for="typeChk1" class="lb-radio"><span>거치식</span></label>
+                            </div>
+                            <div class="lb-item">
+                                <input type="radio" id="typeChk2" name="typeChk">
+                                <label for="typeChk2" class="lb-radio"><span>적립식</span></label>
+                            </div>
+                        </span>
+                        <span>으로</span> 
+                        <div class="ui-select" data-style="sel-fund-month">
+                            <select title="개월 선택" id="fundMonSel">
+                                <option value="1" selected>6개월</option>
+                                <option value="2">12개월</option>      
+                            </select>
+                        </div>
+                        <span>동안</span>
+                        <span class="ipt"><input type="text" class="inp-text" placeholder="50"></span>
+                        <span>만원씩 투자한다면?</span>
+                        <button class="btn base btn-toggle"><span>수익률 계산하기</span></button>
+                    </div>
+                    <div class="result">
+                        <dl>
+                            <div>
+                                <dt>총 투자금액(만원)</dt>
+                                <dd>300</dd>
+                            </div>
+                            <div>
+                                <dt>예상 수익률(%)</dt>
+                                <dd><strong class="fc-primary">13.38</strong></dd>
+                            </div>
+                            <div>
+                                <dt>투자손익(만원)</dt>
+                                <dd>45</dd>
+                            </div>
+                            <div>
+                                <dt>평가금액(만원)</dt>
+                                <dd>25</dd>
+                            </div>                          
+                        </dl>       
+                        <ul class="txt-list star-s">
+                            <li>과거 성과가 미래수익을 보장하는 것은 아닙니다.</li>
+                            <li>본 수익률 계산기는 투자자를 위한 단순 참고자료이며, 광고나 투자권유의 목적으로 작성된 것이 아닙니다.</li>
+                            <li>본 수익률은 금일 수정기준가격(보수차감 후, 세전, 결산미반영)을 기준으로 계산하며 수수료 및 기준가격 적용일 차이로 실제 수익률과 오차가 발생될 수 있습니다.<br>따라서, 정확한 평가금액이나 인출가능금액은 판매회사를 통해 확인하시기 바랍니다.</li>
+                        </ul>
+                        <button type="button" class="btn-close"><span>닫기</span></button>
+                    </div>
+                </div>
+                <div class="fund-info-tab">
+                    <div class="ui-tab" data-id="fundInfoTab">
+                        <div class="ui-tab-btns">
+                            <button type="button" data-tab="0" class="ui-tab-btn"><span>상품정보</span></button>
+                            <button type="button" data-tab="1" class="ui-tab-btn"><span>수익률</span></button>
+                            <button type="button" data-tab="2" class="ui-tab-btn"><span>자산구성</span></button>
+                        </div>
+                        <div class="ui-tab-pnls">
+                            <section class="ui-tab-pnl" data-tab="0">                                
+                                <h3 class="hide">상품정보</h3>
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">상품특징 및 운용전략</h4> 
+                                    <div class="contents-box">
+                                        <strong class="sub-title">국내최초 액티브 리츠 ETF</strong>
+                                        <ol class="txt-list number">
+                                            <li><em class="num">1</em>빠르게 변화하는 부동산 시장 속에서 민첩한 대응이 가능</li>
+                                            <li><em class="num">2</em>시장상황과 신규종목을 빠르게 분석해 투자자산의 비중을 올림</li>
+                                            <li><em class="num">3</em>덜 매력적인 투자자산의 비중은 줄이면서 더 많은 수익을 추구</li>
+                                            <li><em class="num">4</em>부동산 임대수익에 기반하여 배당을 지급하므로 다른 자산 대비 배당 지급과 배당수익률이 안정적</li>
+                                            <li><em class="num">5</em>부동산 전문운용사의 자문을 통해 종목 비중 조절하는 액티브 ETF</li>
+                                        </ol>
+                                        <div class="board-item">                                            
+                                            <a href="#" class="pic btn-modal" data-id="KIP0502010202P" data-src="/kiam/pcWeb/html/KIP0502010202P.html"><img src="/kiam/pcWeb/resources/images/dummy/@modal_img.png" alt=""></a>
+                                            <dl>
+                                                <dt>
+                                                    <span class="category">주식 상품소개</span>
+                                                    <strong class="tit">KOSEF 미국달러선물 ETF시리즈(달러투자, 달러투자하는 방법, 달러 ETF, ETF추천)</strong>
+                                                </dt>
+                                                <dd>
+                                                    <span class="date">2022-01-11</span>
+                                                    <a href="https://www.youtube.com/@kiwoomam" target="_blank" title="새창열림" class="btn-icon icon-link"><span>키자TV 바로가기</span></a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">펀드정보</h4> 
+                                    <div class="contents-box">
+                                        <dl class="info-list">
+                                            <div>
+                                                <dt>설정일</dt>
+                                                <dd>2014.10.31</dd>
+                                            </div>
+                                            <div>
+                                                <dt>펀드유형</dt>
+                                                <dd>주식형</dd>
+                                            </div>
+                                            <div>
+                                                <dt>클래스 순자산</dt>
+                                                <dd>0.21억원</dd>
+                                            </div>
+                                            <div>
+                                                <dt>비교지수</dt>
+                                                <dd>KOSPI 90 KAP콜 10%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>기준가</dt>
+                                                <!-- <dd>1291.75 / 2022.11.08 기준</dd> -->
+                                                <!-- 달력 선택 -->
+                                                <dd>1291.75 / 
+                                                    <div class="ui-datepicker sub">
+                                                        <input type="date" id="dateStandard" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" data-holiday="true" title="시작일" readonly required>
+                                                        <span>기준</span>
+                                                        <button type="button" class="ui-datepicker-btn" data-target="dateStandard">
+                                                            <span class="a11y-hidden">년월일 선택</span>
+                                                        </button>
+                                                    </div>  
+                                                </dd> 
+                                            </div>
+                                            <div>
+                                                <dt>수정기준가</dt>
+                                                <dd>1544.42</dd>
+                                            </div>
+                                            <div>
+                                                <dt>운용지수</dt>
+                                                <dd>전략운용팀</dd>
+                                            </div>                                           
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">보수 및 수수료</h4> 
+                                    <div class="contents-box">
+                                        <dl class="info-list flex">
+                                            <div>
+                                                <dt>매입할 때 선취판매수수료</dt>
+                                                <dd class="sum">납입금액의 0.5% 이내<span class="hide">더하기</span></dd>
+                                            </div>
+                                            <div>
+                                                <dt>투자기간동안 총보수 (연 기준)</dt>
+                                                <dd class="sum">1.10% <button type="button" aria-describedby="totalPayTips" class="ui-tooltip-btn primary" aria-label="투자기간동안 총보수 (연 기준) 도움말"><span class="hide">툴팁 설명</span></button><span class="hide">더하기</span></dd>
+                                            </div>
+                                            <div>
+                                                <dt>환매할 때 환매수수료</dt>
+                                                <dd>수수료 없음</dd>
+                                            </div>                                                                                    
+                                        </dl>
+                                    </div>
+                                    <p class="txt-list star mgt15">자세한 수수료 및 보수 내역은 투자설명서를 참고하시기 바랍니다.</p>
+                                </div>  
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">펀드회사</h4> 
+                                    <div class="contents-box">
+                                        <div class="btn-group fund mgt0">
+                                            <a href="#" class="btn-icon icon-new"><span>키움증권<span class="hide">바로가기</span></span></a>
+                                            <a href="#" class="btn-icon icon-new"><span>KB증권<span class="hide">바로가기</span></span></a>
+                                            <a href="#" class="btn-icon icon-new"><span>삼성증권<span class="hide">바로가기</span></span></a>
+                                            <a href="#" class="btn-icon icon-new"><span>미래에셋<span class="hide">바로가기</span></span></a>
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </section>
+                            <section class="ui-tab-pnl" data-tab="1">                                
+                                <div class="sub-title date">
+                                    <h3 class="h3">수익률</h3>
+                                    <div class="term-wrap">                                      
+                                        <div class="term-btn">
+                                            <button type="button">1개월</button>
+                                            <button type="button" class="on">3개월</button>
+                                            <button type="button">6개월</button>
+                                            <button type="button">1년</button>
+                                            <button type="button">3년</button>
+                                            <button type="button">설정일 이후</button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="tbl-info side mgt0">
+                                    2022.10.07 기준      
+                                </div>
+                                <div class="sub-graph">
+                                    <div style="width: 100%; height: 542px; color: indigo; text-align: center; font-size: 30px; line-height: 542px;">
+                                        그래프 영역
+                                    </div>                                   
+                                </div>
+                                <div class="tbl-info side mgt80">[단위:%]</div>
+                                <table class="tbl">
+                                    <caption>수익률 정보 테이블입니다.</caption>
+                                    <colgroup>
+                                        <col span="8" style="width:auto;">
+                                    </colgroup>
+                                    <thead class="is-colgroup">
+                                        <tr>
+                                            <th scope="col" >구분</th>
+                                            <th scope="col">최근1개월</th>
+                                            <th scope="col">최근 3개월</th>
+                                            <th scope="col">최근 6개월</th>
+                                            <th scope="col">최근 1년</th>
+                                            <th scope="col">최근 3년</th>
+                                            <th scope="col">최근 5년</th>
+                                            <th scope="col">설정일 이후</th>
+                                        </tr>                                        
+                                    </thead>
+                                    <tbody>
+                                    <!-- 20230213 포인트 색상 영역 추가 -->
+                                        <tr>
+                                            <th class="bgW" scope="row">Class _C-P</th>
+                                            <td><span class="txt-up">12.79</span></td>
+                                            <td><span class="txt-drop">-1.21</span></td>
+                                            <td><span class="txt-drop">-13 .8</span></td>
+                                            <td><span class="txt-drop">-16.72</span></td>
+                                            <td><span class="txt-drop">-16.55</span></td>
+                                            <td><span class="txt-up">33.83</span></td>
+                                            <td><span class="txt-up">33.83</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bgW" scope="row">비교지수</th>
+                                            <td><span class="txt-up">12.79</span></td>
+                                            <td><span class="txt-drop">-1.21</span></td>
+                                            <td><span class="txt-drop">-13 .8</span></td>
+                                            <td><span class="txt-drop">-16.72</span></td>
+                                            <td><span class="txt-drop">-16.55</span></td>
+                                            <td><span class="txt-up">33.83</span></td>
+                                            <td><span class="txt-up">33.83</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="txt-list star">
+                                    <li>과거의 운용실적이 미래의 수익을 보장하는 것은 아닙니다.</li>
+                                    <li>종류형 펀드의 경우, 종류별 집합투자증권에 부과되는 보수 수수료 차이로 운용실적이 달라질 수 있습니다.</li>
+                                    <li>상기 수익률은 결산분배금이 전액 재투자되었다는 가정하에 산출된 것입니다.</li>
+                                </ul>
+                            </section>
+                            <section class="ui-tab-pnl" data-tab="2">
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">자산구성</h4> 
+                                    <div class="contents-box">
+                                        <div class="sub-graph no-line">
+                                            <div style="width: 100%; height:320px; color: indigo; text-align: center; background:#eee; line-height:320px;">
+                                                그래프 영역
+                                            </div>
+                                         </div>                                                                            
+                                    </div>                                    
+                                </div>
+                            <!-- 20230213 - 보유종목 비중테이블 이동 -->
+                                <div class="fund-detail">                                    
+                                    <h4 class="h3">보유종목 비중</h4> 
+                                    <div class="contents-box">                                        
+                                         <table class="tbl">
+                                            <caption>수익률 정보 테이블입니다.</caption>
+                                            <colgroup>
+                                                <col span="2" style="width:auto;">
+                                            </colgroup>
+                                            <thead class="is-colgroup">
+                                                <tr>
+                                                    <th scope="col">종목</th>
+                                                    <th scope="col">비율(%)</th>
+                                                </tr>                                        
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>삼성전자</td>
+                                                    <td>19.42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SK하이닉스</td>
+                                                    <td>19.42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>현대차</td>
+                                                    <td>19.42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>기아</td>
+                                                    <td>19.42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>삼성SDI</td>
+                                                    <td>19.42</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ul class="txt-list star">
+                                            <li>상기 보유종목비중은 조회일로부터 1개월 전 자료입니다.</li>
+                                            <li>주요 종목 비중은 각 펀드의 순자산 대비 차지하는 비중이며 향후 변경될 수 있습니다.</li>
+                                            <li>자펀드의 경우 모펀드의 자산구성 현황을 게시합니다. 자세한 내용은 운용보고서를 참고하세요.</li>
+                                        </ul>                                        
+                                    </div>                                    
+                                </div>
+                                <div class="fund-sub-bnr go-kosef">
+                                    <strong class="title">보유종목 비중이 궁금하다면?</strong>
+                                    <span class="txts">자세한 사항은 KOSEF에서 확인하세요.</span>
+                                    <a href="#" class="btn"><span><span class="hide">KOSEF</span>바로가기</span></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            <div class="contents full">
+                <div class="conts">
+                    <h3 class="dot">추천 키움 PICK</h3>
+                    <ul class="subfund-list v1">
+                        <li class="subfund-item">
+                            <a href="#">
+                                <div class="tag-wrap">
+                                    <em class="t-local">국내</em>
+                                    <em class="t-bond">주식형</em>
+                                    <em class="t-high">다소높은위험</em>
+                                </div>
+                                <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                <span class="rate">
+                                    <span class="txts">3개월 수익률</span>
+                                    <span class="points"><em>10.86</em><i class="hide">%</i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="subfund-item">
+                            <a href="#">
+                                <div class="tag-wrap">
+                                    <em class="t-local">국내</em>
+                                    <em class="t-bond">주식형</em>
+                                    <em class="t-high">다소높은위험</em>
+                                </div>
+                                <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                <span class="rate">
+                                    <span class="txts">3개월 수익률</span>
+                                    <span class="points"><em>10.86</em><i class="hide">%</i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="subfund-item">
+                            <a href="#">
+                                <div class="tag-wrap">
+                                    <em class="t-local">국내</em>
+                                    <em class="t-bond">주식형</em>
+                                    <em class="t-high">다소높은위험</em>
+                                </div>
+                                <strong class="title">키움차세대모빌리티증권자투자신탁제1호[주식]</strong>
+                                <span class="rate">
+                                    <span class="txts">3개월 수익률</span>
+                                    <span class="points"><em>10.86</em><i class="hide">%</i></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contents last">
+                <div class="ui-acco info" data-id="fundInfoAcco">
+                    <div class="ui-acco-wrap">
+                        <div class="ui-acco-tit">
+                            <button type="button" class="ui-acco-btn"><span class="ui-acco-txt">투자하기 전, 꼭 확인하세요!</span><span class="hide">열기</span></button>
+                        </div>
+                        <div class="ui-acco-pnl">
+                            <div class="ui-acco-pnl-wrap">
+                                <ul class="txt-list disc-s">
+                                    <li>투자자는 금융투자상품에 대하여 금융상품판매업자로부터 충분한 설명을 받을 권리가 있으며, 투자전 (간이)투자설명서 및 신탁계약서를 반드시 읽어보시기 바랍니다.</li>
+                                    <li>금융투자상품은 자산가격 변동, 환율 변동, 신용등급 하락등에 따라 투자원금의 손실(0~100%)이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                                    <li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                                    <li>증권거래비용, 기타비용이 추가로 발생할 수 있습니다.</li>
+                                    <li>과거의 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.</li>
+                                    <li>주식형 펀드는 주식시장 급락 시 손실이 발생할 수 있습니다.</li>
+                                    <li>채권형 펀드는 채권금리가 상승하거나 편입한 채권이 부도날 경우 손실이 발생할 수 있습니다.</li>
+                                    <li>외화자산의 경우 환율변동에 따라 손실이 발생할 수 있습니다.</li>
+                                    <li>파생상품은 높은 가격 변동성으로 인해 단기간에 투자원금의 전부 또는 상당부분을 잃을 수 있으며, 장외파생상품에 투자하는 경우 거래 상대방이 계약조건을 이행하지 못할 위험이 있습니다.</li>
+                                    <li>레버리지형 펀드는 투자원금 손실이 크게 확대될 수 있습니다.</li>
+                                    <li>레버리지펀드(2배, 인버스, 인버스 2배)의 기간 수익률은 추종하는 기초자산(지수)의 일간 수익률과 차이가 발생할 수 있습니다.</li>
+                                    <li>인버스펀드는 지수를 역(逆)으로 추적하여 상승장에서 손실이 발생할 수 있습니다.</li>
+                                    <li>본 웹사이트에서 제공하는 지수 및 수익률 정보는 투자 참고사항이며 오류가 발생하거나 지연될 수 있습니다. 제공된 정보에 의한 투자결과에 대해 법적인 책임을 지지 않습니다.</li>
+                                    <li>본 페이지에서는 당사가 운용하는 펀드상품에 대해 정형화된 형태의 정보를 제공하고 있습니다.</li>
+                                    <li>키움투자자산운용 준법감시인 심사필 제2022-267호(2022.08.12 ~ 2022.12.31)</li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>                
+                </div> 
+            </div>
+            
+        </main>
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kiam/pcWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <!-- 툴팁 : 투자기간동안 총보수 (연 기준)  -->
+    <div class="ui-tooltip" id="totalPayTips" role="tooltip">
+        <div class="ui-tooltip-arrow"></div>
+        <ul class="txt-list disc-s mgt0">
+            <li>판매회사 보수 0.5%</li>
+            <li>집합투자 보수  0.7%</li>
+            <li>신탁업자 보수 0.03%</li>
+            <li>일반사무관리 보수 0.15%</li>
+        </ul>
+    </div>
+    <!-- //툴팁 : 투자기간동안 총보수 (연 기준)  -->
+    <script>
+        (() => {
+            'use strict';	          
+
+            KAUI.tab.init({ id:'fundInfoTab', current:0 });                
+            KAUI.common.toggleMenu({ id:'fundChkCal'});
+            KAUI.accordion.init({ id:'fundInfoAcco', current:[0] });
+            
+            KAUI.callback.dateStandard = (v) => {
+                console.log('select date value:', v);
+            }            
+        })();
+         
+    </script>
+
+</body>
+</html>

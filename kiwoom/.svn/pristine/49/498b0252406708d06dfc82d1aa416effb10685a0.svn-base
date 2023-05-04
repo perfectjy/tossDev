@@ -1,0 +1,65 @@
+/* 01. fund */
+
+.sub-wrap.sub-find-fund { background:#fff url(/kiam/pcWeb/resources/images/bg_find_fund.png) no-repeat 0 0; background-size:center top;  }
+
+.find-fund { width:790px; margin:0 auto; padding:60px 0 0 0;  } 
+.find-fund .sch-top { position:relative; height:72px; padding:0 40px; border:2px solid #1A399E; border-radius:100px; }
+.find-fund .sch-top input { width:80%; height:100%; font-size:20px; line-height:30px; font-weight:500; background:transparent; border:0;  }
+.find-fund .sch-top input::placeholder { opacity:0.6; }
+.find-fund .sch-top .btn-sch { position:absolute; top:50%; right:20px; margin-top:-20px; width:40px; height:40px; background:url(/kiam/pcWeb/resources/images/common/ico_comm.png) no-repeat -260px -70px;  }
+.find-fund .sch-tips { margin-top:30px; text-align:center; display:flex; align-items:center; justify-content:center; }
+.find-fund .sch-tips dt { margin-right:20px; color:#74757E; }
+
+.find-fund .sch-tips a { display:inline-block; height:40px; margin:0 2px; padding:12px 24px 0 24px; background:#fff; border:1px solid #B9BBC6; font-size:14px; border-radius: 100px;  }
+.find-fund .sch-tips a.point { background:#EC008C; color:#fff; border-color:#EC008C; }
+
+.fund-find-wrap { position:relative; margin-top:-100px; padding:55px 38px 143px 48px; border-radius:24px; box-shadow:0 6px 12px 0 rgb(0 0 0 / 5%); background:#fff; }
+.fund-find-wrap .find-more { display:none; margin-top:55px; padding-top:55px; border-top:1px dashed #ccc;  }
+.fund-find-wrap.on .find-more { display:block; }
+.fund-find-wrap .find-items:first-child { margin-top:0; }
+.fund-find-wrap .find-items { margin-top:32px; display:flex; align-items: center; min-height:56px; }
+.fund-find-wrap .find-items > strong { display:inline-block; width:105px; font-size:16px; color:#666; font-weight:400;  }
+.fund-find-wrap .find-items > div { width:calc(100% - 105px); font-size:0; line-height:0;  }
+.fund-find-wrap .find-items .lb-radio { width:118px; height:56px; font-size:16px; border:1px solid #ddd; text-align:center; border-radius:8px; padding:0;  }
+.fund-find-wrap .find-items .lb-radio span { display:inline-block; width:100%; }
+.fund-find-wrap .find-items .lb-radio:before,
+.fund-find-wrap .find-items .lb-radio:after { display:none; }
+.fund-find-wrap .find-items input:checked + .lb-radio { color:#00246B; background:rgba(0, 36, 107, 0.1);  border-color:#00246B;  }
+.fund-find-wrap .find-bar { position:absolute; display:flex; width:100%; left:0; bottom:0; padding:0 48px; border-top:1px solid #eee; justify-content: space-between; align-items: center; height:88px; }
+.fund-find-wrap .find-bar button { font-size:16px; color:#74757E;}
+.fund-find-wrap .find-bar .btn-result { margin-left:32px; color:#fff; background:#EC008C; height:64px; border-radius:32px; padding:0 40px; font-weight:600; }
+
+.fund-info-tab .ui-tab-btns { border-bottom:1px solid #DFE0E2; }
+.fund-info-tab .ui-tab-btns:after { content:''; display:block; clear:both; }
+.fund-info-tab .ui-tab-btn { float:left; width:33.333%; }
+.fund-info-tab .ui-tab-btn { display:block; height:64px; font-size:20px; }
+.fund-info-tab .ui-tab-btn.selected { font-weight:700;  }
+
+.fund-items .item { padding-left:20px; }
+.fund-items .item-title { display:block; margin:19px 0; font-weight:600; font-size:20px; }
+.fund-items .item-date { font-size:14px; color:#74757E; }
+
+.fund-info-wrap { position:relative; margin-top:-100px; padding:55px 38px 143px 48px; border-radius:24px; box-shadow:0 6px 12px 0 rgb(0 0 0 / 5%); background:#fff; }
+.fund-info-wrap .summary div { float:left; width:20%; text-align:center; }
+.fund-info-wrap .summary div dt { color:#73737A; }
+.fund-info-wrap .summary div dd { padding-top:15px;  font-weight:600; font-size:24px; }
+.fund-info-wrap .summary div dd .ico-drop { font-size:16px; }
+
+.fund-select-wrap { width:440px; margin:40px auto 0 auto; }
+.fund-select-wrap .ui-select { height:64px; border-bottom:1px solid #DFE0E2;  }
+.fund-select-wrap .ui-select .ui-select-btn { height:64px; font-size:20px; padding:0 4px;  }
+.fund-select-wrap .ui-select .ui-select-opt { font-size:20px; }
+
+.fund-compare { position:fixed; bottom:-400px; left:0; right:0; height:96px; background:#1A399E; z-index:5; transition: all 800ms;}
+.fund-compare.fixed { bottom:0; }
+.fund-compare .summary,
+.fund-compare .detail { position:relative; width:1280px; margin:0 auto; }
+.fund-compare .summary { display:flex; align-items:center; height:96px; color:#fff;  }
+.fund-compare .summary .title { position:relative; margin-right:20px; padding-left:30px; color:#fff; font-size:20px; font-weight:700;  }
+.fund-compare .summary p { font-size:16px; }
+.fund-compare .summary .title:before { content:''; position:absolute; top:-2px; left:0; width:24px; height:24px; background:url(/kiam/pcWeb/resources/images/common/ico_comm.png) no-repeat -210px -80px;  }
+.fund-compare .nav { position:absolute; top:50%; right:0; margin-top:-32px;  display:flex; align-items:center; }
+.fund-compare .nav span { letter-spacing:3px; }
+.fund-compare .nav span em { color:#EC008C; }
+.fund-compare .nav .btn-compare { display:inline-block; width:64px; height:64px; margin-left:20px;  background:url(/kiam/pcWeb/resources/images/common/ico_comm.png) no-repeat -160px -130px; }
+.fund-compare .detail { display:none; }

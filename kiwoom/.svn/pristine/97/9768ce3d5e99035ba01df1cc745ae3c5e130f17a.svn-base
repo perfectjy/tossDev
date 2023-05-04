@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/moWeb/resources/pub_include/head.js"></script><!-- // Pub Include : head-->
+
+    <script type="text/javascript">
+       pageInfo = { title:'키자매거진', prev:true };
+    </script>
+</head>
+<body>
+    <div class="kiam-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap"><script type="text/javascript" src="/kiam/moWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap" id="content">
+            <div class="sub-head-wrap">                
+                <strong class="title">성공투자를 돕는<br> 재밌는 이야기를 전해드립니다.</strong>
+            </div>    
+
+            <div class="sub-conts-wrap">
+                <div class="board-conts">
+                    <div class="board-head">
+                        <h3 class="board-tit">ETF 시장의 변화와 좋은 ETF 찾는 방법<br> (디지털 금융 투자 포럼)</h3>
+                        <span class="board-sub-tit">
+                            <span class="board-date">2022.01.21</span><span class="writer">ETF투자의정석</span>
+                        </span>
+                        <a href="#" class="btn-modal btn-sns" data-id="modalSns" data-src="/kiam/moWeb/html/modal_sns.html"><span class="hide">공유하기</span></a>
+                    </div>
+                    <div class="board-cont">
+                        <span class="imgs video">
+                            <img src="/kiam/moWeb/resources/images/dummy/@thumb_img1.png" alt="이벤트이미지1">
+                        </span>
+                        <div class="board-txt">
+                            2020년 미국의 ETF 시장은 전 세계에서 가장 뜨거웠습니다. 2020년 말 기준으로 미국 ETF 잔고는 총 5조 4,490억 달러로 한화 약 6,000조 원 가량입니다. 4년 전에 비해 2배, 9년 전에 비해 4배 성장했고 엄청난 속도의 성장을 지금도 지속하고 있습니다. 
+                        </div>
+                    </div>
+                    <div class="board-prev-next">
+                        <dl class="prev">
+                            <dt>이전글</dt>
+                            <dd><a href="#none">[펀드회계감사보고서] 키움히어로즈미국물류포 키움히어로즈미국물류포 텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트</a></dd>
+                        </dl>
+                        <dl class="next">
+                            <dt>다음글</dt>
+                            <dd><a href="#none">한국비티엘인프라투융자회사 결산공고(63기)</a></dd>
+                        </dl>
+                    </div>
+                    <div class="btn-right">
+                        <button type="button" class="btn sub"><span>목록</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="foot-wrap"><script type="text/javascript" src="/kiam/moWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+</html>

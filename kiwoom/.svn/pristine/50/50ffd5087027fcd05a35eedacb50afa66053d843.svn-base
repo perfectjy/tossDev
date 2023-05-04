@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+
+.kosef .subfund-list.v1 .subfund-item a{border-radius:8px;}
+.kosef .subfund-list.v2 .subfund-item a{border-radius:8px;}
+.kosef .thumb-card .thumb-item a{border-radius:8px;}
+.kosef .thumb-card .thumb-item .thumb-img{border-radius:8px 8px 0 0;}
+
+
+/* 자사 상품비교 */
+.subfund-list .subfund-item {display:inline-block; position:relative; width:368px; height:244px; padding:32px; text-align:center; border:1px solid #1A399E; border-radius:20px 0 20px 20px; background:#F1F7FE; box-shadow:0 2px 4px 0 rgba(26, 57, 158, 0.16); vertical-align: middle;}
+.subfund-list .subfund-item.empty .compare-btn .txt{position:relative; display:block; padding-top:75px; margin-top:30px; font-size:16px; text-align:center;}
+.subfund-list .subfund-item.empty .compare-btn .txt::before, .subfund-list .subfund-item.empty .compare-btn .txt::after{content:''; display:block; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); }
+.subfund-list .subfund-item.empty .compare-btn .txt::before{width:32px; height:32px; border-radius:50%; background: url(/kiam/pcWeb/resources/images/common/ico_comm.png)  no-repeat -380px -140px;}
+.subfund-list .subfund-item .more-btn{z-index:1; position:absolute; right:32px; bottom:32px; display:block; width:32px; height:32px; border-radius:50%;}
+.subfund-list .subfund-item .more-btn:hover::before{background-position-x:-460px;}
+.subfund-list .subfund-item .more-btn::before{content:''; display: block; width: 100%; height: 100%; background: url(/kiam/pcWeb/resources/images/common/ico_comm.png)  no-repeat -420px -140px;}
+.subfund-list .subfund-item .title {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow:hidden; margin:16px 0 0 0; font-size:20px; line-height:1.5; color:#1A399E; text-overflow:ellipsis; word-break: break-word;}
+/* .subfund-list .subfund-item .flags {display:block;}
+.subfund-list .subfund-item .flags span {display:inline-block; height:24px; margin-right:4px; padding:5px 8px; color:#73737A; border-radius:4px 0 4px 4px; font-size:12px; border:1px solid #73737A; }
+.subfund-list .subfund-item .flags span.type {border-color:#1A399E; color:#1A399E; } */
+
+.dropdown-item{ position:absolute; left:32px; top:132px; width:calc(100% - 64px);}
+.dropdown-item .ui-select.on .ui-select-wrap{padding:0; border-top:1px solid #EC008C; border-radius:8px;}
+.dropdown-item .ui-select.on .ui-select-btn{border-radius:0; border:none;}
+.dropdown-item .ui-select.on .ui-select-btn:after{background-position-x:-90px;}
+.dropdown-item .ui-select-btn, .dropdown-item .ui-select-opt{text-align:center; border:none;}
+.dropdown-item .ui-select-btn{font-size:14px; color:#73737A;}
+.dropdown-item .ui-select-btn::after{width:24px; height:24px; opacity:1; background: url(/kiam/pcWeb/resources/images/common/ico_comm.png) no-repeat -60px -40px;}
+.dropdown-item .ui-select-btn span{width:100%; text-align:center;}
+.dropdown-item .ui-select select.off{left:0;}
+
+
+/* 상품추천 */
+.subfund-list.v1 .subfund-item{display:inline-block; position:relative; width:384px; height:100%; margin-top:15px; line-height:0; font-size:0; text-align:left; vertical-align:middle; background:none; border-radius:0; border:none; box-shadow: none;}
+.subfund-list.v1 .subfund-item a{position:relative; display:block; height:254px; padding:40px; text-align:left; border-radius:24px 0 24px 24px; border:1px solid #fff; background:#fff; }
+.subfund-list.v1 .subfund-item a:hover{border:1px solid #1A399E; box-shadow: 0px 2px 4px rgba(26, 57, 158, 0.16);}
+.subfund-list.v1 .subfund-item a .title {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow:hidden; margin:16px 0 0 0; font-size:20px; line-height:1.5; color:#1A399E; text-overflow:ellipsis; word-break: break-word; }
+.subfund-list.v1 .rate {position:absolute; bottom:45px; display:flex; justify-content:space-between; align-items:center; width:calc(100% - 80px); margin-top:35px;}
+.subfund-list.v1 .rate .points { letter-spacing:-1px; font-weight:700; font-size:18px; }
+.subfund-list.v1 .rate em { padding-right:5px; font-size:32px; font-family: inherit; color:#EC008C; } 
+.subfund-list.v1 .rate span { display:block; font-size:14px; color:#73737A; margin-top:5px; }
+
+/* 썸네일카드형 */
+.thumb-card .thumb-item{ display:inline-block; position:relative; width:384px; height:367px; margin-top:15px; line-height:0; font-size:0; text-align:left; vertical-align:middle;}
+.thumb-card .thumb-item a{display:block; height:100%; border:1px solid #DFE0E2;  border-radius:24px 0 24px 24px; box-shadow:0 2px 4px rgba(34,34,34,0.04);}
+.thumb-card .thumb-item a:hover{border:1px solid #1A399E; box-shadow:0 2px 8px rgba(26, 57, 158, 0.16);}
+.thumb-card .thumb-item .thumb-img{position:relative; display:block; width:100%; height:206px; background:#ccc; border-radius: 24px 0 0;}
+.thumb-card .thumb-item .thumb-img.empty::before{content:''; position:absolute; top:50%; left:50%; width:48px; height:48px; transform: translate(-50%, -50%); background: url(/kiam/pcWeb/resources/images/common/ico_comm.png) no-repeat -460px -70px; border-radius:50%;}
+.thumb-card .thumb-item a .thumb-cont{display:block; width:100%; height:160px; padding:32px;}
+.thumb-card .thumb-item a .thumb-cont .title{font-size:20px; color:#222; line-height:1.3;}
+.thumb-card .thumb-item a:hover .thumb-cont .title{color:#1A399E;}
+.thumb-card .thumb-item a .thumb-cont .title .keyword{color:#1A399E;}
+.thumb-card .thumb-item a .thumb-cont .date{position:absolute; bottom:32px; left:32px; font-size:14px; color:#73737A;}
+
+/* 상품목록 */
+.subfund-list.v2 .subfund-item {margin-top: 15px; line-height: 0; font-size: 0; width:100%; height: auto; padding: 0; text-align: left; border:none; background: none; box-shadow: none;}
+.subfund-list.v2 .subfund-item a {position:relative; display:block; width:100%; height:185px; padding:40px 180px 0 48px; border-radius:20px 0 20px 20px; border: 1px solid #DFE0E2; box-shadow:0 2px 4px rgba(34,34,34,0.04) }
+.subfund-list.v2 .subfund-item a:hover {border-color:#113585; box-shadow:0 2px 4px rgba(26, 57, 158, 0.16);}
+.subfund-list.v2 .subfund-item a .title {overflow:hidden; display:block; margin:16px 0 0 0; font-size:24px; line-height:1.3; color:#222; text-overflow:ellipsis; white-space:nowrap; }
+.subfund-list.v2 .subfund-item a .title .keyword{color:#1A399E;}
+.subfund-list.v2 .subfund-item a:hover .title{color:#1A399E;}
+.subfund-list.v2 .subfund-item a .txts {display:block; margin-top:14px; font-size:14px; color:#73737A; }
+.subfund-list.v2 .subfund-item .date{display:block; margin-top:12px; font-size:14px; color:#73737A;}
+.subfund-list.v2 .subfund-item .rate {position:absolute; bottom:45px; right:48px; font-size:20px; text-align:right; }
+.subfund-list.v2 .subfund-item .rate .points {font-family:Roboto; letter-spacing:1px; font-weight:700; font-size:18px; }
+.subfund-list.v2 .subfund-item .rate em {font-size:32px; color:#EC008C; letter-spacing:-1px; font-family: inherit; } 
+.subfund-list.v2 .subfund-item .rate span {display:block; font-size:14px; margin-top:11px; }
+ 
+
+/* 
+.subfund-list .subfund-item .btn-more:hover + .subfund-bg{z-index:0; position:absolute; top:0; left:0; width:368px; height:244px; border-color:#113585; border-radius:20px 0 20px 20px; background:linear-gradient(100.59deg, #1A399E 62.77%, #4D38CE 103.34%); box-shadow:inset 0 -3px 10px 0 rgb(0 0 0 / 10%), 0 6px 8px 0 rgb(0 0 0 / 15%);}
+.subfund-list .subfund-item .subfund-cont{z-index:1; position:absolute; left:50%; width:calc(100% - 64px); transform:translateX(-50%);}
+.subfund-list .subfund-item .btn-more:hover + .dropdown-item .ui-select-btn::after{background-position:-72px 4px;}
+.subfund-list .subfund-item .btn-more:hover {border-color:#113585; background:linear-gradient(100.59deg, #1A399E 62.77%, #4D38CE 103.34%); box-shadow:inset 0 -3px 10px 0 rgb(0 0 0 / 10%), 0 6px 8px 0 rgb(0 0 0 / 15%);}
+.subfund-list .subfund-item .btn-more:hover + .dropdown-item .ui-select-btn{color:#fff;}
+.subfund-list .subfund-item .btn-more:hover + .dropdown-item .ui-select-btn::after{background-position:-72px 4px;}
+.subfund-list .subfund-item .btn-more:hover .title {color:#fff;}
+.subfund-list .subfund-item .btn-more:hover .flags span{border-color:#B9BBC6; color:#B9BBC6; }
+.subfund-list .subfund-item .btn-more:hover .flags span.type{border-color:#fff; color:#fff; } 
+*/

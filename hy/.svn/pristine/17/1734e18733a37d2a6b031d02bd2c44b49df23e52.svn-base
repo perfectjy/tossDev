@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+		$('.btn_samples').find('.btn').click();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">로그인</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">Modal</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#MMYCC0202U'));" class="btn fill01">Open</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<div class="modal full fade" id="MMYCC0202U" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header">
+						<div class="wrapper">
+							<h2 class="modal_title">고장출동 신청</h2>
+						</div>
+					</div>
+					<div class="modal_body">
+						<!-- wrapper: modal_body -->
+						<div class="wrapper">
+							<div class="section">
+								<div class="governing ta_l">
+									<h2 class="governing_title">고장출동 신청정보를<br>입력해 주세요.</h2>
+								</div>
+								<div class="comp">
+                  <div class="form_area">
+                    <div class="form_item">
+                      <div class="form_label"><label for="inp01">피보험자 생년월일</label></div>
+                      <div class="form_wrap">
+                        <input type="number" id="inp01" placeholder="숫자 6자리 입력(예: 870701)">
+                      </div>
+                      <!-- <div class="form_msg confirm">성공 메시지</div> -->
+                      <div class="form_msg error">생년월일 6자리를 꼭 입력해주세요.</div>
+                      <div class="form_msg error">생년월일을 6자리로 정확히 입력해 주세요.</div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><label for="inp02">자동차번호</label></div>
+                      <div class="form_wrap">
+                        <input type="number" id="inp02" placeholder="7~9자리 입력(예: 11가1234 또는 123가1234)">
+                      </div>
+                      <!-- <div class="form_msg confirm">성공 메시지</div> -->
+                      <div class="form_msg error">자동차번호를 꼭 입력해주세요.</div>
+                    </div>
+                  </div>
+								</div>
+							</div>
+						</div>
+						<!-- //wrapper: modal_body -->
+					</div>
+					<div class="modal_footer fix">
+						<div class="btn_area footer">
+							<button type="button" class="btn fill01">다음</button>
+						</div>
+						<div class="btn_area sub">
+							<a href="javascript:void(0);" class="btn text">로그인으로 자동입력할게요</a>
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#MMYCC0202U'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Full -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

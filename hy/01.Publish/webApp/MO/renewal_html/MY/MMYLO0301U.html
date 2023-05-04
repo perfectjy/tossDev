@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+
+		var tabIdx = 0;
+		var $triggerTarget = $('[data-tab-trigger="mmylo03_tab"]');
+		$triggerTarget.hide().eq(tabIdx).show();
+		UI.tab('mmylo03_tab', tabIdx, function(_this, idx){
+			$triggerTarget.hide().eq(idx).show();
+		});
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="loan">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">보험계약대출 거래내역조회</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<!-- tab_round -->
+						<div class="tab tab_round" data-tab="mmylo03_tab">
+							<ul class="tab_wrap">
+								<li><a href="javascript:void(0);"><span>유지중 대출계약</span></a></li>
+								<li><a href="javascript:void(0);"><span>날짜별 거래내역</span></a></li>
+							</ul>
+						</div>
+						<!--// tab_round -->
+					
+						<!-- tab_content -->
+						<div class="tab_content" data-tab="mmylo03_tab">
+              <div class="governing ta_l">
+                <h2 class="governing_title">조회가능한 대출 유지 계약이 <br>총 <strong>10건</strong> 있어요.</h2>
+              </div>
+              <div class="comp">
+                <div class="card_list">
+                  <div class="card_item">
+                    <div class="card_wrap">
+                      <a href="#" class="card_anchor">
+                        <div class="card_header">
+                          <span class="badge blue">정상</span>
+                          <div class="card_title">연금저축손해보험노후웰스보험(Hi904)기본플랜</div>
+                        </div>
+                        <div class="card_body border_top">
+                          <div class="dl_list">
+                            <dl class="dl_w100">
+                              <dt>대출일</dt>
+                              <dd>2023.01.16</dd>
+                              <dt>대출잔액</dt>
+                              <dd>2,300,300원</dd>
+                              <dt>납입계좌</dt>
+                              <dd>국민은행1234****123</dd>
+                              <dt>대출이율</dt>
+                              <dd>4.36%</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card_item">
+                    <div class="card_wrap">
+                      <a href="#" class="card_anchor">
+                        <div class="card_header">
+                          <span class="badge red">연체중</span>
+                          <div class="card_title">연금저축손해보험노후웰스보험(Hi904)기본플랜</div>
+                        </div>
+                        <div class="card_body border_top border_bottom">
+                          <div class="dl_list">
+                            <dl class="dl_w100">
+                              <dt>대출일</dt>
+                              <dd>2023.01.16</dd>
+                              <dt>대출잔액</dt>
+                              <dd>2,300,300원</dd>
+                              <dt>납입계좌</dt>
+                              <dd>국민은행1234****123</dd>
+                              <dt>대출이율</dt>
+                              <dd>4.36%</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="card_footer">
+                        <div class="card_text">개인정보처리동의여부: 동의(2020.08.10)
+                          <div class="tooltip">
+                            <button type="button" class="btn_tooltip" data-pos="bottom" data-icon="true" data-handler="click"><span class="blind">툴팁</span></button>
+                            <div class="tooltip_wrap" role="tooltip">
+                              <div class="tooltip_con">
+                                <div class="tooltip_title">개인정보처리 동의여부</div>
+                                <div class="tooltip_contents">보험계약대출 체결/이행 등을 위한 개인(신용)정보 수집·이용 및 제3자 제공에 관한 동의 여부와 날짜입니다.</div>
+                              </div>
+                              <a class="tooltip_close" href="javascript:void(0);" role="button">Close</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_area more">
+                  <button type="button" class="btn more"><span>더보기(1/3)</span></button>
+                </div>
+              </div>
+						</div>
+
+						<div class="tab_content" data-tab="mmylo03_tab">
+							<!-- filter -->
+							<div class="filter">
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="title">
+												<span>2023.03.10~2023.04.06</span>
+												<span>전체</span>
+											</div>
+											<i class="btn toggle">변경</i>
+										</a>
+									</div>
+									<div class="fold_body">
+										<div class="form_area">
+											<div class="form_item grid2">
+												<div class="form_item dash2">
+													<div class="form_label"><label for="inp01">정산시작일</label></div>
+													<div class="form_wrap">
+														<input type="text" id="inp01" placeholder="" class="inp_date">
+													</div>
+												</div>
+												<div class="form_item">
+													<div class="form_label"><label for="inp02">기준일</label></div>
+													<div class="form_wrap">
+														<input type="text" id="inp02" placeholder="" class="inp_date">
+													</div>
+												</div>
+												<div class="option_area">
+													<button type="button" class="btn option"><span>1개월</span></button>
+													<button type="button" class="btn option"><span>3개월</span></button>
+													<button type="button" class="btn option"><span>6개월</span></button>
+													<button type="button" class="btn option"><span>1년</span></button>
+													<button type="button" class="btn option"><span>3년</span></button>
+												</div>
+											</div>
+											<div class="form_item">
+												<div class="form_label"><span class="form_title">조회대상</span></div>
+												<div class="form_wrap noline">
+													<div class="option_area type_radio">
+														<input type="radio" id="rdo01" name="filter02" class="btn_rdo"><label for="rdo01">전체</label>
+														<input type="radio" id="rdo02" name="filter02" class="btn_rdo"><label for="rdo02">대출</label>
+														<input type="radio" id="rdo03" name="filter02" class="btn_rdo"><label for="rdo03">상환</label>
+														<input type="radio" id="rdo04" name="filter02" class="btn_rdo"><label for="rdo04">이자</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btn_area">
+											<a href="javascript:void(0);" class="btn line02 block">조회</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //filter -->
+							<div class="governing ta_l">
+								<h2 class="governing_title">조회가능한 날짜별 거래내역이 <br>총 <strong>133건</strong> 있어요.</h2>
+							</div>
+              <div class="comp">
+                
+                <ul class="list">
+                  <li class="list_item">
+                    <div class="list_wrap">
+                      <div class="list_body">
+                        <div class="title">
+                          <span class="fz14">L2007****922</span>
+                          <span>2023.02.16</span>
+                        </div>
+                        <div class="right">
+                          <span><em class="badge black">이자</em> <strong class="fz17">28,888원</strong></span>
+                          <span>대출잔액 9,600,000원</span>
+                        </div>
+                      </div>
+                      <div class="list_footer">
+                        <div class="box">자동이체 :  2022.01.16~2023.02.16(22일)</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list_item">
+                    <div class="list_wrap">
+                      <div class="list_body">
+                        <div class="title">
+                          <span class="fz14">L2007****922</span>
+                          <span>2023.02.16</span>
+                        </div>
+                        <div class="right">
+                          <span><em class="badge blue">상환</em> <strong class="fz17">28,888원</strong></span>
+                          <span>대출잔액 9,600,000원</span>
+                        </div>
+                      </div>
+                      <div class="list_footer">
+                        <div class="box">자동이체 :  2022.01.16~2023.02.16(22일)</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list_item">
+                    <div class="list_wrap">
+                      <div class="list_body">
+                        <div class="title">
+                          <span class="fz14">L2007****922</span>
+                          <span>2023.02.16</span>
+                        </div>
+                        <div class="right">
+                          <span><em class="badge orange">대출</em> <strong class="fz17">28,888원</strong></span>
+                          <span>대출잔액 9,600,000원</span>
+                        </div>
+                      </div>
+                      <div class="list_footer">
+                        <div class="box">인터넷</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list_item">
+                    <div class="list_wrap">
+                      <div class="list_body">
+                        <div class="title">
+                          <span class="fz14">L2007****922</span>
+                          <span>2023.02.16</span>
+                        </div>
+                        <div class="right">
+                          <span><em class="badge black">정산</em> <strong class="fz17">28,888원</strong></span>
+                          <span>대출잔액 9,600,000원</span>
+                        </div>
+                      </div>
+                      <div class="list_footer">
+                        <div class="box">자동이체 :  2022.01.16~2023.02.16(22일)</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="btn_area more">
+                  <button type="button" class="btn more"><span>더보기 (1/3)</span></button>
+                </div>
+              </div>
+						</div>
+						<!-- //tab_content -->
+					</div>
+
+					<!-- section bottom_fix -->
+					<div class="section bottom_fix">
+						<div class="comp" data-tab-trigger="mmylo03_tab">
+              <div class="banner type_text">
+                <a href="#" class="banner_anchor">
+                  <i class="icon icon_loan" aria-hidden="true"></i>
+                  <p class="banner_text">보험계약대출 체결&middot;이행을 위한 <br>개인(신용)정보 처리 상세 동의서</p>
+                </a>
+              </div>
+							<div class="accordion notice full">
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="title"><strong>유의사항</strong></div>
+											<i class="icon_angle"><span>내용보기/내용닫기</span></i>
+										</a>
+									</div>
+									<div class="fold_body uol_list">
+										<ul>
+                      <li>보험계약대출 조회 시, 대출 유지계약과 날짜별 거래내역을 조회할 수 있습니다.</li>
+                      <li>보험계약대출 유지계약 조회 시, 상품명을 선택하면 해당 계약의 상세내용을 조회할 수 있습니다.</li>
+                      <li>보험계약대출 연체 여부는 은행 정산작업에 따라 실제 이체일보다 2~3일 후에 반영되므로, 정산작업 중에는 연체 여부가 ‘처리중’으로 표시될 수 있습니다.</li>
+                      <li>자세한 내용은 인터넷 콜센터(02-2116-1004)로 문의해 주세요.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="title"><strong>이용안내</strong></div>
+											<i class="icon_angle"><span>내용보기/내용닫기</span></i>
+										</a>
+									</div>
+									<div class="fold_body uol_list use_info">
+										<p class="h5">이용대상</p>
+                    <ul>
+                      <li>보험계약대출 거래 계약자</li>
+										</ul>
+                    <p class="h5">이용조건</p>
+                    <ul>
+                      <li>최근 5년 이내 보험계약대출 거래내역 조회 가능</li>
+                    </ul>
+									</div>
+								</div>
+							</div>
+            </div>
+            <div class="comp" data-tab-trigger="mmylo03_tab">
+							<div class="accordion notice full">
+								<div class="item">
+									<div class="fold_header">
+										<a href="javascript:void(0);" role="button" title="내용보기">
+											<div class="title"><strong>유의사항</strong></div>
+											<i class="icon_angle"><span>내용보기/내용닫기</span></i>
+										</a>
+									</div>
+									<div class="fold_body uol_list">
+										<ul>
+											<li>보험계약대출 조회 시, 대출 유지계약과 날짜별 거래내역을 조회할 수 있습니다.</li>
+											<li>보험계약대출 유지계약 조회 시, 상품명을 선택하면 해당 계약의 상세내용을 조회할 수 있습니다.</li>
+											<li>보험계약대출 연체 여부는 은행 정산작업에 따라 실제 이체일보다 2~3일 후에 반영되므로, 정산작업 중에는 연체 여부가 ‘처리중’으로 표시될 수 있습니다.</li>
+											<li>자세한 내용은 인터넷 콜센터(02-2116-1004)로 문의해 주세요</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //section bottom_fix -->
+
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

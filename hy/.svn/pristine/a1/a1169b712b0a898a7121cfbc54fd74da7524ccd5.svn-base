@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+		$('.btn_samples').find('.btn').click();
+
+
+		/**
+		 * Modal.Alert 
+		 * -------------------------------------------------------
+		 * @usage Open:  layerPop.alert(layer, obj, openCallBack);
+		 * @usage Close: layerPop.close(layer);
+		 * -------------------------------------------------------
+		 * @param {object} layer: Alert ID  
+		 * @param {String} obj.type: alert(default), alarm - alert/alarm - ok 버튼 스타일 다름
+		 * @param {String} obj.align: center(default), left - 텍스트 정렬
+		 * @param {String} obj.isCloseBtn: true, false - 상단 닫기 버튼 유무
+		 * @param {String} obj.width: 300px(default), 320px , calc(100% - 40px) - 팝업 사이즈
+		 * @param {String} obj.title: ''(default) -상단 타이틀
+		 * @param {String} obj.msg: - html 사용 가능, 줄바꿈 <br>
+		 * @param {String} obj.icon: success, info, fail - 컨펌 팝업 지정 아이콘
+		 * @param {String} obj.buttonTitle: ok 버튼명, cancel 버튼명 
+		 * @param {String} obj.calllBack: ok, cancel 버튼 EventHandler
+		 * @param {function} openCallBack: callback function
+		 */
+
+		// * alarm
+		//----------------------
+
+		$('.btn_alarm01').on('click', function(){
+			layerPop.alert(
+				$('#UIAlert')
+				, {
+					type: 'alarm' //alram (Default: alert)
+					, align: 'left'
+					, isCloseBtn: true
+					, width: '320px'
+					, title: '알림'
+					, msg: '잠금장치 해제 서비스는 모바일로 접수할 수 없습니다. <br> 대표콜센터(1588-5656)로 접수해 주세요.'
+					, icon: ''
+					, buttonTitle: {
+						ok: '대표콜센터 연결'
+					}
+					, calllBack: {
+						ok: function(){
+							location.href="tel:1588-5656";
+							layerPop.close('#UIAlert'); 
+							return false;
+						}
+					}
+				}
+			);
+		})
+
+
+		$('.btn_alarm02').on('click', function(){
+			layerPop.alert(
+				$('#UIAlert')
+				, {
+					type: 'alarm' //alram (Default: alert)
+					, align: 'left'
+					, isCloseBtn: true
+					, width: '320px'
+					, title: '알림'
+					, msg: '신청 가능한 계약이 없습니다. <br> 계약을 확인하시려면 대표콜센터(1588-5656)로 문의해 주세요.'
+					, icon: ''
+					, buttonTitle: {
+						ok: '대표콜센터 연결'
+					}
+					, calllBack: {
+						ok: function(){
+							location.href="tel:1588-5656";
+							layerPop.close('#UIAlert'); 
+							return false;
+						}
+					}
+				}
+			);
+		});
+
+		$('.btn_alarm03').on('click', function(){
+			layerPop.alert(
+				$('#UIAlert')
+				, {
+					type: 'alarm' //alram (Default: alert)
+					, align: 'left'
+					, isCloseBtn: true
+					, width: '320px'
+					, title: '$고장출동 서비스명$'
+					, msg: '<p>입력하신 정보로 고장출동을 신청합니다.</p> <div class="box gray_line mt20"> <div class="dl_list"> <dl class="dl_w100"> <dt><strong>휴대폰 번호</strong></dt><dd>$010-****-1234$</dd> <dt><strong>신청서비스</strong></dt><dd>$배터리 충전$</dd> </dl> </div> </div>'
+					, icon: ''
+					, buttonTitle: {
+						ok: '확인'
+					}
+					, calllBack: {
+						ok: function(){
+							layerPop.close('#UIAlert'); 
+							return false;
+						}
+					}
+				}
+			);
+		});
+		// .click();
+
+		$('.btn_alarm04').on('click', function(){
+			layerPop.alert(
+				$('#UIAlert')
+				, {
+					type: 'alarm' //alram (Default: alert)
+					, align: 'left'
+					, isCloseBtn: true
+					, width: '320px'
+					, title: '$고장출동 서비스명$'
+					, msg: '$고장출동서비스명$ 항목은 대표콜센터(1588-5656)로 신청 가능합니다'
+					, icon: ''
+					, buttonTitle: {
+						ok: '대표콜센터 연결'
+					}
+					, calllBack: {
+						ok: function(){
+							location.href="tel:1588-5656";
+							layerPop.close('#UIAlert'); 
+							return false;
+						}
+					}
+				}
+			);
+		})
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="login">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">보험계약대출</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">알림</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area btn_samples">
+								<a href="javascript:void(0);" class="btn fill02 sm btn_alarm01 block">1. 입력한 정보로 두건 이상의 <br> 계약이 조회되어 진행이 불가한 경우</a>
+								<a href="javascript:void(0);" class="btn fill02 sm btn_alarm02 block">2. 신청가능한 계약이 없는 경우</a>
+								<a href="javascript:void(0);" class="btn fill02 sm btn_alarm03 block">3. 고장출동을 신청하는 경우</a>
+								<a href="javascript:void(0);" class="btn fill02 sm btn_alarm04 block">4. 긴급견인 고장출동을 신청하는 경우</a>
+							</div>
+						</div>
+
+						<div class="comp">
+							<div class="tite_area">
+								<h3 class="h3">3. 고장출동을 신청하는 경우 Markup</h3>
+							</div>
+						</div>
+						<div class="comp box">
+							<!-- copy -->
+							<p>입력하신 정보로 고장출동을 신청합니다.</p>
+							<div class="box gray_line mt20">
+								<div class="dl_list">
+									<dl class="dl_w100">
+										<dt><strong>휴대폰 번호</strong></dt><dd>$010-1234-1234$</dd>
+										<dt><strong>신청서비스</strong></dt><dd>$배터리 충전$</dd>
+									</dl>
+								</div>
+							</div>
+							<!-- //copy -->
+						</div>
+
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<!-- Modal Alert -->
+		<div class="modal alert fade" id="UIAlert" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header"></div>
+					<div class="modal_body">
+						<div class="wrapper ">
+							<div class="section">
+								<div class="sc_comp"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal_footer">
+						<div class="btn_area footer">
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#UIAlert'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Alert -->
+		<!-- //Modal Full -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

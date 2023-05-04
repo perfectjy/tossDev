@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/moWeb/resources/pub_include/head.js"></script><!-- // Pub Include : head-->
+    <script type="text/javascript">
+        pageInfo = { title:'모달모음', prev:true };
+    </script>
+</head>
+<body>
+    <div class="kosef-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a>  
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kiam/moWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap" id="content">            
+            <div class="contents">  
+                <h2 class="h3 mgt0">펀드</h2>              
+                <h3 class="h4">[팝업]펀드비교결과(KIM0202010200P)</h3>
+                <div class="mgt10">
+                    <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                        id:'KIM0202010200P', 
+                        full:'mobile',                 
+                        src:'/kiam/moWeb/fund/KIM0202010200P.html',
+                        callbackClose: () => {
+                            console.log(11111111111)
+                        },
+                        callback:() => {  
+                            var $slideBanner = $('.pick-slide-bnr');
+                            if (!$slideBanner.hasClass('slick-initialized')) {
+                                $slideBanner.slick({ 
+                                    dots: true,              
+                                    slidesToShow: 1,
+                                    variableWidth:true,
+                                    slidesToScroll:1
+                                });
+                            }
+                            
+                        }  
+                     });"><span>KIM0202010200P</span></button>
+                </div>  
+                <h3 class="h4">[팝업]검색옵션(KIM0202010300P)</h3>
+                <div class="mgt10">
+                    <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                        id:'KIM0202010300P', 
+                        full:'mobile',   
+                        //ps: 'bottom',              
+                        src:'/kiam/moWeb/fund/KIM0202010300P.html',
+                        callback:() => {  
+                            KAUI.rangeSlider.init({ 
+                                id : 'rangeRisk' ,
+                                step: 1,
+                                min: 0,
+                                max: 5,
+                                value: [0,3],
+                                title: '위험등급 범위 설정',
+                                text: ['매우 높은 위험', '높은 위험', '다소 높은 위험', '보통 위험', '낮은 위험', '매우 낮은 위험'],
+                                tickmark: ['1', '2', '3', '4', '5', '6']
+                            });   
+                            KAUI.rangeSlider.init({ 
+                                id : 'rangeRetrun' ,
+                                step: 1,
+                                min: 0,
+                                max: 6,
+                                value: [2,5],
+                                title: '수익률 범위 설정',
+                                text: ['-15이하', '-10', '-5', '0', '+5', '+10', '+15이상'],
+                                tickmark: ['-15이하', '-10', '-5', '0', '+5', '+10', '+15이상']
+                            });    
+                        }  
+                     });"><span>KIM0202010300P</span></button>
+                </div>  
+                <h3 class="h4">[팝업]분할매수상품_상세(KIM0204020000P)</h3>
+                <div class="mgt10">
+                    <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                        id:'KIM0204020000P', 
+                        full:'mobile', 
+                        src:'/kiam/moWeb/fund/KIM0204020000P.html',
+                        callback:() => {   
+                            var today = new Date();
+                                console.log('date');
+                                $('#uiDate_3').attr('value', '2023-04-11');
+                                KAUI.table.scroll();
+                        }                            
+                     });"><span>KIM0204020000P</span></button>
+                </div> 
+                <hr class="sub-line">
+                <h2 class="h3 mgt0">투자정보</h2>     
+                <h3 class="h4">[팝업]키자TV_상세(KIM0502010202P)</h3>
+                <div class="mgt10">
+                    <button type="button" class="btn base btn-modal" data-id="KIM0502010202P" data-full="mobile" data-src="/kiam/moWeb/lounge/KIM0502010202P.html"><span>KIM0502010202P</span></button>
+                </div>  
+                <hr class="sub-line">
+                <h2 class="h3 mgt0">공통</h2>   
+                <h3 class="h4">[팝업]메인공지(KIM0701000000P)</h3> 
+                <button type="button" class="btn base btn-modal" 
+                    onclick="KAUI.modal.show({ 
+                        id:'KIM0701000000P', 
+                        ps : 'bottom',                 
+                        src:'/kiam/moWeb/main/KIM0701000000P.html',
+                        callback:() => {   
+                            mainNotiSlide();
+                        }  
+                    });"><span>KIM0103000000P</span></button> 
+
+                <h3 class="h4">[팝업]통합검색(KIM0103000000P)</h3> 
+                <button type="button" class="btn base btn-modal" 
+                    onclick="KAUI.modal.show({ 
+                        id:'KIM0103000000P', 
+                        ps : 'top',                 
+                        src:'/kiam/moWeb/search/KIM0103000000P.html',
+                        callback:() => {   
+                            KAUI.form.init();	
+                        }  
+                    });"><span>KIM0103000000P</span></button> 
+
+                <h3 class="h4">[팝업]공유하기(KIM0702000000P)</h3>
+                <a href="#" class="btn base btn-modal" data-id="KIM0702000000P" data-src="/kiam/moWeb/main/KIM0702000000P.html"><span>KIM0702000000P</span></a> 
+
+                <h3 class="h4">[팝업]개인정보처리방침(KIM0106000000P)</h3> 
+                <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                    id:'KIM0106000000P', 
+                    full:'mobile',                 
+                    src:'/kiam/moWeb/main/KIM0106000000P.html',
+                    callback:() => {  
+                        KAUI.accordion.init({ id:'termAccoPrivacy', current:[0], autoclose: true });
+                    }  
+                 });"><span>KIM0106000000P</span></button> 
+                <br><br>
+                <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                    id:'KIM0106000001P', 
+                    full:'mobile',                 
+                    src:'/kiam/moWeb/main/KIM0106000001P.html',
+                    callback:() => {  
+                        KAUI.accordion.init({ id:'termAccoPrivacy2', current:[0], autoclose: true });
+                    }  
+                 });"><span>KIM0106000001P</span></button> 
+
+                <h3 class="h4">[팝업]신용정보활용체제(KIM0107000000P)</h3> 
+                <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                    id:'KIM0107000000P', 
+                    full:'mobile',                 
+                    src:'/kiam/moWeb/main/KIM0107000000P.html',
+                    callback:() => {  
+                        KAUI.accordion.init({ id:'termAccoCredit', current:[0], autoclose: true });
+                    }  
+                 });"><span>KIM0107000000P</span></button>
+
+                <h3 class="h4">[팝업]이메일무단수집금지(KIM0108000000P)</h3> 
+                <button type="button" class="btn base btn-modal" data-id="KIM0108000000P" data-ps="bottom" data-src="/kiam/moWeb/main/KIM0108000000P.html"><span>KIM0108000000P</span></button> 
+                
+                <h3 class="h4">[팝업]펀드 안전장치</h3> 
+                <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                    id:'KIM0109000000P', 
+                    full:'mobile',                 
+                    src:'/kiam/moWeb/main/KIM0109000000P.html',
+                    callback:() => {  
+                        KAUI.accordion.init({ id:'termAccoFund', current:[0], autoclose: true });
+                        }
+                    });"><span>KIM0109000000P</span></button>  
+
+                <h3 class="h4">[팝업]자산배분기준</h3> 
+                <button type="button" class="btn base btn-modal" onclick="KAUI.modal.show({ 
+                    id:'KIM0110000000P', 
+                    full:'mobile',                 
+                    src:'/kiam/moWeb/main/KIM0110000000P.html',
+                    callback:() => {  
+                        KAUI.accordion.init({ id:'termAccoShare', current:[0], autoclose: true });
+                        }
+                    });"><span>KIM0110000000P</span></button>  
+
+                <h3 class="h4">[팝업]전자민원 안내</h3> 
+                <button type="button" class="btn base btn-modal" data-id="KIM0111000000P" data-full="mobile" data-src="/kiam/moWeb/main/KIM0111000000P.html"><span>KIM0111000000P</span></button>      
+            </div>
+        </main>
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kosef/moWeb/pub_include/footer.js"></script></footer>
+    </div>   
+    <script>
+        (() => {
+            'use strict';   
+    
+            //모달 확인 호출
+            // KAUI.modal.show({ 
+            //             id:'KIM0204020000P', 
+            //             full:'mobile', 
+            //             src:'/kiam/moWeb/fund/KIM0204020000P.html',
+            //             callback:() => {   
+            //                 var today = new Date();
+            //                     console.log('date');
+            //                     $('#uiDate_3').attr('value', '2023-04-11');
+            //                     KAUI.table.scroll();
+            //             }                            
+            //          });
+            // KAUI.modal.show({ 
+            // id:'KIM0202010200P', 
+            // full:'mobile',                 
+            // src:'/kiam/moWeb/fund/KIM0202010200P.html',
+            // callbackClose: () => {
+            //     console.log(11111111111)
+            // },
+            // callback:() => {  
+            //     var $slideBanner = $('.pick-slide-bnr');
+            //     if (!$slideBanner.hasClass('slick-initialized')) {
+            //         $slideBanner.slick({ 
+            //             dots: true,              
+            //             slidesToShow: 1,
+            //             variableWidth:true,
+            //             slidesToScroll:1
+            //         });
+            //     }
+                
+            // }  
+            // });
+
+            // KAUI.modal.show({ 
+            // id:'KIM0202010200P', 
+            // full:'mobile',                 
+            // src:'/kiam/moWeb/fund/KIM0202010200P.html',
+            //      callback:() => {  
+            //     var $slideBanner = $('.pick-slide-bnr');
+            //     if (!$slideBanner.hasClass('slick-initialized')) {
+            //         $slideBanner.slick({ 
+            //             dots: true,              
+            //             slidesToShow: 1,
+            //             variableWidth:true,
+            //             slidesToScroll:1
+            //         });
+            //     }
+                
+            // }  
+            // });
+    
+            //모달 닫기 
+            // KAUI.modal.hide({ 
+            //     id: 'ADM08040100P', 
+            //     remove: false,
+            //     callback: function(v){ console.log(v) }
+            // });
+        })();
+        
+    </script>
+</body>
+</html>

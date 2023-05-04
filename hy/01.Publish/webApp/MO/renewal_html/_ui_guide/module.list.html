@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>현대해상다이렉트</title>
+	<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+	<script>
+		$(function () {
+			UI.init();
+
+			//Guide
+			guideTab();
+		});
+	</script>
+</head>
+
+<body data-channel="mobile" data-login="true" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">Module</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">Lists</h2>
+							<span class="info_txt">List 가이드 입니다.</span>
+						</div>
+						<div class="tab tab_scroll" data-tab="GuideTab">
+							<ul class="tab_wrap">
+								<li><a href="javascript:void(0);"><span>List</span></a></li>
+								<li><a href="javascript:void(0);"><span>Notice</span></a></li>
+								<li><a href="javascript:void(0);"><span>Icon Type</span></a></li>
+								<li><a href="javascript:void(0);"><span>View All</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- List -->
+					<div class="section tab_content" data-tab="GuideTab">
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">List</h2>
+								<small>padding: 24px 0</small>
+							</div>
+						</div>
+
+						<div class="comp">
+							<ul class="list">
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<strong>Linked Case</strong>
+												<span>차대번호로 보험을 가입한 경우</span>
+											</div>
+											<div class="right"><strong class="point_color">1억 5,000만원</strong></div>
+										</div>
+									</a>
+								</li>
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap disabled"><!-- disabled -->
+										<div class="list_body">
+											<div class="title">
+												<strong>Linked Disabled Case</strong>
+												<span>차대번호로 보험을 가입한 경우</span>
+											</div>
+											<div class="right"><strong class="point_color">1억 5,000만원</strong></div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="comp">
+							<ul class="list">
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<strong>Div Case</strong>
+												<span>차대번호로 보험을 가입한 경우</span>
+											</div>
+											<strong class="right"><strong class="point_color">1억 5,000만원</strong></strong>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="list_bottom">
+								<dl class="result">
+									<dt>list_bottom 보장보험료 합계</dt>
+									<dd><strong class="point_color">1,155,150원</strong></dd>
+								</dl>
+							</div>
+						</div>
+
+						<div class="comp my_deposit_list">
+							<div class="form_area">
+								<select id="select01" class="select_type02" title="납입연도">
+									<option value="">2023년</option>
+								</select>
+							</div>
+							<ul class="list">
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<span class="fz14">130회</span>
+												<span>2023년 2월분</span>
+											</div>
+											<div class="right"><strong class="fz17">100,000원</strong></div>
+										</div>
+										<div class="list_footer">
+											<div class="box">계좌이체: 2023.02.23 (1개월납)</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">link List</h2>
+							</div>
+						</div>
+						<div class="comp">
+							<ul class="list link_type">
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<span class="badge blue">대인</span>
+												<span class="name">문여진</span>
+											</div>
+											<div class="dl_list">
+												<dl>
+													<dt>치료병원</dt>
+													<dd>현대종합병원</dd>
+													<dt>담당자</dt>
+													<dd>하이카(010-1234-1234)</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<span class="badge orange">자차</span>
+												<span class="name">75저**12</span>
+											</div>
+											<div class="dl_list">
+												<dl>
+													<dt>치료병원</dt>
+													<dd>현대종합병원</dd>
+													<dt>담당자</dt>
+													<dd>하이카(010-1234-1234)</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //List-->
+
+					<!-- Notice -->
+					<div class="section tab_content" data-tab="GuideTab">
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">Notice</h2>
+								<small>padding: 16px 0</small>
+							</div>
+						</div>
+						<div class="comp">
+							<ul class="list notice border_top_none">
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<strong>제18기 고객마음 패널 모집 안내</strong>
+												<span>2023.03.23</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<div class="title">
+												<strong>제18기 고객마음 패널 모집 안내제18기 고객마음 패널 모집 안내제18기 고객마음 패널 모집 안내제18기 고객마음 패널 모집 안내제18기 고객마음 패널 모집
+													안내제18기 고객마음 패널 모집 안내</strong>
+												<span>2023.03.23</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //Notice -->
+
+					<!-- Icon -->
+					<div class="section tab_content" data-tab="GuideTab">
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">Icon Type</h2>
+								<small>padding: 16px 30px 16px 58px</small>
+							</div>
+						</div>
+						<div class="comp">
+							<ul class="list icon_type border_top_none" data-icon-id="list_certificate">
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon01" aria-hidden="true"></i>
+											<div class="title">
+												<span class="fz15">이자납입증명서</span>
+												<span>대출이자 납입내역 발급</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon02" aria-hidden="true"></i>
+											<div class="title">
+												<span class="fz15">이자납입증명서</span>
+												<span>대출이자 납입내역 발급</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">Icon Type2</h2>
+								<small>padding: 24px 30px 24px 56px</small>
+							</div>
+						</div>
+						<div class="comp">
+							<ul class="list icon_type2 border_top_none" data-icon-id="icon_accidents">
+								<li class="list_item">
+									<a href="tel:1588-5656" roll="button" class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon02" aria-hidden="true"></i>
+											<div class="title">
+												<span class="fz15">자동차사고가 발생했어요!</span>
+												<span class="desc">차량 운행 중 사고로 <em class="point_color">사고처리가 필요</em>한 경우</span>
+												<span>대표콜센터 전화하기 (ARS ②)</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="list_item">
+									<a href="javascript:void(0);" roll="button" class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon06" aria-hidden="true"></i>
+											<div class="title">
+												<span class="fz15">내 자동차가 고장났어요!</span>
+												<span class="desc">견인, 구난, 급유, 배터리 충전, 타이어<br class="br"> 교체 등이 필요한 경우</span>
+												<span><em class="point_color">모바일 화면에서</em> 신청하기</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="comp">
+							<div class="title_area">
+								<h2 class="h2">icon Step</h2>
+							</div>
+						</div>
+						<div class="comp">
+							<ul class="list step border_top_none" data-icon-id="icon_accidents">
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon01" aria-hidden="true"></i>
+											<div class="title">
+												<span class="step">STEP 1</span>
+												<span class="step_txt">사고접수</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon02" aria-hidden="true"></i>
+											<div class="title">
+												<span class="step">STEP 2</span>
+												<span class="step_txt">사고내용 조사 및 피해물/피해자 확인</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon03" aria-hidden="true"></i>
+											<div class="title">
+												<span class="step">STEP 3</span>
+												<span class="step_txt">보험금 청구 필요서류 제출</span>
+											</div>
+											<a href="#none" class="btn line03 sm">필요 서류</a>
+										</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon04" aria-hidden="true"></i>
+											<div class="title">
+												<span class="step">STEP 4</span>
+												<span class="step_txt">보험금 신청</span>
+												<span class="step_subtxt">(대인/대물배상의 경우 합의 포함)</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list_item">
+									<div class="list_wrap">
+										<div class="list_body">
+											<i class="icon" data-icon="icon05" aria-hidden="true"></i>
+											<div class="title">
+												<span class="step">STEP 5</span>
+												<span class="step_txt">보험금 지급</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //Icon -->
+				</div>
+				<!-- //content_wrap -->
+				<!-- content_footer -->
+				<!-- <div class="content_footer">
+					<div style="height: 58px;background-color:orange;"></div>
+				</div> -->
+				<!-- //content_footer -->
+				<!-- <script type="text/javascript" src="../_ui_include/quick.js"></script>Include: quick -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+
+</html>

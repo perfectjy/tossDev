@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+		$('.btn_samples').find('.btn').click();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">로그인</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+						<div class="governing">
+							<h2 class="governing_title">Modal</h2>
+						</div>
+						<div class="comp">
+							<div class="btn_area cta btn_samples">
+								<a href="javascript:void(0);" onclick="javascript:layerPop.open($('#MMYCF0002U'));" class="btn fill01">Open</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //content_wrap -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Modal Full -->
+		<div class="modal bottom fade" id="MMYCF0002U" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal_dialog" role="document">
+				<div class="modal_content">
+					<div class="modal_header">
+						<div class="wrapper">
+							<h2 class="modal_title">발급조건을 입력해 주세요.</h2>
+						</div>
+					</div>
+					<div class="modal_body">
+						<!-- wrapper: modal_body -->
+						<div class="wrapper">
+							<div class="section">
+								<div class="comp">
+                  <div class="form_area">
+                    <div class="form_item">
+                      <div class="form_label"><label for="select01">장기보험 재발행 사유</label></div>
+                      <div class="form_wrap ">
+                        <select id="select01">
+                          <option value="">외부기관 제출</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><label for="select02">자동차보험 재발행 사유</label></div>
+                      <div class="form_wrap ">
+                        <select id="select02">
+                          <option value="">계약변경</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><label for="inp01">제출기관</label></div>
+                      <div class="form_wrap">
+                        <input type="text" id="inp01" placeholder="기관명 입력(최대 20자)">
+                      </div>
+                      <div class="form_msg error">제출기관을 꼭 입력해 주세요.</div>
+                    </div>
+                    <div class="form_item">
+											<div class="form_label"><label for="inp02">제출목적</label></div>
+                      <div class="form_wrap">
+												<input type="text" id="inp02" placeholder="목적 입력(최대 20자)">
+                      </div>
+											<div class="form_msg error">제출목적을 꼭 입력해 주세요.</div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><span class="form_title">발급언어</span></div>
+                      <div class="form_radio">
+                        <input type="radio" name="rdo01" id="rdo01_01" checked="checked">
+                        <label for="rdo01_01">국문</label>
+                        <input type="radio" name="rdo01" id="rdo01_02">
+                        <label for="rdo01_02">영문(여행자보험만 가능)</label>
+                      </div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><label for="inp03">영문이름</label></div>
+                      <div class="form_wrap">
+                        <input type="text" id="inp03" placeholder="여권 영문이름 입력(예: KIM HYUN DAI)">
+                      </div>
+											<div class="form_msg error">여권 영문이름을 꼭 입력해 주세요.</div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label"><span class="form_title">발급방법</span></div>
+                      <div class="form_wrap noline">
+                        <div class="option_area type_radio">
+                          <input type="radio" id="rdo02_01" name="rdo02" class="btn_rdo" checked="checked"><label for="rdo02_01">저장</label>
+                          <input type="radio" id="rdo02_02" name="rdo02" class="btn_rdo"><label for="rdo02_02">이메일</label>
+                          <input type="radio" id="rdo02_03" name="rdo02" class="btn_rdo"><label for="rdo02_03">팩스</label>
+                        </div>
+                      </div>
+                      <div class="form_wrap form_email">
+                        <input type="text" placeholder="이메일 입력" title="이메일 입력">
+												<div class="email_autocomplete">
+													<ul>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">naver.com</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">hanmail.net</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">daum.net</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">kakao.com</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">korea.kr</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">korea.com</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">dreamwiz.com</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">yahoo.co.kr</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">hi.co.kr</span>
+															</button>
+														</li>
+														<li>
+															<button type="button">
+																<span class="input_mail">test</span>
+																<span>@</span>
+																<span class="domain">직접입력</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="form_msg error">이메일을 꼭 입력해 주세요</div>
+												<div class="form_msg error">이메일을 정확히 입력해 주세요</div>
+                      </div>
+                      <div class="form_wrap">
+                        <input type="text" placeholder="- 없이 입력" title="팩스번호 입력">
+                      </div>
+                      <div class="form_msg error">팩스번호를 정학히 입력해 주세요.</div>
+                    </div>
+                  </div>
+								</div>
+							</div>
+						</div>
+						<!-- //wrapper: modal_body -->
+					</div>
+					<div class="modal_footer fix">
+						<div class="btn_area footer">
+							<button type="button" class="btn fill01">증명서 발급</button>
+						</div>
+					</div>
+					<button type="button" class="btn_modal_close" aria-label="Close" onclick="layerPop.close('#MMYCF0002U'); return false;"><span>닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //Modal Full -->
+		<!-- [End of Modal] ======================================== -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

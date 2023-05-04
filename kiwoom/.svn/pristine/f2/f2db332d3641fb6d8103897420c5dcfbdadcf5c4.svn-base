@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="../../kiam/pcWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="../../pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="../../kiam/pcWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="../../kiam/pcWeb/resources/js/ui.global.js"></script>
+	<script src="../../kiam/pcWeb/resources/js/ui.common.js"></script>
+	<script src="../../pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Form</h2>
+            <div class="g-links">
+                <select id="patternCategory">
+                    <option>모바일 스타일보기</option>
+                    <option value="form">[mo] Form</option>
+                    <option value="accordion">[mo] Accordion</option>
+                    <option value="tab">[mo] Tab</option>
+                </select>
+            </div>    
+            <article>
+                <h3>Drop down</h3>
+                <div class="guide-info-box line">
+                    <!-- default select -->
+                    <div>
+                        <strong class="dot-title">default</strong>
+                        <div class="ui-select" style="width:400px;">
+                            <select title="펀드 타입 선택" id="uiSel1">
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>
+                    <!-- //default select -->  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">disabled</strong>
+                        <div class="ui-select" style="width:400px;">
+                            <select title="펀드 타입 선택" id="uiSel2" disabled>
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>  
+                    <div style="margin-top:20px;">
+                        <strong class="dot-title">error</strong>
+                        <div class="ui-select error" style="width:400px;">
+                            <select title="펀드 타입 선택" id="uiSel3">
+                                <option value="1">Class A-e (수수료선취-온라인)</option>
+                                <option value="2">Class B-e (수수료선취-온라인)</option>      
+                            </select>
+                        </div>  
+                    </div>    
+                </div>     
+                <h3>Check Box</h3>      
+                <div class="guide-info-box line">
+                    <style>
+                        .g-lb-group { display:flex; }
+                        .g-lb-group .lb-item { flex:1 1; }
+                    </style>
+                   <div class="g-lb-group">
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks01" name="formChks">
+                            <label for="formChks01" class="lb-checkbox"><span>Default</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks02" name="formChks" checked>
+                            <label for="formChks02" class="lb-checkbox"><span>Checked</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks03" name="formChks" disabled>
+                            <label for="formChks03" class="lb-checkbox"><span>disabled</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks04" name="formChks" checked disabled>
+                            <label for="formChks04" class="lb-checkbox"><span>inactive</span></label>
+                        </div>     
+                        <div class="lb-item">
+                            <input type="checkbox" id="formChks05" name="formChks">
+                            <label for="formChks05" class="lb-checkbox no-label"><span class="hide">only chk</span></label>
+                        </div>                   
+                   </div>        
+                </div> 
+                <h3>Radio Box</h3>      
+                <div class="guide-info-box line">
+                    <div class="g-lb-group">
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio01" name="formRadio">
+                            <label for="formRadio01" class="lb-radio"><span>Default</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio02" name="formRadio" checked>
+                            <label for="formRadio02" class="lb-radio"><span>Checked</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio03" name="formRadio2" disabled>
+                            <label for="formRadio03" class="lb-radio"><span>disabled</span></label>
+                        </div>
+                        <div class="lb-item">
+                            <input type="radio" id="formRadio04" name="formRadio2" checked disabled>
+                            <label for="formRadio04" class="lb-radio"><span>inactive</span></label>
+                        </div>                       
+                   </div>                                    
+                </div> 
+                <h3>Toggle</h3>      
+                <div class="guide-info-box line">
+                    <div class="tab-tog">                        
+                        <span class="lb-txts">연금상품만 보기</span>
+                        <span class="lb-item sort-chk">
+                            <input type="checkbox" name="annSort" id="annSort">
+                            <label for="annSort" class="tab-chkbox"><span class="hide">전체</span></label>
+                        </span>                        
+                    </div>
+                </div>      
+                <h3>Date</h3>      
+                <div class="guide-info-box line">
+                    <strong class="dot-title">default</strong>
+                    <div class="ui-datepicker">										
+                        <div class="form-input">
+                            <input type="date" id="uiDate_2" class="inp-base" value="2022-12-28" min="2017-12-05" max="2030-12-30" title="시작일" data-period="start" readonly required>
+                        </div>
+                        <div class="form-txt">~</div>
+                        <div class="form-input">
+                            <input type="date" id="uiDate_3" class="inp-base" value="2023-01-04" min="2017-12-05" max="2030-12-30" title="종료일" data-period="end" readonly required>
+                        </div>
+                        <button type="button" class="ui-datepicker-btn" data-target="uiDate_2">
+                            <span class="hide">년월일 선택</span>
+                        </button>
+                    </div>  
+                    <strong class="dot-title">disabled</strong>
+                    <div class="ui-datepicker disabled">										
+                        <div class="form-input">
+                            <input type="date" id="uiDate_2" class="inp-base" value="2022-12-28" min="2017-12-05" max="2030-12-30" title="시작일" data-period="start" readonly required>
+                        </div>
+                        <div class="form-txt">~</div>
+                        <div class="form-input">
+                            <input type="date" id="uiDate_3" class="inp-base" value="2023-01-04" min="2017-12-05" max="2030-12-30" title="종료일" data-period="end" readonly required >
+                        </div>
+                        <button type="button" class="ui-datepicker-btn" data-target="uiDate_2" disabled>
+                            <span class="hide">년월일 선택</span>
+                        </button>
+                    </div>        
+                </div>                                    
+                 
+                <h3>Fund L</h3>      
+                <div class="guide-info-box line">
+                        
+                                  
+                </div>  
+                <h3>Fund S</h3>      
+                <div class="guide-info-box line">
+                        
+                                  
+                </div> 
+            </article>    
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

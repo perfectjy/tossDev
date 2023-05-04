@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* 자사 Main Tab */
+.main-tab .ui-tab-btns {line-height:0; font-size:0;  border-bottom:none;}
+.main-tab .ui-tab-btn { display:inline-block; height:48px; padding:0 25px; color:#878c91; font-size:18px; border-radius:24px; background:#f7f7f7;}
+.main-tab .ui-tab-btn + .ui-tab-btn {margin-left:10px; }
+.main-tab .ui-tab-btn.selected {color:#fff; background:#1A399E;}
+.main-tab .ui-tab-pnls {margin-top:40px; }
+.main-tab .ui-tab-btn.selected:after {display:none;}
+
+
+/* Search Tab */
+.main-tab.search {padding:20px; background-color:#1A399E;}
+.main-tab.search .ui-tab-btn {height:40px; padding:0 20px; color:#fff; font-size:16px; border:1px solid #fff; border-radius:100px; background:transparent;}
+.main-tab.search .ui-tab-btns {font-size:16px;}
+.main-tab.search .ui-tab-btn.selected {border:none; background-color:#EC008C;}
+.main-tab.search .ui-tab-pnls h3 {color:#fff;}
+
+
+/* input text */
+
+.ui-input-txt {position:relative;}
+.ui-input-txt > input {display:block; width:100%; height:48px; padding: 0 24px; border:1px solid #BFC0C5; border-radius:8px; font-size:14px; color:#73737A; outline:0;transition:all .2s;}
+.ui-input-txt > input:focus {border-color:#EC008C;} 
+.btn-del,
+.btn-search {position:absolute; top:50%; right:0; transform: translateY(-50%);}
+.btn-del:after,
+.btn-search:after {content:''; position:absolute; top:50%; right:14px; background:url(/kiam/pcWeb/resources/images/common/ico_comm.png)  no-repeat; transform: translateY(-50%)}
+.btn-del {display:none; width:40px; height:40px;}
+.btn-del::after {width:24px; height:24px;  background-position:-330px -40px;}
+.btn-search::after {width:16px; height:16px; background-position:-360px 0; opacity:0.5;} 
+
+.ui-input-txt .inp.active + .btn-del {display:block;}
+.ui-input-txt > [readonly],
+.ui-input-txt > [disabled],
+.ui-input-txt > [readonly]:focus,
+.ui-input-txt > [disabled]:focus {border-color:#B9BBC6; background:#DFE0E2; color: #B9BBC6;}
+
+.ui-input-txt.error > input {border-color:#F2303C; color: #222;}
+.ui-drop-input .ui-input-txt.error > input:focus {border-color:#F2303C; color: #222;}
+
+.ui-drop-input {display:flex; position: relative;}
+.ui-drop-input .ui-select-btn,
+.ui-drop-input .ui-select.on .ui-select-btn  {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
+.ui-drop-input .inp { border-left:none; border-top-left-radius:0; border-bottom-left-radius:0;}
+.ui-drop-input .ui-input-txt::before {content:''; display:block; position:absolute; width:1px; height:16px; margin-top:16px; background-color:#B9BBC6;}
+.ui-drop-input .ui-input-txt > input:focus  {border-color:#BFC0C5;}
+.ui-drop-input .ui-input-txt > input:focus + .btn-search {opacity:1;}
+.ui-drop-input .ui-select.on + .ui-input-txt .inp {border-color:#EC008C;}
+.ui-drop-input .ui-select.on + .ui-input-txt .btn-search {opacity:1;}
+.ui-drop-input .ui-select-btn span {width:calc(100% - 15px);}
+
+
+/* 자산운용 sub */
+/* .fund-info-tab .ui-tab-pnls {padding:80px 0;}
+.ui-tab-pnls .ui-tab-cont {display:flex;}
+.ui-tab-pnls .ui-title {width:306px}
+.ui-tab-pnls .ui-title h3 {color:#222; font-size:24px; line-height:36px; font-weight:700;}
+.ui-cont .s-tit {display:block; margin-bottom:32px; color:#1A399E; font-size:20px; line-height:30px; font-weight:600;}
+.ui-cont .des-list li {color:#73737A; font-size:16px; line-height:40px;}
+.ui-cont .des-list .num {display:inline-block; margin-right:24px; color:#EC008C; font-weight:700;}
+.video-conts {position:relative; margin-bottom:80px;}
+.video-conts .video-box {display:block; width:688px; height:420px; margin:40px 0 18px; border-radius:24px; background:#40476A;}
+.video-conts .sub-tit {display:block; color:#73737A; font-size:16px; line-height:24px; font-weight:500;}
+.video-conts .product-tit {display:block; margin:8px 0 16px; color:#222;}
+.video-conts .date-info {color:#73737A; font-size: 14px; line-height:21px;}
+.video-conts .goto {display:block; position:absolute; right:0; bottom:-12px; width:155px; background-color:#F7F8F8; border-radius:40px;}
+.video-conts .goto span {display:block; color:#222; font-size:12px; line-height:32px; font-weight:600; text-align:center; font-family: Roboto;}
+.video-conts .goto span:after {content:''; display:inline-block; position:absolute; top:50%; margin-top:-4px; border:solid #222; border-width: 0 1px 1px 0; padding:3px; transform: rotate(-45deg);}
+.ui-cont.line {display:flex; position:relative; flex-wrap: wrap; border-top:2px solid #73737a;}
+.ui-cont.line dl {padding:24px 0; width:50%; border-bottom:1px solid #dfe0e2;}
+.ui-cont.line dl:last-child {width:100%;} */
+
+

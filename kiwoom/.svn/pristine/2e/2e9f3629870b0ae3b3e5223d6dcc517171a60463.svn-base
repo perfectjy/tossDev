@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <link rel="stylesheet" href="/admin/resource/css/admin.css" type="text/css">
+    <script type="text/javascript" src="/admin/resource/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.global.js"></script>
+    <script type="text/javascript" src="/admin/resource/js/ui.common.js"></script>
+    <script type="text/javascript">
+        pageInfo = { mid: '2', sid: '3' }; 
+    </script>
+</head>
+
+<body>
+<div class="kiam-amin-wrap">
+    <header class="gnb-wrap">
+        <div>
+            <h1><a href="#"><span class="hide">키움자산운용</span></a></h1>
+            <div class="links">
+                <a href="#"><span>홈페이지 바로가기</span></a>
+                <a href="#"><span>KOSEF 바로가기</span></a>
+                <button type="button" class="logout">로그아웃</button>
+            </div> 
+        </div>
+    </header>
+    <main class="main-wrap" id="content">
+        <div class="sub-nav"></div>
+        <section class="main-conts">
+            <h2>대표 펀드관리</h2>
+            <ul class="page-nav">
+                <li><a href="#">자사 메인 관리</a></li>
+                <li class="current"><a href="#">대표 펀드 관리</a></li>
+            </ul>
+            <div class="tbl-base mgt25">
+                <table>                   
+                    <colgroup>
+                        <col style="width:300px;">
+                        <col style="width:auto;">     
+                        <col style="width:300px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">카테고리</th>
+                            <td>                               
+                                <select style="width:260px;">
+                                    <option>대표펀드</option>
+                                </select>
+                            </td>
+                            <th scope="row">최종 등록일</th>
+                            <td>2022.12.19</td>
+                        </tr>                                              
+                    </thead>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>펀드 #1</h3>
+                <p class="msg">* 최대 5개 까지 게시 가능</p>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:300px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">펀드코드/명<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area">
+                                    <input type="text" class="inp-text" style="width:480px;">
+                                    <input type="text" class="inp-text" style="width:224px;">
+                                    <button class="btn base"><span>조회</span></button>
+                                    <div class="iod-wrap">
+                                        <button class="btn plus"><span class="hide">추가</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>  
+                        <!-- <tr>
+                            <th scope="row">Flag 노출<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area multi">
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0101" name="" checked>
+                                        <label for="flag0101" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0102" name="" >
+                                        <label for="flag0102" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0103" name="" >
+                                        <label for="flag0103" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0104" name="" >
+                                        <label for="flag0104" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>    -->
+                        <tr>
+                            <th scope="row">펀드 특징 요약<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea"></textarea>
+                                    <p class="note">0 / 40자</p>
+                                </div>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">순서<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>                                
+                                <select>
+                                    <option>1</option>
+                                </select>                            
+                            </td> 
+                        </tr>                                             
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-title">
+                <h3>펀드 #2</h3>
+                <p class="msg">* 최대 5개 까지 게시 가능</p>
+            </div>
+            <div class="tbl-base mgt10">
+                <table>                   
+                    <colgroup> 
+                        <col style="width:300px;">
+                        <col style="width:auto;">                      
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">펀드코드/명<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area">
+                                    <input type="text" class="inp-text" style="width:480px;" disabled>
+                                    <input type="text" class="inp-text" style="width:240px;" disabled>
+                                    <button class="btn base"><span>조회</span></button>
+                                    <div class="iod-wrap">
+                                        <button class="btn plus"><span class="hide">추가</span></button>
+                                        <button class="btn minus"><span class="hide">삭제</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <th scope="row">Flag 노출<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area multi">
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0201" name="" checked>
+                                        <label for="flag0201" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0202" name="" >
+                                        <label for="flag0202" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0203" name="" >
+                                        <label for="flag0203" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                    <span class="lb-item">
+                                        <input type="checkbox" id="flag0204" name="" >
+                                        <label for="flag0204" class="lb-checkbox"><span>TDB</span></label>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row">펀드 특징 요약<span class="ico-req"><span class="hide">필수</span></span></th>
+                            <td>
+                                <div class="frm-area">
+                                    <textarea class="inp-textarea"></textarea>
+                                    <p class="note">0 / 40자</p>
+                                </div>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">순서<span class="ico-req">필수</span></th>
+                            <td>                                
+                                <select>
+                                    <option>1</option>
+
+
+                                </select>                            
+                            </td> 
+                        </tr>                                             
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl-btns">
+                <div>
+                    <button class="btn base primary"><span>저장</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright©2023 KiwoomAM. All rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>

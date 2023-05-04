@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <div class="kiam-wrap">
+        <!-- <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div> -->
+        <header class="gnb-wrap"><script type="text/javascript" src="/kiam/pcWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap fund-detail-wrap" id="content">
+            <div class="sub-head-wrap">
+                <nav class="breadcrumb bg">
+                    <ul>
+                        <li class="home"><a href="#"><span class="hide">HOME</span></a></li>
+                        <li><a href="#"><span>펀드상품</span></a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">펀드상품</a></li>
+                                    <li><a href="#">연금</a></li>
+                                    <li><a href="#">대체투자</a></li>
+                                    <li><a href="#">키움라운지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="current"><a href="#"><span>펀드상품 찾기</span></a>
+                            <div class="sub">
+                                <ul>
+                                    <li><a href="#">키움펀드맵</a></li>
+                                    <li><a href="#">펀드찾기</a></li>
+                                    <li><a href="#">추천펀드</a></li>
+                                    <li><a href="#">펀드계산기</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tag-wrap bg">
+                    <em>개인연금</em>
+                    <em>퇴직연금</em>
+                    <em class="t-bond">국내주식</em>
+                    <em class="t-high">액티브</em>
+                    <em class="t-high">자산배분</em>
+                    <em class="t-high">레버리지/인버스</em>
+                </div>
+                <h2>KOSEF 미국방어배당성장나스닥</h2>
+                <p class="fund-code">(종목코드 : 373790)</p>
+                <!-- <div class="fund-select-wrap">
+                    <div class="ui-select">
+                        <select title="펀드 타입 선택" id="uiSel1">
+                            <option value="1" selected>Class A-e (수수료선취-온라인)</option>
+                            <option value="2">Class B-e (수수료선취-온라인)</option>      
+                        </select>
+                    </div>
+                </div>    -->
+            </div>
+            <div class="contents"> 
+                <div class="fund-info-wrap">
+                    <p class="note">2022.10.07 기준</p>
+                    <dl class="summary">
+                        <div>
+                            <dt>기준가</dt>
+                            <dd>12,787.32<span class="unit">원</span></dd>
+                        </div>
+                        <div>
+                            <dt>시장가격</dt>
+                            <dd><strong class="fc-primary">12,787.32<span class="unit">원 </span></strong> </dd>
+                        </div>
+                        <div>
+                            <dt>순자산 규모</dt>
+                            <dd><strong class="fc-secondary">30<span class="unit">억</span></strong></dd>
+                        </div>
+                    </dl>                    
+                    <div class="doc-info">
+                        <strong class="title">상품별 관련 자료</strong>
+                        <div class="btns">
+                            <button type="button" class="btn-icon icon-more"><span>신탁계약서</span></button>
+                            <button type="button" class="btn-icon icon-more"><span>투자설명서</span></button>
+                            <button type="button" class="btn-icon icon-more"><span>간이투자설명서</span></button>
+                            <button type="button" class="btn-icon icon-more"><span>FACT SHEET</span></button>
+                        </div>                       
+                    </div>
+                </div>
+                <!-- <div class="fund-chk-cal">
+                    만약
+                    <button><span>수익률 계산하기</span></button>
+                </div> -->
+                <div class="fund-info-tab">
+                    <div class="ui-tab" data-id="fundInfoTab">
+                        <div class="ui-tab-btns">
+                            <button type="button" data-tab="0" class="ui-tab-btn"><span>상품정보</span></button>
+                            <button type="button" data-tab="1" class="ui-tab-btn"><span>수익률</span></button>
+                            <button type="button" data-tab="2" class="ui-tab-btn"><span>자산구성</span></button>
+                        </div>
+                        <div class="ui-tab-pnls">
+                            <section class="ui-tab-pnl" data-tab="0">
+                                <h3>상품정보</h3>
+                            </section>
+                            <section class="ui-tab-pnl" data-tab="1">
+                                <h3>수익률</h3>
+                            </section>
+                            <section class="ui-tab-pnl" data-tab="2">
+                                <h3>자산구성</h3>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </main>
+        <footer class="foot-wrap"><script type="text/javascript" src="/kiam/pcWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <script>
+        (() => {
+            'use strict';	
+
+            document.addEventListener("DOMContentLoaded", function(){
+
+                KAUI.tab.init({ id:'fundInfoTab', current:0 });   
+
+            });	
+        })();
+      
+         
+    </script>
+
+</body>
+</html>

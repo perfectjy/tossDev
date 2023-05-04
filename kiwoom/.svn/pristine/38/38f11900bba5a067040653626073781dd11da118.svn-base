@@ -1,0 +1,64 @@
+/* mo button sticky*/
+.btn-area{ display: flex; flex-direction: row; flex-wrap: nowrap; }
+.btn-area.sticky{ position: fixed; left: 0; right: 0; bottom: 0; margin: 0; z-index: 99; }
+.btn-area.sticky [class^=btn-mo-] { flex-grow:1; width: 50%; min-width: auto; min-height: 64px; font-size: 16px; font-weight: 600; }
+.btn-area.sticky .btn-mo-agree{ color: #FFF; background-color: #1A399E;}
+.btn-area.sticky .btn-mo-agree:active{ background-color: #1D3480; }
+.btn-area.sticky .btn-mo-cancel{ color: #B9BBC6; border-top: 1px solid #DFE0E2; background-color: #FFF;}
+.btn-area.sticky .btn-mo-cancel:active{ color: #73737A; }
+
+/*buttons*/
+.btn { width: 100%; line-height: inherit !important; }/*차후지움*/
+.btn { display: inline-flex; justify-content: center; align-items: center; min-width: 100%; min-height: 48px; padding: 0 40px; font-size: 16px; border-radius: 32px; background-color:#FFF; text-align: center;}
+.btn:disabled { color: #B9BBC6 !important; border: 1px solid #DFE0E2 !important; background-color: #DFE0E2 !important; cursor: default; }
+.btn:disabled:active { color: #B9BBC6; border: 1px solid #DFE0E2; background-color: #DFE0E2; }
+.btn.primary { color: #EC008C; font-weight: 600; border: 1px solid #EC008C; background-color: #FFF;}
+.btn.primary:active { color: #FFF; background-color: #EC008C; }
+.btn.secondary { color: #222; border: 1px solid #222; }
+.btn.secondary:active { background-color: #F7F8F8; }
+.btn.tertiary { color: #9D9DA5; border: 1px solid #9D9DA5;}
+.btn.tertiary:active { background-color: #F7F8F8; }
+.btn.fill { color: #FFF; background-color: #EC008C;}
+.btn.fill:active { background-color: #C02882; }
+.btn.lg { min-width: 200px; min-height: 56px; font-size: 20px; }
+
+/*more button*/
+.btn-more{ width: 100%; background-color: #FFF;}
+.btn-more > span{ display: inline-flex; color: #9D9DA5; font-size: 14px; font-weight: 500; padding: 16px 0;}
+.btn-more > span .show{ display: inline-block; position: relative; width: 16px; height: 16px; margin-left: 4px;}
+.btn-more > span .show::before, 
+.btn-more > span .show::after{ content: ""; display: block; position: absolute; width: 7px; height: 1px; background: #B9BBC6; }
+.btn-more > span .show::before{ transform: rotate(45deg); top: 7px; left: 1px;}
+.btn-more > span .show::after{ transform: rotate(-45deg); top: 7px; left: 6px;}
+.btn-more:active{ background-color: #F7F8F8; }
+.btn-more:active > span { color: #222; opacity: 1;}
+.btn-more:active > span .show::before,
+.btn-more:active > span .show::after{ background-color: #222222;}
+
+/*icon button*/
+.btn-icon{ min-width: 92px; min-height: 40px; padding: 0 24px; border: 1px solid #222; border-radius: 40px;}
+.btn-icon span{ display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight:500;}
+.btn-icon span::after{ content: ''; display: inline-block; width: 16px; height: 16px; margin-left: 4px; background: url('../images/common/ico_comm.png') -120px 0 no-repeat; background-size: 500px 300px;}
+
+/*KOM02010100M*/
+.kosef-btn-tab{ margin: 24px 24px 0 24px;}
+.kosef-btn-tab .scroll-list{ display: flex;  margin: 0 -24px 0 -24px; padding: 0 24px; overflow: hidden; overflow-x: auto; webkit-overflow-scrolling: touch; white-space: nowrap; }
+.kosef-btn-tab .scroll-list::-webkit-scrollbar {display:none;}
+.kosef-tab-item{display: inline-flex;}
+.kosef-tab-item:not(:first-child){ margin-left: 10px; }
+.kosef-tab-item .tab-ckb{ display: flex; justify-content: center; align-items: center; flex-direction: column; width: 80px; height: 80px; border-radius: 8px; border: 1px solid #DFE0E2; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04); box-sizing: border-box; background-color: #FFF; cursor: pointer;}
+.kosef-tab-item .tab-ckb em{ display: flex; font-size: 12px; font-weight: 600; margin-top: 12px;}
+.kosef-tab-item .tab-ckb span{ width: 32px; height: 32px; background-position-x: center; background-repeat: no-repeat;}
+.kosef-tab-item .tab-ckb .on{ display: none; }
+.kosef-tab-item .tab-ckb:hover{ color: #1A399E; border: 1px solid #1A399E; box-sizing: border-box;}
+.kosef-tab-item input:checked + label{ color: #FFF; background: linear-gradient(114.62deg, #394DE4 6.07%, #953DEE 96.44%); box-shadow: 0px 2px 4px rgba(26, 57, 158, 0.16); }
+.kosef-tab-item input:checked + label span{display: none;}
+.kosef-tab-item input:checked + label span.on{display: block;}
+.kosef-tab-item input:checked:hover + label{ color: #FFF !important; border: 1px solid #394DE4; box-sizing: border-box; }
+
+
+.txt-list{ text-align: left; word-break: keep-all; display: block; }
+
+
+
+.tbl-nodate{ font-size: 14px; font-weight: 500; padding: 152px 0; text-align: center;}

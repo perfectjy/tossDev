@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kosef/moWeb/resources/pub_include/head.js"></script><!-- // Pub Include : head-->
+    <script type="text/javascript">
+        pageInfo = { title:'', prev:true };
+    </script>
+</head>
+<body>
+    <div class="kosef-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kosef/moWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap" id="content">
+            <div class="sub-head-wrap">                
+                <strong class="title nobg">KOSEF의 ETF 상품 정보를<br> 확인하실 수 있습니다.</strong>
+                <div class="find-fund mgt20">
+                    <div class="sch-top ui-input-txt">
+                        <input type="text" class="inp-base" data-clear="true" placeholder="상품명을 입력하세요" title="상품명 입력">
+                        <button class="btn-sch"><span class="hide">상품 검색</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- kosef tab -->
+            <div class="kosef-btn-tab">
+                <div class="scroll-list">
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab01">
+                        <label for="btn-tab01" class="tab-ckb">
+                            <!-- 0313수정반영:: 전체적으로 이미지 경로 및 이미지 파일명이 수정되었습니다. -->
+                            <span style="background-image: url(../../moWeb/resources/images/dummy/@icon_tab01.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected01.png);"></span>
+                            <em>국내주식</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab02">
+                        <label for="btn-tab02" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab02.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected02.png);"></span>
+                            <em>해외주식</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab03">
+                        <label for="btn-tab03" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab03.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected03.png);"></span>
+                            <em>통화</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab04">
+                        <label for="btn-tab04" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab04.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected04.png);"></span>
+                            <em>혼합</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab05">
+                        <label for="btn-tab05" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab05.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected05.png);"></span>
+                            <em>리츠</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab06">
+                        <label for="btn-tab06" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab06.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected06.png);"></span>
+                            <em>국내채권</em>
+                        </label>
+                    </span>
+                    <span class="kosef-tab-item">
+                        <input type="checkbox" name="search" id="btn-tab07">
+                        <label for="btn-tab07" class="tab-ckb">
+                            <span style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab07.png);"></span>
+                            <span class="on" style="background-image: url(../../pcWeb/resources/images/dummy/@icon_tab_selected07.png);"></span>
+                            <em>해외채권</em>
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <hr class="sub-line">
+            <!--// kosef tab -->
+            <!-- 결과가 있을때 -->
+            <div class="goods-sch-list">
+                <div class="list-option">
+                    <div class="tab-tog">                        
+                        <span class="lb-txts">연금투자가능</span>
+                        <span class="lb-item sort-chk">
+                            <input type="checkbox" name="annSort" id="annSort">
+                            <label for="annSort" class="tab-chkbox"><span class="hide">전체</span></label>
+                        </span>                        
+                    </div>
+                    <div class="ui-select">
+                        <select title="수익률 날짜 선택">
+                            <option>3개월 수익률</option>
+                            <option selected="">3개월 수익률</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="list-tit">
+                    <strong>총 <span class="fc-primary">146</span>건</strong>
+                    <p>2022.10.07 기준</p>
+                </div>
+                <div class="list-item">
+                    <a href="#">
+                        <span class="tag-wrap">
+                            <em class="t-local">개인연금</em>
+                            <em class="t-bond">퇴직연금</em>
+                            <em class="t-high">국내주식</em>
+                        </span>
+                        <strong class="tit">KOSEF 200 (069660)</strong>
+                        <span class="info">
+                            <em>기준가 <b>32,127.82원</b></em>
+                            <em>순자산 <b>154억원</b></em>
+                            <em>설정일 <b>2002.10.11</b></em>
+                        </span>
+                        <span class="rate">
+                            <span class="points txt-drop"><em>10.86</em></span>
+                            <span class="txts">3개월 수익률(%)</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="#">
+                        <span class="tag-wrap">
+                            <em class="t-local">개인연금</em>
+                            <em class="t-bond">퇴직연금</em>
+                            <em class="t-bond">해외연금</em>
+                            <em class="t-high">액티브</em>
+                            <em class="t-high">자산배분</em>
+                            <em class="t-high">레버리지/인버스</em>
+                        </span>
+                        <strong class="tit">KOSEF 200 (069660)</strong>
+                        <span class="info">
+                            <em>기준가 <b>32,127.82원</b></em>
+                            <em>순자산 <b>154억원</b></em>
+                            <em>설정일 <b>2002.10.11</b></em>
+                        </span>
+                        <span class="rate">
+                            <span class="points txt-up"><em>10.86</em></span>
+                            <span class="txts">3개월 수익률(%)</span>
+                        </span>
+                    </a>
+                </div>
+                <!-- btn-more -->
+                <button type="button" class="btn-more"><span>더보기 (10/84)</span></button>
+                <!--// btn-more -->
+            </div>
+            <!-- //결과가 있을때 -->
+            <!-- 02.28기획 수정반영::no data case 추가-->
+            <div class="result-wrap">
+                <p class="no-data no-line"><strong>검색된 결과가 없습니다.</strong></p>
+            </div>
+            <!-- // no data case -->
+        </main>
+        <!-- 0315수정반영:: foot-wrap 추가 -->
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kosef/moWeb/pub_include/footer.js"></script></footer>
+    </div>
+    <script>
+            KAUI.tab.init({ id:'scroll-tab01', current:0 });
+    </script>
+</body>
+</html>

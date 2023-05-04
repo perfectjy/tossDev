@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/moWeb/resources/pub_include/head.js"></script><!-- // Pub Include : head-->
+    <script type="text/javascript">
+        pageInfo = { title:'로딩중..', prev:true };
+    </script>
+</head>
+<body>
+    <!-- <div class="ui-loading" style="opacity: 1;">
+        <div class="ui-loading-wrap">
+            <div class="ui-loading-item">
+                <div class="dot-spin"></div>
+            </div>
+        </div>       
+    </div> -->
+    <div class="kiam-wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a>  
+        </div>
+        <header class="gnb-wrap" id="header"><script type="text/javascript" src="/kiam/moWeb/pub_include/header.js"></script></header>
+        <main class="sub-wrap" id="content">            
+            <div class="contents">                  
+                <h2 class="h4">로딩</h2>
+                <button type="button" class="btn base" 
+                    onclick="KAUI.loading.show();"><span>로딩호출</span></button> 
+            </div>
+        </main>
+        <footer class="foot-wrap" id="footer"><script type="text/javascript" src="/kosef/moWeb/pub_include/footer.js"></script></footer>
+    </div>   
+    <script>
+        (() => {
+            'use strict';  
+            // 로딩닫기
+            //KAUI.loading.hide();
+        })();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,755 @@
+@charset "utf-8";
+/* layout - sitemap */
+.ui-modal-wrap.site-map { padding:0; }
+.ui-modal-wrap.site-map .ui-modal-header { text-align:center; padding-top:120px; }
+.ui-modal-wrap.site-map .ui-modal-header h1 { font-size:48px; line-height:57px; font-weight:700;  }
+.ui-modal-wrap.site-map .ui-modal-header p { margin-top:15px; color:#74757e; font-size:20px; line-height:30px; }
+.ui-modal-wrap.site-map .ui-modal-header .icon-close { width:120px; height:120px; background:#1A399E;  }
+.ui-modal-wrap.site-map .ui-modal-header .icon-close:before { display:none; }
+.ui-modal-wrap.site-map .ui-modal-header .icon-close:after { content:''; width:48px; height:48px; top:50%; left:50%; right:inherit; transform: translate(-50%, -50%); background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -540px -330px; }
+
+.sitemap-wrap { position:relative; width:100%; margin-top:50px; min-width:1280px; }
+.sitemap-wrap:after { content:''; position:absolute; top:90px; left:0; right:0; background:#222; height:1px; }
+.sitemap-wrap .inner { position:relative; width:1280px; margin:0 auto; }
+.sitemap-wrap .inner:after { content:''; display:block; clear:both; }
+.sitemap-wrap .inner > div { float:left; width:25%; padding:0 20px 0 20px; text-align: center; }
+.sitemap-wrap .inner > div h2 { color:#EC008C; font-weight:700; font-size:32px; line-height:42px; padding-bottom:97px;  }
+.sitemap-wrap .inner .page-eng { display:block; position:absolute; right:105px; bottom:-112px; }
+.sitemap-wrap .inner .page-eng span { font-size:24px; line-height: 36px; font-weight: 700; }
+.sitemap-wrap .inner .page-eng span::before { content:''; position:absolute; left:-36px; top:7px; width:22px; height:22px; background:url(/kosef/pcWeb/resources/images/icon_globe.png)no-repeat center; }
+.sitemap-wrap .inner .page-eng span::after { content:''; position:absolute; right:-29px; top:9px; width:16px; height:16px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) -140px 0; }
+
+.sitemap-wrap .sm-menu > li { margin-top:24px; }
+.sitemap-wrap .sm-menu > li:first-child { margin-top:0; }
+.sitemap-wrap .sm-menu > li > a { line-height:24px; }
+.sitemap-wrap .sm-menu > li > a:hover { font-weight:700; color:#EC008C;  }
+.sitemap-wrap .sm-menu > li > ul > li { margin-top:12px; }
+.sitemap-wrap .sm-menu > li > ul > li > a { position:relative; padding-left:8px; font-size:14px; line-height:21px; color:#74757e; }
+.sitemap-wrap .sm-menu > li > ul > li > a:before { content:''; position:absolute; top:3px; left:0; width:4px; height:4px; background:#EC008C; border-radius:50%;   }
+.sitemap-wrap .sm-menu > li > ul > li > a:hover { color:#222; font-weight:700; }
+
+
+/* kosef */
+.sub-wrap.sub-etf-wrap .sub-head-wrap { height:401px; background:url(/kosef/pcWeb/resources/images/bg_etf.png) repeat-x center top; background-size:auto 401px; }
+.sub-wrap.fund-kosef-wrap { position:relative; }
+.sub-wrap.fund-kosef-wrap .sub-head-wrap {height:512px; background:url(/kosef/pcWeb/resources/images/bg_fund_detail.png) no-repeat center top; }
+/* .sub-wrap.fund-kosef-wrap:before { content:''; position:absolute; top:0; left:0; right:0; height:512px; background:linear-gradient(100.59deg, #1A399E 62.77%, #4D38CE 103.34%); } */
+/* .sub-wrap.fund-kosef-wrap:before { content:''; position:absolute; top:0; left:0; right:0; height:512px; background:#fff; } */
+.sub-wrap.fund-kosef-wrap .head-group h2 { font-size:40px; line-height:56px; color:#fff; max-width:810px; word-break:break-word; margin:0 auto; }
+.sub-wrap.fund-kosef-wrap .head-group .fund-code { color:#B9BBC6; font-size:20px; line-height:30px; margin-top:8px; }
+.head-group h2 { position:relative; display:inline-block; font-size:40px; line-height:56px; color:#fff; max-width:810px; word-break:break-word; }
+.head-group.sns h2 {padding-right:55px;}
+.head-group { position:relative; padding-right:50px; }
+.head-group .share-sns { position:absolute; top:5px; right:-9px; }
+.head-group .share-sns .btn-shareSns { width:48px; height:48px; background-position:-390px -220px; }
+.head-group .share-sns .tip-sns { top:65px; }
+/* 01. fund */
+
+.sub-wrap.fund .sub-head-wrap { background:#F5F5F5; }
+.sub-wrap.fund-detail-wrap { position:relative; }
+.find-fund { width:790px; margin:0 auto; padding:32px 0 0 0;  } 
+.find-fund .sch-top { position:relative; height:72px; padding:0 40px; border:1px solid #1A399E; border-radius:100px; background: #FFF;}
+.find-fund .sch-top input { width:80%; height:100%; font-size:20px; line-height:30px; font-weight:700; background:transparent; border:0; color:#1A399E; padding:0; }
+.find-fund .sch-top input::placeholder { color: #B9BBC6; font-weight: 500; }
+.find-fund .sch-top .btn-sch { position:absolute; top:50%; right:24px; margin-top:-20px; width:40px; height:40px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -260px -70px;  }
+.find-fund .sch-tips { margin-top:30px; text-align:center; display:flex; align-items:center; justify-content:center; }
+.find-fund .sch-tips dt { margin-right:20px; color:#74757E; }
+.find-fund .ui-input-txt .btn-clear { right:80px; }
+
+.find-fund .sch-tips button { display:inline-block; height:40px; margin:0 4px; padding:0 24px; background:#fff; border:1px solid #B9BBC6; font-size:14px; border-radius:100px;  }
+.find-fund .sch-tips button:hover { border-color:#EC008C; color:#EC008C; }
+.find-fund .sch-tips button.active { background:#EC008C; border-color:#EC008C; color:#fff;  }
+
+.fund-find-wrap { position:relative; margin-top:-100px; padding:55px 38px 143px 48px; border-radius:24px; box-shadow:0 6px 12px 0 rgb(0 0 0 / 5%); background:#fff; }
+.fund-find-wrap .find-more { display:none; margin-top:55px; padding-top:55px; border-top:1px dashed #ccc;  }
+.fund-find-wrap.on .find-more { display:block; }
+.fund-find-wrap .find-items:first-child { margin-top:0; }
+.fund-find-wrap .find-items { margin-top:32px; display:flex; align-items: center; min-height:56px; }
+.fund-find-wrap .find-items > strong { display:inline-block; width:105px; font-size:16px; color:#666; font-weight:400;  }
+.fund-find-wrap .find-items > div { width:calc(100% - 105px); font-size:0; line-height:0;  }
+.fund-find-wrap .find-items .lb-radio { width:118px; height:56px; font-size:16px; border:1px solid #ddd; text-align:center; border-radius:8px; padding:0;  }
+.fund-find-wrap .find-items .lb-radio span { display:inline-block; width:100%; }
+.fund-find-wrap .find-items .lb-radio:before,
+.fund-find-wrap .find-items .lb-radio:after { display:none; }
+.fund-find-wrap .find-items input:checked + .lb-radio { color:#00246B; background:rgba(0, 36, 107, 0.1);  border-color:#00246B;  }
+.fund-find-wrap .find-bar { position:absolute; display:flex; width:100%; left:0; bottom:0; padding:0 48px; border-top:1px solid #eee; justify-content: space-between; align-items: center; height:88px; }
+.fund-find-wrap .find-bar button { font-size:16px; color:#74757E;}
+.fund-find-wrap .find-bar .btn-result { margin-left:32px; color:#fff; background:#EC008C; height:64px; border-radius:32px; padding:0 40px; font-weight:600; }
+
+.fund-info-tab .ui-tab-btns { border-bottom:1px solid #DFE0E2; }
+.fund-info-tab .ui-tab-btns:after { content:''; display:block; clear:both; }
+.fund-info-tab .ui-tab-btn { float:left; width:33.333%; }
+.fund-info-tab .ui-tab-btn { display:block; height:64px; font-size:20px; }
+.fund-info-tab .ui-tab-btn.selected { font-weight:700;  }
+
+.fund-items .item { padding-left:20px; }
+.fund-items .item-title { display:block; margin:16px 0; font-weight:600; font-size:20px; color:#222;}
+.fund-items .item-date { font-weight: 400; font-size:14px; color:#74757E; }
+
+.fund-info-wrap { position:relative; margin-top:-170px; padding:55px 16px 16px 16px; border-radius:8px; box-shadow:0 6px 12px 0 rgb(0 0 0 / 5%); background:#fff; }
+.fund-info-wrap .summary { display:flex; }
+.fund-info-wrap .summary div { position:relative; text-align:center; flex:1 1; }
+.fund-info-wrap .summary div:first-child:before { display:none; }
+.fund-info-wrap .summary div:before { content:''; display:block; position:absolute; top:0; bottom:0; width:1px; background:#DFE0E2; }
+.fund-info-wrap .summary div dt { color:#222; }
+.fund-info-wrap .summary div dd { font-weight:700; font-size:32px; line-height: 42px; margin-top:8px; }
+.fund-info-wrap .summary div dd .unit { position:relative; left:2px; top: -3px; font-size:24px; font-weight: 600; }
+.fund-info-wrap .summary div dd .ico-drop { font-size:16px; }
+.fund-info-wrap.kiam { padding:55px 55px 0 55px;  }
+.fund-info-wrap.kiam .summary dd { font-size:24px; }
+.fund-info-wrap.kiam .summary div:before { display:none; }
+.fund-info-wrap.kiam .doc-info { width:calc(100% + 110px); margin:60px -55px 0; padding:24px 55px; display:flex; justify-content:space-between; background:#fff; border-top:1px solid #DFE0E2; border-radius:0;  }
+.fund-info-wrap.kiam .doc-info .ui-select { width:320px; }
+.fund-info-wrap .note { position:absolute; top:-30px; right:0; color:#DFE0E2; font-size:14px; }
+
+.fund-select-wrap { width:480px; margin:20px auto 0 auto; }
+.fund-select-wrap .ui-select { height:64px; border-bottom:1px solid #B9BBC6;  }
+.fund-select-wrap .ui-select:hover .ui-select-btn { color:#fff; }
+.fund-select-wrap .ui-select .ui-select-btn { height:64px; font-size:20px; padding:0 4px; border:0; color:#B9BBC6; }
+.fund-select-wrap .ui-select .ui-select-opt { font-size:20px; }
+.fund-select-wrap .ui-select.on .ui-select-wrap { border:0; }
+.fund-select-wrap .ui-select.on .ui-select-btn { color:#fff; }
+.fund-select-wrap .ui-select.on .ui-select-btn:after { background-position-x:-420px; }
+.fund-select-wrap .ui-select-wrap { box-shadow:0px 4px 4px rgba(0, 0, 0, 0.1);  }
+.fund-select-wrap .ui-select-wrap.bottom { top:74px; }
+.fund-select-wrap .ui-select .ui-select-btn:after { opacity:1; width:24px; height:24px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -450px -40px; }
+.fund-select-wrap .ui-select .ui-select-opt { height:56px; }
+.fund-select-wrap .ui-select .ui-select-wrap { padding:16px 0; }
+
+.fund-compare { position:fixed; bottom:-400px; left:0; right:0; background:#1A399E; z-index:5; transition:all 800ms; border-radius:24px 0 0 0; z-index:100; }
+/* .fund-compare.fixed { bottom:0; } */
+.fund-compare .summary { position:relative; width:1280px; margin:0 auto; }
+.fund-compare .detail { position:relative; width:calc(100% - 32px); background:#fff; padding:40px 0 0 0;  border-radius:16px 16px 0 0; margin:0 16px; }
+.fund-compare .summary { display:flex; align-items:center; height:96px; color:#fff;  }
+.fund-compare .summary .title { position:relative; margin-right:20px; padding-left:30px; color:#fff; font-size:20px; font-weight:700;  }
+.fund-compare .summary p { font-size:16px; }
+.fund-compare .summary .title:before { content:''; position:absolute; top:-2px; left:0; width:24px; height:24px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -210px -80px;  }
+.fund-compare .nav { position:absolute; top:50%; right:0; margin-top:-32px;  display:flex; align-items:center; }
+.fund-compare .nav span { letter-spacing:3px; }
+.fund-compare .nav span em { color:#EC008C; }
+.fund-compare .nav .btn-compare { display:inline-block; width:64px; height:64px; margin-left:20px;  background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -160px -130px; }
+.fund-compare .detail { display:none; }
+.fund-compare .detail .wrap { width:1280px; margin:0 auto; }
+/* .fund-compare.active { bottom:0; top:50px; } */
+.fund-compare.active .detail { display:none;  }
+.fund-compare .subfund-list { display:flex; align-items:center; justify-content:space-between; }
+.fund-compare .compare { margin-top:25px;  }
+.fund-detail-wrap .fund-code { margin-top:15px; font-size:24px; line-height:36px; color:#B9BBC6; text-align:center; }
+.fund-detail-wrap .fund-info-wrap { position:relative; margin-top:-100px; }
+.fund-detail-wrap .fund-info-wrap .note { position:absolute; top:-30px; right:5px; color:#DFE0E2; font-weight:400; }
+.fund-detail-wrap .ui-select-btn:after { opacity:0.5; }
+
+.fund-info-wrap { margin: -280px 0 96px; }
+.fund-info-wrap .doc-info { width:100%; display:flex; align-items:center; justify-content:center; margin-top:48px; background:#F7F8F8; padding:24px; border-radius:8px; }
+.fund-info-wrap .doc-info .title { color:#74757E; font-weight:500; margin-right:40px;  }
+.fund-info-wrap .doc-info .btns { line-height:0; font-size:0;  }
+.fund-info-wrap .doc-info .btn-icon { margin:0 8px; min-width:160px; font-weight: 600; }
+.fund-info-wrap .doc-info .btn-icon:hover{  background-color: #F7F8F8;}
+
+.select-group { display:flex; background:#fff; }
+.select-group .ui-select-btn { padding-right:0; border-right:0; border-radius:8px 0 0 8px; }
+.select-group .ui-select.on .ui-select-btn { border-color:#EC008C; border-radius:8px 0 0 0; background:transparent; }
+.select-group .ui-select.on + button { border-color:#EC008C; }
+.select-group > button { padding:0 20px; min-width:95px; background:#F7F8F8; color:#74757e; font-size:14px; border-radius:0 8px 8px 0; border:1px solid #BFC0C5; border-width:1px 1px 1px 0; }
+.select-group .ui-select-wrap.bottom { top:47px;}
+
+.fund-check { background:#F1F7FE; border-radius:24px; padding:44px 72px 0 72px; }
+.fund-check .ui-acco-tit { display:inherit; background:transparent; border:0;  }
+.fund-check .summary:before { content:''; display:inline-block; margin-right:20px; vertical-align:middle; width:80px; height:40px; background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) no-repeat 0 -30px; }
+.fund-check .summary { text-align:center; padding-bottom:44px;  }
+.fund-check .summary > span { display:inline-block; vertical-align:middle; line-height:48px; font-size:20px; margin:0 5px;  }
+.fund-check .summary .ui-select { min-width:120px; width:initial; margin:0 5px; vertical-align:middle; }
+.fund-check .summary .ui-select .ui-select-btn { border-color:#222; border-width:0 0 2px 0; border-radius:0; padding:0; font-size:24px; font-weight:700; color:#222;  }
+.fund-check .summary .btn { width:240px; margin-left:40px;}
+.fund-check .summary .ipt { border-bottom:2px solid #222; }
+.fund-check .summary .ipt .inp-text { border:0; background:transparent; width:95px; font-size:24px; font-weight:bold; color:#222; padding:12px 5px;  }
+.fund-check .result { display:none; border-top:1px solid #fff; }
+.fund-check .result dl { display:flex;  }
+.fund-check .result div { position: relative; text-align: center; flex: 1 1; padding:40px 0; }
+.fund-check .result dt { line-height:24px; font-size:16px; }
+.fund-check .result dd { margin-top:8px; font-size:32px; line-height:42px; font-weight:700; }
+.fund-check.ui-acco .ui-acco-pnl-wrap { padding:0; }
+.fund-check.ui-acco .ui-acco-pnl { background:transparent; padding:0;  }
+.fund-check.ui-acco .ui-acco-btn { padding:0; }
+.fund-check.on .result { display:block; }
+
+.sub-graph.no-line { border:0; }
+
+.fund-sub-bnr { position:relative; margin-top:80px; background:#4956D0; padding:20px 32px; min-height:96px; border-radius:16px; }
+.fund-sub-bnr .txts, 
+.fund-sub-bnr .title { display:inline-block; line-height:56px; color:#DFE0E2;    }
+.fund-sub-bnr .title { position:relative; padding:0 25px 0 80px;  font-weight:700px; font-size:20px; color:#fff; }
+.fund-sub-bnr .title:before { content:''; position:absolute; top:0; left:0; width:56px; height:56px; background:#fff; border-radius:8px;   }
+.fund-sub-bnr .btn { position:absolute; top:50%; right:40px; height:40px; min-height:initial; min-width:initial; color:#fff; font-size:14px; padding:0 16px;  margin-top:-20px; background: rgba(146, 176, 255, 0.16);  border-radius: 8px; }
+.fund-sub-bnr .btn span { position:relative; padding-right:20px; }
+.fund-sub-bnr .btn span:after { content:''; position:absolute; top:0; right:0; width:16px; height:16px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -460px 0; }
+
+
+
+/************************** contents_y **************************/
+/** KOP03010000M **/
+.ui-tooltip-box{display:inline-block; margin-left:5px; vertical-align:text-top;}
+
+/* .sch-wrap .ui-select-btn {padding:0 8px 0 24px;} */
+/* .sch-wrap .btn-icon.box{ width:256px; margin-top:16px; } */
+.sch-wrap { display:flex; align-items: center; justify-content: center; gap: 0 16px; }
+.sch-wrap .sch-item { width: 240px;}
+
+
+
+/************************** contents_g **************************/
+/* KOP02010200M */
+/* .fund-detail { position:relative; padding:80px 0 0 305px; } */
+/* .fund-detail .h3 { position:absolute; top:80px; left:0; margin:0; } */
+/* .fund-detail .info-list:before { content:''; position:absolute; left:0; bottom:0; width:100%; background:#DFE0E2; height:1px; } */
+/* .fund-detail .info-list { display:block; position:relative; } */
+/* .fund-detail .info-list:after { content:''; display:block; clear:both;  } */
+/* .fund-detail .info-list > div { float:left; width:50%; padding:24px 16px 24px 16px; border-bottom:1px solid #DFE0E2;   } */
+/* .fund-detail dt { font-size: 14px;line-height: 21px; font-weight: 400;  color: #74757e; margin-bottom: 8px; } */
+/* .fund-detail dd { font-size: 16px; font-weight: 600; line-height: 24px; color: #222; } */
+/* .fund-detail .info-list.flex { display:flex; } */
+/* .fund-detail .info-list.flex > div { position:relative; flex:1 1; text-align:center; } */
+/* .fund-detail .info-list.flex .sum:after { content:'+';  position:absolute; top:50%; right:-5px; margin-top:-12px; font-size:28px; font-weight:300;  } */
+/* .fund-detail .btn-group { display:flex; justify-content: space-between; } */
+/* .fund-detail .btn-group.fund .btn { width:211px; } */
+
+
+.fund-detail { position:relative; padding:80px 0 0 305px; }
+.fund-detail .h3 { position:absolute; top:80px; left:0; margin:0; color:#222; font-size:24px; font-weight: 700; }
+.fund-detail .h3 + .sub-tit-box { position: absolute; top: 120px; left: 0; }
+.fund-detail .contents-box:not(:last-child) { margin-bottom:40px; }
+.fund-detail .contents-box strong { display: block; margin-bottom:  16px; color: #1A399E; font-size: 20px; font-weight: 700;}
+.fund-detail .contents-box strong + p{ font-size: 16px; font-weight: 500; }
+.fund-detail .info-list { display:flex; justify-content: flex-start; flex-wrap: wrap; border-top: 1px solid #222; position:relative; }
+.fund-detail .info-list > div { width:50%; padding:24px 16px 24px 16px; border-bottom:1px solid #DFE0E2; }
+.fund-detail .info-list > div.full { width:100%;}
+.fund-detail .info-list dt { font-size: 14px;line-height: 21px; font-weight: 500;  color: #74757e; margin-bottom: 8px; }
+.fund-detail .info-list dd { font-size: 16px; font-weight: 600; line-height: 24px; color: #222; }
+/* .fund-detail .info-list.flex { display:flex; } */
+/* .fund-detail .info-list.flex > div { position:relative; flex:1 1; text-align:center; } */
+/* .fund-detail .info-list.flex .sum:after { content:'+';  position:absolute; top:50%; right:-5px; margin-top:-12px; font-size:28px; font-weight:300;  } */
+/* .fund-detail .btn-group { display:flex; justify-content: space-between; } */
+/* .fund-detail .btn-group.fund .btn { width:211px; } */
+
+.fund-detail-wrap .subfund-list.v1 { display:flex; justify-content:space-between; }
+.fund-detail-wrap .subfund-list.v1 .subfund-item { padding:0; }
+.fund-detail-wrap .subfund-list.v1 .subfund-item a, 
+.fund-detail-wrap .subfund-list.v1 .subfund-item a:hover { border-width:2px; }
+.fund-detail-wrap .subfund-list.v1 .subfund-item a:hover .title { color:#1A399E; }
+.fund-detail-wrap .subfund-list.v1 .subfund-item a .title { color:#222; }
+
+.dl-items { text-align: left; }
+.dl-items div dt { font-size: 14px; line-height: 21px; font-weight: 500; color:#74757e; margin-bottom: 8px; }
+.dl-items div dd { font-size: 16px; font-weight: 600; line-height: 24px; color:#222; }
+
+.ui-tab-pnls + .ui-acco { margin-top:80px; }
+
+.symbol { content: ''; display:block; width:16px; height:16px; margin:3px auto 0 auto; }
+.symbol[data-num="1"] { background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) 0 0; }
+.symbol[data-num="2"] { background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) -20px 0; }
+.symbol[data-num="3"] { background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) -40px 0; }
+.symbol[data-num="3/2"] { width:42px; background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) -60px 0; }
+.symbol[data-num="4=2-3"] { width:74px; background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) -110px 0; }
+.symbol[data-num="4/1"] { width:42px; background:url(/kosef/pcWeb/resources/images/common/ico_conts.png) -190px 0; }
+
+/* KOP03020000M */
+.sub-wrap.etf-data .sub-head-wrap { background-size:100% 100% !important; height:265px; padding:90px 0 0 0; text-align:center; background: url(/kosef/pcWeb/resources/images/bg_etf_data.jpg) 0 0 no-repeat; }
+.sub-wrap.etf-data .sub-head-wrap h2 { margin-bottom:16px;}
+.tbl + .ui-acco { margin-top:80px; }
+
+/* modal - KOP03020100P */
+.modal-info-box { position:relative; margin-bottom:32px; padding:24px 32px; background:#F7F8F8; border-radius: 8px; }
+.modal-info-box button { position:absolute; right:32px; top:50%; transform: translateY(-50%); }
+.modal-info-box .title { color:#222; font-size: 16px; line-height: 24px; font-weight: 600; }
+.modal-info-box .txt { margin-top:8px; color:#74757e; font-size:14px; line-height: 21px; font-weight: 500; }
+.product-num { color:#74757e; }
+
+.term-wrap.modal { justify-content: flex-end; margin-bottom: 16px; }
+.term-wrap.modal .tit { margin-right:0; font-size:14px; }
+.term-wrap.modal .ui-date-wrap { margin-left:12px; }
+
+.ui-modal-header h1.undot { padding-left:0; }
+.ui-modal-header h1.undot:before { content:none; }
+
+.ui-tab-btns.round {border:none;}
+.ui-tab-btns.round .ui-tab-btn { position:relative; height:40px; padding:0 24px; color:#222; font-size:14px; line-height:21px; border:1px solid #B9BBC6; border-radius:20px; background-color:#fff;}
+.ui-tab-btns.round .ui-tab-btn + .ui-tab-btn {margin-left:8px;}
+.ui-tab-btns.round .ui-tab-btn.selected,
+.ui-tab-btns.round .ui-tab-btn:focus {color:#fff; font-weight:700; background-color:#EC008C;  border-color:#EC008C;}
+.ui-tab-btns + .ui-tab-pnls {margin:24px 0 0;}
+
+
+
+/************************** contents_j **************************/
+/* tab */
+.ui-tab-wrap {font-size:0;}
+.ui-tab-list {display:flex; flex-wrap:nowrap; white-space:nowrap;  border-bottom:1px solid #DFE0E2;}
+.ui-tab-list li {position:relative; flex:1; min-width:auto;}
+.ui-tab-list li .ui-tab-btn {display:flex; width:100%; height:64px; padding:17px 24px; justify-content:center; align-items:center; text-align:center;}
+.ui-tab-list li .ui-tab-btn:hover { font-weight: 700; color:#222; }
+.ui-tab-content {margin:24px auto 0;}
+.ui-tab-list.sub {margin:-16px 0 40px; border-bottom:0;}
+.ui-tab-list.sub li {display:inline-block; flex-shrink:0; flex-grow:0; margin-right:8px; }
+.ui-tab-list.sub li .ui-tab-btn {display:block; height:40px; padding:0 24px; line-height:38px; font-size:14px; color:#222; border:1px solid #B9BBC6; background-color:#fff; border-radius:20px;}
+.ui-tab-list.sub li .ui-tab-btn::after {display:none;}
+.ui-tab-list.sub li .ui-tab-btn.selected {color:#fff; background-color:#EC008C; border:transparent;}
+
+.ui-drop-input .ui-select {flex-shrink:0; width:152px;}
+.ui-drop-input .ui-input-txt {flex-shrink:0; width:333px;}
+.ui-drop-input .inp {border-radius:0 8px 8px 0; }
+
+
+/* 키자매거진 */
+/* .sub-wrap.lounge .sub-head-wrap {height:271px; padding:88px 0 0 0; text-align:center; color:#222;  background:url(/kiam/pcWeb/resources/images/bg_lounge.png) no-repeat center top ;   border-radius:56px 0 56px 56px;} */
+/* .sub-wrap.lounge .sub-head-wrap .head-group .head-info {margin-top:16px; color:#74757e;}  */
+/* .sub-wrap.lounge .sub-head-wrap + .contents .ui-tab {margin-top:96px;} */
+.list-thumb {margin:24px 0 0; border-top:1px solid #222;}
+.list-thumb:after {content:''; display:block; clear:both;}
+.list-thumb .list-item {position:relative; float:left; width:384px; margin:32px 0 0 24px;}
+.list-thumb .list-item::after {content:''; display:block; clear:both; }
+.list-thumb .list-item a {overflow:hidden; display:block; position:relative; width:100%; height:100%; border:1px solid #dfe0e2; }
+.list-thumb .list-item a:focus,
+.list-thumb .list-item a:hover {border-color:#1A399E;}
+.list-thumb .list-item .imgs {overflow:hidden; position:relative; display:block; padding-bottom:53.645833%; height:216px; }
+.list-thumb .list-item:nth-child(3n+1) {margin-left:0;}
+.list-thumb .list-item a .imgs img {position:absolute; left:0; right:0; bottom:0; top:0; width:100%; height:100%;}
+.list-thumb .list-item .video::before {z-index:1; content:''; position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%; background-color:#222; opacity:0.2; }
+.list-thumb .list-item .imgs.video:after {z-index:10; content:''; position:absolute; top:50%; left:50%; width:48px; height:48px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -460px -70px; background-size:600px auto; transform:translate(-50%,-50%); }
+.list-thumb .list-item.event-end .tit {color:#9D9DA5;}
+.list-thumb .list-item.event-end .date {color:#9D9DA5;}
+.list-thumb .list-item.event-end a .imgs::after { content:''; position: absolute; left:0; top:0; bottom:0; right:0; background:#9D9DA4; opacity: .8; }
+/* .list-thumb .list-item.event-end a .imgs img { opacity: .4;} */
+.list-thumb .list-cont {display:block; padding:24px 32px;}
+.list-thumb .list-cont > * {display:block;}
+.list-thumb .list-cont .stxt {margin-bottom:8px; font-size:14px; line-height:21px; color:#74757e;}
+.list-thumb .list-cont .stxt .sstxt { position: relative; padding-left:16px; }
+.list-thumb .list-cont .stxt .sstxt::before { content:''; position: absolute; left:8px; top:4px; width:1px; height:8px; background: #74757E; }
+.list-thumb .list-cont .tit {overflow:hidden; height:48px; margin-bottom:29px; font-size:16px; line-height:24px; color:#222; font-weight:600;  display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; text-overflow:ellipsis; word-break: break-word;}
+.list-thumb .list-item a:focus .tit {color:#1A399E;}
+.list-thumb .list-cont .date { position:absolute; bottom:24px; left:32px; font-size:14px; line-height:21px; color:#74757e; font-weight:400;} 
+.list-thumb .list-item .d-day {position:absolute; display:block; top:0px; right:0; min-width:61px; height:40px; padding:0 16px; line-height:40px; font-size:16px; font-weight:600; background-color:#1a399e; color:#fff; text-align:center;  z-index: 9;}
+.sub-wrap.lounge .ui-tab .ui-tab-btns + .ui-tab-pnls {margin:40px auto 0;}
+
+.board-conts {border-top:1px solid #222;}
+.board-conts .board-head {position: relative; padding:24px 80px 24px 38px;}
+.board-conts .board-head .board-tit {margin-bottom:8px; color:#222; font-size:20px; line-height:30px; font-weight:600;}
+.board-conts .board-sub-tit .board-date {font-size:14px; line-height:21px; color:#74757e; font-weight:400;}
+.board-conts .board-sub-tit .writer::before {content:''; display:inline-block; width:1px; height:8px; margin:0 16px; background-color:#74757e; vertical-align:1px;}
+.board-conts .board-sub-tit .writer.unline::before {content:none;}
+.board-conts .board-sub-tit .writer.ing { color: #EC008C; }
+.board-conts .board-sub-tit .writer {display:inline-block; font-size:16px; line-height:24px; color:#74757e;}
+.board-conts .board-cont {padding:40px; border-top:1px solid #DFE0E2; border-bottom:1px solid #DFE0E2;}
+.board-conts .board-cont .imgs {display:block; width:100%; height: 600px; margin-bottom:40px; }
+/* .board-conts .board-cont .imgs.dim { background: #9D9DA4; opacity: 0.8; } */
+.board-conts .board-cont .imgs img { width:100%; height: 100%; }
+.board-conts .board-cont .board-txt {font-size:16px; line-height:24px;}
+.board-cont .file-box {margin:40px -40px -40px; padding:40px; background-color:#F2F3F5;}
+
+.board-conts.dim .board-cont .imgs { background: #9D9DA4; opacity: 0.8; }
+.board-conts.dim .board-head .board-tit,
+.board-conts.dim .board-sub-tit .writer,
+.board-conts.dim .board-cont .board-txt { color:#B9BBC6; }
+
+.file-box * {display:block;}
+.file-box .btn-file {font-size:16px; line-height:24px; color:#222;}
+.file-box .btn-file:hover {color:#1A399E;}
+.file-box .btn-file + .btn-file {margin-top:16px;}
+.file-box .btn-file span {position:relative;}
+.file-box .btn-file span::before {content:''; display:inline-block; width:24px; height:24px; margin-right:8px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -510px -40px; background-size:600px auto; vertical-align:middle;}
+.board-conts .board-prev-next > dl {display:flex; align-items:center; height:105px; border-bottom:1px solid #DFE0E2;}
+.board-conts .board-prev-next > dl dt {width:122px; padding:40px; font-size:16px; line-height:24px; color:#9D9DA5;}
+.board-conts .board-prev-next > dl dd {width:calc(100% - 122px);}
+.board-conts .board-prev-next > dl dd a {overflow:hidden; display:block; font-size:16px; line-height:24px; color:#74757e; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:1; text-overflow:ellipsis; word-break: break-word; }
+.board-conts .board-prev-next > dl.next dt {color:#74757e;}
+.board-conts .board-prev-next > dl.next dd a {color:#222;}
+
+.ui-tab-pnls .tbl-info.flex {margin:40px 0 24px 0;}
+
+
+
+/* 이벤트 */
+.board-conts .board-sub-tit {position:relative; display:flex; align-items:center;}
+.board-sub-tit .d-day {display:inline-block; /*min-width:102px;*/ height:40px; margin-left:16px; padding:0 16px; font-size:16px; line-height:40px; background-color:#1a399e; color:#fff; text-align:center; vertical-align:top;}
+.board-cont .event-win {margin:40px -40px -40px -40px; padding:40px; background-color:#F1F7FE;}
+.board-cont .event-win .tit {position:relative; display:block; margin-bottom:16px; font-size:20px; line-height:30px; color:#222; font-weight:600;}
+.board-cont .event-win .tit::before {content:''; display:inline-block; width:24px; height:24px; margin-right:4px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -540px -40px; background-size:600px auto; vertical-align:-5px;}
+.board-cont .event-win .txt {color:#222; font-size:16px; line-height:24px;}
+.board-cont .event-win .txt > span {display:block; margin-top:16px; color:#74757e;}
+.board-cont.t1 {padding:0; border-top:none;}
+.board-txt .s-tit {display:block; color: #000000;}
+
+
+
+/* 키자TV 팝업 */
+.notice-wrap dt .tit {margin-bottom:8px; font-size:16px; line-height:24px;}
+.notice-wrap dd span {display:inline-block; font-size:14px; font-weight: 400; color:#74757e;}
+.notice-wrap dd .writer::before {content:''; display:inline-block; width:1px; height:8px; margin:0 8px; background-color:#74757e; vertical-align:1px;}
+.notice-wrap dd p { font-size:14px; font-weight: 400; color:#74757e;}
+.btn.secondary.share {position:relative;}
+.btn.secondary.share::after,
+.btn.primary.more::after {content:''; display:inline-block; width:16px; height:16px; margin-left:4px; vertical-align:top; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -180px 0 ; background-size:600px auto;}
+.btn.primary.more::after {background-position-x:-380px; transform:rotate(90deg);}
+/* .btn.primary.more:hover::after {background-position-x:-400px;} */
+
+
+
+/* 버튼 추가 */
+.btn-right {margin-top:16px; text-align:right;}
+.btn-right .btn-icon + .btn-icon {margin-left:4px;}
+.btn.sub {padding:0 24px; height:48px; line-height:46px; color:#222; border:1px solid #222; border-radius:8px;}
+.btn-sns {position:absolute; right:15px; top:50%; display: inline-block; width: 48px; height: 48px; transform:translateY(-50%);}
+.btn-sns::before {position:absolute; top:50%; right:20px; display:block; content:''; width:16px; height:16px;  background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -180px 0; background-size:600px auto; transform:translateY(-50%);}
+
+/* sns */
+.ui-modal-wrap.sns {position:relative; width:298px; padding:32px 24px; border-radius:16px; border:1px solid #DFE0E2; background-color:#fff;}
+.ui-modal-wrap.sns .ui-modal-header h1 {padding-left:0; font-size:16px; line-height:24px; font-weight:700; color:#222;}
+.ui-modal-wrap.sns .ui-modal-header h1::before {display:none;}
+.ui-modal-wrap.sns .ui-modal-body {padding-top:11px;}
+.ui-modal-wrap.sns .sns-gruop {display:flex; justify-content:center;}
+.ui-modal-wrap.sns .sns-gruop a {position:relative; flex:1; display:inline-block; margin:0 12px; padding-top:48px; line-height:21px; text-align:center;}
+.ui-modal-wrap.sns .sns-gruop a:after { content:''; position:absolute; top:0; left:50%; margin-left:-20px; width:40px; height:40px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -450px -220px; background-size:600px auto;  }
+.ui-modal-wrap.sns .sns-gruop a.sns-face:after { background-position-x:-500px; }
+.ui-modal-wrap.sns .sns-gruop a.sns-url:after { background-position-x:-550px; }
+.ui-modal-wrap.sns:after {content:''; position:absolute; display:block; left:50%; top:-8px; width:0; height:0; border-bottom:8px solid #fff; border-left:6px solid transparent; border-right:6px solid transparent; transform:translateX(-50%);}
+
+.pre-txt { font-family:"Pretendard", Sans-serif; color:#222; font-size:16px; font-weight: 600; line-height: 1.5; white-space: pre-wrap; }
+
+
+
+/* faq */
+.ui-acco.faq { border-top:1px solid #222; /*border-bottom:1px solid #DFE0E2;*/}
+.ui-acco.faq .ui-acco-wrap { border-bottom: 1px solid #DFE0E2; }
+.ui-acco.faq .ui-acco-tit { min-height:80px; }
+.ui-acco.faq .ui-acco-txt { position:relative; padding:0 0 0 24px; color:#B9BBC6; font-size:20px; font-weight:700; }
+.ui-acco.faq .ui-acco-txt::before { content:'Q'; position:absolute; left:24px; top:0; width:20px; color:#1A399E; font-size:24px; font-weight: 600; }
+.ui-acco.faq .ui-acco-pnl { background:#F7F8F8; }
+.ui-acco.faq .ui-acco-pnl-wrap { position:relative; padding:32px 32px 32px 68px; line-height:24px; color:#74757E; font-weight:500; }
+.ui-acco.faq .ui-acco-pnl-wrap::before {content:"A"; position:absolute; left:24px; top:36px; width:20px; color:#EC008C; font-size:24px; font-weight: 600; }
+.ui-acco.faq .ui-acco-btn { padding:0; }
+.ui-acco.faq .ui-acco-btn span { position:relative; display:block; color:#222; font-weight: 500; padding-left:68px; }
+.ui-acco.faq .ui-acco-btn span:after { content:''; position:absolute; top:50%; right:24px; opacity:0.5; margin-top:-12px; width:24px; height:24px; background:url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -60px -40px;  }
+.ui-acco.faq .ui-acco-btn[aria-expanded=true] span:after{ opacity:1; transform: rotate(180deg);}
+.ui-acco.faq .ui-acco-btn[aria-expanded=true] span { color:#222; font-weight: 700; }
+
+
+
+/* 히어로즈 KOP05040000M */
+.sub-head-wrap.heroes { min-height:0; padding:69px 0 0 0; }
+.contents.heroes { margin: 91px 360px 0 360px; padding:0;}
+.heroes-head { position:relative; }
+.heroes-head::before {content:''; position:absolute; right:0; top:0; width:800px; height:466px; margin-right:-360px; background:linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); }
+.heroes-head h2 { position:relative; top:-25px; color:#222; }
+.heroes-head h2 .logo-txt { display:block; width:351px; height:56px; margin:24px 0 20px; background:url(/kosef/pcWeb/resources/images/kosef.svg)no-repeat; }
+.heroes-head h2 .head-txt { font-size:20px; line-height: 30px; }
+.heroes-head .txt { width:453px; margin:6px 0 48px; color:#74757E; font-size:16px; line-height: 24px; font-weight: 500; }
+.heroes-card-wrap { position:absolute; right:0; top:50%; transform:translateY(-50%); }
+.heroes-card-item { display: inline-block; width:296px; height:382px; margin:0 12px; text-align: center; background:#fff; border: 1px solid #DFE0E2; }
+.heroes-card-item .card-img { width:100%; height:224px;}
+.heroes-card-item .card-title { display:block; margin-top:32px; font-size:24px; line-height: 36px; font-weight: 700; }
+.heroes-card-item .card-txt { margin-top:8px; padding:0 44px; color:#222; font-size:14px; line-height: 21px; font-weight: 500; word-break: keep-all; }
+.heroes-card-item .card-txt span { font-weight: 700; }
+.btn.arrow {position:relative; padding-left:-24px; background: transparent; font-weight: 600;}
+.btn.arrow::after {content:''; display:block; width:16px; height:16px; margin-left:4px; background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) -280px 0;}
+
+
+.history-wrap { position:relative; height:610 px; margin-top:120px; padding:120px 0; z-index: 11;}
+.history-wrap::before {content:''; position:absolute; left:0; top:0; right:0; bottom:0; margin:0 -360px; background: #F7F8F8; z-index:-1; }
+.history-wrap .h3 { color:#222; font-size:24px; line-height: 36px; font-weight: 700; }
+.history-wrap .history-btn-wrap {position:absolute; right:0; top:120px; }
+.history-wrap .history-btn-wrap button { position: relative; width:64px; height:64px; border-radius: 50%; background:#fff; }
+.history-wrap .history-btn-wrap button::before {content: ''; display:block; width:100%; height:100%; }
+.history-wrap .history-btn-wrap button.btn-prev::before {background:url(/kosef/moWeb/resources/images/circle_right.svg); transform: rotate(180deg); opacity: 0.5;}
+.history-wrap .history-btn-wrap button.btn-next::before {background:url(/kosef/moWeb/resources/images/circle_right.svg); }
+.history-wrap .history-btn-wrap button + button { margin-left: 16px; }
+.history-wrap .history-contents { display:flex; margin:80px -360px 0 0px; border-top: 1px solid #1A399E; }
+.history-contents .history-item { position:relative; display:flex; flex-direction: column; width:336px; margin-top:20px; }
+.history-contents .history-item::before { content:''; position: absolute ; top:-25px; left: -1px;  width:8px; height:8px; border-radius: 50%; background: #1A399E; }
+.history-contents .history-item .year { color: #1A399E; font-size:40px; line-height: 56px; font-weight: 700;}
+.history-contents .history-item .title { margin-top:20px; color:#222; font-size:16px; line-height: 24px; }
+.history-contents .history-item .txt { margin-top:8px; color: #74757e; font-size:14px; line-height: 21px; font-weight: 400; }
+
+.contact-wrap { margin:120px 0; }
+.contact-wrap .h3 { margin: 0 0 24px 0; color:#222; font-size:24px; line-height: 36px; font-weight: 700;}
+.contact-wrap .map-area { display:flex; justify-content: center; align-items: center; height:456px; font-size:24px; font-weight: 700; background:#F7F8F8; }
+.contact-info { position:relative; display:flex; justify-content: flex-end; margin-top:32px; }
+.contact-info .contact-info-item { display:flex; color:#222; font-size:16px; font-weight: 500; }
+.contact-info-item:first-child { position:absolute; left:0; }
+.contact-info-item:last-child {margin-left: 32px;}
+.contact-info .contact-info-item dt { margin-right:16px; }
+.contact-info .contact-info-item .address { font-weight: 700; margin-right:20px; }
+.contact-info .contact-info-item .num-name { font-size:14px; color: #74757E; }
+
+
+/* KOP06000000M */
+.sub-wrap.sub-etf-wrap .sub-head-wrap.eng { height:664px; background:#74757E;}
+.kosef-btn-tab.eng {margin-top:-39px; }
+.kosef-btn-tab.eng .kosef-tab-item .tab-ckb span { position:absolute; right:30px; top:26px; }
+.kosef-btn-tab.eng .kosef-tab-item .tab-ckb em {position:absolute; left:24px; bottom:24px; padding-right:12px; text-align:left;}
+.kosef-btn-tab.eng .kosef-tab-item input:checked + label span { position:absolute; right:30px; top:26px; }
+.tbl-info.eng { margin-top:96px; }
+.tbl-info.eng .info .date { color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; }
+.eng-head-bg { position:relative; }
+.eng-head-bg::before {content:''; position:absolute; right:0; top:0; width:918px; height:552px; background:url(/kosef/pcWeb/resources/images/eng_head_bg.png)no-repeat; }
+.eng-head-wrap { position:relative; max-width:1200px; height:664px; margin: 88px auto 0; padding: 88px 0 0 0; }
+.eng-head-wrap .h2 { color:#222; font-size:40px; line-height: 56px; font-weight: 700; }
+.eng-head-wrap .h2 .head-txt { display:block; font-size:24px; line-height: 36px; font-weight: 600; }
+.eng-head-wrap .h2 .logo-txt { display:block; width:351px; height:56px; margin:40px 0 16px; background:url(/kosef/pcWeb/resources/images/kosef.svg)no-repeat; }
+.eng-head-wrap .txt { margin-top:48px; width:500px; color:#74757E; font-size:16px; line-height: 24px; font-weight: 500; }
+
+
+.eng-card-wrap { position:absolute;  padding:40px 64px; background:#fff; box-shadow: 0px 8px 16px rgba(26, 57, 158, 0.1); text-align: center;}
+.eng-card-wrap.kosef { right:196px; top:88px; width: 327px; height:208px;}
+.eng-card-wrap.kiwoom { right:-120px; top: 336px; width:371px; height:229px; }
+.eng-card-wrap.kosef .eng-card-title { color:#1A399E; font-size:32px; line-height: 42px; font-weight: 700; }
+.eng-card-wrap.kiwoom .eng-card-title { color:#EC008C; font-size:32px; line-height: 42px; font-weight: 700; }
+.eng-card-wrap .title-sub-txt { display:block; margin-top:4px; font-size:16px; line-height: 24px; font-weight: 600; }
+.eng-card-wrap .eng-card-txt { margin-top:16px; color:#222;  font-size:14px; line-height: 21px; font-weight: 500; word-break: keep-all; }
+
+
+
+
+/* KOP01090000P */
+.main-media.bg { background: linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), linear-gradient(114.62deg, #394DE4 6.07%, #953DEE 96.44%), #FFFFFF url(/kosef/pcWeb/resources/images/bg_blur.png); overflow: hidden;}
+.main-media.bg::after {content:''; position:absolute; right:-230px; top: -120px; width: 1029px; height: 100%; background:url(/kosef/pcWeb/resources/images/bg_b.png)no-repeat; z-index: -1; }
+.heroes-popup-wrap { position:relative; min-width:1200px; max-width:1200px; margin-top:88px; }
+.heroes-popup-wrap .h2 { position:relative; top:-25px; color:#fff; font-size: 56px;}
+.heroes-popup-wrap .h2 .head-txt { position: relative; font-size:24px; font-weight: 600; line-height: 30px; }
+.heroes-popup-wrap .h2 .head-txt::before {content: ''; position:absolute; left:0; bottom:-2px; width:100%; height:1px; background:#fff; }
+.heroes-popup-wrap .h2 .logo-txt { display:block; width:486px; height:77px; margin:56px 0 20px; background:url(/kosef/pcWeb/resources/images/kosef_w.png)no-repeat; }
+.heroes-popup-wrap .txt { margin-bottom:88px; color:#fff; font-size:16px; line-height: 24px; font-weight: 500; }
+.btn.arrow-w { border: 1px solid #fff; color:#fff; background:transparent; }
+.btn.arrow-w::after {content:''; display:block; width:16px; height:16px; background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) -460px 0;}
+.heroes-popup-wrap .heroes-card-item { position:absolute; display: inline-block; width:296px; height:382px; margin:0; text-align: center; background:#fff; border: 1px solid #DFE0E2; }
+.heroes-popup-wrap .heroes-card-item.kosef { left:108px; top:212px; animation: card-kosef 1S forwards; opacity: 0;}
+.heroes-popup-wrap .heroes-card-item.kiam { left:437px; top:45px; animation: card-kiam 1S forwards; animation-delay: 0.2s; opacity: 0;}
+@keyframes card-kosef {
+    0%{
+        top: 436px;
+        opacity: 0;
+    }
+    100%{
+        top:212px;
+        opacity: 1;
+    }
+}
+
+@keyframes card-kiam {
+    0%{
+        top: 270px;
+        opacity: 0;
+    }
+    100%{
+        top: 45px;
+        opacity: 1;
+    }
+}
+
+.heroes-popup-wrap .arrow-w{ font-size: 16px; }
+.heroes-popup-card { position:absolute; left:628px; top:-54px; width:842px; height:619px; }
+.heroes-popup-card .etf-icon-01 { position:absolute; left:792px; top:300px; width:56px; height:56px; background:url(/kosef/pcWeb/resources/images/icon_bg01.png) no-repeat; animation: heroes-cloud 2.0s infinite alternate cubic-bezier(0.92, 0.04, 0.78, 0.65); animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-02 { position:absolute; left:263px; top:0; width:90px; height:90px; background:url(/kosef/pcWeb/resources/images/icon_bg02.png) no-repeat; animation: heroes-cloud 3.0s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95); animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-03 { position:absolute; left:0; top:445px; width:64px; height:64px; background:url(/kosef/pcWeb/resources/images/icon_bg03.png) no-repeat; animation: heroes-cloud 2s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);; animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-04 { position:absolute; left:656px; top:549px; width:61px; height:61px; background:url(/kosef/pcWeb/resources/images/icon_bg_04.png) no-repeat; animation: heroes-cloud  8.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-05 { position:absolute; left:73px; top:131px; width:142px; height:28px; background:url(/kosef/pcWeb/resources/images/icon_bg05.png) no-repeat; animation: heroes-cloud  4.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-06 { position:absolute; left:468px; top:515px; width:66px; height:56px; background:url(/kosef/pcWeb/resources/images/icon_bg06.png) no-repeat; animation: heroes-cloud  7.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 0.7s; animation-fill-mode: both; }
+.heroes-popup-card .etf-icon-07 { position:absolute; left:468px; top:571px; width:97px; height:49px; background:url(/kosef/pcWeb/resources/images/icon_bg07.png) no-repeat  }
+
+@keyframes heroes-cloud {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+
+
+/* KOP01080000P */
+.etf-content-wrap {position: relative; width:1200px; margin-top:56px; }
+.etf-info-wrap { position:relative;  width:710px; padding-bottom:11px; }
+.etf-info-wrap .ani-box { position: absolute; top:0; right: 0; width: 400px; height: 320px; }
+.etf-info-wrap .ani-box .obj-01 { position: absolute; right: 0; top: 0px; width:400px; height:320px; background:url(/kosef/pcWeb/resources/images/etf_bg.svg )no-repeat; animation: etf-main-cloud1  3s infinite cubic-bezier(0.42, 0, 0.58, 1.0); animation-fill-mode: both; }  
+.etf-info-wrap .ani-box .txt{ font-size: 12px; font-weight: 400; color: #DFE0E2; text-align: center;}
+.etf-info-wrap .ani-box .txt:nth-of-type(1){ position: absolute; top: 166px; left: 97px;}
+.etf-info-wrap .ani-box .txt:nth-of-type(2){ position: absolute; top: 76px; right: 118px;}
+.etf-info-wrap .ani-box .txt em{ display: block; font-size: 24px; font-weight: 600; color: #FFF; margin-bottom: 4px;}
+
+.etf-info-wrap .ani-box .obj-02 { position: absolute; left: 67px; top: 42px; width: 18px; height: 18px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); border-radius: 50%; animation: etf-main-cloud2  2.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 1s; animation-fill-mode: both;}
+.etf-info-wrap .ani-box .obj-03 { position: absolute; left: 89px; top: 4px; width: 8px; height: 8px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); border-radius: 50%; animation: etf-main-cloud2  2.0s infinite alternate cubic-bezier(0.43, 0.66, 0.37, 0.57); animation-delay: 1s; animation-fill-mode: both;}
+
+@keyframes etf-main-cloud1 {
+    0%{
+        top: 0;
+    }
+    60%{
+        top: 10px;
+    }
+    80%{
+        top: 5px;
+    }
+    100%{
+        top: 0;   
+    }
+}
+@keyframes etf-main-cloud2 {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(15deg); }
+}
+
+.etf-info-wrap .etf-title { display:block; color:#222; font-size:24px; line-height: 36px; font-weight: 700; }  
+.etf-info-wrap .etf-title .etf-name { display:block; margin:14px 0 2px 0; color:#1a399e; font-size:40px; line-height: 56px; }
+.etf-info-wrap .etf-title .eng-txt { display:block; color:#74757E; font-size:14px; line-height: 21px; font-weight: 400; }
+.etf-info-wrap .etf-txt { margin:14px 0 32px 0; color:#222; font-size:16px; line-height: 24px; font-weight: 500; }
+
+.video-guideo { display:block; position:absolute; right:0; top:0;  width:384px; height:312px; }
+.video-guideo .video-img { position:relative; display:block; overflow:hidden; width:384px; height:240px; }
+.video-guideo .video-img span { position:absolute; right:0; top: 0; width:99px; height:32px; color:#fff; background: rgba(34, 34, 34, 0.8); font-size:12px; line-height: 32px; font-weight: 500; text-align: center; }
+.video-guideo .video-img::after { content: ''; display:block; position: absolute; top: 50%; left: 50%; width: 48px; height: 48px; background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -460px -70px; background-size: 600px auto; transform: translate(-50%,-50%); }
+.video-guideo .video-img img { width:100%; height:100%;}
+.video-guideo .video-title { display:block; margin-top:24px; color:#222; font-size:16px; line-height: 24px; font-weight: 600; }
+
+.etf-item-wrap { display:flex; justify-content: space-between; margin-top:64px; }
+.etf-item { position:relative; width:282px; padding: 116px 0 56px; background:#fff; text-align:center; }
+.etf-item::after { content: ''; position:absolute; top:-24px; right:8px; height:56px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
+.etf-item.icon_01{ animation: etf-item 1s forwards; animation-delay: 0s;  opacity: 0; }
+.etf-item.icon_02{ animation: etf-item 1s forwards; animation-delay: 0.1s;  opacity: 0; }
+.etf-item.icon_03{ animation: etf-item 1s forwards; animation-delay: 0.2s;  opacity: 0; }
+.etf-item.icon_04{ animation: etf-item 1s forwards; animation-delay: 0.3s;  opacity: 0; }
+@keyframes etf-item {
+    0%{
+        bottom: -300px;
+        opacity: 0; 
+    }
+    100%{
+        bottom: 0px;
+        opacity: 1; 
+    }
+}
+.etf-item.icon_01::after { width:64px; background-image: url(/kosef/pcWeb/resources/images/main/01.svg); }
+.etf-item.icon_02::after { width:72px; background-image: url(/kosef/pcWeb/resources/images/main/02.svg); }
+.etf-item.icon_03::after { width:73px; background-image: url(/kosef/pcWeb/resources/images/main/03.svg); }
+.etf-item.icon_04::after { width:74px; background-image: url(/kosef/pcWeb/resources/images/main/04.svg); }
+.etf-item::before { content:''; position: absolute; left:50%; top:56px; width:40px; height:40px; transform: translateX(-50%); }
+.etf-item.icon_01::before {background:url(/kosef/pcWeb/resources/images/etf_icon_01.svg);}
+.etf-item.icon_02::before {background:url(/kosef/pcWeb/resources/images/etf_icon_02.svg);}
+.etf-item.icon_03::before {background:url(/kosef/pcWeb/resources/images/etf_icon_03.svg);}
+.etf-item.icon_04::before {background:url(/kosef/pcWeb/resources/images/etf_icon_04.svg);}
+.etf-item .title { color:#222; font-size:20px; line-height: 30px; font-weight: 700; }
+.etf-item .txt { margin-top:8px; color:#74757E; font-size:14px; line-height: 21px; font-weight: 500; }
+
+
+
+/* KOP04030000M */
+.sub-wrap { overflow:hidden;}
+.sub-head-wrap.guide { min-height:auto; padding: 67px 0 0 0;}
+
+.invest-top-wrap { position:relative; height:890px; }
+.sub-wrap .inner { position:relative; width:1200px; height:100%; margin:0 auto ; padding-top:120px; z-index: 11; }
+.invest-top-wrap .top-title { position:relative; display:inline-block; color:#222; font-size:56px; line-height: 67px; font-weight: 700; z-index: 11; }
+.invest-top-wrap .top-title::before { content:''; position:absolute; right:-4px; bottom:12px; width:40px; height:40px; background:url(/kosef/pcWeb/resources/images/icon_chart.png);}
+.invest-top-wrap .top-txt { margin-top:40px; color:#74757E; font-size:20px; line-height: 30px; font-weight: 500;}
+
+.is-etf-item { position:absolute; display:flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 50%; color:#fff; z-index: 11; }
+.is-etf-item.stock { right:316px; top:435px; width:336px; height:336px; background: linear-gradient(137.44deg, #E9109F 10.82%, #FC237E 102.61%); box-shadow: -8px 8px 30px -25px rgba(245, 28, 139, 0.2);}
+.is-etf-item.fund { right:-76px; top:-40px; width:400px; height:400px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); box-shadow: 12px 8px 30px -25px rgba(80, 66, 244, 0.16); }
+.is-etf-item.stock > ul { width:264px;}
+.is-etf-item.fund > ul { width:281px;}
+.is-etf-item .title{ margin-bottom:12px; color:#fff; font-size:40px; line-height: 56px; font-weight: 700; text-align: center; }
+.is-etf-item .is-etf-list { text-align: center;  }
+.is-etf-item .is-etf-list li { display:inline-block; font-size:20px; line-height: 30px; font-weight: 500; margin:8px 10px 0; }
+
+
+.icon_bg01 { position:absolute; left:-88px; top:145px; width:171px; height:171px; background: linear-gradient(137.44deg, #E9109F 10.82%, #FC237E 102.61%); filter: blur(5px); opacity: 0.9; border-radius: 50%; }
+.icon_bg02 { position:absolute; right:104px; top:41px; width:28px; height:28px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); filter: blur(2.5px); opacity: 0.9; border-radius: 50%; }
+.icon_bg03 { position:absolute; right:-47px; top:130px; width:82px; height:82px; background: linear-gradient(98.43deg, #263BDC 26.72%, #B629D6 135.94%); opacity: 0.9; filter: blur(5px);  border-radius: 50%;}
+.icon_bg04 { position:absolute; left:724px; bottom:142px; width:36px; height:36px; background: linear-gradient(137.44deg, #E9109F 10.82%, #FC237E 102.61%); opacity: 0.9; filter: blur(1.5px); border-radius: 50%; }
+/* .icon_bg05 { position:absolute; right:45px; top:122px; width:491px; height:480px; background: url(/kosef/pcWeb/resources/images/icon_bg12.png); } */
+
+.etf-point-wrap { position:relative; height:880px; background: linear-gradient(100.59deg, #1A399E 62.77%, #4D38CE 103.34%); overflow:hidden;}
+.etf-point-wrap .point-title { position:relative; display:inline-block; margin-bottom: 40px; color:#fff; font-size:56px; line-height: 67px; font-weight: 700; }
+.etf-point-wrap .point-title::before {content:''; position:absolute; right:0; bottom:12px; width:40px; height:40px; background:url(/kosef/pcWeb/resources/images/icon_glasses.png);}
+
+.etf-card-list { position:absolute; right:0; top:120px; width:400px; height:760px; overflow-y:scroll; -ms-overflow-style: none; scrollbar-width: none; }
+.etf-card-list::-webkit-scrollbar { display:none;}
+.etf-card-list .card-item { position:relative; display:block; margin-bottom:24px; width:400px; height:480px; text-align:center}
+.etf-card-list .card-item strong { display:block; padding-top:112px; color:#fff; font-size:40px; line-height: 56px; font-weight: 700; }
+.etf-card-list .card-item p { margin-top:176px; color:#fff; font-size:16px; line-height: 24px; font-weight: 600; }
+.etf-card-list .card-item.list_01 { background:#8450E8;}
+.etf-card-list .card-item.list_02 { background:#009FD1;}
+.etf-card-list .card-item.list_03 { background:#00BC9A;}
+.etf-card-list .card-item.list_04 { background:#4488FF;}
+
+.etf-card-list li::after { position:absolute; top:48px; left:50%; transform:translateX(-50%); width:48px; height:48px; color:#fff; font-size:20px; line-height: 48px; font-weight: 700; border-radius: 50%; }
+.etf-card-list .list_01::after { content:'01'; background: #6D3BCC; }
+.etf-card-list .list_02::after { content:'02'; background: #00799F; }
+.etf-card-list .list_03::after { content:'03'; background: #008B82; }
+.etf-card-list .list_04::after { content:'04'; background: #2C6FE4; }
+
+.etf-card-list li::before { content:''; position:absolute; left:50%; top:204px; transform:translateX(-50%); width:104px; height:104px; }
+.etf-card-list .list_01::before { background:url(/kosef/pcWeb/resources/images/icon_point_01.svg) ;}
+.etf-card-list .list_02::before { background:url(/kosef/pcWeb/resources/images/icon_point_02.svg) ;}
+.etf-card-list .list_03::before { background:url(/kosef/pcWeb/resources/images/icon_point_03.svg) ;}
+.etf-card-list .list_04::before { background:url(/kosef/pcWeb/resources/images/icon_point_04.svg) ;}
+
+.icon_bg06 { position:absolute; left:121px; top:339px; width:61px; height:61px; background: url(/kosef/pcWeb/resources/images/icon_bg04.png); }
+.icon_bg07 { position:absolute; left:768px; bottom:88px; width:192px; height:192px; background: url(/kosef/pcWeb/resources/images/icon_bg13.png); }
+.icon_bg08 { position:absolute; right:77px; top:271px; width:146px; height:146px; background: url(/kosef/pcWeb/resources/images/icon_bg15.png); }
+
+
+.inner .h2 { margin-bottom:48px; color:#222; font-size:56px; line-height: 67px; font-weight: 700; }
+.market-img { display:block; margin:48px 0 120px; width:1200px; height:678px}
+.market-img { width:100%;}
+
+.video-guide-wrap { position:relative; height:763px; background: #2F3135; overflow:hidden;}
+.video-guide-wrap::before { content:''; position: absolute; left:0; top:299px; width:2472px; height:328px; background:url(/kosef/pcWeb/resources/images/bg_video_guide.png) no-repeat; }
+.video-guide-wrap .h2 { color:#fff; }
+/* .video-guide-wrap .btn.arrow { position:absolute; right:0; top:131px; background:transparent; border: 1px solid #fff; color:#fff;} */
+/* .video-guide-wrap .btn.arrow::after { background-position: -460px 0;} */
+/* .video-guide-wrap .btn.arrow:hover {background:transparent;} */
+
+.video-list { display:flex; justify-content: space-between; }
+.video-list .video-item:not(:first-child) { margin-left:24px; }
+/* .video-list .video-item a .img-area { position:relative; display:block; width:100%; height: 280px; } */
+/* .video-list .video-item a .img-area::after { z-index: 10; content: ''; position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) no-repeat -460px -70px; background-size: 600px auto; transform: translate(-50%,-50%); } */
+/* .video-list .video-item a .img-area img{ width:100%; height:100%; } */
+.video-list .video-item .txt-area { display:block; /*height:128px;*/ margin-top:-3px; padding: 32px 32px 48px; background:#fff; }
+.video-list .video-item .txt-area p { display:-webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-word; overflow:hidden; text-overflow:ellipsis ; color:#222; font-size:16px; line-height: 24px; font-weight: 600; }
+
+.key-word-wrap { position:relative; background:#F7F8F8 ; padding-bottom:120px ;}
+.key-wrod-list { display:flex; justify-content: space-between; flex-direction: row; flex-wrap: wrap; }
+.key-wrod-list .key-wrod-item { position: relative; width:384px; height:400px; margin-bottom:24px; padding:40px; background:#fff; z-index: 11; }
+.key-wrod-list .key-wrod-item:nth-child(3n) { margin-right:0;}
+.key-wrod-list .key-wrod-item .title { display:block; margin-bottom:24px; color:#222; font-size:24px; line-height: 36px; font-weight: 700; }
+.key-wrod-list .key-wrod-item .text-list li { position:relative; }
+.key-wrod-list .key-wrod-item .text-list li:not(:first-child) { margin-top:8px; }
+.key-wrod-list .key-wrod-item .text-list.dash li { position: relative; color:#74757E; font-size:16px; line-height: 24px; font-weight: 500; padding-left:8px; }
+.key-wrod-list .key-wrod-item .text-list.dash li::before { content: ''; position:absolute; left:0; top:11px; width:4px; height:1px; background:#74757E; }
+.key-wrod-list .key-wrod-item .eng-txt { position:absolute; left:40px; bottom:40px; display: inline-block; padding: 5px 16px; color:#1A399E; font-size:14px; line-height: 21px; font-weight: 500; background:#F1F7FE; border-radius: 30px;}
+
+.icon_bg09 { position:absolute; right:204px; top:120px; width:206px; height:206px; background: url(/kosef/pcWeb/resources/images/icon_bg16.png);  }
+.icon_bg10 { position:absolute; left:86px; top:483px; width:61px; height:61px; background: url(/kosef/pcWeb/resources/images/icon_bg04.png); }
+.icon_bg11 { position:absolute; right:92px; top:787px; width:145px; height:145px; background: url(/kosef/pcWeb/resources/images/icon_bg14.png); }
+
+.result-wrap .no-data strong:before { background-position-x : -120px; }
+.no-data.no-line { border-top: 0; }
+.tbl .txt-l.noti { padding: 40px 24px; }
+
+.foot-wrap .inner.eng { padding-top:24px; }
+.foot-wrap .inner.eng .logo { width:378px; height:32px; background: url(/kosef/pcWeb/resources/images/logo_foot_eng.png); }
+
+:lang(en) .kosef-btn-tab.eng .kosef-tab-item .tab-ckb em { font-size: 16px; font-weight: 600;}
+
+
+/* sub header */
+/* .kosef-wrap .gnb-wrap{ position: fixed; width: 100%; height:88px; } */
+/* .kosef-wrap .gnb-wrap h1 a{ width: 101px; height: 16px; background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) -430px -380px no-repeat; } */
+/* .kosef-wrap .gnb-wrap .gnb:before{background: none;} */
+/* .kosef-wrap .gnb-wrap .gnb nav .menu > li > a{background: none; color: #FFF; font-weight: 600;} */
+/* .kosef-wrap .gnb-wrap .util .go-kiam{color: #FFF;} */
+/* .kosef-wrap .gnb-wrap .util .go-kiam::after{ background: url(/kosef/pcWeb/resources/images/common/ico_comm.png) -140px -20px no-repeat; } */
+/* .kosef-wrap .gnb-wrap .ui-drop-wrap .ui-drop-btn{color: #B9BBC6;} */
+/* .kosef-wrap .gnb-wrap.show h1 { background-position-y: -360px; } */
+/* .kosef-wrap .gnb-wrap.show .gnb:before {background: #FFF;} */
+/* .kosef-wrap .gnb-wrap.show .gnb nav .menu {background-color: #FFF; } */
+/* .kosef-wrap .gnb-wrap.show .gnb nav .menu > li > a { color:#292929; } */
+/* .kosef-wrap .gnb-wrap.show .util .go-kiam { color:#222; } */
+/* .kosef-wrap .gnb-wrap.show .util .go-kiam::after { background-position-y: 0; } */
+/* .kosef-wrap .gnb-wrap.show .ui-drop-wrap .ui-drop-btn{ color: #9D9DA4; } */
+

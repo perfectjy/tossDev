@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kosef/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <!-- 0315 전체적으로 html 구조가 변경되었습니다. -->
+    <div class="trust-wrap">
+        <div class="trust-box">
+            <strong class="trust-box-tit">KOSEF 인디아</strong>
+            <!-- 0321수정반영::  print()"; -> print();" -->
+            <button type="button" class="btn-icon icon-more box no-icon" onclick="window.print();"><span>인쇄</span></button>
+        </div>
+        <div class="trust-tbl-info">
+            <strong class="tbl-info-tit">운용성과</strong>
+            <div class="tbl-info-conts">
+                <div class="ui-date-wrap">
+                    <div class="ui-datepicker">
+                        <input type="date" id="uiDate_1" class="inp-base" value="2021-11-05" min="2020-12-05" max="2025-05-20" title="날짜선택" readonly="" required="">
+                        <button type="button" class="ui-datepicker-btn" data-target="uiDate_1">
+                            <span class="a11y-hidden">년월일 선택</span>
+                        </button>
+                    </div>
+                </div>
+                <button type="button" class="btn search">검색</button>
+            </div>
+        </div>
+        <div class="tbl"> 
+            <table>
+                <caption>운용성과 관련 자료 테이블입니다.</caption>
+                <colgroup>
+                    <col style="width:240px;">
+                    <col span="8" style="width:100px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">1M</th>
+                        <th scope="col">3M</th>
+                        <th scope="col">6M</th>
+                        <th scope="col">1Y</th>
+                        <th scope="col">3Y</th>
+                        <th scope="col">YTD</th>
+                        <th scope="col">설정이후</th>
+                        <th scope="col">변동성</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="bgW">KOSEF 미국달러 선물인버스</th>
+                        <td>4.25%</td>
+                        <td>15.96%</td>
+                        <td>6.68%</td>
+                        <td>-1.48%</td>
+                        <td>-4.86%</td>
+                        <td>3.66%</td>
+                        <td>-2.64%</td>
+                        <td>0.11</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bgW">비교지수</th>
+                        <td>4%</td>
+                        <td>15.96%</td>
+                        <td>5.69%</td>
+                        <td>-2.82%</td>
+                        <td>-6.23%</td>
+                        <td>3.76%</td>
+                        <td>--12.93%</td>
+                        <td>0.11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul class="txt-list star">
+            <li>위의 수익률 정보는 배당금 재투자를 가정하였음.</li>
+            <li>변동성 : 최근 1년간 인간수익률 기준 표준편차 연환산</li>
+        </ul>
+        <div class="tbl-flex-wrap">
+            <div class="tbl-flex-item">
+                <div class="trust-tbl-info">
+                    <strong class="tbl-info-tit">상위10종목</strong>
+                    <div class="tbl-info-conts">
+                        <span class="date">기준 : 2022.10.07</span>
+                    </div>
+                </div>
+                <div class="tbl"> 
+                    <table>
+                        <caption>상위10종목 관련 자료 테이블입니다.</caption>
+                        <colgroup>
+                            <col style="width:396px;">
+                            <col style="width:104px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">종목명</th>
+                                <th scope="col">비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RELIANCE INDUSTRIES LTD.</td>
+                                <td>49.43</td>
+                            </tr>
+                            <tr>
+                                <td>HDFC BANK LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI BANK LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>INFOSYS LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>HOUSING DEVELOPMENT FINANCE CORPORATION LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>TATA CONSULTANCY SERVICES LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>ITC LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>LARSEN & TOUBRO LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>KOTAK MAHINDRA BANK LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>AXIS BANK LTD.</td>
+                                <td>41.21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tbl-flex-item">
+                <div class="trust-tbl-info">
+                    <strong class="tbl-info-tit">업종비중</strong>
+                    <div class="tbl-info-conts">
+                        <span class="date">기준 : 2022.10.07</span>
+                    </div>
+                </div>
+                <div class="tbl"> 
+                    <table>
+                        <caption>업종비중 관련 자료 테이블입니다.</caption>
+                        <colgroup>
+                            <col style="width:396px;">
+                            <col style="width:104px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">업종명</th>
+                                <th scope="col">비중(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Financial Services</td>
+                                <td>49.43</td>
+                            </tr>
+                            <tr>
+                                <td>Information Technology</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Oil, Gas & Consumable Fuels</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Fast Moving Consumer Goods</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Automobile and Auto Components</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Metals & Mining</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Healthcare</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Construction</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Consumer Durables</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Telecommunication</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Construction Materials</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Services</td>
+                                <td>41.21</td>
+                            </tr>
+                            <tr>
+                                <td>Chemicals</td>
+                                <td>41.21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="ui-acco info" data-id="exeAcco1">
+            <div class="ui-acco-wrap">
+                <div class="ui-acco-tit">
+                    <button type="button" class="ui-acco-btn"><span class="ui-acco-txt">투자하기 전, 꼭 확인하세요!</span><span class="hide">열기</span></button>
+                </div>
+                <div class="ui-acco-pnl">
+                    <div class="ui-acco-pnl-wrap">
+                        <ul class="txt-list disc-s mgt0">
+                            <li>본 자료는 집합투자상품의 정보제공을 위하여 작성된 것으로써, 투자권유를 위해 작성된 자료가 아닙니다.</li>
+                            <li>집합투자상품은 실적배당상품으로 운용결과에 따른 이익 또는 손실이 투자자에게 귀속됩니다.</li>
+                            <li>집합투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않으며, 원본의 손실이 발생할 수 있습니다.</li>
+                            <li>집합투자증권을 취득하기 전에(투자대상, 환매방법 및 보수 등에 관한) 투자설명서를 반드시 읽어주시기 바랍니다.</li>
+                            <li>과거의 운용실적이 미래의 운용수익을 보장하지 않습니다.</li>
+                            <li>환율변동에 따라 외화자산의 투자가치가 변동 될 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 0321수정반영:: <script> body 안으로 위치 수정하였습니다 -->
+    <script>
+        (() => {
+            'use strict';
+            KAUI.accordion.init({ id:'exeAcco1', current:[0] });
+        })();
+    </script>
+</body>
+</html>

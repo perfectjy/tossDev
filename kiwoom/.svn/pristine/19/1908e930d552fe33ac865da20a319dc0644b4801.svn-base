@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="title" content="프로젝트가이드">
+    <link rel="stylesheet" href="../../kiam/pcWeb/resources/css/base.css" type="text/css">
+	<link rel="stylesheet" href="../../pub_guide/resource/css/ui_guide.css" type="text/css">
+    <script src="../../kiam/pcWeb/resources/js/jquery-2.2.4.min.js"></script>
+    <script src="../../kiam/pcWeb/resources/js/ui.global.js"></script>
+	<script src="../../kiam/pcWeb/resources/js/ui.common.js"></script>
+	<script src="../../pub_guide/resource/js/ui.guide.js"></script>
+	<title>키움투자자산운용 | Publishing Guide</title>
+    <style>
+        .ui-focusloop-end,
+        .ui-focusloop-start{display: none;}
+    </style>
+</head>
+<body>
+<div id="gWrap">
+    <header id="gHeader">
+    </header>    
+    <div id="gContainer">
+        <div class="g-content"> 
+            <h2>Modal</h2>      
+            <article>
+                <h3>Default</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn-base btn-modal" data-id="sampleModal" data-src="./html/sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article> 
+            <article>
+                <h3>링크 기능없이 확인이 필요한 경우</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn-base btn-modal" data-id="sampleModal" data-src="sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article>   
+            <article> 
+                <h3>메인 롤링 팝업</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn-base" data-id="sampleModal" data-src="sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article>                     
+            <article>
+                <h3>시스템 alert</h3>
+                <div class="guide-info-box line">
+                    <button type="button" class="btn-base" data-id="sampleModal" data-src="sampleModal.html"><span>720*750 기본모달팝업</span></button>
+                </div>
+            </article> 
+           
+        </div>
+    </div>
+</div>
+<script>
+    // (() => {
+
+    //     'use strict';
+
+    //     //test
+    //     const btns = document.querySelectorAll('.btn-modal');
+
+    //     for (const btn of btns) {
+    //         btn.addEventListener('click', (e) => {
+    //             const el = e.currentTarget;
+    //             const id = el.dataset.id;
+    //             const src = el.dataset.src;
+
+    //             if (id === 'sampleModal') {
+    //                 KAUI.modal.show({ 
+    //                     id:id, 
+    //                     src: src,
+    //                     callback: () => {
+    //                         alert(111);
+    //                     }
+    //                 });
+    //             } else {
+    //                 KAUI.modal.show({ 
+    //                     id:id, 
+    //                     src: src
+    //                 });
+    //             }
+                
+    //         });
+    //     }
+    // })();
+        
+</script>
+
+</body>
+</html>

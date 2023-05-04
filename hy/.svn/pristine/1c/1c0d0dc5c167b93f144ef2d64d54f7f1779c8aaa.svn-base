@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+//------------------------------------
+// Util
+//------------------------------------
+@import "util/variables";
+@import "util/function";
+@import "util/mixins";
+@import "util/mixins.button";
+@import "util/include";
+
+//------------------------------------
+// svg
+//------------------------------------
+@import "svg/svg.common";
+@import "svg/svg.login";
+
+// * 해외여행보험
+//-----------------------
+.chartbot_area {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 72px;
+  height: 72px;
+  z-index: 1;
+  .chatbot {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url($svg_icon_chatbot) 0 0 no-repeat;
+    background-size: 100%;
+  }
+}
+.accordion.noline {
+  border: 0;
+  .item {border: 0;}
+}
+.comp.hr {
+  .accordion.noline:first-child {
+    margin-top: 8px;
+  }
+}
+
+.section[data-bg=gray]{
+  padding: 50px 0;
+  .title_area {margin-top: 0;}
+}
+[data-bg=bg_overseastrip]{
+  &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 16px;
+      background: url($path+'/overseastrip/bg_overseastrip.png') 50% 50% no-repeat;
+      background-size: contain;
+  }
+}
+[data-icon-id=list_overseastrip_1]{
+  [data-icon=icon01]{background-image: url($svg_icon_overseastrip_01);}
+  [data-icon=icon02]{background-image: url($svg_icon_overseastrip_02);}
+  [data-icon=icon03]{background-image: url($svg_icon_overseastrip_03);}
+  
+  border-bottom: 0;
+  .list_item:nth-child(1) .list_body {border-top: 0;}
+}
+[data-icon-id=icon_recommend]{
+  [data-icon=icon01]{background-image: url($svg_icon_recommend_01);}
+  [data-icon=icon02]{background-image: url($svg_icon_recommend_02);}
+  [data-icon=icon03]{background-image: url($svg_icon_recommend_03);}
+}
+
+[data-icon-id=overseastrip_benefit]{
+  [data-icon=icon01]{background: url($path+'/overseastrip/icon_overseastrip_benefit_1.png') 50% 50% no-repeat;}
+  [data-icon=icon02]{background: url($path+'/overseastrip/icon_overseastrip_benefit_2.png') 50% 50% no-repeat;}
+}
+
+[data-slider=card]{
+  [data-icon=icon01]{background: url($path+'/overseastrip/img_overseastrip_slide_1.png') 50% 50% no-repeat;}
+  [data-icon=icon02]{background: url($path+'/overseastrip/img_overseastrip_slide_2.png') 50% 50% no-repeat;}
+  [data-icon=icon03]{background: url($path+'/overseastrip/img_overseastrip_slide_3.png') 50% 50% no-repeat;}
+  [data-icon=icon04]{background: url($path+'/overseastrip/img_overseastrip_slide_4.png') 50% 50% no-repeat;}
+}
+
+[data-icon=num01]{background-image: url($svg_icon_num_01);}
+[data-icon=num02]{background-image: url($svg_icon_num_02);}
+[data-icon=num03]{background-image: url($svg_icon_num_03);}
+[data-icon=num04]{background-image: url($svg_icon_num_04);}
+[data-icon=num05]{background-image: url($svg_icon_num_05);}
+[data-icon=num06]{background-image: url($svg_icon_num_06);}
+[data-icon=num07]{background-image: url($svg_icon_num_07);}
+
+[data-icon=icon_audit]{ 
+  @include icon_set(72px,72px);
+  @include icon_center();
+  top: 0;
+  background-image: url($svg_icon_audit);
+  background-position: 0 0;
+}
+.icon.num {
+  @include icon_set(20px, 20px);
+  background-color: $grey_700;
+  border-radius: 50%;
+}
+
+[data-category=overseastrip]{ 
+  &[data-bg=gray] {
+    .navbar, .section {background: $grey_130;}
+    .section > .comp:first-child {padding-top: 40px;}
+  }
+  .governing.gap {padding-top: 24px;margin-bottom: 32px;}
+  .title_area {
+      .title {
+        @include font_set($grey_850,19px,$fw_bold);
+          letter-spacing: -0.02em;
+          line-height: 1.4em;
+      }
+  }
+  .card_list_more {
+      display: none;
+      margin-top: 16px;
+      &.view {
+          display: block;
+      }
+  }
+  .card_list.overseastrip_list {
+    .card_wrap {
+      display: flex;
+      align-items: center;
+      padding: 24px;
+      border: 1px solid $grey_200;
+      border-radius: 16px;
+      box-shadow: none;
+    }
+  }
+  .card_list:not(.icon_type) {
+      .card_item {
+          .card_desc {
+              width: calc(100% - 78px);
+              margin-right: 8px;
+              font-weight: $fw_regular;
+              .card_tit {
+                  color: $grey_850;font-size: 15px;line-height: 1.5em;word-break: keep-all;
+                  +.card_subtxt {margin-top: 10px;}
+              }
+              .card_subtxt {color: $grey_650;font-size: 13px;}
+          }
+          .card_img > img {width: 78px;height: 78px;}
+          +.card_item {margin-top: 16px;}
+      }
+  }
+  .card_list.box_gray {
+    .card_wrap {
+      padding: 20px 20px 20px 71px;
+      background: $grey_130;
+      box-shadow: none;
+    }
+    .icon {left: 10px;@include icon_set(46px,46px);}
+    .tit {margin-bottom: 4px;@include font_set($grey_750,15px,$fw_bold);}
+    .txt {font-weight: $fw_regular;}
+  }
+  .accordion.qna {margin-bottom: 50px;}
+  .law {margin-top: 40px;}
+  .btn_area.more {
+      margin-top: 26px;
+      .btn.more {margin-top: 0;}
+  }
+  .colorbox_slide {
+    padding-left: 40px;
+      .swiper-slide {width: 232px;}
+      .colorbox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 256px;
+          padding: 40px 0;
+          text-align: center;
+          border-radius: 40px;
+          &.c1 {background: #DAFFDD;}
+          &.c2 {background: #FFF1C1;}
+          &.c3 {background: #FFEAE6;}
+          &.c4 {background: #DFF4FF;}
+          p {padding: 0 20px;@include font_set($grey_850,15px,$fw_medium);}
+          .icon.large {top: 45px;@include icon_set(232px,100px);}
+      }
+  }
+  .box {
+    .tit {
+      @include font_set($grey_850,15px,$fw_medium);
+      + p, + div {margin-top: 8px;}
+    }
+  }
+  .box.chkbox {
+    margin: 32px 0;
+    input[type=checkbox] + label {color: $grey_850;font-size: 15px;}
+    input[type=checkbox].box_chk:disabled + label {color: $grey_650;}
+    .link {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding-right: 24px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 24px;
+        height: 24px;
+        background: url($svg_arrow_link24) 50% 50% no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+  .box.gray {
+    .desc {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $grey_200;
+      .tit + p {margin-top: 16px;}
+    }
+  }
+  .box.gray.chkbox {margin: 10px 0;}
+  .form_area + .box.gray {margin-top: 32px;}
+  .form_wrap + .chk_wrap {margin-top: 18px;}
+  .btn_area.d_f {margin-bottom: 4px;}
+
+  //해외여행보험 상세 정보
+  .list_detail_info {
+    .box {
+      padding: 20px 24px 20px 54px;
+      border: 0;
+      background: $grey_170;
+
+      .item_top {display: flex;justify-content: space-between;}
+      .icon.num {
+        left: 20px;
+        @include icon_set(20px, 20px);
+        background-color: $grey_350;
+        border-radius: 50%;
+      }
+      .tit {color: $grey_700;font-weight: $fw_regular;}
+
+      &.complete,
+      &.ing {
+        background: #fff;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        .tit {@include font_set($grey_850,15px,$fw_medium);line-height: 22px;}
+        .item_txt {
+          margin-top: 6px;
+          span{
+            position: relative;
+            display: inline-block;
+            + span {
+              margin-left: 12px;
+              &:before {
+                @include beforeBul();
+              }
+            }
+          }
+        }
+        .icon.num {background-color: $grey_700;}
+      }
+      &.ing {
+        .icon.num {background-color: $point_color;}
+        .btn.text {color: $quarernary_color;text-decoration: none;}
+      }
+      +.box {margin-top: 10px;}
+    }
+  }
+  .chk_wrap {
+    margin-bottom: 16px;
+    input[type=checkbox] + label {
+      @include font_set($grey_850,15px,$fw_medium);
+    }
+  }
+
+  [data-slider=indicator_banner]{
+    margin-top: 16px;
+  }
+  .payment_comp {
+    .comp.border_top {
+      width: 100%;
+      margin: 24px 0;
+      .title_area {
+        p + p {margin-top: 6px;}
+      }
+      .chk_wrap {
+        margin-top: 40px;
+        input[type=checkbox] + label {color: $grey_650;}
+      }
+    }
+  }
+}
+
+[data-category=overseastrip_modal]{ 
+  .h3 {color: $grey_850;}
+  .h4 {color: $grey_750;}
+  .uol_list {
+      .h4 + ul {margin-top: 8px;}
+      ul + .h4 {margin-top: 24px;}
+  }
+  .modal_audit {
+    .comp.ta_c {padding-top: 72px;}
+    .title_area {
+      display: block;
+      .h3 + p {margin-top: 24px;}
+    }
+  }
+  .tab_content {
+    .dl_list .title_area {margin-top: 32px;}
+  }
+  //뷰어 영역
+  .viewer_step {
+    margin-top: 10px;
+    .icon.num {left: 0;}
+    ol {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      position: relative;
+      padding-left: 28px;
+      color: $grey_850;
+      &.on {
+        .icon.num {background-color: $point_color;}
+      }
+      &.disabled {
+        color: $grey_650;
+        .icon.num {background-color: $grey_350;}
+      }
+      + li {
+        margin-left: 37px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: -27px;
+          top: 50%;
+          display: inline-block;
+          width: 17px;
+          height: 3px;
+          background: url("data:image/svg+xml,%3Csvg width='17' height='4' viewBox='0 0 17 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3Ccircle cx='8.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3Ccircle cx='15.5' cy='2' r='1.5' fill='%23C8C8CA'/%3E%3C/svg%3E%0A") no-repeat;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .viewer {
+    width: 100%;
+    height: calc(100vh - 288px); //수치 변경 예정
+    margin-top: 24px;
+    background: url($path+'/withdraw/img_viewer.png') 50% 0 no-repeat; //더미 이미지(영역만 잡음)
+    background-size: 100%;
+  }
+}
+

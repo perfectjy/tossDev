@@ -1,0 +1,136 @@
+<!-- modal -->
+<section class="ui-modal" id="KIM0202010300P">
+    <div class="ui-modal-wrap">
+        <div class="ui-modal-header">
+            <h1 class="ui-modal-tit">검색옵션</h1>
+            <button type="button" class="icon-close ui-modal-close" aria-label="close"><span class="hide">모달 닫기</span></button>
+        </div>
+        <div class="ui-modal-body">       
+            <div class="modal-conts">
+                <div class="fund-sch-wrap">
+                    <div class="find-items">
+                        <strong>지역구분</strong>
+                        <div>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea1" value="0" checked>
+                                <label for="fundArea1" class="lb-radio"><span>전체</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea2" value="1">
+                                <label for="fundArea2" class="lb-radio"><span>국내</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType1" id="fundArea3" value="2">
+                                <label for="fundArea3" class="lb-radio"><span>해외</span></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="find-items">
+                        <strong>펀드유형</strong>
+                        <div class="full">
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType1" value="0" checked>
+                                <label for="fundType1" class="lb-checkbox"><span>전체</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType2" value="1">
+                                <label for="fundType2" class="lb-checkbox"><span>주식형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType3" value="2">
+                                <label for="fundType3" class="lb-checkbox"><span>채권형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType4" value="3">
+                                <label for="fundType4" class="lb-checkbox"><span>혼합형</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType5" value="4">
+                                <label for="fundType5" class="lb-checkbox"><span>MMF</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType6" value="5">
+                                <label for="fundType6" class="lb-checkbox"><span>ETF</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType7" value="6">
+                                <label for="fundType7" class="lb-checkbox"><span>파생상품</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType8" value="7">
+                                <label for="fundType8" class="lb-checkbox"><span>재간접</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="checkbox" name="searchType2" id="fundType9" value="8">
+                                <label for="fundType9" class="lb-checkbox"><span>기타</span></label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="find-items range">
+                        <strong>위험등급</strong>
+                        <div class="range-risk">
+                            <div class="ui-range" data-id="rangeRisk">
+                                <input class="ui-range-inp" data-range="from" type="range" />
+                                <input class="ui-range-inp" data-range="to" type="range" />
+                            </div>                   
+                        </div>
+                    </div>
+                    <div class="find-items">
+                        <strong>수익률기간</strong>
+                        <div class="full">
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod1" value="0" checked>
+                                <label for="fundPeriod1" class="lb-radio"><span>전체</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod2" value="1">
+                                <label for="fundPeriod2" class="lb-radio"><span>1개월</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod3" value="2">
+                                <label for="fundPeriod3" class="lb-radio"><span>3개월</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod4" value="3">
+                                <label for="fundPeriod4" class="lb-radio"><span>6개월</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod5" value="4">
+                                <label for="fundPeriod5" class="lb-radio"><span>1년</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod6" value="5">
+                                <label for="fundPeriod6" class="lb-radio"><span>3년</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod7" value="5">
+                                <label for="fundPeriod7" class="lb-radio"><span>5년</span></label>
+                            </span>
+                            <span class="lb-item">
+                                <input type="radio" name="searchType3" id="fundPeriod8" value="6">
+                                <label for="fundPeriod8" class="lb-radio"><span>설정일이후</span></label>
+                            </span>                               
+                        </div>
+                    </div>
+                    <div class="find-items range">
+                        <strong>수익률(%)</strong>
+                        <div class="range-return">
+                            <div class="ui-range" data-id="rangeRetrun">
+                                <input class="ui-range-inp" data-range="from" type="range"  />
+                                <input class="ui-range-inp" data-range="to" type="range"  />
+                            </div>               
+                        </div>
+                    </div>
+                </div>
+            </div>                       
+        </div>
+        <div class="ui-modal-footer">
+            <div class="btn-area sticky">
+                <button type="button" class="btn-mo-cancel">초기화</button>
+                <button type="button" class="btn-mo-agree" >선택한 옵션 적용</button>
+            </div>
+        </div>   
+    </div>    
+</section>        
+      
+<!-- //modal -->

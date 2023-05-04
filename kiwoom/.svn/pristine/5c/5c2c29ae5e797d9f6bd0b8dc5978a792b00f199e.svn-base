@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>키움투자자산운용</title>
+    <script type="text/javascript" src="/kiam/pcWeb/pub_include/head.js"></script><!-- // Pub Include : head-->
+</head>
+<body>
+    <div class="kiam-wrap" id="wrap">
+        <div id="skipNavi">  
+            <a href="#content">본문내용 바로가기</a> 
+        </div>
+    <!-- 상단 띠배너 -->
+        <div class="top-bnr-group">
+            <div class="bnr-item">
+                <div class="bnr-conts">
+                    <div class="bnr-controls">
+                        <div class="lb-item">
+                            <input type="checkbox" id="topBnrTodayChk" name="topBnrTodayChk">
+                            <label for="topBnrTodayChk" class="lb-checkbox"><span>오늘 하루 그만보기</span></label>
+                        </div>
+                        <button class="btn-close"><span class="hide">닫기</span></button>
+                    </div>    
+                </div>            
+            </div>
+        </div>
+    <!-- //상단 띠배너 -->
+        <header class="gnb-wrap" id="header">
+            <!-- header-->
+            <div class="gnb-top">
+                <ul class="links">
+                    <li><a href="#">회사소개</a></li>
+                    <li class="current"><a href="#">키움자산운용</a></li>
+                    <li><a href="#">KOSEF</a></li>
+                </ul>
+                <a href="#" class="link-global"><span>ENG</span></a>
+            </div>
+            <div class="gnb-nav">
+                <h1><a href="#" class="logo"><span class="hide">키움투자산운용</span></a></h1>
+                <div class="gnb">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">펀드상품</a>                                                          
+                                <ul class="sub">
+                                    <li><a href="#">키움펀드맵</a></li>
+                                    <li><a href="#">펀드찾기</a></li>
+                                    <li><a href="#">분할매수상품</a></li>
+                                </ul>                         
+                            </li>
+                            <li><a href="#">연금</a>
+                                <ul class="sub">
+                                    <li><a href="#none">TDF</a></li>
+                                    <li><a href="#none">OCIO</a></li>
+                                    <li><a href="#none">연금펀드</a></li>
+                                    <li><a href="#none">연금아카데미</a>
+                                        <ul>
+                                            <li><a href="#none">퇴직연금제도</a></li>
+                                            <li><a href="#none">개인연금제도</a></li>
+                                            <li><a href="#none">연금투자방법</a></li>
+                                            <li><a href="#none">MZ 연금레터</a></li>                                    
+                                        </ul>
+                                    </li>  
+                                </ul>                                
+                            </li>
+                            <li><a href="#">대체투자</a>
+                                <ul class="sub">
+                                    <li><a href="#">REITS</a></li>
+                                    <li><a href="#">포트폴리오</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="current">키움라운지</a>
+                                <ul class="sub">
+                                    <li><a href="#none">회사소개</a></li>
+                                    <li><a href="#none" class="current">투자정보</a>
+                                        <ul>
+                                            <li><a href="#none" class="current">키자 매거진</a></li>
+                                            <li><a href="#none">키자 TV</a></li>
+                                            <li><a href="#none">키움 뉴스</a></li>
+                                            <li><a href="#none">이벤트</a></li>                                    
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">책임투자</a>
+                                        <ul>
+                                            <li><a href="#none">키움 ESG</a></li>
+                                            <li><a href="#none">스튜어드십코드</a></li>                                    
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">인재채용</a></li>                                    
+                                </ul>                                
+                            </li>
+                            <li><a href="#">공시</a>
+                                <ul class="sub">
+                                    <li><a href="#none">경영공시</a></li>
+                                    <li><a href="#none">펀드공시</a></li>                                    
+                                    <li><a href="#none">파생공시</a></li>                                    
+                                    <li><a href="#none">리츠공시</a></li>                                    
+                                    <li><a href="#none">손실예상금액공시</a></li>                                    
+                                    <li><a href="#none">연금저축펀드비교공시</a></li>                                    
+                                    <li><a href="#none">스튜어드십코드공시</a></li>                                    
+                                    <li><a href="#none">고난도금융투자상품</a></li>                                    
+                                </ul>                               
+                            </li>
+                        </ul>               
+                    </nav>
+                </div>                
+                <!-- search -->
+                <div class="top-sch-group">
+                    <button class="btn-sch"><span class="hide">검색</span></button>
+                    <div class="sch-cont" tabindex="-1">
+                        <div class="search-area">
+                            <div class="sch-top">
+                                <input type="text" class="inp-base" data-clear="true" placeholder="상품명을 입력하세요." title="상품명 입력"> <!-- 20230213 수정 -->
+                                <button class="btn-sch"><span class="hide">펀드 검색</span></button>
+                            </div>
+                            <dl class="sch-tips">
+                                <dt>추천검색어</dt>
+                                <dd>
+                                    <button type="button" class="active">#ESG</button>
+                                    <button type="button">#미국</button>
+                                    <button type="button">#원자재</button>
+                                    <button type="button">#신흥국</button>
+                                    <button type="button">#인플레이션</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <button type="button" class="btn-close"><span class="hide">닫기</span></button>
+                    </div>
+                </div>    
+                <!-- //search -->                   
+            </div>
+            <!-- //header-->
+        </header>
+        <main class="main-wrap" id="content">
+            <div class="main-visual">
+                <div class="main-slick-wrap">
+                    <div class="main-slick main-items" id="mainVisual">
+                        <div class="items">
+                            <div class="item-inner"> 
+                                <img src="/kiam/pcWeb/resources/images/dummy/@main_visual.png" alt="" /> 
+                            </div>                        
+                        </div>
+                        <div class="items">
+                            <div class="item-inner"> 
+                                <img src="/kiam/pcWeb/resources/images/dummy/@main_visual.png" alt="" /> 
+                            </div>                        
+                        </div>
+                        <div class="items">
+                            <div class="item-inner"> 
+                                <img src="/kiam/pcWeb/resources/images/dummy/@main_visual.png" alt="" /> 
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="visual-utils">
+                        <div class="slick-info">
+                            <span class="page"></span>
+                            <div class="slick-control">
+                                <button type="button" class="pause"><span class="hide">슬라이드 정지</span></button>
+                                <button type="button" class="play"><span class="hide">슬라이드 시작</span></button>                    
+                            </div>                           
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="btn-kosef"><span><span class="hide">KOSEF</span>바로가기</span></a>
+                            <a href="#"><span>REITS 바로가기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sch-box">
+                <div class="sch-top"><input type="text" class="inp-base" data-clear="true" placeholder="검색어를 입력하세요" title="검색어 입력"><button class="btn-sch"><span class="hide">검색</span></button></div>
+                <div class="sch-tips">
+                    <a href="#">#ESG</a>
+                    <a href="#">#자산분배형</a>
+                    <a href="#">#선진국</a>
+                    <a href="#">#원자재</a>
+                    <a href="#">#신흥국</a>
+                </div>
+            </div>
+            <section class="main-conts">
+                <div class="major">
+                    <article class="fund-summary">
+                        <h2><span>펀드 한눈에 보기</span></h2>
+                        <div class="fund-tab">
+                            <div class="ui-tab">
+                                <div class="ui-tab-btns">
+                                    <button type="button" class="ui-tab-btn selected"><span>대표펀드</span></button>
+                                    <button type="button" class="ui-tab-btn"><span>수익률<span>TOP5</span></span></button>
+                                    <button type="button" class="ui-tab-btn"><span>신흥국</span></button>
+                                    <button type="button" class="ui-tab-btn"><span>ESG</span></button>
+                                    <button type="button" class="ui-tab-btn"><span>선진국</span></button>
+                                </div>
+                                <div class="ui-tab-pnls">
+                                    <section class="ui-tab-pnl">
+                                        <ul class="fund-list">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="tag-wrap"><em class="t-local">국내</em><em class="t-bond">채권형</em><em class="t-high">다소 높은 위험</em></span>
+                                                    <strong class="title">키움글로벌멀티전략 증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]</strong>
+                                                    <span class="txts">구독경제 관련 기업을 선별하여 투자</span>
+                                                    <span class="rate">
+                                                        <span class="txt-up">4.86</span>
+                                                        <span class="txts">3개월 수익률</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="tag-wrap"><em class="t-local">국내</em><em class="t-bond">채권형</em><em class="t-high">다소 높은 위험</em></span>
+                                                    <strong class="title">키움글로벌멀티전략 증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]</strong>
+                                                    <span class="txts">시장가격 변화에 따라 알아서 자동분할매수 하는 똑똑한 투자 자동분할매수 하는 똑똑한 투자</span>
+                                                    <span class="rate">
+                                                        <span class="txt-drop">-10.42</span>
+                                                        <span class="txts">3개월 수익률</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="tag-wrap"><em class="t-local">국내</em><em class="t-bond">채권형</em><em class="t-high">다소 높은 위험</em></span>
+                                                    <strong class="title">키움글로벌멀티전략 증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]</strong>
+                                                    <span class="txts">성장가능성이 높은 4차산업혁명 테마 및 주식형 ETF에 투자</span>
+                                                    <span class="rate">
+                                                        <span class="txt-up">12.08</span>
+                                                        <span class="txts">3개월 수익률</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="tag-wrap"><em class="t-local">국내</em><em class="t-bond">채권형</em><em class="t-high">다소 높은 위험</em></span>
+                                                    <strong class="title">키움글로벌멀티전략 증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]</strong>
+                                                    <span class="txts">구독경제 관련 기업을 선별하여 투자</span>
+                                                    <span class="rate">
+                                                        <span class="txt-up">12.08</span>
+                                                        <span class="txts">3개월 수익률</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="tag-wrap"><em class="t-local">국내</em><em class="t-bond">채권형</em><em class="t-high">다소 높은 위험</em></span>
+                                                    <strong class="title">키움글로벌멀티전략 증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]증권자 투자신탁 제4호[주식]</strong>
+                                                    <span class="txts">구독경제 관련 기업을 선별하여 투자</span>
+                                                    <span class="rate">
+                                                        <span class="txt-up">12.08</span>
+                                                        <span class="txts">3개월 수익률</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="">
+                        <h2><a href="#">키움뉴스</a></h2>
+                        <ul class="noti-list">
+                            <li><a href="#"><span class="txts ellips">퇴직연금 사업자, 키움 디폴트 옵션 상품 택했다.</span><span class="date">2022-09-21</span></a></li>
+                            <li><a href="#"><span class="txts ellips">글로벌 ETF로 자산배분 극대화... 연환산 수익률 6% 약진</span><span class="date">2022-09-21</span></a></li>
+                            <li><a href="#"><span class="txts ellips">글로벌 ETF로 자산배분 극대화... 연환산 수익률 6% 약진</span><span class="date">2022-09-21</span></a></li>
+                        </ul>
+                    </article>
+                    <article class="">
+                        <h2><a href="#">펀드뉴스</a></h2>
+                        <ul class="noti-list">
+                            <li><a href="#"><span class="txts ellips">우리 Smart Investor 분할매수 모펀드의 목표 수익률 달성 및 리밸런실 안내우리 Smart Investor 분할매수 모펀드의 목표 수익률 달성 및 리밸런실 안내</span><span class="date">2022-09-21</span></a></li>
+                            <li><a href="#"><span class="txts ellips">세계적 운용사 CREDIT SUISSE의 운용서비스와 주식 매매차익 비과세 혜택을 동시에!</span><span class="date">2022-09-21</span></a></li>
+                            <li><a href="#"><span class="txts ellips">세계적 운용사 CREDIT SUISSE의 운용서비스와 주식 매매차익 비과세 혜택을 동시에!</span><span class="date">2022-09-21</span></a></li>
+                        </ul>
+                    </article>
+                </div>
+                <aside>
+                    <article class="">
+                        <h2><a href="#">키자 매거진</a></h2>
+                        <ul class="pic-list">
+                            <li>
+                                <a href="#">
+                                    <span class="class">주식 상품소개</span>
+                                    <strong class="title">지금 어때? 매력적인 장기투자자산! 키움 KOSEF 국고채 10년 ETF</strong>
+                                    <span class="date">2022-01-11</span>
+                                    <span class="pic no-img">
+                                        <!-- <img src="/kiam/pcWeb/resources/images/dummy/@thumb_img1.png" alt=""> -->
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="class">연금을 키워드림</span>
+                                    <strong class="title">[키움연금술사] MZ세대는 미래를 어떻게 준비하고 있나요?</strong>
+                                    <span class="date">2022-01-11</span>
+                                    <span class="pic"><img src="/kiam/pcWeb/resources/images/dummy/@thumb_img2.png" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="class">연금을 키워드림</span>
+                                    <strong class="title">[키움연금술사] MZ세대는 미래를 어떻게 준비하고 있나요?</strong>
+                                    <span class="date">2022-01-11</span>
+                                    <span class="pic"><img src="/kiam/pcWeb/resources/images/dummy/@thumb_img3.png" alt=""></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                    <div class="main-bnr">
+                        <a href="#" class="bnr-kakao">
+                            <span>키움투자 자산운용<br>카톡친구 맺고 부자되세요!</span>
+                        </a>
+                    </div>
+                    <article class="">
+                        <h2><a href="#">키자 TV</a></h2>
+                        <ul class="pic-list tv">
+                            <li>
+                                <a href="#">
+                                    <span class="class">키자 세미나/위클리 세미나</span>
+                                    <strong class="title">지금 어때? 매력적인 장기투자자산! 키움 KOSEF 국고채 10년 ETF</strong>
+                                    <span class="date">2022-01-11</span>
+                                    <span class="pic no-img">
+                                        <!-- <span class="tag live">LIVE</span> -->
+                                        <!-- <img src="/kiam/pcWeb/resources/images/dummy/@modal_img.png" alt=""> -->
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="class">키자브랜딩</span>
+                                    <strong class="title">지금 어때? 매력적인 장기투자자산! 키움 KOSEF 국고채 10년 ETF 키움 KOSEF 국고채 10년 ETF키움 KOSEF 국고채 10년 ETF</strong>
+                                    <span class="date">2022-01-11</span>
+                                    <span class="pic">
+                                        <img src="/kiam/pcWeb/resources/images/dummy/@thumb_img5.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </aside>
+            </div>
+        </main>
+        <footer class="foot-wrap" id="wrap">
+            <script type="text/javascript" src="/kiam/pcWeb/pub_include/footer.js"></script>
+        </footer>
+    </div>
+    <script>            
+        'use strict';
+
+        //utils module
+        (() => {
+          
+            //slider             
+            mainVisualSlide();
+            // 상단 띠배너 보기
+            KAUI.common.topBnr.show();
+                          
+        })();        
+       
+    
+    </script>
+
+</body>
+</html>

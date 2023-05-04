@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/**
+* Work
+* ------------------
+* hm.lee
+*/
+
+//gap
+.comp.gap {margin-top: calc(8px*5) !important;}
+.tab_content {.comp.gap {margin-top: calc(8px*4) !important;}}
+
+
+// * MYPAGE
+//-----------------------
+//보상청구
+.list.step {
+    margin: 8 0 32px;
+    .list_item_case {
+        width: 100%;
+        margin: 0 0 24px;
+        .box.gray {padding: 20px;
+            .btn.text.blue {margin-top: 6px;background-color: transparent;}
+            & +.box.gray {margin-top: 10px;border-radius: 12px;}
+            em {font-weight: $fw_medium;}
+            p {color: $grey_700;}
+            em + p {margin-top: 4px;}
+        }
+    }
+    .icon {
+        @include icon_set(32px, 32px);
+        @include icon_left(50%, 0, 0);
+    }
+}
+.list.doc {
+    margin-top: 16px;
+    .list_item{
+        flex-wrap: wrap;
+        padding: 24px 0;
+        border-bottom: 1px solid #efeff1;
+        p{width: 100%;color: $grey_850;font-size: 15px;font-weight: $fw_medium;}
+        .btn_area {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            .btn {width: 75px;}
+        }
+        &:last-child {border-bottom: 0;}
+    }
+}
+.list.link_type {
+    .list_wrap {
+        padding: 0;
+    }
+    a.list_wrap .list_body {padding-right: 0;}
+    a.list_wrap .list_body:after {top: 24px;width: 26px;height: 26px;margin-top: 0;background-image: url($svg_arrow_link);}
+    .list_body {
+        flex-wrap: wrap;padding: 24px 0 24px 0;
+    }
+    .title {
+        display: flex;align-items: center;width: 100%;
+        span {margin-top: 0;}
+        .badge + .name {margin-left: 8px;}
+        .name {color: $grey_850;font-size: 16px;font-weight: $fw_medium;letter-spacing: -0.04em;}
+    }
+    .dl_list {width: 100%;margin-top: 20px;}
+    +.btn_area {margin-bottom: 32px;}
+}
+.card_list {
+    &.list_type {
+        input+.card_wrap {
+            padding: 0;border: 0;box-shadow: none;
+            &:before {top: 0;right: 0;}
+            .card_header {display: flex;align-items: center;}
+        }
+        .card_item {
+            @include border_bottom();
+            .card_body {margin-top: 20px;padding-bottom: 24px;}
+        }
+    }
+    &.breakdown_list {
+        .card_item + .card_item {margin-top: 10px;}
+        .dl_list {
+            dt {width: 86px;}
+            dd {
+                position: relative;width: calc(100% - 86px);text-align: left;color: $grey_650;
+                &:before {
+                    content: '';position: absolute;top: 50%;left: -8px;display: inline-block;width: 3px;height: 3px;background: #C8C8CA;border-radius: 50%;transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &.insurance_payment {
+        margin-top: 40px;
+        .card_header {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.search_area {
+    padding-bottom: 32px;
+    border-bottom: 12px solid #f9f9fb;
+    .btn_area{
+        margin-top:40px;
+    }
+    + .comp {
+        margin-top: -30px;
+        padding-top: 62px;
+    }
+    ~ .governing.nodata[data-icon=nodata2]{
+		margin-top:88px;
+	}
+
+}
+.title_area.tab_title_area {margin-bottom: 16px;}
+
+//icon
+//고장접수
+[data-icon-id=icon_accidents]{
+    [data-icon=icon01]{background-image: url($svg_icon_accid_01);}
+    [data-icon=icon02]{background-image: url($svg_icon_accid_02);}
+    [data-icon=icon03]{background-image: url($svg_icon_accid_03);}
+    [data-icon=icon04]{background-image: url($svg_icon_accid_04);}
+    [data-icon=icon05]{background-image: url($svg_icon_accid_05);}
+    [data-icon=icon06]{background-image: url($svg_icon_accid_06);}
+}
+//보험금 청구
+[data-icon-id=list_insurance]{
+    [data-icon=icon01]{background-image: url($svg_icon_insurance_01);}
+    [data-icon=icon02]{background-image: url($svg_icon_insurance_02);}
+    [data-icon=icon03]{background-image: url($svg_icon_insurance_03);}
+    [data-icon=icon04]{background-image: url($svg_icon_insurance_04);}
+    [data-icon=icon05]{background-image: url($svg_icon_insurance_05);}
+}
+//고장출동신청
+[data-icon-id=list_breakdown]{
+    [data-icon=icon01]{background-image: url($svg_icon_breakdown_01);}
+    [data-icon=icon02]{background-image: url($svg_icon_breakdown_02);}
+    [data-icon=icon03]{background-image: url($svg_icon_breakdown_03);}
+    [data-icon=icon04]{background-image: url($svg_icon_breakdown_04);}
+    [data-icon=icon05]{background-image: url($svg_icon_breakdown_05);}
+    [data-icon=icon06]{background-image: url($svg_icon_breakdown_06);}
+    [data-icon=icon07]{background-image: url($svg_icon_breakdown_07);}
+}
+.form_list {
+	margin-top: 10px;
+	.list {border: 0;}
+	.list_item {
+		position: relative;
+		padding: 16px 0 16px 36px;
+		@include border_bottom();
+		.form_list_label {display: block;width: 100%;padding: 0;color: $grey_850;font-size: 15px;}
+		input+.form_list_label:before {left: auto;right: 0;}
+	}
+    .icon {
+        @include icon_set(24px, 24px);
+        @include icon_left(50%, 0, 0);
+    }
+}
+.form_area + .contract_list {margin-top: 32px;}
+//상품 카드
+.contract_list {
+    .contract_anchor {
+        .badge_wrap + .title {margin-top: 12px;}
+    }
+}
+.dl_list_wrap {
+    .dl_list {padding-bottom: 24px;@include border_bottom();}
+}
+.dl_list {
+    .title_area {
+        margin-top: 24px;
+		.prd_title {@include product_tit();}
+	}
+}
+.governing +.tab {padding-top: 0;}
+
+
+// * 이용약관
+//-----------------------
+.terms {
+    //위험 등급
+    .risk_rating {
+        display: flex;
+        font-size: 13px;
+        .risk {
+            @include risk();
+            &.risk1 {@include risk1();}
+            &.risk2 {@include risk2();}
+            &.risk3 {@include risk3();}
+            &.risk4 {@include risk4();}
+            &.risk5 {@include risk5();}
+        }
+        .bul_imp {margin-top: 20px;}
+    }
+}
+
+// * 이용안내
+//-----------------------
+
+//전화 상담 안내
+[data-icon-id=icon_tel_counsel]{
+    [data-icon=icon01]{background-image: url($svg_icon_tel_counsel_01);}
+    [data-icon=icon02]{background-image: url($svg_icon_tel_counsel_02);}
+    [data-icon=icon03]{background-image: url($svg_icon_tel_counsel_03);}
+    [data-icon=icon04]{background-image: url($svg_icon_tel_counsel_04);}
+    [data-icon=icon05]{background-image: url($svg_icon_tel_counsel_05);}
+}
+//공지사항
+.notice_area {
+    margin-top: 40px;
+    .notice_heading {
+        padding-bottom: 24px;
+        border-bottom: 1px solid $grey_200;
+        .title {color: $grey_850;font-size: 19px;font-weight: $fw_bold;line-height: 1.4em;letter-spacing: -0.02em;}
+        .date {display: block;;margin-top: 12px;}
+    }
+    .notice_footer {
+        margin-top: 40px;
+        border-top: 1px solid $grey_850;
+        .notice_footer_item {
+            .notice_footer_link {
+                display: flex;
+                width: 100%;
+                padding: 14px 8px;
+                color: $grey_750;
+                font-size: 14px;
+                border-bottom: 1px solid $grey_200;
+                em {font-weight: $fw_bold;}
+                span,a {
+                    margin-left: 16px;
+                    @include ellipsis(100%);
+                    &.disabled {color: $grey_650;};
+                }
+            }
+        }
+    }
+    //공지사항 상세
+    .notice_view {
+        .notice_view_cont {
+            padding-top:32px;
+            .form_msg{
+                color:#3F3F41;
+                + .title{
+                    margin-top:32px;
+                }
+            }
+            >.title{
+                margin-top:40px;
+                font-size:15px;
+                font-weight:700;
+                line-height:1.5em;
+                letter-spacing:-0.02em;
+                color:#1F1F21;
+                + .list, + p{
+                    margin-top:16px;
+                }
+            }
+            .list_item .list_wrap{
+                padding-bottom:0;
+                .list_body{
+                    padding:16px 0;
+                }
+            }
+            p + p{
+                margin-top:12px;
+            }
+        }
+    }
+}
+.form_search + .notice_area {
+    margin-top: 32px;
+}
+.option_area.type_radio {
+    input[type=radio].btn_rdo:checked + label:before {
+        position: relative;
+        left: -22px;
+        margin-right: -16px;
+    }
+}
+
+
+//mediaquery
+@media (max-width: 360px) {
+    br.br {display: none;}
+    .box_manager.full {
+        .box_wrap .num {min-width: initial;}
+    }
+    .modal {
+        .terms .chk_wrap .chk_item + .chk_item {margin-left: 6px;}
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<title>현대해상다이렉트</title>
+<script type="text/javascript" src="../_ui_include/head.js"></script><!-- //Include: head -->
+<script>
+	$(function() {
+		UI.init();
+	});
+</script>
+</head>
+<body data-channel="mobile" data-login="false" data-category="">
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- navbar -->
+		<div id="header" class="navbar">
+			<div class="header_wrap">
+				<button type="button" class="btn_page_prev" aria-label="이전"></button>
+				<h1 class="header_title">이자납입증명서</h1>
+				<button type="button" class="btn_sidebar_open" aria-label="메뉴 열기"></button>
+			</div>
+		</div>
+		<!-- //navbar -->
+		<script type="text/javascript" src="../_ui_include/sidebar.js"></script><!-- Include: sidebar -->
+		<div id="container">
+			<!-- [Start of content] ================================== -->
+			<div id="content">
+				<!-- content_wrap -->
+				<div class="content_wrap">
+					<div class="section">
+            <div class="governing ta_l">
+							<h2 class="governing_title">발급할 내역을 선택해 주세요.</h2>
+						</div>
+            <div class="search_area">
+              <div class="comp">
+                <div class="form_area">
+                  <div class="form_item">
+                    <div class="form_label"><label for="loan_select">대출선택</label></div>
+                    <div class="form_wrap">
+                      <button type="button" id="loan_select" class="btn_select"><span>전체</span></button>
+                    </div>
+                  </div>
+                  <div class="form_item grid2">
+                    <div class="form_item dash2">
+                      <div class="form_label"><label for="inp01">조회기간</label></div>
+                      <div class="form_wrap">
+                        <input type="text" id="inp01" placeholder="" class="inp_date">
+                      </div>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_wrap">
+                        <input type="text" title="조회기간 입력" placeholder="" class="inp_date">
+                      </div>
+                    </div>
+                    <div class="option_area">
+                      <button type="button" class="btn option"><span>1주일</span></button>
+                      <button type="button" class="btn option"><span>1개월</span></button>
+                      <button type="button" class="btn option"><span>3개월</span></button>
+                      <button type="button" class="btn option"><span>6개월</span></button>
+                      <button type="button" class="btn option"><span>1년</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn_area">
+                  <a href="#search_target" class="btn line02 block">조회</a>
+                </div>
+              </div>
+            </div>
+            <div class="comp" id="search_target">
+              <!-- 내역 있는 경우 -->
+							<div class="card_list">
+                <div class="card_item">
+									<div class="card_wrap">
+                    <div class="dl_list">
+                      <div class="dl_head">
+                        <p class="title"><span class="badge black">정산</span> <strong>14,643원</strong></p>
+                      </div>
+                      <dl>
+                        <dt>영수일</dt>
+                        <dd>2020.02.02</dd>
+                        <dt>계약번호</dt>
+                        <dd>L2008****123</dd>
+                        <dt>대출잔액</dt>
+                        <dd>2,000,000원</dd>
+                        <dt>이자기간(일수)</dt>
+                        <dd>2020.01.25~<br>2020.02.02(8일)</dd>
+                      </dl>
+                    </div>
+                  </div>
+								</div>
+                <div class="card_item">
+									<div class="card_wrap">
+                    <div class="dl_list">
+                      <div class="dl_head">
+                        <p class="title"><span class="badge black">이자</span> <strong>14,643원</strong></p>
+                      </div>
+                      <dl>
+                        <dt>영수일</dt>
+                        <dd>2020.02.02</dd>
+                        <dt>계약번호</dt>
+                        <dd>L2008****123</dd>
+                        <dt>대출잔액</dt>
+                        <dd>2,000,000원</dd>
+                        <dt>이자기간(일수)</dt>
+                        <dd>2020.01.25~<br>2020.02.02(8일)</dd>
+                      </dl>
+                    </div>
+                  </div>
+								</div>
+            </div>
+					</div>
+
+				</div>
+				<!-- //content_wrap -->
+				<!-- content_footer -->
+				<div class="content_footer fix">
+					<div class="btn_area footer">
+						<button type="button" class="btn fill01">발급방법 선택</button>
+					</div>
+				</div>
+				<!-- //content_footer -->
+			</div>
+			<!-- [End of content] ==================================== -->
+		</div>
+
+		<!-- [Start of Modal] ====================================== -->
+		<!-- Code Here~!! -->
+		<!-- [End of Modal] ======================================== -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
